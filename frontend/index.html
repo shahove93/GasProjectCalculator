@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GasProjectCalculator</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
+        label { display: block; margin: 10px 0; }
+        input, select, button { margin-left: 8px; }
+        #result { margin-top: 20px; }
+        #error { margin-top: 15px; color: #c00; }
+    </style>
+</head>
+<body>
+    <h1>GasProjectCalculator</h1>
+
+    <form id="calculate-form">
+        <label>
+            Тип заказчика:
+            <select id="customer_type">
+                <option value="частное лицо">Частное лицо</option>
+                <option value="юридическое лицо">Юридическое лицо</option>
+            </select>
+        </label>
+        <label>Длина: <input id="length" type="number" min="0" step="1" value="0"></label>
+        <label>Углы: <input id="angles" type="number" min="0" step="1" value="0"></label>
+        <label>Часы экскаватора: <input id="excavator_hours" type="number" min="0" step="1" value="0"></label>
+        <label><input id="hdd" type="checkbox"> Использовать ГНБ</label>
+        <label><input id="hydraulic_hammer" type="checkbox"> Использовать гидромолот</label>
+        <label><input id="is_district" type="checkbox"> Объект в районе</label>
+        <label><input id="has_grpsh" type="checkbox"> Есть ГРПШ</label>
+        <button type="submit">Рассчитать</button>
+    </form>
+
+    <div id="result">
+        <p>Базовая стоимость: <span id="base_price">—</span></p>
+        <p id="row_length_surcharge">Доплата за длину: <span id="length_surcharge">—</span></p>
+        <p id="row_angle_surcharge">Доплата за углы: <span id="angle_surcharge">—</span></p>
+        <p id="row_excavator_cost">Стоимость экскаватора: <span id="excavator_cost">—</span></p>
+        <p id="row_hdd_surcharge">Доплата за ГНБ: <span id="hdd_surcharge">—</span></p>
+        <p id="row_area_surcharge">Доплата за район: <span id="area_surcharge">—</span></p>
+        <p id="row_grpsh_surcharge">Доплата за ГРПШ: <span id="grpsh_surcharge">—</span></p>
+        <p>Подытог: <span id="subtotal">—</span></p>
+        <p>НДС: <span id="vat">—</span></p>
+        <p>Итого: <span id="total">—</span></p>
+    </div>
+    <div id="error" style="display: none;"></div>
+
+    <script>
+        const hddCheckbox = document.getElementById("hdd");
+        const excavatorHours = document.getElementById("excavator_hours");
+        const hydraulicHammer = document.getElementById("hydraulic_hammer");
+
+        function updateExcavatorAvailability() {
+            excavatorHours.disabled = hddCheckbox.checked;
+            hydraulicHammer.disabled = hddCheckbox.checked;
+            if (hddCheckbox.checked) {
+                excavatorHours.value = 0;
+                hydraulicHammer.checked = false;
+            }
+        }
+
+        hddCheckbox.addEventListener("change", updateExcavatorAvailability);
+        updateExcavatorAvailability();
+
+        const errorElement = document.getElementById("error");
+
+        function showError(message) {
+            errorElement.textContent = message;
+            errorElement.style.display = "block";
+        }
+
+        document.getElementById("calculate-form").addEventListener("submit", async (event) => {
+            event.preventDefault();
+            errorElement.style.display = "none";
+
+            const data = {
+                customer_type: document.getElementById("customer_type").value,
+                length: Number(document.getElementById("length").value || 0),
+                angles: Number(document.getElementById("angles").value || 0),
+                hdd: document.getElementById("hdd").checked,
+                excavator_hours: Number(document.getElementById("excavator_hours").value || 0),
+                hydraulic_hammer: document.getElementById("hydraulic_hammer").checked,
+                is_district: document.getElementById("is_district").checked,
+                has_grpsh: document.getElementById("has_grpsh").checked,
+            };
+
+            let response;
+            try {
+                response = await fetch("/calculate", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify(data),
+                });
+            } catch (err) {
+                showError("Не удалось связаться с сервером. Убедитесь, что сервер запущен.");
+                return;
+            }
+
+            if (!response.ok) {
+                showError("Сервер не смог обработать запрос. Попробуйте ещё раз.");
+                return;
+            }
+
+            let result;
+            try {
+                result = await response.json();
+            } catch (err) {
+                showError("Сервер вернул некорректный ответ. Попробуйте ещё раз.");
+                return;
+            }
+
+            document.getElementById("base_price").textContent = result.base_price;
+            const surchargeFields = [
+                "length_surcharge",
+                "angle_surcharge",
+                "excavator_cost",
+                "hdd_surcharge",
+                "area_surcharge",
+                "grpsh_surcharge",
+            ];
+            for (const field of surchargeFields) {
+                document.getElementById(field).textContent = result[field];
+                document.getElementById("row_" + field).style.display =
+                    result[field] > 0 ? "" : "none";
+            }
+            document.getElementById("subtotal").textContent = result.subtotal;
+            document.getElementById("vat").textContent = result.vat;
+            document.getElementById("total").textContent = result.total;
+        });
+    </script>
+</body>
+</html>
