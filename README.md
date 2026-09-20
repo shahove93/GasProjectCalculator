@@ -10,6 +10,16 @@
 - Валидирует входные данные на сервере (HTTP 422 при некорректных значениях).
 - Работает в браузере: HTML-форма → JavaScript → POST /calculate → FastAPI.
 
+## Интерфейс
+
+### Форма расчёта
+
+![Форма расчёта](docs/screenshots/calculator-empty.png)
+
+### Результат расчёта
+
+![Результат расчёта](docs/screenshots/calculator-result.png)
+
 ## Технологии
 
 - Python
