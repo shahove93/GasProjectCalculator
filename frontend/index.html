@@ -3,54 +3,340 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GasProjectCalculator</title>
+    <title>GasProjectCalculator — Расчёт стоимости газовых работ</title>
     <style>
-        body { font-family: Arial, sans-serif; max-width: 600px; margin: 20px auto; }
-        label { display: block; margin: 10px 0; }
-        input, select, button { margin-left: 8px; }
-        #result { margin-top: 20px; }
-        #error { margin-top: 15px; color: #c00; }
+        :root {
+            --accent: #1f6fb2;
+            --accent-dark: #175a93;
+            --accent-light: #e8f1f9;
+            --text: #1e2a38;
+            --text-muted: #5b6b7b;
+            --bg: #f3f6f9;
+            --card: #ffffff;
+            --border: #dfe6ee;
+            --error-bg: #fdeeec;
+            --error-border: #f3c1bb;
+            --error: #b3372a;
+            --shadow: 0 10px 30px rgba(23, 57, 89, 0.08);
+            --radius: 16px;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+        .container { max-width: 1180px; margin: 0 auto; padding: 24px 20px 48px; }
+
+        header.hero { text-align: center; padding: 40px 0 34px; }
+        .hero h1 {
+            font-size: 42px; font-weight: 800; letter-spacing: -0.5px;
+            color: #14273a; margin: 0 0 6px;
+        }
+        .hero .subtitle { font-size: 21px; font-weight: 600; color: var(--accent); margin: 0 0 8px; }
+        .hero .desc { color: var(--text-muted); font-size: 15px; max-width: 560px; margin: 0 auto; }
+
+        .layout { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; }
+
+        .card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            padding: 26px;
+        }
+        .card h2 {
+            font-size: 20px; font-weight: 700; color: #14273a;
+            margin: 0 0 16px; padding-bottom: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .card.result-card { border-top: 4px solid var(--accent); }
+
+        .section-label {
+            font-size: 12px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: 0.06em; color: var(--accent);
+            margin: 20px 0 10px;
+        }
+        .section-label:first-of-type { margin-top: 0; }
+
+        .field { margin-bottom: 14px; }
+        .field .label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; color: #33455a; }
+        .field input[type="number"],
+        .field select {
+            width: 100%; padding: 10px 12px; font-size: 15px;
+            border: 1px solid var(--border); border-radius: 10px;
+            background: #fbfcfe; color: var(--text);
+            transition: border-color 0.15s, box-shadow 0.15s;
+        }
+        .field input[type="number"]:focus,
+        .field select:focus {
+            outline: none; border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(31, 111, 178, 0.18);
+        }
+        .field input[type="number"]:disabled { background: #eef1f5; color: #8a96a3; cursor: not-allowed; }
+
+        .segment { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .segment button {
+            padding: 11px; border-radius: 10px; cursor: pointer;
+            border: 1px solid var(--border); background: #fff;
+            font-size: 15px; color: #33455a; font-weight: 500;
+            transition: background 0.15s, border-color 0.15s, color 0.15s;
+        }
+        .segment button:hover { border-color: var(--accent); color: var(--accent); }
+        .segment button.active {
+            background: var(--accent); border-color: var(--accent);
+            color: #fff; font-weight: 600;
+        }
+        .segment button:focus-visible { outline: 3px solid rgba(31, 111, 178, 0.4); outline-offset: 2px; }
+
+        .toggle-row {
+            display: flex; align-items: center; justify-content: space-between;
+            gap: 12px; padding: 10px 0; border-bottom: 1px dashed var(--border);
+            font-size: 14px; font-weight: 500; color: #33455a;
+        }
+        .toggle-row:last-child { border-bottom: none; }
+
+        .switch { position: relative; width: 46px; height: 26px; flex: 0 0 auto; }
+        .switch input {
+            position: absolute; inset: 0; margin: 0;
+            opacity: 0; width: 100%; height: 100%; cursor: pointer;
+        }
+        .switch .track {
+            position: absolute; inset: 0; background: #cdd7e1;
+            border-radius: 999px; transition: background 0.2s;
+            pointer-events: none;
+        }
+        .switch .track::after {
+            content: ""; position: absolute; top: 3px; left: 3px;
+            width: 20px; height: 20px; background: #fff; border-radius: 50%;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .switch input:checked + .track { background: var(--accent); }
+        .switch input:checked + .track::after { transform: translateX(20px); }
+        .switch input:disabled + .track { background: #e2e8ef; }
+        .switch input:disabled + .track::after { opacity: 0.6; }
+        .switch input:focus-visible + .track { box-shadow: 0 0 0 3px rgba(31, 111, 178, 0.35); }
+
+        .btn {
+            display: block; width: 100%; margin-top: 10px;
+            padding: 14px 18px; font-size: 16px; font-weight: 600;
+            color: #fff; background: var(--accent); border: none; border-radius: 12px;
+            cursor: pointer;
+            transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
+        }
+        .btn:hover { background: var(--accent-dark); box-shadow: 0 6px 18px rgba(31, 111, 178, 0.28); }
+        .btn:focus-visible { outline: 3px solid rgba(31, 111, 178, 0.4); outline-offset: 2px; }
+        .btn:active { transform: translateY(1px); }
+        .btn:disabled { opacity: 0.65; cursor: default; box-shadow: none; }
+
+        .cost-line {
+            display: flex; justify-content: space-between; align-items: baseline;
+            padding: 6px 0; font-size: 15px; color: #33455a;
+        }
+        .cost-line .amount { font-variant-numeric: tabular-nums; font-weight: 600; color: #1e2a38; }
+        .cost-line.base .amount { font-weight: 700; }
+        .divider { border-top: 1px solid var(--border); margin: 12px 0; }
+        .subtotal-line {
+            display: flex; justify-content: space-between; align-items: baseline;
+            padding: 6px 0; font-size: 15px; color: #33455a;
+        }
+        .subtotal-line .amount { font-variant-numeric: tabular-nums; font-weight: 700; color: #1e2a38; }
+
+        .total-block {
+            margin-top: 16px; padding: 14px 18px;
+            background: var(--accent-light); border: 1px solid #cfdff0;
+            border-radius: 12px;
+            display: flex; justify-content: space-between; align-items: center; gap: 12px;
+        }
+        .total-block .label { font-size: 16px; font-weight: 700; color: var(--accent-dark); }
+        .total-block .amount {
+            font-size: 34px; font-weight: 800; letter-spacing: -0.5px;
+            color: #0f4c81; font-variant-numeric: tabular-nums;
+        }
+        .result-hint { color: var(--text-muted); font-size: 14px; margin: 10px 0 0; }
+        #calc-info {
+            color: var(--text-muted); font-size: 15px; line-height: 1.6;
+            text-align: center; padding: 34px 12px;
+        }
+
+        #error {
+            margin-top: 16px; padding: 12px 14px;
+            background: var(--error-bg); border: 1px solid var(--error-border);
+            color: var(--error); border-radius: 10px; font-size: 14px; font-weight: 500;
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(6px); }
+            to { opacity: 1; transform: none; }
+        }
+        .result-card.flash .cost-line,
+        .result-card.flash .subtotal-line,
+        .result-card.flash .total-block {
+            animation: fadeUp 0.3s ease;
+        }
+
+        @media (max-width: 920px) {
+            .layout { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 30px; }
+            .hero .subtitle { font-size: 18px; }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 16px 12px 32px; }
+            .card { padding: 18px; }
+            .hero { padding: 24px 0 22px; }
+            .hero h1 { font-size: 25px; }
+            .hero .subtitle { font-size: 16px; }
+            .total-block .amount { font-size: 27px; }
+            .total-block { flex-direction: column; align-items: flex-start; }
+        }
     </style>
 </head>
 <body>
-    <h1>GasProjectCalculator</h1>
+    <div class="container">
+        <header class="hero">
+            <h1>GasProjectCalculator</h1>
+            <p class="subtitle">Расчёт стоимости газовых работ</p>
+            <p class="desc">Предварительный расчёт стоимости работ по газификации</p>
+        </header>
 
-    <form id="calculate-form">
-        <label>
-            Тип заказчика:
-            <select id="customer_type">
-                <option value="частное лицо">Частное лицо</option>
-                <option value="юридическое лицо">Юридическое лицо</option>
-            </select>
-        </label>
-        <label>Длина: <input id="length" type="number" min="0" step="1" value="0"></label>
-        <label>Углы: <input id="angles" type="number" min="0" step="1" value="0"></label>
-        <label>Часы экскаватора: <input id="excavator_hours" type="number" min="0" step="1" value="0"></label>
-        <label><input id="hdd" type="checkbox"> Использовать ГНБ</label>
-        <label><input id="hydraulic_hammer" type="checkbox"> Использовать гидромолот</label>
-        <label><input id="is_district" type="checkbox"> Объект в районе</label>
-        <label><input id="has_grpsh" type="checkbox"> Есть ГРПШ</label>
-        <button type="submit">Рассчитать</button>
-    </form>
+        <section class="layout">
+            <div class="card form-card">
+                <h2>Параметры объекта</h2>
 
-    <div id="result">
-        <p>Базовая стоимость: <span id="base_price">—</span></p>
-        <p id="row_length_surcharge">Доплата за длину: <span id="length_surcharge">—</span></p>
-        <p id="row_angle_surcharge">Доплата за углы: <span id="angle_surcharge">—</span></p>
-        <p id="row_excavator_cost">Стоимость экскаватора: <span id="excavator_cost">—</span></p>
-        <p id="row_hdd_surcharge">Доплата за ГНБ: <span id="hdd_surcharge">—</span></p>
-        <p id="row_area_surcharge">Доплата за район: <span id="area_surcharge">—</span></p>
-        <p id="row_grpsh_surcharge">Доплата за ГРПШ: <span id="grpsh_surcharge">—</span></p>
-        <p>Подытог: <span id="subtotal">—</span></p>
-        <p>НДС: <span id="vat">—</span></p>
-        <p>Итого: <span id="total">—</span></p>
+                <form id="calculate-form">
+                    <p class="section-label">Заказчик</p>
+                    <div class="field">
+                        <span class="label">Тип заказчика</span>
+                        <select id="customer_type">
+                            <option value="частное лицо">Частное лицо</option>
+                            <option value="юридическое лицо">Юридическое лицо</option>
+                        </select>
+                    </div>
+
+                    <p class="section-label">Параметры трассы</p>
+                    <div class="field">
+                        <label class="label" for="length">Длина, м</label>
+                        <input id="length" type="number" min="0" step="1" value="0">
+                    </div>
+                    <div class="field">
+                        <label class="label" for="angles">Количество углов</label>
+                        <input id="angles" type="number" min="0" step="1" value="0">
+                    </div>
+
+                    <p class="section-label">Способ прокладки</p>
+                    <div class="segment">
+                        <button type="button" id="seg_open" class="active">Открытый способ</button>
+                        <button type="button" id="seg_hdd">ГНБ</button>
+                    </div>
+                    <input id="hdd" type="checkbox" style="display:none;">
+
+                    <p class="section-label">Техника</p>
+                    <div class="field">
+                        <label class="label" for="excavator_hours">Часы экскаватора</label>
+                        <input id="excavator_hours" type="number" min="0" step="1" value="0">
+                    </div>
+                    <div class="toggle-row">
+                        <span>Использовать гидромолот</span>
+                        <label class="switch">
+                            <input type="checkbox" id="hydraulic_hammer">
+                            <span class="track"></span>
+                        </label>
+                    </div>
+
+                    <p class="section-label">Дополнительные условия</p>
+                    <div class="toggle-row">
+                        <span>Объект в районе</span>
+                        <label class="switch">
+                            <input type="checkbox" id="is_district">
+                            <span class="track"></span>
+                        </label>
+                    </div>
+                    <div class="toggle-row">
+                        <span>Есть ГРПШ</span>
+                        <label class="switch">
+                            <input type="checkbox" id="has_grpsh">
+                            <span class="track"></span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn" id="submit-btn">Рассчитать стоимость</button>
+                </form>
+            </div>
+
+            <div class="card result-card" id="result-card">
+                <h2>Расчёт стоимости</h2>
+                <p id="calc-info">Укажите параметры объекта и нажмите «Рассчитать стоимость»</p>
+                <div id="result" style="display: none;">
+                    <div class="cost-line base">
+                        <span>Базовая стоимость</span>
+                        <span class="amount" id="base_price">—</span>
+                    </div>
+                    <div class="cost-line" id="row_length_surcharge">
+                        <span>Доплата за длину</span>
+                        <span class="amount" id="length_surcharge">—</span>
+                    </div>
+                    <div class="cost-line" id="row_angle_surcharge">
+                        <span>Доплата за углы</span>
+                        <span class="amount" id="angle_surcharge">—</span>
+                    </div>
+                    <div class="cost-line" id="row_excavator_cost">
+                        <span>Стоимость экскаватора</span>
+                        <span class="amount" id="excavator_cost">—</span>
+                    </div>
+                    <div class="cost-line" id="row_hdd_surcharge">
+                        <span>Доплата за ГНБ</span>
+                        <span class="amount" id="hdd_surcharge">—</span>
+                    </div>
+                    <div class="cost-line" id="row_area_surcharge">
+                        <span>Доплата за район</span>
+                        <span class="amount" id="area_surcharge">—</span>
+                    </div>
+                    <div class="cost-line" id="row_grpsh_surcharge">
+                        <span>Доплата за ГРПШ</span>
+                        <span class="amount" id="grpsh_surcharge">—</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="subtotal-line">
+                        <span>Подытог</span>
+                        <span class="amount" id="subtotal">—</span>
+                    </div>
+                    <div class="subtotal-line">
+                        <span>НДС&nbsp;5%</span>
+                        <span class="amount" id="vat">—</span>
+                    </div>
+
+                    <div class="total-block">
+                        <span class="label">Итого</span>
+                        <span class="amount" id="total">—</span>
+                    </div>
+                </div>
+                <div id="error" style="display: none;"></div>
+            </div>
+        </section>
     </div>
-    <div id="error" style="display: none;"></div>
 
     <script>
         const hddCheckbox = document.getElementById("hdd");
         const excavatorHours = document.getElementById("excavator_hours");
         const hydraulicHammer = document.getElementById("hydraulic_hammer");
+        const segOpen = document.getElementById("seg_open");
+        const segHdd = document.getElementById("seg_hdd");
+        const errorElement = document.getElementById("error");
+        const submitBtn = document.getElementById("submit-btn");
+        const resultCard = document.getElementById("result-card");
+        const calcInfo = document.getElementById("calc-info");
+        const resultContainer = document.getElementById("result");
+
+        function updateSegment() {
+            segOpen.classList.toggle("active", !hddCheckbox.checked);
+            segHdd.classList.toggle("active", hddCheckbox.checked);
+        }
 
         function updateExcavatorAvailability() {
             excavatorHours.disabled = hddCheckbox.checked;
@@ -59,16 +345,33 @@
                 excavatorHours.value = 0;
                 hydraulicHammer.checked = false;
             }
+            updateSegment();
         }
 
         hddCheckbox.addEventListener("change", updateExcavatorAvailability);
-        updateExcavatorAvailability();
 
-        const errorElement = document.getElementById("error");
+        segOpen.addEventListener("click", () => {
+            if (hddCheckbox.checked) {
+                hddCheckbox.checked = false;
+                hddCheckbox.dispatchEvent(new Event("change"));
+            }
+        });
+        segHdd.addEventListener("click", () => {
+            if (!hddCheckbox.checked) {
+                hddCheckbox.checked = true;
+                hddCheckbox.dispatchEvent(new Event("change"));
+            }
+        });
+
+        updateExcavatorAvailability();
 
         function showError(message) {
             errorElement.textContent = message;
             errorElement.style.display = "block";
+        }
+
+        function formatMoney(value) {
+            return Number(value).toLocaleString("ru-RU") + " ₽";
         }
 
         document.getElementById("calculate-form").addEventListener("submit", async (event) => {
@@ -86,6 +389,9 @@
                 has_grpsh: document.getElementById("has_grpsh").checked,
             };
 
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Считаем…";
+
             let response;
             try {
                 response = await fetch("/calculate", {
@@ -94,11 +400,15 @@
                     body: JSON.stringify(data),
                 });
             } catch (err) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Рассчитать стоимость";
                 showError("Не удалось связаться с сервером. Убедитесь, что сервер запущен.");
                 return;
             }
 
             if (!response.ok) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Рассчитать стоимость";
                 showError("Сервер не смог обработать запрос. Попробуйте ещё раз.");
                 return;
             }
@@ -107,11 +417,19 @@
             try {
                 result = await response.json();
             } catch (err) {
+                submitBtn.disabled = false;
+                submitBtn.textContent = "Рассчитать стоимость";
                 showError("Сервер вернул некорректный ответ. Попробуйте ещё раз.");
                 return;
             }
 
-            document.getElementById("base_price").textContent = result.base_price;
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Рассчитать стоимость";
+
+            calcInfo.style.display = "none";
+            resultContainer.style.display = "";
+
+            document.getElementById("base_price").textContent = formatMoney(result.base_price);
             const surchargeFields = [
                 "length_surcharge",
                 "angle_surcharge",
@@ -121,13 +439,17 @@
                 "grpsh_surcharge",
             ];
             for (const field of surchargeFields) {
-                document.getElementById(field).textContent = result[field];
+                document.getElementById(field).textContent = formatMoney(result[field]);
                 document.getElementById("row_" + field).style.display =
                     result[field] > 0 ? "" : "none";
             }
-            document.getElementById("subtotal").textContent = result.subtotal;
-            document.getElementById("vat").textContent = result.vat;
-            document.getElementById("total").textContent = result.total;
+            document.getElementById("subtotal").textContent = formatMoney(result.subtotal);
+            document.getElementById("vat").textContent = formatMoney(result.vat);
+            document.getElementById("total").textContent = formatMoney(result.total);
+
+            resultCard.classList.remove("flash");
+            void resultCard.offsetWidth;
+            resultCard.classList.add("flash");
         });
     </script>
 </body>
