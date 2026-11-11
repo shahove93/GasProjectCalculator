@@ -24,8 +24,10 @@
 
 ## Текущий статус
 
-- Активных helper workers нет. Продуктовый код не начинался.
-- Следующий шаг: commit workflow-документов, затем dispatch GSV-01.
+- GSV-01 R1: PASS independent OpenCode Pro (dispatch `ctx_6f8faa93b48a`),
+  findings нет; 48 новых + 105 total тестов OK. Committed scoped.
+- Активных helper workers нет.
+- Следующий шаг: dispatch GSV-02 (API, R2, Codex gpt-6.1-sol high).
 - Вердикт этапа: NOT_REVIEWED. Push/merge/deploy запрещены.
 
 Ссылки: [история](HISTORY.md), [разрешения](APPROVALS.md),

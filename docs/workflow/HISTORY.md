@@ -54,3 +54,13 @@ read-only discovery command; никаких мутаций эта ошибка �
 документы. Baseline `2949223`; suite 57 тестов exit 0 OK. Зафиксированы
 логические TASK GSV-01 (R1), GSV-02 (R2), GSV-03 (R1), GSV-04 (R0) и финальная
 приёмка R3 с маршрутами и резервами в STATE. Реализация ещё не начиналась.
+
+## TASK GSV-01 — модуль ГСВ (R1)
+
+2026-11-11: OpenCode/DeepSeek Flash исполнитель (dispatch `ctx_d1f4b5534011`)
+создал `app/gsv_calculator.py` и `tests/test_gsv_calculator.py` (48 тестов).
+Проверки: unit 48 OK, полный suite 105 OK, exit 0; изменений вне allowlist нет.
+Координатор однократно сохранил логи (в отчёте не было лог-артефакта) в
+`docs/workflow/evidence/logs/`. Независимый R1 OpenCode Pro (dispatch
+`ctx_6f8faa93b48a`, effective DeepSeek V4.1 Pro) вернул PASS без findings по
+A1–A12. Scoped commit выполнен; GSV-01 принят.
