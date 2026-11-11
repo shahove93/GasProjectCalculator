@@ -1,0 +1,38 @@
+﻿=== git status --porcelain ===
+ M .gitignore
+ M AGENTS.md
+ M ARCHITECTURE.md
+ M README.md
+ M ROADMAP.md
+ M docs/workflow/APPROVALS.md
+ M docs/workflow/HISTORY.md
+ M docs/workflow/STATE.md
+ M docs/workflow/tasks/WI-02.md
+?? docs/workflow/WINDOWS-INSTALLER-BRIEF.md
+?? docs/workflow/evidence/logs/WI-02-build.txt
+?? docs/workflow/evidence/logs/WI-02-inno-install-a.txt
+?? docs/workflow/evidence/logs/WI-02-inno-install-b.txt
+?? docs/workflow/evidence/logs/WI-02-inno-uninstall-a.txt
+?? docs/workflow/evidence/logs/WI-02-inno-uninstall-b.txt
+?? docs/workflow/evidence/logs/WI-02-install-a.txt
+?? docs/workflow/evidence/logs/WI-02-install-b.txt
+?? docs/workflow/evidence/logs/WI-02-installer-info.txt
+?? docs/workflow/evidence/logs/WI-02-markers.txt
+?? docs/workflow/evidence/logs/WI-02-runtime-a.txt
+?? docs/workflow/evidence/logs/WI-02-uninstall-a.txt
+?? docs/workflow/evidence/logs/WI-02-uninstall-b.txt
+?? docs/workflow/evidence/logs/WI-02-unittest.txt
+?? installer/
+
+=== git diff --stat ===
+ .gitignore                   |  3 ++
+ AGENTS.md                    |  6 ++++
+ ARCHITECTURE.md              | 23 ++++++++++++-
+ README.md                    |  3 ++
+ ROADMAP.md                   |  8 +++--
+ docs/workflow/APPROVALS.md   | 12 +++++++
+ docs/workflow/HISTORY.md     | 36 +++++++++++++++++++++
+ docs/workflow/STATE.md       | 77 +++++++++++++++++++++++---------------------
+ docs/workflow/tasks/WI-02.md |  7 ++--
+ 9 files changed, 134 insertions(+), 41 deletions(-)
+

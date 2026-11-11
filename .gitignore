@@ -13,5 +13,8 @@ __pycache__/
 build/
 dist/
 *.spec.bak
+# Inno Setup installer build output
+installer/Output/
+installer/*.log
 .DS_Store
 Thumbs.db
