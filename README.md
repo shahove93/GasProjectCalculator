@@ -20,11 +20,18 @@
 
 ### Форма расчёта
 
-![Форма расчёта](docs/screenshots/calculator-empty.png)
+![Форма расчёта ГСН](docs/screenshots/gsv-03-gsn-desktop.png)
 
 ### Результат расчёта
 
-![Результат расчёта](docs/screenshots/calculator-result.png)
+![Результат расчёта ГСВ](docs/screenshots/gsv-03-gsv-desktop.png)
+
+### Общая смета ГСН + ГСВ
+
+![Общая смета](docs/screenshots/gsv-03-combined-desktop.png)
+
+Мобильный вид: [ГСВ](docs/screenshots/gsv-03-gsv-mobile.png),
+[общая смета](docs/screenshots/gsv-03-combined-mobile.png).
 
 ## Технологии
 
@@ -105,9 +112,22 @@ http://127.0.0.1:8000/
 .\.venv\Scripts\python.exe -m unittest discover -s tests
 ```
 
-## Текущий результат тестов
+## Запуск на Windows, в том числе на другом компьютере
 
-- **134 теста, 134 проходят (OK).** Прежние 57 тестов ГСН сохранены.
+1. Установите Python 3.10 или новее с сайта [python.org](https://www.python.org/downloads/windows/).
+   В установщике включите **Add Python to PATH**.
+2. На [странице ветки feature/gsv в GitHub](https://github.com/shahove93/GasProjectCalculator/tree/feature/gsv)
+   нажмите **Code → Download ZIP**, затем распакуйте архив.
+3. Откройте PowerShell в распакованной папке проекта и выполните:
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe -m uvicorn app.main:app
+```
+
+4. Откройте <http://127.0.0.1:8000/> в браузере. Чтобы остановить сервер,
+   нажмите `Ctrl+C` в PowerShell.
 
 ## Пример расчёта
 
@@ -136,9 +156,3 @@ http://127.0.0.1:8000/
 - НДС (5%): 5 025 ₽
 - **Итого: 105 525 ₽**
 
-## Ограничения версии
-
-- Диаметр ГСВ больше 57 мм не поддерживается и отклоняется.
-- ПК недоступен без САКЗ; количество ПК — один.
-- Нижние примечания прайса и строка «Проект» в scope не входят.
-- Учёт пользователей, БД, экспорт и deployment не реализованы.
