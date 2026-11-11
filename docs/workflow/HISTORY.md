@@ -342,3 +342,36 @@ checklist `docs/workflow/tasks/RD-02.md`, baseline `041b13d`, A1/C1, R2,
 резерв Codex ≤4 вызовов/3M. Запущен implementer `ctx_b89935976cc0`
 (`task_e59117ab6038`, OpenCode Flash, term_4c6fe15a). Next owner — дождаться
 worker_done и отправить пакет на независимый Codex R2 review.
+
+## 2026-11-11 — RD-02 реализация завершена, запущен Codex R2 review
+
+OpenCode/DeepSeek Flash implementer `ctx_b89935976cc0` (`task_e59117ab6038`)
+завершил RD-02 на baseline `041b13d`: `APP_TITLE` ровно `СС.Расчет`, окно
+1050×740/min 860×620, локальная frameless русская splash-заставка 520×320 с
+SVG-потоком газа к дому, lifecycle «splash shown → backend start → ready →
+main created → splash closed → main shown», reduced motion, отсутствие сети,
+русская ошибка с остановкой backend, loopback/port-skip/close-stop. Evidence
+`RD-02-evidence.md`, 4 реальных native-скриншота, полный suite 163 OK EXIT=0;
+`app/main.py`, calculators и функциональный `frontend/index.html` не изменены;
+:8000/:8138 не тронуты. Implementer освобождён. Запущен независимый R2
+Codex reviewer `ctx_66502b51d130` (`task_f3daf8be58f6`, `gpt-6.1-sol` high,
+term_55b493f1) с frozen R2-1..R2-11. Codex calls RD-02: 0 пока; counters
+не сброшены. Next owner — дождаться вердикта; PASS→scoped commit RD-02.
+
+## 2026-11-11 — RD-02 R2 PASS (Codex)
+
+Независимый Codex R2 reviewer `ctx_66502b51d130` (`task_f3daf8be58f6`,
+`gpt-6.1-sol` high, term_55b493f1) вернул **PASS** по R2-1..R2-11 без
+BLOCKER/MAJOR/MINOR/NIT и без finding IDs. Проверен фактический diff от
+`041b13d` при HEAD `2703e83`, исходные логи, 4 реальных native-снимка, SHA256
+launcher/splash/снимков; файлов ревьюер не менял, rerun=0 (evidence reuse).
+Подтверждены title `СС.Расчет`, 1050×740/min 860×620, реальная локальная
+русская splash-заставка до readiness, порядок ready→hidden main→splash closed→
+main shown, readiness 0,75 s и main через 107 мс без искусственной задержки,
+reduced motion, file-only/no-network, русская ошибка с остановкой backend,
+busy 8000→127.0.0.1:8001 и освобождение порта, suite 163 OK, отсутствие
+изменений API/calculators/functional `frontend/index.html`/installer/user data.
+Остаточные ограничения: native 96 DPI, reduced motion через эмуляцию, ранний
+диагностический failure, WebView2 ~0,57 s, packaged splash — в RD-03; права на
+эмблему — ранее зафиксированный риск. Codex calls RD-02: 1; R2 full reviews 1,
+failed 0. Reviewer освобождён. Next owner — scoped commit RD-02 и dispatch RD-03.

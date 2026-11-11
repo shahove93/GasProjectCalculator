@@ -8,7 +8,7 @@ import unittest
 from pathlib import Path
 
 from app import desktop_launcher
-from app.resources import frontend_index_path
+from app.resources import frontend_index_path, splash_page_path
 
 
 class PortSelectionTests(unittest.TestCase):
@@ -142,6 +142,13 @@ class DiagnosticsTests(unittest.TestCase):
         self.assertIn("desktop.log", message)
         self.assertNotIn("Traceback", message)
 
+    def test_error_message_uses_brand(self):
+        message = desktop_launcher.build_launch_error_message(
+            RuntimeError("boom"), Path("desktop.log")
+        )
+        self.assertIn("СС.Расчет", message)
+        self.assertIn("Причина: boom", message)
+
     def test_stop_backend_requests_exit_and_joins(self):
         class FakeServer:
             should_exit = False
@@ -171,6 +178,60 @@ class ResourceTests(unittest.TestCase):
         path = frontend_index_path()
         self.assertTrue(path.is_file(), path)
         self.assertEqual(path.name, "index.html")
+
+    def test_splash_page_resolves_from_source(self):
+        path = splash_page_path()
+        self.assertTrue(path.is_file(), path)
+        self.assertEqual(path.name, "splash.html")
+
+
+class BrandingGeometryTests(unittest.TestCase):
+    def test_app_title_is_exact_brand(self):
+        self.assertEqual(desktop_launcher.APP_TITLE, "СС.Расчет")
+
+    def test_window_geometry_matches_approved_design(self):
+        self.assertEqual(desktop_launcher.APP_WIDTH, 1050)
+        self.assertEqual(desktop_launcher.APP_HEIGHT, 740)
+        self.assertEqual(desktop_launcher.APP_MIN_SIZE, (860, 620))
+
+
+class SplashTests(unittest.TestCase):
+    def setUp(self):
+        self.path = splash_page_path()
+        self.html = self.path.read_text(encoding="utf-8")
+
+    def test_splash_is_russian_local_page(self):
+        self.assertIn('lang="ru"', self.html)
+        self.assertIn("СС.Расчет", self.html)
+        self.assertIn("Запуск приложения", self.html)
+
+    def test_splash_has_no_network_references(self):
+        for marker in ("http://", "https://", "//cdn", "@import", "fonts."):
+            self.assertNotIn(marker, self.html)
+
+    def test_splash_emblem_is_a_local_file(self):
+        self.assertIn('src="assets/company-emblem.png"', self.html)
+        asset = self.path.parent / "assets" / "company-emblem.png"
+        self.assertTrue(asset.is_file(), asset)
+
+    def test_splash_respects_reduced_motion(self):
+        self.assertIn("prefers-reduced-motion: reduce", self.html)
+        self.assertIn("animation: none", self.html)
+        self.assertIn('data-reduced-motion="true"', self.html)
+
+    def test_splash_animates_gas_flow_to_house(self):
+        self.assertIn("@keyframes gas-flow", self.html)
+        self.assertIn("class=\"gas", self.html)
+        self.assertIn("class=\"house\"", self.html)
+
+    def test_splash_url_is_local_file_uri(self):
+        uri = desktop_launcher.splash_url()
+        self.assertTrue(uri.startswith("file://"), uri)
+        self.assertTrue(uri.endswith("splash.html"), uri)
+
+    def test_splash_url_diagnostic_reduced_motion_flag(self):
+        uri = desktop_launcher.splash_url(reduced_motion=True)
+        self.assertTrue(uri.endswith("splash.html?reduced-motion=1"), uri)
 
 
 if __name__ == "__main__":

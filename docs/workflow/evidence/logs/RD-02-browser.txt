@@ -1,0 +1,79 @@
+﻿CWD: D:\Antigravity\GasProjectCalculator
+
+=== tab / local file ===
+orca tab create --url file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html -> ok (browserPageId 058d1cc8-e33f-42a6-af45-267f55c7f8eb)
+
+=== normal motion: orca eval ===
+getComputedStyle .g1 animation-name / duration; matchMedia; resource URLs; element src/href
+{
+  "id": "bba72a84-849b-49aa-a9ae-c87d3b2c7818",
+  "ok": true,
+  "result": {
+    "result": "{\"media\":false,\"gasAnimation\":\"gas-flow\",\"gasDuration\":\"2.6s\",\"glowAnimation\":\"glow-pulse\",\"protocol\":\"file:\",\"url\":\"file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html\",\"resourceEntries\":[],\"elementUrls\":[\"file:///D:/Antigravity/GasProjectCalculator/frontend/assets/company-emblem.png\",null]}",
+    "origin": "file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html"
+  },
+  "_meta": {
+    "runtimeId": "c20fa0c8-5f1f-4861-b59e-dfcab39cef8c"
+  }
+}
+
+=== emulated reduced motion: orca set media --reduced-motion reduce ===
+{
+  "id": "ed508799-a233-41c7-9e96-dfeecd064f38",
+  "ok": true,
+  "result": {
+    "set": true
+  },
+  "_meta": {
+    "runtimeId": "c20fa0c8-5f1f-4861-b59e-dfcab39cef8c"
+  }
+}
+{
+  "id": "7054293a-6c08-432b-b16e-42652b7aae30",
+  "ok": true,
+  "result": {
+    "result": "{\"media\":true,\"gasAnimation\":\"none\",\"gasDuration\":\"0s\",\"gasOpacity\":\"0.45\",\"g1\":\"matrix(1, 0, 0, 1, 0, 0)\",\"g2\":\"matrix(1, 0, 0, 1, 70, 0)\",\"g3\":\"matrix(1, 0, 0, 1, 140, 0)\",\"g4\":\"matrix(1, 0, 0, 1, 210, 0)\",\"glowAnimation\":\"none\"}",
+    "origin": "file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html"
+  },
+  "_meta": {
+    "runtimeId": "c20fa0c8-5f1f-4861-b59e-dfcab39cef8c"
+  }
+}
+
+=== reset media ===
+{
+  "id": "556b587e-86b4-46d3-b7dc-87139f6386a9",
+  "ok": true,
+  "result": {
+    "set": true
+  },
+  "_meta": {
+    "runtimeId": "c20fa0c8-5f1f-4861-b59e-dfcab39cef8c"
+  }
+}
+Reduced-motion screenshot: docs/screenshots/rd-02-splash-reduced-motion.png (orca screenshot under emulation)
+
+=== diagnostic --force-reduced-motion equivalent: file:///...splash.html?reduced-motion=1 ===
+{
+  "id": "b912b421-4bd2-4d00-8b10-5b114a626bc5",
+  "ok": true,
+  "result": {
+    "result": "{\"search\":\"?reduced-motion=1\",\"dataAttr\":\"true\",\"gasAnimation\":\"none\",\"gasDuration\":\"0s\"}",
+    "origin": "file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html?reduced-motion=1"
+  },
+  "_meta": {
+    "runtimeId": "c20fa0c8-5f1f-4861-b59e-dfcab39cef8c"
+  }
+}
+
+{
+  "id": "5d98e7c9-d772-4bcf-81c8-27a40dda114e",
+  "ok": true,
+  "result": {
+    "closed": true
+  },
+  "_meta": {
+    "runtimeId": "c20fa0c8-5f1f-4861-b59e-dfcab39cef8c"
+  }
+}
+

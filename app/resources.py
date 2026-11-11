@@ -35,3 +35,19 @@ def frontend_index_path() -> Path:
             "Rebuild the packaged application with packaging/build.ps1."
         )
     return path
+
+
+def splash_page_path() -> Path:
+    """Return the absolute path to the local startup splash page.
+
+    The splash is loaded by the native launcher through a ``file://`` URI, so
+    it must exist in the source tree and inside the PyInstaller bundle.
+    """
+
+    path = app_base_dir() / "frontend" / "splash.html"
+    if not path.is_file():
+        raise FileNotFoundError(
+            f"Splash file not found: {path}. "
+            "Rebuild the packaged application with packaging/build.ps1."
+        )
+    return path

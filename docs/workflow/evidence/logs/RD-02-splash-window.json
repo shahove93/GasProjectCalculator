@@ -1,0 +1,138 @@
+{
+  "pid": 22732,
+  "windows": [
+    {
+      "handle": 2557720,
+      "title": "СС.Расчет",
+      "class": "WindowsForms10.Window.8.app.0.aec740_r16_ad1",
+      "visible": true,
+      "outer": [
+        520,
+        320
+      ],
+      "client": [
+        520,
+        320
+      ],
+      "position": [
+        26,
+        26
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 1115984,
+      "title": "СС.Расчет",
+      "class": "WindowsForms10.Window.8.app.0.aec740_r16_ad1",
+      "visible": false,
+      "outer": [
+        1050,
+        740
+      ],
+      "client": [
+        1034,
+        701
+      ],
+      "position": [
+        104,
+        104
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 3147020,
+      "title": "GDI+ Window (python.exe)",
+      "class": "GDI+ Hook Window Class",
+      "visible": false,
+      "outer": [
+        1,
+        1
+      ],
+      "client": [
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 1508408,
+      "title": ".NET-BroadcastEventWindow.4.0.0.0.aec740.0",
+      "class": ".NET-BroadcastEventWindow.4.0.0.0.aec740.0",
+      "visible": false,
+      "outer": [
+        0,
+        0
+      ],
+      "client": [
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 4785502,
+      "title": "MSCTFIME UI",
+      "class": "MSCTFIME UI",
+      "visible": false,
+      "outer": [
+        0,
+        0
+      ],
+      "client": [
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 1836316,
+      "title": "Default IME",
+      "class": "IME",
+      "visible": false,
+      "outer": [
+        0,
+        0
+      ],
+      "client": [
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 4917030,
+      "title": "Default IME",
+      "class": "IME",
+      "visible": false,
+      "outer": [
+        0,
+        0
+      ],
+      "client": [
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    }
+  ]
+}

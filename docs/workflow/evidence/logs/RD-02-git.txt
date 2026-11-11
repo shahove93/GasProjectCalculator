@@ -1,0 +1,56 @@
+﻿CWD: D:\Antigravity\GasProjectCalculator
+## git status --short --branch
+## feature/ss-calculator-redesign
+ M app/desktop_launcher.py
+ M app/resources.py
+ M packaging/GasProjectCalculator.spec
+ M tests/test_desktop_launcher.py
+?? docs/screenshots/rd-02-failure-dialog.png
+?? docs/screenshots/rd-02-main-window.png
+?? docs/screenshots/rd-02-splash-reduced-motion.png
+?? docs/screenshots/rd-02-splash.png
+?? docs/workflow/evidence/RD-02-evidence.md
+?? docs/workflow/evidence/logs/RD-02-browser.txt
+?? docs/workflow/evidence/logs/RD-02-failure-dialog-launcher.txt
+?? docs/workflow/evidence/logs/RD-02-failure-nodialog-launcher.txt
+?? docs/workflow/evidence/logs/RD-02-git.txt
+?? docs/workflow/evidence/logs/RD-02-main-window.json
+?? docs/workflow/evidence/logs/RD-02-main-window.txt
+?? docs/workflow/evidence/logs/RD-02-network.txt
+?? docs/workflow/evidence/logs/RD-02-normal-launcher.txt
+?? docs/workflow/evidence/logs/RD-02-portskip-launcher.txt
+?? docs/workflow/evidence/logs/RD-02-splash-capture.txt
+?? docs/workflow/evidence/logs/RD-02-splash-hold-launcher.txt
+?? docs/workflow/evidence/logs/RD-02-splash-window.json
+?? docs/workflow/evidence/logs/RD-02-suite.txt
+?? docs/workflow/evidence/logs/RD-02-title-size.json
+?? frontend/splash.html
+
+## git rev-parse HEAD
+2703e833c24bc6843299646c2c5d105f134e4990
+
+## HEAD log
+2703e83 docs(workflow): record RD-01 PASS and RD-02 dispatch
+041b13d feat(redesign): compact SS.Raschet UI with circular emblem (RD-01)
+bd91c77 docs(workflow): record RD-01 dispatch IDs
+
+## git diff --shortstat
+ 4 files changed, 342 insertions(+), 59 deletions(-)
+
+## git diff --stat
+ app/desktop_launcher.py             | 311 +++++++++++++++++++++++++++++-------
+ app/resources.py                    |  16 ++
+ packaging/GasProjectCalculator.spec |  11 +-
+ tests/test_desktop_launcher.py      |  63 +++++++-
+ 4 files changed, 342 insertions(+), 59 deletions(-)
+
+## API/calculator diff 041b13d..worktree (must be empty)
+
+## frontend/index.html diff 041b13d..worktree (must be empty)
+
+## allowlist diff 041b13d..worktree
+ app/desktop_launcher.py             | 311 +++++++++++++++++++++++++++++-------
+ app/resources.py                    |  16 ++
+ packaging/GasProjectCalculator.spec |  11 +-
+ tests/test_desktop_launcher.py      |  63 +++++++-
+ 4 files changed, 342 insertions(+), 59 deletions(-)

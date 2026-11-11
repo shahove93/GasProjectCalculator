@@ -1,0 +1,119 @@
+{
+  "pid": 24932,
+  "windows": [
+    {
+      "handle": 1639808,
+      "title": "СС.Расчет",
+      "class": "WindowsForms10.Window.8.app.0.aec740_r16_ad1",
+      "visible": true,
+      "outer": [
+        1050,
+        740
+      ],
+      "client": [
+        1034,
+        701
+      ],
+      "position": [
+        234,
+        234
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 852638,
+      "title": "GDI+ Window (python.exe)",
+      "class": "GDI+ Hook Window Class",
+      "visible": false,
+      "outer": [
+        1,
+        1
+      ],
+      "client": [
+        1,
+        1
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 1049656,
+      "title": ".NET-BroadcastEventWindow.4.0.0.0.aec740.0",
+      "class": ".NET-BroadcastEventWindow.4.0.0.0.aec740.0",
+      "visible": false,
+      "outer": [
+        0,
+        0
+      ],
+      "client": [
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 2688526,
+      "title": "MSCTFIME UI",
+      "class": "MSCTFIME UI",
+      "visible": false,
+      "outer": [
+        0,
+        0
+      ],
+      "client": [
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 6030776,
+      "title": "Default IME",
+      "class": "IME",
+      "visible": false,
+      "outer": [
+        0,
+        0
+      ],
+      "client": [
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    },
+    {
+      "handle": 2033432,
+      "title": "Default IME",
+      "class": "IME",
+      "visible": false,
+      "outer": [
+        0,
+        0
+      ],
+      "client": [
+        0,
+        0
+      ],
+      "position": [
+        0,
+        0
+      ],
+      "dpi": 96
+    }
+  ]
+}

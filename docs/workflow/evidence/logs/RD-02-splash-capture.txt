@@ -1,0 +1,9 @@
+﻿2557720 | class=WindowsForms10.Window.8.app.0.aec740_r16_ad1 | visible=True | title=СС.Расчет | outer=520x320 | client=520x320 | at=26,26
+1115984 | class=WindowsForms10.Window.8.app.0.aec740_r16_ad1 | visible=False | title=СС.Расчет | outer=1050x740 | client=1034x701 | at=104,104
+3147020 | class=GDI+ Hook Window Class | visible=False | title=GDI+ Window (python.exe) | outer=1x1 | client=1x1 | at=0,0
+1508408 | class=.NET-BroadcastEventWindow.4.0.0.0.aec740.0 | visible=False | title=.NET-BroadcastEventWindow.4.0.0.0.aec740.0 | outer=0x0 | client=0x0 | at=0,0
+4785502 | class=MSCTFIME UI | visible=False | title=MSCTFIME UI | outer=0x0 | client=0x0 | at=0,0
+1836316 | class=IME | visible=False | title=Default IME | outer=0x0 | client=0x0 | at=0,0
+4917030 | class=IME | visible=False | title=Default IME | outer=0x0 | client=0x0 | at=0,0
+TARGET: handle=2557720 title=СС.Расчет class=WindowsForms10.Window.8.app.0.aec740_r16_ad1 outer=520x320 client=520x320
+SAVED: D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-02-splash.png (520x320)

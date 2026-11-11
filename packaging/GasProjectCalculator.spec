@@ -7,10 +7,19 @@ from PyInstaller.utils.hooks import collect_submodules
 
 project_root = Path(SPECPATH).resolve().parent
 frontend_index = project_root / "frontend" / "index.html"
+splash_page = project_root / "frontend" / "splash.html"
+frontend_assets = project_root / "frontend" / "assets"
 if not frontend_index.is_file():
     raise SystemExit(f"Missing frontend asset: {frontend_index}")
+if not splash_page.is_file():
+    raise SystemExit(f"Missing splash asset: {splash_page}")
 
-datas = [(str(frontend_index), "frontend")]
+datas = [
+    (str(frontend_index), "frontend"),
+    (str(splash_page), "frontend"),
+]
+if frontend_assets.is_dir():
+    datas.append((str(frontend_assets), "frontend/assets"))
 
 # uvicorn imports its protocol/lifespan implementations lazily.
 hiddenimports = collect_submodules("uvicorn")
