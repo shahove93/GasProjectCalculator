@@ -58,6 +58,41 @@ class CombinedCalculationRequest(BaseModel):
     gsv: GsvParameters
 
 
+class GsvBreakdownResponse(BaseModel):
+    base_price: int
+    length_surcharge: int
+    drilling_cost: int
+    sakz_cost: int
+    panel_cost: int
+    area_surcharge: int
+    subtotal: int
+    vat: int
+    total: int
+
+
+class GsnSectionResponse(BaseModel):
+    base_price: int
+    length_surcharge: int
+    angle_surcharge: int
+    excavator_cost: int
+    hdd_surcharge: int
+    area_surcharge: int
+    grpsh_surcharge: int
+    subtotal: int
+    vat: int
+    total: int
+
+
+class CombinedCalculationResponse(BaseModel):
+    customer_type: Literal["частное лицо", "юридическое лицо"]
+    is_district: bool
+    gsn: GsnSectionResponse
+    gsv: GsvBreakdownResponse
+    subtotal: int
+    vat: int
+    total: int
+
+
 def _gsn_with_vat(customer_type, is_district, gsn):
     breakdown = get_breakdown(
         customer_type,
@@ -95,7 +130,7 @@ def calculate(request: CalculationRequest):
     return {**breakdown, "vat": vat, "total": total}
 
 
-@app.post("/calculate/gsv")
+@app.post("/calculate/gsv", response_model=GsvBreakdownResponse)
 def calculate_gsv(request: GsvCalculationRequest):
     return get_gsv_breakdown(
         request.customer_type,
@@ -108,7 +143,7 @@ def calculate_gsv(request: GsvCalculationRequest):
     )
 
 
-@app.post("/calculate/combined")
+@app.post("/calculate/combined", response_model=CombinedCalculationResponse)
 def calculate_combined(request: CombinedCalculationRequest):
     gsn = _gsn_with_vat(request.customer_type, request.is_district, request.gsn)
     gsv = get_gsv_breakdown(

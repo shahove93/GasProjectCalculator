@@ -372,5 +372,89 @@ class CombinedCalculationTests(unittest.TestCase):
         self.assertEqual(response.status_code, 422, response.text)
 
 
+class ResponseModelTests(unittest.TestCase):
+    def setUp(self):
+        self.client = TestClient(app)
+
+    def assert_int_fields(self, payload, fields):
+        for field in fields:
+            value = payload[field]
+            self.assertIsInstance(value, int, field)
+            self.assertNotIsInstance(value, bool, field)
+
+    def test_gsv_response_has_int_breakdown_fields(self):
+        response = self.client.post("/calculate/gsv", json=gsv_payload())
+
+        self.assertEqual(response.status_code, 200)
+        body = response.json()
+        self.assertEqual(
+            set(body),
+            {
+                "base_price",
+                "length_surcharge",
+                "drilling_cost",
+                "sakz_cost",
+                "panel_cost",
+                "area_surcharge",
+                "subtotal",
+                "vat",
+                "total",
+            },
+        )
+        self.assert_int_fields(body, set(body))
+
+    def test_combined_response_has_int_fields(self):
+        response = self.client.post(
+            "/calculate/combined", json=combined_payload()
+        )
+
+        self.assertEqual(response.status_code, 200)
+        body = response.json()
+        self.assertEqual(
+            set(body),
+            {"customer_type", "is_district", "gsn", "gsv", "subtotal", "vat", "total"},
+        )
+        self.assert_int_fields(body, {"subtotal", "vat", "total"})
+        self.assert_int_fields(
+            body["gsn"],
+            {
+                "base_price",
+                "length_surcharge",
+                "angle_surcharge",
+                "excavator_cost",
+                "hdd_surcharge",
+                "area_surcharge",
+                "grpsh_surcharge",
+                "subtotal",
+                "vat",
+                "total",
+            },
+        )
+        self.assert_int_fields(
+            body["gsv"],
+            {
+                "base_price",
+                "length_surcharge",
+                "drilling_cost",
+                "sakz_cost",
+                "panel_cost",
+                "area_surcharge",
+                "subtotal",
+                "vat",
+                "total",
+            },
+        )
+
+    def test_openapi_exposes_response_schemas_for_gsv_endpoints(self):
+        schema = app.openapi()
+
+        for path in ("/calculate/gsv", "/calculate/combined"):
+            responses = schema["paths"][path]["post"]["responses"]
+            self.assertIn("200", responses, path)
+            content = responses["200"]["content"]["application/json"]
+            self.assertIn("schema", content, path)
+            self.assertTrue(content["schema"], path)
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -118,3 +118,13 @@ FINAL-GSV-04 отсутствуют утверждённые Pydantic-модел
 Решение: переоткрыть GSV-02 (API, R2) для моделей ответа и GSV-03 (UI, R1) для
 состояний/валидации, затем повторные routed review и финальная приёмка.
 Codex final calls: 1 FAIL.
+
+## GSV-02 regression — модели ответа (R2)
+
+2026-11-11: переоткрытый GSV-02 исправлен исполнителем `ctx_b02d931f09b2`:
+добавлены `GsvBreakdownResponse`, `GsnSectionResponse`,
+`CombinedCalculationResponse` и `response_model` на `/calculate/gsv` и
+`/calculate/combined`; `POST /calculate` не тронут. 29 API / 134 suite OK.
+Независимый R2 Codex `ctx_ddd46cfbef19` (gpt-6.1-sol/high, baseline `5f25144`)
+вернул PASS по D1–D6 без findings. Codex calls GSV-02: 3 (1 FAIL + 2 PASS).
+Scoped commit.
