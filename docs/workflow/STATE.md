@@ -1,15 +1,13 @@
 # Состояние проекта
 
-2026-11-11 — этап ГСВ **COMPLETE**; этап Windows installer **COMPLETE**
-(независимый Codex R3 stage acceptance PASS).
+2026-11-11 — этапы ГСВ и Windows installer **COMPLETE** (Codex R3 PASS).
 
 ## ГСВ (принят)
 
-- Ветка `feature/gsv`, baseline `2949223`, продуктовая ревизия `8d2d215`;
-  134 теста OK, 29 API OK; три режима и browser desktop/mobile evidence.
-- GSV-01 R1 PASS; GSV-02 R2 PASS (3 Codex calls); GSV-03 R1 PASS;
-  GSV-04 R0 PASS; FINAL R3 PASS call 2.
-- Отчёт: [FINAL-REPORT](FINAL-REPORT.md); evidence:
+- Ветка `feature/gsv`, baseline `2949223`, ревизия `8d2d215`; 134 теста OK,
+  29 API OK; три режима и browser desktop/mobile evidence.
+- GSV-01 R1 PASS; GSV-02 R2 (3 Codex); GSV-03 R1 PASS; GSV-04 R0 PASS;
+  FINAL R3 PASS call 2. Отчёт [FINAL-REPORT](FINAL-REPORT.md), evidence
   [FINAL-EVIDENCE](evidence/FINAL-EVIDENCE.md).
 
 ## Windows installer (COMPLETE)
@@ -32,9 +30,7 @@
   reviews `WI-0*`/`FINAL-STAGE`; отчёт
   [FINAL-REPORT-WINDOWS-INSTALLER](FINAL-REPORT-WINDOWS-INSTALLER.md).
 - Backlog: `WI02-R1-F1` MINOR; одна машина; unsigned/SmartScreen; WebView2;
-  GUI-маршрут uninstall не прокликан.
-- Push/merge/deploy/release не выполнялись и не разрешены. Активных helper
-  workers нет.
+  GUI-uninstall не прокликан. Push/merge/deploy/release не разрешены.
 
 Ссылки: [история](HISTORY.md), [разрешения](APPROVALS.md),
 [роли](MODEL-ROUTING.md), [brief](WINDOWS-INSTALLER-BRIEF.md).
