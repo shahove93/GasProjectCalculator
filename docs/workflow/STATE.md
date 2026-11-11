@@ -7,7 +7,7 @@ Dispatch IDs, остановка старого coordinator подтвержде
 освобождены, изменения/попытки сохраняются. Старый snapshot:
 [evidence](evidence/REDESIGN-state-pre-recovery.md).
 
-- Branch feature/ss-calculator-redesign, HEAD bd91c77, dirty work RD-01 сохранена.
+- Branch feature/ss-calculator-redesign, HEAD 32e77b1, worktree clean.
 - Parent Run run_8e5d92ad57c7, coordinator TASK task_82bfbabba91b.
 - Старый coordinator ctx_2af249de822a: stopped/exited/released.
 - Child Run run_8de25272cf66 (координатор привязан через run-use), RD-01 task_527858dbf289.
@@ -19,12 +19,13 @@ Dispatch IDs, остановка старого coordinator подтвержде
   NIT backlog F1–F3 не блокируют.
 - RD-02 window+splash (R2): baseline `041b13d`, A1/C1; implementer
   ctx_b89935976cc0 succeeded/released. Evidence RD-02-evidence.md + 4 снимка.
-- RD-02 **PASS** Codex R2 ctx_66502b51d130 (task_f3daf8be58f6,
-  `gpt-6.1-sol` high), released; finding IDs нет; review record
-  [RD-02-review](reviews/RD-02-review.md). Codex calls 1/4.
-- RD-03 RU installer (R2): baseline после RD-02 commit, A1/C1, Codex sol high,
-  reserve ≤4/3M; implementer dispatch pending.
-- Next owner: scoped commit RD-02, затем RD-03 implementer.
+- RD-02 **PASS** Codex R2 ctx_66502b51d130 (`gpt-6.1-sol` high), released;
+  finding IDs нет; review [RD-02-review](reviews/RD-02-review.md).
+  Codex calls 1/4. RD-02 **ACCEPTED**, scoped commit `32e77b1`.
+- RD-03 RU installer (R2): baseline `32e77b1`, A1/C1, Codex sol high,
+  reserve ≤4/3M. Implementer ctx_e4488f57f75b, task_52e983ff51d0
+  (OpenCode Flash, term_e70ef6bf) running.
+- Next owner: RD-03 implementer; затем Codex R2 review.
 - Frozen TASK RD-01..04/FINAL в docs/workflow/tasks; обычный routed review.
 - :8000 PID12888 не трогать; :8123 проверочный server старого coordinator.
 - Цель: СС.Расчет, компактный вариант 1, круглая эмблема, русская заставка и

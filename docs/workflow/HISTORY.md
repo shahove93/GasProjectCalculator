@@ -375,3 +375,15 @@ busy 8000→127.0.0.1:8001 и освобождение порта, suite 163 OK,
 диагностический failure, WebView2 ~0,57 s, packaged splash — в RD-03; права на
 эмблему — ранее зафиксированный риск. Codex calls RD-02: 1; R2 full reviews 1,
 failed 0. Reviewer освобождён. Next owner — scoped commit RD-02 и dispatch RD-03.
+
+RD-02 закоммичен scoped-коммитом `32e77b1` (launcher/resources/spec/tests,
+`frontend/splash.html`, 4 native-снимка, evidence/logs, review, STATE/HISTORY).
+Для RD-03 (полностью русский Inno Setup, ярлык `СС.Расчет`, publisher
+`ООО «Северное сияние»`, per-user без UAC, x64, optional Desktop, reinstall/
+uninstall с сохранением user files, пересборка packaged app+installer,
+SHA256, реальные скриншоты) заморожен checklist `docs/workflow/tasks/RD-03.md`,
+baseline `32e77b1`, A1/C1, R2, резерв Codex ≤4/3M. Запущен implementer
+`ctx_e4488f57f75b` (`task_52e983ff51d0`, OpenCode Flash, term_e70ef6bf);
+поручено сохранить прежний installer artifact, использовать проверенный
+локальный Inno Setup 6.4.1 и не трогать :8000/:8138. Next owner — дождаться
+worker_done и отправить пакет на Codex R2 review.
