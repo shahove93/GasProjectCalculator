@@ -1,0 +1,1 @@
+{"detail":[{"type":"literal_error","loc":["body","customer_type"],"msg":"Input should be 'частное лицо' or 'юридическое лицо'","input":"INVALID","ctx":{"expected":"'частное лицо' or 'юридическое лицо'"}}]}

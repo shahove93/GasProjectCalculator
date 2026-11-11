@@ -260,3 +260,74 @@ Pro), RD-02/RD-03 R2 (Codex `gpt-6.1-sol` high), RD-04/FINAL-VERIFY R0
 зарезервированы в STATE. Product code не менялся; пользовательский сервер :8000
 не затрагивался. Next owner — координатор: scoped commit документов и dispatch
 RD-01 через реального Orca worker.
+
+## Пользователь разрешил восстановление координатора
+
+Ответ «Разрешаю» на конкретную остановку зависшего coordinator и запуск новой
+попытки той же задачи. ctx_2af249de822a worker-stop: stopped,
+closed_agent_terminal/ptyKilled=true; worker-show process_stopped/exited.
+Старый coordinator и обе остановленные RD-01 попытки ctx_66fd60974141,
+ctx_eeb0ad4b83cb освобождены worker-release= released. Файлы и прежние counters
+сохранены. Snapshot в evidence/REDESIGN-state-pre-recovery.md;
+REDESIGN-RECOVERY.md задаёт remaining work и handoff. Старый suite evidence
+152 tests OK, EXIT=0 не повторять без оснований. Новый coordinator возобновляет
+тот же task_82bfbabba91b, без нового logical TASK/Run/approach.
+
+## 2026-11-11 — RD-01: координатор привязан к child Run и продолжение dispatch
+
+Новый OpenCode/DeepSeek Flash координатор прочитал APPROVALS, STATE, VISION,
+ARCHITECTURE, ROADMAP, MODEL-ROUTING, recovery/handoff, skills и references,
+`orca skills get orchestration` и coordinator-loop; привязался к существующему
+child Run `run_8de25272cf66` через `run-use` (не новый Run/TASK). Ветка
+`feature/ss-calculator-redesign` HEAD `bd91c77`; dirty RD-01 работа сохранена.
+Запущен реальный Orca worker продолжения того же logical TASK: dispatch
+`ctx_6bc08bbe6a19`, `task_527858dbf289`, agent opencode, requested model
+`deepseek/deepseek-flash`, term_31df04d3. A1/C1, verdict NOT_REVIEWED; прежние
+счётчики не сброшены. Задача worker: browser verification трёх viewport,
+три эталонных режима, 422, reduced motion, network/asset provenance, полный
+`RD-01-evidence.md`; без commit и без project PASS. :8000 PID12888 не тронут;
+добавлять ничего вне allowlist нельзя. Next owner — дождаться worker_done и
+отправить пакет независимому OpenCode Pro R1 review.
+
+По запросу родительского координатора сверено владение: `worker-release`
+для ctx_66fd60974141 и ctx_eeb0ad4b83cb вернул already_released
+(terminal captured, processAction none) — активного старого writer нет.
+Факт по ресурсам: :8123 сейчас не слушает (listener только :8000 PID12888,
+не тронут), поэтому worker запускает собственный диагностический backend на
+свободном порту ≠8000 с логами в workspace. Handoff подтверждён родителю
+новым Dispatch ctx_6bc08bbe6a19; новый logical TASK/Run не создавался,
+A1/C1 и counters сохранены.
+
+## 2026-11-11 — RD-01: реализация/evidence завершены, запущен независимый R1 review
+
+OpenCode/DeepSeek Flash реализатор `ctx_6bc08bbe6a19` завершил `worker_done
+succeeded`, сохранив реализацию прежних попыток и закрыв browser-remainder на
+диагностическом backend `127.0.0.1:8138` (собственный сервер не поднимал;
+случайный :8137 остановлен; :8000 PID12888 не тронут). Результаты: три режима
+125000/6250/131250, 100500/5025/105525, 139000/6950/145950; viewport
+1050×740/860×620/390×844 без horizontal scroll; 422 видим; reduced motion;
+внешних ресурсов нет; `app/` не изменён; suite reuse 152 OK EXIT=0; 12 реальных
+скриншотов и `RD-01-evidence.md`. Emblem provenance: source SHA256
+`86B79EFD…98AB`, product asset `C3DCBA6D…F4DC`, 146×146, без wordmark;
+остаточный риск по корпоративным правам зафиксирован без выдуманной лицензии.
+Worker освобождён (released). Для независимой приёмки R1 запущен отдельный
+OpenCode Pro reviewer `ctx_edd1a2ae92e9` (`task_696412840fc3`, term_863f5dff).
+A1/C1, полных review пока 0/2; counters не сброшены. Next owner — дождаться
+вердикта reviewer и сохранить review record; PASS→scoped commit RD-01.
+
+## 2026-11-11 — RD-01 R1 PASS (независимый OpenCode Pro)
+
+Независимый OpenCode Pro reviewer `ctx_edd1a2ae92e9` (`task_696412840fc3`,
+effective `deepseek/deepseek-v4-pro`, term_863f5dff) вернул **PASS** по
+R1-1..R1-11 без BLOCKER/MAJOR; файлов не менял, повторных прогонов не делал
+(evidence полный, reuse rule). Подтверждены: заголовок/подпись, круглая
+эмблема 146×146 без wordmark с исходным фиолетовым, тёмно-синяя шапка/pipe/
+teal, три viewport без horizontal scroll, три эталонных режима
+125000/6250/131250, 100500/5025/105525, 139000/6950/145950, очистка режимов
+и видимый 422, отсутствие внешних ресурсов, `app/` zero diff, suite 152 OK,
+reduced motion. Findings только NIT: F1 stale git listing двух layout-PNG,
+F2 mojibake в 422 JSON, F3 дублирующиеся примечания в browser log — backlog,
+не блокируют. Остаточный риск по правам на эмблему зафиксирован. R1 full
+reviews 1/2, failed 0, Codex calls 0. Review record:
+`docs/workflow/reviews/RD-01-review.md`. Reviewer освобождён. Next owner —
+scoped commit RD-01 и dispatch RD-02 (R2, Codex sol high).

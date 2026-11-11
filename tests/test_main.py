@@ -12,7 +12,7 @@ class CalculateApiTests(unittest.TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertIn("text/html", response.headers["content-type"])
-        self.assertIn("GasProjectCalculator", response.text)
+        self.assertIn("СС.Расчет", response.text)
 
     def test_calculate(self):
         client = TestClient(app)

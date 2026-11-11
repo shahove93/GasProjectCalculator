@@ -1,0 +1,3 @@
+INFO:     127.0.0.1:57195 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62747 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64983 - "GET /favicon.ico HTTP/1.1" 404 Not Found

@@ -1,0 +1,121 @@
+﻿RD-01 browser evidence (real Orca browser, Chromium)
+CWD: D:\Antigravity\GasProjectCalculator
+Date: 2026-11-12
+Backend for checks: coordinator-provided diagnostic server http://127.0.0.1:8138 (PID 23152 on port 8138).
+User server :8000 PID 12888 was not touched. No new backend was started for these checks.
+Earlier accidental :8137 diagnostic backend (PID 7804 / cmd 23920) was started by this worker and then stopped; it was never :8000.
+
+=== Tab ===
+orca tab create --url http://127.0.0.1:8138/
+browserPageId: 1dcb2508-25a1-4e2b-833b-c5132e5147ec
+orca goto --url http://127.0.0.1:8138/ -> "Navigated to http://127.0.0.1:8138/ — СС.Расчет"
+
+=== R1-1 title / header text (DOM) ===
+$ orca eval --expression "JSON.stringify({title:document.title,h1:document.querySelector('h1')?.textContent,sub:document.querySelector('.brand-subtitle')?.textContent,w:innerWidth,h:innerHeight,scrollW:document.documentElement.scrollWidth,clientW:document.documentElement.clientWidth})"
+{"title":"СС.Расчет","h1":"СС.Расчет","sub":"Калькулятор ГСН и ГСВ","w":1085,"h":1280,"scrollW":1085,"clientW":1085}
+
+$ orca exec --command "set viewport 1050 740"
+{"deviceScaleFactor":1,"height":740,"mobile":false,"width":1050}
+$ orca eval --expression "JSON.stringify({vw:innerWidth,vh:innerHeight,scrollW:document.documentElement.scrollWidth,clientW:document.documentElement.clientWidth,title:document.title})"
+{"vw":1050,"vh":740,"scrollW":1035,"clientW":1035,"title":"СС.Расчет"}
+
+Screenshot: docs/screenshots/rd-01-1050x740-initial.png
+
+=== R1-3 header visual tokens (computed) ===
+$ orca eval --expression "JSON.stringify({topbarBg,topbarBgColor,subtitleColor,activeModeBg,pipeStroke,headerPresent})"
+{"topbarBg":"linear-gradient(120deg, rgb(10, 23, 37) 0%, rgb(11, 31, 51) 46%, rgb(18, 58, 82) 100%)","topbarBgColor":"rgba(0, 0, 0, 0)","subtitleColor":"rgb(94, 234, 212)","activeModeBg":"rgb(15, 118, 110)","pipeStroke":"#5eead4","headerPresent":true}
+Desktop screenshots: rd-01-1050x740-initial.png, rd-01-gsn-result-1050x740.png, rd-01-gsv-result-1050x740.png, rd-01-combined-result-1050x740.png
+
+=== R1-5 GSN 14 m, 2 angles, 4 h excavator, district, legal entity ===
+Steps: mode ГСН; customer_type=юридическое лицо; is_district=checked; length=14; angles=2; excavator_hours=4; submit.
+$ orca eval read after submit:
+{"mode":"gsn","title":"Расчёт стоимости — ГСН","base":"85 000 ₽","subtotal":"125 000 ₽","vat":"6 250 ₽","total":"131 250 ₽","gsnVisible":"block","gsvVisible":"none","combinedVisible":"none","error":"none"}
+Detail rows: base 85 000; length surcharge 12 000; angle surcharge 6 000; excavator 15 000; district 7 000.
+Expected 125000/6250/131250 -> MATCH.
+Screenshot: docs/screenshots/rd-01-gsn-result-1050x740.png
+
+=== R1-6 GSV 8 m, Ø25, 2 holes, SAKZ 1 + panel, district, individual ===
+Steps: switch mode ГСВ; customer_type=частное лицо; length=8; diameter=25; holes=2; sakz_sets=1; panel=checked; district already checked; submit.
+$ orca eval read after submit:
+{"mode":"gsv","base":"60 000 ₽","subtotal":"100 500 ₽","vat":"5 025 ₽","total":"105 525 ₽","gsnVisible":"none","gsvVisible":"block","combinedVisible":"none","error":"none"}
+Detail rows: base 60 000; length 7 500; drilling 8 000; SAKZ 14 000; panel 4 000; district 7 000.
+Expected 100500/5025/105525 -> MATCH.
+Screenshot: docs/screenshots/rd-01-gsv-result-1050x740.png
+
+=== R1-7 Combined GSN 10 m no options + GSV 5 m Ø25 no options, district ===
+Steps: switch mode ГСН + ГСВ; GSN length=10, angles=0, excavator_hours=0, hdd off, hammer off, grpsh off; GSV length=5, diameter=25, holes=0, sakz=0, panel disabled/off; district checked; submit.
+$ orca eval read after submit:
+{"mode":"combined","gsnTotal":"75 600 ₽","gsvTotal":"70 350 ₽","subtotal":"139 000 ₽","vat":"6 950 ₽","total":"145 950 ₽","gsnVisible":"none","gsvVisible":"none","combinedVisible":"block","error":"none"}
+Expected 139000/6950/145950 -> MATCH.
+Screenshot: docs/screenshots/rd-01-combined-result-1050x740.png
+
+=== R1-8 mode switching clears stale result ===
+GSN -> GSV after GSN result:
+{"mode":"gsv","title":"Расчёт стоимости — ГСВ","calcInfo":"block","gsnVisible":"none","gsvVisible":"none","combinedVisible":"none","oldTotal":"131 250 ₽","gsvTotal":"—"}
+(GSN total remains in hidden DOM only; no result container is displayed.)
+GSV -> Combined after GSV result:
+{"mode":"combined","title":"Расчёт стоимости — ГСН + ГСВ","calcInfo":"block","gsnVisible":"none","gsvVisible":"none","combinedVisible":"none"}
+Combined -> GSN before 422 test: same pattern, calcInfo block and all three result containers "none".
+No stale foreign result is shown on switch.
+
+=== R1-8 visible 422 error ===
+Method: selected an injected extra select option value (invalid customer_type) so client-side field validation passes and the server is reached; submitted GSN form.
+$ orca eval after submit:
+{"errorDisplay":"block","errorText":"Тип заказчика: допустимы только «частное лицо» или «юридическое лицо»","calcInfo":"block","resultsVisible":["none","none","none"]}
+Screenshot: docs/screenshots/rd-01-422-error-1050x740.png
+HTTP status proof (same payload, invalid customer_type):
+$ curl --data-binary @docs/workflow/evidence/logs/RD-01-422-payload.json -H "Content-Type: application/json" -X POST http://127.0.0.1:8138/calculate
+HTTP=422
+Response body saved: docs/workflow/evidence/logs/RD-01-422-response.json
+(detail[0].type = literal_error, loc = ["body","customer_type"])
+
+=== R1-4 responsive measurements ===
+1050x740:
+{"vw":1050,"vh":740,"scrollW":1035,"clientW":1035,"hScroll":false,"btn":{"left":45,"right":505,"width":460},"total":{"left":840,"right":971,"width":131},"gridColumns":"509.766px 461.219px"}
+860x620:
+{"vw":860,"vh":620,"scrollW":845,"clientW":845,"hScroll":false,"btn":{"left":45,"right":800,"width":755},"total":{"left":650,"right":781,"width":131},"gridColumns":"805px"}
+390x844:
+{"vw":390,"vh":844,"scrollW":375,"clientW":375,"hScroll":false,"btn":{"left":26,"right":349,"width":323},"total":{"left":41,"right":146,"width":105},"gridColumns":"355px"}
+All: hScroll=false; submit button and total amount fully inside viewport width; layout collapses to one column at 860 and 390.
+Screenshots: rd-01-860x620-header.png, rd-01-860x620-result.png, rd-01-390x844-header.png, rd-01-390x844-result.png
+
+=== R1-11 reduced motion (emulated) ===
+$ orca set media --reduced-motion reduce
+$ orca eval --expression "JSON.stringify({media:matchMedia('(prefers-reduced-motion: reduce)').matches,pipeAnimationName,pipeAnimationDuration,transitionDuration})"
+{"media":true,"pipeAnimationName":"none","pipeAnimationDuration":"0s","transitionDuration":"1e-06s"}
+Screenshot: docs/screenshots/rd-01-reduced-motion-1050x740.png
+Reset afterwards: orca set media --reduced-motion no-preference
+
+=== R1-9 network resources / local assets ===
+$ orca eval --expression "JSON.stringify({resources:performance.getEntriesByType('resource').map(e=>e.name),imgSrcPrefix,imgAlt,imgComplete,naturalWidth,naturalHeight,title,h1,subtitle})"
+{"resources":["http://127.0.0.1:8138/calculate","http://127.0.0.1:8138/calculate/gsv","http://127.0.0.1:8138/calculate/combined","http://127.0.0.1:8138/calculate","http://127.0.0.1:8138/calculate"],"imgSrcPrefix":"data:image/png;base64,iVBORw0KGg","imgAlt":"Эмблема ООО «Северное сияние»","imgComplete":true,"naturalWidth":146,"naturalHeight":146,"title":"СС.Расчет","h1":"СС.Расчет","subtitle":"Калькулятор ГСН и ГСВ"}
+Only same-origin calculation API requests. Emblem is an inline data:image/png URI (146x146), not an external request.
+Static grep of frontend/index.html for https?://, @import, fonts.googleapis, cdn. -> no matches.
+
+=== Screenshot capture note for 860/390 result ===
+Orca agent-browser viewport screenshots taken after scrolling a long page at 860/390
+rendered the newly exposed upper tiles as blank (compositor/tile artifact), while
+window.scrollY and element rects were correct. No such artifact at 1050 or at scroll 0.
+Therefore the result evidence for 860/390 uses real agent-browser element captures
+(screenshot #result-card, screenshot .layout) plus the measured rects above.
+Files: rd-01-860x620-layout.png (805x1328), rd-01-860x620-result.png (805x334),
+rd-01-390x844-layout.png (355x1307), rd-01-390x844-result.png (355x339).
+The .layout captures include the submit button and the result card in the same render.
+At 390 the amount right edge measured 349 px, card right 365 px, viewport client 375 px
+-> no horizontal clipping; at 860 measured amounts are within the 845 px client width.
+Mobile result shown: GSN 10 m -> 65 000 / 3 250 / 68 250 (responsive smoke value, not a frozen benchmark case).
+=== Screenshot capture note for 860/390 result ===
+Initially, Orca agent-browser viewport screenshots taken after scrolling a long page at
+860/390 painted the newly exposed upper tiles blank (browser compositor/tile artifact),
+while window.scrollY and element rects were correct. Setting body.style.overflowX='visible'
+at runtime (screenshot only; product CSS unchanged) removed the artifact. The final
+viewport screenshots below are real 390x844 / 860x620 captures showing the submit button
+and the result total together. Supplementary element captures were also saved.
+Files:
+- rd-01-390x844-result.png — 390x844 viewport, submit button + GSN result 65 000 / 3 250 / 68 250
+- rd-01-860x620-result.png — 860x620 viewport, submit button + same result
+- rd-01-390x844-header.png / rd-01-860x620-header.png — scroll 0 header/form captures
+- rd-01-390x844-layout.png (355x1307) / rd-01-860x620-layout.png (805x1328) — full .layout element captures
+At 390 the amount right edge measured 349 px, card right 365 px, viewport client 375 px
+-> no horizontal clipping; at 860 the same result is inside the 845 px client width.
+

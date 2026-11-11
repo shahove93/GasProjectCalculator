@@ -3,57 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GasProjectCalculator — Расчёт стоимости газовых работ</title>
+    <title>СС.Расчет</title>
     <style>
         :root {
-            --accent: #1f6fb2;
-            --accent-dark: #175a93;
-            --accent-light: #e8f1f9;
-            --text: #1e2a38;
-            --text-muted: #5b6b7b;
-            --bg: #f3f6f9;
+            --navy: #0b1f33;
+            --navy-2: #123a52;
+            --navy-3: #0a1725;
+            --teal: #2dd4bf;
+            --teal-bright: #5eead4;
+            --accent: #0f766e;
+            --accent-dark: #115e59;
+            --accent-light: #e6fbf7;
+            --text: #182838;
+            --text-muted: #5a6b7c;
+            --bg: #eef3f7;
             --card: #ffffff;
-            --border: #dfe6ee;
+            --border: #dce6ee;
             --error-bg: #fdeeec;
             --error-border: #f3c1bb;
             --error: #b3372a;
-            --shadow: 0 10px 30px rgba(23, 57, 89, 0.08);
+            --shadow: 0 12px 34px rgba(11, 31, 51, 0.10);
             --radius: 16px;
         }
         * { box-sizing: border-box; }
         html, body { margin: 0; padding: 0; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            background: var(--bg);
+            background:
+                radial-gradient(circle at 12% -10%, rgba(45, 212, 191, 0.14), transparent 42%),
+                radial-gradient(circle at 92% 0%, rgba(18, 58, 82, 0.10), transparent 38%),
+                var(--bg);
             color: var(--text);
             line-height: 1.5;
+            min-height: 100vh;
             overflow-x: hidden;
         }
+        [hidden] { display: none !important; }
         .container { max-width: 1180px; margin: 0 auto; padding: 24px 20px 48px; }
 
-        header.hero { text-align: center; padding: 40px 0 34px; }
-        .hero h1 {
-            font-size: 42px; font-weight: 800; letter-spacing: -0.5px;
-            color: #14273a; margin: 0 0 6px;
+        /* ---------- Compact dark-navy header with gas-pipe motif ---------- */
+        .topbar {
+            background: linear-gradient(120deg, var(--navy-3) 0%, var(--navy) 46%, var(--navy-2) 100%);
+            color: #f2f8fb;
+            border-bottom: 1px solid rgba(94, 234, 212, 0.28);
+            box-shadow: 0 10px 30px rgba(8, 22, 37, 0.22);
         }
-        .hero .subtitle { font-size: 21px; font-weight: 600; color: var(--accent); margin: 0 0 8px; }
-        .hero .desc { color: var(--text-muted); font-size: 15px; max-width: 560px; margin: 0 auto; }
+        .topbar-inner {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 22px;
+        }
+        .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+        .brand-emblem {
+            flex: 0 0 auto;
+            width: 64px; height: 64px;
+            padding: 5px;
+            border-radius: 50%;
+            background: #f4f8fb;
+            box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.30), 0 8px 20px rgba(0, 0, 0, 0.28);
+            display: grid; place-items: center;
+        }
+        .brand-emblem img { width: 100%; height: 100%; display: block; }
+        .brand-text { min-width: 0; }
+        .brand-title {
+            margin: 0;
+            font-size: clamp(26px, 3.4vw, 38px);
+            font-weight: 800;
+            letter-spacing: -0.4px;
+            line-height: 1.05;
+            color: #ffffff;
+        }
+        .brand-subtitle {
+            margin: 4px 0 0;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--teal-bright);
+            letter-spacing: 0.01em;
+        }
+        .pipe-art {
+            flex: 0 1 340px;
+            width: 100%;
+            max-width: 340px;
+            height: auto;
+            min-width: 140px;
+            display: block;
+        }
+        .pipe-flow { animation: none; }
 
-        .layout { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; }
+        /* ---------- Layout ---------- */
+        .layout { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; padding-top: 24px; }
 
         .card {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: var(--radius);
             box-shadow: var(--shadow);
-            padding: 26px;
+            padding: 24px;
         }
         .card h2 {
-            font-size: 20px; font-weight: 700; color: #14273a;
-            margin: 0 0 16px; padding-bottom: 14px;
+            font-size: 19px; font-weight: 700; color: var(--navy);
+            margin: 0 0 16px; padding-bottom: 13px;
             border-bottom: 1px solid var(--border);
         }
-        .card.result-card { border-top: 4px solid var(--accent); }
+        .card.result-card { border-top: 4px solid var(--teal); }
 
         .section-label {
             font-size: 12px; font-weight: 700; text-transform: uppercase;
@@ -71,22 +127,23 @@
         .field select {
             width: 100%; padding: 10px 12px; font-size: 15px;
             border: 1px solid var(--border); border-radius: 10px;
-            background: #fbfcfe; color: var(--text);
+            background: #fbfdff; color: var(--text);
             transition: border-color 0.15s, box-shadow 0.15s;
         }
         .field input[type="number"]:focus,
         .field select:focus {
             outline: none; border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(31, 111, 178, 0.18);
+            box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.18);
         }
-        .field input[type="number"]:disabled { background: #eef1f5; color: #8a96a3; cursor: not-allowed; }
+        .field input[type="number"]:disabled { background: #eef2f6; color: #8a96a3; cursor: not-allowed; }
 
         .segment { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
         .segment.three { grid-template-columns: repeat(3, 1fr); }
         .segment button {
-            padding: 11px; border-radius: 10px; cursor: pointer;
+            padding: 11px 8px; border-radius: 10px; cursor: pointer;
             border: 1px solid var(--border); background: #fff;
             font-size: 15px; color: #33455a; font-weight: 500;
+            min-width: 0;
             transition: background 0.15s, border-color 0.15s, color 0.15s;
         }
         .segment button:hover { border-color: var(--accent); color: var(--accent); }
@@ -94,7 +151,7 @@
             background: var(--accent); border-color: var(--accent);
             color: #fff; font-weight: 600;
         }
-        .segment button:focus-visible { outline: 3px solid rgba(31, 111, 178, 0.4); outline-offset: 2px; }
+        .segment button:focus-visible { outline: 3px solid rgba(45, 212, 191, 0.45); outline-offset: 2px; }
 
         .toggle-row {
             display: flex; align-items: center; justify-content: space-between;
@@ -109,7 +166,7 @@
             opacity: 0; width: 100%; height: 100%; cursor: pointer;
         }
         .switch .track {
-            position: absolute; inset: 0; background: #cdd7e1;
+            position: absolute; inset: 0; background: #cbd8e2;
             border-radius: 999px; transition: background 0.2s;
             pointer-events: none;
         }
@@ -123,7 +180,7 @@
         .switch input:checked + .track::after { transform: translateX(20px); }
         .switch input:disabled + .track { background: #e2e8ef; }
         .switch input:disabled + .track::after { opacity: 0.6; }
-        .switch input:focus-visible + .track { box-shadow: 0 0 0 3px rgba(31, 111, 178, 0.35); }
+        .switch input:focus-visible + .track { box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.42); }
 
         .btn {
             display: block; width: 100%; margin-top: 10px;
@@ -132,40 +189,43 @@
             cursor: pointer;
             transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
         }
-        .btn:hover { background: var(--accent-dark); box-shadow: 0 6px 18px rgba(31, 111, 178, 0.28); }
-        .btn:focus-visible { outline: 3px solid rgba(31, 111, 178, 0.4); outline-offset: 2px; }
+        .btn:hover { background: var(--accent-dark); box-shadow: 0 8px 20px rgba(15, 118, 110, 0.30); }
+        .btn:focus-visible { outline: 3px solid rgba(45, 212, 191, 0.5); outline-offset: 2px; }
         .btn:active { transform: translateY(1px); }
         .btn:disabled { opacity: 0.65; cursor: default; box-shadow: none; }
 
         .cost-line {
             display: flex; justify-content: space-between; align-items: baseline;
-            padding: 6px 0; font-size: 15px; color: #33455a;
+            gap: 12px; padding: 6px 0; font-size: 15px; color: #33455a;
         }
-        .cost-line .amount { font-variant-numeric: tabular-nums; font-weight: 600; color: #1e2a38; }
+        .cost-line .amount { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--text); white-space: nowrap; }
         .cost-line.base .amount { font-weight: 700; }
         .divider { border-top: 1px solid var(--border); margin: 12px 0; }
         .subtotal-line {
             display: flex; justify-content: space-between; align-items: baseline;
-            padding: 6px 0; font-size: 15px; color: #33455a;
+            gap: 12px; padding: 6px 0; font-size: 15px; color: #33455a;
         }
-        .subtotal-line .amount { font-variant-numeric: tabular-nums; font-weight: 700; color: #1e2a38; }
+        .subtotal-line .amount { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--text); white-space: nowrap; }
         .result-section + .result-section { margin-top: 4px; }
         .section-total {
             display: flex; justify-content: space-between; align-items: baseline;
-            padding: 8px 0 2px; font-size: 15px; font-weight: 700; color: var(--accent-dark);
+            gap: 12px; padding: 8px 0 2px; font-size: 15px; font-weight: 700; color: var(--accent-dark);
         }
-        .section-total .amount { font-variant-numeric: tabular-nums; font-weight: 700; }
+        .section-total .amount { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
 
         .total-block {
             margin-top: 16px; padding: 14px 18px;
-            background: var(--accent-light); border: 1px solid #cfdff0;
+            background: linear-gradient(120deg, var(--accent-light), #f3fffc);
+            border: 1px solid #bfe9e2;
             border-radius: 12px;
             display: flex; justify-content: space-between; align-items: center; gap: 12px;
+            flex-wrap: wrap;
         }
         .total-block .label { font-size: 16px; font-weight: 700; color: var(--accent-dark); }
         .total-block .amount {
-            font-size: 34px; font-weight: 800; letter-spacing: -0.5px;
-            color: #0f4c81; font-variant-numeric: tabular-nums;
+            font-size: 32px; font-weight: 800; letter-spacing: -0.5px;
+            color: var(--navy); font-variant-numeric: tabular-nums;
+            overflow-wrap: anywhere;
         }
         .result-hint { color: var(--text-muted); font-size: 14px; margin: 10px 0 0; }
         #calc-info {
@@ -183,38 +243,88 @@
             from { opacity: 0; transform: translateY(6px); }
             to { opacity: 1; transform: none; }
         }
-        .result-card.flash .cost-line,
-        .result-card.flash .subtotal-line,
-        .result-card.flash .section-total,
-        .result-card.flash .total-block {
-            animation: fadeUp 0.3s ease;
+        @keyframes pipeFlow {
+            from { stroke-dashoffset: 0; }
+            to { stroke-dashoffset: -96; }
+        }
+        @media (prefers-reduced-motion: no-preference) {
+            .pipe-flow { animation: pipeFlow 5s linear infinite; }
+            .result-card.flash .cost-line,
+            .result-card.flash .subtotal-line,
+            .result-card.flash .section-total,
+            .result-card.flash .total-block {
+                animation: fadeUp 0.3s ease;
+            }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *,
+            *::before,
+            *::after {
+                animation-duration: 0.001ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.001ms !important;
+                scroll-behavior: auto !important;
+            }
+            .pipe-flow { animation: none !important; }
         }
 
-        @media (max-width: 920px) {
+        @media (max-width: 960px) {
             .layout { grid-template-columns: 1fr; }
-            .hero h1 { font-size: 30px; }
-            .hero .subtitle { font-size: 18px; }
+            .container { padding-top: 20px; }
+        }
+        @media (max-width: 720px) {
+            .topbar-inner { flex-wrap: wrap; gap: 12px; padding: 14px 16px; }
+            .brand-emblem { width: 54px; height: 54px; }
+            .pipe-art { max-width: 100%; flex-basis: 100%; order: 3; min-width: 0; }
+            .container { padding: 18px 14px 36px; }
+            .card { padding: 18px; }
         }
         @media (max-width: 480px) {
-            .container { padding: 16px 12px 32px; }
-            .card { padding: 18px; }
-            .hero { padding: 24px 0 22px; }
-            .hero h1 { font-size: 25px; }
-            .hero .subtitle { font-size: 16px; }
-            .total-block .amount { font-size: 27px; }
+            .container { padding: 14px 10px 30px; }
+            .card { padding: 15px; }
+            .brand-emblem { width: 46px; height: 46px; padding: 4px; }
+            .brand-title { font-size: 24px; }
+            .brand-subtitle { font-size: 13px; }
+            .segment button { font-size: 13px; padding: 10px 5px; }
+            .total-block { padding: 12px 14px; }
+            .total-block .amount { font-size: 26px; }
             .total-block { flex-direction: column; align-items: flex-start; }
-            .segment.three { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header class="hero">
-            <h1>GasProjectCalculator</h1>
-            <p class="subtitle">Расчёт стоимости газовых работ</p>
-            <p class="desc">Предварительный расчёт стоимости работ по газификации</p>
-        </header>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <div class="brand">
+                <span class="brand-emblem">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJIAAACSCAYAAACue5OOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABQDSURBVHhe7Z1dqG1VFcf3Q9BD0EMPPQRBEPRUhCKECJXcokghiQuFQUJUYERQURFBEoQPRVBxb5IoiX1wMcEKyxALySgpQysuloUJF/Wmmamp3dul4rdxHeYZZ64xxpxrfu199h/++HH23muuucYc33Ou1eoQ4vnn//OSB+5//Lw7b//L0Ruu+fXnvnjVT6+76hO3fe/jH7jljisvv+nu973z2yff/bYb/nrpRdf+48h5x86+/Q3XPHPZm687/d5Lbnzg/Ue/e99Hrrj5rk9d+cMff/6Tt534ytV3HrvlxO8//Nu7Tx157PQzr5TX2mFL8PfHnn3FHT/60+U8cATl6Fu+eeri1x8796bXfe1/NYjQIWwI2Xeuv+fTf7j30YvOnfvvi+S4dhgcTz/175ehaRAcNIt80D2IcKHBEKw/nvzbBXLMOwyC0488/SpMFJqgprYpRUwmpvQXP3vwsp226oxn/3X2pbfefPKD+CubIDxzxPdCe+40VWPg1OJ/vPWCrz8nH8qmE1OM+XvyiedeLu97h0LA7/nQe078Rk7+NpJFcvxLd315FwUWAv7DT35w/xW1nGZCe0J6HGHMy7Vf/eXVaATCea6L8KIBf/Xzhy4h8uP/83c+x+e/8Jnbv4VpxeeRv12CR84/fobUBD6gnJsdHECA8H94yHJyc/mui69/BJN40433fgzBOPXQk68p6egSLRLqM260CamGUuYXgUdoGbO87g4z4GEQfcnJTCUJRVYzmqXXAzh75tyL0WhoMBKdCIQcZwrRUPwWCVV5rR1eACuaB78kAkN40AajRkBEmoT8hP5LtBX3ye/I3z/0wBzk+hmYLITn5O8evVD+7shg4WBml2hffLud/7RarTA5qHw5QR7igGO2MB/ydzcN1P1w3nO0MZqNAED+5qEBEdE7LvzGP+XEWMSJxVmWv7cNWKqd0HLyN7cWaBBWn5wIiwgQK1f+3jYBR1redwopSBOsyN/dOjx86qlXp646TNi2aiAJIjx5/2jtFMecyHCrTV2qKaMGRQKwZK5ndKCtpdDgNzEPn/3ord+Xc6QRU0eUKK+x0SA6SXEkSQNs3SQ4gQDI+SAyxf9BMxP6y7/PEe1PP5a8xkYixe6jhQ57foRFJ+cFopH4O8lIFpr8+xwRvF4J2WJIuWEmalf1Xq1Ipsq5mUi+bfocC86be2OBjpqkVYGtJ3srbyhGfIJwgg47MEVyjibSaRlqFz5LNCs/FyPfxZnff7WBgRB5bw7bLzPSTA6OOSZxqq5TvGUiEDpCXNpJ0GBoPDoj77vn4Tdui1POfWj+JD6U/Lw3ncL8bUwE7I0ucATpt2EiuDmEAsGSn/OSiJBro902vY/HMlkxzcJ9U9SVn5VEmIbPNXl9Ih44Np7PW5OWQ3IpmNaN9AtWq5XVf8UilN8BaGbPfPKZB//8xGvl94cAJkYOOEYesudmSxEzG1vBI8Ojmefuiey/5/u4CMNpbhJmcqCjEYEabuJm4Olbkr5SCBxyT74JzTdMfQ4TpTmHIxE/io4BeQ8jgRSIHHeMzLmWH2LReDpM6b7o3kFB7Syl7DEKa+eseDAEECQX6ZWaoks0t7XzFkGX450jvym/H4LnQw5Jfk+SqE9+txmYLM+uDsJ3eqUh6pj/xllktXCTvbQZqp+Jlve1BDiw3CepCnm9kPydYCAWijM/8vNz5LPy+xL4TJ7FTspFfrcJPLmLKa2vARuN48jqxY/x+AeliFNaInqhbIHmyRk7Y0BjEb4jhPLvGrmepybJ/MpisCTCVnphmfD4RWidnCZ1BAsTQFQhf7MGiSCXpAlIoFrhek16a5NoHOuZYWGa+Uv0CFvhOyZraS8xN5RS8F1CVmOOZkKIPA5tTab4N/Qpye9Lolnl96rAsuGlM6ethAkNmrIacdZ7CxHU0gAxxNpUQqK15nJUxeCJKDBL8ntLQIgrr1GLKavRWwqqTcyRHJsGXAfLbWCBpCyqJODUWRnT1NXhAU6ovE4telejZ0G1IkIhx2eBUooVGFRr17WiNPym0t14mA9LeEuTB6OtRla0J5xuRVwJOUYPrJIWKYqlfu4BkIuwJLhGHsLbjlKamnm2HkAPelIAMVj+rid9kwRrEyP5D/mdpej5wObMBekMT6a4NTUNqsGjIGJJ0yxwnIv88ZCYtNKFP48Nr82Yr2TNRQ9iguQ4U0CAIX8zJI63/E4WrGQbGWn5naUYIayO5We8/VYtOac9vfAEUYvdFrKm8kdD8sC1AmQOrGu2IgtIjs0Km3twrsktBZamXXwNqyjrTc+nwHIAW5FUQFjiwXzLz4zAUikXa96zfaXY9uGQRFTyO0vRMvnoYdjvM9rYJpL53z+LecAvlb8dkoBLfscFS0KXFDrn0DL56GG4w8Wa6F7M1hQRWM88FoCoYALlj4T09MHkwEp6tma4WKgfyr/3Jua3ZMSMUMprhEy2QlZ0UsM3Aqn9OLUZ9niPaNqKheYBtNNiEFx3tpvkllYCqDH4CaMUQiGTFib6RnS2YymKpSDUl9cJ6a7BWT+klQ+WwtKELRkLeUfIb4WsdfCYdp+xtEgUmlYgi53T9ejF3EkcPRiLhthCLj/XizFBLwWrPGUGWlTbtdJEDVUawnLyW1KeSQCsxF1L1rQM+EFaW64pB5ZGIASW3ykNz8a+2pxrFsNnstqMWxAftmS0FoOWCqBwrVY0tC8vrel4YanVFtRyM1aRswXdDu8CWDm92ZwSvo9m1lLaUJeAImLPVg0rg9u7sa1qG2wAnoO2hSnmQ65hJaNiPkMtWKuhFmnJ8OwmsVyAmtS0ZWlogdec+VdVdiuzFsLa7VCD3nMB8A80N6AW2Z0rx1IT2uEgs5sztUo/Ya/8fG14djuUJDksOQYN9Ke3NME8n5qplxjQznIcIQ9UOHhoWrjX64xHbqTFw0KI1ChkBiQEW0RxLKjSGyu80JreDvjNVjOZdnxKbSBMNTXTrNPoBMJUU9h7n66mJWEPJEU1/wiJ3PfhDmA1lvZJeEClNC3F3dLjg0SQ7iJpJWiBD1Zsn5+keeetHbw5YHqIlpaG3jiJZGZLJ/QYHzmwpeObyBhbhPkWOKFEji3kvnKJVqSr0dy/BJRxeGCp5gTNysOpbSYYHxpe8y00Yi5ahvgeaOc9UTZaf4iVpCUiR7upCYybkg0+Dn1MmAF8Ke4FIZvO4ubvJQ+1SAHZX8/JvWgxfJFR51qL6Pd8TKthq/nhS1sK/CiSurTpoOXxPfj32hqyBLSGw73NsVrExurOCYt32C5o9c+9yE07fKlmN+QONljEkybDjKO9ah6iOgetfWbvEAutK7HUnikviKQYNCuAcXF9OvKw0TSe4yxvwysiNCAw3CftNHO+K4480TQmsoVgkSuTYwi5fh7aW4zMBqYCYBCpB5GSv8C53osYNhxoHupaOZEeGgFHvWZR3epXX/t5WnHUOsd5CRAgtI7nRSwa0Vi9orISILKzzlfwkMXFwq9Rj0PQ5fVCrudfy8jWaKCa8ixar0sqmcSlpY4eqHE+JkJZo6SlPa91k5u2j6l0X3DKWw9zSCi6CVEmGWuthrWUNV5YoyWA16eVaD3S3v4cC0wcalfrMCjFUUo6GrSSVCmimUqWWLTqx1pONA1xoN8kAyQ0Na1XgyObOS0nU5olfVztGa4tl+bszjZ4O4GtrtkCorHEIigNSiAttPJE/JpSfUymL11LkAgJc8LZUuTa0VbQTsDM9FhUpbSSdjDsWpA005Z75FurzkaLLfJgXvTaMFCqOqFppLVp05ztnMYvklfab7Yk2rZ09JIDNKO2YGuzhHnTOgDWzrbmROX0ImkJzh480FfcAVqXYQsu9Rf5vpZHWlsuTWWl2teWEYmXI7QK915cS/KBPFMrQFj70tpNpvgYFButC/ZiizML5oBZ0wKaFkxVCIBSizdpui6RaEXblP1smg3tzRqlHi+sQ11bMNW8Eyyl1P/WRVutjcT7LoqR3hYUY89sd2//CKZYFsyg5g/FuA5otMa2A/uWIkAF9siPpNBzH7VQozCbSs+7YjBP1jtnYtxrbFNbbc8/fsYqgvbKj6Swx9kFE7x+Rk1qCwnTi+XR/FstINv7bav532pOT7GlvcguDTnuVtBch5actmJBSjX4TVohdiLBmHYPe9rO2o6kdSFaLZijsKdGGsG05RKzRdFdC6T2Fcg1ydQq6dpW75Goqfba0I6GGZ1T2kBzvvcpGq0/RtsAMLqTPVG7h9rQfNCRSZmLQrPl+uzbsq1pljmzwOEG8rOjMichVwqbYv4lp12/2lakA4dIWKsmtuXFOipwJC5phymBTdHcE8O8k+ZoH3AZcg7aGrGuFiMRW42dFSnQNP5oJJcUpny0To5oxlzzzGMZbq20MhJTsroAoaOazfe4b+aF3ioEkqCEiebecaK95yKM+GalGClwp7zIJ9pVoK0ajjWRjeTe/BGpBR6IVhyuRbSs930dTArj1CKUGBEuhMrSelq7zgiMnQynRZyzh5FaPo88csXTqMUkhw+ydRbcU3Tmvko8ZFYz5Sa54CawE1ZzH3oSRRHbqatF87PHI1sHtksToX0WIkSxzjxtcCXJ5MSuP4HVVGMsTPCcydMc117EZMfabLIPbAdaTSVMAyB08u8hGdzcZPJwSx2Pp1Hbk4eW1JKwS8n9xfwHHo7XJWhB5kCaswlWR4caCVumZ0o+IQzybyG1sgrAma2p5rXVwsR5zPJSorFjwkQqZQRhQhtr52hqu0bMl9pYr9maDjXXDqj09v7USh9oB6+zAFrmdDANMbPRU5hYRJq2BsyTttClmxOF5jcwMUjxnEai7WTOpMVQssWCBWBtVtBWWS1i5mI7WXAPiJS1B1aSPDuup2mhCVqPGjRf/AesV5FykTkfySWpAlrawUuirtjKD6Gl+mtTaywjWioRNc4RDYSpjwlzDJgsLQnpfhWp9XJkTEOs9YT/9g5WAl9CG/wcGQu5DtVed9zlGtISdJxXNLQWKXnJvWLiUQpz6Yg5eBSJ/M4srDCVi0mHdWmFnRvGNGkZdkhYz4SrUYOANTktaL0HbgKmh/GiqfmOJVj8nUXI/DN/c1GYF9r8Y4aT3kRgvVuWNIEMn2MRSi4YLIlCtA1OOasAB5FJsrRPDD2y6jEmPYQXwP3ik3LvlFqYF/6JLxrNLC8AWlOOOSQ+pvyOCS2nBMPT4Mnq5jzgFljvK1Mi0ZZMMgsdYC24FCuwh5T9WDlOdiuk3Edtes1bD1jaaNHYNXsZMktSG8EKZVsSzSjHNwqsZy1rrUmwGt4gTveoZg1YgUNrxpoEe8NKjRxoYMuBlYHVciQjQEuw9qC3raUViJat1EvuOVn7YEkrGkmrsveGFTS05iITUQFWqarUQV1rWFt5l+aQamI0QSqyugsB7WidlFJU8NcXNELoJWfw1MRops1Vp2oA/FqrNBNrsV4MQnx5oZDklVIKtq0wmrNdOomYC8uk8TxzEqgmmADrlFrMiPxeb4y0ZZo+Hjm+HvCYtKrJU6trrvoAMmAFCy2ZVWIoDM9hsTjYqcXeZFjOK5I+ih8ArC01LWl1jraAVQahMNskwYzdlJV/SVT4SP6S1hbTiiPUIy2/CEY3PdYCGW+rsw/16OnGa4ERIrfeJt/zzCiTVDdpElYUB8k/WRsHW6C3n4Q70FMb0XZi9TVpO3+qAsm1Cn2wSi4iEdYerZrEpPXM/Ht3zXRNlCLBHv9jhDaTHuYN817jbY5e8HyslA0c4fm4bC/seUYRsPptSpPoqKePSP+87GKNEfejuV80B+2wgZBNI4IIrNRFCdItUbQ+lQG0oJUrmsbaU9ij8ISWkMb9Xo6ndVBGLkl3cF/WTpEW8L4nr8Z7b4vBW9dC7feK5kppJYQHDTtS8pXozONYx46wGQ5ep5YH2kOtMoFWnclitYLmAnCqnue+iF7XL6EZHThu3q3RqNceN7W0kDtScRo3wZPTgwhRb/8tCQiT92hA+pxaZ30Zn9WLo3GUKj75Ke+iRYs2qaHVgNdngq3DZU/NUGPvhxLb7TxHBH8kXy4LKWYEU9fyAXEtq/Nzjr3MG0FKygIlDdAzKVoU7En3JC0nsjOlVVkBJzVlbCGtc4ZKI/WwDcx3q3lsBlSxp5wykc8igC1yThR1czQTfkeL1U6+xxsNT8RVGKWttzio/aQ6uXy+RWSHoOcUdmtmhxEEEr3hOQsWewQvXUDE5A1XQxKd1Pafcg8ppQui5OrHD0IYvM70xF7plK5INXUTcXJr5kIQiJwjCUskWPk+AuQpcUi2jnqHAv6FtflyjmgBfJtapRa0X6oZxhHOCbMx+WjpFBM2EXN8KEyZB0ROqWp8IlqNcLhWwZTILCVS4sHGXgIkgebjtzHZuVEjWmi0Uk13oJYRiNxJhTxwnNMaBUlMcUrBF/MotSXCw++Q3shx7CdynyVPyNtK4CymmpQY8TN4YGiHkr3ICCnCikm2hJ77wERiehDCnBRDSIqyJHilgO4wA3JHCEBOBDVHVjFagofKasY/W5qjItnHOHPeqpRCBJCxt8hZbSV40PgR1hlNuWSF89sIAs4uqx1tQ8cn18UMoVGIEvl3/h+CQ6KUXiQ0HpqGsHuptomR8WHud35QQfAgPbtWtoHTKf3DdjBuA9AQS53VUYl2xPSOeDzg1oIICDODabGc3pFJiwdmNSf/tENh4EPg2xAlbYJQkTOj8Q+nf6nDv0MlTK9gYJXXctJTScaa5CFma6d5NhSE6JRSECyyyERYNbUWQoNmxI9DcMiL7bTOloKEHpV+NBcmkRAbU4OgkWhEk5F3wgQR1iMc+DLktRAS/DI0DMKCgJIuIAg4zFHW/wFbuSZqWTplfgAAAABJRU5ErkJggg==" alt="Эмблема ООО «Северное сияние»">
+                </span>
+                <div class="brand-text">
+                    <h1 class="brand-title">СС.Расчет</h1>
+                    <p class="brand-subtitle">Калькулятор ГСН и ГСВ</p>
+                </div>
+            </div>
+            <svg class="pipe-art" viewBox="0 0 360 72" fill="none" aria-hidden="true" focusable="false">
+                <defs>
+                    <linearGradient id="pipeGrad" x1="0" y1="0" x2="360" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.10"/>
+                        <stop offset="0.45" stop-color="#2dd4bf"/>
+                        <stop offset="1" stop-color="#5eead4" stop-opacity="0.12"/>
+                    </linearGradient>
+                </defs>
+                <path d="M4 52h74a12 12 0 0 0 12-12v-8a12 12 0 0 1 12-12h128a12 12 0 0 0 12-12V8"
+                      stroke="url(#pipeGrad)" stroke-width="6" stroke-linecap="round"/>
+                <path class="pipe-flow" d="M4 52h74a12 12 0 0 0 12-12v-8a12 12 0 0 1 12-12h128a12 12 0 0 0 12-12V8"
+                      stroke="#5eead4" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10" opacity="0.9"/>
+                <circle cx="90" cy="40" r="5.5" fill="#0b1f33" stroke="#5eead4" stroke-width="2.5"/>
+                <circle cx="242" cy="20" r="5.5" fill="#0b1f33" stroke="#5eead4" stroke-width="2.5"/>
+                <circle cx="4" cy="52" r="3.5" fill="#5eead4"/>
+                <circle cx="354" cy="8" r="3.5" fill="#2dd4bf"/>
+            </svg>
+        </div>
+    </header>
 
+    <div class="container">
         <section class="layout">
             <div class="card form-card">
                 <h2>Параметры объекта</h2>

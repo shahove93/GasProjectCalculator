@@ -1,0 +1,39 @@
+CWD: D:\Antigravity\GasProjectCalculator
+Branch: feature/ss-calculator-redesign
+HEAD: bd91c77b285fd3dcd99e179534a21a9fe0bd4fb8
+Product baseline: e24d806
+
+git status --short:
+ M docs/workflow/HISTORY.md
+ M docs/workflow/STATE.md
+ M frontend/index.html
+ M tests/test_main.py
+?? assets/
+?? docs/screenshots/rd-01-1050x740-initial.png
+?? docs/screenshots/rd-01-390x844-header.png
+?? docs/screenshots/rd-01-390x844-result.png
+?? docs/screenshots/rd-01-422-error-1050x740.png
+?? docs/screenshots/rd-01-860x620-header.png
+?? docs/screenshots/rd-01-860x620-result.png
+?? docs/screenshots/rd-01-combined-result-1050x740.png
+?? docs/screenshots/rd-01-gsn-result-1050x740.png
+?? docs/screenshots/rd-01-gsv-result-1050x740.png
+?? docs/screenshots/rd-01-reduced-motion-1050x740.png
+?? docs/workflow/REDESIGN-RECOVERY.md
+?? docs/workflow/evidence/REDESIGN-state-pre-recovery.md
+?? docs/workflow/evidence/logs/RD-01-422-payload.json
+?? docs/workflow/evidence/logs/RD-01-422-response.json
+?? docs/workflow/evidence/logs/RD-01-suite.txt
+?? docs/workflow/evidence/logs/RD-01-uvicorn-8137.err.txt
+?? docs/workflow/evidence/logs/RD-01-uvicorn-8137.out.txt
+?? docs/workflow/evidence/logs/RD-01-uvicorn.err.txt
+?? docs/workflow/evidence/logs/RD-01-uvicorn.out.txt
+?? frontend/assets/
+?? tests/test_frontend_redesign.py
+
+git diff --stat e24d806 -- app tests frontend/index.html:
+warning: in the working copy of 'frontend/index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/test_main.py', LF will be replaced by CRLF the next time Git touches it
+ frontend/index.html | 230 ++++++++++++++++++++++++++++++++++++++--------------
+ tests/test_main.py  |   2 +-
+ 2 files changed, 171 insertions(+), 61 deletions(-)
