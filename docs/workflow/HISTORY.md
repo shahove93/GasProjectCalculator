@@ -149,3 +149,75 @@ API 29 OK, browser desktop/mobile и регрессии подтверждены
 Единственный NIT — README указывал 131 тест вместо 134 — исправлен в том же
 docs-only изменении. Оформлены `docs/workflow/FINAL-REPORT.md` и статус
 COMPLETE. Все workers освобождены; push/merge/deploy не выполнялись.
+
+## 2026-11-11 — запуск этапа Windows installer
+
+Пользователь явно подтвердил «Да, сделай». ARCHITECTURE/ROADMAP hashes и границы
+зафиксированы в APPROVALS. Подготовлен bounded brief; docs планирования изменены,
+продуктовый код нет. Orca 1.4.250 ready. До запуска — main worktree
+feature/gsv, HEAD 22133a1, только намеренные изменения AGENTS/ARCHITECTURE/
+README/ROADMAP. Координатор должен создать feature/windows-installer, сохранить
+пользовательский сервер и пройти routed checks до финальной приёмки.
+
+## 2026-11-11 — preflight и TASK-пакет Windows installer
+
+Ветка `feature/windows-installer` создана от `feature/gsv` HEAD `22133a1`;
+worktree текущий, все намеренные planning-правки сохранены uncommitted, второго
+writer нет. Подтверждена поддержка технологий: Python 3.12.4, WebView2
+157.0.4341.42, PyInstaller 6.22.3 и pywebview 6.2.1 доступны для установки в
+`.venv` (pin), Inno Setup 6 portable ISCC найден в
+`C:\Users\user\AppData\Local\Temp\edr-windows-build\inno\ISCC.exe`; admin не
+требуется, системная установка не нужна. Пользовательский uvicorn на :8000
+остаётся нетронутым. Заморожены TASK records `docs/workflow/tasks/WI-01..03`:
+WI-01 packaging/window (R2, ≤4 Codex calls/3M), WI-02 installer (R2, ≤4/3M),
+WI-03 docs (R0), FINAL R3 (≤6/5M). Next owner — OpenCode coordinator: dispatch
+WI-01 implementer `deepseek/deepseek-flash`, затем независимый R2 review.
+
+## 2026-11-11 — WI-01 C1 PASS и scoped commit
+
+WI-01 реализован OpenCode Flash (`ctx_447b9d0b2a16`, `task_48f15f0c1cb3`):
+PyInstaller onedir + pywebview, loopback-only выбор порта, readiness-gate,
+in-process shutdown, native error dialog, hook'и `--port-file`/`--auto-close-seconds`;
+12 launcher-тестов; suite 146 OK; artifact SHA256 `36A2198…77CC`. Независимый R2
+Codex `gpt-6.1-sol` high (`ctx_9db90733ecc1`, `task_4980bfc17b32`) вернул **PASS**
+без findings: W1–W5/W7–W9 по evidence, W10 по diff; для W6 выполнен один
+разрешённый bounded recheck на собранном exe (GSN/GSV/combined 200, суммы
+совпали). Reviewer не менял файлы; исходные хэши совпали. Codex calls WI-01: 1.
+Scoped commit `7fab960` содержит только product/evidence/task/review records;
+planning docs остаются uncommitted. Next owner — WI-02 implementer.
+
+## 2026-11-11 — WI-02 C1 PASS и scoped commit
+
+WI-02 реализован OpenCode Flash (`ctx_ba47202b5ed0`, `task_350718a368b4`):
+per-user Inno Setup installer (`PrivilegesRequired=lowest`, HKCU), Start Menu
+shortcut, optional Desktop task, silent install/uninstall, user markers.
+Artifact `installer/Output/GasProjectCalculator-Setup-1.0.0.exe`, 15 256 037
+bytes, SHA256 `2973278F…428F`. Toolchain deviation: указанный portable ISCC
+неполон (нет `ISCmplr.dll`); build script проверил кандидатов и использовал
+локальный полный Inno Setup 6.4.1 без системной установки. Независимый R2 Codex
+`gpt-6.1-sol` high (`ctx_5ec0b1f12577`, `task_57bb5b55d7aa`) — **PASS**, I1–I12
+по evidence, без BLOCKER/MAJOR; один MINOR backlog `WI02-R1-F1`
+(`installer/verify-runtime.ps1` cleanup path). Codex calls WI-02: 1. Scoped
+commit `144a75c`. Next owner — WI-03 docs implementer.
+
+## 2026-11-11 — WI-03 R0 PASS и scoped commit
+
+WI-03 выполнен OpenCode Flash (`ctx_a98297a25356`, `task_1aeb67e09150`):
+README получил раздел «Установка на Windows» с точным путём/размером/SHA256
+артефакта, per-user каталогом, необязательным ярлыком Desktop, предупреждением
+о неподписанном артефакте, localhost/close-to-stop, удалением, журналом и
+ссылками на evidence; developer-раздел сохранён отдельно. R0 принят
+координатором по D1–D5: artifact hash перепроверен, README соответствует
+WI-01/WI-02 evidence; false claims нет. Codex calls WI-03: 0. Scoped commit
+`9eaed0a`. Next owner — FINAL verification, затем Codex R3 stage acceptance.
+
+## 2026-11-11 — FINAL verification (R0) PASS
+
+OpenCode Flash (`ctx_ddea24ab3dd2`, `task_98720142e516`) провёл интегрированную
+проверку без product change: `git diff 144a75c..9eaed0a` — только README и
+evidence/review; artifact 15 256 037 байт, SHA256 `2973278F…428F` совпал;
+полный suite `146 tests OK`, exit 0; user uvicorn `0.0.0.0:8000` PID 12888 не
+тронут; README указывает точный artifact и сохраняет developer path. Составлен
+[FINAL-WINDOWS-INSTALLER-EVIDENCE](../evidence/FINAL-WINDOWS-INSTALLER-EVIDENCE.md)
+с картой frozen checklist и NOT_RUN. R0 принят координатором; Codex calls 0.
+Next owner — Codex R3 stage acceptance `gpt-6-astra` high.

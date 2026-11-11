@@ -1,0 +1,22 @@
+﻿COMMAND: git rev-parse --abbrev-ref HEAD; git rev-parse HEAD; git rev-parse 144a75c; git rev-parse 9eaed0a
+CWD: D:\Antigravity\GasProjectCalculator
+DATE: 2026-11-11
+BRANCH: feature/windows-installer
+HEAD: 9eaed0a1c58c07ae2ec55e1c8d02eec3a4b30fa8
+WI-01 7fab960: 7fab9606ae4f704fe82cafa1caa1e4091b175533
+WI-02 144a75c: 144a75c2b54c1393fdb005d96cee2303bcf07dd1
+WI-03 9eaed0a: 9eaed0a1c58c07ae2ec55e1c8d02eec3a4b30fa8
+
+COMMAND: git diff 144a75c..9eaed0a --stat
+ README.md                                | 79 +++++++++++++++++++++++++---
+ docs/workflow/evidence/WI-03-evidence.md | 88 ++++++++++++++++++++++++++++++++
+ docs/workflow/reviews/WI-03-review.md    | 36 +++++++++++++
+ 3 files changed, 196 insertions(+), 7 deletions(-)
+
+COMMAND: git diff 144a75c..9eaed0a --name-only
+README.md
+docs/workflow/evidence/WI-03-evidence.md
+docs/workflow/reviews/WI-03-review.md
+
+COMMAND: git diff 144a75c..9eaed0a --name-only -- app packaging installer tests requirements.txt requirements-desktop.txt
+<no files in app/packaging/installer/tests/requirements>

@@ -1,0 +1,25 @@
+﻿CWD: D:\Antigravity\GasProjectCalculator
+DATE: 2026-11-11
+COMMAND: Get-NetTCPConnection -LocalPort 8000 -State Listen
+
+
+LocalAddress  : 0.0.0.0
+LocalPort     : 8000
+State         : Listen
+OwningProcess : 12888
+
+
+
+
+COMMAND: Get-CimInstance Win32_Process -Filter ProcessId=<pid>
+
+
+ProcessId   : 12888
+Name        : python.exe
+CommandLine : "C:\Users\user\AppData\Local\Programs\Python\Python312\python.exe" -m uvicorn app.main:app --host 0.0.0.0
+               --port 8000 
+
+
+
+
+NOTE: This is the user's pre-existing developer uvicorn; it was not started, stopped or modified by this verification.

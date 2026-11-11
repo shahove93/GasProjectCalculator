@@ -1,0 +1,24 @@
+﻿CWD: D:\Antigravity\GasProjectCalculator
+DATE: 2026-11-11
+COMMAND: Test-Path -LiteralPath installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+RESULT: True
+COMMAND: Get-Item -LiteralPath installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+
+
+FullName      : D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+Length        : 15256037
+LastWriteTime : 11.11.2026 19:01:53
+
+
+
+
+COMMAND: Get-FileHash -LiteralPath installer\Output\GasProjectCalculator-Setup-1.0.0.exe -Algorithm SHA256
+
+
+Algorithm : SHA256
+Hash      : 2973278F47A4A2A479177B12A4C4CCA01ED59D1CA8D2D9CE107C4E7A2E37428F
+Path      : D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+
+
+
+

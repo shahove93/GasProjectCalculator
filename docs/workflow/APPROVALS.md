@@ -39,3 +39,15 @@ SHA256 утверждённых файлов до любых дальнейши�
 
 Новые запросы на старт/переход каждого согласованного TASK не нужны.
 Push, merge, deployment и важное удаление не разрешены.
+
+## Утверждение Windows installer
+
+2026-11-11 пользователь подтвердил: «Да, сделай» в ответ на предложение
+установщика Windows с ярлыком и отдельным окном. Утверждены ARCHITECTURE и
+ROADMAP по их SHA256: ARCHITECTURE.md
+259604B43CE8628EE896BFA13594EFC7171D0F8684A8C719D41826446E7A3375;
+ROADMAP.md 78796A2CF592FA03275318B6881B1326622E8151C9544E16D881005315F0FA7F.
+Scope: Windows x64, Python app packaged для запуска без Python/CLI, native window,
+ярлыки, local-only backend, lifecycle; чистая установка, 3 режима, uninstall без
+удаления пользовательских файлов. Без update/cloud/telemetry/signing/push/merge/
+GitHub Release. Installer передаётся локально. VISION ГСВ не меняется.
