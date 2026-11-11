@@ -84,3 +84,17 @@ effective gpt-6.1-sol/high, baseline HEAD `67952b1`) вернуло PASS по B1
 findings нет, `GSV02-R2-01` закрыт; продуктовый diff только `app/main.py`
 (+90/−1) и `tests/test_gsv_api.py`, suite 131 OK. Codex calls по TASK: 2
 (1 FAIL + 1 PASS), в пределах R2-резерва. Scoped commit, GSV-02 принят.
+
+## TASK GSV-03 — интерфейс трёх режимов (R1)
+
+2026-11-11: первая попытка исполнителя (`ctx_5a8bcf2f5789`) изменила
+`frontend/index.html` (+587/−82), но зависла без worker_done; координатор
+остановил её и запустил продолжение того же логического TASK (`ctx_513a316e9b89`,
+parented task). Продолжение провело реальную browser verification через Orca
+browser: desktop ГСН 105000/5250/110250, ГСВ 100500/5025/105525, combined
+75600/70350 и 139000/6950/145950; mobile 390×844, fits=true; ПК при САКЗ 0/1/0;
+ошибка diameter 58; смена режима очищает результат. 6 скриншотов и
+`docs/workflow/evidence/GSV-03-browser.md`; suite 131 OK. Независимый R1
+OpenCode Pro (`ctx_d7c8f160505f`, effective DeepSeek V4 Pro) вернул PASS по
+C1–C8; один NIT (в combined 422 не добавляет суффикс ГСВ к GSV-полям) — backlog.
+Scoped commit, GSV-03 принят.

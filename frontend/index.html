@@ -62,6 +62,9 @@
         }
         .section-label:first-of-type { margin-top: 0; }
 
+        .mode-group { padding-top: 4px; }
+        .mode-group + .mode-group { border-top: 1px solid var(--border); margin-top: 18px; }
+
         .field { margin-bottom: 14px; }
         .field .label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; color: #33455a; }
         .field input[type="number"],
@@ -79,6 +82,7 @@
         .field input[type="number"]:disabled { background: #eef1f5; color: #8a96a3; cursor: not-allowed; }
 
         .segment { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .segment.three { grid-template-columns: repeat(3, 1fr); }
         .segment button {
             padding: 11px; border-radius: 10px; cursor: pointer;
             border: 1px solid var(--border); background: #fff;
@@ -145,6 +149,12 @@
             padding: 6px 0; font-size: 15px; color: #33455a;
         }
         .subtotal-line .amount { font-variant-numeric: tabular-nums; font-weight: 700; color: #1e2a38; }
+        .result-section + .result-section { margin-top: 4px; }
+        .section-total {
+            display: flex; justify-content: space-between; align-items: baseline;
+            padding: 8px 0 2px; font-size: 15px; font-weight: 700; color: var(--accent-dark);
+        }
+        .section-total .amount { font-variant-numeric: tabular-nums; font-weight: 700; }
 
         .total-block {
             margin-top: 16px; padding: 14px 18px;
@@ -175,6 +185,7 @@
         }
         .result-card.flash .cost-line,
         .result-card.flash .subtotal-line,
+        .result-card.flash .section-total,
         .result-card.flash .total-block {
             animation: fadeUp 0.3s ease;
         }
@@ -192,6 +203,7 @@
             .hero .subtitle { font-size: 16px; }
             .total-block .amount { font-size: 27px; }
             .total-block { flex-direction: column; align-items: flex-start; }
+            .segment.three { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -208,6 +220,13 @@
                 <h2>Параметры объекта</h2>
 
                 <form id="calculate-form">
+                    <p class="section-label">Режим расчёта</p>
+                    <div class="segment three" id="mode-segment" role="group" aria-label="Режим расчёта">
+                        <button type="button" class="mode-btn active" data-mode="gsn">ГСН</button>
+                        <button type="button" class="mode-btn" data-mode="gsv">ГСВ</button>
+                        <button type="button" class="mode-btn" data-mode="combined">ГСН + ГСВ</button>
+                    </div>
+
                     <p class="section-label">Заказчик</p>
                     <div class="field">
                         <span class="label">Тип заказчика</span>
@@ -216,38 +235,6 @@
                             <option value="юридическое лицо">Юридическое лицо</option>
                         </select>
                     </div>
-
-                    <p class="section-label">Параметры трассы</p>
-                    <div class="field">
-                        <label class="label" for="length">Длина, м</label>
-                        <input id="length" type="number" min="0" step="1" value="0">
-                    </div>
-                    <div class="field">
-                        <label class="label" for="angles">Количество углов</label>
-                        <input id="angles" type="number" min="0" step="1" value="0">
-                    </div>
-
-                    <p class="section-label">Способ прокладки</p>
-                    <div class="segment">
-                        <button type="button" id="seg_open" class="active">Открытый способ</button>
-                        <button type="button" id="seg_hdd">ГНБ</button>
-                    </div>
-                    <input id="hdd" type="checkbox" style="display:none;">
-
-                    <p class="section-label">Техника</p>
-                    <div class="field">
-                        <label class="label" for="excavator_hours">Часы экскаватора</label>
-                        <input id="excavator_hours" type="number" min="0" step="1" value="0">
-                    </div>
-                    <div class="toggle-row">
-                        <span>Использовать гидромолот</span>
-                        <label class="switch">
-                            <input type="checkbox" id="hydraulic_hammer">
-                            <span class="track"></span>
-                        </label>
-                    </div>
-
-                    <p class="section-label">Дополнительные условия</p>
                     <div class="toggle-row">
                         <span>Объект в районе</span>
                         <label class="switch">
@@ -255,12 +242,73 @@
                             <span class="track"></span>
                         </label>
                     </div>
-                    <div class="toggle-row">
-                        <span>Есть ГРПШ</span>
-                        <label class="switch">
-                            <input type="checkbox" id="has_grpsh">
-                            <span class="track"></span>
-                        </label>
+
+                    <div class="mode-group" id="group-gsn">
+                        <p class="section-label">ГСН · Параметры трассы</p>
+                        <div class="field">
+                            <label class="label" for="length">Длина, м</label>
+                            <input id="length" type="number" min="0" step="1" value="0">
+                        </div>
+                        <div class="field">
+                            <label class="label" for="angles">Количество углов</label>
+                            <input id="angles" type="number" min="0" step="1" value="0">
+                        </div>
+
+                        <p class="section-label">Способ прокладки</p>
+                        <div class="segment">
+                            <button type="button" id="seg_open" class="active">Открытый способ</button>
+                            <button type="button" id="seg_hdd">ГНБ</button>
+                        </div>
+                        <input id="hdd" type="checkbox" style="display:none;">
+
+                        <p class="section-label">Техника</p>
+                        <div class="field">
+                            <label class="label" for="excavator_hours">Часы экскаватора</label>
+                            <input id="excavator_hours" type="number" min="0" step="1" value="0">
+                        </div>
+                        <div class="toggle-row">
+                            <span>Использовать гидромолот</span>
+                            <label class="switch">
+                                <input type="checkbox" id="hydraulic_hammer">
+                                <span class="track"></span>
+                            </label>
+                        </div>
+
+                        <p class="section-label">Дополнительные условия ГСН</p>
+                        <div class="toggle-row">
+                            <span>Есть ГРПШ</span>
+                            <label class="switch">
+                                <input type="checkbox" id="has_grpsh">
+                                <span class="track"></span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="mode-group" id="group-gsv">
+                        <p class="section-label">ГСВ · Параметры</p>
+                        <div class="field">
+                            <label class="label" for="gsv-length">Длина, м</label>
+                            <input id="gsv-length" type="number" min="0" step="1" value="0">
+                        </div>
+                        <div class="field">
+                            <label class="label" for="gsv-diameter">Диаметр, мм</label>
+                            <input id="gsv-diameter" type="number" min="1" max="57" step="1" value="25">
+                        </div>
+                        <div class="field">
+                            <label class="label" for="gsv-holes">Алмазное бурение, отверстий</label>
+                            <input id="gsv-holes" type="number" min="0" step="1" value="0">
+                        </div>
+                        <div class="field">
+                            <label class="label" for="gsv-sakz">Комплекты САКЗ</label>
+                            <input id="gsv-sakz" type="number" min="0" step="1" value="0">
+                        </div>
+                        <div class="toggle-row">
+                            <span>ПК (пульт контрольный)</span>
+                            <label class="switch">
+                                <input type="checkbox" id="gsv-panel">
+                                <span class="track"></span>
+                            </label>
+                        </div>
                     </div>
 
                     <button type="submit" class="btn" id="submit-btn">Рассчитать стоимость</button>
@@ -268,9 +316,10 @@
             </div>
 
             <div class="card result-card" id="result-card">
-                <h2>Расчёт стоимости</h2>
+                <h2 id="result-title">Расчёт стоимости — ГСН</h2>
                 <p id="calc-info">Укажите параметры объекта и нажмите «Рассчитать стоимость»</p>
-                <div id="result" style="display: none;">
+
+                <div id="result-gsn" style="display: none;">
                     <div class="cost-line base">
                         <span>Базовая стоимость</span>
                         <span class="amount" id="base_price">—</span>
@@ -316,12 +365,153 @@
                         <span class="amount" id="total">—</span>
                     </div>
                 </div>
+
+                <div id="result-gsv" style="display: none;">
+                    <div class="cost-line base">
+                        <span>Базовая стоимость</span>
+                        <span class="amount" id="gsv-base_price">—</span>
+                    </div>
+                    <div class="cost-line" id="gsv-row_length_surcharge">
+                        <span>Доплата за длину</span>
+                        <span class="amount" id="gsv-length_surcharge">—</span>
+                    </div>
+                    <div class="cost-line" id="gsv-row_drilling_cost">
+                        <span>Алмазное бурение</span>
+                        <span class="amount" id="gsv-drilling_cost">—</span>
+                    </div>
+                    <div class="cost-line" id="gsv-row_sakz_cost">
+                        <span>САКЗ</span>
+                        <span class="amount" id="gsv-sakz_cost">—</span>
+                    </div>
+                    <div class="cost-line" id="gsv-row_panel_cost">
+                        <span>ПК (пульт контрольный)</span>
+                        <span class="amount" id="gsv-panel_cost">—</span>
+                    </div>
+                    <div class="cost-line" id="gsv-row_area_surcharge">
+                        <span>Доплата за район</span>
+                        <span class="amount" id="gsv-area_surcharge">—</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="subtotal-line">
+                        <span>Подытог</span>
+                        <span class="amount" id="gsv-subtotal">—</span>
+                    </div>
+                    <div class="subtotal-line">
+                        <span>НДС&nbsp;5%</span>
+                        <span class="amount" id="gsv-vat">—</span>
+                    </div>
+
+                    <div class="total-block">
+                        <span class="label">Итого</span>
+                        <span class="amount" id="gsv-total">—</span>
+                    </div>
+                </div>
+
+                <div id="result-combined" style="display: none;">
+                    <div class="result-section">
+                        <p class="section-label">ГСН</p>
+                        <div class="cost-line base">
+                            <span>Базовая стоимость</span>
+                            <span class="amount" id="combined-gsn-base_price">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsn-row_length_surcharge">
+                            <span>Доплата за длину</span>
+                            <span class="amount" id="combined-gsn-length_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsn-row_angle_surcharge">
+                            <span>Доплата за углы</span>
+                            <span class="amount" id="combined-gsn-angle_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsn-row_excavator_cost">
+                            <span>Стоимость экскаватора</span>
+                            <span class="amount" id="combined-gsn-excavator_cost">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsn-row_hdd_surcharge">
+                            <span>Доплата за ГНБ</span>
+                            <span class="amount" id="combined-gsn-hdd_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsn-row_area_surcharge">
+                            <span>Доплата за район</span>
+                            <span class="amount" id="combined-gsn-area_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsn-row_grpsh_surcharge">
+                            <span>Доплата за ГРПШ</span>
+                            <span class="amount" id="combined-gsn-grpsh_surcharge">—</span>
+                        </div>
+                        <div class="section-total">
+                            <span>Итого по ГСН</span>
+                            <span class="amount" id="combined-gsn-total">—</span>
+                        </div>
+                    </div>
+
+                    <div class="result-section">
+                        <p class="section-label">ГСВ</p>
+                        <div class="cost-line base">
+                            <span>Базовая стоимость</span>
+                            <span class="amount" id="combined-gsv-base_price">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsv-row_length_surcharge">
+                            <span>Доплата за длину</span>
+                            <span class="amount" id="combined-gsv-length_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsv-row_drilling_cost">
+                            <span>Алмазное бурение</span>
+                            <span class="amount" id="combined-gsv-drilling_cost">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsv-row_sakz_cost">
+                            <span>САКЗ</span>
+                            <span class="amount" id="combined-gsv-sakz_cost">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsv-row_panel_cost">
+                            <span>ПК (пульт контрольный)</span>
+                            <span class="amount" id="combined-gsv-panel_cost">—</span>
+                        </div>
+                        <div class="cost-line" id="combined-gsv-row_area_surcharge">
+                            <span>Доплата за район</span>
+                            <span class="amount" id="combined-gsv-area_surcharge">—</span>
+                        </div>
+                        <div class="section-total">
+                            <span>Итого по ГСВ</span>
+                            <span class="amount" id="combined-gsv-total">—</span>
+                        </div>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="subtotal-line">
+                        <span>Общий подытог</span>
+                        <span class="amount" id="combined-subtotal">—</span>
+                    </div>
+                    <div class="subtotal-line">
+                        <span>НДС&nbsp;5%</span>
+                        <span class="amount" id="combined-vat">—</span>
+                    </div>
+
+                    <div class="total-block">
+                        <span class="label">Итого</span>
+                        <span class="amount" id="combined-total">—</span>
+                    </div>
+                </div>
+
                 <div id="error" style="display: none;"></div>
             </div>
         </section>
     </div>
 
     <script>
+        const MODE_ENDPOINTS = {
+            gsn: "/calculate",
+            gsv: "/calculate/gsv",
+            combined: "/calculate/combined",
+        };
+        const MODE_TITLES = {
+            gsn: "Расчёт стоимости — ГСН",
+            gsv: "Расчёт стоимости — ГСВ",
+            combined: "Расчёт стоимости — ГСН + ГСВ",
+        };
+
         const hddCheckbox = document.getElementById("hdd");
         const excavatorHours = document.getElementById("excavator_hours");
         const hydraulicHammer = document.getElementById("hydraulic_hammer");
@@ -331,7 +521,19 @@
         const submitBtn = document.getElementById("submit-btn");
         const resultCard = document.getElementById("result-card");
         const calcInfo = document.getElementById("calc-info");
-        const resultContainer = document.getElementById("result");
+        const resultTitle = document.getElementById("result-title");
+        const groupGsn = document.getElementById("group-gsn");
+        const groupGsv = document.getElementById("group-gsv");
+        const gsvSakz = document.getElementById("gsv-sakz");
+        const gsvPanel = document.getElementById("gsv-panel");
+        const resultContainers = {
+            gsn: document.getElementById("result-gsn"),
+            gsv: document.getElementById("result-gsv"),
+            combined: document.getElementById("result-combined"),
+        };
+        const modeButtons = Array.from(document.querySelectorAll(".mode-btn"));
+
+        let currentMode = "gsn";
 
         function updateSegment() {
             segOpen.classList.toggle("active", !hddCheckbox.checked);
@@ -365,39 +567,356 @@
 
         updateExcavatorAvailability();
 
+        function updatePanelAvailability() {
+            const raw = String(gsvSakz.value).trim();
+            const sets = raw === "" ? 0 : Number(raw);
+            if (!Number.isInteger(sets) || sets < 1) {
+                gsvPanel.checked = false;
+                gsvPanel.disabled = true;
+            } else {
+                gsvPanel.disabled = false;
+            }
+        }
+
+        gsvSakz.addEventListener("input", updatePanelAvailability);
+        gsvSakz.addEventListener("change", updatePanelAvailability);
+        updatePanelAvailability();
+
         function showError(message) {
             errorElement.textContent = message;
             errorElement.style.display = "block";
+        }
+
+        function hideError() {
+            errorElement.style.display = "none";
+        }
+
+        function clearOutcome() {
+            hideError();
+            calcInfo.style.display = "";
+            for (const container of Object.values(resultContainers)) {
+                container.style.display = "none";
+            }
+            resultCard.classList.remove("flash");
+        }
+
+        function setMode(mode) {
+            currentMode = mode;
+            for (const button of modeButtons) {
+                button.classList.toggle("active", button.dataset.mode === mode);
+            }
+            groupGsn.hidden = mode === "gsv";
+            groupGsv.hidden = mode === "gsn";
+            resultTitle.textContent = MODE_TITLES[mode];
+            clearOutcome();
+        }
+
+        for (const button of modeButtons) {
+            button.addEventListener("click", () => setMode(button.dataset.mode));
         }
 
         function formatMoney(value) {
             return Number(value).toLocaleString("ru-RU") + " ₽";
         }
 
+        function parseNonNegativeInt(element, label) {
+            const raw = String(element.value).trim();
+            if (raw === "") {
+                return { ok: true, value: 0 };
+            }
+            const value = Number(raw);
+            if (!Number.isInteger(value) || value < 0) {
+                return {
+                    ok: false,
+                    error: label + " должна быть целым числом не меньше 0.",
+                };
+            }
+            return { ok: true, value };
+        }
+
+        function parseDiameter(element) {
+            const raw = String(element.value).trim();
+            const value = Number(raw);
+            if (raw === "" || !Number.isInteger(value) || value < 1 || value > 57) {
+                return {
+                    ok: false,
+                    error: "Диаметр должен быть целым числом от 1 до 57 мм.",
+                };
+            }
+            return { ok: true, value };
+        }
+
+        function validateGsn() {
+            const length = parseNonNegativeInt(document.getElementById("length"), "Длина ГСН");
+            if (!length.ok) return length;
+            const angles = parseNonNegativeInt(document.getElementById("angles"), "Количество углов");
+            if (!angles.ok) return angles;
+            const hours = parseNonNegativeInt(excavatorHours, "Часы экскаватора");
+            if (!hours.ok) return hours;
+            return {
+                ok: true,
+                value: {
+                    length: length.value,
+                    angles: angles.value,
+                    hdd: hddCheckbox.checked,
+                    excavator_hours: hours.value,
+                    hydraulic_hammer: hydraulicHammer.checked,
+                    has_grpsh: document.getElementById("has_grpsh").checked,
+                },
+            };
+        }
+
+        function validateGsv() {
+            const length = parseNonNegativeInt(document.getElementById("gsv-length"), "Длина ГСВ");
+            if (!length.ok) return length;
+            const diameter = parseDiameter(document.getElementById("gsv-diameter"));
+            if (!diameter.ok) return diameter;
+            const holes = parseNonNegativeInt(document.getElementById("gsv-holes"), "Количество отверстий");
+            if (!holes.ok) return holes;
+            const sakz = parseNonNegativeInt(gsvSakz, "Количество комплектов САКЗ");
+            if (!sakz.ok) return sakz;
+            return {
+                ok: true,
+                value: {
+                    length: length.value,
+                    diameter: diameter.value,
+                    drilling_holes: holes.value,
+                    sakz_sets: sakz.value,
+                    has_panel: gsvPanel.checked,
+                },
+            };
+        }
+
+        const FIELD_LABELS = {
+            customer_type: "Тип заказчика",
+            is_district: "Объект в районе",
+            length: "Длина",
+            angles: "Количество углов",
+            hdd: "ГНБ",
+            excavator_hours: "Часы экскаватора",
+            hydraulic_hammer: "Гидромолот",
+            has_grpsh: "ГРПШ",
+            diameter: "Диаметр",
+            drilling_holes: "Количество отверстий",
+            sakz_sets: "Количество комплектов САКЗ",
+            has_panel: "ПК",
+        };
+
+        function fieldLabel(location) {
+            if (!Array.isArray(location) || location.length === 0) {
+                return "";
+            }
+            const last = location[location.length - 1];
+            const label = FIELD_LABELS[last] || String(last);
+            const section = location.includes("gsv")
+                ? "ГСВ"
+                : location.includes("gsn")
+                    ? "ГСН"
+                    : "";
+            if (section && ["length", "angles", "hdd", "excavator_hours", "hydraulic_hammer", "has_grpsh"].includes(last)) {
+                return label + " (" + section + ")";
+            }
+            return label;
+        }
+
+        function translateServerMessage(message) {
+            const text = String(message).replace(/^Value error,\s*/, "");
+            const translations = [
+                [/Input should be a valid integer, unable to parse string as an integer/, "должно быть целым числом"],
+                [/Input should be a valid integer/, "должно быть целым числом"],
+                [/Input should be greater than or equal to 0/, "должно быть не меньше 0"],
+                [/Input should be less than or equal to 57/, "должно быть не больше 57"],
+                [/Input should be a valid boolean/, "должно быть логическим значением"],
+                [/Field required/, "обязательное поле"],
+                [/Input should be 'частное лицо' or 'юридическое лицо'/, "допустимы только «частное лицо» или «юридическое лицо»"],
+            ];
+            for (const [pattern, replacement] of translations) {
+                if (pattern.test(text)) {
+                    return replacement;
+                }
+            }
+            return text;
+        }
+
+        function formatApiError(payload) {
+            if (!payload || payload.detail === undefined) {
+                return "Сервер не смог обработать запрос.";
+            }
+            const detail = payload.detail;
+            if (typeof detail === "string") {
+                return translateServerMessage(detail);
+            }
+            if (Array.isArray(detail)) {
+                const messages = detail.map((item) => {
+                    const label = fieldLabel(item.loc);
+                    const text = translateServerMessage(item.msg || "некорректное значение");
+                    return label ? label + ": " + text : text;
+                });
+                if (messages.length > 0) {
+                    return messages.join("; ");
+                }
+            }
+            return "Сервер не смог обработать запрос.";
+        }
+
+        function setText(id, value) {
+            document.getElementById(id).textContent = formatMoney(value);
+        }
+
+        function setRowVisibility(rowId, visible) {
+            document.getElementById(rowId).style.display = visible ? "" : "none";
+        }
+
+        function renderGsn(result) {
+            setText("base_price", result.base_price);
+            const fields = [
+                "length_surcharge",
+                "angle_surcharge",
+                "excavator_cost",
+                "hdd_surcharge",
+                "area_surcharge",
+                "grpsh_surcharge",
+            ];
+            for (const field of fields) {
+                setText(field, result[field]);
+                setRowVisibility("row_" + field, result[field] > 0);
+            }
+            setText("subtotal", result.subtotal);
+            setText("vat", result.vat);
+            setText("total", result.total);
+        }
+
+        function renderGsv(result) {
+            setText("gsv-base_price", result.base_price);
+            const fields = [
+                "length_surcharge",
+                "drilling_cost",
+                "sakz_cost",
+                "panel_cost",
+                "area_surcharge",
+            ];
+            for (const field of fields) {
+                setText("gsv-" + field, result[field]);
+                setRowVisibility("gsv-row_" + field, result[field] > 0);
+            }
+            setText("gsv-subtotal", result.subtotal);
+            setText("gsv-vat", result.vat);
+            setText("gsv-total", result.total);
+        }
+
+        function renderCombined(result) {
+            const gsn = result.gsn;
+            const gsv = result.gsv;
+
+            setText("combined-gsn-base_price", gsn.base_price);
+            const gsnFields = [
+                "length_surcharge",
+                "angle_surcharge",
+                "excavator_cost",
+                "hdd_surcharge",
+                "area_surcharge",
+                "grpsh_surcharge",
+            ];
+            for (const field of gsnFields) {
+                setText("combined-gsn-" + field, gsn[field]);
+                setRowVisibility("combined-gsn-row_" + field, gsn[field] > 0);
+            }
+            setText("combined-gsn-total", gsn.total);
+
+            setText("combined-gsv-base_price", gsv.base_price);
+            const gsvFields = [
+                "length_surcharge",
+                "drilling_cost",
+                "sakz_cost",
+                "panel_cost",
+                "area_surcharge",
+            ];
+            for (const field of gsvFields) {
+                setText("combined-gsv-" + field, gsv[field]);
+                setRowVisibility("combined-gsv-row_" + field, gsv[field] > 0);
+            }
+            setText("combined-gsv-total", gsv.total);
+
+            setText("combined-subtotal", result.subtotal);
+            setText("combined-vat", result.vat);
+            setText("combined-total", result.total);
+        }
+
+        function showResult(mode, result) {
+            calcInfo.style.display = "none";
+            for (const [name, container] of Object.entries(resultContainers)) {
+                container.style.display = name === mode ? "" : "none";
+            }
+            if (mode === "gsn") {
+                renderGsn(result);
+            } else if (mode === "gsv") {
+                renderGsv(result);
+            } else {
+                renderCombined(result);
+            }
+
+            resultCard.classList.remove("flash");
+            void resultCard.offsetWidth;
+            resultCard.classList.add("flash");
+        }
+
+        function buildPayload(mode) {
+            const customerType = document.getElementById("customer_type").value;
+            const isDistrict = document.getElementById("is_district").checked;
+
+            if (mode === "gsn") {
+                const gsn = validateGsn();
+                if (!gsn.ok) return gsn;
+                return {
+                    ok: true,
+                    value: { customer_type: customerType, is_district: isDistrict, ...gsn.value },
+                };
+            }
+
+            if (mode === "gsv") {
+                const gsv = validateGsv();
+                if (!gsv.ok) return gsv;
+                return {
+                    ok: true,
+                    value: { customer_type: customerType, is_district: isDistrict, ...gsv.value },
+                };
+            }
+
+            const gsn = validateGsn();
+            if (!gsn.ok) return gsn;
+            const gsv = validateGsv();
+            if (!gsv.ok) return gsv;
+            return {
+                ok: true,
+                value: {
+                    customer_type: customerType,
+                    is_district: isDistrict,
+                    gsn: gsn.value,
+                    gsv: gsv.value,
+                },
+            };
+        }
+
         document.getElementById("calculate-form").addEventListener("submit", async (event) => {
             event.preventDefault();
-            errorElement.style.display = "none";
+            clearOutcome();
 
-            const data = {
-                customer_type: document.getElementById("customer_type").value,
-                length: Number(document.getElementById("length").value || 0),
-                angles: Number(document.getElementById("angles").value || 0),
-                hdd: document.getElementById("hdd").checked,
-                excavator_hours: Number(document.getElementById("excavator_hours").value || 0),
-                hydraulic_hammer: document.getElementById("hydraulic_hammer").checked,
-                is_district: document.getElementById("is_district").checked,
-                has_grpsh: document.getElementById("has_grpsh").checked,
-            };
+            const mode = currentMode;
+            const payload = buildPayload(mode);
+            if (!payload.ok) {
+                showError(payload.error);
+                return;
+            }
 
             submitBtn.disabled = true;
             submitBtn.textContent = "Считаем…";
 
             let response;
             try {
-                response = await fetch("/calculate", {
+                response = await fetch(MODE_ENDPOINTS[mode], {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(data),
+                    body: JSON.stringify(payload.value),
                 });
             } catch (err) {
                 submitBtn.disabled = false;
@@ -407,9 +926,19 @@
             }
 
             if (!response.ok) {
+                let errorMessage = "";
+                try {
+                    const errorPayload = await response.json();
+                    errorMessage = formatApiError(errorPayload);
+                } catch (err) {
+                    errorMessage = "";
+                }
                 submitBtn.disabled = false;
                 submitBtn.textContent = "Рассчитать стоимость";
-                showError("Сервер не смог обработать запрос. Попробуйте ещё раз.");
+                if (!errorMessage) {
+                    errorMessage = "Сервер не смог обработать запрос (код " + response.status + ").";
+                }
+                showError(errorMessage);
                 return;
             }
 
@@ -419,37 +948,13 @@
             } catch (err) {
                 submitBtn.disabled = false;
                 submitBtn.textContent = "Рассчитать стоимость";
-                showError("Сервер вернул некорректный ответ. Попробуйте ещё раз.");
+                showError("Сервер вернул некорректный ответ.");
                 return;
             }
 
             submitBtn.disabled = false;
             submitBtn.textContent = "Рассчитать стоимость";
-
-            calcInfo.style.display = "none";
-            resultContainer.style.display = "";
-
-            document.getElementById("base_price").textContent = formatMoney(result.base_price);
-            const surchargeFields = [
-                "length_surcharge",
-                "angle_surcharge",
-                "excavator_cost",
-                "hdd_surcharge",
-                "area_surcharge",
-                "grpsh_surcharge",
-            ];
-            for (const field of surchargeFields) {
-                document.getElementById(field).textContent = formatMoney(result[field]);
-                document.getElementById("row_" + field).style.display =
-                    result[field] > 0 ? "" : "none";
-            }
-            document.getElementById("subtotal").textContent = formatMoney(result.subtotal);
-            document.getElementById("vat").textContent = formatMoney(result.vat);
-            document.getElementById("total").textContent = formatMoney(result.total);
-
-            resultCard.classList.remove("flash");
-            void resultCard.offsetWidth;
-            resultCard.classList.add("flash");
+            showResult(mode, result);
         });
     </script>
 </body>
