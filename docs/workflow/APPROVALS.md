@@ -51,3 +51,16 @@ Scope: Windows x64, Python app packaged для запуска без Python/CLI,
 ярлыки, local-only backend, lifecycle; чистая установка, 3 режима, uninstall без
 удаления пользовательских файлов. Без update/cloud/telemetry/signing/push/merge/
 GitHub Release. Installer передаётся локально. VISION ГСВ не меняется.
+
+## Утверждение редизайна и фирменного вида
+
+2026-11-11 пользователь одобрил вариант 1: тёмная шапка/бирюзовые трубные
+акценты, круглая эмблема сайта ООО «Северное сияние» в фирменном фиолетовом
+цвете на светлом диске, ярлык и title `СС.Расчет`, подпись «Калькулятор ГСН и
+ГСВ», компактное окно (1050×740, минимум 860×620), локальная русская заставка
+запуска с reduced-motion и русский Inno Setup. Требования/acceptance в
+ARCHITECTURE.md и ROADMAP.md. SHA256: ARCHITECTURE
+98ACB1F2D18B2B54AF5D0FC68B9624DA60542FB4A8E1F7F21D647A875562B7DA;
+ROADMAP 1B1CBD0B7EFC90EAEEBBF307520182B97BF43A20B4961DC9B7F4D5C22261D631.
+VISION и калькуляционные правила не изменяются. Installer собирается локально;
+без push/merge/release/deploy/signing. Не трогать пользовательский uvicorn :8000.

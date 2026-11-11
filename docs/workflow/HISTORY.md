@@ -239,3 +239,24 @@ suite 146 OK, README и artifact SHA256 `2973278F…428F` подтвержден
 `docs/workflow/FINAL-REPORT-WINDOWS-INSTALLER.md`,
 `docs/workflow/reviews/FINAL-STAGE-review.md` и STATE COMPLETE. Push/merge/deploy/
 release не выполнялись; installer передан локально.
+
+## 2026-11-11 — редизайн СС.Расчет одобрен
+
+Пользователь одобрил первый visual concept. ARCHITECTURE/ROADMAP дополнены и
+захэшированы в APPROVALS. Scope: компактное окно, оригинальный круглый логотип,
+русский installer, splash с газовым потоком. Product code не менялся; dispatch
+передан новому Orca coordinator по REDESIGN-BRIEF.md.
+
+## 2026-11-11 — Редизайн СС.Расчет: план заморожен, ветка создана
+
+Пользователь одобрил визуальный вариант 1; ARCHITECTURE/ROADMAP/APPROVALS
+обновлены и зафиксированы. Координатор OpenCode/DeepSeek Flash создал ветку
+`feature/ss-calculator-redesign` от `feature/windows-installer` `e24d806`,
+сохранив незакоммиченные утверждённые документы и `assets/company-logo-source.png`.
+Создан Run `run_8de25272cf66`. До dispatch заморожены TASK RD-01..RD-04,
+FINAL-VERIFY и FINAL в `docs/workflow/tasks/`; маршруты: RD-01 R1 (OpenCode
+Pro), RD-02/RD-03 R2 (Codex `gpt-6.1-sol` high), RD-04/FINAL-VERIFY R0
+(coординатор), FINAL R3 (Codex `gpt-6-astra` high). Бюджеты Codex
+зарезервированы в STATE. Product code не менялся; пользовательский сервер :8000
+не затрагивался. Next owner — координатор: scoped commit документов и dispatch
+RD-01 через реального Orca worker.

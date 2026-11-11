@@ -38,3 +38,22 @@
 
 Ссылки: [история](HISTORY.md), [разрешения](APPROVALS.md),
 [роли](MODEL-ROUTING.md), [brief](WINDOWS-INSTALLER-BRIEF.md).
+
+## СС.Расчет — редизайн IN_PROGRESS
+
+- Утверждён 2026-11-11 (APPROVALS/SHA256). Ветка `feature/ss-calculator-redesign`
+  от `e24d806`; workflow-коммит до dispatch. Run `run_8de25272cf66`.
+- Эмблема: `assets/company-logo-source.png` (одобрен пользователем; формальные
+  права репозиторием не подтверждены — остаточный риск). Installer stage цел.
+- TASK sequential, A1/C1; checklists `docs/workflow/tasks/RD-*.md`:
+  | TASK | Risk | Review | Reserve |
+  | --- | --- | --- | --- |
+  | RD-01 frontend+emblem | R1 | OpenCode Pro 1 full | Codex 0 |
+  | RD-02 window+splash | R2 | Codex sol high 1 full | 4/3M |
+  | RD-03 RU Inno+rebuild | R2 | Codex sol high 1 full | 4/3M |
+  | RD-04 README | R0 | coord checklist | 0 |
+  | FINAL-VERIFY | R0 | coord checklist | 0 |
+  | FINAL stage | R3 | Codex astra high 1 | 6/5M |
+- Dispatch IDs: pending. Next: coordinator commits docs, dispatches RD-01.
+- Product NOT_REVIEWED. :8000 не трогать; без push/merge/release/deploy/signing;
+  installer только локально.
