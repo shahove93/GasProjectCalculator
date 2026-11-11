@@ -24,10 +24,12 @@
 
 ## Текущий статус
 
-- GSV-01 R1: PASS independent OpenCode Pro (dispatch `ctx_6f8faa93b48a`),
-  findings нет; 48 новых + 105 total тестов OK. Committed scoped.
+- GSV-01 R1: PASS OpenCode Pro `ctx_6f8faa93b48a`; 48 новых / 105 total OK.
+- GSV-02 R2: C1 FAIL только по evidence/baseline (MAJOR `GSV02-R2-01`),
+  исправлено; C2 PASS Codex `ctx_ed2dda90c5c1` (gpt-6.1-sol high), B1–B11,
+  findings нет; 26 API / 131 total OK. Codex calls: 2 (1 FAIL + 1 PASS).
 - Активных helper workers нет.
-- Следующий шаг: dispatch GSV-02 (API, R2, Codex gpt-6.1-sol high).
+- Следующий шаг: dispatch GSV-03 (UI, R1, OpenCode Pro review).
 - Вердикт этапа: NOT_REVIEWED. Push/merge/deploy запрещены.
 
 Ссылки: [история](HISTORY.md), [разрешения](APPROVALS.md),

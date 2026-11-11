@@ -48,3 +48,10 @@ gsv, customer_type, is_district, subtotal, vat, total; B7 общие тип и �
 200; B9 общие subtotal/vat/total равны суммам разделов; B10 пять GSV-примеров и
 общий пример 139000/6950/145950 точны; B11 полный suite 131 OK, изменений вне
 allowlist нет.
+
+## C2 review result
+
+Codex R2 C2 (dispatch `ctx_ed2dda90c5c1`, gpt-6.1-sol/high, baseline HEAD
+`67952b1`): PASS по B1–B11, findings отсутствуют, `GSV02-R2-01` закрыт.
+Подтверждены diff только `app/main.py` (+90/−1) и `tests/test_gsv_api.py`,
+suite 131 OK, формулы не дублируются, `/calculate` не изменён.

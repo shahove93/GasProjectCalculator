@@ -76,3 +76,11 @@ A1–A12. Scoped commit выполнен; GSV-01 принят.
 дереве. Продуктовых дефектов не найдено. Координатор исправил baseline на
 `63dcde7`, закоммитил evidence-документы и назначил C2 — повторное полное R2-ревью
 того же кода. Счётчик Codex: 1 вызов, 1 FAIL.
+
+## TASK GSV-02 — API (R2): C2 PASS
+
+2026-11-11: повторное полное R2-ревью Codex (dispatch `ctx_ed2dda90c5c1`,
+effective gpt-6.1-sol/high, baseline HEAD `67952b1`) вернуло PASS по B1–B11:
+findings нет, `GSV02-R2-01` закрыт; продуктовый diff только `app/main.py`
+(+90/−1) и `tests/test_gsv_api.py`, suite 131 OK. Codex calls по TASK: 2
+(1 FAIL + 1 PASS), в пределах R2-резерва. Scoped commit, GSV-02 принят.
