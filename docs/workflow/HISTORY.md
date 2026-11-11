@@ -64,3 +64,15 @@ read-only discovery command; никаких мутаций эта ошибка �
 `docs/workflow/evidence/logs/`. Независимый R1 OpenCode Pro (dispatch
 `ctx_6f8faa93b48a`, effective DeepSeek V4.1 Pro) вернул PASS без findings по
 A1–A12. Scoped commit выполнен; GSV-01 принят.
+
+## TASK GSV-02 — API (R2): C1 FAIL и C2-коррекция evidence
+
+2026-11-11: исполнитель OpenCode/DeepSeek Flash (dispatch `ctx_dde7ed3bb86f`)
+добавил `app/main.py` (+90/−1) с `/calculate/gsv` и `/calculate/combined` и
+`tests/test_gsv_api.py` (26 тестов); API 26 OK, полный suite 131 OK, exit 0.
+Независимый R2 Codex (`ctx_a52e8c040396`, effective model gpt-6.1-sol/high)
+подтвердил B1–B10, но вернул FAIL по B11 (MAJOR `GSV02-R2-01`): неверный baseline
+`501a32b` в evidence и незакоммиченные координаторские evidence-файлы в рабочем
+дереве. Продуктовых дефектов не найдено. Координатор исправил baseline на
+`63dcde7`, закоммитил evidence-документы и назначил C2 — повторное полное R2-ревью
+того же кода. Счётчик Codex: 1 вызов, 1 FAIL.
