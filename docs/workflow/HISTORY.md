@@ -139,3 +139,13 @@ combined 422. Browser evidence: начальный режим, гонка, ск�
 блокирует ГСН, прежние суммы, mobile fits=true; 134 suite OK.
 Независимый R1 OpenCode Pro `ctx_faa3f1ff8d22` (baseline `ef9fb2a`) вернул PASS
 без findings. Scoped commit.
+
+## Финальная приёмка call 2 — PASS, этап COMPLETE
+
+2026-11-11: Codex gpt-6-astra/high (`ctx_b632e310754a`, HEAD `22ec2bc`)
+вернул PASS этапа: все 4 MAJOR и NIT закрыты, прежние требования и scope
+подтверждены, 57 тестов ГСН и `POST /calculate` сохранены, suite 134 OK,
+API 29 OK, browser desktop/mobile и регрессии подтверждены артефактами.
+Единственный NIT — README указывал 131 тест вместо 134 — исправлен в том же
+docs-only изменении. Оформлены `docs/workflow/FINAL-REPORT.md` и статус
+COMPLETE. Все workers освобождены; push/merge/deploy не выполнялись.
