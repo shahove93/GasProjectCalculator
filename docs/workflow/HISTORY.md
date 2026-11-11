@@ -462,3 +462,13 @@ NotSigned. Счётчики RD-03: full reviews 2/2, failed 1, Codex calls 2/4.
 Review record обновлён (`docs/workflow/reviews/RD-03-review.md`); reviewer
 освобождён. RD-03 **ACCEPTED**; next owner — scoped commit RD-03, затем RD-04
 (R0 README), FINAL-VERIFY (R0) и Codex R3 stage acceptance.
+
+RD-03 закоммичен scoped-коммитом `ffe17fb` (4 installer-файла, evidence/logs,
+10 снимков, C1/C2 review record, STATE/HISTORY); артефакт остаётся локальным
+git-ignored. Для RD-04 (README под `СС.Расчет`, exact artifact path/size/
+SHA256, RU install/uninstall, сохранение user files, окно/заставка/reduced
+motion, три режима без изменений, ссылки на реальные скриншоты, без
+claims о signing/publication/telemetry) запущен OpenCode Flash
+`ctx_d59e441d9384` (`task_cb670182c32f`, term_d9ede751); приёмка — R0
+coordinator checklist. Next owner — дождаться worker_done, принять R0 и
+закоммитить, затем FINAL-VERIFY (R0) и Codex R3 stage acceptance.
