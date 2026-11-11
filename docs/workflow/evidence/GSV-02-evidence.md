@@ -1,7 +1,9 @@
 # Evidence — TASK GSV-02 (R2, A1/C1, corrected for C2)
 
-- Baseline: `63dcde7` (GSV-01 и его evidence-логи закоммичены); ветка
-  `feature/gsv`; workspace `D:/Antigravity/GasProjectCalculator`.
+- Baseline: HEAD на старте C2-ревью (все координаторские документы и evidence
+  закоммичены); ветка `feature/gsv`; workspace
+  `D:/Antigravity/GasProjectCalculator`. Проверяемый продуктовый diff —
+  `git diff HEAD` плюс untracked `tests/test_gsv_api.py`.
 - C1-ревью Codex выявило MAJOR `GSV02-R2-01`: в evidence был указан неверный
   baseline `501a32b`, а на момент проверки в дереве были ещё не закоммиченные
   координаторские evidence-файлы. Это административное расхождение, не дефект
@@ -9,7 +11,7 @@
   закоммичены до повторного ревью; исполняемый diff остаётся прежним.
 - Implementer: Orca dispatch `ctx_dde7ed3bb86f`, task `task_6ffa0aed9f78`,
   agent opencode, requested model `deepseek/deepseek-flash`.
-- Diff продукта от `63dcde7`: `app/main.py` +90/−1 (новые модели,
+- Diff продукта (`git diff HEAD`): `app/main.py` +90/−1 (новые модели,
   `/calculate/gsv`, `/calculate/combined`; `/calculate` не изменён); новый
   `tests/test_gsv_api.py` (26 тестов). Координаторские evidence-документы входят
   в baseline-коммит и не являются изменениями исполнителя. Ожидаемый
