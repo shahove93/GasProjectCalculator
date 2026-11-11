@@ -14,11 +14,13 @@ Dispatch IDs, остановка старого coordinator подтвержде
 - RD-01 attempts ctx_eeb0ad4b83cb и ctx_66fd60974141 stopped/exited/released.
 - RD-01 implementer ctx_6bc08bbe6a19 succeeded/released; evidence RD-01-evidence.md,
   12 screenshots, suite reuse 152 OK; :8000 не тронут.
-- RD-01 A1/C1: **PASS** независимого OpenCode Pro ctx_edd1a2ae92e9
-  (task_696412840fc3, term_863f5dff), released. Review record:
+- RD-01 **ACCEPTED**, scoped commit `041b13d`; review record
   [RD-01-review](reviews/RD-01-review.md). Full reviews 1/2, failed 0, Codex 0.
-  NIT backlog F1–F3 (stale git listing/mojibake/duplicate note), не блокируют.
-- Next owner: scoped commit RD-01, затем RD-02 implementer (R2 → Codex sol high).
+  NIT backlog F1–F3 не блокируют.
+- RD-02 window+splash (R2): baseline `041b13d`, approach A1/C1, review route
+  Codex `gpt-6.1-sol` high, reserve ≤4 calls / 3M. Implementer dispatch
+  ctx_b89935976cc0, task_e59117ab6038 (OpenCode Flash, term_4c6fe15a) running.
+- Next owner: RD-02 implementer; затем Codex R2 review.
 - Frozen TASK RD-01..04/FINAL в docs/workflow/tasks; обычный routed review.
 - :8000 PID12888 не трогать; :8123 проверочный server старого coordinator.
 - Цель: СС.Расчет, компактный вариант 1, круглая эмблема, русская заставка и

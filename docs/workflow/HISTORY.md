@@ -331,3 +331,14 @@ F2 mojibake в 422 JSON, F3 дублирующиеся примечания в b
 reviews 1/2, failed 0, Codex calls 0. Review record:
 `docs/workflow/reviews/RD-01-review.md`. Reviewer освобождён. Next owner —
 scoped commit RD-01 и dispatch RD-02 (R2, Codex sol high).
+
+RD-01 закоммичен scoped-коммитом `041b13d` (32 файла: presentation
+`frontend/index.html`, эмблема, статические тесты, source asset, 12 реальных
+скриншотов, evidence/logs, recovery/STATE/HISTORY, review record); push/merge
+не выполнялись. Для RD-02 (native window 1050×740/min 860×620, branding
+`СС.Расчет`, локальная русская splash-анимация без сети и искусственной
+задержки, reduced motion, русские ошибки, loopback lifecycle) заморожен
+checklist `docs/workflow/tasks/RD-02.md`, baseline `041b13d`, A1/C1, R2,
+резерв Codex ≤4 вызовов/3M. Запущен implementer `ctx_b89935976cc0`
+(`task_e59117ab6038`, OpenCode Flash, term_4c6fe15a). Next owner — дождаться
+worker_done и отправить пакет на независимый Codex R2 review.
