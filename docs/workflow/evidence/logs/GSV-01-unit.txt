@@ -1,0 +1,84 @@
+﻿python.exe : test_area_surcharge_city (tests.test_gsv_calculator.GsvAreaAndVatTests.test_area_surcharge_city) ... ok
+строка:1 знак:48
++ ... tor; $out = & .\.venv\Scripts\python.exe -m unittest tests.test_gsv_c ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_area_surch...ge_city) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_area_surcharge_district (tests.test_gsv_calculator.GsvAreaAndVatTests.test_area_surcharge_district) ... ok
+test_area_surcharge_requires_bool (tests.test_gsv_calculator.GsvAreaAndVatTests.test_area_surcharge_requires_bool) ... 
+ok
+test_vat_is_five_percent (tests.test_gsv_calculator.GsvAreaAndVatTests.test_vat_is_five_percent) ... ok
+test_base_price_legal (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_base_price_legal) ... ok
+test_base_price_private (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_base_price_private) ... ok
+test_base_price_unknown_customer_type (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_base_price_unknown_cus
+tomer_type) ... ok
+test_bool_is_not_a_valid_length (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_bool_is_not_a_valid_length) 
+... ok
+test_invalid_diameter_fifty_eight (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_invalid_diameter_fifty_eig
+ht) ... ok
+test_invalid_diameter_zero (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_invalid_diameter_zero) ... ok
+test_invalid_fractional_diameter (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_invalid_fractional_diameter
+) ... ok
+test_invalid_fractional_length (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_invalid_fractional_length) ..
+. ok
+test_invalid_negative_length (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_invalid_negative_length) ... ok
+test_length_surcharge_at_five_meters_is_zero (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_length_surcharg
+e_at_five_meters_is_zero) ... ok
+test_length_surcharge_for_eight_meters_diameter_40 (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_length_su
+rcharge_for_eight_meters_diameter_40) ... ok
+test_length_surcharge_for_six_meters_diameter_25 (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_length_surc
+harge_for_six_meters_diameter_25) ... ok
+test_length_surcharge_for_six_meters_diameter_26 (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_length_surc
+harge_for_six_meters_diameter_26) ... ok
+test_length_surcharge_for_six_meters_diameter_40 (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_length_surc
+harge_for_six_meters_diameter_40) ... ok
+test_length_surcharge_for_six_meters_diameter_41 (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_length_surc
+harge_for_six_meters_diameter_41) ... ok
+test_length_surcharge_for_six_meters_diameter_57 (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_length_surc
+harge_for_six_meters_diameter_57) ... ok
+test_length_surcharge_length_zero_is_zero (tests.test_gsv_calculator.GsvBasePriceAndLengthTests.test_length_surcharge_l
+ength_zero_is_zero) ... ok
+test_breakdown_components_and_sums_are_consistent (tests.test_gsv_calculator.GsvBreakdownTests.test_breakdown_component
+s_and_sums_are_consistent) ... ok
+test_breakdown_invalid_customer_type (tests.test_gsv_calculator.GsvBreakdownTests.test_breakdown_invalid_customer_type)
+ ... ok
+test_breakdown_invalid_diameter (tests.test_gsv_calculator.GsvBreakdownTests.test_breakdown_invalid_diameter) ... ok
+test_breakdown_panel_without_sakz_is_error (tests.test_gsv_calculator.GsvBreakdownTests.test_breakdown_panel_without_sa
+kz_is_error) ... ok
+test_breakdown_returns_exact_keys (tests.test_gsv_calculator.GsvBreakdownTests.test_breakdown_returns_exact_keys) ... o
+k
+test_drilling_bool_holes (tests.test_gsv_calculator.GsvDrillingTests.test_drilling_bool_holes) ... ok
+test_drilling_fractional_holes (tests.test_gsv_calculator.GsvDrillingTests.test_drilling_fractional_holes) ... ok
+test_drilling_negative_holes (tests.test_gsv_calculator.GsvDrillingTests.test_drilling_negative_holes) ... ok
+test_drilling_one_hole (tests.test_gsv_calculator.GsvDrillingTests.test_drilling_one_hole) ... ok
+test_drilling_three_holes (tests.test_gsv_calculator.GsvDrillingTests.test_drilling_three_holes) ... ok
+test_drilling_two_holes (tests.test_gsv_calculator.GsvDrillingTests.test_drilling_two_holes) ... ok
+test_drilling_zero_holes (tests.test_gsv_calculator.GsvDrillingTests.test_drilling_zero_holes) ... ok
+test_panel_flag_must_be_bool (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_panel_flag_must_be_bool) ... ok
+test_panel_with_one_sakz_set (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_panel_with_one_sakz_set) ... ok
+test_panel_with_two_sakz_sets (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_panel_with_two_sakz_sets) ... ok
+test_panel_without_sakz_and_not_selected (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_panel_without_sakz_and_no
+t_selected) ... ok
+test_panel_without_sakz_selected_is_error (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_panel_without_sakz_selec
+ted_is_error) ... ok
+test_sakz_fractional_sets (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_sakz_fractional_sets) ... ok
+test_sakz_negative_sets (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_sakz_negative_sets) ... ok
+test_sakz_one_set (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_sakz_one_set) ... ok
+test_sakz_two_sets (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_sakz_two_sets) ... ok
+test_sakz_zero_sets (tests.test_gsv_calculator.GsvSakzAndPanelTests.test_sakz_zero_sets) ... ok
+test_vision_example_legal_8m_40_three_holes_city (tests.test_gsv_calculator.GsvVisionExamplesTests.test_vision_example_
+legal_8m_40_three_holes_city) ... ok
+test_vision_example_private_5m_25_city_without_options (tests.test_gsv_calculator.GsvVisionExamplesTests.test_vision_ex
+ample_private_5m_25_city_without_options) ... ok
+test_vision_example_private_5m_25_two_sakz_and_panel_city (tests.test_gsv_calculator.GsvVisionExamplesTests.test_vision
+_example_private_5m_25_two_sakz_and_panel_city) ... ok
+test_vision_example_private_6m_57_city_without_options (tests.test_gsv_calculator.GsvVisionExamplesTests.test_vision_ex
+ample_private_6m_57_city_without_options) ... ok
+test_vision_example_private_8m_25_two_holes_sakz_panel_district (tests.test_gsv_calculator.GsvVisionExamplesTests.test_
+vision_example_private_8m_25_two_holes_sakz_panel_district) ... ok
+
+----------------------------------------------------------------------
+Ran 48 tests in 0.001s
+
+OK
