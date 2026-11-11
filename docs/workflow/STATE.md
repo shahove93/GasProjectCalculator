@@ -32,10 +32,11 @@
   worker_done, продолжение `ctx_513a316e9b89` завершило browser evidence
   (desktop/mobile, 6 скриншотов). R1 PASS OpenCode Pro `ctx_d7c8f160505f`,
   findings: 1 NIT (суффикс ГСВ в combined 422) — backlog. 131 OK.
-- Активных helper workers нет.
-- Следующий шаг: GSV-04 (README, консолидация evidence), затем FINAL Codex
-  gpt-6-astra high.
-- Вердикт этапа: NOT_REVIEWED. Push/merge/deploy запрещены.
+- GSV-04 R0: README обновлён (три режима, правила ГСВ, endpoints, 131 тест),
+  создан `evidence/FINAL-EVIDENCE.md`; продуктовый код не менялся.
+- Активных helper workers нет; все освобождены.
+- Следующий шаг: FINAL Codex gpt-6-astra high, затем FINAL-REPORT.
+- Вердикт этапа: NOT_REVIEWED до финальной приёмки. Push/merge/deploy запрещены.
 
 Ссылки: [история](HISTORY.md), [разрешения](APPROVALS.md),
 [роли](MODEL-ROUTING.md), [brief](COORDINATOR-BRIEF.md).

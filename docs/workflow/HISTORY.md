@@ -98,3 +98,11 @@ browser: desktop ГСН 105000/5250/110250, ГСВ 100500/5025/105525, combined
 OpenCode Pro (`ctx_d7c8f160505f`, effective DeepSeek V4 Pro) вернул PASS по
 C1–C8; один NIT (в combined 422 не добавляет суффикс ГСВ к GSV-полям) — backlog.
 Scoped commit, GSV-03 принят.
+
+## GSV-04 — финальная консолидация (R0)
+
+2026-11-11: README обновлён под три режима, правила ГСВ, новые endpoints,
+структуру и 131 тест. Создан `docs/workflow/evidence/FINAL-EVIDENCE.md` с
+baseline `2949223`, продуктовым revision `9dc84e0`, таблицей TASK/вердиктов,
+переиспользованными доказательствами (131 suite OK, 26 API, 48 unit, browser
+desktop/mobile) и отклонениями. Новых продуктовых изменений нет.
