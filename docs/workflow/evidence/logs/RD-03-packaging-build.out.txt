@@ -1,0 +1,5 @@
+Project root: D:\Antigravity\GasProjectCalculator
+Python: D:\Antigravity\GasProjectCalculator\.venv\Scripts\python.exe
+Spec: D:\Antigravity\GasProjectCalculator\packaging\GasProjectCalculator.spec
+Artifact: D:\Antigravity\GasProjectCalculator\dist\GasProjectCalculator\GasProjectCalculator.exe
+SHA256: 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3

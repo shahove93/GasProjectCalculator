@@ -1,0 +1,147 @@
+﻿=== RD-03 silent install verification ===
+Timestamp: 2026-11-12T00:45:04.1766275+03:00
+Installer: D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+Installer SHA256: 043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A
+Install log: D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-03-install-no-desktop-inno.log
+Desktop icon task requested: False
+
+Command: & "D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /LOG="D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-03-install-no-desktop-inno.log"
+Installer exit code: 0
+
+=== Registry evidence (per-user) ===
+HKCU uninstall key: HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+HKCU key exists: True
+HKLM uninstall key: HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+HKLM key exists: False
+DisplayName: СС.Расчет
+DisplayVersion: 1.0.0
+Publisher: ООО «Северное сияние»
+InstallLocation: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\
+UninstallString: "C:\Users\user\AppData\Local\Programs\GasProjectCalculator\unins000.exe"
+
+=== Installed files ===
+Install directory: C:\Users\user\AppData\Local\Programs\GasProjectCalculator
+Install directory exists: True
+Installed file count: 106
+Installed total bytes: 37372675
+Installed file list:
+_internal\_asyncio.pyd
+_internal\_bz2.pyd
+_internal\_cffi_backend.cp312-win_amd64.pyd
+_internal\_ctypes.pyd
+_internal\_decimal.pyd
+_internal\_elementtree.pyd
+_internal\_hashlib.pyd
+_internal\_lzma.pyd
+_internal\_multiprocessing.pyd
+_internal\_overlapped.pyd
+_internal\_queue.pyd
+_internal\_socket.pyd
+_internal\_ssl.pyd
+_internal\_uuid.pyd
+_internal\_wmi.pyd
+_internal\_zoneinfo.pyd
+_internal\api-ms-win-core-console-l1-1-0.dll
+_internal\api-ms-win-core-datetime-l1-1-0.dll
+_internal\api-ms-win-core-debug-l1-1-0.dll
+_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+_internal\api-ms-win-core-fibers-l1-1-0.dll
+_internal\api-ms-win-core-fibers-l1-1-1.dll
+_internal\api-ms-win-core-file-l1-1-0.dll
+_internal\api-ms-win-core-file-l1-2-0.dll
+_internal\api-ms-win-core-file-l2-1-0.dll
+_internal\api-ms-win-core-handle-l1-1-0.dll
+_internal\api-ms-win-core-heap-l1-1-0.dll
+_internal\api-ms-win-core-interlocked-l1-1-0.dll
+_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+_internal\api-ms-win-core-localization-l1-2-0.dll
+_internal\api-ms-win-core-memory-l1-1-0.dll
+_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+_internal\api-ms-win-core-processthreads-l1-1-0.dll
+_internal\api-ms-win-core-processthreads-l1-1-1.dll
+_internal\api-ms-win-core-profile-l1-1-0.dll
+_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+_internal\api-ms-win-core-string-l1-1-0.dll
+_internal\api-ms-win-core-synch-l1-1-0.dll
+_internal\api-ms-win-core-synch-l1-2-0.dll
+_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+_internal\api-ms-win-core-timezone-l1-1-0.dll
+_internal\api-ms-win-core-util-l1-1-0.dll
+_internal\api-ms-win-crt-conio-l1-1-0.dll
+_internal\api-ms-win-crt-convert-l1-1-0.dll
+_internal\api-ms-win-crt-environment-l1-1-0.dll
+_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+_internal\api-ms-win-crt-heap-l1-1-0.dll
+_internal\api-ms-win-crt-locale-l1-1-0.dll
+_internal\api-ms-win-crt-math-l1-1-0.dll
+_internal\api-ms-win-crt-process-l1-1-0.dll
+_internal\api-ms-win-crt-runtime-l1-1-0.dll
+_internal\api-ms-win-crt-stdio-l1-1-0.dll
+_internal\api-ms-win-crt-string-l1-1-0.dll
+_internal\api-ms-win-crt-time-l1-1-0.dll
+_internal\api-ms-win-crt-utility-l1-1-0.dll
+_internal\base_library.zip
+_internal\click-8.5.0.dist-info\INSTALLER
+_internal\click-8.5.0.dist-info\licenses\LICENSE.txt
+_internal\click-8.5.0.dist-info\METADATA
+_internal\click-8.5.0.dist-info\RECORD
+_internal\click-8.5.0.dist-info\WHEEL
+_internal\clr_loader\ffi\dlls\amd64\ClrLoader.dll
+_internal\clr_loader\ffi\dlls\x86\ClrLoader.dll
+_internal\frontend\assets\company-emblem.png
+_internal\frontend\index.html
+_internal\frontend\splash.html
+_internal\libcrypto-3.dll
+_internal\libffi-8.dll
+_internal\libssl-3.dll
+_internal\pydantic_core\_pydantic_core.cp312-win_amd64.pyd
+_internal\pydantic-2.13.5.dist-info\INSTALLER
+_internal\pydantic-2.13.5.dist-info\licenses\LICENSE
+_internal\pydantic-2.13.5.dist-info\METADATA
+_internal\pydantic-2.13.5.dist-info\RECORD
+_internal\pydantic-2.13.5.dist-info\WHEEL
+_internal\pyexpat.pyd
+_internal\python312.dll
+_internal\pythonnet\runtime\Python.Runtime.deps.json
+_internal\pythonnet\runtime\Python.Runtime.dll
+_internal\pythonnet\runtime\Python.Runtime.xml
+_internal\select.pyd
+_internal\setuptools\_vendor\jaraco\text\Lorem ipsum.txt
+_internal\ucrtbase.dll
+_internal\unicodedata.pyd
+_internal\VCRUNTIME140.dll
+_internal\VCRUNTIME140_1.dll
+_internal\webview\js\api.js
+_internal\webview\js\customize.js
+_internal\webview\js\finish.js
+_internal\webview\js\lib\dom_json.js
+_internal\webview\js\lib\polyfill.js
+_internal\webview\js\state.js
+_internal\webview\lib\Microsoft.Web.WebView2.Core.dll
+_internal\webview\lib\Microsoft.Web.WebView2.WinForms.dll
+_internal\webview\lib\pywebview-android.jar
+_internal\webview\lib\runtimes\win-arm64\native\WebView2Loader.dll
+_internal\webview\lib\runtimes\win-x64\native\WebView2Loader.dll
+_internal\webview\lib\runtimes\win-x86\native\WebView2Loader.dll
+_internal\webview\lib\WebBrowserInterop.x64.dll
+_internal\webview\lib\WebBrowserInterop.x86.dll
+GasProjectCalculator.exe
+unins000.dat
+unins000.exe
+Installed exe SHA256: 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3
+
+=== Shortcuts ===
+Shortcut: C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\СС.Расчет.lnk
+  exists: True
+  name: СС.Расчет.lnk
+  target: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+  arguments: 
+  working directory: C:\Users\user\AppData\Local\Programs\GasProjectCalculator
+  icon: ,0
+Shortcut: C:\Users\user\Desktop\СС.Расчет.lnk
+  exists: False
+Desktop shortcut expected: False; actual: False
+=== Silent install verification complete ===

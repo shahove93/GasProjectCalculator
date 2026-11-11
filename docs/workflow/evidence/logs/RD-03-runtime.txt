@@ -1,0 +1,120 @@
+﻿=== RD-03 installed runtime verification ===
+Timestamp: 2026-11-12T00:45:49.2488519+03:00
+Display name: СС.Расчет
+Installed exe: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+Installed exe SHA256: 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3
+Work directory: C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime-final
+PE subsystem: 2 WINDOWS_GUI (no console)
+
+=== R3-6: Python-free PATH ===
+PATH=C:\Windows\System32;C:\Windows
+python command after PATH strip: <not found>
+
+=== R3-9: occupied-port scenario ===
+Holding a test listener on 127.0.0.1:8123
+
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+127.0.0.1         8123         12780
+
+
+
+
+Launch: & "C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe" --preferred-port 8123 --port-file "C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime-final\port.json" --auto-close-seconds 30 --log-file "C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime-final\desktop.log"
+Started PID=24648
+Port file: {"status": "ready", "host": "127.0.0.1", "port": 8124, "url": "http://127.0.0.1:8124/", "pid": 24648}
+Backend selected port 8124 after skipping occupied 8123
+
+=== R3-9: backend listener addresses ===
+
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+127.0.0.1         8124         24648
+
+
+
+
+=== R3-3/R3-7: native window after backend readiness ===
+Process name: GasProjectCalculator
+MainWindowHandle immediately: 2753182
+MainWindowHandle: 2753182
+MainWindowTitle: СС.Расчет
+Port file written: 2026-11-12T00:45:52.6618201+03:00
+Window observed:   2026-11-12T00:45:52.9604518+03:00
+
+=== R3-3: GET / (branded UI) ===
+HTTP 200 content-type=text/html; charset=utf-8 length=54652
+Contains exact brand name: True
+
+=== R3-8: POST /calculate (GSN) ===
+Request body: {"customer_type":"\u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043b\u0438\u0446\u043e","length":14,"angles":2,"hdd":false,"excavator_hours":4,"hydraulic_hammer":false,"is_district":true,"has_grpsh":false}
+Response: ["HTTP 200 raw response: {\"base_price\":85000,\"length_surcharge\":12000,\"angle_surcharge\":6000,\"excavator_cost\":15000,\"hdd_surcharge\":0,\"area_surcharge\":7000,\"grpsh_surcharge\":0,\"subtotal\":125000,\"vat\":6250.0,\"total\":131250.0}",{"base_price":85000,"length_surcharge":12000,"angle_surcharge":6000,"excavator_cost":15000,"hdd_surcharge":0,"area_surcharge":7000,"grpsh_surcharge":0,"subtotal":125000,"vat":6250.0,"total":131250.0}]
+GSN subtotal=125000 vat=6250.0 total=131250.0
+
+=== R3-8: POST /calculate/gsv ===
+Request body: {"customer_type":"\u0447\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e","length":8,"diameter":25,"drilling_holes":2,"sakz_sets":1,"has_panel":true,"is_district":true}
+Response: ["HTTP 200 raw response: {\"base_price\":60000,\"length_surcharge\":7500,\"drilling_cost\":8000,\"sakz_cost\":14000,\"panel_cost\":4000,\"area_surcharge\":7000,\"subtotal\":100500,\"vat\":5025,\"total\":105525}",{"base_price":60000,"length_surcharge":7500,"drilling_cost":8000,"sakz_cost":14000,"panel_cost":4000,"area_surcharge":7000,"subtotal":100500,"vat":5025,"total":105525}]
+GSV subtotal=100500 vat=5025 total=105525
+
+=== R3-8: POST /calculate/combined ===
+Request body: {"customer_type":"\u0447\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e","is_district":true,"gsn":{"length":10,"angles":0,"hdd":false,"excavator_hours":0,"hydraulic_hammer":false,"has_grpsh":false},"gsv":{"length":5,"diameter":25,"drilling_holes":0,"sakz_sets":0,"has_panel":false}}
+Response: ["HTTP 200 raw response: {\"customer_type\":\"частное лицо\",\"is_district\":true,\"gsn\":{\"base_price\":65000,\"length_surcharge\":0,\"angle_surcharge\":0,\"excavator_cost\":0,\"hdd_surcharge\":0,\"area_surcharge\":7000,\"grpsh_surcharge\":0,\"subtotal\":72000,\"vat\":3600,\"total\":75600},\"gsv\":{\"base_price\":60000,\"length_surcharge\":0,\"drilling_cost\":0,\"sakz_cost\":0,\"panel_cost\":0,\"area_surcharge\":7000,\"subtotal\":67000,\"vat\":3350,\"total\":70350},\"subtotal\":139000,\"vat\":6950,\"total\":145950}",{"customer_type":"частное лицо","is_district":true,"gsn":{"base_price":65000,"length_surcharge":0,"angle_surcharge":0,"excavator_cost":0,"hdd_surcharge":0,"area_surcharge":7000,"grpsh_surcharge":0,"subtotal":72000,"vat":3600,"total":75600},"gsv":{"base_price":60000,"length_surcharge":0,"drilling_cost":0,"sakz_cost":0,"panel_cost":0,"area_surcharge":7000,"subtotal":67000,"vat":3350,"total":70350},"subtotal":139000,"vat":6950,"total":145950}]
+Combined subtotal=139000 vat=6950 total=145950
+
+=== R3-9: closing the window stops the application and backend ===
+Process HasExited: True
+Process ExitCode: 0
+Process still present: no
+Listeners on port 8124 after exit: <none>
+Child processes of installed PID (should be none):
+
+
+=== Desktop log (R3-7/R3-8/R3-9) ===
+2026-11-12 00:45:50,428 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=24648) ===
+2026-11-12 00:45:50,461 INFO [gasproject.desktop] Splash resource: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\frontend\splash.html
+2026-11-12 00:45:50,461 INFO [gasproject.desktop] [splash] splash window created: 520x320 uri=file:///C:/Users/user/AppData/Local/Programs/GasProjectCalculator/_internal/frontend/splash.html reduced_motion=False
+2026-11-12 00:45:51,146 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 00:45:51,146 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 00:45:51,616 INFO [gasproject.desktop] Frontend resource: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\frontend\index.html
+2026-11-12 00:45:51,868 INFO [gasproject.desktop] Selected loopback port 8124 (preferred 8123); socket bound on 127.0.0.1
+2026-11-12 00:45:52,009 INFO [uvicorn.error] Started server process [24648]
+2026-11-12 00:45:52,010 INFO [uvicorn.error] Waiting for application startup.
+2026-11-12 00:45:52,010 INFO [uvicorn.error] Application startup complete.
+2026-11-12 00:45:52,660 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:8124/ after 0.75s (thread=gasproject-backend pid=24648)
+2026-11-12 00:45:52,662 INFO [gasproject.desktop] Wrote port file: C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime-final\port.json
+2026-11-12 00:45:52,662 INFO [gasproject.desktop] [splash] backend ready after 0.75s; preparing main window
+2026-11-12 00:45:52,705 INFO [gasproject.desktop] [window] main window created: title='СС.Расчет' width=1050 height=740 min_size=(860, 620)
+2026-11-12 00:45:52,747 INFO [gasproject.desktop] [splash] splash closed after backend readiness
+2026-11-12 00:45:52,770 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 00:45:52,771 INFO [gasproject.desktop] Auto-close: waiting 30.00s before closing window
+2026-11-12 00:46:22,772 INFO [gasproject.desktop] Auto-close: destroying window
+2026-11-12 00:46:22,772 INFO [gasproject.desktop] [window] main window closed
+2026-11-12 00:46:23,067 INFO [gasproject.desktop] Window closed by user
+2026-11-12 00:46:23,152 INFO [uvicorn.error] Shutting down
+2026-11-12 00:46:23,253 INFO [uvicorn.error] Waiting for application shutdown.
+2026-11-12 00:46:23,253 INFO [uvicorn.error] Application shutdown complete.
+2026-11-12 00:46:23,253 INFO [uvicorn.error] Finished server process [24648]
+2026-11-12 00:46:23,254 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 00:46:23,254 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 0 ===
+
+=== Russian launch-failure path ===
+Launch: & "C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe" --simulate-startup-failure --port-file "C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime-final\error-port.json" --log-file "C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime-final\error-desktop.log"
+Started PID=23852
+Error dialog handle: 4915260
+Error process exit code: 1
+Error port file:
+{"status": "failed", "host": "127.0.0.1", "port": 0, "url": "http://127.0.0.1:0/", "pid": 23852, "error": "Диагностический сбой запуска (--simulate-startup-failure)."}
+Error desktop log:
+2026-11-12 00:46:24,598 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=23852) ===
+2026-11-12 00:46:24,617 INFO [gasproject.desktop] Splash resource: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\frontend\splash.html
+2026-11-12 00:46:24,617 INFO [gasproject.desktop] [splash] splash window created: 520x320 uri=file:///C:/Users/user/AppData/Local/Programs/GasProjectCalculator/_internal/frontend/splash.html reduced_motion=False
+2026-11-12 00:46:25,128 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 00:46:25,128 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 00:46:25,130 ERROR [gasproject.desktop] [startup] launch failed: Диагностический сбой запуска (--simulate-startup-failure).
+2026-11-12 00:46:25,683 INFO [gasproject.desktop] [splash] splash closed after startup failure
+2026-11-12 00:46:25,684 ERROR [gasproject.desktop] Launch failure message: Не удалось запустить СС.Расчет. |  | Причина: Диагностический сбой запуска (--simulate-startup-failure). |  | Проверьте, что установлен компонент Microsoft Edge WebView2 Runtime и что антивирус не блокирует приложение, затем повторите запуск. |  | Подробности записаны в журнал: | C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime-final\error-desktop.log
+2026-11-12 00:46:25,684 ERROR [gasproject.desktop] Launch failure dialog: Не удалось запустить СС.Расчет. |  | Причина: Диагностический сбой запуска (--simulate-startup-failure). |  | Проверьте, что установлен компонент Microsoft Edge WebView2 Runtime и что антивирус не блокирует приложение, затем повторите запуск. |  | Подробности записаны в журнал: | C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime-final\error-desktop.log
+2026-11-12 00:46:25,686 INFO [gasproject.desktop] Window closed by user
+2026-11-12 00:46:25,686 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 00:46:25,686 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 1 ===
+=== Installed runtime verification complete ===

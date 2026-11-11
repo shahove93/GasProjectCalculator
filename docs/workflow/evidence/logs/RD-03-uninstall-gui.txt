@@ -1,0 +1,14 @@
+﻿Launched uninstaller PID=24116
+Confirmation dialog handle=5046332 title='Деинсталляция — СС.Расчет'
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-uninstall-confirm.png (375 x 159)
+  CHILD class='Button' text='&Да'
+  CHILD class='Button' text='&Нет'
+  CHILD class='Static' text='Вы действительно хотите удалить СС.Расчет и все компоненты программы?'
+CLICK Yes handle=8127372 text='&Да'
+Completion dialog handle=5177404 title='Деинсталляция — СС.Расчет'
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-uninstall-complete.png (415 x 159)
+  CHILD class='Button' text='ОК'
+  CHILD class='Static' text='Программа СС.Расчет была полностью удалена с вашего компьютера.'
+CLICK OK handle=2753892 text='ОК'
+Remaining uninstaller processes: 0
+UNINSTALL_FINAL_DONE

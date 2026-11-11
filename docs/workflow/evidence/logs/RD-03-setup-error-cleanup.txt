@@ -1,0 +1,64 @@
+﻿TIME=2026-11-12 01:05:58 +03:00
+CWD=D:\Antigravity\GasProjectCalculator
+ARTIFACT_PATH=D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+ARTIFACT_SIZE=15273647
+ARTIFACT_SHA256=043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A
+SCREENSHOT_PATH=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-setup-error.png
+SCREENSHOT_SIZE=8953
+SCREENSHOT_SHA256=02E788748F23C5E3B6AC1FB5991AF93FF415509F5E1162208890130F2867267C
+INSTALLER_PROCESSES_LEFT=0
+INSTALL_DIR_EXISTS=False
+FORBIDDEN_DIR_EXISTS=False
+FORBIDDEN_LOG_EXISTS=False
+BLOCKER_FILE_USED=no (blocking-file method was not used)
+BLOCKER_FILE_EXISTS=False
+HKCU_UNINSTALL_MATCHING_KEYS=0
+START_MENU_MATCHING_SHORTCUTS=0
+USER_DESKTOP_MATCHING_SHORTCUTS=0
+PID12888_ALIVE=True
+PID23152_ALIVE=True
+GIT_BRANCH=feature/ss-calculator-redesign
+GIT_HEAD=6d91036ed46e24d31ab3186fdf5e85506bbd5b06
+GIT_STATUS_SHORT:
+   M docs/workflow/HISTORY.md
+   M docs/workflow/STATE.md
+   M installer/GasProjectCalculator.iss
+   M installer/verify-install.ps1
+   M installer/verify-runtime.ps1
+   M installer/verify-uninstall.ps1
+  ?? docs/screenshots/rd-03-installed-main.png
+  ?? docs/screenshots/rd-03-installed-splash.png
+  ?? docs/screenshots/rd-03-setup-error.png
+  ?? docs/screenshots/rd-03-uninstall-complete.png
+  ?? docs/screenshots/rd-03-uninstall-confirm.png
+  ?? docs/screenshots/rd-03-wizard-dir.png
+  ?? docs/screenshots/rd-03-wizard-finish.png
+  ?? docs/screenshots/rd-03-wizard-ready.png
+  ?? docs/screenshots/rd-03-wizard-tasks.png
+  ?? docs/screenshots/rd-03-wizard-welcome.png
+  ?? docs/workflow/evidence/RD-03-evidence.md
+  ?? docs/workflow/evidence/logs/RD-03-git.txt
+  ?? docs/workflow/evidence/logs/RD-03-inno-gui-install.txt
+  ?? docs/workflow/evidence/logs/RD-03-inno-install-no-desktop.txt
+  ?? docs/workflow/evidence/logs/RD-03-inno-old-uninstall.txt
+  ?? docs/workflow/evidence/logs/RD-03-inno-reinstall-desktop-final.txt
+  ?? docs/workflow/evidence/logs/RD-03-inno-reinstall-desktop.txt
+  ?? docs/workflow/evidence/logs/RD-03-inno-uninstall-reset.txt
+  ?? docs/workflow/evidence/logs/RD-03-install-no-desktop.txt
+  ?? docs/workflow/evidence/logs/RD-03-installed-app.txt
+  ?? docs/workflow/evidence/logs/RD-03-installer-build-final.out.txt
+  ?? docs/workflow/evidence/logs/RD-03-network-unchanged.txt
+  ?? docs/workflow/evidence/logs/RD-03-old-uninstall.txt
+  ?? docs/workflow/evidence/logs/RD-03-packaging-build.err.txt
+  ?? docs/workflow/evidence/logs/RD-03-packaging-build.out.txt
+  ?? docs/workflow/evidence/logs/RD-03-reinstall-desktop-final.txt
+  ?? docs/workflow/evidence/logs/RD-03-reinstall-desktop.txt
+  ?? docs/workflow/evidence/logs/RD-03-runtime.txt
+  ?? docs/workflow/evidence/logs/RD-03-suite-exit.txt
+  ?? docs/workflow/evidence/logs/RD-03-suite.txt
+  ?? docs/workflow/evidence/logs/RD-03-uninstall-gui-final.txt
+  ?? docs/workflow/evidence/logs/RD-03-uninstall-gui.txt
+  ?? docs/workflow/evidence/logs/RD-03-uninstall-reset2.txt
+  ?? docs/workflow/evidence/logs/RD-03-wizard-error.txt
+  ?? docs/workflow/evidence/logs/RD-03-wizard-final.txt
+  ?? docs/workflow/reviews/RD-03-review.md

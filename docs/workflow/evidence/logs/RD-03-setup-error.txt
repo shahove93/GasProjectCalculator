@@ -1,0 +1,24 @@
+﻿STARTED pid=16512 cwd=D:\Antigravity\GasProjectCalculator exe=D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe args=/DIR=C:\Windows\System32\RD03-Forbidden
+T1 CLICKED class='TNewButton' text='&Далее' handle=2164214
+T2 CLICKED class='TNewButton' text='&Далее' handle=2164214
+T3 CLICKED class='TNewButton' text='&Далее' handle=2164214
+T4 CLICKED class='TNewButton' text='&Установить' handle=2164214
+T5 DIALOG pid=24012 handle=3539924 text='Установка' rect=1568,637,1890,816
+ERROR_DIALOG pid=24012 handle=3539924 title='Установка' rect=1568,637,1890,816
+  CHILD class='Button' text='ОК'
+  CHILD class='Static' text=''
+  CHILD class='Static' text='Невозможно создать папку "C:\Windows\System32\RD03-Forbidden".
+
+Ошибка 5: Отказано в доступе.'
+SCREENSHOT=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-setup-error.png ok=True size=322x179
+FIRST_DIALOG_DISMISSED button='ОК'
+SECOND_DIALOG pid=24012 handle=3605460 title='Ошибка' rect=1523,637,1932,816
+  CHILD class='Button' text='ОК'
+  CHILD class='Static' text=''
+  CHILD class='Static' text='Установка не была завершена.
+
+Пожалуйста, устраните проблему и запустите установку снова.'
+SECOND_DIALOG_DISMISSED button='ОК'
+OUTER_WAIT_TIMEOUT=False
+OUTER_EXIT_CODE=4
+INSTALLER_PROCESSES_LEFT=0

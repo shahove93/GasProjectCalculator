@@ -1,0 +1,771 @@
+﻿2026-11-12 00:45:43.312   Log opened. (Time zone: UTC+03:00)
+2026-11-12 00:45:43.312   Setup version: Inno Setup version 6.4.1
+2026-11-12 00:45:43.312   Original Setup EXE: D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+2026-11-12 00:45:43.312   Setup command line: /SL5="$230508,14293016,844800,D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /LOG="D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-03-reinstall-desktop-final-inno.log" /TASKS="desktopicon" 
+2026-11-12 00:45:43.313   Windows version: 10.0.26300
+2026-11-12 00:45:43.313   Windows architecture: x64 (64-bit)
+2026-11-12 00:45:43.313   Machine types supported by system: x86 x64
+2026-11-12 00:45:43.313   User privileges: None
+2026-11-12 00:45:43.314   Administrative install mode: No
+2026-11-12 00:45:43.314   Install mode root key: HKEY_CURRENT_USER
+2026-11-12 00:45:43.314   64-bit install mode: No
+2026-11-12 00:45:43.314   Created temporary directory: C:\Users\user\AppData\Local\Temp\is-4FVC7.tmp
+2026-11-12 00:45:43.372   Starting the installation process.
+2026-11-12 00:45:43.374   Directory for uninstall files: C:\Users\user\AppData\Local\Programs\GasProjectCalculator
+2026-11-12 00:45:43.374   Will append to existing uninstall log: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\unins000.dat
+2026-11-12 00:45:43.376   -- File entry --
+2026-11-12 00:45:43.376   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\unins000.exe
+2026-11-12 00:45:43.378   Time stamp of our file: 2026-11-12 00:45:43.153
+2026-11-12 00:45:43.378   Dest file exists.
+2026-11-12 00:45:43.378   Time stamp of existing file: 2026-11-12 00:45:12.889
+2026-11-12 00:45:43.378   Version of our file: 51.1052.0.0
+2026-11-12 00:45:43.381   Version of existing file: 51.1052.0.0
+2026-11-12 00:45:43.381   Installing the file.
+2026-11-12 00:45:43.386   Leaving temporary file in place for now.
+2026-11-12 00:45:43.386   -- File entry --
+2026-11-12 00:45:43.386   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+2026-11-12 00:45:43.386   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.386   Dest file exists.
+2026-11-12 00:45:43.386   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.386   Installing the file.
+2026-11-12 00:45:43.469   Successfully installed the file.
+2026-11-12 00:45:43.470   -- File entry --
+2026-11-12 00:45:43.470   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-console-l1-1-0.dll
+2026-11-12 00:45:43.470   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.470   Dest file exists.
+2026-11-12 00:45:43.470   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.470   Installing the file.
+2026-11-12 00:45:43.472   Successfully installed the file.
+2026-11-12 00:45:43.472   -- File entry --
+2026-11-12 00:45:43.472   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-datetime-l1-1-0.dll
+2026-11-12 00:45:43.472   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.472   Dest file exists.
+2026-11-12 00:45:43.472   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.472   Installing the file.
+2026-11-12 00:45:43.473   Successfully installed the file.
+2026-11-12 00:45:43.473   -- File entry --
+2026-11-12 00:45:43.473   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-debug-l1-1-0.dll
+2026-11-12 00:45:43.473   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.473   Dest file exists.
+2026-11-12 00:45:43.474   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.474   Installing the file.
+2026-11-12 00:45:43.475   Successfully installed the file.
+2026-11-12 00:45:43.475   -- File entry --
+2026-11-12 00:45:43.475   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+2026-11-12 00:45:43.475   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.475   Dest file exists.
+2026-11-12 00:45:43.475   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.475   Installing the file.
+2026-11-12 00:45:43.477   Successfully installed the file.
+2026-11-12 00:45:43.477   -- File entry --
+2026-11-12 00:45:43.477   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-fibers-l1-1-0.dll
+2026-11-12 00:45:43.477   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.477   Dest file exists.
+2026-11-12 00:45:43.477   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.477   Installing the file.
+2026-11-12 00:45:43.478   Successfully installed the file.
+2026-11-12 00:45:43.478   -- File entry --
+2026-11-12 00:45:43.478   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-fibers-l1-1-1.dll
+2026-11-12 00:45:43.478   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.478   Dest file exists.
+2026-11-12 00:45:43.478   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.479   Installing the file.
+2026-11-12 00:45:43.480   Successfully installed the file.
+2026-11-12 00:45:43.480   -- File entry --
+2026-11-12 00:45:43.480   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-file-l1-1-0.dll
+2026-11-12 00:45:43.480   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.480   Dest file exists.
+2026-11-12 00:45:43.480   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.480   Installing the file.
+2026-11-12 00:45:43.482   Successfully installed the file.
+2026-11-12 00:45:43.482   -- File entry --
+2026-11-12 00:45:43.482   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-file-l1-2-0.dll
+2026-11-12 00:45:43.482   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.482   Dest file exists.
+2026-11-12 00:45:43.482   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.482   Installing the file.
+2026-11-12 00:45:43.483   Successfully installed the file.
+2026-11-12 00:45:43.483   -- File entry --
+2026-11-12 00:45:43.483   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-file-l2-1-0.dll
+2026-11-12 00:45:43.483   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.483   Dest file exists.
+2026-11-12 00:45:43.483   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.484   Installing the file.
+2026-11-12 00:45:43.485   Successfully installed the file.
+2026-11-12 00:45:43.485   -- File entry --
+2026-11-12 00:45:43.485   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-handle-l1-1-0.dll
+2026-11-12 00:45:43.485   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.485   Dest file exists.
+2026-11-12 00:45:43.485   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.485   Installing the file.
+2026-11-12 00:45:43.486   Successfully installed the file.
+2026-11-12 00:45:43.486   -- File entry --
+2026-11-12 00:45:43.486   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-heap-l1-1-0.dll
+2026-11-12 00:45:43.487   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.487   Dest file exists.
+2026-11-12 00:45:43.487   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.487   Installing the file.
+2026-11-12 00:45:43.488   Successfully installed the file.
+2026-11-12 00:45:43.488   -- File entry --
+2026-11-12 00:45:43.488   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-interlocked-l1-1-0.dll
+2026-11-12 00:45:43.488   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.488   Dest file exists.
+2026-11-12 00:45:43.488   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.488   Installing the file.
+2026-11-12 00:45:43.490   Successfully installed the file.
+2026-11-12 00:45:43.490   -- File entry --
+2026-11-12 00:45:43.490   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+2026-11-12 00:45:43.490   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.490   Dest file exists.
+2026-11-12 00:45:43.490   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.490   Installing the file.
+2026-11-12 00:45:43.491   Successfully installed the file.
+2026-11-12 00:45:43.491   -- File entry --
+2026-11-12 00:45:43.491   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+2026-11-12 00:45:43.492   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.492   Dest file exists.
+2026-11-12 00:45:43.492   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.492   Installing the file.
+2026-11-12 00:45:43.493   Successfully installed the file.
+2026-11-12 00:45:43.493   -- File entry --
+2026-11-12 00:45:43.493   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-localization-l1-2-0.dll
+2026-11-12 00:45:43.493   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.493   Dest file exists.
+2026-11-12 00:45:43.493   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.493   Installing the file.
+2026-11-12 00:45:43.495   Successfully installed the file.
+2026-11-12 00:45:43.495   -- File entry --
+2026-11-12 00:45:43.495   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-memory-l1-1-0.dll
+2026-11-12 00:45:43.495   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.495   Dest file exists.
+2026-11-12 00:45:43.495   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.495   Installing the file.
+2026-11-12 00:45:43.496   Successfully installed the file.
+2026-11-12 00:45:43.496   -- File entry --
+2026-11-12 00:45:43.496   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+2026-11-12 00:45:43.496   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.496   Dest file exists.
+2026-11-12 00:45:43.496   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.496   Installing the file.
+2026-11-12 00:45:43.498   Successfully installed the file.
+2026-11-12 00:45:43.498   -- File entry --
+2026-11-12 00:45:43.498   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+2026-11-12 00:45:43.498   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.498   Dest file exists.
+2026-11-12 00:45:43.498   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.498   Installing the file.
+2026-11-12 00:45:43.499   Successfully installed the file.
+2026-11-12 00:45:43.499   -- File entry --
+2026-11-12 00:45:43.499   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-processthreads-l1-1-0.dll
+2026-11-12 00:45:43.500   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.500   Dest file exists.
+2026-11-12 00:45:43.500   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.500   Installing the file.
+2026-11-12 00:45:43.501   Successfully installed the file.
+2026-11-12 00:45:43.501   -- File entry --
+2026-11-12 00:45:43.501   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-processthreads-l1-1-1.dll
+2026-11-12 00:45:43.501   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.501   Dest file exists.
+2026-11-12 00:45:43.501   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.501   Installing the file.
+2026-11-12 00:45:43.503   Successfully installed the file.
+2026-11-12 00:45:43.503   -- File entry --
+2026-11-12 00:45:43.503   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-profile-l1-1-0.dll
+2026-11-12 00:45:43.503   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.503   Dest file exists.
+2026-11-12 00:45:43.503   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.503   Installing the file.
+2026-11-12 00:45:43.505   Successfully installed the file.
+2026-11-12 00:45:43.505   -- File entry --
+2026-11-12 00:45:43.505   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+2026-11-12 00:45:43.505   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.505   Dest file exists.
+2026-11-12 00:45:43.505   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.506   Installing the file.
+2026-11-12 00:45:43.507   Successfully installed the file.
+2026-11-12 00:45:43.507   -- File entry --
+2026-11-12 00:45:43.507   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-string-l1-1-0.dll
+2026-11-12 00:45:43.507   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.507   Dest file exists.
+2026-11-12 00:45:43.507   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.507   Installing the file.
+2026-11-12 00:45:43.509   Successfully installed the file.
+2026-11-12 00:45:43.509   -- File entry --
+2026-11-12 00:45:43.509   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-synch-l1-1-0.dll
+2026-11-12 00:45:43.509   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.509   Dest file exists.
+2026-11-12 00:45:43.509   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.509   Installing the file.
+2026-11-12 00:45:43.511   Successfully installed the file.
+2026-11-12 00:45:43.511   -- File entry --
+2026-11-12 00:45:43.511   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-synch-l1-2-0.dll
+2026-11-12 00:45:43.511   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.511   Dest file exists.
+2026-11-12 00:45:43.511   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.511   Installing the file.
+2026-11-12 00:45:43.513   Successfully installed the file.
+2026-11-12 00:45:43.513   -- File entry --
+2026-11-12 00:45:43.513   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+2026-11-12 00:45:43.513   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.513   Dest file exists.
+2026-11-12 00:45:43.513   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.513   Installing the file.
+2026-11-12 00:45:43.514   Successfully installed the file.
+2026-11-12 00:45:43.514   -- File entry --
+2026-11-12 00:45:43.514   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+2026-11-12 00:45:43.514   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.514   Dest file exists.
+2026-11-12 00:45:43.515   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.515   Installing the file.
+2026-11-12 00:45:43.516   Successfully installed the file.
+2026-11-12 00:45:43.516   -- File entry --
+2026-11-12 00:45:43.516   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-timezone-l1-1-0.dll
+2026-11-12 00:45:43.516   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.516   Dest file exists.
+2026-11-12 00:45:43.516   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.516   Installing the file.
+2026-11-12 00:45:43.518   Successfully installed the file.
+2026-11-12 00:45:43.518   -- File entry --
+2026-11-12 00:45:43.518   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-core-util-l1-1-0.dll
+2026-11-12 00:45:43.518   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.518   Dest file exists.
+2026-11-12 00:45:43.518   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.518   Installing the file.
+2026-11-12 00:45:43.519   Successfully installed the file.
+2026-11-12 00:45:43.519   -- File entry --
+2026-11-12 00:45:43.519   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-conio-l1-1-0.dll
+2026-11-12 00:45:43.519   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.519   Dest file exists.
+2026-11-12 00:45:43.520   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.520   Installing the file.
+2026-11-12 00:45:43.521   Successfully installed the file.
+2026-11-12 00:45:43.521   -- File entry --
+2026-11-12 00:45:43.521   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-convert-l1-1-0.dll
+2026-11-12 00:45:43.521   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.521   Dest file exists.
+2026-11-12 00:45:43.521   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.521   Installing the file.
+2026-11-12 00:45:43.523   Successfully installed the file.
+2026-11-12 00:45:43.523   -- File entry --
+2026-11-12 00:45:43.523   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-environment-l1-1-0.dll
+2026-11-12 00:45:43.523   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.523   Dest file exists.
+2026-11-12 00:45:43.523   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.523   Installing the file.
+2026-11-12 00:45:43.524   Successfully installed the file.
+2026-11-12 00:45:43.524   -- File entry --
+2026-11-12 00:45:43.524   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+2026-11-12 00:45:43.525   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.525   Dest file exists.
+2026-11-12 00:45:43.525   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.525   Installing the file.
+2026-11-12 00:45:43.526   Successfully installed the file.
+2026-11-12 00:45:43.526   -- File entry --
+2026-11-12 00:45:43.526   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-heap-l1-1-0.dll
+2026-11-12 00:45:43.526   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.526   Dest file exists.
+2026-11-12 00:45:43.526   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.526   Installing the file.
+2026-11-12 00:45:43.528   Successfully installed the file.
+2026-11-12 00:45:43.528   -- File entry --
+2026-11-12 00:45:43.528   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-locale-l1-1-0.dll
+2026-11-12 00:45:43.528   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.528   Dest file exists.
+2026-11-12 00:45:43.528   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.528   Installing the file.
+2026-11-12 00:45:43.529   Successfully installed the file.
+2026-11-12 00:45:43.529   -- File entry --
+2026-11-12 00:45:43.529   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-math-l1-1-0.dll
+2026-11-12 00:45:43.529   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.529   Dest file exists.
+2026-11-12 00:45:43.529   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.529   Installing the file.
+2026-11-12 00:45:43.531   Successfully installed the file.
+2026-11-12 00:45:43.531   -- File entry --
+2026-11-12 00:45:43.531   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-process-l1-1-0.dll
+2026-11-12 00:45:43.531   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.531   Dest file exists.
+2026-11-12 00:45:43.531   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.531   Installing the file.
+2026-11-12 00:45:43.532   Successfully installed the file.
+2026-11-12 00:45:43.533   -- File entry --
+2026-11-12 00:45:43.533   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-runtime-l1-1-0.dll
+2026-11-12 00:45:43.533   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.533   Dest file exists.
+2026-11-12 00:45:43.533   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.533   Installing the file.
+2026-11-12 00:45:43.534   Successfully installed the file.
+2026-11-12 00:45:43.534   -- File entry --
+2026-11-12 00:45:43.534   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-stdio-l1-1-0.dll
+2026-11-12 00:45:43.534   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.534   Dest file exists.
+2026-11-12 00:45:43.534   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.534   Installing the file.
+2026-11-12 00:45:43.536   Successfully installed the file.
+2026-11-12 00:45:43.536   -- File entry --
+2026-11-12 00:45:43.536   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-string-l1-1-0.dll
+2026-11-12 00:45:43.536   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.536   Dest file exists.
+2026-11-12 00:45:43.536   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.536   Installing the file.
+2026-11-12 00:45:43.537   Successfully installed the file.
+2026-11-12 00:45:43.537   -- File entry --
+2026-11-12 00:45:43.537   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-time-l1-1-0.dll
+2026-11-12 00:45:43.538   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.538   Dest file exists.
+2026-11-12 00:45:43.538   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.538   Installing the file.
+2026-11-12 00:45:43.539   Successfully installed the file.
+2026-11-12 00:45:43.539   -- File entry --
+2026-11-12 00:45:43.539   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\api-ms-win-crt-utility-l1-1-0.dll
+2026-11-12 00:45:43.539   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.539   Dest file exists.
+2026-11-12 00:45:43.539   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.539   Installing the file.
+2026-11-12 00:45:43.541   Successfully installed the file.
+2026-11-12 00:45:43.541   -- File entry --
+2026-11-12 00:45:43.541   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\base_library.zip
+2026-11-12 00:45:43.541   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.541   Dest file exists.
+2026-11-12 00:45:43.541   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.541   Installing the file.
+2026-11-12 00:45:43.564   Successfully installed the file.
+2026-11-12 00:45:43.564   -- File entry --
+2026-11-12 00:45:43.564   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\libcrypto-3.dll
+2026-11-12 00:45:43.565   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.565   Dest file exists.
+2026-11-12 00:45:43.565   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.565   Installing the file.
+2026-11-12 00:45:43.659   Successfully installed the file.
+2026-11-12 00:45:43.659   -- File entry --
+2026-11-12 00:45:43.659   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\libffi-8.dll
+2026-11-12 00:45:43.659   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.659   Dest file exists.
+2026-11-12 00:45:43.660   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.660   Installing the file.
+2026-11-12 00:45:43.662   Successfully installed the file.
+2026-11-12 00:45:43.662   -- File entry --
+2026-11-12 00:45:43.662   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\libssl-3.dll
+2026-11-12 00:45:43.662   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.662   Dest file exists.
+2026-11-12 00:45:43.662   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.662   Installing the file.
+2026-11-12 00:45:43.677   Successfully installed the file.
+2026-11-12 00:45:43.677   -- File entry --
+2026-11-12 00:45:43.677   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pyexpat.pyd
+2026-11-12 00:45:43.678   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.678   Dest file exists.
+2026-11-12 00:45:43.678   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.678   Installing the file.
+2026-11-12 00:45:43.683   Successfully installed the file.
+2026-11-12 00:45:43.683   -- File entry --
+2026-11-12 00:45:43.683   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\python312.dll
+2026-11-12 00:45:43.684   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.684   Dest file exists.
+2026-11-12 00:45:43.684   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.684   Installing the file.
+2026-11-12 00:45:43.814   Successfully installed the file.
+2026-11-12 00:45:43.814   -- File entry --
+2026-11-12 00:45:43.814   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\select.pyd
+2026-11-12 00:45:43.814   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.814   Dest file exists.
+2026-11-12 00:45:43.814   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.814   Installing the file.
+2026-11-12 00:45:43.816   Successfully installed the file.
+2026-11-12 00:45:43.816   -- File entry --
+2026-11-12 00:45:43.816   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\ucrtbase.dll
+2026-11-12 00:45:43.816   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.816   Dest file exists.
+2026-11-12 00:45:43.816   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.816   Installing the file.
+2026-11-12 00:45:43.848   Successfully installed the file.
+2026-11-12 00:45:43.848   -- File entry --
+2026-11-12 00:45:43.848   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\unicodedata.pyd
+2026-11-12 00:45:43.848   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.848   Dest file exists.
+2026-11-12 00:45:43.848   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.848   Installing the file.
+2026-11-12 00:45:43.873   Successfully installed the file.
+2026-11-12 00:45:43.873   -- File entry --
+2026-11-12 00:45:43.873   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\VCRUNTIME140.dll
+2026-11-12 00:45:43.874   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.874   Dest file exists.
+2026-11-12 00:45:43.874   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.874   Installing the file.
+2026-11-12 00:45:43.877   Successfully installed the file.
+2026-11-12 00:45:43.877   -- File entry --
+2026-11-12 00:45:43.877   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\VCRUNTIME140_1.dll
+2026-11-12 00:45:43.877   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.877   Dest file exists.
+2026-11-12 00:45:43.877   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.877   Installing the file.
+2026-11-12 00:45:43.879   Successfully installed the file.
+2026-11-12 00:45:43.879   -- File entry --
+2026-11-12 00:45:43.879   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_asyncio.pyd
+2026-11-12 00:45:43.879   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.879   Dest file exists.
+2026-11-12 00:45:43.879   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.879   Installing the file.
+2026-11-12 00:45:43.882   Successfully installed the file.
+2026-11-12 00:45:43.882   -- File entry --
+2026-11-12 00:45:43.882   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_bz2.pyd
+2026-11-12 00:45:43.882   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.882   Dest file exists.
+2026-11-12 00:45:43.882   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.882   Installing the file.
+2026-11-12 00:45:43.885   Successfully installed the file.
+2026-11-12 00:45:43.885   -- File entry --
+2026-11-12 00:45:43.885   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_cffi_backend.cp312-win_amd64.pyd
+2026-11-12 00:45:43.885   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.885   Dest file exists.
+2026-11-12 00:45:43.885   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.885   Installing the file.
+2026-11-12 00:45:43.892   Successfully installed the file.
+2026-11-12 00:45:43.892   -- File entry --
+2026-11-12 00:45:43.892   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_ctypes.pyd
+2026-11-12 00:45:43.892   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.892   Dest file exists.
+2026-11-12 00:45:43.892   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.892   Installing the file.
+2026-11-12 00:45:43.896   Successfully installed the file.
+2026-11-12 00:45:43.896   -- File entry --
+2026-11-12 00:45:43.896   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_decimal.pyd
+2026-11-12 00:45:43.897   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.897   Dest file exists.
+2026-11-12 00:45:43.897   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.897   Installing the file.
+2026-11-12 00:45:43.903   Successfully installed the file.
+2026-11-12 00:45:43.903   -- File entry --
+2026-11-12 00:45:43.903   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_elementtree.pyd
+2026-11-12 00:45:43.903   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.903   Dest file exists.
+2026-11-12 00:45:43.903   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.903   Installing the file.
+2026-11-12 00:45:43.907   Successfully installed the file.
+2026-11-12 00:45:43.907   -- File entry --
+2026-11-12 00:45:43.907   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_hashlib.pyd
+2026-11-12 00:45:43.907   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.907   Dest file exists.
+2026-11-12 00:45:43.907   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.907   Installing the file.
+2026-11-12 00:45:43.910   Successfully installed the file.
+2026-11-12 00:45:43.910   -- File entry --
+2026-11-12 00:45:43.910   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_lzma.pyd
+2026-11-12 00:45:43.910   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.910   Dest file exists.
+2026-11-12 00:45:43.910   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.910   Installing the file.
+2026-11-12 00:45:43.915   Successfully installed the file.
+2026-11-12 00:45:43.915   -- File entry --
+2026-11-12 00:45:43.915   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_multiprocessing.pyd
+2026-11-12 00:45:43.915   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.915   Dest file exists.
+2026-11-12 00:45:43.915   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.915   Installing the file.
+2026-11-12 00:45:43.917   Successfully installed the file.
+2026-11-12 00:45:43.917   -- File entry --
+2026-11-12 00:45:43.917   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_overlapped.pyd
+2026-11-12 00:45:43.917   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.917   Dest file exists.
+2026-11-12 00:45:43.917   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.917   Installing the file.
+2026-11-12 00:45:43.919   Successfully installed the file.
+2026-11-12 00:45:43.919   -- File entry --
+2026-11-12 00:45:43.919   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_queue.pyd
+2026-11-12 00:45:43.919   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.919   Dest file exists.
+2026-11-12 00:45:43.919   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.919   Installing the file.
+2026-11-12 00:45:43.921   Successfully installed the file.
+2026-11-12 00:45:43.921   -- File entry --
+2026-11-12 00:45:43.921   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_socket.pyd
+2026-11-12 00:45:43.921   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.921   Dest file exists.
+2026-11-12 00:45:43.921   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.921   Installing the file.
+2026-11-12 00:45:43.924   Successfully installed the file.
+2026-11-12 00:45:43.924   -- File entry --
+2026-11-12 00:45:43.924   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_ssl.pyd
+2026-11-12 00:45:43.924   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.924   Dest file exists.
+2026-11-12 00:45:43.924   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.924   Installing the file.
+2026-11-12 00:45:43.928   Successfully installed the file.
+2026-11-12 00:45:43.929   -- File entry --
+2026-11-12 00:45:43.929   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_uuid.pyd
+2026-11-12 00:45:43.929   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.929   Dest file exists.
+2026-11-12 00:45:43.929   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.929   Installing the file.
+2026-11-12 00:45:43.930   Successfully installed the file.
+2026-11-12 00:45:43.930   -- File entry --
+2026-11-12 00:45:43.930   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_wmi.pyd
+2026-11-12 00:45:43.930   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.930   Dest file exists.
+2026-11-12 00:45:43.930   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.930   Installing the file.
+2026-11-12 00:45:43.932   Successfully installed the file.
+2026-11-12 00:45:43.932   -- File entry --
+2026-11-12 00:45:43.932   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\_zoneinfo.pyd
+2026-11-12 00:45:43.932   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.932   Dest file exists.
+2026-11-12 00:45:43.932   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.932   Installing the file.
+2026-11-12 00:45:43.934   Successfully installed the file.
+2026-11-12 00:45:43.934   -- File entry --
+2026-11-12 00:45:43.934   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\click-8.5.0.dist-info\INSTALLER
+2026-11-12 00:45:43.934   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.934   Dest file exists.
+2026-11-12 00:45:43.935   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.935   Installing the file.
+2026-11-12 00:45:43.936   Successfully installed the file.
+2026-11-12 00:45:43.936   -- File entry --
+2026-11-12 00:45:43.936   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\click-8.5.0.dist-info\METADATA
+2026-11-12 00:45:43.936   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.936   Dest file exists.
+2026-11-12 00:45:43.936   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.936   Installing the file.
+2026-11-12 00:45:43.937   Successfully installed the file.
+2026-11-12 00:45:43.937   -- File entry --
+2026-11-12 00:45:43.937   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\click-8.5.0.dist-info\RECORD
+2026-11-12 00:45:43.937   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.937   Dest file exists.
+2026-11-12 00:45:43.938   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.938   Installing the file.
+2026-11-12 00:45:43.939   Successfully installed the file.
+2026-11-12 00:45:43.939   -- File entry --
+2026-11-12 00:45:43.939   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\click-8.5.0.dist-info\WHEEL
+2026-11-12 00:45:43.939   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.939   Dest file exists.
+2026-11-12 00:45:43.939   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.939   Installing the file.
+2026-11-12 00:45:43.940   Successfully installed the file.
+2026-11-12 00:45:43.940   -- File entry --
+2026-11-12 00:45:43.940   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\click-8.5.0.dist-info\licenses\LICENSE.txt
+2026-11-12 00:45:43.940   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.940   Dest file exists.
+2026-11-12 00:45:43.940   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.940   Installing the file.
+2026-11-12 00:45:43.941   Successfully installed the file.
+2026-11-12 00:45:43.941   -- File entry --
+2026-11-12 00:45:43.941   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.dll
+2026-11-12 00:45:43.942   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.942   Dest file exists.
+2026-11-12 00:45:43.942   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.942   Installing the file.
+2026-11-12 00:45:43.943   Successfully installed the file.
+2026-11-12 00:45:43.943   -- File entry --
+2026-11-12 00:45:43.943   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\clr_loader\ffi\dlls\x86\ClrLoader.dll
+2026-11-12 00:45:43.943   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.943   Dest file exists.
+2026-11-12 00:45:43.943   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.943   Installing the file.
+2026-11-12 00:45:43.945   Successfully installed the file.
+2026-11-12 00:45:43.945   -- File entry --
+2026-11-12 00:45:43.945   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\frontend\index.html
+2026-11-12 00:45:43.945   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.945   Dest file exists.
+2026-11-12 00:45:43.945   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.945   Installing the file.
+2026-11-12 00:45:43.947   Successfully installed the file.
+2026-11-12 00:45:43.947   -- File entry --
+2026-11-12 00:45:43.947   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\frontend\splash.html
+2026-11-12 00:45:43.947   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.947   Dest file exists.
+2026-11-12 00:45:43.947   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.947   Installing the file.
+2026-11-12 00:45:43.948   Successfully installed the file.
+2026-11-12 00:45:43.948   -- File entry --
+2026-11-12 00:45:43.948   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\frontend\assets\company-emblem.png
+2026-11-12 00:45:43.949   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.949   Dest file exists.
+2026-11-12 00:45:43.949   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.949   Installing the file.
+2026-11-12 00:45:43.950   Successfully installed the file.
+2026-11-12 00:45:43.950   -- File entry --
+2026-11-12 00:45:43.950   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\INSTALLER
+2026-11-12 00:45:43.950   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.950   Dest file exists.
+2026-11-12 00:45:43.950   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.950   Installing the file.
+2026-11-12 00:45:43.952   Successfully installed the file.
+2026-11-12 00:45:43.952   -- File entry --
+2026-11-12 00:45:43.952   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\METADATA
+2026-11-12 00:45:43.952   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.952   Dest file exists.
+2026-11-12 00:45:43.952   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.952   Installing the file.
+2026-11-12 00:45:43.955   Successfully installed the file.
+2026-11-12 00:45:43.955   -- File entry --
+2026-11-12 00:45:43.955   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\RECORD
+2026-11-12 00:45:43.955   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.955   Dest file exists.
+2026-11-12 00:45:43.955   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.955   Installing the file.
+2026-11-12 00:45:43.956   Successfully installed the file.
+2026-11-12 00:45:43.956   -- File entry --
+2026-11-12 00:45:43.956   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\WHEEL
+2026-11-12 00:45:43.956   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.956   Dest file exists.
+2026-11-12 00:45:43.957   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.957   Installing the file.
+2026-11-12 00:45:43.957   Successfully installed the file.
+2026-11-12 00:45:43.958   -- File entry --
+2026-11-12 00:45:43.958   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\licenses\LICENSE
+2026-11-12 00:45:43.958   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.958   Dest file exists.
+2026-11-12 00:45:43.958   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.958   Installing the file.
+2026-11-12 00:45:43.959   Successfully installed the file.
+2026-11-12 00:45:43.959   -- File entry --
+2026-11-12 00:45:43.959   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pydantic_core\_pydantic_core.cp312-win_amd64.pyd
+2026-11-12 00:45:43.959   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.959   Dest file exists.
+2026-11-12 00:45:43.959   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:43.959   Installing the file.
+2026-11-12 00:45:44.058   Successfully installed the file.
+2026-11-12 00:45:44.058   -- File entry --
+2026-11-12 00:45:44.058   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pythonnet\runtime\Python.Runtime.deps.json
+2026-11-12 00:45:44.059   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.059   Dest file exists.
+2026-11-12 00:45:44.059   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.059   Installing the file.
+2026-11-12 00:45:44.060   Successfully installed the file.
+2026-11-12 00:45:44.060   -- File entry --
+2026-11-12 00:45:44.060   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pythonnet\runtime\Python.Runtime.dll
+2026-11-12 00:45:44.060   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.060   Dest file exists.
+2026-11-12 00:45:44.060   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.060   Installing the file.
+2026-11-12 00:45:44.071   Successfully installed the file.
+2026-11-12 00:45:44.071   -- File entry --
+2026-11-12 00:45:44.071   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\pythonnet\runtime\Python.Runtime.xml
+2026-11-12 00:45:44.071   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.071   Dest file exists.
+2026-11-12 00:45:44.071   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.071   Installing the file.
+2026-11-12 00:45:44.075   Successfully installed the file.
+2026-11-12 00:45:44.075   -- File entry --
+2026-11-12 00:45:44.075   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\setuptools\_vendor\jaraco\text\Lorem ipsum.txt
+2026-11-12 00:45:44.075   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.075   Dest file exists.
+2026-11-12 00:45:44.075   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.075   Installing the file.
+2026-11-12 00:45:44.076   Successfully installed the file.
+2026-11-12 00:45:44.076   -- File entry --
+2026-11-12 00:45:44.076   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\js\api.js
+2026-11-12 00:45:44.076   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.076   Dest file exists.
+2026-11-12 00:45:44.076   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.076   Installing the file.
+2026-11-12 00:45:44.078   Successfully installed the file.
+2026-11-12 00:45:44.078   -- File entry --
+2026-11-12 00:45:44.078   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\js\customize.js
+2026-11-12 00:45:44.078   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.078   Dest file exists.
+2026-11-12 00:45:44.078   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.078   Installing the file.
+2026-11-12 00:45:44.079   Successfully installed the file.
+2026-11-12 00:45:44.079   -- File entry --
+2026-11-12 00:45:44.079   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\js\finish.js
+2026-11-12 00:45:44.079   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.079   Dest file exists.
+2026-11-12 00:45:44.079   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.079   Installing the file.
+2026-11-12 00:45:44.080   Successfully installed the file.
+2026-11-12 00:45:44.080   -- File entry --
+2026-11-12 00:45:44.080   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\js\state.js
+2026-11-12 00:45:44.081   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.081   Dest file exists.
+2026-11-12 00:45:44.081   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.081   Installing the file.
+2026-11-12 00:45:44.082   Successfully installed the file.
+2026-11-12 00:45:44.082   -- File entry --
+2026-11-12 00:45:44.082   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\js\lib\dom_json.js
+2026-11-12 00:45:44.082   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.082   Dest file exists.
+2026-11-12 00:45:44.082   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.082   Installing the file.
+2026-11-12 00:45:44.084   Successfully installed the file.
+2026-11-12 00:45:44.084   -- File entry --
+2026-11-12 00:45:44.084   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\js\lib\polyfill.js
+2026-11-12 00:45:44.084   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.084   Dest file exists.
+2026-11-12 00:45:44.084   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.084   Installing the file.
+2026-11-12 00:45:44.086   Successfully installed the file.
+2026-11-12 00:45:44.086   -- File entry --
+2026-11-12 00:45:44.086   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\lib\Microsoft.Web.WebView2.Core.dll
+2026-11-12 00:45:44.086   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.086   Dest file exists.
+2026-11-12 00:45:44.086   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.086   Installing the file.
+2026-11-12 00:45:44.097   Successfully installed the file.
+2026-11-12 00:45:44.097   -- File entry --
+2026-11-12 00:45:44.097   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\lib\Microsoft.Web.WebView2.WinForms.dll
+2026-11-12 00:45:44.097   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.097   Dest file exists.
+2026-11-12 00:45:44.097   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.097   Installing the file.
+2026-11-12 00:45:44.099   Successfully installed the file.
+2026-11-12 00:45:44.099   -- File entry --
+2026-11-12 00:45:44.099   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\lib\pywebview-android.jar
+2026-11-12 00:45:44.099   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.099   Dest file exists.
+2026-11-12 00:45:44.099   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.099   Installing the file.
+2026-11-12 00:45:44.101   Successfully installed the file.
+2026-11-12 00:45:44.101   -- File entry --
+2026-11-12 00:45:44.101   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\lib\WebBrowserInterop.x64.dll
+2026-11-12 00:45:44.101   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.101   Dest file exists.
+2026-11-12 00:45:44.101   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.101   Installing the file.
+2026-11-12 00:45:44.103   Successfully installed the file.
+2026-11-12 00:45:44.103   -- File entry --
+2026-11-12 00:45:44.103   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\lib\WebBrowserInterop.x86.dll
+2026-11-12 00:45:44.103   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.103   Dest file exists.
+2026-11-12 00:45:44.103   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.104   Installing the file.
+2026-11-12 00:45:44.105   Successfully installed the file.
+2026-11-12 00:45:44.105   -- File entry --
+2026-11-12 00:45:44.105   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\lib\runtimes\win-arm64\native\WebView2Loader.dll
+2026-11-12 00:45:44.105   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.105   Dest file exists.
+2026-11-12 00:45:44.105   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.105   Installing the file.
+2026-11-12 00:45:44.110   Successfully installed the file.
+2026-11-12 00:45:44.110   -- File entry --
+2026-11-12 00:45:44.110   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\lib\runtimes\win-x64\native\WebView2Loader.dll
+2026-11-12 00:45:44.110   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.110   Dest file exists.
+2026-11-12 00:45:44.110   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.110   Installing the file.
+2026-11-12 00:45:44.115   Successfully installed the file.
+2026-11-12 00:45:44.115   -- File entry --
+2026-11-12 00:45:44.115   Dest filename: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\webview\lib\runtimes\win-x86\native\WebView2Loader.dll
+2026-11-12 00:45:44.115   Time stamp of our file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.115   Dest file exists.
+2026-11-12 00:45:44.115   Time stamp of existing file: 2026-11-12 00:32:52.000
+2026-11-12 00:45:44.115   Installing the file.
+2026-11-12 00:45:44.120   Successfully installed the file.
+2026-11-12 00:45:44.120   -- Icon entry --
+2026-11-12 00:45:44.120   Dest filename: C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\СС.Расчет.lnk
+2026-11-12 00:45:44.120   Creating the icon.
+2026-11-12 00:45:44.180   Successfully created the icon.
+2026-11-12 00:45:44.186   -- Icon entry --
+2026-11-12 00:45:44.187   Dest filename: C:\Users\user\Desktop\СС.Расчет.lnk
+2026-11-12 00:45:44.187   Creating the icon.
+2026-11-12 00:45:44.193   Successfully created the icon.
+2026-11-12 00:45:44.200   Saving uninstall information.
+2026-11-12 00:45:44.200   Renaming uninstaller.
+2026-11-12 00:45:44.201   Deleting uninstall key left over from previous non administrative install.
+2026-11-12 00:45:44.201   Creating new uninstall key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+2026-11-12 00:45:44.201   Writing uninstall key values.
+2026-11-12 00:45:44.202   Detected previous administrative 32-bit install? No
+2026-11-12 00:45:44.202   Detected previous administrative 64-bit install? No
+2026-11-12 00:45:44.205   Installation process succeeded.
+2026-11-12 00:45:44.206   Need to restart Windows? No
+2026-11-12 00:45:44.207   Deinitializing Setup.
+2026-11-12 00:45:44.213   Log closed.

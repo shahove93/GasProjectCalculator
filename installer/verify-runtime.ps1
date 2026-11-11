@@ -1,19 +1,35 @@
-﻿# Verify the installed GasProjectCalculator runtime: no Python prerequisite,
-# native window, loopback-only backend, occupied-port handling, all three
-# calculation modes, window-close shutdown, and the understandable error path.
+﻿# Verify the installed СС.Расчет runtime: no Python prerequisite, windowed PE,
+# native window title, loopback-only backend, occupied-port handling, all three
+# calculation modes (131250 / 105525 / 145950), window-close shutdown, and the
+# understandable Russian error path.
 #
 # Usage (from the repository root, after installer\verify-install.ps1):
 #   powershell -ExecutionPolicy Bypass -File installer\verify-runtime.ps1 `
-#       -WorkDir C:\Users\user\AppData\Local\Temp\opencode\wi02-runtime
+#       -WorkDir C:\Users\user\AppData\Local\Temp\opencode\rd03-runtime
+#
+# The display name and install location are read from the HKCU uninstall key,
+# so this script stays ASCII-only and safe for PowerShell 5.1.
 
 [CmdletBinding()]
 param(
-    [string]$InstallDir = (Join-Path $env:LOCALAPPDATA 'Programs\GasProjectCalculator'),
-    [string]$WorkDir = (Join-Path $env:TEMP 'opencode-wi02-runtime')
+    [string]$InstallDir,
+    [string]$WorkDir = (Join-Path $env:TEMP 'opencode-rd03-runtime')
 )
 
 $ErrorActionPreference = 'Stop'
 try { [Console]::OutputEncoding = [System.Text.Encoding]::UTF8 } catch { }
+
+$appKeyName = '{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1'
+$hkcuKey = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\$appKeyName"
+$fallbackDir = Join-Path $env:LOCALAPPDATA 'Programs\GasProjectCalculator'
+if (-not $InstallDir) {
+    if (Test-Path -LiteralPath $hkcuKey) {
+        $InstallDir = (Get-ItemProperty -LiteralPath $hkcuKey).InstallLocation
+    }
+    if (-not $InstallDir) { $InstallDir = $fallbackDir }
+}
+$InstallDir = $InstallDir.TrimEnd('\')
+$appName = if (Test-Path -LiteralPath $hkcuKey) { (Get-ItemProperty -LiteralPath $hkcuKey).DisplayName } else { 'Unknown' }
 
 $exe = Join-Path $InstallDir 'GasProjectCalculator.exe'
 if (-not (Test-Path -LiteralPath $exe)) {
@@ -28,13 +44,14 @@ $errorPortFile = Join-Path $workDirFull 'error-port.json'
 $errorLogFile = Join-Path $workDirFull 'error-desktop.log'
 $occupiedPort = 8123
 
-Write-Output "=== WI-02 installed runtime verification ==="
+Write-Output "=== RD-03 installed runtime verification ==="
 Write-Output "Timestamp: $(Get-Date -Format o)"
+Write-Output "Display name: $appName"
 Write-Output "Installed exe: $exe"
 Write-Output ("Installed exe SHA256: " + (Get-FileHash -LiteralPath $exe -Algorithm SHA256).Hash)
 Write-Output "Work directory: $workDirFull"
 
-# I5: PE subsystem 2 == WINDOWS_GUI (no console window).
+# R3-6: PE subsystem 2 == WINDOWS_GUI (no console window).
 $bytes = [System.IO.File]::ReadAllBytes($exe)
 $peOffset = [BitConverter]::ToInt32($bytes, 0x3C)
 $subsystem = [BitConverter]::ToUInt16($bytes, $peOffset + 0x5C)
@@ -52,7 +69,7 @@ if ($subsystem -ne 2) {
 Add-Type -TypeDefinition @"
 using System;
 using System.Runtime.InteropServices;
-public static class Wi02Win32 {
+public static class Rd03Win32 {
     [DllImport("user32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
     public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
     [DllImport("user32.dll", SetLastError = true)]
@@ -81,33 +98,33 @@ function Invoke-JsonPost([string]$base, [string]$path, [string]$body) {
 $savedPath = $env:PATH
 $occupiedListener = $null
 try {
-    # I5: strip Python from PATH; the installed exe must still launch.
+    # R3-6: strip Python from PATH; the installed exe must still launch.
     $env:PATH = 'C:\Windows\System32;C:\Windows'
     $pythonCommand = Get-Command python -ErrorAction SilentlyContinue
     Write-Output ""
-    Write-Output "=== I5: Python-free PATH ==="
+    Write-Output "=== R3-6: Python-free PATH ==="
     Write-Output "PATH=$env:PATH"
     Write-Output ("python command after PATH strip: " + $(if ($pythonCommand) { $pythonCommand.Source } else { '<not found>' }))
     if ($pythonCommand) {
         throw "python is still resolvable after PATH strip"
     }
 
-    # I8: hold an unrelated listener on the preferred port.
+    # R3-9: hold an unrelated listener on the preferred port.
     $occupiedListener = [System.Net.Sockets.TcpListener]::new([System.Net.IPAddress]::Parse('127.0.0.1'), $occupiedPort)
     $occupiedListener.Start()
     Write-Output ""
-    Write-Output "=== I8: occupied-port scenario ==="
+    Write-Output "=== R3-9: occupied-port scenario ==="
     Write-Output "Holding a test listener on 127.0.0.1:$occupiedPort"
     Get-NetTCPConnection -State Listen -LocalPort $occupiedPort -ErrorAction SilentlyContinue |
         Format-Table LocalAddress,LocalPort,OwningProcess -AutoSize | Out-String | Write-Output
 
-    $argumentLine = "--preferred-port $occupiedPort --port-file `"$portFile`" --auto-close-seconds 40 --log-file `"$logFile`""
+    $argumentLine = "--preferred-port $occupiedPort --port-file `"$portFile`" --auto-close-seconds 30 --log-file `"$logFile`""
     Write-Output ""
     Write-Output "Launch: & `"$exe`" $argumentLine"
     $process = Start-Process -FilePath $exe -ArgumentList $argumentLine -PassThru
     Write-Output "Started PID=$($process.Id)"
 
-    # I6: the port file is written only after the backend answers 200.
+    # R3-7: the port file is written only after the backend answers 200.
     $portRaw = Wait-PortFile $portFile 30
     $portInfo = $portRaw | ConvertFrom-Json
     Write-Output "Port file: $portRaw"
@@ -116,18 +133,18 @@ try {
     if ($port -eq $occupiedPort) { throw "Backend did not skip the occupied port $occupiedPort" }
     Write-Output "Backend selected port $port after skipping occupied $occupiedPort"
 
-    # I8: loopback-only listener.
+    # R3-9: loopback-only listener.
     Write-Output ""
-    Write-Output "=== I8: backend listener addresses ==="
+    Write-Output "=== R3-9: backend listener addresses ==="
     $listeners = Get-NetTCPConnection -State Listen -OwningProcess $process.Id -ErrorAction SilentlyContinue
     $listeners | Format-Table LocalAddress,LocalPort,OwningProcess -AutoSize | Out-String | Write-Output
     if (-not $listeners) { throw "No listener found for installed process $($process.Id)" }
     $nonLoopback = $listeners | Where-Object { $_.LocalAddress -ne '127.0.0.1' }
     if ($nonLoopback) { throw "Non-loopback listener detected: $($nonLoopback | Out-String)" }
 
-    # I6: native window appears after readiness.
+    # R3-3/R3-7: native window appears after readiness with the exact brand title.
     Write-Output ""
-    Write-Output "=== I6: native window after backend readiness ==="
+    Write-Output "=== R3-3/R3-7: native window after backend readiness ==="
     $processInfo = Get-Process -Id $process.Id
     Write-Output "Process name: $($processInfo.ProcessName)"
     Write-Output "MainWindowHandle immediately: $($processInfo.MainWindowHandle)"
@@ -140,47 +157,55 @@ try {
     $windowSeen = Get-Date
     Write-Output "MainWindowHandle: $($processInfo.MainWindowHandle)"
     Write-Output "MainWindowTitle: $($processInfo.MainWindowTitle)"
+    if ($processInfo.MainWindowTitle -ne $appName) {
+        throw "Window title '$($processInfo.MainWindowTitle)' does not match '$appName'"
+    }
     $portFileTime = (Get-Item -LiteralPath $portFile).LastWriteTime
     Write-Output "Port file written: $($portFileTime.ToString('o'))"
     Write-Output "Window observed:   $($windowSeen.ToString('o'))"
     if ($windowSeen -lt $portFileTime) { throw "Window was observed before the backend readiness port file" }
 
-    # I7: all three modes against the installed backend.
+    # R3-8: all three modes against the installed backend.
     $base = "http://127.0.0.1:$port"
     Write-Output ""
-    Write-Output "=== I7: GET / ==="
+    Write-Output "=== R3-3: GET / (branded UI) ==="
     $rootResponse = Invoke-WebRequest -Uri "$base/" -UseBasicParsing
-    Write-Output "HTTP $($rootResponse.StatusCode) content-type=$($rootResponse.Headers['Content-Type']) length=$($rootResponse.Content.Length)"
-    Write-Output ("Contains title marker: " + ($rootResponse.Content -match 'GasProjectCalculator'))
+    $rootText = [System.Text.Encoding]::UTF8.GetString($rootResponse.RawContentStream.ToArray())
+    Write-Output "HTTP $($rootResponse.StatusCode) content-type=$($rootResponse.Headers['Content-Type']) length=$($rootText.Length)"
+    Write-Output ("Contains exact brand name: " + ($rootText.IndexOf($appName) -ge 0))
+    if ($rootText.IndexOf($appName) -lt 0) { throw "Installed UI does not contain the exact brand name" }
 
     Write-Output ""
-    Write-Output "=== I7: POST /calculate (GSN) ==="
+    Write-Output "=== R3-8: POST /calculate (GSN) ==="
     $gsnBody = '{"customer_type":"\u044e\u0440\u0438\u0434\u0438\u0447\u0435\u0441\u043a\u043e\u0435 \u043b\u0438\u0446\u043e","length":14,"angles":2,"hdd":false,"excavator_hours":4,"hydraulic_hammer":false,"is_district":true,"has_grpsh":false}'
     Write-Output "Request body: $gsnBody"
     $gsn = Invoke-JsonPost $base '/calculate' $gsnBody
     Write-Output ("Response: " + ($gsn | ConvertTo-Json -Compress))
     Write-Output "GSN subtotal=$($gsn.subtotal) vat=$($gsn.vat) total=$($gsn.total)"
+    if ([int]$gsn.total -ne 131250) { throw "GSN total expected 131250, got $($gsn.total)" }
 
     Write-Output ""
-    Write-Output "=== I7: POST /calculate/gsv ==="
+    Write-Output "=== R3-8: POST /calculate/gsv ==="
     $gsvBody = '{"customer_type":"\u0447\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e","length":8,"diameter":25,"drilling_holes":2,"sakz_sets":1,"has_panel":true,"is_district":true}'
     Write-Output "Request body: $gsvBody"
     $gsv = Invoke-JsonPost $base '/calculate/gsv' $gsvBody
     Write-Output ("Response: " + ($gsv | ConvertTo-Json -Compress))
     Write-Output "GSV subtotal=$($gsv.subtotal) vat=$($gsv.vat) total=$($gsv.total)"
+    if ([int]$gsv.total -ne 105525) { throw "GSV total expected 105525, got $($gsv.total)" }
 
     Write-Output ""
-    Write-Output "=== I7: POST /calculate/combined ==="
+    Write-Output "=== R3-8: POST /calculate/combined ==="
     $combinedBody = '{"customer_type":"\u0447\u0430\u0441\u0442\u043d\u043e\u0435 \u043b\u0438\u0446\u043e","is_district":true,"gsn":{"length":10,"angles":0,"hdd":false,"excavator_hours":0,"hydraulic_hammer":false,"has_grpsh":false},"gsv":{"length":5,"diameter":25,"drilling_holes":0,"sakz_sets":0,"has_panel":false}}'
     Write-Output "Request body: $combinedBody"
     $combined = Invoke-JsonPost $base '/calculate/combined' $combinedBody
     Write-Output ("Response: " + ($combined | ConvertTo-Json -Depth 5 -Compress))
     Write-Output "Combined subtotal=$($combined.subtotal) vat=$($combined.vat) total=$($combined.total)"
+    if ([int]$combined.total -ne 145950) { throw "Combined total expected 145950, got $($combined.total)" }
 
-    # I9: the auto-close hook destroys the window; the process and backend must exit.
+    # R3-9: the auto-close hook closes the window; the process and backend exit.
     Write-Output ""
-    Write-Output "=== I9: closing the window stops the application and backend ==="
-    $process.WaitForExit(90000) | Out-Null
+    Write-Output "=== R3-9: closing the window stops the application and backend ==="
+    $process.WaitForExit(60000) | Out-Null
     Write-Output "Process HasExited: $($process.HasExited)"
     Write-Output "Process ExitCode: $($process.ExitCode)"
     $stillRunning = Get-Process -Id $process.Id -ErrorAction SilentlyContinue
@@ -194,23 +219,22 @@ try {
         Select-Object ProcessId,Name,CommandLine | Format-Table -AutoSize | Out-String | Write-Output
 
     Write-Output ""
-    Write-Output "=== Desktop log (I6/I7/I9) ==="
+    Write-Output "=== Desktop log (R3-7/R3-8/R3-9) ==="
     Get-Content -LiteralPath $logFile -Encoding UTF8 | Write-Output
 
-    # I10: understandable launch failure with the native dialog.
+    # R3 error path: understandable Russian launch failure with a native dialog.
     Write-Output ""
-    Write-Output "=== I10: launch failure path ==="
+    Write-Output "=== Russian launch-failure path ==="
     $errorArgumentLine = "--simulate-startup-failure --port-file `"$errorPortFile`" --log-file `"$errorLogFile`""
     Write-Output "Launch: & `"$exe`" $errorArgumentLine"
     $errorProcess = Start-Process -FilePath $exe -ArgumentList $errorArgumentLine -PassThru
     Write-Output "Started PID=$($errorProcess.Id)"
-    $deadline = (Get-Date).AddSeconds(20)
+    $deadline = (Get-Date).AddSeconds(25)
     $dialogHandle = [IntPtr]::Zero
     while ($dialogHandle -eq [IntPtr]::Zero -and (Get-Date) -lt $deadline) {
         Start-Sleep -Milliseconds 200
-        # The message box class is #32770; passing $null for the class name from
-        # PowerShell marshals as an empty string, so query the class explicitly.
-        $dialogHandle = [Wi02Win32]::FindWindow('#32770', 'GasProjectCalculator')
+        # The message box class is #32770; the title is the exact brand name.
+        $dialogHandle = [Rd03Win32]::FindWindow('#32770', $appName)
     }
     Write-Output "Error dialog handle: $dialogHandle"
     if ($dialogHandle -eq [IntPtr]::Zero) {
@@ -218,7 +242,7 @@ try {
         throw "Native launch-failure dialog was not observed"
     }
     # WM_CLOSE == 0x0010
-    [Wi02Win32]::PostMessage($dialogHandle, 0x0010, [IntPtr]::Zero, [IntPtr]::Zero) | Out-Null
+    [Rd03Win32]::PostMessage($dialogHandle, 0x0010, [IntPtr]::Zero, [IntPtr]::Zero) | Out-Null
     $errorProcess.WaitForExit(15000) | Out-Null
     if (-not $errorProcess.HasExited) {
         Stop-Process -Id $errorProcess.Id -Force -ErrorAction SilentlyContinue
@@ -226,9 +250,9 @@ try {
     }
     Write-Output "Error process exit code: $($errorProcess.ExitCode)"
     Write-Output "Error port file:"
-    if (Test-Path -LiteralPath $errorPortFile) { Get-Content -LiteralPath $errorPortFile -Raw | Write-Output }
+    if (Test-Path -LiteralPath $errorPortFile) { Get-Content -LiteralPath $errorPortFile -Raw -Encoding UTF8 | Write-Output }
     Write-Output "Error desktop log:"
-    Get-Content -LiteralPath $errorLogFile -Encoding UTF8 | Write-Output
+    if (Test-Path -LiteralPath $errorLogFile) { Get-Content -LiteralPath $errorLogFile -Encoding UTF8 | Write-Output }
     if ($errorProcess.ExitCode -ne 1) {
         throw "Launch-failure process should exit 1, got $($errorProcess.ExitCode)"
     }
@@ -244,4 +268,3 @@ try {
 }
 
 Write-Output "=== Installed runtime verification complete ==="
-

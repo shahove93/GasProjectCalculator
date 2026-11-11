@@ -1,0 +1,35 @@
+﻿=== RD-03 port/lifecycle environment unchanged ===
+Timestamp: 2026-11-12T00:48:36.6968092+03:00
+--- :8000 (user server, must stay PID 12888) ---
+
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+0.0.0.0           8000         12888
+
+
+
+
+
+Id          : 12888
+ProcessName : python
+StartTime   : 11.11.2026 17:46:30
+
+
+
+
+--- :8138 (diagnostic, off-limits) ---
+
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+127.0.0.1         8138         23152
+
+
+
+--- test ports must have no listener ---
+port 8123: <none>
+port 8124: <none>
+port 8125: <none>
+--- installed app processes (must be none) ---
+GasProjectCalculator process count: 0
+--- setup/uninstall processes (must be none) ---
+setup/uninstall process count: 0

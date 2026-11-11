@@ -1,0 +1,68 @@
+﻿=== RD-03 final git state ===
+Timestamp: 2026-11-12T00:48:29.7326368+03:00
+Branch: feature/ss-calculator-redesign
+HEAD: 6d91036ed46e24d31ab3186fdf5e85506bbd5b06
+Product baseline (RD-02 accepted): 32e77b1
+--- git log --oneline -4 ---
+6d91036 docs(workflow): record RD-02 acceptance and RD-03 dispatch
+32e77b1 feat(desktop): brand window and local startup splash (RD-02)
+2703e83 docs(workflow): record RD-01 PASS and RD-02 dispatch
+041b13d feat(redesign): compact SS.Raschet UI with circular emblem (RD-01)
+--- git status --short ---
+ M installer/GasProjectCalculator.iss
+ M installer/verify-install.ps1
+ M installer/verify-runtime.ps1
+ M installer/verify-uninstall.ps1
+?? docs/screenshots/rd-03-installed-main.png
+?? docs/screenshots/rd-03-installed-splash.png
+?? docs/screenshots/rd-03-uninstall-complete.png
+?? docs/screenshots/rd-03-uninstall-confirm.png
+?? docs/screenshots/rd-03-wizard-dir.png
+?? docs/screenshots/rd-03-wizard-finish.png
+?? docs/screenshots/rd-03-wizard-ready.png
+?? docs/screenshots/rd-03-wizard-tasks.png
+?? docs/screenshots/rd-03-wizard-welcome.png
+?? docs/workflow/evidence/logs/RD-03-git.txt
+?? docs/workflow/evidence/logs/RD-03-inno-gui-install.txt
+?? docs/workflow/evidence/logs/RD-03-inno-install-no-desktop.txt
+?? docs/workflow/evidence/logs/RD-03-inno-old-uninstall.txt
+?? docs/workflow/evidence/logs/RD-03-inno-reinstall-desktop-final.txt
+?? docs/workflow/evidence/logs/RD-03-inno-reinstall-desktop.txt
+?? docs/workflow/evidence/logs/RD-03-inno-uninstall-reset.txt
+?? docs/workflow/evidence/logs/RD-03-install-no-desktop.txt
+?? docs/workflow/evidence/logs/RD-03-installed-app.txt
+?? docs/workflow/evidence/logs/RD-03-installer-build-final.out.txt
+?? docs/workflow/evidence/logs/RD-03-old-uninstall.txt
+?? docs/workflow/evidence/logs/RD-03-packaging-build.err.txt
+?? docs/workflow/evidence/logs/RD-03-packaging-build.out.txt
+?? docs/workflow/evidence/logs/RD-03-reinstall-desktop-final.txt
+?? docs/workflow/evidence/logs/RD-03-reinstall-desktop.txt
+?? docs/workflow/evidence/logs/RD-03-runtime.txt
+?? docs/workflow/evidence/logs/RD-03-suite-exit.txt
+?? docs/workflow/evidence/logs/RD-03-suite.txt
+?? docs/workflow/evidence/logs/RD-03-uninstall-gui-final.txt
+?? docs/workflow/evidence/logs/RD-03-uninstall-gui.txt
+?? docs/workflow/evidence/logs/RD-03-uninstall-reset2.txt
+?? docs/workflow/evidence/logs/RD-03-wizard-final.txt
+--- coordinator workflow commit (not worker): git show --stat --oneline HEAD ---
+6d91036 docs(workflow): record RD-02 acceptance and RD-03 dispatch
+ docs/workflow/HISTORY.md | 12 ++++++++++++
+ docs/workflow/STATE.md   | 15 ++++++++-------
+ 2 files changed, 20 insertions(+), 7 deletions(-)
+--- worker diff vs product baseline: installer only ---
+ installer/GasProjectCalculator.iss |  37 +++++++++----
+ installer/verify-install.ps1       |  62 +++++++++++++++++++---
+ installer/verify-runtime.ps1       | 103 +++++++++++++++++++++++--------------
+ installer/verify-uninstall.ps1     |  52 +++++++++++++++----
+ 4 files changed, 187 insertions(+), 67 deletions(-)
+--- worker diff HEAD -- app install frontend packaging (must be empty) ---
+--- app/main.py + calculator diff 32e77b1 (must be empty) ---
+--- worker diff HEAD -- docs/workflow (must be empty) ---
+--- ignored installer/Output (not committed) ---
+legacy: True
+final: True
+--- file hashes (allowlisted source) ---
+installer/GasProjectCalculator.iss 680EADFD447CE35F8727E172F139A18A6DE194B99F83FB1D15B25ED478701F65
+installer/verify-install.ps1 770183A066B0C5DE8DBD8C3271F3752A4D47FFEF24D9E4D083E7249ED31D046F
+installer/verify-runtime.ps1 218383DA44C666DCFFFEE03C83B37034BEB6B30B79692CD9A2E172E3784F5CDE
+installer/verify-uninstall.ps1 D0D68EBC4BDD36E576C4FCD385537E93ABF38BC4D2D0EAA86E5B80BD649FE24A

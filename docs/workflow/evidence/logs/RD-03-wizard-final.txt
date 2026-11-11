@@ -1,0 +1,24 @@
+﻿Launched installer PID=23528
+Wizard handle=1377972 title='Установка — СС.Расчет'
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-step01.png (612 x 471)
+CLICK button handle=3278338 text='&Далее'
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-step02.png (612 x 471)
+CLICK button handle=3278338 text='&Далее'
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-step03.png (612 x 471)
+CLICK button handle=3278338 text='&Далее'
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-step04.png (612 x 471)
+CLICK button handle=3278338 text='&Установить'
+Finish page detected: '&Завершить'
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-step05.png (612 x 471)
+Stopping setup process PID=23528
+Stopping setup process PID=24152
+WIZARD_ALL_DONE
+
+Note (post-processing, no product change): the captured files were renamed to
+their semantic evidence names after this run:
+  rd-03-step01.png -> rd-03-wizard-welcome.png
+  rd-03-step02.png -> rd-03-wizard-dir.png
+  rd-03-step03.png -> rd-03-wizard-tasks.png
+  rd-03-step04.png -> rd-03-wizard-ready.png
+  rd-03-step05.png -> rd-03-wizard-finish.png
+The five PNG SHA256 values are listed in docs/workflow/evidence/RD-03-evidence.md.

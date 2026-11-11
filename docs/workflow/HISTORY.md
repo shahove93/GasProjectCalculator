@@ -387,3 +387,78 @@ baseline `32e77b1`, A1/C1, R2, резерв Codex ≤4/3M. Запущен implem
 поручено сохранить прежний installer artifact, использовать проверенный
 локальный Inno Setup 6.4.1 и не трогать :8000/:8138. Next owner — дождаться
 worker_done и отправить пакет на Codex R2 review.
+
+## 2026-11-11 — RD-03 реализация завершена, запущен Codex R2 review
+
+OpenCode/DeepSeek Flash implementer `ctx_e4488f57f75b` (`task_52e983ff51d0`)
+завершил RD-03 на baseline `32e77b1`: русский Inno Setup (`AppName`/ярлыки
+`СС.Расчет`, publisher `ООО «Северное сияние»`, `Languages\Russian.isl`,
+`ShowLanguageDialog=no`, `PrivilegesRequired=lowest`, x64compatible, Start Menu
+всегда + optional Desktop unchecked, русский uninstaller), обновлённые
+verify-скрипты, пересобран packaged app и installer. Артефакт
+`installer/Output/GasProjectCalculator-Setup-1.0.0.exe`, 15 273 647 bytes,
+SHA256 `043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A`;
+прежний installer сохранён в `installer/Output/legacy/`. Проверены: clean
+silent install без desktop, reinstall с desktop, HKCU/no-admin, Python-free
+GUI, splash/readiness, три режима 131250/105525/145950, loopback/port-conflict
+8123→8124/close-free, GUI uninstall с сохранением markers, suite 163 OK exit 0;
+9 реальных скриншотов; :8000/:8138 не тронуты. NOT_RUN: скриншот setup-error
+dialog (процесс остановлен без residue) — оценка за reviewer. Implementer
+освобождён. Запущен независимый R2 Codex reviewer `ctx_0f37bf720947`
+(`task_70cf5390b9b4`, `gpt-6.1-sol` high, term_96fdf92a), Codex calls RD-03: 0.
+Next owner — дождаться вердикта; PASS→scoped commit RD-03.
+
+## 2026-11-11 — RD-03 C1 FAIL (Codex R2), назначена C2
+
+Независимый Codex R2 reviewer `ctx_0f37bf720947` (`task_70cf5390b9b4`,
+`gpt-6.1-sol` high) вернул **FAIL** по одному finding: RD03-F01 MAJOR (R3-2) —
+нет реального скриншота ошибки самого Setup; попытка
+`/DIR=C:\Windows\System32\RD03-Forbidden` не наблюдала error-dialog. Остальные
+R3-1/R3-3..R3-13 PASS; артефакт независимо пересчитан (15 273 647 bytes,
+SHA256 `043884…949A`), Authenticode NotSigned, legacy artifact сохранён,
+неожиданных продуктовых изменений нет. Ревьюер файлов не менял, rerun=0;
+освобождён. Codex calls RD-03: 1/4; R2 full reviews 1/2; failed reviews 1.
+Review record: `docs/workflow/reviews/RD-03-review.md`. Назначена C2: одна
+bounded коррекция только setup-error evidence (реальный русский error dialog
+именно этого артефакта + cleanup proof), затем одно повторное полное R2-ревью
+того же TASK; остальные доказательства сохраняются, новый подход не требуется.
+Next owner — dispatch C2 implementer.
+
+Запущен C2 implementer `ctx_2b97c2f59827` (`task_c7fab3f54056`, OpenCode Flash,
+term_9cd3fefe): только реальный русский Setup-error screenshot именно артефакта
+с SHA256 `043884…949A`, команда/CWD/revision/exit, cleanup proof, обновление
+R3-2/NOT_RUN в evidence; без пересборки, коммитов и изменений других
+доказательств. :8000/:8138 не трогать. Next owner — дождаться worker_done,
+затем повторное полное Codex R2-ревью (call 2/4).
+
+## 2026-11-11 — RD-03 C2: setup-error evidence закрыт, запущено повторное R2
+
+C2 implementer `ctx_2b97c2f59827` (`task_c7fab3f54056`) закрыл RD03-F01:
+запустил ровно тот артефакт (SHA256 `043884…949A`) в GUI с
+`/DIR=C:\Windows\System32\RD03-Forbidden`, нажал Далее×3 → Установить, получил
+настоящий русский Inno Setup error-dialog «Невозможно создать папку …
+Ошибка 5: Отказано в доступе.» и второй «Установка не была завершена…»;
+exit 4. Реальный native-снимок `docs/screenshots/rd-03-setup-error.png`, логи
+`RD-03-setup-error*.txt`, cleanup proof (нет install dir/блокера/HKCU/ярлыков),
+hash артефакта не изменился, :8000/:8138 целы, продукт не менялся. R3-2
+дополнен в evidence. Implementer освобождён. Запущено одно повторное полное
+R2-ревью Codex `ctx_a92d1fc9a28c` (`task_c20c237aec63`, `gpt-6.1-sol` high,
+term_6d8c9eb6): проверить закрытие RD03-F01 и весь frozen checklist; Codex
+call RD-03 2/4. Next owner — дождаться вердикта; PASS→scoped commit RD-03.
+
+## 2026-11-11 — RD-03 C2 PASS, RD03-F01 CLOSED
+
+Повторное полное R2-ревью Codex `ctx_a92d1fc9a28c` (`task_c20c237aec63`,
+`gpt-6.1-sol` high, term_6d8c9eb6) вернуло **PASS**; RD03-F01 **CLOSED**.
+Ревьюер файлов не менял, rerun=0; проверил 10 native-снимков, raw logs,
+бинарники и hash. C2 setup-error: exact installer с
+`/DIR=C:\Windows\System32\RD03-Forbidden`, реальные Далее/Установить, русские
+диалоги «Невозможно создать папку … Ошибка 5: Отказано в доступе» и
+«Установка не была завершена…», exit 4; `rd-03-setup-error.png` 322×179,
+SHA256 `02E78874…267C`; cleanup без install dir/HKCU/ярлыков/блокера,
+:8000/:8138 целы, artifact hash не изменился. Все R3-1..R3-13 повторно PASS.
+Артефакт: 15 273 647 bytes, SHA256 `043884…949A`; legacy `2973278F…428F`;
+NotSigned. Счётчики RD-03: full reviews 2/2, failed 1, Codex calls 2/4.
+Review record обновлён (`docs/workflow/reviews/RD-03-review.md`); reviewer
+освобождён. RD-03 **ACCEPTED**; next owner — scoped commit RD-03, затем RD-04
+(R0 README), FINAL-VERIFY (R0) и Codex R3 stage acceptance.

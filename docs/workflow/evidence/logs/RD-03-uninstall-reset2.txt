@@ -1,0 +1,28 @@
+﻿=== RD-03 silent uninstall verification ===
+Timestamp: 2026-11-12T00:45:02.9800457+03:00
+Display name: СС.Расчет
+Install directory: C:\Users\user\AppData\Local\Programs\GasProjectCalculator
+Uninstall log: D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-03-uninstall-reset2-inno.log
+HKCU uninstall key: HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+
+=== User marker files before uninstall ===
+C:\Users\user\Documents\RD-03-user-marker.txt : True
+C:\Users\user\Desktop\RD-03-user-marker.txt : True
+C:\Users\user\AppData\Local\GasProjectCalculator\RD-03-user-marker.txt : True
+
+Command: & "C:\Users\user\AppData\Local\Programs\GasProjectCalculator\unins000.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /LOG="D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-03-uninstall-reset2-inno.log"
+Uninstaller exit code: 0
+
+=== Removal results ===
+Installed exe present after uninstall: False
+Install directory present after uninstall: False
+Start Menu shortcut present after uninstall: False
+Desktop shortcut present after uninstall: False
+HKCU uninstall key present after uninstall: False
+
+=== User file preservation ===
+C:\Users\user\Documents\RD-03-user-marker.txt : True
+C:\Users\user\Desktop\RD-03-user-marker.txt : True
+C:\Users\user\AppData\Local\GasProjectCalculator\RD-03-user-marker.txt : True
+User data directory preserved: True
+=== Silent uninstall verification complete ===

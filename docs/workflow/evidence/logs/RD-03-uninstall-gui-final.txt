@@ -1,0 +1,26 @@
+﻿=== RD-03 GUI uninstall final state ===
+Timestamp: 2026-11-12T00:47:30.2109147+03:00
+Install dir exists: False
+Installed exe exists: False
+HKCU uninstall key exists: False
+Start Menu shortcut path: C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\СС.Расчет.lnk
+Start Menu shortcut exists: False
+Desktop shortcut path: C:\Users\user\Desktop\СС.Расчет.lnk
+Desktop shortcut exists: False
+--- user files preserved ---
+C:\Users\user\Documents\RD-03-user-marker.txt exists=True sha256=329B16A01F113B6BBED10B85A8F1A96B0702BE5586AC07379855E41D175021E3
+C:\Users\user\Desktop\RD-03-user-marker.txt exists=True sha256=0D7BDE1DA3B7A256D61857EFD0E448672A17856B4D0AC9B5DABF23857345F745
+C:\Users\user\AppData\Local\GasProjectCalculator\RD-03-user-marker.txt exists=True sha256=476481A9C2E367C412F8A47A8868E148E302D3DD339079308FBE4069593D155E
+User data dir preserved: True
+Legacy previous-stage artifact preserved: True
+Final installer artifact present: True
+Screenshots:
+  rd-03-installed-main.png 144083 bytes
+  rd-03-installed-splash.png 83402 bytes
+  rd-03-uninstall-complete.png 19151 bytes
+  rd-03-uninstall-confirm.png 18990 bytes
+  rd-03-wizard-dir.png 44791 bytes
+  rd-03-wizard-finish.png 53895 bytes
+  rd-03-wizard-ready.png 44493 bytes
+  rd-03-wizard-tasks.png 42151 bytes
+  rd-03-wizard-welcome.png 54587 bytes

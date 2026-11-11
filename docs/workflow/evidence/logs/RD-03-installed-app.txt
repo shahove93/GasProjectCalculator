@@ -1,0 +1,38 @@
+﻿Launch: & "C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe" --preferred-port 8125 --splash-hold-seconds 10 --auto-close-seconds 26 --port-file "C:\Users\user\AppData\Local\Temp\opencode\rd03-app-final\port.json" --log-file "C:\Users\user\AppData\Local\Temp\opencode\rd03-app-final\desktop.log"
+Started PID=16412
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-installed-splash.png (520 x 320) title='СС.Расчет'
+SCREENSHOT D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-03-installed-main.png (1050 x 740) title='СС.Расчет'
+Port file:
+{"status": "ready", "host": "127.0.0.1", "port": 8125, "url": "http://127.0.0.1:8125/", "pid": 16412}
+Main window title: 'СС.Расчет'
+Waiting for auto-close...
+Process exited: True code=0
+=== desktop log ===
+2026-11-12 00:46:30,728 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=16412) ===
+2026-11-12 00:46:30,750 INFO [gasproject.desktop] Splash resource: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\frontend\splash.html
+2026-11-12 00:46:30,750 INFO [gasproject.desktop] [splash] splash window created: 520x320 uri=file:///C:/Users/user/AppData/Local/Programs/GasProjectCalculator/_internal/frontend/splash.html reduced_motion=False
+2026-11-12 00:46:31,262 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 00:46:31,262 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 00:46:31,602 INFO [gasproject.desktop] Frontend resource: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\_internal\frontend\index.html
+2026-11-12 00:46:31,853 INFO [gasproject.desktop] Selected loopback port 8125 (preferred 8125); socket bound on 127.0.0.1
+2026-11-12 00:46:31,990 INFO [uvicorn.error] Started server process [16412]
+2026-11-12 00:46:31,990 INFO [uvicorn.error] Waiting for application startup.
+2026-11-12 00:46:31,990 INFO [uvicorn.error] Application startup complete.
+2026-11-12 00:46:32,619 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:8125/ after 0.75s (thread=gasproject-backend pid=16412)
+2026-11-12 00:46:32,621 INFO [gasproject.desktop] Wrote port file: C:\Users\user\AppData\Local\Temp\opencode\rd03-app-final\port.json
+2026-11-12 00:46:32,621 INFO [gasproject.desktop] [splash] backend ready after 0.75s; preparing main window
+2026-11-12 00:46:32,662 INFO [gasproject.desktop] [window] main window created: title='СС.Расчет' width=1050 height=740 min_size=(860, 620)
+2026-11-12 00:46:32,662 INFO [gasproject.desktop] [splash] diagnostic hold 10.00s before closing the splash
+2026-11-12 00:46:42,698 INFO [gasproject.desktop] [splash] splash closed after backend readiness
+2026-11-12 00:46:42,713 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 00:46:42,713 INFO [gasproject.desktop] Auto-close: waiting 26.00s before closing window
+2026-11-12 00:47:08,714 INFO [gasproject.desktop] Auto-close: destroying window
+2026-11-12 00:47:08,714 INFO [gasproject.desktop] [window] main window closed
+2026-11-12 00:47:09,012 INFO [gasproject.desktop] Window closed by user
+2026-11-12 00:47:09,101 INFO [uvicorn.error] Shutting down
+2026-11-12 00:47:09,201 INFO [uvicorn.error] Waiting for application shutdown.
+2026-11-12 00:47:09,201 INFO [uvicorn.error] Application shutdown complete.
+2026-11-12 00:47:09,201 INFO [uvicorn.error] Finished server process [16412]
+2026-11-12 00:47:09,202 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 00:47:09,202 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 0 ===
+APP_SHOTS_DONE

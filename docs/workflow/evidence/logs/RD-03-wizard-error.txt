@@ -1,0 +1,6 @@
+﻿Launched installer PID=25096 with /DIR=C:\Windows\System32\RD03-Forbidden
+Wizard handle=14681854 title='Установка — СС.Расчет'
+CLICK Next
+CLICK Next
+CLICK Next
+CLICK Install
