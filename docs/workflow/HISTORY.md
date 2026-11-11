@@ -488,3 +488,12 @@ uninstall с сохранением `%LOCALAPPDATA%\GasProjectCalculator`, ок�
 `docs/workflow/reviews/RD-04-review.md`; Codex calls 0. Worker освобождён.
 Next owner — scoped commit README, затем FINAL-VERIFY (R0), Codex R3 stage
 acceptance и FINAL-REPORT.
+
+RD-04 закоммичен scoped-коммитом `c72979a` (README, RD-04 evidence/review,
+STATE/HISTORY). Запущен отдельный verifier FINAL-VERIFY (R0)
+`ctx_1cb546ad517e` (`task_e08ed7f8ac7b`, OpenCode Flash, term_2f6a9d9f):
+проверить интегрированный diff `e24d806..c72979a`, один полный suite, artifact
+path/size/SHA256 `043884…949A`, наличие скриншотов/документации, reuse
+RD-01..RD-03 evidence, отсутствие неожиданных файлов и неизменность расчётов/
+API; записать `RD-FINAL-evidence.md`/logs. Next owner — принять R0, затем
+Codex R3 stage acceptance.
