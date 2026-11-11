@@ -1,4 +1,4 @@
-# Состояние проекта
+﻿# Состояние проекта
 
 2026-11-11 — ГСВ и Windows installer **COMPLETE** (Codex R3 PASS).
 
@@ -49,6 +49,6 @@
   | RD-04 README | R0 | coord checklist | 0 |
   | FINAL-VERIFY | R0 | coord checklist | 0 |
   | FINAL stage | R3 | Codex astra high 1 | 6/5M |
-- Dispatch IDs: pending; next dispatch RD-01.
+- Dispatch IDs: RD-01 `ctx_eeb0ad4b83cb`/`task_527858dbf289`; next: await RD-01.
 - Product NOT_REVIEWED. :8000 не трогать; без push/merge/release;
   installer локально.
