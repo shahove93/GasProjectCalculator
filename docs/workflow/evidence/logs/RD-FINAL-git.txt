@@ -1,0 +1,270 @@
+﻿# RD-FINAL git/status evidence
+DATE=2026-11-12T01:13:25.6075968+03:00
+CWD=D:\Antigravity\GasProjectCalculator
+BRANCH=feature/ss-calculator-redesign
+HEAD=8c87e4498db47fe4c2614c701818c9657d76fec7
+BASELINE=e24d806
+VERIFY_TARGET=c72979a
+
+## git status --porcelain (start of verification)
+?? docs/workflow/evidence/logs/RD-FINAL-suite.txt
+
+## git log --oneline e24d806..HEAD
+8c87e44 docs(workflow): record RD-04 acceptance and final verification dispatch
+c72979a docs(readme): document SS.Raschet redesign and local installer (RD-04)
+b61205a docs(workflow): record RD-03 acceptance and RD-04 dispatch
+ffe17fb feat(installer): Russian SS.Raschet setup and rebuilt artifact (RD-03)
+6d91036 docs(workflow): record RD-02 acceptance and RD-03 dispatch
+32e77b1 feat(desktop): brand window and local startup splash (RD-02)
+2703e83 docs(workflow): record RD-01 PASS and RD-02 dispatch
+041b13d feat(redesign): compact SS.Raschet UI with circular emblem (RD-01)
+bd91c77 docs(workflow): record RD-01 dispatch IDs
+526cc9d docs(workflow): trim STATE to 3 KiB
+ba9d7cf docs(workflow): keep STATE within 3 KiB
+36e2a3b docs(workflow): finalize STATE size
+b59559d docs(workflow): tighten STATE snapshot size
+61b199f docs(workflow): freeze SS.Raschet redesign plan and branch state
+
+## git diff --stat e24d806..HEAD
+ ARCHITECTURE.md                                    |  28 +
+ README.md                                          | 115 ++-
+ ROADMAP.md                                         |   8 +-
+ app/desktop_launcher.py                            | 311 +++++++--
+ app/resources.py                                   |  16 +
+ assets/company-logo-source.png                     | Bin 0 -> 10174 bytes
+ docs/screenshots/rd-01-1050x740-initial.png        | Bin 0 -> 141400 bytes
+ docs/screenshots/rd-01-390x844-header.png          | Bin 0 -> 81143 bytes
+ docs/screenshots/rd-01-390x844-layout.png          | Bin 0 -> 64878 bytes
+ docs/screenshots/rd-01-390x844-result.png          | Bin 0 -> 43917 bytes
+ docs/screenshots/rd-01-422-error-1050x740.png      | Bin 0 -> 129783 bytes
+ docs/screenshots/rd-01-860x620-header.png          | Bin 0 -> 99899 bytes
+ docs/screenshots/rd-01-860x620-layout.png          | Bin 0 -> 80616 bytes
+ docs/screenshots/rd-01-860x620-result.png          | Bin 0 -> 47439 bytes
+ .../screenshots/rd-01-combined-result-1050x740.png | Bin 0 -> 72545 bytes
+ docs/screenshots/rd-01-gsn-result-1050x740.png     | Bin 0 -> 74706 bytes
+ docs/screenshots/rd-01-gsv-result-1050x740.png     | Bin 0 -> 68587 bytes
+ docs/screenshots/rd-01-reduced-motion-1050x740.png | Bin 0 -> 41584 bytes
+ docs/screenshots/rd-02-failure-dialog.png          | Bin 0 -> 30873 bytes
+ docs/screenshots/rd-02-main-window.png             | Bin 0 -> 141421 bytes
+ docs/screenshots/rd-02-splash-reduced-motion.png   | Bin 0 -> 80623 bytes
+ docs/screenshots/rd-02-splash.png                  | Bin 0 -> 85195 bytes
+ docs/screenshots/rd-03-installed-main.png          | Bin 0 -> 144083 bytes
+ docs/screenshots/rd-03-installed-splash.png        | Bin 0 -> 83402 bytes
+ docs/screenshots/rd-03-setup-error.png             | Bin 0 -> 8953 bytes
+ docs/screenshots/rd-03-uninstall-complete.png      | Bin 0 -> 19151 bytes
+ docs/screenshots/rd-03-uninstall-confirm.png       | Bin 0 -> 18990 bytes
+ docs/screenshots/rd-03-wizard-dir.png              | Bin 0 -> 44791 bytes
+ docs/screenshots/rd-03-wizard-finish.png           | Bin 0 -> 53895 bytes
+ docs/screenshots/rd-03-wizard-ready.png            | Bin 0 -> 44493 bytes
+ docs/screenshots/rd-03-wizard-tasks.png            | Bin 0 -> 42151 bytes
+ docs/screenshots/rd-03-wizard-welcome.png          | Bin 0 -> 54587 bytes
+ docs/workflow/APPROVALS.md                         |  13 +
+ docs/workflow/HISTORY.md                           | 258 +++++++
+ docs/workflow/REDESIGN-BRIEF.md                    |  13 +
+ docs/workflow/REDESIGN-RECOVERY.md                 |  52 ++
+ docs/workflow/STATE.md                             |  73 +-
+ docs/workflow/evidence/RD-01-evidence.md           | 152 ++++
+ docs/workflow/evidence/RD-02-evidence.md           | 163 +++++
+ docs/workflow/evidence/RD-03-evidence.md           | 296 ++++++++
+ docs/workflow/evidence/RD-04-evidence.md           | 135 ++++
+ .../evidence/REDESIGN-state-pre-recovery.md        |  54 ++
+ docs/workflow/evidence/logs/RD-01-422-payload.json |   1 +
+ .../workflow/evidence/logs/RD-01-422-response.json |   1 +
+ docs/workflow/evidence/logs/RD-01-browser.txt      | 121 ++++
+ docs/workflow/evidence/logs/RD-01-git.txt          |  39 ++
+ docs/workflow/evidence/logs/RD-01-suite.txt        | Bin 0 -> 1772 bytes
+ .../evidence/logs/RD-01-uvicorn-8137.err.txt       |   4 +
+ .../evidence/logs/RD-01-uvicorn-8137.out.txt       |   3 +
+ docs/workflow/evidence/logs/RD-01-uvicorn.err.txt  |   4 +
+ docs/workflow/evidence/logs/RD-01-uvicorn.out.txt  |   1 +
+ docs/workflow/evidence/logs/RD-02-browser.txt      |  79 +++
+ .../logs/RD-02-failure-dialog-launcher.txt         |  12 +
+ .../logs/RD-02-failure-nodialog-launcher.txt       |  11 +
+ docs/workflow/evidence/logs/RD-02-git.txt          |  56 ++
+ docs/workflow/evidence/logs/RD-02-main-window.json | 119 ++++
+ docs/workflow/evidence/logs/RD-02-main-window.txt  |   9 +
+ docs/workflow/evidence/logs/RD-02-network.txt      |  61 ++
+ .../evidence/logs/RD-02-normal-launcher.txt        |  26 +
+ .../evidence/logs/RD-02-portskip-launcher.txt      |  26 +
+ .../evidence/logs/RD-02-splash-capture.txt         |   9 +
+ .../evidence/logs/RD-02-splash-hold-launcher.txt   |  27 +
+ .../evidence/logs/RD-02-splash-window.json         | 138 ++++
+ docs/workflow/evidence/logs/RD-02-suite.txt        |  15 +
+ docs/workflow/evidence/logs/RD-02-title-size.json  | 119 ++++
+ docs/workflow/evidence/logs/RD-03-git.txt          |  68 ++
+ .../evidence/logs/RD-03-inno-gui-install.txt       | 765 ++++++++++++++++++++
+ .../logs/RD-03-inno-install-no-desktop.txt         | 584 ++++++++++++++++
+ .../evidence/logs/RD-03-inno-old-uninstall.txt     | 155 +++++
+ .../logs/RD-03-inno-reinstall-desktop-final.txt    | 771 +++++++++++++++++++++
+ .../evidence/logs/RD-03-inno-reinstall-desktop.txt | 771 +++++++++++++++++++++
+ .../evidence/logs/RD-03-inno-uninstall-reset.txt   | 158 +++++
+ .../evidence/logs/RD-03-install-no-desktop.txt     | 147 ++++
+ .../workflow/evidence/logs/RD-03-installed-app.txt |  38 +
+ .../logs/RD-03-installer-build-final.out.txt       | 176 +++++
+ .../evidence/logs/RD-03-network-unchanged.txt      |  35 +
+ .../workflow/evidence/logs/RD-03-old-uninstall.txt |  34 +
+ .../evidence/logs/RD-03-packaging-build.err.txt    | 117 ++++
+ .../evidence/logs/RD-03-packaging-build.out.txt    |   5 +
+ .../logs/RD-03-reinstall-desktop-final.txt         | 152 ++++
+ .../evidence/logs/RD-03-reinstall-desktop.txt      | 152 ++++
+ docs/workflow/evidence/logs/RD-03-runtime.txt      | 120 ++++
+ .../evidence/logs/RD-03-setup-error-cleanup.txt    |  64 ++
+ docs/workflow/evidence/logs/RD-03-setup-error.txt  |  24 +
+ docs/workflow/evidence/logs/RD-03-suite-exit.txt   |   1 +
+ docs/workflow/evidence/logs/RD-03-suite.txt        |  15 +
+ .../evidence/logs/RD-03-uninstall-gui-final.txt    |  26 +
+ .../workflow/evidence/logs/RD-03-uninstall-gui.txt |  14 +
+ .../evidence/logs/RD-03-uninstall-reset2.txt       |  28 +
+ docs/workflow/evidence/logs/RD-03-wizard-error.txt |   6 +
+ docs/workflow/evidence/logs/RD-03-wizard-final.txt |  24 +
+ docs/workflow/reviews/RD-01-review.md              |  62 ++
+ docs/workflow/reviews/RD-02-review.md              |  54 ++
+ docs/workflow/reviews/RD-03-review.md              |  89 +++
+ docs/workflow/reviews/RD-04-review.md              |  30 +
+ docs/workflow/tasks/RD-01.md                       |  90 +++
+ docs/workflow/tasks/RD-02.md                       |  88 +++
+ docs/workflow/tasks/RD-03.md                       |  92 +++
+ docs/workflow/tasks/RD-04.md                       |  55 ++
+ docs/workflow/tasks/RD-FINAL-VERIFY.md             |  47 ++
+ frontend/assets/company-emblem.png                 | Bin 0 -> 5230 bytes
+ frontend/index.html                                | 230 ++++--
+ frontend/splash.html                               | 158 +++++
+ installer/GasProjectCalculator.iss                 |  37 +-
+ installer/verify-install.ps1                       |  62 +-
+ installer/verify-runtime.ps1                       | 103 +--
+ installer/verify-uninstall.ps1                     |  52 +-
+ packaging/GasProjectCalculator.spec                |  11 +-
+ tests/test_desktop_launcher.py                     |  63 +-
+ tests/test_frontend_redesign.py                    |  68 ++
+ tests/test_main.py                                 |   2 +-
+ 111 files changed, 8156 insertions(+), 255 deletions(-)
+
+## git diff --name-status e24d806..HEAD
+M	ARCHITECTURE.md
+M	README.md
+M	ROADMAP.md
+M	app/desktop_launcher.py
+M	app/resources.py
+A	assets/company-logo-source.png
+A	docs/screenshots/rd-01-1050x740-initial.png
+A	docs/screenshots/rd-01-390x844-header.png
+A	docs/screenshots/rd-01-390x844-layout.png
+A	docs/screenshots/rd-01-390x844-result.png
+A	docs/screenshots/rd-01-422-error-1050x740.png
+A	docs/screenshots/rd-01-860x620-header.png
+A	docs/screenshots/rd-01-860x620-layout.png
+A	docs/screenshots/rd-01-860x620-result.png
+A	docs/screenshots/rd-01-combined-result-1050x740.png
+A	docs/screenshots/rd-01-gsn-result-1050x740.png
+A	docs/screenshots/rd-01-gsv-result-1050x740.png
+A	docs/screenshots/rd-01-reduced-motion-1050x740.png
+A	docs/screenshots/rd-02-failure-dialog.png
+A	docs/screenshots/rd-02-main-window.png
+A	docs/screenshots/rd-02-splash-reduced-motion.png
+A	docs/screenshots/rd-02-splash.png
+A	docs/screenshots/rd-03-installed-main.png
+A	docs/screenshots/rd-03-installed-splash.png
+A	docs/screenshots/rd-03-setup-error.png
+A	docs/screenshots/rd-03-uninstall-complete.png
+A	docs/screenshots/rd-03-uninstall-confirm.png
+A	docs/screenshots/rd-03-wizard-dir.png
+A	docs/screenshots/rd-03-wizard-finish.png
+A	docs/screenshots/rd-03-wizard-ready.png
+A	docs/screenshots/rd-03-wizard-tasks.png
+A	docs/screenshots/rd-03-wizard-welcome.png
+M	docs/workflow/APPROVALS.md
+M	docs/workflow/HISTORY.md
+A	docs/workflow/REDESIGN-BRIEF.md
+A	docs/workflow/REDESIGN-RECOVERY.md
+M	docs/workflow/STATE.md
+A	docs/workflow/evidence/RD-01-evidence.md
+A	docs/workflow/evidence/RD-02-evidence.md
+A	docs/workflow/evidence/RD-03-evidence.md
+A	docs/workflow/evidence/RD-04-evidence.md
+A	docs/workflow/evidence/REDESIGN-state-pre-recovery.md
+A	docs/workflow/evidence/logs/RD-01-422-payload.json
+A	docs/workflow/evidence/logs/RD-01-422-response.json
+A	docs/workflow/evidence/logs/RD-01-browser.txt
+A	docs/workflow/evidence/logs/RD-01-git.txt
+A	docs/workflow/evidence/logs/RD-01-suite.txt
+A	docs/workflow/evidence/logs/RD-01-uvicorn-8137.err.txt
+A	docs/workflow/evidence/logs/RD-01-uvicorn-8137.out.txt
+A	docs/workflow/evidence/logs/RD-01-uvicorn.err.txt
+A	docs/workflow/evidence/logs/RD-01-uvicorn.out.txt
+A	docs/workflow/evidence/logs/RD-02-browser.txt
+A	docs/workflow/evidence/logs/RD-02-failure-dialog-launcher.txt
+A	docs/workflow/evidence/logs/RD-02-failure-nodialog-launcher.txt
+A	docs/workflow/evidence/logs/RD-02-git.txt
+A	docs/workflow/evidence/logs/RD-02-main-window.json
+A	docs/workflow/evidence/logs/RD-02-main-window.txt
+A	docs/workflow/evidence/logs/RD-02-network.txt
+A	docs/workflow/evidence/logs/RD-02-normal-launcher.txt
+A	docs/workflow/evidence/logs/RD-02-portskip-launcher.txt
+A	docs/workflow/evidence/logs/RD-02-splash-capture.txt
+A	docs/workflow/evidence/logs/RD-02-splash-hold-launcher.txt
+A	docs/workflow/evidence/logs/RD-02-splash-window.json
+A	docs/workflow/evidence/logs/RD-02-suite.txt
+A	docs/workflow/evidence/logs/RD-02-title-size.json
+A	docs/workflow/evidence/logs/RD-03-git.txt
+A	docs/workflow/evidence/logs/RD-03-inno-gui-install.txt
+A	docs/workflow/evidence/logs/RD-03-inno-install-no-desktop.txt
+A	docs/workflow/evidence/logs/RD-03-inno-old-uninstall.txt
+A	docs/workflow/evidence/logs/RD-03-inno-reinstall-desktop-final.txt
+A	docs/workflow/evidence/logs/RD-03-inno-reinstall-desktop.txt
+A	docs/workflow/evidence/logs/RD-03-inno-uninstall-reset.txt
+A	docs/workflow/evidence/logs/RD-03-install-no-desktop.txt
+A	docs/workflow/evidence/logs/RD-03-installed-app.txt
+A	docs/workflow/evidence/logs/RD-03-installer-build-final.out.txt
+A	docs/workflow/evidence/logs/RD-03-network-unchanged.txt
+A	docs/workflow/evidence/logs/RD-03-old-uninstall.txt
+A	docs/workflow/evidence/logs/RD-03-packaging-build.err.txt
+A	docs/workflow/evidence/logs/RD-03-packaging-build.out.txt
+A	docs/workflow/evidence/logs/RD-03-reinstall-desktop-final.txt
+A	docs/workflow/evidence/logs/RD-03-reinstall-desktop.txt
+A	docs/workflow/evidence/logs/RD-03-runtime.txt
+A	docs/workflow/evidence/logs/RD-03-setup-error-cleanup.txt
+A	docs/workflow/evidence/logs/RD-03-setup-error.txt
+A	docs/workflow/evidence/logs/RD-03-suite-exit.txt
+A	docs/workflow/evidence/logs/RD-03-suite.txt
+A	docs/workflow/evidence/logs/RD-03-uninstall-gui-final.txt
+A	docs/workflow/evidence/logs/RD-03-uninstall-gui.txt
+A	docs/workflow/evidence/logs/RD-03-uninstall-reset2.txt
+A	docs/workflow/evidence/logs/RD-03-wizard-error.txt
+A	docs/workflow/evidence/logs/RD-03-wizard-final.txt
+A	docs/workflow/reviews/RD-01-review.md
+A	docs/workflow/reviews/RD-02-review.md
+A	docs/workflow/reviews/RD-03-review.md
+A	docs/workflow/reviews/RD-04-review.md
+A	docs/workflow/tasks/RD-01.md
+A	docs/workflow/tasks/RD-02.md
+A	docs/workflow/tasks/RD-03.md
+A	docs/workflow/tasks/RD-04.md
+A	docs/workflow/tasks/RD-FINAL-VERIFY.md
+A	frontend/assets/company-emblem.png
+M	frontend/index.html
+A	frontend/splash.html
+M	installer/GasProjectCalculator.iss
+M	installer/verify-install.ps1
+M	installer/verify-runtime.ps1
+M	installer/verify-uninstall.ps1
+M	packaging/GasProjectCalculator.spec
+M	tests/test_desktop_launcher.py
+A	tests/test_frontend_redesign.py
+M	tests/test_main.py
+
+## c72979a..HEAD (concurrent coordinator docs commit)
+M	docs/workflow/HISTORY.md
+M	docs/workflow/STATE.md
+ docs/workflow/HISTORY.md |  9 +++++++++
+ docs/workflow/STATE.md   | 12 ++++++------
+ 2 files changed, 15 insertions(+), 6 deletions(-)
+
+## RF-9 calculations/API diff e24d806..HEAD (expect empty)
+
+EXIT_EMPTY_CHECK=EMPTY
+
+## untracked (non-ignored) files
+docs/workflow/evidence/logs/RD-FINAL-suite.txt
+
+## tracked file count
+TRACKED_COUNT=214

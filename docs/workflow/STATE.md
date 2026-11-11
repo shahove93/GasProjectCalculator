@@ -26,10 +26,14 @@
   legacy artifact в `installer/Output/legacy/`.
 - RD-04 README (R0): **ACCEPTED**, scoped commit `c72979a`; review
   [RD-04-review](reviews/RD-04-review.md); R0 links MISSING=0, hash совпал.
-- RD-FINAL-VERIFY (R0): baseline `e24d806`, final HEAD `c72979a`; verifier
-  ctx_1cb546ad517e, task_e08ed7f8ac7b (OpenCode Flash, term_2f6a9d9f) running.
-- Next owner: FINAL-VERIFY worker_done → R0 approval → Codex R3 stage
-  acceptance (astra high) → FINAL-REPORT.
+- RD-FINAL-VERIFY (R0): verifier ctx_1cb546ad517e succeeded/released;
+  **PASS** координаторским R0 checklist RF-1..RF-10. HEAD `8c87e44`
+  (docs-only сдвиг от `c72979a`), suite 163 OK exit 0, artifact hash совпал,
+  26 снимков непустые, неожиданных файлов нет. Evidence
+  [RD-FINAL](../evidence/RD-FINAL-evidence.md), review
+  [RD-FINAL-VERIFY](reviews/RD-FINAL-VERIFY-review.md).
+- Next owner: Codex R3 stage acceptance (`gpt-6-astra` high), затем
+  FINAL-REPORT и COMPLETE.
 - Frozen TASK `docs/workflow/tasks/RD-*.md`, FINAL-VERIFY, FINAL.
 - `:8000` PID12888 и `:8138` не трогать; no push/merge/deploy/release;
   installer только локально.

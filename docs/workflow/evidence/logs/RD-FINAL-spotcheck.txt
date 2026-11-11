@@ -1,0 +1,60 @@
+﻿# RD-FINAL spot checks (RF-5, environment)
+DATE=2026-11-12T01:13:52.7463670+03:00
+CWD=D:\Antigravity\GasProjectCalculator
+
+## app/desktop_launcher.py branding/geometry constants
+L58: APP_TITLE = "СС.Расчет"
+L59: APP_WIDTH = 1050
+L60: APP_HEIGHT = 740
+L61: APP_MIN_SIZE = (860, 620)
+L295: APP_TITLE,
+L297: width=APP_WIDTH,
+L298: height=APP_HEIGHT,
+L299: min_size=APP_MIN_SIZE,
+L310: APP_TITLE,
+L412: def show_native_error(message: str, title: str = APP_TITLE) -> None:
+L505: APP_TITLE,
+L506: APP_WIDTH,
+L507: APP_HEIGHT,
+L508: APP_MIN_SIZE,
+
+## frontend/index.html title/heading/subtitle
+L6: <title>СС.Расчет</title>
+L80: .brand-subtitle {
+L287: .brand-subtitle { font-size: 13px; }
+L303: <h1 class="brand-title">СС.Расчет</h1>
+L304: <p class="brand-subtitle">Калькулятор ГСН и ГСВ</p>
+
+## installer/GasProjectCalculator.iss name/shortcuts/publisher
+L14: #define AppName "СС.Расчет"
+L16: #define AppPublisher "ООО «Северное сияние»"
+L21: AppName={#AppName}
+L23: AppVerName={#AppName} {#AppVersion}
+L24: AppPublisher={#AppPublisher}
+L26: VersionInfoCompany={#AppPublisher}
+L27: VersionInfoDescription={#AppName} — установщик
+L28: DefaultDirName={localappdata}\Programs\GasProjectCalculator
+L29: DefaultGroupName={#AppName}
+L32: PrivilegesRequired=lowest
+L49: UninstallDisplayName={#AppName}
+L62: Name: "desktopicon"; Description: "Создать ярлык на &рабочем столе"; GroupDescription: "Дополнительные ярлыки:"; Flags: unchecked
+L71: Name: "{autoprograms}\{#AppName}"; Filename: "{app}\{#AppExeName}"; WorkingDir: "{app}"
+L73: Name: "{autodesktop}\{#AppName}"; Filename: "{app}\{#AppExeName}"; WorkingDir: "{app}"; Tasks: desktopicon
+L76: Filename: "{app}\{#AppExeName}"; Description: "Запустить {#AppName}"; Flags: nowait postinstall skipifsilent
+
+## README branding
+L1: # СС.Расчет
+L3: **Калькулятор ГСН и ГСВ**
+L65: - **Окно.** Компактное окно приложения **1050×740** пикселей (минимальный
+L66: размер **860×620**), с адаптивной вёрсткой под узкие экраны.
+L67: - **Заставка запуска.** Локальная русская заставка 520×320 с анимацией потока
+
+## installer artifact is git-ignored / not tracked
+check-ignore=.gitignore:17:installer/Output/	installer/Output/GasProjectCalculator-Setup-1.0.0.exe
+tracked_in_output=[]
+
+## off-limits listeners still alive (read-only)
+port=8138 pid=23152 addr=127.0.0.1
+port=8000 pid=12888 addr=0.0.0.0
+PID12888=12888
+PID23152=23152

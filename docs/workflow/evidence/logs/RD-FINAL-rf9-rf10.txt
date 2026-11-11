@@ -1,0 +1,55 @@
+﻿# RD-FINAL RF-9 / RF-10 checks
+DATE=2026-11-12T01:13:38.5748211+03:00
+CWD=D:\Antigravity\GasProjectCalculator
+
+## RF-9 calculations/API/rates diff e24d806..HEAD (must be empty)
+NAMES=[]
+EMPTY=True
+
+## RF-9 calculation test files diff e24d806..HEAD (must be empty)
+NAMES=[]
+EMPTY=True
+
+## RF-10 untracked non-ignored files at verification (only RD-FINAL logs expected)
+docs/workflow/evidence/logs/RD-FINAL-artifact.txt
+docs/workflow/evidence/logs/RD-FINAL-files.txt
+docs/workflow/evidence/logs/RD-FINAL-git.txt
+docs/workflow/evidence/logs/RD-FINAL-suite.txt
+
+## RF-10 tracked binary/asset additions e24d806..HEAD
+assets/company-logo-source.png
+docs/screenshots/rd-01-1050x740-initial.png
+docs/screenshots/rd-01-390x844-header.png
+docs/screenshots/rd-01-390x844-layout.png
+docs/screenshots/rd-01-390x844-result.png
+docs/screenshots/rd-01-422-error-1050x740.png
+docs/screenshots/rd-01-860x620-header.png
+docs/screenshots/rd-01-860x620-layout.png
+docs/screenshots/rd-01-860x620-result.png
+docs/screenshots/rd-01-combined-result-1050x740.png
+docs/screenshots/rd-01-gsn-result-1050x740.png
+docs/screenshots/rd-01-gsv-result-1050x740.png
+docs/screenshots/rd-01-reduced-motion-1050x740.png
+docs/screenshots/rd-02-failure-dialog.png
+docs/screenshots/rd-02-main-window.png
+docs/screenshots/rd-02-splash-reduced-motion.png
+docs/screenshots/rd-02-splash.png
+docs/screenshots/rd-03-installed-main.png
+docs/screenshots/rd-03-installed-splash.png
+docs/screenshots/rd-03-setup-error.png
+docs/screenshots/rd-03-uninstall-complete.png
+docs/screenshots/rd-03-uninstall-confirm.png
+docs/screenshots/rd-03-wizard-dir.png
+docs/screenshots/rd-03-wizard-finish.png
+docs/screenshots/rd-03-wizard-ready.png
+docs/screenshots/rd-03-wizard-tasks.png
+docs/screenshots/rd-03-wizard-welcome.png
+frontend/assets/company-emblem.png
+
+## RF-10 suspicious tracked names
+SUSPICIOUS_COUNT=0
+
+
+## RF-10 secret-pattern scan over tracked text files (case-insensitive)
+SECRET_HIT_COUNT=0
+

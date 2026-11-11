@@ -497,3 +497,19 @@ path/size/SHA256 `043884…949A`, наличие скриншотов/докум
 RD-01..RD-03 evidence, отсутствие неожиданных файлов и неизменность расчётов/
 API; записать `RD-FINAL-evidence.md`/logs. Next owner — принять R0, затем
 Codex R3 stage acceptance.
+## 2026-11-11 — RD-FINAL-VERIFY R0 PASS
+
+OpenCode Flash verifier `ctx_1cb546ad517e` (`task_e08ed7f8ac7b`) собрал
+интегрированный evidence pack на фактическом HEAD `8c87e44` (dispatch target
+`c72979a`; разница docs-only, продуктовое дерево идентично). RF-1..RF-10:
+diff `e24d806..HEAD` 111 files/+8156/−255 в scope RD-01..RD-04 + workflow docs;
+единственный suite прогон `Ran 163 tests ... OK`, exit 0; artifact 15 273 647
+bytes, SHA256 `043884…949A`, совпал с README/RD-03; 26 `rd-*.png` непустые;
+title/окно/shortcut и три режима 131250/105525/145950 переиспользованы из
+RD-02/RD-03/RD-01; splash/no-network/reduced motion из RD-02; RU installer и
+user-file preservation из RD-03; `app/main.py`/calculators/requirements/
+calculation-тесты без diff; untracked только RD-FINAL логи, secrets подозрений
+нет. Координатор принял R0 по RF-1..RF-10; review record
+`docs/workflow/reviews/RD-FINAL-VERIFY-review.md`. :8000/:8138 не тронуты.
+Next owner — Codex R3 stage acceptance (`gpt-6-astra` high), затем FINAL-REPORT
+и COMPLETE.
