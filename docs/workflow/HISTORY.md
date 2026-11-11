@@ -472,3 +472,19 @@ claims о signing/publication/telemetry) запущен OpenCode Flash
 `ctx_d59e441d9384` (`task_cb670182c32f`, term_d9ede751); приёмка — R0
 coordinator checklist. Next owner — дождаться worker_done, принять R0 и
 закоммитить, затем FINAL-VERIFY (R0) и Codex R3 stage acceptance.
+
+## 2026-11-11 — RD-04 R0 PASS
+
+OpenCode Flash `ctx_d59e441d9384` (`task_cb670182c32f`) обновил README под
+`СС.Расчет`: бренд/подпись, exact local artifact path/size 15 273 647/SHA256
+`043884…949A`, RU per-user installer + Start Menu/optional Desktop, русский
+uninstall с сохранением `%LOCALAPPDATA%\GasProjectCalculator`, окно 1050×740
+(min 860×620), заставка/reduced motion, три режима и developer-путь без
+изменений, реальные ссылки на RD-01/RD-02/RD-03 screenshots/evidence/reviews,
+локальная неподписанная сборка без claims о публикации/телеметрии/cloud.
+Изменён только `README.md` (+85/−30) и `RD-04-evidence.md`. Координатор
+принял R0 по R4-1..R4-7: artifact hash/size сверены, все относительные ссылки
+существуют (MISSING=0), false claims нет. Review record
+`docs/workflow/reviews/RD-04-review.md`; Codex calls 0. Worker освобождён.
+Next owner — scoped commit README, затем FINAL-VERIFY (R0), Codex R3 stage
+acceptance и FINAL-REPORT.

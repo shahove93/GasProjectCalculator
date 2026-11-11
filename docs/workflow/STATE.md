@@ -24,11 +24,12 @@
   `installer/Output/GasProjectCalculator-Setup-1.0.0.exe`, 15 273 647 bytes,
   SHA256 `043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A`;
   legacy artifact в `installer/Output/legacy/`.
-- RD-04 README (R0): baseline `ffe17fb`; implementer ctx_d59e441d9384,
-  task_cb670182c32f (OpenCode Flash, term_d9ede751) running; приёмка —
-  coordinator checklist R4-1..R4-7.
-- Next owner: RD-04 worker_done → R0 checklist acceptance → scoped commit,
-  затем FINAL-VERIFY (R0) и Codex R3 stage acceptance.
+- RD-04 README (R0): implementer ctx_d59e441d9384 succeeded/released;
+  **PASS** координаторским R0 checklist R4-1..R4-7 (ссылки MISSING=0,
+  artifact hash совпал, no false claims); review
+  [RD-04-review](reviews/RD-04-review.md). Scoped commit следующий.
+- Next owner: commit RD-04, затем FINAL-VERIFY (R0), затем Codex R3 stage
+  acceptance и FINAL-REPORT.
 - Frozen TASK `docs/workflow/tasks/RD-*.md`, FINAL-VERIFY, FINAL.
 - `:8000` PID12888 и `:8138` не трогать; no push/merge/deploy/release;
   installer только локально.
