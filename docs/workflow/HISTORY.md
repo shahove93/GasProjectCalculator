@@ -221,3 +221,21 @@ evidence/review; artifact 15 256 037 байт, SHA256 `2973278F…428F` совп
 [FINAL-WINDOWS-INSTALLER-EVIDENCE](../evidence/FINAL-WINDOWS-INSTALLER-EVIDENCE.md)
 с картой frozen checklist и NOT_RUN. R0 принят координатором; Codex calls 0.
 Next owner — Codex R3 stage acceptance `gpt-6-astra` high.
+
+## 2026-11-11 — Codex R3 stage acceptance PASS, этап COMPLETE
+
+Codex `gpt-6-astra` high (`ctx_591f058a7ec3`, `task_898d8341faad`) независимо
+проверил интегрированный diff `22133a1..3d291e9` (launcher/packaging/installer/
+tests, TASK/review/evidence, screenshots) и вернул **PASS** без BLOCKER/MAJOR:
+scope соблюдён, VISION/расчёты/API/frontend не изменены, ARCHITECTURE/ROADMAP
+SHA256 совпали с APPROVALS; clean x64 build, per-user HKCU install, Start Menu +
+optional Desktop, Python-free GUI, readiness, три режима 131250/105525/145950,
+127.0.0.1-only и обход занятого порта, закрытие освобождает порт, понятный
+симулированный отказ, два uninstall с сохранением маркеров, developer uvicorn,
+suite 146 OK, README и artifact SHA256 `2973278F…428F` подтверждены по исходным
+логам. Reviewer файлов не менял, проверки повторно не запускал. Codex calls
+этапа: 3 (WI-01 1, WI-02 1, stage 1); потолки не превышены. `WI02-R1-F1`
+остаётся MINOR backlog. Оформлены
+`docs/workflow/FINAL-REPORT-WINDOWS-INSTALLER.md`,
+`docs/workflow/reviews/FINAL-STAGE-review.md` и STATE COMPLETE. Push/merge/deploy/
+release не выполнялись; installer передан локально.
