@@ -32,7 +32,8 @@
   26 снимков непустые, неожиданных файлов нет. Evidence
   [RD-FINAL](../evidence/RD-FINAL-evidence.md), review
   [RD-FINAL-VERIFY](reviews/RD-FINAL-VERIFY-review.md).
-- Next owner: Codex R3 stage acceptance (`gpt-6-astra` high), затем
+- Next owner: Codex R3 stage acceptance `ctx_3b5e848dc8a6`
+  (`task_eca7c45d6240`, `gpt-6-astra` high, term_6def3abc) running; затем
   FINAL-REPORT и COMPLETE.
 - Frozen TASK `docs/workflow/tasks/RD-*.md`, FINAL-VERIFY, FINAL.
 - `:8000` PID12888 и `:8138` не трогать; no push/merge/deploy/release;

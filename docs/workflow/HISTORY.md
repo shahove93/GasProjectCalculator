@@ -513,3 +513,10 @@ calculation-тесты без diff; untracked только RD-FINAL логи, se
 `docs/workflow/reviews/RD-FINAL-VERIFY-review.md`. :8000/:8138 не тронуты.
 Next owner — Codex R3 stage acceptance (`gpt-6-astra` high), затем FINAL-REPORT
 и COMPLETE.
+
+Запущена финальная Codex R3 stage acceptance `ctx_3b5e848dc8a6`
+(`task_eca7c45d6240`, `gpt-6-astra` high, term_6def3abc) на интегрированном
+состоянии `9631f13`: сверить delivered behavior с VISION/ARCHITECTURE/ROADMAP,
+diff/артефакт/скриншоты/ревью и счётчики; файлов не менять, evidence reuse.
+Codex calls этапа до этого: RD-02 1, RD-03 2; резерв R3 ≤6/5M. Next owner —
+дождаться вердикта, затем FINAL-REPORT и COMPLETE при PASS.
