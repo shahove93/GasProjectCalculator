@@ -520,3 +520,24 @@ Next owner — Codex R3 stage acceptance (`gpt-6-astra` high), затем FINAL-
 diff/артефакт/скриншоты/ревью и счётчики; файлов не менять, evidence reuse.
 Codex calls этапа до этого: RD-02 1, RD-03 2; резерв R3 ≤6/5M. Next owner —
 дождаться вердикта, затем FINAL-REPORT и COMPLETE при PASS.
+
+## 2026-11-12 — Финальная Codex R3 stage acceptance PASS, этап COMPLETE
+
+Независимая Codex R3 stage acceptance `ctx_3b5e848dc8a6`
+(`task_eca7c45d6240`, `gpt-6-astra` high) вернула **PASS** по интегрированному
+diff `e24d806..a14f032`: бренд/ярлыки `СС.Расчет`, круглая эмблема без
+wordmark, окно 1050×740/min 860×620, русская заставка с газовым потоком и
+reduced motion, русский installer/uninstaller с optional Desktop, три режима
+125000…/100500…/139000… (131250/105525/145950), loopback/port/close lifecycle,
+сохранение user files, suite 163 OK, API/расчёты/requirements без diff,
+artifact SHA256 `043884…949A` локальный/NotSigned, ARCHITECTURE/ROADMAP/VISION
+SHA256 совпали с APPROVALS. Findings: RD-01 F1–F3 NIT backlog; RD-FINAL-N01
+MINOR (устаревший HEAD/C2 dirty в STATE) и N02 NIT (неверный относительный
+путь) — оба исправлены координатором в финальном STATE. Остаточные риски:
+права на эмблему, неподписанный installer/SmartScreen, одна Windows/WebView2
+среда, reduced motion через эмуляцию, ранний диагностический failure,
+screenshot-only overflowX. Push/merge/deploy/release/signing не выполнялись.
+Оформлены `docs/workflow/FINAL-REPORT-SS-RASCHET-REDESIGN.md` и
+`docs/workflow/reviews/FINAL-STAGE-REDESIGN-review.md`; прежние
+FINAL-REPORT.md (ГСВ) и FINAL-STAGE-review.md (Windows installer) сохранены.
+Все Orca workers released; STATE COMPLETE; :8000 PID12888 не тронут.

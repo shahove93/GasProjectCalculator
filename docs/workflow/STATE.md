@@ -1,44 +1,36 @@
 ﻿# Состояние проекта
 
-Редизайн «СС.Расчет» IN_PROGRESS (утверждён, вариант 1). Recovery:
-[REDESIGN-RECOVERY](REDESIGN-RECOVERY.md), старый snapshot
-[evidence](evidence/REDESIGN-state-pre-recovery.md).
+**СС.Расчет — редизайн COMPLETE** (2026-11-12). Все TASK приняты,
+FINAL-VERIFY R0 PASS, независимая Codex R3 stage acceptance **PASS**.
+Отчёт: [FINAL-REPORT-SS-RASCHET-REDESIGN](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
 
-- Branch `feature/ss-calculator-redesign`, HEAD `6d91036`, RD-03 C2 dirty.
-- Parent Run `run_8e5d92ad57c7`, coordinator TASK `task_82bfbabba91b`.
-- Child Run `run_8de25272cf66` (coordinator bound via `run-use`).
-- RD-01 **ACCEPTED**, commit `041b13d`, OpenCode Pro R1 PASS; review
-  [RD-01-review](reviews/RD-01-review.md); NIT F1–F3 backlog.
-- RD-02 **ACCEPTED**, commit `32e77b1`, Codex R2 PASS (calls 1/4); review
-  [RD-02-review](reviews/RD-02-review.md).
-- RD-03 installer (R2): C1 FAIL (RD03-F01 MAJOR, R3-2 missing setup-error
-  screenshot); C2 correction closed it with real RU dialog. C2 repeated full
-  review `ctx_a92d1fc9a28c` returned **PASS**, RD03-F01 CLOSED; review
-  [RD-03-review](reviews/RD-03-review.md). Full reviews 2/2, failed 1,
-  Codex calls 2/4.
-- Artifact (local, git-ignored):
+- Ветка `feature/ss-calculator-redesign` от `e24d806`; продуктовая ревизия
+  доставки `a14f032`; после неё только docs-only commit (report/review/state).
+- Child Run `run_8de25272cf66`; parent Run `run_8e5d92ad57c7`,
+  coordinator TASK `task_82bfbabba91b`.
+- TASK: RD-01 R1 PASS (`041b13d`, [review](reviews/RD-01-review.md));
+  RD-02 R2 PASS (`32e77b1`, [review](reviews/RD-02-review.md));
+  RD-03 R2 C1 FAIL→C2 PASS, RD03-F01 CLOSED (`ffe17fb`,
+  [review](reviews/RD-03-review.md)); RD-04 R0 PASS (`c72979a`);
+  RD-FINAL-VERIFY R0 PASS ([evidence](evidence/RD-FINAL-evidence.md));
+  Stage R3 PASS (`gpt-6-astra` high, `ctx_3b5e848dc8a6`).
+- Счётчики: RD-01 1 full/0 FAIL/0 Codex; RD-02 1/0/1; RD-03 2/1/2;
+  RD-04 + FINAL R0 0 Codex; stage R3 +1. Скрытых failed reviews нет.
+- Артефакт (local, unsigned, git-ignored):
   `installer/Output/GasProjectCalculator-Setup-1.0.0.exe`, 15 273 647 bytes,
   SHA256 `043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A`;
-  legacy artifact сохранён в `installer/Output/legacy/`.
-- RD-03 **ACCEPTED**, scoped commit `ffe17fb`. Artifact remains local at
-  `installer/Output/GasProjectCalculator-Setup-1.0.0.exe`, 15 273 647 bytes,
-  SHA256 `043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A`;
-  legacy artifact в `installer/Output/legacy/`.
-- RD-04 README (R0): **ACCEPTED**, scoped commit `c72979a`; review
-  [RD-04-review](reviews/RD-04-review.md); R0 links MISSING=0, hash совпал.
-- RD-FINAL-VERIFY (R0): verifier ctx_1cb546ad517e succeeded/released;
-  **PASS** координаторским R0 checklist RF-1..RF-10. HEAD `8c87e44`
-  (docs-only сдвиг от `c72979a`), suite 163 OK exit 0, artifact hash совпал,
-  26 снимков непустые, неожиданных файлов нет. Evidence
-  [RD-FINAL](../evidence/RD-FINAL-evidence.md), review
-  [RD-FINAL-VERIFY](reviews/RD-FINAL-VERIFY-review.md).
-- Next owner: Codex R3 stage acceptance `ctx_3b5e848dc8a6`
-  (`task_eca7c45d6240`, `gpt-6-astra` high, term_6def3abc) running; затем
-  FINAL-REPORT и COMPLETE.
-- Frozen TASK `docs/workflow/tasks/RD-*.md`, FINAL-VERIFY, FINAL.
-- `:8000` PID12888 и `:8138` не трогать; no push/merge/deploy/release;
-  installer только локально.
+  legacy installer сохранён в `installer/Output/legacy/`.
+- Проверено: title/ярлыки `СС.Расчет`, круглая эмблема без wordmark, окно
+  1050×740/min 860×620, RU splash/ready lifecycle, RU installer/uninstaller,
+  три режима 131250/105525/145950, loopback/port/close, user files сохранены,
+  suite 163 OK exit 0; API/расчёты не изменены.
+- Остаточный риск: формальные права на эмблему не подтверждены; installer
+  неподписан (SmartScreen); одна Windows/WebView2-среда, reduced motion через
+  эмуляцию. NIT backlog RD-01 F1–F3; RD-FINAL N01/N02 исправлены в STATE.
+- `:8000` PID12888 не тронут; no push/merge/deploy/release/signing; installer
+  передан локально. Все Orca workers released.
 
-ГСВ и прежний installer COMPLETE: [ГСВ](FINAL-REPORT.md),
-[installer](FINAL-REPORT-WINDOWS-INSTALLER.md). [HISTORY](HISTORY.md),
-[APPROVALS](APPROVALS.md), [AGENTS](../../AGENTS.md).
+Предыдущие этапы COMPLETE: ГСВ — [FINAL-REPORT](FINAL-REPORT.md);
+Windows installer —
+[FINAL-REPORT-WINDOWS-INSTALLER](FINAL-REPORT-WINDOWS-INSTALLER.md).
+Разрешения [APPROVALS](APPROVALS.md), инструкции [AGENTS](../../AGENTS.md).
