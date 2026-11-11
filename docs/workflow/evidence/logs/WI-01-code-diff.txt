@@ -1,0 +1,38 @@
+﻿warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/main.py', LF will be replaced by CRLF the next time Git touches it
+diff --git a/.gitignore b/.gitignore
+index 68178a2..0afff5e 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -9,5 +9,9 @@ __pycache__/
+ .env
+ .env.local
+ *.log
++# PyInstaller build artifacts
++build/
++dist/
++*.spec.bak
+ .DS_Store
+ Thumbs.db
+\ No newline at end of file
+diff --git a/app/main.py b/app/main.py
+index 5b5de63..6bedeeb 100644
+--- a/app/main.py
++++ b/app/main.py
+@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field, model_validator
+ 
+ from app.calculator import calculate_vat, get_breakdown
+ from app.gsv_calculator import get_gsv_breakdown
++from app.resources import frontend_index_path
+ 
+ app = FastAPI()
+ 
+@@ -110,7 +111,7 @@ def _gsn_with_vat(customer_type, is_district, gsn):
+ 
+ @app.get("/")
+ def read_root():
+-    return FileResponse("frontend/index.html")
++    return FileResponse(str(frontend_index_path()))
+ 
+ 
+ @app.post("/calculate")

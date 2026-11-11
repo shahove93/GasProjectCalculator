@@ -6,6 +6,7 @@ from pydantic import BaseModel, Field, model_validator
 
 from app.calculator import calculate_vat, get_breakdown
 from app.gsv_calculator import get_gsv_breakdown
+from app.resources import frontend_index_path
 
 app = FastAPI()
 
@@ -110,7 +111,7 @@ def _gsn_with_vat(customer_type, is_district, gsn):
 
 @app.get("/")
 def read_root():
-    return FileResponse("frontend/index.html")
+    return FileResponse(str(frontend_index_path()))
 
 
 @app.post("/calculate")

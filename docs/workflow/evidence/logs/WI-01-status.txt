@@ -1,0 +1,27 @@
+﻿ M .gitignore
+ M AGENTS.md
+ M ARCHITECTURE.md
+ M README.md
+ M ROADMAP.md
+ M app/main.py
+ M docs/workflow/APPROVALS.md
+ M docs/workflow/HISTORY.md
+ M docs/workflow/STATE.md
+?? app/desktop_launcher.py
+?? app/resources.py
+?? desktop_app.py
+?? docs/workflow/WINDOWS-INSTALLER-BRIEF.md
+?? docs/workflow/evidence/WI-01-launch-error.png
+?? docs/workflow/evidence/WI-01-packaged-window.png
+?? docs/workflow/evidence/logs/WI-01-baseline-api.txt
+?? docs/workflow/evidence/logs/WI-01-build.txt
+?? docs/workflow/evidence/logs/WI-01-dev-uvicorn.txt
+?? docs/workflow/evidence/logs/WI-01-error-run.txt
+?? docs/workflow/evidence/logs/WI-01-packaged-run.txt
+?? docs/workflow/evidence/logs/WI-01-unit-launcher.txt
+?? docs/workflow/evidence/logs/WI-01-unittest.txt
+?? docs/workflow/evidence/logs/WI-01-visual-run.txt
+?? docs/workflow/tasks/
+?? packaging/
+?? requirements-desktop.txt
+?? tests/test_desktop_launcher.py

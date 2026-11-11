@@ -1,0 +1,19 @@
+﻿warning: in the working copy of '.gitignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'AGENTS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ARCHITECTURE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'ROADMAP.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'app/main.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/workflow/APPROVALS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/workflow/HISTORY.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/workflow/STATE.md', LF will be replaced by CRLF the next time Git touches it
+ .gitignore                 |  4 +++
+ AGENTS.md                  |  6 ++++
+ ARCHITECTURE.md            | 23 +++++++++++++-
+ README.md                  |  3 ++
+ ROADMAP.md                 |  8 +++--
+ app/main.py                |  3 +-
+ docs/workflow/APPROVALS.md | 12 ++++++++
+ docs/workflow/HISTORY.md   | 23 ++++++++++++++
+ docs/workflow/STATE.md     | 74 ++++++++++++++++++++++++----------------------
+ 9 files changed, 116 insertions(+), 40 deletions(-)

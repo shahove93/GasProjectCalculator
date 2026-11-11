@@ -1,0 +1,15 @@
+﻿Date: 2026-11-11T18:49:59.1292144+03:00
+Command: .\\.venv\\Scripts\\python.exe -m uvicorn app.main:app --host 127.0.0.1 --port 8010
+Started dev uvicorn PID=22076
+GET / status=200 length=42920
+POST /calculate/gsv total=63000 subtotal=60000
+Stopped our dev uvicorn PID=22076 HasExited=True
+Listeners on 8010 after stop: <none>
+User server on 8000 after test:
+
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+0.0.0.0           8000         12888
+
+
+

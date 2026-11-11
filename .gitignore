@@ -9,5 +9,9 @@ __pycache__/
 .env
 .env.local
 *.log
+# PyInstaller build artifacts
+build/
+dist/
+*.spec.bak
 .DS_Store
 Thumbs.db
