@@ -49,6 +49,6 @@
   | RD-04 README | R0 | coord checklist | 0 |
   | FINAL-VERIFY | R0 | coord checklist | 0 |
   | FINAL stage | R3 | Codex astra high 1 | 6/5M |
-- Dispatch IDs: pending. Next: coordinator commits docs, dispatches RD-01.
-- Product NOT_REVIEWED. :8000 не трогать; без push/merge/release/deploy/signing;
-  installer только локально.
+- Dispatch IDs: pending; next dispatch RD-01.
+- Product NOT_REVIEWED. :8000 не трогать; без push/merge/release;
+  installer локально.
