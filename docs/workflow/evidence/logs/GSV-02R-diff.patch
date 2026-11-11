@@ -1,0 +1,165 @@
+﻿git : warning: in the working copy of 'app/main.py', LF will be replaced by CRLF the next time Git touches it
+строка:1 знак:1
++ git diff 2>&1 | Out-File -FilePath "C:/Users/user/AppData/Local/Temp/ ...
++ ~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (warning: in the... Git touches it:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+diff --git a/app/main.py b/app/main.py
+index a1ebf5c..5b5de63 100644
+--- a/app/main.py
++++ b/app/main.py
+@@ -58,6 +58,41 @@ class CombinedCalculationRequest(BaseModel):
+     gsv: GsvParameters
+ 
+ 
++class GsvBreakdownResponse(BaseModel):
++    base_price: int
++    length_surcharge: int
++    drilling_cost: int
++    sakz_cost: int
++    panel_cost: int
++    area_surcharge: int
++    subtotal: int
++    vat: int
++    total: int
++
++
++class GsnSectionResponse(BaseModel):
++    base_price: int
++    length_surcharge: int
++    angle_surcharge: int
++    excavator_cost: int
++    hdd_surcharge: int
++    area_surcharge: int
++    grpsh_surcharge: int
++    subtotal: int
++    vat: int
++    total: int
++
++
++class CombinedCalculationResponse(BaseModel):
++    customer_type: Literal["╤З╨░╤Б╤В╨╜╨╛╨╡ ╨╗╨╕╤Ж╨╛", "╤О╤А╨╕╨┤╨╕╤З╨╡╤Б╨║╨╛╨╡ ╨╗╨╕╤Ж╨╛"]
++    is_district: bool
++    gsn: GsnSectionResponse
++    gsv: GsvBreakdownResponse
++    subtotal: int
++    vat: int
++    total: int
++
++
+ def _gsn_with_vat(customer_type, is_district, gsn):
+     breakdown = get_breakdown(
+         customer_type,
+@@ -95,7 +130,7 @@ def calculate(request: CalculationRequest):
+     return {**breakdown, "vat": vat, "total": total}
+ 
+ 
+-@app.post("/calculate/gsv")
++@app.post("/calculate/gsv", response_model=GsvBreakdownResponse)
+ def calculate_gsv(request: GsvCalculationRequest):
+     return get_gsv_breakdown(
+         request.customer_type,
+@@ -108,7 +143,7 @@ def calculate_gsv(request: GsvCalculationRequest):
+     )
+ 
+ 
+-@app.post("/calculate/combined")
++@app.post("/calculate/combined", response_model=CombinedCalculationResponse)
+ def calculate_combined(request: CombinedCalculationRequest):
+     gsn = _gsn_with_vat(request.customer_type, request.is_district, request.gsn)
+     gsv = get_gsv_breakdown(
+diff --git a/tests/test_gsv_api.py b/tests/test_gsv_api.py
+index 8d1e788..2b95c24 100644
+--- a/tests/test_gsv_api.py
++++ b/tests/test_gsv_api.py
+@@ -372,5 +372,89 @@ class CombinedCalculationTests(unittest.TestCase):
+         self.assertEqual(response.status_code, 422, response.text)
+ 
+ 
++class ResponseModelTests(unittest.TestCase):
++    def setUp(self):
++        self.client = TestClient(app)
++
++    def assert_int_fields(self, payload, fields):
++        for field in fields:
++            value = payload[field]
++            self.assertIsInstance(value, int, field)
++            self.assertNotIsInstance(value, bool, field)
++
++    def test_gsv_response_has_int_breakdown_fields(self):
++        response = self.client.post("/calculate/gsv", json=gsv_payload())
++
++        self.assertEqual(response.status_code, 200)
++        body = response.json()
++        self.assertEqual(
++            set(body),
++            {
++                "base_price",
++                "length_surcharge",
++                "drilling_cost",
++                "sakz_cost",
++                "panel_cost",
++                "area_surcharge",
++                "subtotal",
++                "vat",
++                "total",
++            },
++        )
++        self.assert_int_fields(body, set(body))
++
++    def test_combined_response_has_int_fields(self):
++        response = self.client.post(
++            "/calculate/combined", json=combined_payload()
++        )
++
++        self.assertEqual(response.status_code, 200)
++        body = response.json()
++        self.assertEqual(
++            set(body),
++            {"customer_type", "is_district", "gsn", "gsv", "subtotal", "vat", "total"},
++        )
++        self.assert_int_fields(body, {"subtotal", "vat", "total"})
++        self.assert_int_fields(
++            body["gsn"],
++            {
++                "base_price",
++                "length_surcharge",
++                "angle_surcharge",
++                "excavator_cost",
++                "hdd_surcharge",
++                "area_surcharge",
++                "grpsh_surcharge",
++                "subtotal",
++                "vat",
++                "total",
++            },
++        )
++        self.assert_int_fields(
++            body["gsv"],
++            {
++                "base_price",
++                "length_surcharge",
++                "drilling_cost",
++                "sakz_cost",
++                "panel_cost",
++                "area_surcharge",
++                "subtotal",
++                "vat",
++                "total",
++            },
++        )
++
++    def test_openapi_exposes_response_schemas_for_gsv_endpoints(self):
++        schema = app.openapi()
++
++        for path in ("/calculate/gsv", "/calculate/combined"):
++            responses = schema["paths"][path]["post"]["responses"]
++            self.assertIn("200", responses, path)
++            content = responses["200"]["content"]["application/json"]
++            self.assertIn("schema", content, path)
++            self.assertTrue(content["schema"], path)
++
++
+ if __name__ == "__main__":
+     unittest.main()
