@@ -128,3 +128,14 @@ Codex final calls: 1 FAIL.
 Независимый R2 Codex `ctx_ddd46cfbef19` (gpt-6.1-sol/high, baseline `5f25144`)
 вернул PASS по D1–D6 без findings. Codex calls GSV-02: 3 (1 FAIL + 2 PASS).
 Scoped commit.
+
+## GSV-03 regression — исправление UI (R1)
+
+2026-11-11: переоткрытый GSV-03 исправлен исполнителем `ctx_7f43727686c5`:
+реальный старт `setMode("gsn")`, токен `activeRequest`/`isStale` против
+устаревших ответов, `disabled` для скрытых групп и повторная
+`updateExcavatorAvailability`/`updatePanelAvailability`, суффикс «ГСВ» в
+combined 422. Browser evidence: начальный режим, гонка, скрытый diameter=58 не
+блокирует ГСН, прежние суммы, mobile fits=true; 134 suite OK.
+Независимый R1 OpenCode Pro `ctx_faa3f1ff8d22` (baseline `ef9fb2a`) вернул PASS
+без findings. Scoped commit.

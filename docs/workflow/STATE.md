@@ -25,17 +25,19 @@
 ## Текущий статус
 
 - GSV-01 R1: PASS OpenCode Pro `ctx_6f8faa93b48a`; 48 новых / 105 total OK.
-- GSV-02 R2: C1 FAIL только по evidence/baseline (MAJOR `GSV02-R2-01`),
-  исправлено; C2 PASS Codex `ctx_ed2dda90c5c1` (gpt-6.1-sol high), B1–B11,
-  findings нет; 26 API / 131 total OK. Codex calls: 2 (1 FAIL + 1 PASS).
-- GSV-03 R1: UI три режима реализован; первая попытка остановлена без
-  worker_done, продолжение `ctx_513a316e9b89` завершило browser evidence
-  (desktop/mobile, 6 скриншотов). R1 PASS OpenCode Pro `ctx_d7c8f160505f`,
-  findings: 1 NIT (суффикс ГСВ в combined 422) — backlog. 131 OK.
-- GSV-04 R0: README обновлён (три режима, правила ГСВ, endpoints, 131 тест),
-  создан `evidence/FINAL-EVIDENCE.md`; продуктовый код не менялся.
+- GSV-02 R2: C1 FAIL только по evidence/baseline, C2 PASS; после финального
+  FAIL переоткрыт и исправлен (response models), R2 PASS `ctx_ddd46cfbef19`;
+  29 API / 134 suite OK. Codex calls: 3 (1 FAIL + 2 PASS).
+- GSV-03 R1: UI три режима; первая попытка остановлена без worker_done,
+  продолжение завершило browser evidence; R1 PASS `ctx_d7c8f160505f`.
+  Финальная приёмка нашла 4 MAJOR (2 в UI); UI переоткрыт и исправлен
+  (initial mode, stale response, hidden validation, NIT); R1 PASS
+  `ctx_faa3f1ff8d22`, findings нет. 134 suite OK.
+- GSV-04 R0: README и FINAL-EVIDENCE обновлены; продуктовый код не менялся.
 - Активных helper workers нет; все освобождены.
-- Следующий шаг: FINAL Codex gpt-6-astra high, затем FINAL-REPORT.
+- FINAL R3: первый вызов `ctx_a35b269f1f44` — FAIL (4 MAJOR + 1 NIT), все
+  исправлены и повторно приняты routed review. Ожидается повторная финальная
+  приёмка gpt-6-astra high, затем FINAL-REPORT.
 - Вердикт этапа: NOT_REVIEWED до финальной приёмки. Push/merge/deploy запрещены.
 
 Ссылки: [история](HISTORY.md), [разрешения](APPROVALS.md),

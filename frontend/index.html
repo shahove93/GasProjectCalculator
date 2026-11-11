@@ -534,6 +534,7 @@
         const modeButtons = Array.from(document.querySelectorAll(".mode-btn"));
 
         let currentMode = "gsn";
+        let activeRequest = 0;
 
         function updateSegment() {
             segOpen.classList.toggle("active", !hddCheckbox.checked);
@@ -600,20 +601,43 @@
             resultCard.classList.remove("flash");
         }
 
+        function setGroupEnabled(group, enabled) {
+            for (const element of group.querySelectorAll("input, select, button, textarea")) {
+                element.disabled = !enabled;
+            }
+        }
+
+        function restoreSubmitButton() {
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Рассчитать стоимость";
+        }
+
         function setMode(mode) {
+            activeRequest += 1;
             currentMode = mode;
             for (const button of modeButtons) {
                 button.classList.toggle("active", button.dataset.mode === mode);
             }
             groupGsn.hidden = mode === "gsv";
             groupGsv.hidden = mode === "gsn";
+            setGroupEnabled(groupGsn, !groupGsn.hidden);
+            setGroupEnabled(groupGsv, !groupGsv.hidden);
+            if (!groupGsn.hidden) {
+                updateExcavatorAvailability();
+            }
+            if (!groupGsv.hidden) {
+                updatePanelAvailability();
+            }
             resultTitle.textContent = MODE_TITLES[mode];
+            restoreSubmitButton();
             clearOutcome();
         }
 
         for (const button of modeButtons) {
             button.addEventListener("click", () => setMode(button.dataset.mode));
         }
+
+        setMode("gsn");
 
         function formatMoney(value) {
             return Number(value).toLocaleString("ru-RU") + " ₽";
@@ -713,7 +737,10 @@
                 : location.includes("gsn")
                     ? "ГСН"
                     : "";
-            if (section && ["length", "angles", "hdd", "excavator_hours", "hydraulic_hammer", "has_grpsh"].includes(last)) {
+            const sectionFields = section === "ГСВ"
+                ? ["length", "diameter", "drilling_holes", "sakz_sets", "has_panel"]
+                : ["length", "angles", "hdd", "excavator_hours", "hydraulic_hammer", "has_grpsh"];
+            if (section && sectionFields.includes(last)) {
                 return label + " (" + section + ")";
             }
             return label;
@@ -908,6 +935,9 @@
                 return;
             }
 
+            const requestId = ++activeRequest;
+            const isStale = () => requestId !== activeRequest || currentMode !== mode;
+
             submitBtn.disabled = true;
             submitBtn.textContent = "Считаем…";
 
@@ -919,9 +949,15 @@
                     body: JSON.stringify(payload.value),
                 });
             } catch (err) {
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Рассчитать стоимость";
+                if (isStale()) {
+                    return;
+                }
+                restoreSubmitButton();
                 showError("Не удалось связаться с сервером. Убедитесь, что сервер запущен.");
+                return;
+            }
+
+            if (isStale()) {
                 return;
             }
 
@@ -929,12 +965,17 @@
                 let errorMessage = "";
                 try {
                     const errorPayload = await response.json();
+                    if (isStale()) {
+                        return;
+                    }
                     errorMessage = formatApiError(errorPayload);
                 } catch (err) {
+                    if (isStale()) {
+                        return;
+                    }
                     errorMessage = "";
                 }
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Рассчитать стоимость";
+                restoreSubmitButton();
                 if (!errorMessage) {
                     errorMessage = "Сервер не смог обработать запрос (код " + response.status + ").";
                 }
@@ -946,14 +987,19 @@
             try {
                 result = await response.json();
             } catch (err) {
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Рассчитать стоимость";
+                if (isStale()) {
+                    return;
+                }
+                restoreSubmitButton();
                 showError("Сервер вернул некорректный ответ.");
                 return;
             }
 
-            submitBtn.disabled = false;
-            submitBtn.textContent = "Рассчитать стоимость";
+            if (isStale()) {
+                return;
+            }
+
+            restoreSubmitButton();
             showResult(mode, result);
         });
     </script>
