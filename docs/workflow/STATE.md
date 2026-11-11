@@ -32,15 +32,14 @@
 - Backlog: `WI02-R1-F1` MINOR; одна машина; unsigned/SmartScreen; WebView2;
   GUI-uninstall не прокликан. Push/merge/deploy/release не разрешены.
 
-Ссылки: [история](HISTORY.md), [разрешения](APPROVALS.md),
-[роли](MODEL-ROUTING.md), [brief](WINDOWS-INSTALLER-BRIEF.md).
+Ссылки: [история](HISTORY.md), [разрешения](APPROVALS.md), [роли](MODEL-ROUTING.md).
 
 ## СС.Расчет — редизайн IN_PROGRESS
 
 - Утверждён 2026-11-11 (APPROVALS/SHA256). Ветка `feature/ss-calculator-redesign`
   от `e24d806`; workflow-коммит до dispatch. Run `run_8de25272cf66`.
 - Эмблема: `assets/company-logo-source.png` (одобрен пользователем; формальные
-  права репозиторием не подтверждены — остаточный риск). Installer stage цел.
+  права не подтверждены — остаточный риск). Installer stage цел.
 - TASK sequential, A1/C1; checklists `docs/workflow/tasks/RD-*.md`:
   | TASK | Risk | Review | Reserve |
   | --- | --- | --- | --- |
