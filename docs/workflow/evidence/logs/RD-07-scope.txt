@@ -1,0 +1,235 @@
+RD-07 scope/diff evidence
+Generated: 2026-11-12T08:09:30.4488071+03:00
+CWD: D:\Antigravity\GasProjectCalculator
+Branch: feature/ss-calculator-redesign
+HEAD: 8ecb0e505734e0314b7063a01da948af83971dc6
+
+## git status --short
+(empty above if clean)
+?? docs/workflow/evidence/logs/RD-07-suite.txt
+
+## git diff --stat 4b0be03..HEAD
+ ARCHITECTURE.md                                    |   37 +
+ README.md                                          |   39 +-
+ ROADMAP.md                                         |   18 +
+ app/desktop_launcher.py                            |   75 +-
+ docs/design/approved-variant-1-reference.png       |  Bin 0 -> 1561803 bytes
+ docs/design/original-window-splash-reference.png   |  Bin 0 -> 1555866 bytes
+ docs/screenshots/rd-05-after-422.png               |  Bin 0 -> 84945 bytes
+ docs/screenshots/rd-05-after-clamp-probe.png       |  Bin 0 -> 91816 bytes
+ .../rd-05-after-min-combined-before.png            |  Bin 0 -> 81419 bytes
+ docs/screenshots/rd-05-after-min-combined.png      |  Bin 0 -> 91880 bytes
+ docs/screenshots/rd-05-after-min-gsn-before.png    |  Bin 0 -> 79385 bytes
+ docs/screenshots/rd-05-after-min-gsn.png           |  Bin 0 -> 89298 bytes
+ docs/screenshots/rd-05-after-min-gsv-before.png    |  Bin 0 -> 77415 bytes
+ docs/screenshots/rd-05-after-min-gsv.png           |  Bin 0 -> 88131 bytes
+ docs/screenshots/rd-05-after-min-probe.png         |  Bin 0 -> 82923 bytes
+ docs/screenshots/rd-05-after-min-restored.png      |  Bin 0 -> 91819 bytes
+ docs/screenshots/rd-05-after-mobile-390x844.png    |  Bin 0 -> 82068 bytes
+ docs/screenshots/rd-05-after-reduced-motion.png    |  Bin 0 -> 89659 bytes
+ .../rd-05-after-target-combined-before.png         |  Bin 0 -> 84027 bytes
+ docs/screenshots/rd-05-after-target-combined.png   |  Bin 0 -> 95984 bytes
+ docs/screenshots/rd-05-after-target-gsn-before.png |  Bin 0 -> 81312 bytes
+ docs/screenshots/rd-05-after-target-gsn.png        |  Bin 0 -> 92073 bytes
+ docs/screenshots/rd-05-after-target-gsv-before.png |  Bin 0 -> 79102 bytes
+ docs/screenshots/rd-05-after-target-gsv.png        |  Bin 0 -> 90840 bytes
+ docs/screenshots/rd-05-before-1050x740.png         |  Bin 0 -> 139431 bytes
+ docs/screenshots/rd-05-compare-reference.png       |  Bin 0 -> 437797 bytes
+ .../rd-06-compare-installed-before-after.png       |  Bin 0 -> 247937 bytes
+ docs/screenshots/rd-06-installed-422.png           |  Bin 0 -> 85339 bytes
+ .../rd-06-installed-min-combined-before.png        |  Bin 0 -> 81735 bytes
+ docs/screenshots/rd-06-installed-min-combined.png  |  Bin 0 -> 92185 bytes
+ .../screenshots/rd-06-installed-min-gsn-before.png |  Bin 0 -> 79669 bytes
+ docs/screenshots/rd-06-installed-min-gsn.png       |  Bin 0 -> 89585 bytes
+ .../screenshots/rd-06-installed-min-gsv-before.png |  Bin 0 -> 77729 bytes
+ docs/screenshots/rd-06-installed-min-gsv.png       |  Bin 0 -> 88509 bytes
+ docs/screenshots/rd-06-installed-min-window.png    |  Bin 0 -> 83135 bytes
+ .../rd-06-installed-mobile-390x844-result.png      |  Bin 0 -> 67398 bytes
+ .../screenshots/rd-06-installed-mobile-390x844.png |  Bin 0 -> 82172 bytes
+ docs/screenshots/rd-06-installed-splash.png        |  Bin 0 -> 84524 bytes
+ .../rd-06-installed-target-combined-before.png     |  Bin 0 -> 84386 bytes
+ .../rd-06-installed-target-combined.png            |  Bin 0 -> 96312 bytes
+ .../rd-06-installed-target-gsn-before.png          |  Bin 0 -> 81606 bytes
+ docs/screenshots/rd-06-installed-target-gsn.png    |  Bin 0 -> 92408 bytes
+ .../rd-06-installed-target-gsv-before.png          |  Bin 0 -> 79433 bytes
+ docs/screenshots/rd-06-installed-target-gsv.png    |  Bin 0 -> 91147 bytes
+ docs/screenshots/rd-06-installed-target-window.png |  Bin 0 -> 80934 bytes
+ docs/screenshots/rd-06-packaged-422.png            |  Bin 0 -> 85222 bytes
+ .../rd-06-packaged-min-combined-before.png         |  Bin 0 -> 81711 bytes
+ docs/screenshots/rd-06-packaged-min-combined.png   |  Bin 0 -> 92206 bytes
+ docs/screenshots/rd-06-packaged-min-gsn-before.png |  Bin 0 -> 79639 bytes
+ docs/screenshots/rd-06-packaged-min-gsn.png        |  Bin 0 -> 89638 bytes
+ docs/screenshots/rd-06-packaged-min-gsv-before.png |  Bin 0 -> 77671 bytes
+ docs/screenshots/rd-06-packaged-min-gsv.png        |  Bin 0 -> 88499 bytes
+ docs/screenshots/rd-06-packaged-min-window.png     |  Bin 0 -> 83154 bytes
+ .../rd-06-packaged-target-combined-before.png      |  Bin 0 -> 84302 bytes
+ .../screenshots/rd-06-packaged-target-combined.png |  Bin 0 -> 96287 bytes
+ .../rd-06-packaged-target-gsn-before.png           |  Bin 0 -> 81513 bytes
+ docs/screenshots/rd-06-packaged-target-gsn.png     |  Bin 0 -> 92447 bytes
+ .../rd-06-packaged-target-gsv-before.png           |  Bin 0 -> 79306 bytes
+ docs/screenshots/rd-06-packaged-target-gsv.png     |  Bin 0 -> 91170 bytes
+ docs/screenshots/rd-06-packaged-target-window.png  |  Bin 0 -> 80944 bytes
+ docs/workflow/APPROVALS.md                         |   41 +
+ docs/workflow/COMPACT-CORRECTION-BRIEF.md          |   76 ++
+ docs/workflow/HISTORY.md                           |   62 +
+ .../workflow/REFERENCE-CLARIFICATION-2026-11-12.md |   19 +
+ docs/workflow/STATE.md                             |   66 +-
+ docs/workflow/evidence/RD-05-evidence.md           |  205 +++
+ docs/workflow/evidence/RD-06-evidence.md           |  358 ++++++
+ docs/workflow/evidence/logs/RD-05-artifacts.txt    |   31 +
+ .../evidence/logs/RD-05-before-launcher.log        |   26 +
+ .../evidence/logs/RD-05-before-window.json         |  119 ++
+ docs/workflow/evidence/logs/RD-05-git.txt          |   43 +
+ .../workflow/evidence/logs/RD-05-native-driver.txt |   26 +
+ .../evidence/logs/RD-05-native-launcher.log        |   71 ++
+ docs/workflow/evidence/logs/RD-05-native.json      | 1184 +++++++++++++++++
+ .../evidence/logs/RD-05-targeted-tests.txt         |   44 +
+ .../workflow/evidence/logs/RD-06-backup-legacy.txt |   10 +
+ docs/workflow/evidence/logs/RD-06-baseline.txt     |   30 +
+ docs/workflow/evidence/logs/RD-06-c2-cleanup.txt   |   29 +
+ .../evidence/logs/RD-06-c2-inno-install.txt        |  585 +++++++++
+ .../evidence/logs/RD-06-c2-inno-uninstall.txt      |  157 +++
+ docs/workflow/evidence/logs/RD-06-final-state.txt  |  140 ++
+ docs/workflow/evidence/logs/RD-06-inno-install.txt |  585 +++++++++
+ .../evidence/logs/RD-06-inno-uninstall.txt         |  157 +++
+ docs/workflow/evidence/logs/RD-06-install.txt      |   30 +
+ .../evidence/logs/RD-06-installed-launcher.txt     |   63 +
+ .../logs/RD-06-installed-lifecycle-conflict.txt    |   30 +
+ .../evidence/logs/RD-06-installed-lifecycle.txt    |   33 +
+ .../logs/RD-06-installed-native-driver.txt         |   24 +
+ .../evidence/logs/RD-06-installed-native.json      | 1340 ++++++++++++++++++++
+ .../evidence/logs/RD-06-installer-build.txt        |  179 +++
+ .../evidence/logs/RD-06-lifecycle-launcher.txt     |   26 +
+ docs/workflow/evidence/logs/RD-06-mobile-390.txt   |  130 ++
+ .../evidence/logs/RD-06-mobile-launcher.txt        |   25 +
+ .../evidence/logs/RD-06-packaged-close.txt         |   14 +
+ .../evidence/logs/RD-06-packaged-launcher.txt      |   63 +
+ .../evidence/logs/RD-06-packaged-native-driver.txt |   24 +
+ .../evidence/logs/RD-06-packaged-native.json       | 1340 ++++++++++++++++++++
+ .../evidence/logs/RD-06-packaging-build.txt        |  125 ++
+ docs/workflow/evidence/logs/RD-06-pe-subsystem.txt |    2 +
+ docs/workflow/evidence/logs/RD-06-uninstall.txt    |   27 +
+ docs/workflow/reviews/RD-05-review.md              |   71 ++
+ docs/workflow/reviews/RD-06-review.md              |   79 ++
+ docs/workflow/tasks/RD-05.md                       |  114 ++
+ docs/workflow/tasks/RD-06.md                       |   90 ++
+ docs/workflow/tasks/RD-07.md                       |   40 +
+ frontend/index.html                                |  970 +++++++++-----
+ tests/test_desktop_launcher.py                     |    6 +-
+ tests/test_frontend_redesign.py                    |   37 +
+ 108 files changed, 8728 insertions(+), 387 deletions(-)
+
+## git diff --name-only 4b0be03..HEAD
+ARCHITECTURE.md
+README.md
+ROADMAP.md
+app/desktop_launcher.py
+docs/design/approved-variant-1-reference.png
+docs/design/original-window-splash-reference.png
+docs/screenshots/rd-05-after-422.png
+docs/screenshots/rd-05-after-clamp-probe.png
+docs/screenshots/rd-05-after-min-combined-before.png
+docs/screenshots/rd-05-after-min-combined.png
+docs/screenshots/rd-05-after-min-gsn-before.png
+docs/screenshots/rd-05-after-min-gsn.png
+docs/screenshots/rd-05-after-min-gsv-before.png
+docs/screenshots/rd-05-after-min-gsv.png
+docs/screenshots/rd-05-after-min-probe.png
+docs/screenshots/rd-05-after-min-restored.png
+docs/screenshots/rd-05-after-mobile-390x844.png
+docs/screenshots/rd-05-after-reduced-motion.png
+docs/screenshots/rd-05-after-target-combined-before.png
+docs/screenshots/rd-05-after-target-combined.png
+docs/screenshots/rd-05-after-target-gsn-before.png
+docs/screenshots/rd-05-after-target-gsn.png
+docs/screenshots/rd-05-after-target-gsv-before.png
+docs/screenshots/rd-05-after-target-gsv.png
+docs/screenshots/rd-05-before-1050x740.png
+docs/screenshots/rd-05-compare-reference.png
+docs/screenshots/rd-06-compare-installed-before-after.png
+docs/screenshots/rd-06-installed-422.png
+docs/screenshots/rd-06-installed-min-combined-before.png
+docs/screenshots/rd-06-installed-min-combined.png
+docs/screenshots/rd-06-installed-min-gsn-before.png
+docs/screenshots/rd-06-installed-min-gsn.png
+docs/screenshots/rd-06-installed-min-gsv-before.png
+docs/screenshots/rd-06-installed-min-gsv.png
+docs/screenshots/rd-06-installed-min-window.png
+docs/screenshots/rd-06-installed-mobile-390x844-result.png
+docs/screenshots/rd-06-installed-mobile-390x844.png
+docs/screenshots/rd-06-installed-splash.png
+docs/screenshots/rd-06-installed-target-combined-before.png
+docs/screenshots/rd-06-installed-target-combined.png
+docs/screenshots/rd-06-installed-target-gsn-before.png
+docs/screenshots/rd-06-installed-target-gsn.png
+docs/screenshots/rd-06-installed-target-gsv-before.png
+docs/screenshots/rd-06-installed-target-gsv.png
+docs/screenshots/rd-06-installed-target-window.png
+docs/screenshots/rd-06-packaged-422.png
+docs/screenshots/rd-06-packaged-min-combined-before.png
+docs/screenshots/rd-06-packaged-min-combined.png
+docs/screenshots/rd-06-packaged-min-gsn-before.png
+docs/screenshots/rd-06-packaged-min-gsn.png
+docs/screenshots/rd-06-packaged-min-gsv-before.png
+docs/screenshots/rd-06-packaged-min-gsv.png
+docs/screenshots/rd-06-packaged-min-window.png
+docs/screenshots/rd-06-packaged-target-combined-before.png
+docs/screenshots/rd-06-packaged-target-combined.png
+docs/screenshots/rd-06-packaged-target-gsn-before.png
+docs/screenshots/rd-06-packaged-target-gsn.png
+docs/screenshots/rd-06-packaged-target-gsv-before.png
+docs/screenshots/rd-06-packaged-target-gsv.png
+docs/screenshots/rd-06-packaged-target-window.png
+docs/workflow/APPROVALS.md
+docs/workflow/COMPACT-CORRECTION-BRIEF.md
+docs/workflow/HISTORY.md
+docs/workflow/REFERENCE-CLARIFICATION-2026-11-12.md
+docs/workflow/STATE.md
+docs/workflow/evidence/RD-05-evidence.md
+docs/workflow/evidence/RD-06-evidence.md
+docs/workflow/evidence/logs/RD-05-artifacts.txt
+docs/workflow/evidence/logs/RD-05-before-launcher.log
+docs/workflow/evidence/logs/RD-05-before-window.json
+docs/workflow/evidence/logs/RD-05-git.txt
+docs/workflow/evidence/logs/RD-05-native-driver.txt
+docs/workflow/evidence/logs/RD-05-native-launcher.log
+docs/workflow/evidence/logs/RD-05-native.json
+docs/workflow/evidence/logs/RD-05-targeted-tests.txt
+docs/workflow/evidence/logs/RD-06-backup-legacy.txt
+docs/workflow/evidence/logs/RD-06-baseline.txt
+docs/workflow/evidence/logs/RD-06-c2-cleanup.txt
+docs/workflow/evidence/logs/RD-06-c2-inno-install.txt
+docs/workflow/evidence/logs/RD-06-c2-inno-uninstall.txt
+docs/workflow/evidence/logs/RD-06-final-state.txt
+docs/workflow/evidence/logs/RD-06-inno-install.txt
+docs/workflow/evidence/logs/RD-06-inno-uninstall.txt
+docs/workflow/evidence/logs/RD-06-install.txt
+docs/workflow/evidence/logs/RD-06-installed-launcher.txt
+docs/workflow/evidence/logs/RD-06-installed-lifecycle-conflict.txt
+docs/workflow/evidence/logs/RD-06-installed-lifecycle.txt
+docs/workflow/evidence/logs/RD-06-installed-native-driver.txt
+docs/workflow/evidence/logs/RD-06-installed-native.json
+docs/workflow/evidence/logs/RD-06-installer-build.txt
+docs/workflow/evidence/logs/RD-06-lifecycle-launcher.txt
+docs/workflow/evidence/logs/RD-06-mobile-390.txt
+docs/workflow/evidence/logs/RD-06-mobile-launcher.txt
+docs/workflow/evidence/logs/RD-06-packaged-close.txt
+docs/workflow/evidence/logs/RD-06-packaged-launcher.txt
+docs/workflow/evidence/logs/RD-06-packaged-native-driver.txt
+docs/workflow/evidence/logs/RD-06-packaged-native.json
+docs/workflow/evidence/logs/RD-06-packaging-build.txt
+docs/workflow/evidence/logs/RD-06-pe-subsystem.txt
+docs/workflow/evidence/logs/RD-06-uninstall.txt
+docs/workflow/reviews/RD-05-review.md
+docs/workflow/reviews/RD-06-review.md
+docs/workflow/tasks/RD-05.md
+docs/workflow/tasks/RD-06.md
+docs/workflow/tasks/RD-07.md
+frontend/index.html
+tests/test_desktop_launcher.py
+tests/test_frontend_redesign.py
+
+## git diff --check
+diff-check-exit=0
+
+## protected paths diff (expect empty)

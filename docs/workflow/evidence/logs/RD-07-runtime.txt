@@ -1,0 +1,61 @@
+RD-07 runtime/process state
+Generated: 2026-11-12T08:09:30.4488071+03:00
+CWD: D:\Antigravity\GasProjectCalculator
+Branch: feature/ss-calculator-redesign
+HEAD: 8ecb0e505734e0314b7063a01da948af83971dc6
+
+## listeners 8000/8138
+addr=127.0.0.1 port=8138 pid=23152
+addr=0.0.0.0 port=8000 pid=12888
+
+## target processes
+PID 12888 python started=11/11/2026 17:46:30
+PID 23152 python started=11/11/2026 23:57:49
+PID 13248 GasProjectCalculator started=11/12/2026 06:20:30
+
+## all listening ports
+addr=0.0.0.0 port=135 pid=1500
+addr=:: port=135 pid=1500
+addr=172.29.144.1 port=139 pid=4
+addr=192.168.0.4 port=139 pid=4
+addr=10.77.0.27 port=139 pid=4
+addr=:: port=445 pid=4
+addr=127.0.0.1 port=1042 pid=8320
+addr=127.0.0.1 port=1043 pid=8320
+addr=0.0.0.0 port=2179 pid=2072
+addr=:: port=2179 pid=2072
+addr=0.0.0.0 port=5040 pid=8324
+addr=0.0.0.0 port=6768 pid=6412
+addr=:: port=7680 pid=1356
+addr=0.0.0.0 port=8000 pid=12888
+addr=127.0.0.1 port=8001 pid=13248
+addr=127.0.0.1 port=8138 pid=23152
+addr=127.0.0.1 port=9012 pid=7700
+addr=127.0.0.1 port=9013 pid=7700
+addr=127.0.0.1 port=13030 pid=4904
+addr=127.0.0.1 port=13031 pid=4856
+addr=127.0.0.1 port=13032 pid=4856
+addr=127.0.0.1 port=13508 pid=4
+addr=127.0.0.1 port=22112 pid=4904
+addr=::1 port=42050 pid=21492
+addr=:: port=49664 pid=1168
+addr=0.0.0.0 port=49664 pid=1168
+addr=:: port=49665 pid=1056
+addr=0.0.0.0 port=49665 pid=1056
+addr=0.0.0.0 port=49666 pid=2316
+addr=:: port=49666 pid=2316
+addr=:: port=49667 pid=2364
+addr=0.0.0.0 port=49667 pid=2364
+addr=0.0.0.0 port=49668 pid=4640
+addr=:: port=49668 pid=4640
+addr=0.0.0.0 port=49671 pid=1140
+addr=:: port=49671 pid=1140
+addr=127.0.0.1 port=50100 pid=4856
+addr=127.0.0.1 port=51100 pid=2724
+addr=127.0.0.1 port=57297 pid=4844
+addr=127.0.0.1 port=61604 pid=23336
+addr=127.0.0.1 port=61669 pid=6412
+addr=127.0.0.1 port=61969 pid=13908
+
+## default user install exe
+size=6834942 sha256=5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3 mtime=11/12/2026 00:32:52
