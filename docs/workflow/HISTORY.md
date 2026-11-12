@@ -752,3 +752,22 @@ PID 12888 и `:8138` PID 23152 не тронуты, посторонних фа�
 test-процессов нет. Coordinator принял R0 по F1–F8; Codex calls 0. Scoped
 commit координатора; следующий шаг — отдельный FINAL-MIXED-STAGE Codex
 `gpt-6-astra` high acceptance.
+
+## 2026-11-12 — FINAL-MIXED-STAGE PASS, этап COMPLETE
+
+Независимая Codex R3 stage acceptance `ctx_fdefaa501548` (`task_e65cd54e7145`,
+`gpt-6-astra` high) на revision `0431c0b` против baseline `9dea625` вернула
+**PASS** по A1–A9: эталоны 75600/79275/71400/63000/70875 и combined
+151000/7550/158550; единственная база 5 м cheapest-first и серверные суммы;
+legacy/ГСН/strict-null 422; три длины в UI, детализация и оба artwork-мотива
+с брендингом; native target/min и mobile без скрытого overflow; installer
+1.1.0, установленный runtime/lifecycle/RU/reinstall/uninstall и неизменные
+legacy hashes; README/evidence и интегрированный suite 219 OK на `557fe2d`;
+старые счётчики сохранены (MD-01 2/1/2, MD-02 1/0/1, MD-03 1/0/1, MD-04/05
+R0); unauthorized publication/signing нет. Findings: MD02-N1 NIT backlog;
+FINALMD-N1 MINOR (устаревшие формулировки STATE, счётчики screenshots 36/35
+в packet) исправлен координатором при финализации без нового review-цикла.
+Оформлены `FINAL-MIXED-STAGE-review.md`, `FINAL-REPORT-MIXED-GSV.md`,
+STATE COMPLETE; локальный installer 1.1.0 15 293 993 B SHA256
+`3BFFFFB2…B710` передан, release v1.0.0/legacy не изменены. Push/merge/deploy/
+release/signing не выполнялись; все Orca worker released.
