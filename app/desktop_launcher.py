@@ -30,6 +30,10 @@ Diagnostics hooks (used by automated evidence, no effect on normal use):
                                  (screenshot evidence only)
     --force-reduced-motion       load the splash with reduced-motion styling
                                  (screenshot evidence only)
+    --eval-bridge PATH           diagnostic: watch a JSON command file and
+                                 evaluate its ``script`` in the real native
+                                 window, writing ``PATH.result.json``.  Used by
+                                 RD-05 browser-evidence automation only.
 """
 
 from __future__ import annotations
@@ -56,9 +60,9 @@ READY_POLL_INTERVAL_SECONDS = 0.1
 
 # Branding / native window geometry (logical pixels).
 APP_TITLE = "СС.Расчет"
-APP_WIDTH = 1050
-APP_HEIGHT = 740
-APP_MIN_SIZE = (860, 620)
+APP_WIDTH = 800
+APP_HEIGHT = 540
+APP_MIN_SIZE = (760, 520)
 
 # Local startup splash window.
 SPLASH_WIDTH = 520
@@ -338,6 +342,58 @@ def _start_auto_close(window, auto_close_seconds: float | None) -> None:
     threading.Thread(target=_auto_close, name="gasproject-auto-close", daemon=True).start()
 
 
+def _start_eval_bridge(window, command_path: Path) -> None:
+    """Diagnostic: evaluate scripts from a local JSON command file.
+
+    The command file holds ``{"id": <n>, "script": "<js>"}``.  When ``id``
+    changes, the script runs in the real native WebView2 window and the result
+    is written next to the command file as ``<name>.result.json``.  This is an
+    inert local evidence hook: it does nothing unless ``--eval-bridge`` is
+    passed, and it never adds network access or changes product behaviour.
+    """
+
+    command_path = Path(command_path)
+    result_path = command_path.with_name(command_path.name + ".result.json")
+    stop = threading.Event()
+    last_id: object = None
+
+    window.events.closed += lambda: stop.set()
+
+    def _loop() -> None:
+        nonlocal last_id
+        if not window.events.loaded.wait(20):
+            logger.error("[eval-bridge] window did not load; bridge inactive")
+            return
+        logger.info("[eval-bridge] active at %s", command_path)
+        while not stop.is_set():
+            try:
+                if command_path.is_file():
+                    data = json.loads(command_path.read_text(encoding="utf-8"))
+                    command_id = data.get("id")
+                    script = data.get("script")
+                    if command_id != last_id and isinstance(script, str):
+                        last_id = command_id
+                        try:
+                            result = window.evaluate_js(script)
+                            payload = {"id": command_id, "ok": True, "result": result}
+                        except Exception as exc:  # noqa: BLE001 - diagnostic boundary
+                            payload = {"id": command_id, "ok": False, "error": repr(exc)}
+                        result_path.write_text(
+                            json.dumps(payload, ensure_ascii=False), encoding="utf-8"
+                        )
+                        logger.info(
+                            "[eval-bridge] id=%s ok=%s", command_id, payload["ok"]
+                        )
+            except (OSError, ValueError):
+                logger.exception("[eval-bridge] command read failed")
+            time.sleep(0.05)
+        logger.info("[eval-bridge] stopped")
+
+    threading.Thread(
+        target=_loop, name="gasproject-eval-bridge", daemon=True
+    ).start()
+
+
 # ---------------------------------------------------------------------------
 # Diagnostics / error presentation
 # ---------------------------------------------------------------------------
@@ -450,6 +506,7 @@ def _run_startup(
     simulate_startup_failure: bool,
     show_error_dialog: bool,
     splash_hold_seconds: float | None,
+    eval_bridge: Path | None,
 ) -> None:
     """Start the backend while the splash is visible, then reveal the window.
 
@@ -523,6 +580,9 @@ def _run_startup(
         logger.info("[window] main window shown after backend readiness")
         window.events.closed += lambda: logger.info("[window] main window closed")
         _start_auto_close(window, auto_close_seconds)
+        if eval_bridge:
+            _start_eval_bridge(window, eval_bridge)
+            logger.info("[eval-bridge] watching %s", eval_bridge)
     except BaseException as exc:  # noqa: BLE001 - worker boundary
         state.error = exc
         logger.error("[startup] launch failed: %s", exc)
@@ -566,6 +626,7 @@ def launch(
     show_error_dialog: bool = True,
     splash_hold_seconds: float | None = None,
     force_reduced_motion: bool = False,
+    eval_bridge: Path | None = None,
 ) -> int:
     """Run the full desktop lifecycle and return a process exit code."""
 
@@ -600,6 +661,7 @@ def launch(
                 simulate_startup_failure,
                 show_error_dialog,
                 splash_hold_seconds,
+                eval_bridge,
             ),
             gui="edgechromium",
         )
@@ -682,6 +744,12 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="diagnostic: load the splash with reduced-motion styling",
     )
+    parser.add_argument(
+        "--eval-bridge",
+        type=Path,
+        default=None,
+        help="diagnostic: evaluate scripts from a local JSON command file",
+    )
     return parser
 
 
@@ -701,6 +769,7 @@ def main(argv: Sequence[str] | None = None) -> int:
             show_error_dialog=not args.no_error_dialog,
             splash_hold_seconds=args.splash_hold_seconds,
             force_reduced_motion=args.force_reduced_motion,
+            eval_bridge=args.eval_bridge,
         )
     except BaseException:  # pragma: no cover - defensive top-level boundary
         logger.exception("Unhandled launcher error")

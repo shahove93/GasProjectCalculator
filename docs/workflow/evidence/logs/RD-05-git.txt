@@ -1,0 +1,43 @@
+CWD: D:\Antigravity\GasProjectCalculator
+BRANCH: feature/ss-calculator-redesign
+HEAD: 2c0fff157939db75057cfcd241b41bfad6d6f05c
+PRODUCT_BASELINE: 4b0be03
+=== status --short ===
+ M app/desktop_launcher.py
+ M frontend/index.html
+ M tests/test_desktop_launcher.py
+ M tests/test_frontend_redesign.py
+?? docs/screenshots/rd-05-after-422.png
+?? docs/screenshots/rd-05-after-clamp-probe.png
+?? docs/screenshots/rd-05-after-min-combined-before.png
+?? docs/screenshots/rd-05-after-min-combined.png
+?? docs/screenshots/rd-05-after-min-gsn-before.png
+?? docs/screenshots/rd-05-after-min-gsn.png
+?? docs/screenshots/rd-05-after-min-gsv-before.png
+?? docs/screenshots/rd-05-after-min-gsv.png
+?? docs/screenshots/rd-05-after-min-probe.png
+?? docs/screenshots/rd-05-after-min-restored.png
+?? docs/screenshots/rd-05-after-mobile-390x844.png
+?? docs/screenshots/rd-05-after-reduced-motion.png
+?? docs/screenshots/rd-05-after-target-combined-before.png
+?? docs/screenshots/rd-05-after-target-combined.png
+?? docs/screenshots/rd-05-after-target-gsn-before.png
+?? docs/screenshots/rd-05-after-target-gsn.png
+?? docs/screenshots/rd-05-after-target-gsv-before.png
+?? docs/screenshots/rd-05-after-target-gsv.png
+?? docs/screenshots/rd-05-before-1050x740.png
+?? docs/screenshots/rd-05-compare-reference.png
+?? docs/workflow/evidence/RD-05-evidence.md
+?? docs/workflow/evidence/logs/RD-05-artifacts.txt
+?? docs/workflow/evidence/logs/RD-05-before-window.json
+?? docs/workflow/evidence/logs/RD-05-git.txt
+?? docs/workflow/evidence/logs/RD-05-native-driver.txt
+?? docs/workflow/evidence/logs/RD-05-native.json
+?? docs/workflow/evidence/logs/RD-05-targeted-tests.txt
+=== diff --stat ===
+ app/desktop_launcher.py         |  75 +++-
+ frontend/index.html             | 970 ++++++++++++++++++++++++++--------------
+ tests/test_desktop_launcher.py  |   6 +-
+ tests/test_frontend_redesign.py |  37 ++
+ 4 files changed, 748 insertions(+), 340 deletions(-)
+=== protected paths diff (empty expected) ===

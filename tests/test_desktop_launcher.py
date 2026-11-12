@@ -190,9 +190,9 @@ class BrandingGeometryTests(unittest.TestCase):
         self.assertEqual(desktop_launcher.APP_TITLE, "СС.Расчет")
 
     def test_window_geometry_matches_approved_design(self):
-        self.assertEqual(desktop_launcher.APP_WIDTH, 1050)
-        self.assertEqual(desktop_launcher.APP_HEIGHT, 740)
-        self.assertEqual(desktop_launcher.APP_MIN_SIZE, (860, 620))
+        self.assertEqual(desktop_launcher.APP_WIDTH, 800)
+        self.assertEqual(desktop_launcher.APP_HEIGHT, 540)
+        self.assertEqual(desktop_launcher.APP_MIN_SIZE, (760, 520))
 
 
 class SplashTests(unittest.TestCase):

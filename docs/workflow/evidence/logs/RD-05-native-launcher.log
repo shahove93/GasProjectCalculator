@@ -1,0 +1,71 @@
+2026-11-12 07:02:25,805 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=27168) ===
+2026-11-12 07:02:25,857 INFO [gasproject.desktop] Splash resource: D:\Antigravity\GasProjectCalculator\frontend\splash.html
+2026-11-12 07:02:25,858 INFO [gasproject.desktop] [splash] splash window created: 520x320 uri=file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html reduced_motion=False
+2026-11-12 07:02:26,515 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 07:02:26,515 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 07:02:26,975 INFO [gasproject.desktop] Frontend resource: D:\Antigravity\GasProjectCalculator\frontend\index.html
+2026-11-12 07:02:27,225 INFO [gasproject.desktop] Selected loopback port 8160 (preferred 8160); socket bound on 127.0.0.1
+2026-11-12 07:02:27,405 INFO [uvicorn.error] Started server process [27168]
+2026-11-12 07:02:27,405 INFO [uvicorn.error] Waiting for application startup.
+2026-11-12 07:02:27,406 INFO [uvicorn.error] Application startup complete.
+2026-11-12 07:02:28,039 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:8160/ after 0.77s (thread=gasproject-backend pid=27168)
+2026-11-12 07:02:28,041 INFO [gasproject.desktop] Wrote port file: C:\Users\user\AppData\Local\Temp\opencode\rd05\corr-port.json
+2026-11-12 07:02:28,041 INFO [gasproject.desktop] [splash] backend ready after 0.77s; preparing main window
+2026-11-12 07:02:28,087 INFO [gasproject.desktop] [window] main window created: title='СС.Расчет' width=800 height=540 min_size=(760, 520)
+2026-11-12 07:02:28,127 INFO [gasproject.desktop] [splash] splash closed after backend readiness
+2026-11-12 07:02:28,149 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 07:02:28,150 INFO [gasproject.desktop] Auto-close: waiting 1800.00s before closing window
+2026-11-12 07:02:28,151 INFO [gasproject.desktop] [eval-bridge] watching C:\Users\user\AppData\Local\Temp\opencode\rd05\bridge.json
+2026-11-12 07:02:28,188 INFO [gasproject.desktop] [eval-bridge] active at C:\Users\user\AppData\Local\Temp\opencode\rd05\bridge.json
+2026-11-12 07:02:28,191 INFO [gasproject.desktop] [eval-bridge] id=1794455668615 ok=True
+2026-11-12 07:02:37,057 INFO [gasproject.desktop] [eval-bridge] id=1794456157015 ok=True
+2026-11-12 07:02:59,905 INFO [gasproject.desktop] [eval-bridge] id=1794456179860 ok=True
+2026-11-12 07:03:18,439 INFO [gasproject.desktop] [eval-bridge] id=1794456198384 ok=True
+2026-11-12 07:03:19,671 INFO [gasproject.desktop] [eval-bridge] id=1794456199614 ok=True
+2026-11-12 07:03:41,094 INFO [gasproject.desktop] [eval-bridge] id=1794456221040 ok=True
+2026-11-12 07:03:42,271 INFO [gasproject.desktop] [eval-bridge] id=1794456222254 ok=True
+2026-11-12 07:03:43,803 INFO [gasproject.desktop] [eval-bridge] id=1794456223746 ok=True
+2026-11-12 07:04:00,008 INFO [gasproject.desktop] [eval-bridge] id=1794456239966 ok=True
+2026-11-12 07:04:01,185 INFO [gasproject.desktop] [eval-bridge] id=1794456241138 ok=True
+2026-11-12 07:04:17,844 INFO [gasproject.desktop] [eval-bridge] id=1794456257812 ok=True
+2026-11-12 07:04:19,025 INFO [gasproject.desktop] [eval-bridge] id=1794456258976 ok=True
+2026-11-12 07:04:47,373 INFO [gasproject.desktop] [eval-bridge] id=1794456287332 ok=True
+2026-11-12 07:04:47,484 INFO [gasproject.desktop] [eval-bridge] id=1794456287470 ok=True
+2026-11-12 07:04:57,866 INFO [gasproject.desktop] [eval-bridge] id=1794456297819 ok=True
+2026-11-12 07:04:57,977 INFO [gasproject.desktop] [eval-bridge] id=1794456297960 ok=True
+2026-11-12 07:05:08,969 INFO [gasproject.desktop] [eval-bridge] id=1794456308945 ok=True
+2026-11-12 07:05:09,030 INFO [gasproject.desktop] [eval-bridge] id=1794456309002 ok=True
+2026-11-12 07:05:09,850 INFO [gasproject.desktop] [eval-bridge] id=1794456309815 ok=True
+2026-11-12 07:05:09,909 INFO [gasproject.desktop] [eval-bridge] id=1794456309874 ok=True
+2026-11-12 07:05:09,969 INFO [gasproject.desktop] [eval-bridge] id=1794456309930 ok=True
+2026-11-12 07:05:10,790 INFO [gasproject.desktop] [eval-bridge] id=1794456310738 ok=True
+2026-11-12 07:05:10,900 INFO [gasproject.desktop] [eval-bridge] id=1794456310847 ok=True
+2026-11-12 07:05:11,770 INFO [gasproject.desktop] [eval-bridge] id=1794456311715 ok=True
+2026-11-12 07:05:11,879 INFO [gasproject.desktop] [eval-bridge] id=1794456311823 ok=True
+2026-11-12 07:05:11,988 INFO [gasproject.desktop] [eval-bridge] id=1794456311932 ok=True
+2026-11-12 07:05:12,863 INFO [gasproject.desktop] [eval-bridge] id=1794456312820 ok=True
+2026-11-12 07:05:12,925 INFO [gasproject.desktop] [eval-bridge] id=1794456312878 ok=True
+2026-11-12 07:05:13,748 INFO [gasproject.desktop] [eval-bridge] id=1794456313733 ok=True
+2026-11-12 07:05:13,810 INFO [gasproject.desktop] [eval-bridge] id=1794456313792 ok=True
+2026-11-12 07:05:13,870 INFO [gasproject.desktop] [eval-bridge] id=1794456313849 ok=True
+2026-11-12 07:05:14,688 INFO [gasproject.desktop] [eval-bridge] id=1794456314674 ok=True
+2026-11-12 07:05:14,749 INFO [gasproject.desktop] [eval-bridge] id=1794456314732 ok=True
+2026-11-12 07:05:16,025 INFO [gasproject.desktop] [eval-bridge] id=1794456315990 ok=True
+2026-11-12 07:05:16,846 INFO [gasproject.desktop] [eval-bridge] id=1794456316816 ok=True
+2026-11-12 07:05:18,375 INFO [gasproject.desktop] [eval-bridge] id=1794456318361 ok=True
+2026-11-12 07:05:18,434 INFO [gasproject.desktop] [eval-bridge] id=1794456318420 ok=True
+2026-11-12 07:05:18,493 INFO [gasproject.desktop] [eval-bridge] id=1794456318478 ok=True
+2026-11-12 07:05:19,309 INFO [gasproject.desktop] [eval-bridge] id=1794456319279 ok=True
+2026-11-12 07:05:19,370 INFO [gasproject.desktop] [eval-bridge] id=1794456319347 ok=True
+2026-11-12 07:05:19,428 INFO [gasproject.desktop] [eval-bridge] id=1794456319406 ok=True
+2026-11-12 07:05:20,298 INFO [gasproject.desktop] [eval-bridge] id=1794456320238 ok=True
+2026-11-12 07:05:20,357 INFO [gasproject.desktop] [eval-bridge] id=1794456320346 ok=True
+2026-11-12 07:05:21,175 INFO [gasproject.desktop] [eval-bridge] id=1794456321145 ok=True
+2026-11-12 07:05:21,234 INFO [gasproject.desktop] [eval-bridge] id=1794456321204 ok=True
+2026-11-12 07:05:21,295 INFO [gasproject.desktop] [eval-bridge] id=1794456321263 ok=True
+2026-11-12 07:05:22,116 INFO [gasproject.desktop] [eval-bridge] id=1794456322100 ok=True
+2026-11-12 07:05:22,176 INFO [gasproject.desktop] [eval-bridge] id=1794456322157 ok=True
+2026-11-12 07:05:22,996 INFO [gasproject.desktop] [eval-bridge] id=1794456322984 ok=True
+2026-11-12 07:05:23,055 INFO [gasproject.desktop] [eval-bridge] id=1794456323042 ok=True
+2026-11-12 07:05:23,116 INFO [gasproject.desktop] [eval-bridge] id=1794456323099 ok=True
+2026-11-12 07:05:25,452 INFO [gasproject.desktop] [eval-bridge] id=1794456325430 ok=True

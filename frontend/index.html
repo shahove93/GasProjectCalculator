@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>СС.Расчет</title>
     <style>
+
         :root {
             --navy: #0b1f33;
             --navy-2: #123a52;
@@ -22,145 +23,318 @@
             --error-bg: #fdeeec;
             --error-border: #f3c1bb;
             --error: #b3372a;
-            --shadow: 0 12px 34px rgba(11, 31, 51, 0.10);
-            --radius: 16px;
+            --shadow: 0 8px 22px rgba(11, 31, 51, 0.10);
+            --radius: 12px;
         }
         * { box-sizing: border-box; }
-        html, body { margin: 0; padding: 0; }
+        html, body { margin: 0; padding: 0; height: 100%; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            background:
-                radial-gradient(circle at 12% -10%, rgba(45, 212, 191, 0.14), transparent 42%),
-                radial-gradient(circle at 92% 0%, rgba(18, 58, 82, 0.10), transparent 38%),
-                var(--bg);
+            font-size: 13px;
+            line-height: 1.35;
             color: var(--text);
-            line-height: 1.5;
-            min-height: 100vh;
-            overflow-x: hidden;
+            background:
+                radial-gradient(circle at 12% -10%, rgba(45, 212, 191, 0.12), transparent 42%),
+                radial-gradient(circle at 92% 0%, rgba(18, 58, 82, 0.09), transparent 38%),
+                var(--bg);
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow-y: hidden;
+            overflow-x: auto;
         }
         [hidden] { display: none !important; }
-        .container { max-width: 1180px; margin: 0 auto; padding: 24px 20px 48px; }
 
-        /* ---------- Compact dark-navy header with gas-pipe motif ---------- */
+        /* ---------- Compact dark-navy header with emblem + gas pipe/valve ---------- */
         .topbar {
+            flex: 0 0 auto;
             background: linear-gradient(120deg, var(--navy-3) 0%, var(--navy) 46%, var(--navy-2) 100%);
             color: #f2f8fb;
             border-bottom: 1px solid rgba(94, 234, 212, 0.28);
-            box-shadow: 0 10px 30px rgba(8, 22, 37, 0.22);
+            box-shadow: 0 6px 18px rgba(8, 22, 37, 0.22);
         }
         .topbar-inner {
             max-width: 1180px;
             margin: 0 auto;
-            padding: 16px 20px;
-            display: flex;
+            padding: 5px 16px 6px;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) clamp(140px, 30vw, 256px);
+            grid-template-rows: auto auto;
+            column-gap: 16px;
+            row-gap: 4px;
             align-items: center;
-            justify-content: space-between;
-            gap: 22px;
         }
-        .brand { display: flex; align-items: center; gap: 14px; min-width: 0; }
+        .brand { display: flex; align-items: center; gap: 9px; min-width: 0; }
         .brand-emblem {
             flex: 0 0 auto;
-            width: 64px; height: 64px;
-            padding: 5px;
+            width: 40px; height: 40px;
+            padding: 3px;
             border-radius: 50%;
             background: #f4f8fb;
-            box-shadow: 0 0 0 3px rgba(94, 234, 212, 0.30), 0 8px 20px rgba(0, 0, 0, 0.28);
+            box-shadow: 0 0 0 2px rgba(94, 234, 212, 0.32), 0 4px 12px rgba(0, 0, 0, 0.28);
             display: grid; place-items: center;
         }
         .brand-emblem img { width: 100%; height: 100%; display: block; }
         .brand-text { min-width: 0; }
         .brand-title {
             margin: 0;
-            font-size: clamp(26px, 3.4vw, 38px);
+            font-size: 20px;
             font-weight: 800;
-            letter-spacing: -0.4px;
+            letter-spacing: -0.3px;
             line-height: 1.05;
             color: #ffffff;
+            white-space: nowrap;
         }
         .brand-subtitle {
-            margin: 4px 0 0;
-            font-size: 15px;
+            margin: 2px 0 0;
+            font-size: 12px;
             font-weight: 600;
             color: var(--teal-bright);
             letter-spacing: 0.01em;
+            white-space: nowrap;
         }
         .pipe-art {
-            flex: 0 1 340px;
+            grid-column: 2;
+            grid-row: 1 / span 2;
             width: 100%;
-            max-width: 340px;
             height: auto;
-            min-width: 140px;
+            justify-self: end;
+            align-self: center;
             display: block;
         }
         .pipe-flow { animation: none; }
 
-        /* ---------- Layout ---------- */
-        .layout { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 24px; align-items: start; padding-top: 24px; }
+        .mode-bar {
+            grid-column: 1;
+            grid-row: 2;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            min-width: 0;
+            font-size: 12px;
+            color: #cfe9e4;
+        }
+        .mode-label { white-space: nowrap; font-weight: 600; }
 
+        /* ---------- Layout ---------- */
+        .app {
+            flex: 1 1 auto;
+            min-height: 0;
+            width: 100%;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 6px 12px 5px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        .customer-row {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            padding: 3px 10px;
+            min-height: 32px;
+        }
+        .cust-icon { width: 16px; height: 16px; color: var(--accent); flex: 0 0 auto; }
+        .customer-row .cust-label { font-size: 12px; font-weight: 600; color: #33455a; white-space: nowrap; }
+        .customer-row select {
+            flex: 0 1 190px;
+            min-width: 0;
+            min-height: 26px;
+            padding: 2px 8px;
+            font-size: 12.5px;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            background: #fbfdff;
+            color: var(--text);
+        }
+        .customer-row select:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.18);
+        }
+        .customer-row .toggle-row { border: none; padding: 0; margin-left: auto; gap: 8px; }
+
+        .workspace {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: grid;
+            grid-template-columns: 1.12fr 1fr;
+            gap: 10px;
+            align-items: stretch;
+        }
+        .left-col {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-height: 0;
+            min-width: 0;
+        }
+        .form-card { flex: 1 1 auto; }
+        .card.options-card { flex: 0 0 auto; padding: 6px 10px 4px; }
+        .options-card h2 {
+            font-size: 12.5px;
+            margin-bottom: 1px;
+            padding-bottom: 3px;
+        }
+        .options-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0 14px;
+        }
+        .options-grid .toggle-row {
+            border-bottom: none;
+            padding: 0;
+            font-size: 11.5px;
+            gap: 6px;
+        }
+        .options-grid .toggle-row span { line-height: 1.2; }
         .card {
             background: var(--card);
             border: 1px solid var(--border);
             border-radius: var(--radius);
             box-shadow: var(--shadow);
-            padding: 24px;
+            padding: 7px 11px 8px;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
         .card h2 {
-            font-size: 19px; font-weight: 700; color: var(--navy);
-            margin: 0 0 16px; padding-bottom: 13px;
+            flex: 0 0 auto;
+            font-size: 13.5px;
+            font-weight: 700;
+            color: var(--navy);
+            margin: 0 0 6px;
+            padding-bottom: 5px;
             border-bottom: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            line-height: 1.25;
         }
-        .card.result-card { border-top: 4px solid var(--teal); }
+        .card h2 .ic { width: 15px; height: 15px; flex: 0 0 auto; color: var(--accent); }
+        .result-card { border-top: 3px solid var(--teal); }
+
+        .form-scroll {
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 2px;
+            scrollbar-width: thin;
+        }
+        .form-scroll::-webkit-scrollbar,
+        .result-detail::-webkit-scrollbar { width: 8px; }
+        .form-scroll::-webkit-scrollbar-thumb,
+        .result-detail::-webkit-scrollbar-thumb {
+            background: #c3d4df;
+            border-radius: 999px;
+        }
 
         .section-label {
-            font-size: 12px; font-weight: 700; text-transform: uppercase;
-            letter-spacing: 0.06em; color: var(--accent);
-            margin: 20px 0 10px;
+            font-size: 10.5px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent);
+            margin: 4px 0 2px;
         }
         .section-label:first-of-type { margin-top: 0; }
+        .mode-group + .mode-group { border-top: 1px solid var(--border); margin-top: 7px; padding-top: 6px; }
 
-        .mode-group { padding-top: 4px; }
-        .mode-group + .mode-group { border-top: 1px solid var(--border); margin-top: 18px; }
-
-        .field { margin-bottom: 14px; }
-        .field .label { display: block; font-size: 14px; font-weight: 500; margin-bottom: 6px; color: #33455a; }
+        .field-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4px 10px;
+            margin-bottom: 2px;
+        }
+        .field { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+        .field .label {
+            font-size: 11.5px;
+            font-weight: 500;
+            line-height: 1.15;
+            color: #33455a;
+            white-space: normal;
+            overflow: visible;
+            text-overflow: clip;
+        }
         .field input[type="number"],
         .field select {
-            width: 100%; padding: 10px 12px; font-size: 15px;
-            border: 1px solid var(--border); border-radius: 10px;
-            background: #fbfdff; color: var(--text);
+            width: 100%;
+            min-height: 28px;
+            padding: 3px 8px;
+            font-size: 13px;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            background: #fbfdff;
+            color: var(--text);
             transition: border-color 0.15s, box-shadow 0.15s;
         }
         .field input[type="number"]:focus,
         .field select:focus {
-            outline: none; border-color: var(--accent);
-            box-shadow: 0 0 0 3px rgba(15, 118, 110, 0.18);
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(15, 118, 110, 0.18);
         }
         .field input[type="number"]:disabled { background: #eef2f6; color: #8a96a3; cursor: not-allowed; }
 
-        .segment { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-        .segment.three { grid-template-columns: repeat(3, 1fr); }
+        .segment { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; min-width: 0; }
+        .segment.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
         .segment button {
-            padding: 11px 8px; border-radius: 10px; cursor: pointer;
-            border: 1px solid var(--border); background: #fff;
-            font-size: 15px; color: #33455a; font-weight: 500;
+            min-height: 26px;
+            padding: 4px 6px;
+            border-radius: 7px;
+            cursor: pointer;
+            border: 1px solid var(--border);
+            background: #fff;
+            font-size: 12px;
+            color: #33455a;
+            font-weight: 600;
             min-width: 0;
+            white-space: nowrap;
             transition: background 0.15s, border-color 0.15s, color 0.15s;
         }
         .segment button:hover { border-color: var(--accent); color: var(--accent); }
-        .segment button.active {
-            background: var(--accent); border-color: var(--accent);
-            color: #fff; font-weight: 600;
-        }
-        .segment button:focus-visible { outline: 3px solid rgba(45, 212, 191, 0.45); outline-offset: 2px; }
+        .segment button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+        .segment button:focus-visible { outline: 2px solid rgba(45, 212, 191, 0.55); outline-offset: 1px; }
 
-        .toggle-row {
-            display: flex; align-items: center; justify-content: space-between;
-            gap: 12px; padding: 10px 0; border-bottom: 1px dashed var(--border);
-            font-size: 14px; font-weight: 500; color: #33455a;
+        /* Header mode selector keeps the dark styling of the top bar. */
+        .mode-bar .segment button {
+            border: 1px solid rgba(94, 234, 212, 0.38);
+            background: rgba(255, 255, 255, 0.06);
+            color: #e2f8f4;
+            padding: 5px 10px;
+            font-size: 12px;
         }
+        .mode-bar .segment button:hover { border-color: var(--teal-bright); color: #fff; }
+        .mode-bar .segment button.active {
+            background: var(--accent);
+            border-color: var(--teal);
+            color: #fff;
+        }
+
+        .toggle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 10px; }
+        .toggle-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 3px 0;
+            border-bottom: 1px dashed var(--border);
+            font-size: 11.5px;
+            font-weight: 500;
+            color: #33455a;
+        }
+        .toggle-grid .toggle-row { border-bottom: none; }
         .toggle-row:last-child { border-bottom: none; }
 
-        .switch { position: relative; width: 46px; height: 26px; flex: 0 0 auto; }
+        .switch { position: relative; width: 34px; height: 18px; flex: 0 0 auto; }
         .switch input {
             position: absolute; inset: 0; margin: 0;
             opacity: 0; width: 100%; height: 100%; cursor: pointer;
@@ -172,75 +346,118 @@
         }
         .switch .track::after {
             content: ""; position: absolute; top: 3px; left: 3px;
-            width: 20px; height: 20px; background: #fff; border-radius: 50%;
+            width: 12px; height: 12px; background: #fff; border-radius: 50%;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s;
         }
         .switch input:checked + .track { background: var(--accent); }
-        .switch input:checked + .track::after { transform: translateX(20px); }
+        .switch input:checked + .track::after { transform: translateX(16px); }
         .switch input:disabled + .track { background: #e2e8ef; }
         .switch input:disabled + .track::after { opacity: 0.6; }
-        .switch input:focus-visible + .track { box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.42); }
+        .switch input:focus-visible + .track { box-shadow: 0 0 0 2px rgba(45, 212, 191, 0.45); }
 
         .btn {
-            display: block; width: 100%; margin-top: 10px;
-            padding: 14px 18px; font-size: 16px; font-weight: 600;
-            color: #fff; background: var(--accent); border: none; border-radius: 12px;
+            flex: 0 0 auto;
+            display: block;
+            width: 100%;
+            margin-top: 6px;
+            padding: 8px 12px;
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #fff;
+            background: var(--accent);
+            border: none;
+            border-radius: 9px;
             cursor: pointer;
             transition: background 0.15s, box-shadow 0.15s, transform 0.1s;
         }
-        .btn:hover { background: var(--accent-dark); box-shadow: 0 8px 20px rgba(15, 118, 110, 0.30); }
-        .btn:focus-visible { outline: 3px solid rgba(45, 212, 191, 0.5); outline-offset: 2px; }
+        .btn:hover { background: var(--accent-dark); box-shadow: 0 6px 16px rgba(15, 118, 110, 0.28); }
+        .btn:focus-visible { outline: 2px solid rgba(45, 212, 191, 0.6); outline-offset: 2px; }
         .btn:active { transform: translateY(1px); }
         .btn:disabled { opacity: 0.65; cursor: default; box-shadow: none; }
 
-        .cost-line {
+        /* ---------- Result ---------- */
+        .result-body {
+            flex: 1 1 auto;
+            min-height: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .total-block {
+            flex: 0 0 auto;
+            margin: 0 0 5px;
+            padding: 5px 10px;
+            background: linear-gradient(120deg, #fff8e6, #ffefc2);
+            border: 1px solid #f0cf83;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+        }
+        .total-block .label { font-size: 11.5px; font-weight: 700; color: #8a5a12; white-space: nowrap; }
+        .total-block .amount {
+            font-size: clamp(20px, 2.9vw, 24px);
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            color: var(--navy);
+            font-variant-numeric: tabular-nums;
+            white-space: nowrap;
+        }
+        .result-detail {
+            flex: 1 1 auto;
+            min-height: 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding-right: 2px;
+            scrollbar-width: thin;
+        }
+        .cost-line, .subtotal-line {
             display: flex; justify-content: space-between; align-items: baseline;
-            gap: 12px; padding: 6px 0; font-size: 15px; color: #33455a;
+            gap: 8px; padding: 1.5px 0; font-size: 12px; color: #33455a;
         }
         .cost-line .amount { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--text); white-space: nowrap; }
         .cost-line.base .amount { font-weight: 700; }
-        .divider { border-top: 1px solid var(--border); margin: 12px 0; }
-        .subtotal-line {
-            display: flex; justify-content: space-between; align-items: baseline;
-            gap: 12px; padding: 6px 0; font-size: 15px; color: #33455a;
-        }
+        .divider { border-top: 1px solid var(--border); margin: 4px 0; }
         .subtotal-line .amount { font-variant-numeric: tabular-nums; font-weight: 700; color: var(--text); white-space: nowrap; }
-        .result-section + .result-section { margin-top: 4px; }
+        .result-section + .result-section { margin-top: 5px; }
         .section-total {
             display: flex; justify-content: space-between; align-items: baseline;
-            gap: 12px; padding: 8px 0 2px; font-size: 15px; font-weight: 700; color: var(--accent-dark);
+            gap: 8px; padding: 2px 0 0; font-size: 12px; font-weight: 700; color: var(--accent-dark);
         }
         .section-total .amount { font-variant-numeric: tabular-nums; font-weight: 700; white-space: nowrap; }
 
-        .total-block {
-            margin-top: 16px; padding: 14px 18px;
-            background: linear-gradient(120deg, var(--accent-light), #f3fffc);
-            border: 1px solid #bfe9e2;
-            border-radius: 12px;
-            display: flex; justify-content: space-between; align-items: center; gap: 12px;
-            flex-wrap: wrap;
-        }
-        .total-block .label { font-size: 16px; font-weight: 700; color: var(--accent-dark); }
-        .total-block .amount {
-            font-size: 32px; font-weight: 800; letter-spacing: -0.5px;
-            color: var(--navy); font-variant-numeric: tabular-nums;
-            overflow-wrap: anywhere;
-        }
-        .result-hint { color: var(--text-muted); font-size: 14px; margin: 10px 0 0; }
         #calc-info {
-            color: var(--text-muted); font-size: 15px; line-height: 1.6;
-            text-align: center; padding: 34px 12px;
+            flex: 1 1 auto;
+            color: var(--text-muted);
+            font-size: 12.5px;
+            line-height: 1.5;
+            text-align: center;
+            padding: 12px 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #error {
+            flex: 0 0 auto;
+            margin-top: 5px; padding: 6px 9px;
+            background: var(--error-bg); border: 1px solid var(--error-border);
+            color: var(--error); border-radius: 7px; font-size: 11.5px; font-weight: 500;
         }
 
-        #error {
-            margin-top: 16px; padding: 12px 14px;
-            background: var(--error-bg); border: 1px solid var(--error-border);
-            color: var(--error); border-radius: 10px; font-size: 14px; font-weight: 500;
+        /* ---------- Bottom pipe / house illustration ---------- */
+        .pipe-footer {
+            flex: 0 0 auto;
+            height: 44px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            overflow: hidden;
         }
+        .pipe-footer svg { width: 100%; max-width: 820px; height: 100%; display: block; }
 
         @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(6px); }
+            from { opacity: 0; transform: translateY(4px); }
             to { opacity: 1; transform: none; }
         }
         @keyframes pipeFlow {
@@ -257,9 +474,7 @@
             }
         }
         @media (prefers-reduced-motion: reduce) {
-            *,
-            *::before,
-            *::after {
+            *, *::before, *::after {
                 animation-duration: 0.001ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.001ms !important;
@@ -268,31 +483,35 @@
             .pipe-flow { animation: none !important; }
         }
 
-        @media (max-width: 960px) {
-            .layout { grid-template-columns: 1fr; }
-            .container { padding-top: 20px; }
+        /* ---------- Mobile: a single scrollable column, no horizontal overflow ---------- */
+        @media (max-width: 700px) {
+            body { height: auto; min-height: 100vh; overflow: auto; }
+            .topbar-inner {
+                grid-template-columns: minmax(0, 1fr);
+                grid-template-rows: auto auto auto;
+                row-gap: 6px;
+                padding: 9px 12px 10px;
+            }
+            .brand { grid-column: 1; grid-row: 1; padding-right: 120px; z-index: 1; }
+            .pipe-art { grid-column: 1; grid-row: 1; max-width: 112px; justify-self: end; align-self: start; z-index: 0; }
+            .mode-bar { grid-column: 1; grid-row: 2; flex-wrap: wrap; gap: 6px; }
+            .mode-bar .segment { flex: 1 1 auto; }
+            .app { padding: 8px 10px 10px; gap: 8px; }
+            .customer-row { flex-wrap: wrap; padding: 7px 10px; }
+            .customer-row select { flex: 1 1 140px; }
+            .customer-row .toggle-row { margin-left: 0; }
+            .field .label { white-space: normal; overflow: visible; text-overflow: clip; }
+            .workspace { display: block; min-height: 0; }
+            .card { margin-bottom: 8px; overflow: visible; }
+            .form-scroll, .result-detail { overflow: visible; max-height: none; }
+            .result-body { display: block; }
+            .pipe-footer { height: 54px; }
         }
-        @media (max-width: 720px) {
-            .topbar-inner { flex-wrap: wrap; gap: 12px; padding: 14px 16px; }
-            .brand-emblem { width: 54px; height: 54px; }
-            .pipe-art { max-width: 100%; flex-basis: 100%; order: 3; min-width: 0; }
-            .container { padding: 18px 14px 36px; }
-            .card { padding: 18px; }
-        }
-        @media (max-width: 480px) {
-            .container { padding: 14px 10px 30px; }
-            .card { padding: 15px; }
-            .brand-emblem { width: 46px; height: 46px; padding: 4px; }
-            .brand-title { font-size: 24px; }
-            .brand-subtitle { font-size: 13px; }
-            .segment button { font-size: 13px; padding: 10px 5px; }
-            .total-block { padding: 12px 14px; }
-            .total-block .amount { font-size: 26px; }
-            .total-block { flex-direction: column; align-items: flex-start; }
-        }
+
     </style>
 </head>
 <body>
+
     <header class="topbar">
         <div class="topbar-inner">
             <div class="brand">
@@ -304,64 +523,84 @@
                     <p class="brand-subtitle">Калькулятор ГСН и ГСВ</p>
                 </div>
             </div>
-            <svg class="pipe-art" viewBox="0 0 360 72" fill="none" aria-hidden="true" focusable="false">
+            <svg class="pipe-art" viewBox="0 0 300 84" fill="none" aria-hidden="true" focusable="false">
                 <defs>
-                    <linearGradient id="pipeGrad" x1="0" y1="0" x2="360" y2="0" gradientUnits="userSpaceOnUse">
+                    <linearGradient id="pipeGrad" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse">
                         <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.10"/>
-                        <stop offset="0.45" stop-color="#2dd4bf"/>
-                        <stop offset="1" stop-color="#5eead4" stop-opacity="0.12"/>
+                        <stop offset="0.5" stop-color="#2dd4bf"/>
+                        <stop offset="1" stop-color="#5eead4" stop-opacity="0.16"/>
                     </linearGradient>
                 </defs>
-                <path d="M4 52h74a12 12 0 0 0 12-12v-8a12 12 0 0 1 12-12h128a12 12 0 0 0 12-12V8"
+                <path d="M2 66h58a12 12 0 0 0 12-12V40a12 12 0 0 1 12-12h32"
                       stroke="url(#pipeGrad)" stroke-width="6" stroke-linecap="round"/>
-                <path class="pipe-flow" d="M4 52h74a12 12 0 0 0 12-12v-8a12 12 0 0 1 12-12h128a12 12 0 0 0 12-12V8"
-                      stroke="#5eead4" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10" opacity="0.9"/>
-                <circle cx="90" cy="40" r="5.5" fill="#0b1f33" stroke="#5eead4" stroke-width="2.5"/>
-                <circle cx="242" cy="20" r="5.5" fill="#0b1f33" stroke="#5eead4" stroke-width="2.5"/>
-                <circle cx="4" cy="52" r="3.5" fill="#5eead4"/>
-                <circle cx="354" cy="8" r="3.5" fill="#2dd4bf"/>
+                <path d="M2 66h58a12 12 0 0 0 12-12V40a12 12 0 0 1 12-12h32"
+                      class="pipe-flow" stroke="#5eead4" stroke-width="2" stroke-linecap="round"
+                      stroke-dasharray="2 10" opacity="0.95"/>
+                <path d="M146 28h40a12 12 0 0 1 12 12v6a12 12 0 0 0 12 12h88"
+                      stroke="url(#pipeGrad)" stroke-width="6" stroke-linecap="round"/>
+                <path d="M146 28h40a12 12 0 0 1 12 12v6a12 12 0 0 0 12 12h88"
+                      class="pipe-flow" stroke="#5eead4" stroke-width="2" stroke-linecap="round"
+                      stroke-dasharray="2 10" opacity="0.95"/>
+                <rect x="112" y="20" width="34" height="20" rx="4" fill="#0a1725" stroke="#5eead4" stroke-width="2.4"/>
+                <rect x="106" y="18" width="6" height="24" rx="2" fill="#0a1725" stroke="#5eead4" stroke-width="2"/>
+                <rect x="146" y="18" width="6" height="24" rx="2" fill="#0a1725" stroke="#5eead4" stroke-width="2"/>
+                <rect x="125" y="6" width="8" height="16" rx="2" fill="#2dd4bf"/>
+                <circle cx="129" cy="7" r="10" stroke="#f3c05a" stroke-width="3"/>
+                <path d="M119 7h20M129 -3v20" stroke="#f3c05a" stroke-width="2" stroke-linecap="round"/>
+                <circle cx="129" cy="7" r="2.6" fill="#f3c05a"/>
+                <circle cx="2" cy="66" r="3.6" fill="#5eead4"/>
+                <circle cx="298" cy="58" r="3.6" fill="#2dd4bf"/>
+                <circle cx="206" cy="46" r="3.4" fill="#5eead4"/>
             </svg>
+            <div class="mode-bar">
+                <span class="mode-label">Режим расчёта:</span>
+                <div class="segment three" id="mode-segment" role="group" aria-label="Режим расчёта">
+                    <button type="button" class="mode-btn active" data-mode="gsn">ГСН</button>
+                    <button type="button" class="mode-btn" data-mode="gsv">ГСВ</button>
+                    <button type="button" class="mode-btn" data-mode="combined">ГСН + ГСВ</button>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="container">
-        <section class="layout">
+    <main class="app">
+        <div class="customer-row">
+            <svg class="cust-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M5.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <label class="cust-label" for="customer_type">Заказчик:</label>
+            <select id="customer_type">
+                <option value="частное лицо">Частное лицо</option>
+                <option value="юридическое лицо">Юридическое лицо</option>
+            </select>
+        </div>
+
+        <form id="calculate-form" class="workspace">
+            <div class="left-col">
             <div class="card form-card">
-                <h2>Параметры объекта</h2>
-
-                <form id="calculate-form">
-                    <p class="section-label">Режим расчёта</p>
-                    <div class="segment three" id="mode-segment" role="group" aria-label="Режим расчёта">
-                        <button type="button" class="mode-btn active" data-mode="gsn">ГСН</button>
-                        <button type="button" class="mode-btn" data-mode="gsv">ГСВ</button>
-                        <button type="button" class="mode-btn" data-mode="combined">ГСН + ГСВ</button>
-                    </div>
-
-                    <p class="section-label">Заказчик</p>
-                    <div class="field">
-                        <span class="label">Тип заказчика</span>
-                        <select id="customer_type">
-                            <option value="частное лицо">Частное лицо</option>
-                            <option value="юридическое лицо">Юридическое лицо</option>
-                        </select>
-                    </div>
-                    <div class="toggle-row">
-                        <span>Объект в районе</span>
-                        <label class="switch">
-                            <input type="checkbox" id="is_district">
-                            <span class="track"></span>
-                        </label>
-                    </div>
-
+                <h2>
+                    <svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                        <path d="M3 16h5a2 2 0 0 0 2-2v-2a2 2 0 0 1 2-2h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        <path d="M16 10h5v6h-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                        <circle cx="7.5" cy="16" r="1.3" fill="currentColor"/>
+                        <path d="M12 10V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        <circle cx="12" cy="5.5" r="2" stroke="currentColor" stroke-width="1.8"/>
+                    </svg>
+                    Параметры объекта
+                </h2>
+                <div class="form-scroll">
                     <div class="mode-group" id="group-gsn">
                         <p class="section-label">ГСН · Параметры трассы</p>
-                        <div class="field">
-                            <label class="label" for="length">Длина, м</label>
-                            <input id="length" type="number" min="0" step="1" value="0">
-                        </div>
-                        <div class="field">
-                            <label class="label" for="angles">Количество углов</label>
-                            <input id="angles" type="number" min="0" step="1" value="0">
+                        <div class="field-grid">
+                            <div class="field">
+                                <label class="label" for="length">Длина, м</label>
+                                <input id="length" type="number" min="0" step="1" value="0">
+                            </div>
+                            <div class="field">
+                                <label class="label" for="angles">Количество углов</label>
+                                <input id="angles" type="number" min="0" step="1" value="0">
+                            </div>
                         </div>
 
                         <p class="section-label">Способ прокладки</p>
@@ -372,47 +611,69 @@
                         <input id="hdd" type="checkbox" style="display:none;">
 
                         <p class="section-label">Техника</p>
-                        <div class="field">
-                            <label class="label" for="excavator_hours">Часы экскаватора</label>
-                            <input id="excavator_hours" type="number" min="0" step="1" value="0">
+                        <div class="field-grid">
+                            <div class="field">
+                                <label class="label" for="excavator_hours">Часы экскаватора</label>
+                                <input id="excavator_hours" type="number" min="0" step="1" value="0">
+                            </div>
                         </div>
+                    </div>
+
+                    <div class="mode-group" id="group-gsv">
+                        <p class="section-label">ГСВ · Параметры</p>
+                        <div class="field-grid">
+                            <div class="field">
+                                <label class="label" for="gsv-length">Длина, м</label>
+                                <input id="gsv-length" type="number" min="0" step="1" value="0">
+                            </div>
+                            <div class="field">
+                                <label class="label" for="gsv-diameter">Диаметр, мм</label>
+                                <input id="gsv-diameter" type="number" min="1" max="57" step="1" value="25">
+                            </div>
+                            <div class="field">
+                                <label class="label" for="gsv-holes">Алмазное бурение, отверстий</label>
+                                <input id="gsv-holes" type="number" min="0" step="1" value="0">
+                            </div>
+                            <div class="field">
+                                <label class="label" for="gsv-sakz">Комплекты САКЗ</label>
+                                <input id="gsv-sakz" type="number" min="0" step="1" value="0">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="card options-card" id="options-card">
+                    <h2>
+                        <svg class="ic" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                            <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.8"/>
+                            <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                        </svg>
+                        Дополнительные параметры
+                    </h2>
+                    <div class="options-grid">
                         <div class="toggle-row">
-                            <span>Использовать гидромолот</span>
+                            <span>Объект в районе</span>
+                            <label class="switch">
+                                <input type="checkbox" id="is_district">
+                                <span class="track"></span>
+                            </label>
+                        </div>
+                        <div class="toggle-row" id="option-hydraulic">
+                            <span>Гидромолот</span>
                             <label class="switch">
                                 <input type="checkbox" id="hydraulic_hammer">
                                 <span class="track"></span>
                             </label>
                         </div>
-
-                        <p class="section-label">Дополнительные условия ГСН</p>
-                        <div class="toggle-row">
+                        <div class="toggle-row" id="option-grpsh">
                             <span>Есть ГРПШ</span>
                             <label class="switch">
                                 <input type="checkbox" id="has_grpsh">
                                 <span class="track"></span>
                             </label>
                         </div>
-                    </div>
-
-                    <div class="mode-group" id="group-gsv">
-                        <p class="section-label">ГСВ · Параметры</p>
-                        <div class="field">
-                            <label class="label" for="gsv-length">Длина, м</label>
-                            <input id="gsv-length" type="number" min="0" step="1" value="0">
-                        </div>
-                        <div class="field">
-                            <label class="label" for="gsv-diameter">Диаметр, мм</label>
-                            <input id="gsv-diameter" type="number" min="1" max="57" step="1" value="25">
-                        </div>
-                        <div class="field">
-                            <label class="label" for="gsv-holes">Алмазное бурение, отверстий</label>
-                            <input id="gsv-holes" type="number" min="0" step="1" value="0">
-                        </div>
-                        <div class="field">
-                            <label class="label" for="gsv-sakz">Комплекты САКЗ</label>
-                            <input id="gsv-sakz" type="number" min="0" step="1" value="0">
-                        </div>
-                        <div class="toggle-row">
+                        <div class="toggle-row" id="option-panel">
                             <span>ПК (пульт контрольный)</span>
                             <label class="switch">
                                 <input type="checkbox" id="gsv-panel">
@@ -420,195 +681,224 @@
                             </label>
                         </div>
                     </div>
-
-                    <button type="submit" class="btn" id="submit-btn">Рассчитать стоимость</button>
-                </form>
+                </div>
             </div>
 
             <div class="card result-card" id="result-card">
                 <h2 id="result-title">Расчёт стоимости — ГСН</h2>
                 <p id="calc-info">Укажите параметры объекта и нажмите «Рассчитать стоимость»</p>
 
-                <div id="result-gsn" style="display: none;">
-                    <div class="cost-line base">
-                        <span>Базовая стоимость</span>
-                        <span class="amount" id="base_price">—</span>
-                    </div>
-                    <div class="cost-line" id="row_length_surcharge">
-                        <span>Доплата за длину</span>
-                        <span class="amount" id="length_surcharge">—</span>
-                    </div>
-                    <div class="cost-line" id="row_angle_surcharge">
-                        <span>Доплата за углы</span>
-                        <span class="amount" id="angle_surcharge">—</span>
-                    </div>
-                    <div class="cost-line" id="row_excavator_cost">
-                        <span>Стоимость экскаватора</span>
-                        <span class="amount" id="excavator_cost">—</span>
-                    </div>
-                    <div class="cost-line" id="row_hdd_surcharge">
-                        <span>Доплата за ГНБ</span>
-                        <span class="amount" id="hdd_surcharge">—</span>
-                    </div>
-                    <div class="cost-line" id="row_area_surcharge">
-                        <span>Доплата за район</span>
-                        <span class="amount" id="area_surcharge">—</span>
-                    </div>
-                    <div class="cost-line" id="row_grpsh_surcharge">
-                        <span>Доплата за ГРПШ</span>
-                        <span class="amount" id="grpsh_surcharge">—</span>
-                    </div>
-
-                    <div class="divider"></div>
-
-                    <div class="subtotal-line">
-                        <span>Подытог</span>
-                        <span class="amount" id="subtotal">—</span>
-                    </div>
-                    <div class="subtotal-line">
-                        <span>НДС&nbsp;5%</span>
-                        <span class="amount" id="vat">—</span>
-                    </div>
-
+                <div id="result-gsn" class="result-body" style="display: none;">
                     <div class="total-block">
-                        <span class="label">Итого</span>
+                        <span class="label">Итого с НДС</span>
                         <span class="amount" id="total">—</span>
                     </div>
+                    <div class="result-detail">
+                        <div class="cost-line base">
+                            <span>Базовая стоимость</span>
+                            <span class="amount" id="base_price">—</span>
+                        </div>
+                        <div class="cost-line" id="row_length_surcharge">
+                            <span>Доплата за длину</span>
+                            <span class="amount" id="length_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="row_angle_surcharge">
+                            <span>Доплата за углы</span>
+                            <span class="amount" id="angle_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="row_excavator_cost">
+                            <span>Стоимость экскаватора</span>
+                            <span class="amount" id="excavator_cost">—</span>
+                        </div>
+                        <div class="cost-line" id="row_hdd_surcharge">
+                            <span>Доплата за ГНБ</span>
+                            <span class="amount" id="hdd_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="row_area_surcharge">
+                            <span>Доплата за район</span>
+                            <span class="amount" id="area_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="row_grpsh_surcharge">
+                            <span>Доплата за ГРПШ</span>
+                            <span class="amount" id="grpsh_surcharge">—</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="subtotal-line">
+                            <span>Подытог</span>
+                            <span class="amount" id="subtotal">—</span>
+                        </div>
+                        <div class="subtotal-line">
+                            <span>НДС&nbsp;5%</span>
+                            <span class="amount" id="vat">—</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="result-gsv" style="display: none;">
-                    <div class="cost-line base">
-                        <span>Базовая стоимость</span>
-                        <span class="amount" id="gsv-base_price">—</span>
-                    </div>
-                    <div class="cost-line" id="gsv-row_length_surcharge">
-                        <span>Доплата за длину</span>
-                        <span class="amount" id="gsv-length_surcharge">—</span>
-                    </div>
-                    <div class="cost-line" id="gsv-row_drilling_cost">
-                        <span>Алмазное бурение</span>
-                        <span class="amount" id="gsv-drilling_cost">—</span>
-                    </div>
-                    <div class="cost-line" id="gsv-row_sakz_cost">
-                        <span>САКЗ</span>
-                        <span class="amount" id="gsv-sakz_cost">—</span>
-                    </div>
-                    <div class="cost-line" id="gsv-row_panel_cost">
-                        <span>ПК (пульт контрольный)</span>
-                        <span class="amount" id="gsv-panel_cost">—</span>
-                    </div>
-                    <div class="cost-line" id="gsv-row_area_surcharge">
-                        <span>Доплата за район</span>
-                        <span class="amount" id="gsv-area_surcharge">—</span>
-                    </div>
-
-                    <div class="divider"></div>
-
-                    <div class="subtotal-line">
-                        <span>Подытог</span>
-                        <span class="amount" id="gsv-subtotal">—</span>
-                    </div>
-                    <div class="subtotal-line">
-                        <span>НДС&nbsp;5%</span>
-                        <span class="amount" id="gsv-vat">—</span>
-                    </div>
-
+                <div id="result-gsv" class="result-body" style="display: none;">
                     <div class="total-block">
-                        <span class="label">Итого</span>
+                        <span class="label">Итого с НДС</span>
                         <span class="amount" id="gsv-total">—</span>
                     </div>
+                    <div class="result-detail">
+                        <div class="cost-line base">
+                            <span>Базовая стоимость</span>
+                            <span class="amount" id="gsv-base_price">—</span>
+                        </div>
+                        <div class="cost-line" id="gsv-row_length_surcharge">
+                            <span>Доплата за длину</span>
+                            <span class="amount" id="gsv-length_surcharge">—</span>
+                        </div>
+                        <div class="cost-line" id="gsv-row_drilling_cost">
+                            <span>Алмазное бурение</span>
+                            <span class="amount" id="gsv-drilling_cost">—</span>
+                        </div>
+                        <div class="cost-line" id="gsv-row_sakz_cost">
+                            <span>САКЗ</span>
+                            <span class="amount" id="gsv-sakz_cost">—</span>
+                        </div>
+                        <div class="cost-line" id="gsv-row_panel_cost">
+                            <span>ПК (пульт контрольный)</span>
+                            <span class="amount" id="gsv-panel_cost">—</span>
+                        </div>
+                        <div class="cost-line" id="gsv-row_area_surcharge">
+                            <span>Доплата за район</span>
+                            <span class="amount" id="gsv-area_surcharge">—</span>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="subtotal-line">
+                            <span>Подытог</span>
+                            <span class="amount" id="gsv-subtotal">—</span>
+                        </div>
+                        <div class="subtotal-line">
+                            <span>НДС&nbsp;5%</span>
+                            <span class="amount" id="gsv-vat">—</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div id="result-combined" style="display: none;">
-                    <div class="result-section">
-                        <p class="section-label">ГСН</p>
-                        <div class="cost-line base">
-                            <span>Базовая стоимость</span>
-                            <span class="amount" id="combined-gsn-base_price">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsn-row_length_surcharge">
-                            <span>Доплата за длину</span>
-                            <span class="amount" id="combined-gsn-length_surcharge">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsn-row_angle_surcharge">
-                            <span>Доплата за углы</span>
-                            <span class="amount" id="combined-gsn-angle_surcharge">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsn-row_excavator_cost">
-                            <span>Стоимость экскаватора</span>
-                            <span class="amount" id="combined-gsn-excavator_cost">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsn-row_hdd_surcharge">
-                            <span>Доплата за ГНБ</span>
-                            <span class="amount" id="combined-gsn-hdd_surcharge">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsn-row_area_surcharge">
-                            <span>Доплата за район</span>
-                            <span class="amount" id="combined-gsn-area_surcharge">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsn-row_grpsh_surcharge">
-                            <span>Доплата за ГРПШ</span>
-                            <span class="amount" id="combined-gsn-grpsh_surcharge">—</span>
-                        </div>
-                        <div class="section-total">
-                            <span>Итого по ГСН</span>
-                            <span class="amount" id="combined-gsn-total">—</span>
-                        </div>
-                    </div>
-
-                    <div class="result-section">
-                        <p class="section-label">ГСВ</p>
-                        <div class="cost-line base">
-                            <span>Базовая стоимость</span>
-                            <span class="amount" id="combined-gsv-base_price">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsv-row_length_surcharge">
-                            <span>Доплата за длину</span>
-                            <span class="amount" id="combined-gsv-length_surcharge">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsv-row_drilling_cost">
-                            <span>Алмазное бурение</span>
-                            <span class="amount" id="combined-gsv-drilling_cost">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsv-row_sakz_cost">
-                            <span>САКЗ</span>
-                            <span class="amount" id="combined-gsv-sakz_cost">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsv-row_panel_cost">
-                            <span>ПК (пульт контрольный)</span>
-                            <span class="amount" id="combined-gsv-panel_cost">—</span>
-                        </div>
-                        <div class="cost-line" id="combined-gsv-row_area_surcharge">
-                            <span>Доплата за район</span>
-                            <span class="amount" id="combined-gsv-area_surcharge">—</span>
-                        </div>
-                        <div class="section-total">
-                            <span>Итого по ГСВ</span>
-                            <span class="amount" id="combined-gsv-total">—</span>
-                        </div>
-                    </div>
-
-                    <div class="divider"></div>
-
-                    <div class="subtotal-line">
-                        <span>Общий подытог</span>
-                        <span class="amount" id="combined-subtotal">—</span>
-                    </div>
-                    <div class="subtotal-line">
-                        <span>НДС&nbsp;5%</span>
-                        <span class="amount" id="combined-vat">—</span>
-                    </div>
-
+                <div id="result-combined" class="result-body" style="display: none;">
                     <div class="total-block">
-                        <span class="label">Итого</span>
+                        <span class="label">Итого с НДС</span>
                         <span class="amount" id="combined-total">—</span>
+                    </div>
+                    <div class="result-detail">
+                        <div class="result-section">
+                            <p class="section-label">ГСН</p>
+                            <div class="cost-line base">
+                                <span>Базовая стоимость</span>
+                                <span class="amount" id="combined-gsn-base_price">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsn-row_length_surcharge">
+                                <span>Доплата за длину</span>
+                                <span class="amount" id="combined-gsn-length_surcharge">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsn-row_angle_surcharge">
+                                <span>Доплата за углы</span>
+                                <span class="amount" id="combined-gsn-angle_surcharge">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsn-row_excavator_cost">
+                                <span>Стоимость экскаватора</span>
+                                <span class="amount" id="combined-gsn-excavator_cost">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsn-row_hdd_surcharge">
+                                <span>Доплата за ГНБ</span>
+                                <span class="amount" id="combined-gsn-hdd_surcharge">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsn-row_area_surcharge">
+                                <span>Доплата за район</span>
+                                <span class="amount" id="combined-gsn-area_surcharge">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsn-row_grpsh_surcharge">
+                                <span>Доплата за ГРПШ</span>
+                                <span class="amount" id="combined-gsn-grpsh_surcharge">—</span>
+                            </div>
+                            <div class="section-total">
+                                <span>Итого по ГСН</span>
+                                <span class="amount" id="combined-gsn-total">—</span>
+                            </div>
+                        </div>
+
+                        <div class="result-section">
+                            <p class="section-label">ГСВ</p>
+                            <div class="cost-line base">
+                                <span>Базовая стоимость</span>
+                                <span class="amount" id="combined-gsv-base_price">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsv-row_length_surcharge">
+                                <span>Доплата за длину</span>
+                                <span class="amount" id="combined-gsv-length_surcharge">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsv-row_drilling_cost">
+                                <span>Алмазное бурение</span>
+                                <span class="amount" id="combined-gsv-drilling_cost">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsv-row_sakz_cost">
+                                <span>САКЗ</span>
+                                <span class="amount" id="combined-gsv-sakz_cost">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsv-row_panel_cost">
+                                <span>ПК (пульт контрольный)</span>
+                                <span class="amount" id="combined-gsv-panel_cost">—</span>
+                            </div>
+                            <div class="cost-line" id="combined-gsv-row_area_surcharge">
+                                <span>Доплата за район</span>
+                                <span class="amount" id="combined-gsv-area_surcharge">—</span>
+                            </div>
+                            <div class="section-total">
+                                <span>Итого по ГСВ</span>
+                                <span class="amount" id="combined-gsv-total">—</span>
+                            </div>
+                        </div>
+
+                        <div class="divider"></div>
+                        <div class="subtotal-line">
+                            <span>Общий подытог</span>
+                            <span class="amount" id="combined-subtotal">—</span>
+                        </div>
+                        <div class="subtotal-line">
+                            <span>НДС&nbsp;5%</span>
+                            <span class="amount" id="combined-vat">—</span>
+                        </div>
                     </div>
                 </div>
 
                 <div id="error" style="display: none;"></div>
+                <button type="submit" class="btn" id="submit-btn">Рассчитать стоимость</button>
             </div>
-        </section>
-    </div>
+        </form>
+
+        <div class="pipe-footer" aria-hidden="true">
+            <svg viewBox="0 0 760 48" fill="none">
+                <defs>
+                    <linearGradient id="footerPipe" x1="0" y1="0" x2="760" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#9fc7c1"/>
+                        <stop offset="0.6" stop-color="#2dd4bf"/>
+                        <stop offset="1" stop-color="#9fc7c1"/>
+                    </linearGradient>
+                    <linearGradient id="houseGlow" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#fff3c4"/>
+                        <stop offset="1" stop-color="#f3c05a"/>
+                    </linearGradient>
+                </defs>
+                <path d="M0 36h430a10 10 0 0 0 10-10v-3a10 10 0 0 1 10-10h155"
+                      stroke="url(#footerPipe)" stroke-width="3" stroke-linecap="round"/>
+                <path d="M835 18h95" stroke="url(#footerPipe)" stroke-width="3" stroke-linecap="round"/>
+                <path d="M600 36h160" stroke="#9fc7c1" stroke-width="3" stroke-linecap="round"/>
+                <rect x="610" y="33" width="6" height="9" rx="1" fill="#7fb3ad"/>
+                <rect x="690" y="33" width="6" height="9" rx="1" fill="#7fb3ad"/>
+                <path d="M24 34c0-6 4-9 8-12 0 5 3 6 3 10a5.5 5.5 0 0 1-11 2z" fill="#2dd4bf"/>
+                <path d="M28 34c0-3 1.6-5 3.6-7 0 3 1.6 3.6 1.6 5.6a3 3 0 0 1-5.2 1.4z" fill="#e6fbf7"/>
+                <rect x="18" y="36" width="20" height="4" rx="2" fill="#7fb3ad"/>
+                <path d="M585 34l38-24 38 24v6h-76z" fill="#fff" stroke="#2dd4bf" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M619 40v-12h8v12" fill="#fff" stroke="#7fb3ad" stroke-width="1.6"/>
+                <rect x="633" y="28" width="10" height="9" rx="1" fill="url(#houseGlow)" stroke="#f3c05a" stroke-width="1.4"/>
+                <path d="M700 40c0-8 4-13 9-17 5 4 9 9 9 17" fill="#eaf6f4" stroke="#2dd4bf" stroke-width="1.8" stroke-linejoin="round"/>
+                <path d="M524 40c-5 0-8-4-8-8s5-8 10-6c1-5 9-6 11-1 6-1 9 4 8 8-1 4-4 7-8 7z" fill="#eef7f5" stroke="#9fc7c1" stroke-width="1.6"/>
+                <path d="M74 34h420" stroke="#d5e8e4" stroke-width="1"/>
+            </svg>
+        </div>
+    </main>
+
 
     <script>
         const MODE_ENDPOINTS = {
@@ -636,6 +926,9 @@
         const groupGsv = document.getElementById("group-gsv");
         const gsvSakz = document.getElementById("gsv-sakz");
         const gsvPanel = document.getElementById("gsv-panel");
+        const optionHydraulic = document.getElementById("option-hydraulic");
+        const optionGrpsh = document.getElementById("option-grpsh");
+        const optionPanel = document.getElementById("option-panel");
         const resultContainers = {
             gsn: document.getElementById("result-gsn"),
             gsv: document.getElementById("result-gsv"),
@@ -722,6 +1015,14 @@
             submitBtn.textContent = "Рассчитать стоимость";
         }
 
+        function updateOptionVisibility(mode) {
+            const showGsn = mode !== "gsv";
+            const showGsv = mode !== "gsn";
+            optionHydraulic.hidden = !showGsn;
+            optionGrpsh.hidden = !showGsn;
+            optionPanel.hidden = !showGsv;
+        }
+
         function setMode(mode) {
             activeRequest += 1;
             currentMode = mode;
@@ -732,6 +1033,7 @@
             groupGsv.hidden = mode === "gsn";
             setGroupEnabled(groupGsn, !groupGsn.hidden);
             setGroupEnabled(groupGsv, !groupGsv.hidden);
+            updateOptionVisibility(mode);
             if (!groupGsn.hidden) {
                 updateExcavatorAvailability();
             }

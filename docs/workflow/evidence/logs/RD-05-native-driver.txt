@@ -1,0 +1,26 @@
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-target-gsn-before.png (800x540)
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-target-gsn.png (800x540)
+[target/gsn] total=131┬а250 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-target-gsv-before.png (800x540)
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-target-gsv.png (800x540)
+[target/gsv] total=105┬а525 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-target-combined-before.png (800x540)
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-target-combined.png (800x540)
+[target/combined] total=145┬а950 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-422.png (800x540)
+RESIZED: outer=760x520 client=744x481
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-min-probe.png (760x520)
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-min-gsn-before.png (760x520)
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-min-gsn.png (760x520)
+[min/gsn] total=131┬а250 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-min-gsv-before.png (760x520)
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-min-gsv.png (760x520)
+[min/gsv] total=105┬а525 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-min-combined-before.png (760x520)
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-min-combined.png (760x520)
+[min/combined] total=145┬а950 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+RESIZED: outer=760x520 client=744x481
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-clamp-probe.png (760x520)
+RESIZED: outer=760x520 client=744x481
+PRINTWINDOW: ok=True saved=D:\Antigravity\GasProjectCalculator\docs\screenshots\rd-05-after-min-restored.png (760x520)
+WROTE D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-05-native.json

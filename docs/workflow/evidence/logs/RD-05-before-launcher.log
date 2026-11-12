@@ -1,0 +1,26 @@
+2026-11-12 06:39:38,686 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=19032) ===
+2026-11-12 06:39:38,739 INFO [gasproject.desktop] Splash resource: D:\Antigravity\GasProjectCalculator\frontend\splash.html
+2026-11-12 06:39:38,740 INFO [gasproject.desktop] [splash] splash window created: 520x320 uri=file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html reduced_motion=False
+2026-11-12 06:39:39,341 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 06:39:39,342 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 06:39:39,816 INFO [gasproject.desktop] Frontend resource: D:\Antigravity\GasProjectCalculator\frontend\index.html
+2026-11-12 06:39:40,066 INFO [gasproject.desktop] Selected loopback port 8155 (preferred 8155); socket bound on 127.0.0.1
+2026-11-12 06:39:40,254 INFO [uvicorn.error] Started server process [19032]
+2026-11-12 06:39:40,254 INFO [uvicorn.error] Waiting for application startup.
+2026-11-12 06:39:40,254 INFO [uvicorn.error] Application startup complete.
+2026-11-12 06:39:40,887 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:8155/ after 0.77s (thread=gasproject-backend pid=19032)
+2026-11-12 06:39:40,889 INFO [gasproject.desktop] Wrote port file: C:\Users\user\AppData\Local\Temp\opencode\rd05\before-port.json
+2026-11-12 06:39:40,889 INFO [gasproject.desktop] [splash] backend ready after 0.77s; preparing main window
+2026-11-12 06:39:40,929 INFO [gasproject.desktop] [window] main window created: title='СС.Расчет' width=1050 height=740 min_size=(860, 620)
+2026-11-12 06:39:40,965 INFO [gasproject.desktop] [splash] splash closed after backend readiness
+2026-11-12 06:39:40,981 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 06:39:40,982 INFO [gasproject.desktop] Auto-close: waiting 60.00s before closing window
+2026-11-12 06:40:40,983 INFO [gasproject.desktop] Auto-close: destroying window
+2026-11-12 06:40:40,984 INFO [gasproject.desktop] [window] main window closed
+2026-11-12 06:40:41,281 INFO [gasproject.desktop] Window closed by user
+2026-11-12 06:40:41,371 INFO [uvicorn.error] Shutting down
+2026-11-12 06:40:41,472 INFO [uvicorn.error] Waiting for application shutdown.
+2026-11-12 06:40:41,472 INFO [uvicorn.error] Application shutdown complete.
+2026-11-12 06:40:41,472 INFO [uvicorn.error] Finished server process [19032]
+2026-11-12 06:40:41,473 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 06:40:41,473 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 0 ===
