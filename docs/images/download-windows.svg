@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="292" height="52" viewBox="0 0 292 52" role="img" aria-label="Скачать для Windows">
+  <rect width="292" height="52" rx="10" fill="#0f7978"/>
+  <path d="M25 14v17m-6-6 6 6 6-6M17 34v4h16v-4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="48" y="32" fill="#fff" font-size="18" font-family="Segoe UI,Arial,sans-serif" font-weight="600">Скачать для Windows</text>
+</svg>

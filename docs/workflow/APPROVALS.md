@@ -105,3 +105,17 @@ PASS сохраняют разрешение; push/merge/deploy/release/signing 
 SHA256 после уточнения: ARCHITECTURE.md
 `B7B9EB54736F837FCFBB64B72316DF140F98C1C09E9F292A0699221ADC77DBBE`;
 ROADMAP.md `9CCA6600B030C7FD069E0B8D98D08E5E2FCB0A1A5AB02EB734B4296A7D716F34`.
+
+## Публикация актуальной версии на GitHub — 2026-11-12
+
+Пользователь: «Давай выложим все это дело на GitHub. И последнюю версию на
+главную страницу. Чтобы открыв этот репозиторий сразу было видно красивое
+приложение. И чтобы была возможность скачать установочник на другом ПК».
+Разрешены публикация всех принятых коммитов текущей ветки, обновление main
+обычным fast-forward без force, оформление README актуальными скриншотами и
+кнопкой скачивания, GitHub Release v1.0.0 (Latest) с проверенным installer и
+SHA256SUMS.txt. Installer: 15 286 980 B, SHA256
+71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08.
+Release asset SS-Raschet-Setup.exe: тот же бинарный файл без пересборки.
+Механическая публикация R0, нового product review или budget reset нет.
+Без force push, удаления веток/релизов, signing или host installation.
