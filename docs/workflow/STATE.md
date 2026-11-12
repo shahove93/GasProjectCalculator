@@ -6,8 +6,8 @@
 [COMPACT-CORRECTION-BRIEF](COMPACT-CORRECTION-BRIEF.md). Предыдущий редизайн
 COMPLETE: [FINAL-REPORT](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
 
-- Ветка `feature/ss-calculator-redesign`; настоящий HEAD/baseline
-  `4b0be03`; проектные правки и docs корректирующего этапа сохранены.
+- Ветка `feature/ss-calculator-redesign`; baseline `4b0be03`, RD-05
+  закоммичен (`1af13d6`); прежние правки/docs сохранены.
 - Учёт не сброшен: RD-01 1 full/0 FAIL/0 Codex; RD-02 1/0/1; RD-03 2/1/2;
   RD-04 и FINAL R0 — 0; stage1 R3 — 1. RD-03/A1 третьего full review не
   получает.
@@ -16,7 +16,8 @@ COMPLETE: [FINAL-REPORT](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
   новым scope. RD-01 остаток 1 full сохранён, новых review RD-01 не добавлено.
 - TASK: **RD-05** PASS (A1/C1; R2 Codex `ctx_8fb5c34ce714`; F1/F2 MINOR
   backlog). **RD-06** R2 package/installer/реальная программа: активен
-  review `ctx_9656110c3af4` (baseline `1af13d6`, A1/C1; artifact готов)
+  C1 FAIL: RD06-F01 mobile evidence (склейка/обрезка); bounded C2 capture,
+  затем повторный full review; artifact `71232EE4…7E08`
   (OpenCode Flash → Codex `gpt-6.1-sol` high; A1/C1); **RD-07** R0 final
   verify (suite один раз); затем Codex R3 `gpt-6-astra` high.
   Frozen checklists: [RD-05](tasks/RD-05.md), [RD-06](tasks/RD-06.md),
@@ -33,5 +34,5 @@ COMPLETE: [FINAL-REPORT](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
 - Остаточные риски прежнего этапа (эмблема, SmartScreen, одна WebView2-среда,
   reduced motion, screenshot workaround) сохраняются; новые findings — в
   HISTORY/review.
-- Следующий владелец — координатор: docs-commit, dispatch RD-05, затем routed
+- Следующий владелец — координатор: bounded C2 capture RD-06, повторный
   review без пропуска циклов.
