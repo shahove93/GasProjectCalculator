@@ -1,0 +1,9 @@
+=== Review files presence/size ===
+OK	docs/workflow/reviews/MD-01-review.md	2432
+OK	docs/workflow/reviews/MD-02-review.md	1539
+OK	docs/workflow/reviews/MD-03-review.md	1655
+OK	docs/workflow/reviews/MD-04-review.md	1332
+OK	docs/workflow/reviews/MD-01-review-packet.md	3259
+OK	docs/workflow/reviews/MD-01-C2-review-packet.md	3103
+OK	docs/workflow/reviews/MD-02-review-packet.md	4295
+OK	docs/workflow/reviews/MD-03-review-packet.md	4570

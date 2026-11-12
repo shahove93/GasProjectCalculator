@@ -1,0 +1,8 @@
+=== Listeners on 8000 and 8138 ===
+PORT=8138	PID=23152	PROC=python	LOCAL=127.0.0.1
+PORT=8000	PID=12888	PROC=python	LOCAL=0.0.0.0
+=== Running python/uvicorn/pytest processes ===
+PID=12424	NAME=python	PATH=D:\Antigravity\GasProjectCalculator\.venv\Scripts\python.exe
+PID=12888	NAME=python	PATH=C:\Users\user\AppData\Local\Programs\Python\Python312\python.exe
+PID=20204	NAME=python	PATH=D:\Antigravity\GasProjectCalculator\.venv\Scripts\python.exe
+PID=23152	NAME=python	PATH=C:\Users\user\AppData\Local\Programs\Python\Python312\python.exe

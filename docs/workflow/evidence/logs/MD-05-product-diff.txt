@@ -1,0 +1,14 @@
+=== integrated product diff stat 9dea625..HEAD ===
+ app/gsv_calculator.py              | 106 +++++++
+ app/main.py                        | 114 ++++++--
+ frontend/index.html                | 570 ++++++++++++++++++++++++++++++++-----
+ installer/GasProjectCalculator.iss |   4 +-
+ tests/test_frontend_redesign.py    |  59 +++-
+ tests/test_gsv_api.py              | 349 +++++++++++++++++++++++
+ tests/test_gsv_calculator.py       | 169 +++++++++++
+ 7 files changed, 1266 insertions(+), 105 deletions(-)
+=== requirements diff (expect empty) ===
+=== app/calculator.py diff (expect empty) ===
+=== app/main.py integrated stat ===
+ app/main.py | 114 +++++++++++++++++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 90 insertions(+), 24 deletions(-)

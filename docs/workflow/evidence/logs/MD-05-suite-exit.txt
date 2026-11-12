@@ -1,0 +1,4 @@
+exit=0
+duration_seconds=2.808
+cwd=D:\Antigravity\GasProjectCalculator
+command=.\.venv\Scripts\python.exe -m unittest discover -s tests

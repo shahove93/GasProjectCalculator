@@ -1,0 +1,4 @@
+PID=12424	NAME=python.exe	PARENT=18296	CMDLINE="D:\Antigravity\GasProjectCalculator\.venv\Scripts\python.exe" -m uvicorn app.main:app --host 0.0.0.0 --port 8000 
+PID=20204	NAME=python.exe	PARENT=7772	CMDLINE="D:\Antigravity\GasProjectCalculator\.venv\Scripts\python.exe" -m uvicorn app.main:app --host 127.0.0.1 --port 8138
+PID=12888	NAME=python.exe	PARENT=12424	CMDLINE="C:\Users\user\AppData\Local\Programs\Python\Python312\python.exe" -m uvicorn app.main:app --host 0.0.0.0 --port 8000 
+PID=23152	NAME=python.exe	PARENT=20204	CMDLINE="C:\Users\user\AppData\Local\Programs\Python\Python312\python.exe" -m uvicorn app.main:app --host 127.0.0.1 --port 8138

@@ -1,0 +1,11 @@
+branch=feature/gsv-mixed-diameters
+HEAD=557fe2d1ed994c3c635ebfb8cfa849d5fd8a4dae
+BASELINE_STAGE=9dea625
+BASELINE_MD01_04_HEAD=557fe2d
+557fe2d docs(readme): mixed GSV 1.1.0 usage, benchmarks and local installer (MD-04 R0 PASS)
+d08148c build(installer): local 1.1.0 with mixed-GSV app (MD-03 R2 PASS)
+fb080aa feat(ui): mixed GSV lengths, server billing detail, reference artwork (MD-02 R2 PASS)
+1d77194 feat(gsv): mixed three-diameter lengths with legacy-compatible API (MD-01 R2 PASS)
+32709a4 docs(workflow): bind mixed-GSV run and MD-01 task
+2474243 docs(workflow): record mixed task-pack baseline
+118afa6 docs(workflow): freeze mixed-GSV task pack and branch record

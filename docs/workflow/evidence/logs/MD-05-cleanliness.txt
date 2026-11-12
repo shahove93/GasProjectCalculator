@@ -1,0 +1,24 @@
+=== git status --porcelain --untracked-files=all ===
+?? docs/workflow/evidence/logs/MD-05-artifact-hashes.txt
+?? docs/workflow/evidence/logs/MD-05-diff-map.txt
+?? docs/workflow/evidence/logs/MD-05-diff-names.txt
+?? docs/workflow/evidence/logs/MD-05-diff-stat.txt
+?? docs/workflow/evidence/logs/MD-05-key-tests.txt
+?? docs/workflow/evidence/logs/MD-05-legacy-tests.txt
+?? docs/workflow/evidence/logs/MD-05-processes-ports.txt
+?? docs/workflow/evidence/logs/MD-05-product-diff.txt
+?? docs/workflow/evidence/logs/MD-05-python-processes.txt
+?? docs/workflow/evidence/logs/MD-05-readme-links.txt
+?? docs/workflow/evidence/logs/MD-05-review-accounting.txt
+?? docs/workflow/evidence/logs/MD-05-review-files.txt
+?? docs/workflow/evidence/logs/MD-05-revision.txt
+?? docs/workflow/evidence/logs/MD-05-screenshots.txt
+?? docs/workflow/evidence/logs/MD-05-status.txt
+?? docs/workflow/evidence/logs/MD-05-suite-exit.txt
+?? docs/workflow/evidence/logs/MD-05-suite.txt
+?? docs/workflow/evidence/logs/MD-05-test-categories.txt
+?? docs/workflow/evidence/logs/MD-05-test-list-exit.txt
+?? docs/workflow/evidence/logs/MD-05-test-list.txt
+?? docs/workflow/evidence/logs/MD-05-worktree-diff-stat.txt
+=== secret scan (tracked files, excluding .venv/dist/build/installer output) ===
+NO_SECRET_PATTERN_HITS

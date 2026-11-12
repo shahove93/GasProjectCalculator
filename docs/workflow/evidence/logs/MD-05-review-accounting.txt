@@ -1,0 +1,66 @@
+=== STATE.md counters/pass lines ===
+STATE:10: Frozen checklists: `docs/workflow/tasks/MD-01..05.md`,
+STATE:15: | MD-01 | R2 | mixed-формула, API, legacy | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | **PASS** (2 full/1 FAIL/2 calls) |
+STATE:16: | MD-02 | R2 | три длины в UI, детализация, artwork | OpenCode Flash | Codex sol/high (vision) | 1 (≤4/3M) | **PASS** (1 full/0 FAIL/1 call; NIT MD02-N1) |
+STATE:17: | MD-03 | R2 | installer 1.1.0, installed checks | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | **PASS** (1 full/0 FAIL/1 call) |
+STATE:18: | MD-04 | R0 | README/screenshots/docs | OpenCode Flash | coordinator R0 | 0 | **PASS** (R0 T1–T6) |
+STATE:19: | MD-05 | R0 | интегрированный full suite | OpenCode Flash | coordinator R0 | 0 | NEXT |
+STATE:22: MD-01: Run `run_8f265b57fb70`; implementer `ctx_f23a43bf4e82`; C1 review
+STATE:24: `ctx_b5a2191479fe` **PASS**, finding CLOSED. Review record:
+STATE:25: `docs/workflow/reviews/MD-01-review.md`; evidence
+STATE:26: `docs/workflow/evidence/MD-01-evidence.md`; suite 216 OK.
+STATE:27: MD-02: implementer `ctx_ba7702084595`; Codex vision review `ctx_f19db8fdc974`
+STATE:28: **PASS**, NIT MD02-N1 (handwheel top clipped) backlog; evidence
+STATE:29: `docs/workflow/evidence/MD-02-evidence.md`; suite 219 OK.
+STATE:30: MD-03: implementer `ctx_fc422a90019f`; installer 1.1.0 15 293 993 B, SHA256
+STATE:32: Codex R2 `ctx_17fecbd4f9d8` **PASS**, no findings; 1.0.0/legacy bytes
+STATE:33: unchanged; evidence `docs/workflow/evidence/MD-03-evidence.md`.
+STATE:34: MD-04: implementer `ctx_ad932786f52d`; coordinator R0 **PASS** по T1–T6
+STATE:36: evidence `docs/workflow/evidence/MD-04-evidence.md`.
+STATE:37: Next owner — координатор: scoped commit MD-04, затем dispatch MD-05.
+STATE:39: Старые счётчики сохранены: GSV-01..04, WI-01..03, RD-01 1/0/0, RD-02 1/0/1,
+STATE:40: RD-03 2/1/2, RD-05 1/0/1, RD-06 2/1/2, RD-07 R0, прежний stage R3 1. Новый
+=== HISTORY.md MD entries ===
+HISTORY:654: с переносом незакоммиченных документов/refs. Заморожены TASK MD-01 (R2,
+HISTORY:655: формула/API), MD-02 (R2, UI/artwork/vision review), MD-03 (R2, installer
+HISTORY:656: 1.1.0), MD-04 (R0, README), MD-05 (R0, интегрированный suite),
+HISTORY:658: MD-01/02/03 (потолок R2 ≤4/3M каждый), 0 на MD-04/05, 1 на FINAL (≤6/5M).
+HISTORY:661: (docs/refs only), baseline для MD-01.
+HISTORY:663: ## 2026-11-12 — MD-01 PASS (R2): mixed-формула и legacy API
+HISTORY:665: MD-01 implementer `ctx_f23a43bf4e82` (OpenCode Flash, baseline `32709a4`)
+HISTORY:678: response/combined 158550 сохранены, C1 FAIL сохранён. Счётчики MD-01: full
+HISTORY:680: координатора; следующий TASK — MD-02.
+HISTORY:682: ## 2026-11-12 — MD-02 PASS (R2): три длины в UI и artwork по двум образцам
+HISTORY:684: MD-02 implementer `ctx_ba7702084595` (OpenCode Flash, baseline `1d77194`)
+HISTORY:700: MD-02: full reviews 1, failed 0, Codex calls 1/4; worker released. Scoped
+HISTORY:701: commit координатора; следующий TASK — MD-03.
+HISTORY:703: ## 2026-11-12 — MD-03 PASS (R2): installer 1.1.0 и установленная программа
+HISTORY:705: MD-03 implementer `ctx_fc422a90019f` (OpenCode Flash, baseline `fb080aa`)
+HISTORY:722: полный suite остаётся в MD-05. Счётчики MD-03: full reviews 1, failed 0,
+HISTORY:724: TASK — MD-04.
+HISTORY:726: ## 2026-11-12 — MD-04 R0 PASS: README и документация 1.1.0
+HISTORY:728: MD-04 implementer `ctx_ad932786f52d` (OpenCode Flash, baseline `d08148c`)
+HISTORY:732: `3BFFFFB2…B710`), новые реальные MD-02/MD-03 screenshots, developer/RU
+HISTORY:735: только README, числа совпали с MD-01/MD-03 evidence, 18 ссылок/0 missing,
+HISTORY:737: Codex calls 0. Scoped commit координатора; следующий TASK — MD-05
+=== HISTORY.md legacy counters ===
+HISTORY:582: high. Frozen checklists: `docs/workflow/tasks/RD-05.md`,
+HISTORY:583: `RD-06.md`, `RD-07.md`; scope и allowlist зафиксированы до dispatch.
+HISTORY:591: затем dispatch RD-05 implementer.
+HISTORY:593: Dispatch RD-05: implementer OpenCode Flash `ctx_e4831c98c444` (`task_533c9862fa0f`, term_4a2631af) на baseline `7ca9e7e`; A1/C1, verdict NOT_REVIEWED. Следующий владелец — дождаться worker_done, проверить evidence, затем независимый OpenCode Pro R1 review.
+HISTORY:594: RD-05 allowlist clarification: по вопросу implementer `ctx_e4831c98c444` разрешено минимальное обновление geometry-assertion в `tests/test_desktop_launcher.py` (только ожидаемые APP_WIDTH/HEIGHT/MIN_SIZE, без ослабления проверок). Frozen checklist RD-05 уточнён в allowlist; scope не расширен.
+HISTORY:595: Уточнение основного макета (пользователь: «Надо же вот эту…») зафиксировано в APPROVALS/ARCHITECTURE/ROADMAP/RD-05 (commit `98ffa83`) до первого полного review. Исполнителю `ctx_e4831c98c444` отправлен follow-up `ctx_b847d4877268` (`task_dc32b3365d51`): довести RD-05 C1 до `original-window-splash-reference.png` — отдельный блок опций, строка заказчика, тёплая карточка итога, нижняя труба; переснять evidence. Это завершение той же C1-подачи, не C2 и не новый review; счётчики/маршрут не меняются.
+HISTORY:596: RD-05 C1 submission завершён follow-up `ctx_b847d4877268` (`task_dc32b3365d51`): presentation доведена до `original-window-splash-reference.png`, отдельный блок опций, реальные размеры/метрики и screenshots обновлены; targeted 33 OK. Запущен независимый OpenCode Pro R1 reviewer `ctx_0e9b8901c316` (`task_50a9bc376b3f`, term_cb02304a), read-only, A1/C1, first full review; проектный diff не закоммичен до вердикта.
+HISTORY:597: RD-05 R1 review `ctx_0e9b8901c316` (OpenCode Pro) вернул **BLOCKED** не по продукту: модель без image input, U2/U11/U12 (визуальное соответствие/crop) непроверяемы. Объективно U1, U3–U10 PASS на полном evidence без rerun; продуктовых BLOCKER/MAJOR нет; findings F1 MINOR (label 10.5–11.5 px), F2 MINOR (opt-in file-based `--eval-bridge`). Это resource/capability BLOCKED, не failed review: full review с вердиктом 0, failed 0. Визуальная приёмка RD-05 явно передана независимому Codex R2 `gpt-6.1-sol` high (vision-capable), dispatch `ctx_8fb5c34ce714` (`task_52ee88d3a8f0`, term_54183f16); резерв R2 1/4, A1/C1. Это первый полный review RD-05, не доп. цикл и не третий review RD-03/A1. Продуктовый diff не закоммичен до вердикта.
+HISTORY:598: RD-05 R2 Codex `ctx_8fb5c34ce714` (`task_52ee88d3a8f0`, `gpt-6.1-sol` high) вернул **PASS** по U1–U12 read-only: визуальное соответствие `original-window-splash-reference.png`, реальный viewport scrollY=0, before/after 1050×740→800×540/760×520 DPI96, значения 131250/105525/145950, САКЗ/ПК/422, mobile390, protected paths без diff, targeted 33 OK; evidence reuse, rerun=0. Findings: F1 MINOR (подписи 10,5–11,5 px), F2 MINOR (opt-in `--eval-bridge`). Review record `docs/workflow/reviews/RD-05-review.md`; счётчики RD-05 1 full/0 FAIL/1 Codex. Next owner — scoped commit RD-05, затем RD-06.
+HISTORY:599: RD-05 scoped-commit `1af13d6` (36 files: product/tests, 20 native screenshots, evidence/logs, review, STATE/HISTORY); push/merge не выполнялись. Запущен RD-06 implementer `ctx_94c225a27a49` (`task_cfc31f1035c5`, OpenCode Flash, term_721dde1f) на baseline `1af13d6`: legacy-копия текущего installer, packaging build, новый installer, безопасная изолированная установка с backup/restore HKCU/ярлыка, реальные native screenshots установленной программы, reuse RD-02/RD-03 lifecycle. A1/C1, verdict NOT_REVIEWED; резерв Codex R2 1/4.
+HISTORY:600: RD-06 implementer `ctx_94c225a27a49` (`task_cfc31f1035c5`) завершил сборку/проверку: packaged exe 6 836 651 B `5403540C…DD2C`, installer 15 286 980 B `71232EE4…7E08`, legacy pre-compact 15 273 647 B `04388410…949A`; изолированная установка в temp с backup/restore HKCU/ярлыка, пользовательская установка/PID13248 не изменены; installed native screenshots target/min 3 режимов scrollY=0, значения/САКЗ/ПК/422/mobile/lifecycle; 33 screenshots + логи. Запущен независимый Codex R2 reviewer `ctx_9656110c3af4` (`task_60a2a42b9b63`, `gpt-6.1-sol` high, term_b84cf3ab), A1/C1 first full review, резерв 1/4; evidence reuse допустим.
+HISTORY:601: RD-06 Codex R2 `ctx_9656110c3af4` (`task_60a2a42b9b63`) вернул **C1 FAIL**: B1–B6, B8–B11 PASS, B7 FAIL **RD06-F01 (MAJOR)** — `rd-06-installed-mobile-390x844.png` (SHA256 `BA0D…455C`) является склейкой/full-page: повтор шапки ~y=426, обрезанные полосы справа ~x=362, кнопка не показана; metrics hScroll=false не устраняют противоречие. Это evidence gap, не дефект CSS. Review record `docs/workflow/reviews/RD-06-review.md`; счётчики RD-06 1 full/1 FAIL/1 Codex. Зарезервирован bounded C2: один корректный mobile 390×844 viewport capture того же installed artifact + согласованные metrics/evidence, затем один повторный полный review. Продуктовый diff не меняется.
+HISTORY:602: RD-06 bounded C2 запущен: follow-up `ctx_ed8104974261` (`task_e1792cc52182`, term_cbfb9114) к implementer: переустановить тот же artifact `71232EE4…7E08` в temp с backup/restore, снять viewport-only mobile 390×844 через `orca screenshot` (не PrintWindow/full-page), обновить metrics/evidence и заменить старый `BA0D…455C`; продуктовый код/build/tests не менять. После worker_done — один повторный полный Codex R2 review (второй из двух).
+HISTORY:603: RD-06 C2 `ctx_ed8104974261` (`task_e1792cc52182`) исправил RD06-F01: тот же installer `71232EE4…7E08` изолированно переустановлен, viewport-only mobile 390×844 `FFB84856…43A5` (ровно 390×844, scrollWidth=clientWidth=375, hScroll=false, max right edge 375, без дублирования/обрезки) + result-viewport `DF900975…7572`; старый `BA0D…455C` superseded, logs/evidence обновлены, пользовательская установка/PID13248 не тронуты, test instance/порты убраны. Запущен повторный полный Codex R2 `ctx_1a3e73e23fcb` (`task_73c34faf0b72`, `gpt-6.1-sol` high, term_2c62ae9e), A1/C2, второй и последний full review.
+HISTORY:604: RD-06 C2 Codex R2 `ctx_1a3e73e23fcb` (`task_73c34faf0b72`) вернул **PASS** по B1–B11: **RD06-F01 CLOSED** (новый viewport PNG 390×844 `FFB848…43A5`, одна шапка/кнопка видна/без clipping, metrics 375/375, hScroll=false); старый `BA0D…455C` SUPERSEDED, C1 FAIL сохранён. Новый **RD06-F02 MINOR** backlog: вспомогательный result-PNG не доказывает scrollY45 (пиксельно совпадает с первым кадром), основной B7 proof не затронут. Артефакты подтверждены: installer 15 286 980 B `71232EE4…7E08`, legacy `04388410…949A`/`2973278F…428F`, dist/installed `5403540C…DD2C`; test instance/порты убраны, user install/PID13248 и :8000/:8138 не тронуты; rerun=0. Счётчики RD-06 2 full/1 FAIL/2 Codex. Next owner — scoped commit RD-06, затем RD-07 R0 full suite.
+HISTORY:605: RD-06 scoped-commit `41ac48e` (63 files: 34 screenshots, evidence/logs, C1 FAIL+C2 PASS review, STATE/HISTORY); README обновлён после RD-06 (`3a3a6b0`: 800×540, новый installer hash/screenshots). Запущен RD-07 verifier `ctx_e7b35f80b38d` (`task_d2acfce2887d`, OpenCode Flash, term_d6f1cdcb): один полный suite на финальном интегрированном HEAD, scope/diff/artifact/evidence/README проверка; R0, Codex 0.
+HISTORY:606: RD-07 verifier `ctx_e7b35f80b38d` (`task_d2acfce2887d`) завершил R0: полный suite ровно один раз `Ran 167 tests in 2.126s` **OK** exit 0 (revision `3a3a6b0`, лог `RD-07-suite.txt`); product diff `4b0be03..HEAD` только 4 файла (frontend, desktop_launcher, 2 test), calculators/API/requirements/installer scripts без diff; artifact/legacy/dist hashes match; RD-05 20 + RD-06 34 screenshots, mobile `FFB848…43A5` 375/375 scroll0/0; README/STATE/HISTORY согласованы; :8000/:8138/user install/PID13248 не тронуты, test-портов/окон нет. Coordinator R0 PASS; review record `docs/workflow/reviews/RD-07-review.md`. Next owner — Codex R3 stage acceptance `gpt-6-astra` high, затем FINAL-REPORT/COMPLETE.
+HISTORY:607: RD-07 scoped-commit `67af06e` (evidence/logs/RD-07 review; R0 PASS). Запущен Codex R3 stage acceptance `ctx_13eaadb4a2eb` (`task_a81ca8a7cc6b`, `gpt-6-astra` high, term_5164bf88) на финальном `67af06e`/product `1af13d6`: mapping scope→VISION/ARCHITECTURE/ROADMAP/APPROVALS, diff/artifact/evidence, review accounting без скрытого третьего RD-03/A1 и без budget reset, остаточные MINOR/known risks. Резерв R3 1 вызов.
+HISTORY:608: Codex R3 stage acceptance `ctx_13eaadb4a2eb` (`task_a81ca8a7cc6b`, `gpt-6-astra` high) вернул **PASS**: scope компактности/композиции/geometry/viewport, поведение 131250/105525/145950, САКЗ/ПК/422, mobile390, полный suite 167 OK, artifact chain и review accounting подтверждены; новых build/install/suite/UI rerun не было. Accounting сохранён: RD-01 1/0/0, RD-02 1/0/1, RD-03 2/1/2, RD-05 1/0/1, RD-06 2/1/2, RD-07 R0, stage R3 1; третьего RD-03/A1 и budget reset нет. Остаточные MINOR/known risks: RD-05 F1/F2, RD-06 F02, неподписанный installer/SmartScreen, одна Windows/WebView2/DPI96 среда, reduced motion эмуляцией, права на эмблему; новый RD-COMPACT-N01 MINOR (устаревший next-owner STATE) закрыт финальным STATE. Оформлен `docs/workflow/FINAL-REPORT-COMPACT-CORRECTION.md`; этап **COMPLETE**, локальный installer 15 286 980 B SHA256 `71232EE4…7E08` передан, push/merge/deploy/release/signing не выполнялись.
+HISTORY:616: README: реальные скриншоты rd-06, SVG download badge и ссылка Latest asset;

@@ -736,3 +736,19 @@ install-uninstall/user-file facts; явно указано, что release v1.0.
 artifact hash перепроверен, claims о signing/публикации/телеметрии нет.
 Codex calls 0. Scoped commit координатора; следующий TASK — MD-05
 (интегрированный full suite).
+
+## 2026-11-12 — MD-05 R0 PASS: интегрированная полная проверка
+
+MD-05 verifier `ctx_63d69106a28e` (OpenCode Flash, baseline `557fe2d`)
+собрал интегрированный evidence pack на HEAD `557fe2d`: продуктовый diff
+`9dea625..HEAD` — 7 файлов (+1266/−105), `app/calculator.py` и requirements
+zero-diff; полный suite выполнен ровно один раз
+`.\.venv\Scripts\python.exe -m unittest discover -s tests` — exit 0,
+`Ran 219 tests` OK; installer 1.1.0 15 293 993 B SHA256 `3BFFFFB2…B710`
+совпал с MD-03, 1.0.0/legacy bytes неизменны; 66 MD-02/MD-03 PNG валидны,
+README 0 missing; review records MD-01..MD-04 и счётчики (2/1/2, 1/0/1,
+1/0/1, R0) сохранены, прежние GSV/WI/RD counters не сброшены; `:8000`
+PID 12888 и `:8138` PID 23152 не тронуты, посторонних файлов/секретов/
+test-процессов нет. Coordinator принял R0 по F1–F8; Codex calls 0. Scoped
+commit координатора; следующий шаг — отдельный FINAL-MIXED-STAGE Codex
+`gpt-6-astra` high acceptance.

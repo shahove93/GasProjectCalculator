@@ -1,0 +1,204 @@
+ AGENTS.md                                          |    6 +
+ ARCHITECTURE.md                                    |   13 +
+ README.md                                          |   75 +-
+ ROADMAP.md                                         |   14 +
+ VISION.md                                          |   11 +
+ app/gsv_calculator.py                              |  106 +
+ app/main.py                                        |  114 +-
+ docs/design/footer-detail-reference.jpg            |  Bin 0 -> 28954 bytes
+ docs/design/header-detail-reference.jpg            |  Bin 0 -> 46530 bytes
+ docs/screenshots/md-02-browser-desktop-422.png     |  Bin 0 -> 107780 bytes
+ .../md-02-browser-desktop-after-switch-clear.png   |  Bin 0 -> 104174 bytes
+ .../screenshots/md-02-browser-desktop-combined.png |  Bin 0 -> 129003 bytes
+ .../md-02-browser-desktop-gsn-result.png           |  Bin 0 -> 82314 bytes
+ docs/screenshots/md-02-browser-desktop-gsv-d1.png  |  Bin 0 -> 119436 bytes
+ docs/screenshots/md-02-browser-desktop-gsv-d2.png  |  Bin 0 -> 119059 bytes
+ docs/screenshots/md-02-browser-desktop-gsv-d3.png  |  Bin 0 -> 118989 bytes
+ docs/screenshots/md-02-browser-desktop-gsv-d4.png  |  Bin 0 -> 117312 bytes
+ docs/screenshots/md-02-browser-desktop-gsv-d5.png  |  Bin 0 -> 119190 bytes
+ .../md-02-browser-mobile-390x844-combined.png      |  Bin 0 -> 92124 bytes
+ .../md-02-browser-mobile-390x844-gsn.png           |  Bin 0 -> 82321 bytes
+ .../md-02-browser-mobile-390x844-gsv.png           |  Bin 0 -> 88179 bytes
+ docs/screenshots/md-02-compare-footer.png          |  Bin 0 -> 123449 bytes
+ docs/screenshots/md-02-compare-header.png          |  Bin 0 -> 223482 bytes
+ docs/screenshots/md-02-native-422.png              |  Bin 0 -> 114374 bytes
+ .../md-02-native-min-combined-before.png           |  Bin 0 -> 109354 bytes
+ .../md-02-native-min-combined-detail.png           |  Bin 0 -> 120477 bytes
+ docs/screenshots/md-02-native-min-combined.png     |  Bin 0 -> 120517 bytes
+ docs/screenshots/md-02-native-min-gsn-before.png   |  Bin 0 -> 107358 bytes
+ docs/screenshots/md-02-native-min-gsn.png          |  Bin 0 -> 113407 bytes
+ docs/screenshots/md-02-native-min-gsv-before.png   |  Bin 0 -> 106582 bytes
+ docs/screenshots/md-02-native-min-gsv.png          |  Bin 0 -> 117684 bytes
+ docs/screenshots/md-02-native-min-window-2.png     |  Bin 0 -> 107340 bytes
+ docs/screenshots/md-02-native-min-window.png       |  Bin 0 -> 110145 bytes
+ .../md-02-native-target-combined-before.png        |  Bin 0 -> 113936 bytes
+ .../md-02-native-target-combined-detail.png        |  Bin 0 -> 127114 bytes
+ docs/screenshots/md-02-native-target-combined.png  |  Bin 0 -> 127224 bytes
+ .../screenshots/md-02-native-target-gsn-before.png |  Bin 0 -> 110821 bytes
+ docs/screenshots/md-02-native-target-gsn.png       |  Bin 0 -> 117416 bytes
+ .../screenshots/md-02-native-target-gsv-before.png |  Bin 0 -> 110856 bytes
+ docs/screenshots/md-02-native-target-gsv.png       |  Bin 0 -> 123181 bytes
+ .../md-02-native-target-window-restored.png        |  Bin 0 -> 127209 bytes
+ docs/screenshots/md-02-native-target-window.png    |  Bin 0 -> 110760 bytes
+ docs/screenshots/md-03-native-422.png              |  Bin 0 -> 114746 bytes
+ .../md-03-native-min-combined-before.png           |  Bin 0 -> 118112 bytes
+ .../md-03-native-min-combined-detail.png           |  Bin 0 -> 120885 bytes
+ docs/screenshots/md-03-native-min-combined.png     |  Bin 0 -> 120925 bytes
+ docs/screenshots/md-03-native-min-gsn-before.png   |  Bin 0 -> 110513 bytes
+ docs/screenshots/md-03-native-min-gsn.png          |  Bin 0 -> 113905 bytes
+ .../screenshots/md-03-native-min-gsv-D1-before.png |  Bin 0 -> 113871 bytes
+ docs/screenshots/md-03-native-min-gsv-D1.png       |  Bin 0 -> 118172 bytes
+ docs/screenshots/md-03-native-min-window.png       |  Bin 0 -> 110563 bytes
+ docs/screenshots/md-03-native-splash.png           |  Bin 0 -> 85452 bytes
+ .../md-03-native-target-combined-before.png        |  Bin 0 -> 123455 bytes
+ .../md-03-native-target-combined-detail.png        |  Bin 0 -> 127626 bytes
+ docs/screenshots/md-03-native-target-combined.png  |  Bin 0 -> 127663 bytes
+ .../screenshots/md-03-native-target-gsn-before.png |  Bin 0 -> 111140 bytes
+ docs/screenshots/md-03-native-target-gsn.png       |  Bin 0 -> 117876 bytes
+ .../md-03-native-target-gsv-D1-before.png          |  Bin 0 -> 117889 bytes
+ docs/screenshots/md-03-native-target-gsv-D1.png    |  Bin 0 -> 123623 bytes
+ .../md-03-native-target-gsv-D2-before.png          |  Bin 0 -> 123594 bytes
+ docs/screenshots/md-03-native-target-gsv-D2.png    |  Bin 0 -> 123517 bytes
+ .../md-03-native-target-gsv-D3-before.png          |  Bin 0 -> 123490 bytes
+ docs/screenshots/md-03-native-target-gsv-D3.png    |  Bin 0 -> 123435 bytes
+ .../md-03-native-target-gsv-D4-before.png          |  Bin 0 -> 123423 bytes
+ docs/screenshots/md-03-native-target-gsv-D4.png    |  Bin 0 -> 122564 bytes
+ .../md-03-native-target-gsv-D5-before.png          |  Bin 0 -> 122550 bytes
+ docs/screenshots/md-03-native-target-gsv-D5.png    |  Bin 0 -> 123501 bytes
+ .../md-03-native-target-resized-window.png         |  Bin 0 -> 127634 bytes
+ docs/screenshots/md-03-native-target-window.png    |  Bin 0 -> 111143 bytes
+ docs/screenshots/md-03-native-window.png           |  Bin 0 -> 111131 bytes
+ docs/screenshots/md-03-wizard-dir.png              |  Bin 0 -> 18742 bytes
+ docs/screenshots/md-03-wizard-finish.png           |  Bin 0 -> 36211 bytes
+ docs/screenshots/md-03-wizard-ready.png            |  Bin 0 -> 20198 bytes
+ docs/screenshots/md-03-wizard-tasks.png            |  Bin 0 -> 19061 bytes
+ docs/screenshots/md-03-wizard-welcome.png          |  Bin 0 -> 29001 bytes
+ docs/workflow/APPROVALS.md                         |   21 +
+ docs/workflow/GSV-MIXED-COORDINATOR-BRIEF.md       |   78 +
+ docs/workflow/GSV-MIXED-DIAMETERS-PLAN.md          |   96 +
+ docs/workflow/HISTORY.md                           |  111 +
+ docs/workflow/STATE.md                             |   84 +-
+ docs/workflow/evidence/MD-01-evidence.md           |  185 ++
+ docs/workflow/evidence/MD-02-evidence.md           |  271 +++
+ docs/workflow/evidence/MD-03-evidence.md           |  250 +++
+ docs/workflow/evidence/MD-04-evidence.md           |  144 ++
+ docs/workflow/evidence/logs/MD-01-baseline.txt     |    2 +
+ .../workflow/evidence/logs/MD-01-c2-full-suite.txt |    7 +
+ .../evidence/logs/MD-01-c2-request-response.txt    |  549 +++++
+ docs/workflow/evidence/logs/MD-01-c2-scope.txt     |   34 +
+ .../workflow/evidence/logs/MD-01-c2-suite-exit.txt |    1 +
+ .../evidence/logs/MD-01-calculator-diff.txt        |    0
+ .../workflow/evidence/logs/MD-01-changed-files.txt |    4 +
+ docs/workflow/evidence/logs/MD-01-diff-stat.txt    |    5 +
+ docs/workflow/evidence/logs/MD-01-full-suite.txt   |    7 +
+ .../evidence/logs/MD-01-request-response.txt       |  138 ++
+ docs/workflow/evidence/logs/MD-01-status.txt       |   14 +
+ docs/workflow/evidence/logs/MD-01-suite-exit.txt   |    1 +
+ docs/workflow/evidence/logs/MD-01-unit-api.txt     |  126 ++
+ docs/workflow/evidence/logs/MD-02-baseline.txt     |    7 +
+ .../evidence/logs/MD-02-browser-summary.txt        |   13 +
+ docs/workflow/evidence/logs/MD-02-browser.json     |  385 ++++
+ .../workflow/evidence/logs/MD-02-changed-files.txt |   50 +
+ docs/workflow/evidence/logs/MD-02-diff-stat.txt    |    3 +
+ docs/workflow/evidence/logs/MD-02-mobile-gsn.json  |   11 +
+ docs/workflow/evidence/logs/MD-02-mobile.json      |   94 +
+ .../evidence/logs/MD-02-native-summary.txt         |   15 +
+ docs/workflow/evidence/logs/MD-02-native.json      | 1660 +++++++++++++++
+ .../evidence/logs/MD-02-port-ownership.txt         |    7 +
+ docs/workflow/evidence/logs/MD-02-scope.txt        |    2 +
+ docs/workflow/evidence/logs/MD-02-suite-exit.txt   |    1 +
+ docs/workflow/evidence/logs/MD-02-suite.txt        |    7 +
+ docs/workflow/evidence/logs/MD-02-uvicorn-log.json |  269 +++
+ docs/workflow/evidence/logs/MD-03-api-run.exit.txt |    1 +
+ docs/workflow/evidence/logs/MD-03-api-run.txt      |   67 +
+ docs/workflow/evidence/logs/MD-03-api-summary.txt  |   69 +
+ docs/workflow/evidence/logs/MD-03-api.json         |  533 +++++
+ docs/workflow/evidence/logs/MD-03-backup.txt       |    6 +
+ docs/workflow/evidence/logs/MD-03-baseline.txt     |    6 +
+ .../evidence/logs/MD-03-build-artifacts.txt        |    3 +
+ docs/workflow/evidence/logs/MD-03-diff-names.txt   |    1 +
+ docs/workflow/evidence/logs/MD-03-diff-stat.txt    |    2 +
+ .../evidence/logs/MD-03-final-artifact-hashes.txt  |    6 +
+ docs/workflow/evidence/logs/MD-03-final-state.txt  |   13 +
+ docs/workflow/evidence/logs/MD-03-git-status.txt   |   76 +
+ .../workflow/evidence/logs/MD-03-install-state.txt |    9 +
+ .../evidence/logs/MD-03-installer-build.exit.txt   |    1 +
+ .../evidence/logs/MD-03-installer-build.out.txt    |  175 ++
+ docs/workflow/evidence/logs/MD-03-iss-metadata.txt |    6 +
+ .../evidence/logs/MD-03-legacy-compare.txt         |    6 +
+ docs/workflow/evidence/logs/MD-03-native-close.txt |    5 +
+ .../evidence/logs/MD-03-native-detail.exit.txt     |    1 +
+ .../workflow/evidence/logs/MD-03-native-detail.txt |    5 +
+ .../evidence/logs/MD-03-native-run.exit.txt        |    1 +
+ docs/workflow/evidence/logs/MD-03-native-run.txt   |   34 +
+ .../evidence/logs/MD-03-native-summary.txt         |   23 +
+ docs/workflow/evidence/logs/MD-03-native.json      | 2112 ++++++++++++++++++++
+ .../evidence/logs/MD-03-packaging-build.exit.txt   |    1 +
+ .../evidence/logs/MD-03-packaging-build.out.txt    |  122 ++
+ .../logs/MD-03-post-build-legacy-hashes.txt        |    4 +
+ .../evidence/logs/MD-03-pre-artifact-hashes.txt    |    6 +
+ docs/workflow/evidence/logs/MD-03-reinstall.txt    |    8 +
+ docs/workflow/evidence/logs/MD-03-restore.txt      |    9 +
+ docs/workflow/evidence/logs/MD-03-runtime.exit.txt |    1 +
+ docs/workflow/evidence/logs/MD-03-runtime.txt      |  118 ++
+ docs/workflow/evidence/logs/MD-03-scope.txt        |    1 +
+ docs/workflow/evidence/logs/MD-03-signing.txt      |    4 +
+ docs/workflow/evidence/logs/MD-03-toolchain.txt    |    7 +
+ .../evidence/logs/MD-03-uninstall.exit.txt         |    1 +
+ docs/workflow/evidence/logs/MD-03-uninstall.txt    |   29 +
+ .../MD-03-user-install-snapshot-after-wizard.txt   |    6 +
+ .../logs/MD-03-user-install-snapshot-before.txt    |    6 +
+ .../logs/MD-03-user-install-snapshot-final.txt     |    6 +
+ docs/workflow/evidence/logs/MD-03-versioninfo.json |   13 +
+ docs/workflow/evidence/logs/MD-03-versioninfo.txt  |    9 +
+ .../evidence/logs/MD-03-wizard-capture.exit.txt    |    1 +
+ .../evidence/logs/MD-03-wizard-capture.txt         |    5 +
+ .../evidence/logs/MD-03-wizard-continue.exit.txt   |    1 +
+ .../evidence/logs/MD-03-wizard-continue.txt        |   53 +
+ .../evidence/logs/MD-03-wizard-finish.exit.txt     |    1 +
+ .../workflow/evidence/logs/MD-03-wizard-finish.txt |    7 +
+ .../evidence/logs/MD-03-wizard-go.exit.txt         |    1 +
+ docs/workflow/evidence/logs/MD-03-wizard-go.txt    |    7 +
+ .../evidence/logs/MD-03-wizard-mousecap.exit.txt   |    1 +
+ .../evidence/logs/MD-03-wizard-mousecap.txt        |   10 +
+ .../evidence/logs/MD-03-wizard-readycap.exit.txt   |    1 +
+ .../evidence/logs/MD-03-wizard-readycap.txt        |    3 +
+ .../evidence/logs/MD-03-wizard-sendkeys.exit.txt   |    1 +
+ .../evidence/logs/MD-03-wizard-sendkeys.txt        |   11 +
+ docs/workflow/evidence/logs/MD-03-wizard-steps.txt |   68 +
+ .../evidence/logs/MD-03-wizard-taskscap.exit.txt   |    1 +
+ .../evidence/logs/MD-03-wizard-taskscap.txt        |    2 +
+ docs/workflow/evidence/logs/MD-03-wizard.exit.txt  |    1 +
+ docs/workflow/evidence/logs/MD-03-wizard.txt       |   80 +
+ docs/workflow/evidence/logs/MD-04-baseline.txt     |    3 +
+ docs/workflow/evidence/logs/MD-04-claim-scan.txt   |    7 +
+ docs/workflow/evidence/logs/MD-04-diff-names.txt   |    1 +
+ docs/workflow/evidence/logs/MD-04-diff-stat.txt    |    2 +
+ docs/workflow/evidence/logs/MD-04-git-status.txt   |   13 +
+ docs/workflow/evidence/logs/MD-04-hash-check.txt   |    7 +
+ docs/workflow/evidence/logs/MD-04-link-check.txt   |   20 +
+ .../workflow/evidence/logs/MD-04-numbers-check.txt |   16 +
+ docs/workflow/evidence/logs/MD-04-readback.txt     |   29 +
+ docs/workflow/evidence/logs/MD-04-readme-diff.txt  |  133 ++
+ docs/workflow/evidence/logs/MD-04-scope.txt        |   21 +
+ docs/workflow/reviews/MD-01-C2-review-packet.md    |   61 +
+ docs/workflow/reviews/MD-01-review-packet.md       |   57 +
+ docs/workflow/reviews/MD-01-review.md              |   44 +
+ docs/workflow/reviews/MD-02-review-packet.md       |   67 +
+ docs/workflow/reviews/MD-02-review.md              |   25 +
+ docs/workflow/reviews/MD-03-review-packet.md       |   76 +
+ docs/workflow/reviews/MD-03-review.md              |   28 +
+ docs/workflow/reviews/MD-04-review.md              |   22 +
+ docs/workflow/tasks/FINAL-MIXED-STAGE.md           |   62 +
+ docs/workflow/tasks/MD-01-C2.md                    |   71 +
+ docs/workflow/tasks/MD-01.md                       |  132 ++
+ docs/workflow/tasks/MD-02.md                       |  116 ++
+ docs/workflow/tasks/MD-03.md                       |  106 +
+ docs/workflow/tasks/MD-04.md                       |   53 +
+ docs/workflow/tasks/MD-05.md                       |   52 +
+ frontend/index.html                                |  570 +++++-
+ installer/GasProjectCalculator.iss                 |    4 +-
+ tests/test_frontend_redesign.py                    |   59 +-
+ tests/test_gsv_api.py                              |  349 ++++
+ tests/test_gsv_calculator.py                       |  169 ++
+ 203 files changed, 10980 insertions(+), 153 deletions(-)
