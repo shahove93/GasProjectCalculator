@@ -2,7 +2,7 @@
 
 2026-11-12 — этап «три диаметра ГСВ + artwork»: IN_PROGRESS.
 Baseline `9dea625`; ветка `feature/gsv-mixed-diameters`; task-pack commit
-`<PACK_SHA>`. Плановые документы и два пользовательских reference закоммичены
+`118afa6`. Плановые документы и два пользовательских reference закоммичены
 координатором; продуктовый код не менялся. Product verdict NOT_REVIEWED.
 
 Authority: [GSV-MIXED-DIAMETERS-PLAN](GSV-MIXED-DIAMETERS-PLAN.md), VISION/

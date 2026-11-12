@@ -657,4 +657,5 @@ HEAD `9dea625`, ветка `feature/ss-calculator-redesign`, dirty только 
 FINAL-MIXED-STAGE (R3, Codex astra/high). Резервы: по 1 вызову Codex на
 MD-01/02/03 (потолок R2 ≤4/3M каждый), 0 на MD-04/05, 1 на FINAL (≤6/5M).
 Это новые логические TASK; старые GSV/WI/RD counters не переименованы и не
-сброшены. Product verdict NOT_REVIEWED; commit task pack сделан координатором.
+сброшены. Product verdict NOT_REVIEWED; task pack закоммичен `118afa6`
+(docs/refs only), baseline для MD-01.
