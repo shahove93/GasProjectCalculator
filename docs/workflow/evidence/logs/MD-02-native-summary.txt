@@ -1,0 +1,15 @@
+MD-02 native verification (desktop launcher, Windows, DPI 96)
+launcher pid=20820 port=8023
+target outer=[800, 540] client=[784, 501] dpi=96
+min outer=[760, 520] client=[744, 481] dpi=96
+
+target/gsn: total=68 250 ₽ metrics={'inner': [784, 501], 'scroll': [0, 0], 'docScroll': [784, 501], 'docClient': [784, 501], 'hScroll': False, 'vScroll': False, 'submitInViewport': True, 'totalInViewport': True, 'tableFits': None, 'bodyOverflowX': 'auto', 'bodyOverflowY': 'hidden'}
+target/gsv: total=75 600 ₽ metrics={'inner': [784, 501], 'scroll': [0, 0], 'docScroll': [784, 501], 'docClient': [784, 501], 'hScroll': False, 'vScroll': False, 'submitInViewport': True, 'totalInViewport': True, 'tableFits': True, 'bodyOverflowX': 'auto', 'bodyOverflowY': 'hidden'}
+target/combined: total=158 550 ₽ metrics={'inner': [784, 501], 'scroll': [0, 0], 'docScroll': [784, 501], 'docClient': [784, 501], 'hScroll': False, 'vScroll': False, 'submitInViewport': True, 'totalInViewport': True, 'tableFits': True, 'bodyOverflowX': 'auto', 'bodyOverflowY': 'hidden'}
+min/gsn: total=68 250 ₽ metrics={'inner': [744, 481], 'scroll': [0, 0], 'docScroll': [744, 481], 'docClient': [744, 481], 'hScroll': False, 'vScroll': False, 'submitInViewport': True, 'totalInViewport': True, 'tableFits': None, 'bodyOverflowX': 'auto', 'bodyOverflowY': 'hidden'}
+min/gsv: total=75 600 ₽ metrics={'inner': [744, 481], 'scroll': [0, 0], 'docScroll': [744, 481], 'docClient': [744, 481], 'hScroll': False, 'vScroll': False, 'submitInViewport': True, 'totalInViewport': True, 'tableFits': True, 'bodyOverflowX': 'auto', 'bodyOverflowY': 'hidden'}
+min/combined: total=158 550 ₽ metrics={'inner': [744, 481], 'scroll': [0, 0], 'docScroll': [744, 481], 'docClient': [744, 481], 'hScroll': False, 'vScroll': False, 'submitInViewport': True, 'totalInViewport': True, 'tableFits': True, 'bodyOverflowX': 'auto', 'bodyOverflowY': 'hidden'}
+
+sakz_panel: {"zero": {"sakz": "0", "disabled": true, "checked": false}, "one": {"sakz": "1", "disabled": false, "checked": false}, "reset": {"sakz": "0", "disabled": true, "checked": false}}
+422: {"errorVisible": true, "errorText": "body: ПК доступен только при наличии хотя бы одного комплекта САКЗ", "active": null, "submitDisabled": false, "scroll": [0, 0], "hScroll": false, "vScroll": false}
+network: {"resources": ["http://127.0.0.1:8023/calculate", "http://127.0.0.1:8023/calculate/gsv", "http://127.0.0.1:8023/calculate/combined", "http://127.0.0.1:8023/calculate/gsv"], "external": ["http://127.0.0.1:8023/calculate", "http://127.0.0.1:8023/calculate/gsv", "http://127.0.0.1:8023/calculate/combined", "http://127.0.0.1:8023/calculate/gsv"], "styleSheetImports": 0}

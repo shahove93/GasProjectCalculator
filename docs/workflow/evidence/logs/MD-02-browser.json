@@ -1,0 +1,385 @@
+{
+  "cases": {
+    "D1": {
+      "input": [
+        4,
+        0,
+        4
+      ],
+      "total": "75┬а600 тВ╜",
+      "length_surcharge": "12┬а000 тВ╜",
+      "metrage": "8 ╨╝",
+      "subtotal": "72┬а000 тВ╜",
+      "vat": "3┬а600 тВ╜",
+      "rows": {
+        "up_to_25": [
+          "4 ╨╝",
+          "4 ╨╝",
+          "0 ╨╝",
+          "2┬а500",
+          "0"
+        ],
+        "from_32_to_40": [
+          "0 ╨╝",
+          "0 ╨╝",
+          "0 ╨╝",
+          "3┬а500",
+          "0"
+        ],
+        "diameter_57": [
+          "4 ╨╝",
+          "1 ╨╝",
+          "3 ╨╝",
+          "4┬а000",
+          "12┬а000"
+        ]
+      },
+      "metrics": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "doc": [
+          800,
+          540
+        ],
+        "client": [
+          800,
+          540
+        ],
+        "hScroll": false,
+        "vScroll": false,
+        "active": "result-gsv",
+        "submitInViewport": true,
+        "totalInViewport": true
+      }
+    },
+    "D2": {
+      "input": [
+        2,
+        4,
+        3
+      ],
+      "total": "79┬а275 тВ╜",
+      "length_surcharge": "15┬а500 тВ╜",
+      "metrage": "9 ╨╝",
+      "subtotal": "75┬а500 тВ╜",
+      "vat": "3┬а775 тВ╜",
+      "rows": {
+        "up_to_25": [
+          "2 ╨╝",
+          "2 ╨╝",
+          "0 ╨╝",
+          "2┬а500",
+          "0"
+        ],
+        "from_32_to_40": [
+          "4 ╨╝",
+          "3 ╨╝",
+          "1 ╨╝",
+          "3┬а500",
+          "3┬а500"
+        ],
+        "diameter_57": [
+          "3 ╨╝",
+          "0 ╨╝",
+          "3 ╨╝",
+          "4┬а000",
+          "12┬а000"
+        ]
+      },
+      "metrics": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "doc": [
+          800,
+          540
+        ],
+        "client": [
+          800,
+          540
+        ],
+        "hScroll": false,
+        "vScroll": false,
+        "active": "result-gsv",
+        "submitInViewport": true,
+        "totalInViewport": true
+      }
+    },
+    "D3": {
+      "input": [
+        0,
+        5,
+        2
+      ],
+      "total": "71┬а400 тВ╜",
+      "length_surcharge": "8┬а000 тВ╜",
+      "metrage": "7 ╨╝",
+      "subtotal": "68┬а000 тВ╜",
+      "vat": "3┬а400 тВ╜",
+      "rows": {
+        "up_to_25": [
+          "0 ╨╝",
+          "0 ╨╝",
+          "0 ╨╝",
+          "2┬а500",
+          "0"
+        ],
+        "from_32_to_40": [
+          "5 ╨╝",
+          "5 ╨╝",
+          "0 ╨╝",
+          "3┬а500",
+          "0"
+        ],
+        "diameter_57": [
+          "2 ╨╝",
+          "0 ╨╝",
+          "2 ╨╝",
+          "4┬а000",
+          "8┬а000"
+        ]
+      },
+      "metrics": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "doc": [
+          800,
+          540
+        ],
+        "client": [
+          800,
+          540
+        ],
+        "hScroll": false,
+        "vScroll": false,
+        "active": "result-gsv",
+        "submitInViewport": true,
+        "totalInViewport": true
+      }
+    },
+    "D4": {
+      "input": [
+        3,
+        1,
+        1
+      ],
+      "total": "63┬а000 тВ╜",
+      "length_surcharge": "0 тВ╜",
+      "metrage": "5 ╨╝",
+      "subtotal": "60┬а000 тВ╜",
+      "vat": "3┬а000 тВ╜",
+      "rows": {
+        "up_to_25": [
+          "3 ╨╝",
+          "3 ╨╝",
+          "0 ╨╝",
+          "2┬а500",
+          "0"
+        ],
+        "from_32_to_40": [
+          "1 ╨╝",
+          "1 ╨╝",
+          "0 ╨╝",
+          "3┬а500",
+          "0"
+        ],
+        "diameter_57": [
+          "1 ╨╝",
+          "1 ╨╝",
+          "0 ╨╝",
+          "4┬а000",
+          "0"
+        ]
+      },
+      "metrics": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "doc": [
+          800,
+          540
+        ],
+        "client": [
+          800,
+          540
+        ],
+        "hScroll": false,
+        "vScroll": false,
+        "active": "result-gsv",
+        "submitInViewport": true,
+        "totalInViewport": true
+      }
+    },
+    "D5": {
+      "input": [
+        8,
+        0,
+        0
+      ],
+      "total": "70┬а875 тВ╜",
+      "length_surcharge": "7┬а500 тВ╜",
+      "metrage": "8 ╨╝",
+      "subtotal": "67┬а500 тВ╜",
+      "vat": "3┬а375 тВ╜",
+      "rows": {
+        "up_to_25": [
+          "8 ╨╝",
+          "5 ╨╝",
+          "3 ╨╝",
+          "2┬а500",
+          "7┬а500"
+        ],
+        "from_32_to_40": [
+          "0 ╨╝",
+          "0 ╨╝",
+          "0 ╨╝",
+          "3┬а500",
+          "0"
+        ],
+        "diameter_57": [
+          "0 ╨╝",
+          "0 ╨╝",
+          "0 ╨╝",
+          "4┬а000",
+          "0"
+        ]
+      },
+      "metrics": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "doc": [
+          800,
+          540
+        ],
+        "client": [
+          800,
+          540
+        ],
+        "hScroll": false,
+        "vScroll": false,
+        "active": "result-gsv",
+        "submitInViewport": true,
+        "totalInViewport": true
+      }
+    }
+  },
+  "payload": {
+    "url": "/calculate/gsv",
+    "body": "{\"customer_type\":\"╤З╨░╤Б╤В╨╜╨╛╨╡ ╨╗╨╕╤Ж╨╛\",\"is_district\":false,\"pipe_lengths\":{\"up_to_25\":4,\"from_32_to_40\":0,\"diameter_57\":4},\"drilling_holes\":0,\"sakz_sets\":0,\"has_panel\":false}",
+    "parsed": {
+      "customer_type": "╤З╨░╤Б╤В╨╜╨╛╨╡ ╨╗╨╕╤Ж╨╛",
+      "is_district": false,
+      "pipe_lengths": {
+        "up_to_25": 4,
+        "from_32_to_40": 0,
+        "diameter_57": 4
+      },
+      "drilling_holes": 0,
+      "sakz_sets": 0,
+      "has_panel": false
+    },
+    "pipeKeys": [
+      "up_to_25",
+      "from_32_to_40",
+      "diameter_57"
+    ],
+    "hasLegacy": false
+  },
+  "error": {
+    "visible": true,
+    "text": "body: ╨Я╨Ъ ╨┤╨╛╤Б╤В╤Г╨┐╨╡╨╜ ╤В╨╛╨╗╤М╨║╨╛ ╨┐╤А╨╕ ╨╜╨░╨╗╨╕╤З╨╕╨╕ ╤Е╨╛╤В╤П ╨▒╤Л ╨╛╨┤╨╜╨╛╨│╨╛ ╨║╨╛╨╝╨┐╨╗╨╡╨║╤В╨░ ╨б╨Р╨Ъ╨Ч",
+    "resultHidden": true
+  },
+  "clear": {
+    "title": "╨а╨░╤Б╤З╤С╤В ╤Б╤В╨╛╨╕╨╝╨╛╤Б╤В╨╕ тАФ ╨У╨б╨Э",
+    "calcInfoVisible": true,
+    "errorVisible": false,
+    "results": [
+      "none",
+      "none",
+      "none"
+    ]
+  },
+  "combined": {
+    "total": "158┬а550 тВ╜",
+    "subtotal": "151┬а000 тВ╜",
+    "vat": "7┬а550 тВ╜",
+    "gsnTotal": "75┬а600 тВ╜",
+    "gsvTotal": "82┬а950 тВ╜",
+    "gsvMetrage": "8 ╨╝",
+    "rows": {
+      "up_to_25": [
+        "4 ╨╝",
+        "4 ╨╝",
+        "0 ╨╝",
+        "2┬а500",
+        "0"
+      ],
+      "from_32_to_40": [
+        "0 ╨╝",
+        "0 ╨╝",
+        "0 ╨╝",
+        "3┬а500",
+        "0"
+      ],
+      "diameter_57": [
+        "4 ╨╝",
+        "1 ╨╝",
+        "3 ╨╝",
+        "4┬а000",
+        "12┬а000"
+      ]
+    },
+    "metrics": {
+      "inner": [
+        800,
+        540
+      ],
+      "scroll": [
+        0,
+        0
+      ],
+      "doc": [
+        800,
+        540
+      ],
+      "client": [
+        800,
+        540
+      ],
+      "hScroll": false,
+      "vScroll": false,
+      "active": "result-combined",
+      "submitInViewport": true,
+      "totalInViewport": true
+    }
+  }
+}

@@ -1,0 +1,3 @@
+ frontend/index.html             | 570 ++++++++++++++++++++++++++++++++++------
+ tests/test_frontend_redesign.py |  59 ++++-
+ 2 files changed, 550 insertions(+), 79 deletions(-)

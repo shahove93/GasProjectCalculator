@@ -1,0 +1,94 @@
+{
+  "gsv": {
+    "total": "75┬а600 тВ╜",
+    "metrage": "8 ╨╝",
+    "tableFits": true,
+    "metrics": {
+      "inner": [
+        390,
+        844
+      ],
+      "scroll": [
+        0,
+        0
+      ],
+      "doc": [
+        390,
+        844
+      ],
+      "client": [
+        390,
+        844
+      ],
+      "hScroll": false,
+      "vScroll": false,
+      "active": "result-gsv",
+      "submitTop": 706,
+      "submitBottom": 737,
+      "totalTop": 475,
+      "totalBottom": 502,
+      "submitInViewport": true,
+      "totalInViewport": true
+    }
+  },
+  "combined": {
+    "total": "158┬а550 тВ╜",
+    "subtotal": "151┬а000 тВ╜",
+    "vat": "7┬а550 тВ╜",
+    "gsvMetrage": "8 ╨╝",
+    "tableFits": true,
+    "metrics": {
+      "inner": [
+        390,
+        844
+      ],
+      "scroll": [
+        0,
+        0
+      ],
+      "doc": [
+        375,
+        1186
+      ],
+      "client": [
+        375,
+        844
+      ],
+      "hScroll": false,
+      "vScroll": true,
+      "active": "result-combined",
+      "submitTop": 1062,
+      "submitBottom": 1093,
+      "totalTop": 697,
+      "totalBottom": 724,
+      "submitInViewport": false,
+      "totalInViewport": true
+    }
+  },
+  "network": {
+    "resources": [
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/combined",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/combined",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/combined",
+      "http://127.0.0.1:8022/calculate/gsv",
+      "http://127.0.0.1:8022/calculate/combined"
+    ],
+    "thirdParty": [],
+    "styleSheetImports": 0
+  }
+}

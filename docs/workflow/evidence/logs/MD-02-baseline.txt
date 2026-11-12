@@ -1,0 +1,7 @@
+date=2026-11-12T10:21:00.7946297+03:00
+cwd=D:\Antigravity\GasProjectCalculator
+branch=feature/gsv-mixed-diameters
+baseline=1d77194d777963214e83bb2ad63bcf0b431b5485
+1d77194 feat(gsv): mixed three-diameter lengths with legacy-compatible API (MD-01 R2 PASS)
+32709a4 docs(workflow): bind mixed-GSV run and MD-01 task
+2474243 docs(workflow): record mixed task-pack baseline

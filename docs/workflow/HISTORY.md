@@ -678,3 +678,24 @@ allowlist. C1 Codex R2 `ctx_1ce9629cc368` (`gpt-6.1-sol` high) вернул **FA
 response/combined 158550 сохранены, C1 FAIL сохранён. Счётчики MD-01: full
 reviews 2, failed 1, Codex calls 2/4; оба worker released. Scoped commit
 координатора; следующий TASK — MD-02.
+
+## 2026-11-12 — MD-02 PASS (R2): три длины в UI и artwork по двум образцам
+
+MD-02 implementer `ctx_ba7702084595` (OpenCode Flash, baseline `1d77194`)
+заменил в ГСВ и combined одиночные длину/диаметр на три поля `до Ø25`/
+`Ø32–40`/`Ø57`, отправляет только `pipe_lengths`, показывает серверный
+`total_length` и `pipe_breakdown` (length/included/billable/rate/surcharge),
+добавил верхний/нижний inline-SVG по `header-detail-reference.jpg` и
+`footer-detail-reference.jpg`, сохранив `СС.Расчет`, эмблему и компактность.
+Проверки: реальный Orca browser (D1–D5 75600/79275/71400/63000/70875,
+combined 151000/7550/158550, 422/switch, mobile 390×844) и реальное native
+окно 800×540/min 760×520, DPI 96, `scrollY=0`, action+итог видимы; full suite
+219 OK exit 0; 36 реальных screenshots; diff только `frontend/index.html` и
+`tests/test_frontend_redesign.py`. Codex R2 vision `ctx_f19db8fdc974`
+(`gpt-6.1-sol` high) вернул **PASS**: U1–U12 подтверждены по diff/evidence и
+визуально по обоим refs, overflow-workaround нет. Единственный
+**MD02-N1 NIT (U7)**: верх маховика вентиля слегка обрезан SVG viewBox
+(`frontend/index.html:705`, cy=5/r=7.2/stroke=3.4); золотой вентиль и
+обязательные элементы различимы — backlog без correction cycle. Счётчики
+MD-02: full reviews 1, failed 0, Codex calls 1/4; worker released. Scoped
+commit координатора; следующий TASK — MD-03.

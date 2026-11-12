@@ -13,8 +13,8 @@ Frozen checklists: `docs/workflow/tasks/MD-01..05.md`,
 | TASK | Risk | Содержание | Исполнитель | Review | Reserve | Статус |
 | --- | --- | --- | --- | --- | --- | --- |
 | MD-01 | R2 | mixed-формула, API, legacy | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | **PASS** (2 full/1 FAIL/2 calls) |
-| MD-02 | R2 | три длины в UI, детализация, artwork | OpenCode Flash | Codex sol/high (vision) | 1 (≤4/3M) | NEXT |
-| MD-03 | R2 | installer 1.1.0, installed checks | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | PENDING |
+| MD-02 | R2 | три длины в UI, детализация, artwork | OpenCode Flash | Codex sol/high (vision) | 1 (≤4/3M) | **PASS** (1 full/0 FAIL/1 call; NIT MD02-N1) |
+| MD-03 | R2 | installer 1.1.0, installed checks | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | NEXT |
 | MD-04 | R0 | README/screenshots/docs | OpenCode Flash | coordinator R0 | 0 | PENDING |
 | MD-05 | R0 | интегрированный full suite | OpenCode Flash | coordinator R0 | 0 | PENDING |
 | FINAL-MIXED | R3 | stage acceptance | Codex astra/high | — | 1 (≤6/5M) | PENDING |
@@ -24,7 +24,10 @@ MD-01: Run `run_8f265b57fb70`; implementer `ctx_f23a43bf4e82`; C1 review
 `ctx_b5a2191479fe` **PASS**, finding CLOSED. Review record:
 `docs/workflow/reviews/MD-01-review.md`; evidence
 `docs/workflow/evidence/MD-01-evidence.md`; suite 216 OK.
-Next owner — координатор: scoped commit MD-01, затем dispatch MD-02.
+MD-02: implementer `ctx_ba7702084595`; Codex vision review `ctx_f19db8fdc974`
+**PASS**, NIT MD02-N1 (handwheel top clipped) backlog; evidence
+`docs/workflow/evidence/MD-02-evidence.md`; suite 219 OK.
+Next owner — координатор: scoped commit MD-02, затем dispatch MD-03.
 
 Старые счётчики сохранены: GSV-01..04, WI-01..03, RD-01 1/0/0, RD-02 1/0/1,
 RD-03 2/1/2, RD-05 1/0/1, RD-06 2/1/2, RD-07 R0, прежний stage R3 1. Новый

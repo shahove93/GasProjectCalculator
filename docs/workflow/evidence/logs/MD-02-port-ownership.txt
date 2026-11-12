@@ -1,0 +1,7 @@
+PORT/PID ownership
+uvicorn 8022: terminal term_0c4f6594-f91d-4990-9458-4ab50eb78675 (terminal pid 25108), listener pid 8668, 127.0.0.1:8022, HTTP 200
+desktop launcher: terminal term_b1d4c5be-6eb6-4b09-85b6-67186efb0114 (terminal pid 21876), launcher pid 20820, backend 127.0.0.1:8023, port-file ready
+LISTEN port=8023 pid=20820
+LISTEN port=8022 pid=8668
+second uvicorn session for mobile GSN: terminal term_8f609200-a4b7-4591-807b-2b0f1026633a (terminal pid 14068), 127.0.0.1:8022; stopped after check
+final: 8022 free, 8023 free

@@ -1,0 +1,11 @@
+{
+  "id": "653662c4-e9ef-49db-a36a-8a6d6a6076ae",
+  "ok": true,
+  "result": {
+    "result": "{\"inner\":[390,844],\"scroll\":[0,0],\"doc\":[390,844],\"client\":[390,844],\"hScroll\":false,\"vScroll\":false,\"total\":\"75┬а600 тВ╜\",\"subtotal\":\"72┬а000 тВ╜\",\"vat\":\"3┬а600 тВ╜\",\"submitTop\":646,\"submitBottom\":677,\"totalTop\":517,\"totalBottom\":544,\"submitInViewport\":true,\"totalInViewport\":true}",
+    "origin": "http://127.0.0.1:8022/"
+  },
+  "_meta": {
+    "runtimeId": "f38be7dc-17d3-494f-bcf0-b78549dfca24"
+  }
+}

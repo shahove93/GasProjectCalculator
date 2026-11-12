@@ -48,8 +48,9 @@ class FrontendRedesignTests(unittest.TestCase):
             "angles",
             "excavator_hours",
             "has_grpsh",
-            "gsv-length",
-            "gsv-diameter",
+            "gsv-length-up-to-25",
+            "gsv-length-32-40",
+            "gsv-length-57",
             "gsv-holes",
             "gsv-sakz",
             "gsv-panel",
@@ -82,6 +83,60 @@ class FrontendRedesignTests(unittest.TestCase):
         self.assertIn('class="form-scroll"', self.html)
         self.assertIn('class="result-detail"', self.html)
         self.assertIn('class="total-block"', self.html)
+
+    def test_gsv_has_three_pipe_length_fields_and_no_legacy_fields(self):
+        # U1: the GSV form asks for three separate lengths in metres and no
+        # longer exposes the single legacy length/diameter pair.
+        expected = [
+            ("gsv-length-up-to-25", "до Ø25"),
+            ("gsv-length-32-40", "Ø32–40"),
+            ("gsv-length-57", "Ø57"),
+        ]
+        for element_id, label in expected:
+            field = re.search(
+                rf'(?s)<label[^>]+for="{element_id}"[^>]*>(.*?)</label>.*?'
+                rf'<input[^>]+id="{element_id}"[^>]*>',
+                self.html,
+            )
+            self.assertIsNotNone(field, element_id)
+            self.assertIn(label, field.group(1))
+            input_tag = field.group(0)
+            self.assertIn('type="number"', input_tag)
+            self.assertIn('min="0"', input_tag)
+            self.assertIn('step="1"', input_tag)
+        self.assertNotIn('id="gsv-length"', self.html)
+        self.assertNotIn('id="gsv-diameter"', self.html)
+
+    def test_payload_sends_pipe_lengths_instead_of_legacy_fields(self):
+        # U2: one pipe_lengths object with exactly the three server keys.
+        self.assertIn("pipe_lengths: pipeLengths", self.html)
+        for key, element_id in (
+            ("up_to_25", "gsv-length-up-to-25"),
+            ("from_32_to_40", "gsv-length-32-40"),
+            ("diameter_57", "gsv-length-57"),
+        ):
+            self.assertIn(f'key: "{key}"', self.html)
+            self.assertIn(f'elementId: "{element_id}"', self.html)
+        self.assertNotIn("diameter: diameter.value", self.html)
+        self.assertNotIn("getElementById(\"gsv-diameter\")", self.html)
+
+    def test_breakdown_reads_total_and_pipe_breakdown_from_response(self):
+        # U3: total metrage and the five per-position values are rendered in
+        # both GSV sections from the server response.
+        self.assertIn("gsv.total_length", self.html)
+        self.assertIn("gsv.pipe_breakdown", self.html)
+        self.assertIn("item.included_length", self.html)
+        self.assertIn("item.billable_length", self.html)
+        self.assertIn("item.surcharge", self.html)
+        for prefix in ("gsv-", "combined-gsv-"):
+            self.assertIn(f'id="{prefix}total_length"', self.html)
+            self.assertIn(f'id="{prefix}pipe-breakdown"', self.html)
+            for category in ("up_to_25", "from_32_to_40", "diameter_57"):
+                for field in ("length", "included", "billable", "rate", "surcharge"):
+                    self.assertIn(
+                        f'id="{prefix}pipe-{category}-{field}"',
+                        self.html,
+                    )
 
     def test_options_are_a_separate_card_and_district_leaves_customer_row(self):
         # U2/U5: the primary reference puts options in their own compact block;

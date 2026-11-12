@@ -1,0 +1,2 @@
+frontend/index.html
+tests/test_frontend_redesign.py

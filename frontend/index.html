@@ -58,7 +58,7 @@
             margin: 0 auto;
             padding: 5px 16px 6px;
             display: grid;
-            grid-template-columns: minmax(0, 1fr) clamp(140px, 30vw, 256px);
+            grid-template-columns: minmax(0, 1fr) clamp(160px, 34vw, 300px);
             grid-template-rows: auto auto;
             column-gap: 16px;
             row-gap: 4px;
@@ -103,6 +103,8 @@
             display: block;
         }
         .pipe-flow { animation: none; }
+        .pipe-art .art-glow { filter: blur(2.6px); }
+        .pipe-art .art-soft { filter: blur(0.6px); }
 
         .mode-bar {
             grid-column: 1;
@@ -284,6 +286,79 @@
         }
         .field input[type="number"]:disabled { background: #eef2f6; color: #8a96a3; cursor: not-allowed; }
 
+        /* Three GSV pipe lengths (cheapest diameter first). */
+        .pipe-length-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 4px 8px;
+            margin-bottom: 3px;
+        }
+        .pipe-length-grid .field .label {
+            font-size: 11px;
+            white-space: nowrap;
+        }
+        .pipe-length-grid .field input[type="number"] { min-height: 27px; }
+
+        /* Server-provided pipe breakdown table. */
+        .pipe-total-line {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+            margin: 4px 0 3px;
+            padding: 3px 8px;
+            background: var(--accent-light);
+            border: 1px solid #c8ece5;
+            border-radius: 7px;
+            font-size: 11.5px;
+            font-weight: 600;
+            color: var(--accent-dark);
+        }
+        .pipe-total-line .metrage {
+            font-variant-numeric: tabular-nums;
+            font-weight: 800;
+            color: var(--navy);
+            white-space: nowrap;
+        }
+        .pipe-breakdown {
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            overflow: hidden;
+            margin-bottom: 3px;
+        }
+        .pipe-breakdown table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            font-size: 10px;
+            line-height: 1.25;
+        }
+        .pipe-breakdown th,
+        .pipe-breakdown td {
+            padding: 2px 3px;
+            text-align: right;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-variant-numeric: tabular-nums;
+        }
+        .pipe-breakdown th {
+            font-weight: 700;
+            color: #46617a;
+            background: #f1f7fa;
+            border-bottom: 1px solid var(--border);
+        }
+        .pipe-breakdown th:first-child,
+        .pipe-breakdown td:first-child { text-align: left; }
+        .pipe-breakdown td { border-top: 1px solid #edf3f7; color: #33455a; }
+        .pipe-breakdown tr:first-child td { border-top: none; }
+        .pipe-breakdown td.pipe-pos {
+            font-weight: 700;
+            color: var(--accent-dark);
+        }
+        .pipe-breakdown col.c-pos { width: 27%; }
+        .pipe-breakdown col.c-num { width: 14.6%; }
+
         .segment { display: grid; grid-template-columns: 1fr 1fr; gap: 5px; min-width: 0; }
         .segment.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
         .segment button {
@@ -448,7 +523,7 @@
         /* ---------- Bottom pipe / house illustration ---------- */
         .pipe-footer {
             flex: 0 0 auto;
-            height: 44px;
+            height: 54px;
             display: flex;
             align-items: flex-end;
             justify-content: center;
@@ -505,7 +580,7 @@
             .card { margin-bottom: 8px; overflow: visible; }
             .form-scroll, .result-detail { overflow: visible; max-height: none; }
             .result-body { display: block; }
-            .pipe-footer { height: 54px; }
+            .pipe-footer { height: 58px; }
         }
 
     </style>
@@ -523,34 +598,124 @@
                     <p class="brand-subtitle">Калькулятор ГСН и ГСВ</p>
                 </div>
             </div>
-            <svg class="pipe-art" viewBox="0 0 300 84" fill="none" aria-hidden="true" focusable="false">
+            <svg class="pipe-art" viewBox="0 0 360 96" fill="none" aria-hidden="true" focusable="false">
                 <defs>
-                    <linearGradient id="pipeGrad" x1="0" y1="0" x2="300" y2="0" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.10"/>
-                        <stop offset="0.5" stop-color="#2dd4bf"/>
-                        <stop offset="1" stop-color="#5eead4" stop-opacity="0.16"/>
+                    <linearGradient id="headerPipeBody" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#0a3c44"/>
+                        <stop offset="0.22" stop-color="#5eead4"/>
+                        <stop offset="0.48" stop-color="#2dd4bf"/>
+                        <stop offset="0.78" stop-color="#128a86"/>
+                        <stop offset="1" stop-color="#083a44"/>
                     </linearGradient>
+                    <linearGradient id="headerPipeBack" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#0a2b3a"/>
+                        <stop offset="0.35" stop-color="#2b8f94"/>
+                        <stop offset="0.75" stop-color="#17636e"/>
+                        <stop offset="1" stop-color="#071c2a"/>
+                    </linearGradient>
+                    <linearGradient id="headerMetal" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#f3fbff"/>
+                        <stop offset="0.3" stop-color="#b9cfdb"/>
+                        <stop offset="0.58" stop-color="#6b8595"/>
+                        <stop offset="0.82" stop-color="#385162"/>
+                        <stop offset="1" stop-color="#162a38"/>
+                    </linearGradient>
+                    <linearGradient id="headerGold" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0" stop-color="#7a4c0c"/>
+                        <stop offset="0.3" stop-color="#ffe39a"/>
+                        <stop offset="0.6" stop-color="#f3b53f"/>
+                        <stop offset="0.85" stop-color="#c78417"/>
+                        <stop offset="1" stop-color="#71440a"/>
+                    </linearGradient>
+                    <radialGradient id="headerGlow" cx="0.5" cy="0.5" r="0.5">
+                        <stop offset="0" stop-color="#5eead4" stop-opacity="0.5"/>
+                        <stop offset="1" stop-color="#5eead4" stop-opacity="0"/>
+                    </radialGradient>
+                    <filter id="headerBlur" x="-30%" y="-70%" width="160%" height="240%">
+                        <feGaussianBlur stdDeviation="3.4"/>
+                    </filter>
+                    <filter id="headerShadow" x="-30%" y="-50%" width="160%" height="200%">
+                        <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#04121f" flood-opacity="0.6"/>
+                    </filter>
                 </defs>
-                <path d="M2 66h58a12 12 0 0 0 12-12V40a12 12 0 0 1 12-12h32"
-                      stroke="url(#pipeGrad)" stroke-width="6" stroke-linecap="round"/>
-                <path d="M2 66h58a12 12 0 0 0 12-12V40a12 12 0 0 1 12-12h32"
-                      class="pipe-flow" stroke="#5eead4" stroke-width="2" stroke-linecap="round"
-                      stroke-dasharray="2 10" opacity="0.95"/>
-                <path d="M146 28h40a12 12 0 0 1 12 12v6a12 12 0 0 0 12 12h88"
-                      stroke="url(#pipeGrad)" stroke-width="6" stroke-linecap="round"/>
-                <path d="M146 28h40a12 12 0 0 1 12 12v6a12 12 0 0 0 12 12h88"
-                      class="pipe-flow" stroke="#5eead4" stroke-width="2" stroke-linecap="round"
-                      stroke-dasharray="2 10" opacity="0.95"/>
-                <rect x="112" y="20" width="34" height="20" rx="4" fill="#0a1725" stroke="#5eead4" stroke-width="2.4"/>
-                <rect x="106" y="18" width="6" height="24" rx="2" fill="#0a1725" stroke="#5eead4" stroke-width="2"/>
-                <rect x="146" y="18" width="6" height="24" rx="2" fill="#0a1725" stroke="#5eead4" stroke-width="2"/>
-                <rect x="125" y="6" width="8" height="16" rx="2" fill="#2dd4bf"/>
-                <circle cx="129" cy="7" r="10" stroke="#f3c05a" stroke-width="3"/>
-                <path d="M119 7h20M129 -3v20" stroke="#f3c05a" stroke-width="2" stroke-linecap="round"/>
-                <circle cx="129" cy="7" r="2.6" fill="#f3c05a"/>
-                <circle cx="2" cy="66" r="3.6" fill="#5eead4"/>
-                <circle cx="298" cy="58" r="3.6" fill="#2dd4bf"/>
-                <circle cx="206" cy="46" r="3.4" fill="#5eead4"/>
+
+                <circle cx="246" cy="46" r="76" fill="url(#headerGlow)"/>
+                <circle cx="86" cy="70" r="52" fill="url(#headerGlow)" opacity="0.7"/>
+
+                <!-- soft neon bloom beneath both pipe runs -->
+                <path d="M8 70H114a20 20 0 0 0 20-20V48a20 20 0 0 1 20-20H344"
+                      stroke="#2dd4bf" stroke-width="24" stroke-linecap="round"
+                      opacity="0.32" filter="url(#headerBlur)"/>
+                <path d="M196 86h156" stroke="#2dd4bf" stroke-width="16" stroke-linecap="round"
+                      opacity="0.22" filter="url(#headerBlur)"/>
+
+                <!-- background branch for depth -->
+                <path d="M208 82h144" stroke="#061a27" stroke-width="16" stroke-linecap="round" opacity="0.9"/>
+                <path d="M208 82h144" stroke="url(#headerPipeBack)" stroke-width="12" stroke-linecap="round"/>
+                <path d="M214 79h128" stroke="#9df7ea" stroke-width="2.4" stroke-linecap="round" opacity="0.3"/>
+                <g filter="url(#headerShadow)">
+                    <rect x="246" y="71" width="15" height="22" rx="3" fill="url(#headerMetal)"/>
+                    <rect x="250" y="75" width="7" height="14" rx="1.5" fill="#0a2532" opacity="0.34"/>
+                    <circle cx="253.5" cy="75.6" r="1.2" fill="#e9fbff"/>
+                    <circle cx="253.5" cy="88.4" r="1.2" fill="#e9fbff"/>
+                </g>
+
+                <!-- main pipe: low run, elbow, high run -->
+                <path d="M8 70H114a20 20 0 0 0 20-20V48a20 20 0 0 1 20-20H344"
+                      stroke="#04141f" stroke-width="24" stroke-linecap="round" opacity="0.85"/>
+                <path d="M8 68H114a18 18 0 0 0 18-18V46a18 18 0 0 1 18-18H344"
+                      stroke="url(#headerPipeBody)" stroke-width="19" stroke-linecap="round"/>
+                <path d="M8 60H112a18 18 0 0 0 18-18V42a18 18 0 0 1 18-18H342"
+                      stroke="#c9fff7" stroke-width="3.2" stroke-linecap="round" opacity="0.34"/>
+                <path d="M10 75H114a15 15 0 0 0 15-15v-2"
+                      stroke="#04222c" stroke-width="3" stroke-linecap="round" opacity="0.55"/>
+                <path d="M170 35H342" stroke="#05323a" stroke-width="2.4" stroke-linecap="round" opacity="0.6"/>
+
+                <!-- flowing highlight -->
+                <path class="pipe-flow"
+                      d="M8 68H114a18 18 0 0 0 18-18V46a18 18 0 0 1 18-18H344"
+                      stroke="#d7fff9" stroke-width="2.2" stroke-linecap="round"
+                      stroke-dasharray="3 13" opacity="0.9"/>
+
+                <!-- metal couplings -->
+                <g filter="url(#headerShadow)">
+                    <rect x="66" y="56" width="19" height="27" rx="4" fill="url(#headerMetal)"/>
+                    <rect x="69.5" y="59" width="12" height="21" rx="2" fill="#0b2a32" opacity="0.26"/>
+                    <circle cx="76" cy="60.5" r="1.7" fill="#effcff"/>
+                    <circle cx="76" cy="78.5" r="1.7" fill="#effcff"/>
+                    <circle cx="76" cy="69.5" r="1.4" fill="#effcff" opacity="0.85"/>
+                </g>
+                <g filter="url(#headerShadow)">
+                    <rect x="257" y="14" width="19" height="27" rx="4" fill="url(#headerMetal)"/>
+                    <rect x="260.5" y="17" width="12" height="21" rx="2" fill="#0b2a32" opacity="0.26"/>
+                    <circle cx="267" cy="18.5" r="1.7" fill="#effcff"/>
+                    <circle cx="267" cy="36.5" r="1.7" fill="#effcff"/>
+                    <circle cx="267" cy="27.5" r="1.4" fill="#effcff" opacity="0.85"/>
+                </g>
+                <g filter="url(#headerShadow)" opacity="0.92">
+                    <rect x="30" y="57" width="14" height="23" rx="3" fill="url(#headerMetal)"/>
+                    <rect x="33" y="60" width="8" height="17" rx="1.5" fill="#0b2a32" opacity="0.3"/>
+                </g>
+
+                <!-- golden valve on the upper run -->
+                <g filter="url(#headerShadow)">
+                    <rect x="161" y="14" width="30" height="27" rx="4" fill="url(#headerGold)"
+                          stroke="#6b430c" stroke-width="1.3"/>
+                    <rect x="176" y="4" width="3.4" height="13" rx="1.7" fill="#e2a62b"/>
+                    <circle cx="177.7" cy="5" r="7.2" fill="none" stroke="url(#headerGold)" stroke-width="3.4"/>
+                    <path d="M170.5 5h14.4M177.7-2.2v14.4" stroke="#ffe6a6" stroke-width="1.5"
+                          stroke-linecap="round"/>
+                    <circle cx="177.7" cy="5" r="2.1" fill="#fff0c2"/>
+                    <rect x="171" y="19" width="10" height="3" rx="1.5" fill="#8c5a10" opacity="0.7"/>
+                </g>
+
+                <!-- highlights / sparks -->
+                <circle cx="8" cy="68" r="4.2" fill="#b8fff6"/>
+                <circle cx="344" cy="28" r="3.8" fill="#5eead4"/>
+                <circle cx="210" cy="82" r="3.2" fill="#5eead4" opacity="0.9"/>
+                <circle cx="275" cy="82" r="2.6" fill="#9df7ea" opacity="0.85"/>
+                <circle cx="124" cy="45" r="2.2" fill="#e8fffb"/>
+                <circle cx="303" cy="27" r="1.8" fill="#e8fffb" opacity="0.8"/>
             </svg>
             <div class="mode-bar">
                 <span class="mode-label">Режим расчёта:</span>
@@ -620,16 +785,26 @@
                     </div>
 
                     <div class="mode-group" id="group-gsv">
-                        <p class="section-label">ГСВ · Параметры</p>
+                        <p class="section-label">ГСВ · Длины по диаметрам, м</p>
+                        <div class="pipe-length-grid">
+                            <div class="field">
+                                <label class="label" for="gsv-length-up-to-25">до Ø25</label>
+                                <input id="gsv-length-up-to-25" type="number" min="0" step="1"
+                                       value="0" inputmode="numeric">
+                            </div>
+                            <div class="field">
+                                <label class="label" for="gsv-length-32-40">Ø32–40</label>
+                                <input id="gsv-length-32-40" type="number" min="0" step="1"
+                                       value="0" inputmode="numeric">
+                            </div>
+                            <div class="field">
+                                <label class="label" for="gsv-length-57">Ø57</label>
+                                <input id="gsv-length-57" type="number" min="0" step="1"
+                                       value="0" inputmode="numeric">
+                            </div>
+                        </div>
+                        <p class="section-label">ГСВ · Дополнительно</p>
                         <div class="field-grid">
-                            <div class="field">
-                                <label class="label" for="gsv-length">Длина, м</label>
-                                <input id="gsv-length" type="number" min="0" step="1" value="0">
-                            </div>
-                            <div class="field">
-                                <label class="label" for="gsv-diameter">Диаметр, мм</label>
-                                <input id="gsv-diameter" type="number" min="1" max="57" step="1" value="25">
-                            </div>
                             <div class="field">
                                 <label class="label" for="gsv-holes">Алмазное бурение, отверстий</label>
                                 <input id="gsv-holes" type="number" min="0" step="1" value="0">
@@ -748,6 +923,56 @@
                             <span>Доплата за длину</span>
                             <span class="amount" id="gsv-length_surcharge">—</span>
                         </div>
+                        <div class="pipe-total-line">
+                            <span>Общий метраж</span>
+                            <span class="metrage" id="gsv-total_length">—</span>
+                        </div>
+                        <div class="pipe-breakdown" id="gsv-pipe-breakdown"
+                                 aria-label="Детализация длин ГСВ по диаметрам: длина в метрах, ставка и сумма в рублях">
+                            <table>
+                                <colgroup>
+                                    <col class="c-pos">
+                                    <col class="c-num"><col class="c-num"><col class="c-num">
+                                    <col class="c-num"><col class="c-num">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Диаметр</th>
+                                        <th scope="col" title="Длина, м">Длина</th>
+                                        <th scope="col" title="Включённые метры">Вкл.</th>
+                                        <th scope="col" title="Оплачиваемые метры">Опл.</th>
+                                        <th scope="col" title="Ставка за оплачиваемый метр, ₽">Ставка</th>
+                                        <th scope="col" title="Сумма, ₽">Сумма</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="pipe-pos">до Ø25</td>
+                                        <td id="gsv-pipe-up_to_25-length">—</td>
+                                        <td id="gsv-pipe-up_to_25-included">—</td>
+                                        <td id="gsv-pipe-up_to_25-billable">—</td>
+                                        <td id="gsv-pipe-up_to_25-rate">—</td>
+                                        <td id="gsv-pipe-up_to_25-surcharge">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pipe-pos">Ø32–40</td>
+                                        <td id="gsv-pipe-from_32_to_40-length">—</td>
+                                        <td id="gsv-pipe-from_32_to_40-included">—</td>
+                                        <td id="gsv-pipe-from_32_to_40-billable">—</td>
+                                        <td id="gsv-pipe-from_32_to_40-rate">—</td>
+                                        <td id="gsv-pipe-from_32_to_40-surcharge">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="pipe-pos">Ø57</td>
+                                        <td id="gsv-pipe-diameter_57-length">—</td>
+                                        <td id="gsv-pipe-diameter_57-included">—</td>
+                                        <td id="gsv-pipe-diameter_57-billable">—</td>
+                                        <td id="gsv-pipe-diameter_57-rate">—</td>
+                                        <td id="gsv-pipe-diameter_57-surcharge">—</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                         <div class="cost-line" id="gsv-row_drilling_cost">
                             <span>Алмазное бурение</span>
                             <span class="amount" id="gsv-drilling_cost">—</span>
@@ -828,6 +1053,56 @@
                                 <span>Доплата за длину</span>
                                 <span class="amount" id="combined-gsv-length_surcharge">—</span>
                             </div>
+                            <div class="pipe-total-line">
+                                <span>Общий метраж</span>
+                                <span class="metrage" id="combined-gsv-total_length">—</span>
+                            </div>
+                            <div class="pipe-breakdown" id="combined-gsv-pipe-breakdown"
+                             aria-label="Детализация длин ГСВ по диаметрам: длина в метрах, ставка и сумма в рублях">
+                                <table>
+                                    <colgroup>
+                                        <col class="c-pos">
+                                        <col class="c-num"><col class="c-num"><col class="c-num">
+                                        <col class="c-num"><col class="c-num">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Диаметр</th>
+                                            <th scope="col" title="Длина, м">Длина</th>
+                                            <th scope="col" title="Включённые метры">Вкл.</th>
+                                            <th scope="col" title="Оплачиваемые метры">Опл.</th>
+                                            <th scope="col" title="Ставка за оплачиваемый метр, ₽">Ставка</th>
+                                            <th scope="col" title="Сумма, ₽">Сумма</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="pipe-pos">до Ø25</td>
+                                            <td id="combined-gsv-pipe-up_to_25-length">—</td>
+                                            <td id="combined-gsv-pipe-up_to_25-included">—</td>
+                                            <td id="combined-gsv-pipe-up_to_25-billable">—</td>
+                                            <td id="combined-gsv-pipe-up_to_25-rate">—</td>
+                                            <td id="combined-gsv-pipe-up_to_25-surcharge">—</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pipe-pos">Ø32–40</td>
+                                            <td id="combined-gsv-pipe-from_32_to_40-length">—</td>
+                                            <td id="combined-gsv-pipe-from_32_to_40-included">—</td>
+                                            <td id="combined-gsv-pipe-from_32_to_40-billable">—</td>
+                                            <td id="combined-gsv-pipe-from_32_to_40-rate">—</td>
+                                            <td id="combined-gsv-pipe-from_32_to_40-surcharge">—</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="pipe-pos">Ø57</td>
+                                            <td id="combined-gsv-pipe-diameter_57-length">—</td>
+                                            <td id="combined-gsv-pipe-diameter_57-included">—</td>
+                                            <td id="combined-gsv-pipe-diameter_57-billable">—</td>
+                                            <td id="combined-gsv-pipe-diameter_57-rate">—</td>
+                                            <td id="combined-gsv-pipe-diameter_57-surcharge">—</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <div class="cost-line" id="combined-gsv-row_drilling_cost">
                                 <span>Алмазное бурение</span>
                                 <span class="amount" id="combined-gsv-drilling_cost">—</span>
@@ -868,33 +1143,130 @@
         </form>
 
         <div class="pipe-footer" aria-hidden="true">
-            <svg viewBox="0 0 760 48" fill="none">
+            <svg viewBox="0 0 760 60" fill="none" preserveAspectRatio="xMidYMax meet">
                 <defs>
-                    <linearGradient id="footerPipe" x1="0" y1="0" x2="760" y2="0" gradientUnits="userSpaceOnUse">
-                        <stop offset="0" stop-color="#9fc7c1"/>
-                        <stop offset="0.6" stop-color="#2dd4bf"/>
-                        <stop offset="1" stop-color="#9fc7c1"/>
+                    <linearGradient id="footerSky" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#e9f5f8" stop-opacity="0"/>
+                        <stop offset="1" stop-color="#cfe8ec" stop-opacity="0.55"/>
                     </linearGradient>
-                    <linearGradient id="houseGlow" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0" stop-color="#fff3c4"/>
-                        <stop offset="1" stop-color="#f3c05a"/>
+                    <linearGradient id="footerHill" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#b9dbe0"/>
+                        <stop offset="1" stop-color="#8cbcc5"/>
                     </linearGradient>
+                    <linearGradient id="footerPipeBody" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#0b4a51"/>
+                        <stop offset="0.26" stop-color="#69eeda"/>
+                        <stop offset="0.55" stop-color="#2dd4bf"/>
+                        <stop offset="0.82" stop-color="#158d89"/>
+                        <stop offset="1" stop-color="#093b45"/>
+                    </linearGradient>
+                    <linearGradient id="footerMetal" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0" stop-color="#f7fdff"/>
+                        <stop offset="0.35" stop-color="#c2d7e0"/>
+                        <stop offset="0.68" stop-color="#7893a2"/>
+                        <stop offset="1" stop-color="#315061"/>
+                    </linearGradient>
+                    <linearGradient id="flameOuter" x1="0" y1="1" x2="0" y2="0">
+                        <stop offset="0" stop-color="#1d4ed8"/>
+                        <stop offset="0.5" stop-color="#38bdf8"/>
+                        <stop offset="1" stop-color="#a5f3fc"/>
+                    </linearGradient>
+                    <linearGradient id="flameInner" x1="0" y1="1" x2="0" y2="0">
+                        <stop offset="0" stop-color="#3b82f6"/>
+                        <stop offset="1" stop-color="#e0f2fe"/>
+                    </linearGradient>
+                    <radialGradient id="warmWindow" cx="0.5" cy="0.45" r="0.65">
+                        <stop offset="0" stop-color="#fff9d6"/>
+                        <stop offset="0.55" stop-color="#ffd76a"/>
+                        <stop offset="1" stop-color="#e79a2b"/>
+                    </radialGradient>
+                    <radialGradient id="warmBloom" cx="0.5" cy="0.5" r="0.5">
+                        <stop offset="0" stop-color="#ffd76a" stop-opacity="0.75"/>
+                        <stop offset="1" stop-color="#ffd76a" stop-opacity="0"/>
+                    </radialGradient>
+                    <filter id="footerSoft" x="-40%" y="-80%" width="180%" height="260%">
+                        <feGaussianBlur stdDeviation="1.8"/>
+                    </filter>
+                    <filter id="footerDrop" x="-25%" y="-60%" width="150%" height="220%">
+                        <feDropShadow dx="0" dy="2.4" stdDeviation="1.6" flood-color="#08202c" flood-opacity="0.32"/>
+                    </filter>
                 </defs>
-                <path d="M0 36h430a10 10 0 0 0 10-10v-3a10 10 0 0 1 10-10h155"
-                      stroke="url(#footerPipe)" stroke-width="3" stroke-linecap="round"/>
-                <path d="M835 18h95" stroke="url(#footerPipe)" stroke-width="3" stroke-linecap="round"/>
-                <path d="M600 36h160" stroke="#9fc7c1" stroke-width="3" stroke-linecap="round"/>
-                <rect x="610" y="33" width="6" height="9" rx="1" fill="#7fb3ad"/>
-                <rect x="690" y="33" width="6" height="9" rx="1" fill="#7fb3ad"/>
-                <path d="M24 34c0-6 4-9 8-12 0 5 3 6 3 10a5.5 5.5 0 0 1-11 2z" fill="#2dd4bf"/>
-                <path d="M28 34c0-3 1.6-5 3.6-7 0 3 1.6 3.6 1.6 5.6a3 3 0 0 1-5.2 1.4z" fill="#e6fbf7"/>
-                <rect x="18" y="36" width="20" height="4" rx="2" fill="#7fb3ad"/>
-                <path d="M585 34l38-24 38 24v6h-76z" fill="#fff" stroke="#2dd4bf" stroke-width="2" stroke-linejoin="round"/>
-                <path d="M619 40v-12h8v12" fill="#fff" stroke="#7fb3ad" stroke-width="1.6"/>
-                <rect x="633" y="28" width="10" height="9" rx="1" fill="url(#houseGlow)" stroke="#f3c05a" stroke-width="1.4"/>
-                <path d="M700 40c0-8 4-13 9-17 5 4 9 9 9 17" fill="#eaf6f4" stroke="#2dd4bf" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M524 40c-5 0-8-4-8-8s5-8 10-6c1-5 9-6 11-1 6-1 9 4 8 8-1 4-4 7-8 7z" fill="#eef7f5" stroke="#9fc7c1" stroke-width="1.6"/>
-                <path d="M74 34h420" stroke="#d5e8e4" stroke-width="1"/>
+
+                <rect x="0" y="0" width="760" height="60" fill="url(#footerSky)"/>
+                <path d="M0 47C82 33 148 45 218 41c74-4 118-16 196-11 97 6 166-9 346 1v29H0z"
+                      fill="url(#footerHill)" opacity="0.5"/>
+                <path d="M0 53c104-9 180 2 286-3 86-4 150-8 236-2 90 6 162 2 238-1v13H0z"
+                      fill="#7fb5be" opacity="0.4"/>
+                <path d="M44 46c8-9 13-9 20 0M58 46c8-9 13-9 20 0M70 46c8-9 13-9 20 0"
+                      stroke="#6ea3ad" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+                <path d="M486 48c6-7 11-7 17 0M498 48c6-7 11-7 17 0"
+                      stroke="#6ea3ad" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+                <!-- warm window bloom and house -->
+                <ellipse cx="700" cy="35" rx="44" ry="27" fill="url(#warmBloom)" filter="url(#footerSoft)"/>
+                <g filter="url(#footerDrop)">
+                    <polygon points="634,30 682,6 730,30" fill="#d9e9ee" stroke="#7ea7b5"
+                             stroke-width="1.8" stroke-linejoin="round"/>
+                    <rect x="646" y="29" width="70" height="25" rx="1.5" fill="#eef7f9"
+                          stroke="#87adba" stroke-width="1.6"/>
+                    <rect x="704" y="9" width="8" height="14" fill="#b8d2da" stroke="#87adba"
+                          stroke-width="1.2"/>
+                    <rect x="671" y="34" width="18" height="14" rx="1.4" fill="url(#warmWindow)"
+                          stroke="#b8761d" stroke-width="1.2"/>
+                    <path d="M680 34v14M671 41h18" stroke="#8a5a12" stroke-width="1.1" opacity="0.7"/>
+                    <rect x="697" y="37" width="10" height="17" rx="1" fill="#87adba"/>
+                    <circle cx="704" cy="46" r="0.9" fill="#3f5f6b"/>
+                </g>
+
+                <!-- pipe with couplings, entering the house -->
+                <path d="M118 46H520a17 17 0 0 0 17-17V32a17 17 0 0 1 17-17H654"
+                      stroke="#07232e" stroke-width="15" stroke-linecap="round" opacity="0.85"/>
+                <path d="M118 44H520a15 15 0 0 0 15-15V31a15 15 0 0 1 15-15H654"
+                      stroke="url(#footerPipeBody)" stroke-width="11" stroke-linecap="round"/>
+                <path d="M120 39H519a15 15 0 0 0 15-15V29a15 15 0 0 1 15-15H652"
+                      stroke="#d3fff9" stroke-width="2.1" stroke-linecap="round" opacity="0.36"/>
+                <path class="pipe-flow" d="M120 44H520a15 15 0 0 0 15-15V31a15 15 0 0 1 15-15H654"
+                      stroke="#e2fffb" stroke-width="1.5" stroke-linecap="round"
+                      stroke-dasharray="2 11" opacity="0.85"/>
+
+                <g filter="url(#footerDrop)">
+                    <rect x="228" y="34" width="14" height="20" rx="3" fill="url(#footerMetal)"/>
+                    <rect x="231" y="37" width="8" height="14" rx="1.5" fill="#0a2532" opacity="0.24"/>
+                    <circle cx="235" cy="37.8" r="1.1" fill="#f2fdff"/>
+                    <circle cx="235" cy="50.2" r="1.1" fill="#f2fdff"/>
+                </g>
+                <g filter="url(#footerDrop)">
+                    <rect x="462" y="22" width="14" height="20" rx="3" fill="url(#footerMetal)"/>
+                    <rect x="465" y="25" width="8" height="14" rx="1.5" fill="#0a2532" opacity="0.24"/>
+                    <circle cx="469" cy="25.8" r="1.1" fill="#f2fdff"/>
+                    <circle cx="469" cy="38.2" r="1.1" fill="#f2fdff"/>
+                </g>
+                <g filter="url(#footerDrop)">
+                    <rect x="596" y="10" width="14" height="20" rx="3" fill="url(#footerMetal)"/>
+                    <rect x="599" y="13" width="8" height="14" rx="1.5" fill="#0a2532" opacity="0.24"/>
+                    <circle cx="603" cy="13.8" r="1.1" fill="#f2fdff"/>
+                    <circle cx="603" cy="26.2" r="1.1" fill="#f2fdff"/>
+                </g>
+
+                <!-- blue flame at the left end of the pipe -->
+                <g filter="url(#footerSoft)" opacity="0.88">
+                    <path d="M76 43c-9 0-14-6-13-14 1-8 8-11 10-19 2 7 8 9 9 16 3-3 5-6 5-10 5 7 5 13 2 18-2 5-7 9-13 9z"
+                          fill="#1d4ed8" opacity="0.55"/>
+                </g>
+                <path d="M76 43c-11 0-17-7-15-16 1-8 9-12 11-21 2 8 9 10 10 18 3-4 5-7 5-12 6 8 6 15 2 21-2 6-7 10-13 10z"
+                      fill="url(#flameOuter)"/>
+                <path d="M76 41c-7 0-11-4-10-10 1-6 6-8 8-14 1 6 6 7 6 13 2-2 3-4 3-7 3 5 3 10 0 14-1 3-4 4-7 4z"
+                      fill="url(#flameInner)"/>
+                <path d="M75 38c-3 0-5-2-4-5 1-3 3-4 4-7 1 3 3 4 3 7 1 3-1 5-3 5z"
+                      fill="#f0f9ff"/>
+                <rect x="62" y="43" width="30" height="5" rx="2.5" fill="#5f94a2"/>
+                <rect x="67" y="48" width="20" height="3" rx="1.5" fill="#7fb3ad" opacity="0.8"/>
+
+                <g fill="#d5edf1">
+                    <circle cx="744" cy="14" r="1.3"/>
+                    <circle cx="748" cy="20" r="1" opacity="0.7"/>
+                    <circle cx="556" cy="8" r="1.1" opacity="0.6"/>
+                </g>
             </svg>
         </div>
     </main>
@@ -1055,6 +1427,10 @@
             return Number(value).toLocaleString("ru-RU") + " ₽";
         }
 
+        function formatNumber(value) {
+            return Number(value).toLocaleString("ru-RU");
+        }
+
         function parseNonNegativeInt(element, label) {
             const raw = String(element.value).trim();
             if (raw === "") {
@@ -1065,18 +1441,6 @@
                 return {
                     ok: false,
                     error: label + " должна быть целым числом не меньше 0.",
-                };
-            }
-            return { ok: true, value };
-        }
-
-        function parseDiameter(element) {
-            const raw = String(element.value).trim();
-            const value = Number(raw);
-            if (raw === "" || !Number.isInteger(value) || value < 1 || value > 57) {
-                return {
-                    ok: false,
-                    error: "Диаметр должен быть целым числом от 1 до 57 мм.",
                 };
             }
             return { ok: true, value };
@@ -1102,11 +1466,22 @@
             };
         }
 
+        const PIPE_LENGTH_INPUTS = [
+            { key: "up_to_25", elementId: "gsv-length-up-to-25", label: "Длина до Ø25" },
+            { key: "from_32_to_40", elementId: "gsv-length-32-40", label: "Длина Ø32–40" },
+            { key: "diameter_57", elementId: "gsv-length-57", label: "Длина Ø57" },
+        ];
+
         function validateGsv() {
-            const length = parseNonNegativeInt(document.getElementById("gsv-length"), "Длина ГСВ");
-            if (!length.ok) return length;
-            const diameter = parseDiameter(document.getElementById("gsv-diameter"));
-            if (!diameter.ok) return diameter;
+            const pipeLengths = {};
+            for (const input of PIPE_LENGTH_INPUTS) {
+                const parsed = parseNonNegativeInt(
+                    document.getElementById(input.elementId),
+                    input.label,
+                );
+                if (!parsed.ok) return parsed;
+                pipeLengths[input.key] = parsed.value;
+            }
             const holes = parseNonNegativeInt(document.getElementById("gsv-holes"), "Количество отверстий");
             if (!holes.ok) return holes;
             const sakz = parseNonNegativeInt(gsvSakz, "Количество комплектов САКЗ");
@@ -1114,8 +1489,7 @@
             return {
                 ok: true,
                 value: {
-                    length: length.value,
-                    diameter: diameter.value,
+                    pipe_lengths: pipeLengths,
                     drilling_holes: holes.value,
                     sakz_sets: sakz.value,
                     has_panel: gsvPanel.checked,
@@ -1132,7 +1506,9 @@
             excavator_hours: "Часы экскаватора",
             hydraulic_hammer: "Гидромолот",
             has_grpsh: "ГРПШ",
-            diameter: "Диаметр",
+            up_to_25: "Длина до Ø25",
+            from_32_to_40: "Длина Ø32–40",
+            diameter_57: "Длина Ø57",
             drilling_holes: "Количество отверстий",
             sakz_sets: "Количество комплектов САКЗ",
             has_panel: "ПК",
@@ -1150,7 +1526,7 @@
                     ? "ГСН"
                     : "";
             const sectionFields = section === "ГСВ"
-                ? ["length", "diameter", "drilling_holes", "sakz_sets", "has_panel"]
+                ? ["up_to_25", "from_32_to_40", "diameter_57", "drilling_holes", "sakz_sets", "has_panel"]
                 : ["length", "angles", "hdd", "excavator_hours", "hydraulic_hammer", "has_grpsh"];
             if (section && sectionFields.includes(last)) {
                 return label + " (" + section + ")";
@@ -1225,6 +1601,44 @@
             setText("total", result.total);
         }
 
+        const PIPE_BREAKDOWN_ROWS = ["up_to_25", "from_32_to_40", "diameter_57"];
+
+        function setPipeCell(prefix, category, field, value) {
+            const element = document.getElementById(prefix + "pipe-" + category + "-" + field);
+            if (element) {
+                element.textContent = value;
+            }
+        }
+
+        function renderPipeBreakdown(prefix, gsv) {
+            // The metrage, included/billable metres and money all come from the
+            // server response; the client never recomputes them.
+            const totalLength = gsv.total_length;
+            const totalElement = document.getElementById(prefix + "total_length");
+            if (totalElement) {
+                totalElement.textContent = Number.isInteger(totalLength)
+                    ? String(totalLength) + " м"
+                    : "—";
+            }
+            const breakdown = Array.isArray(gsv.pipe_breakdown) ? gsv.pipe_breakdown : [];
+            for (const category of PIPE_BREAKDOWN_ROWS) {
+                const item = breakdown.find((entry) => entry && entry.category === category);
+                if (!item) {
+                    for (const field of ["length", "included", "billable", "rate", "surcharge"]) {
+                        setPipeCell(prefix, category, field, "—");
+                    }
+                    continue;
+                }
+                setPipeCell(prefix, category, "length", String(item.length) + " м");
+                setPipeCell(prefix, category, "included", String(item.included_length) + " м");
+                setPipeCell(prefix, category, "billable", String(item.billable_length) + " м");
+                // The column headers already say "₽"; omitting it per cell keeps
+                // the compact table readable at the 760 px minimum width.
+                setPipeCell(prefix, category, "rate", formatNumber(item.rate));
+                setPipeCell(prefix, category, "surcharge", formatNumber(item.surcharge));
+            }
+        }
+
         function renderGsv(result) {
             setText("gsv-base_price", result.base_price);
             const fields = [
@@ -1238,6 +1652,7 @@
                 setText("gsv-" + field, result[field]);
                 setRowVisibility("gsv-row_" + field, result[field] > 0);
             }
+            renderPipeBreakdown("gsv-", result);
             setText("gsv-subtotal", result.subtotal);
             setText("gsv-vat", result.vat);
             setText("gsv-total", result.total);
@@ -1274,6 +1689,7 @@
                 setText("combined-gsv-" + field, gsv[field]);
                 setRowVisibility("combined-gsv-row_" + field, gsv[field] > 0);
             }
+            renderPipeBreakdown("combined-gsv-", gsv);
             setText("combined-gsv-total", gsv.total);
 
             setText("combined-subtotal", result.subtotal);
