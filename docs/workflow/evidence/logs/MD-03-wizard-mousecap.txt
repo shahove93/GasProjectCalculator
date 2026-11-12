@@ -1,0 +1,10 @@
+Wizard 4915330
+MOUSE CLICK '&╨Ф╨░╨╗╨╡╨╡' at 1878,902
+MOUSE CLICK '&╨Ф╨░╨╗╨╡╨╡' at 1878,902
+MOUSE CLICK '&╨Ф╨░╨╗╨╡╨╡' at 1878,902
+MOUSE CLICK '&╨Ф╨░╨╗╨╡╨╡' at 1878,902
+Exception: C:\Users\user\AppData\Local\Temp\opencode\md-03\md03-wizard-mousecap.ps1:70
+Line |
+  70 |  тАж .Contains('╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤В╨╡╨╗╤М╨╜╤Л╨╡ ╨╖╨░╨┤╨░╤З╨╕')){ throw 'Tasks page not reached' }
+     |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Tasks page not reached

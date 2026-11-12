@@ -1,0 +1,13 @@
+Timestamp: 2026-11-12T11:07:11.3544656+03:00
+HKCU DisplayVersion: 1.0.0
+HKCU InstallLocation: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\
+Start Menu exists: True
+Desktop exists: True
+Start Menu target: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+Desktop target: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+User app PID 13248 alive: True
+Our GasProjectCalculator processes (excluding 13248): 
+Setup processes: 
+Listeners 8123/8124/8160: 
+Isolated install dir exists: True
+Isolated install file count: 0

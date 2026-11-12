@@ -1,0 +1,7 @@
+On tasks page; advancing
+POST CLICK '&╨Ф╨░╨╗╨╡╨╡'
+SCREENSHOT docs\screenshots\md-03-wizard-ready.png (612 x 471)
+POST CLICK '&╨г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╤М'
+Install posted; waiting for finish
+SCREENSHOT docs\screenshots\md-03-wizard-finish.png (612 x 471)
+WIZARD_GO_DONE

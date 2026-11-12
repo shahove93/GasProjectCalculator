@@ -1,0 +1,5 @@
+min detail: {"scrollTop": 161, "clientHeight": 161, "scrollHeight": 322, "tableTop": 212.796875}
+min shot: {'pid': 1684, 'handle': 1640298, 'title': '╨б╨б.╨а╨░╤Б╤З╨╡╤В', 'outer': [760, 520], 'client': [744, 481], 'dpi': 96, 'screenshot': 'D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\md-03-native-min-combined-detail.png'}
+target values: {"active": "result-combined", "title": "╨а╨░╤Б╤З╤С╤В ╤Б╤В╨╛╨╕╨╝╨╛╤Б╤В╨╕ тАФ ╨У╨б╨Э + ╨У╨б╨Т", "gsnTotal": "68┬а250 тВ╜", "gsvTotal": "75┬а600 тВ╜", "combinedTotal": "158┬а550 тВ╜", "gsvMetrage": "8 ╨╝", "combinedGsvMetrage": "8 ╨╝", "gsvBreakdown": {"up_to_25": ["4 ╨╝", "4 ╨╝", "0 ╨╝", "2┬а500", "0"], "from_32_to_40": ["0 ╨╝", "0 ╨╝", "0 ╨╝", "3┬а500", "0"], "diameter_57": ["4 ╨╝", "1 ╨╝", "3 ╨╝", "4┬а000", "12┬а000"]}, "combinedGsvBreakdown":
+target detail: {"scrollTop": 144, "clientHeight": 178, "scrollHeight": 322, "tableTop": 232.4375}
+target shot: {'pid': 1684, 'handle': 1640298, 'title': '╨б╨б.╨а╨░╤Б╤З╨╡╤В', 'outer': [800, 540], 'client': [784, 501], 'dpi': 96, 'screenshot': 'D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\md-03-native-target-combined-detail.png'}

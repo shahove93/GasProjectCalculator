@@ -12,7 +12,7 @@
 ; Build with: powershell -ExecutionPolicy Bypass -File installer\build-installer.ps1
 
 #define AppName "СС.Расчет"
-#define AppVersion "1.0.0"
+#define AppVersion "1.1.0"
 #define AppPublisher "ООО «Северное сияние»"
 #define AppExeName "GasProjectCalculator.exe"
 
@@ -22,7 +22,7 @@ AppName={#AppName}
 AppVersion={#AppVersion}
 AppVerName={#AppName} {#AppVersion}
 AppPublisher={#AppPublisher}
-VersionInfoVersion=1.0.0.0
+VersionInfoVersion=1.1.0.0
 VersionInfoCompany={#AppPublisher}
 VersionInfoDescription={#AppName} — установщик
 DefaultDirName={localappdata}\Programs\GasProjectCalculator

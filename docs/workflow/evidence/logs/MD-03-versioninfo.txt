@@ -1,0 +1,9 @@
+
+FileDescription  : СС.Расчет — установщик                                      
+ProductName      : СС.Расчет                                                   
+CompanyName      : ООО «Северное сияние»                                       
+FileVersion      : 1.1.0.0             
+ProductVersion   : 1.1.0                                             
+OriginalFilename :                                                   
+
+

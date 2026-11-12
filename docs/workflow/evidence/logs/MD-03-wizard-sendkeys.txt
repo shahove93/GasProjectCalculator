@@ -1,0 +1,11 @@
+Wizard 4915330
+After ENTER 1: ╨Т╨░╤Б ╨┐╤А╨╕╨▓╨╡╤В╤Б╤В╨▓╤Г╨╡╤В ╨Ь╨░╤Б╤В╨╡╤А ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╨б╨б.╨а╨░╤Б╤З╨╡╤В
+
+After ENTER 2: ╨Т╤Л╨▒╨╛╤А ╨┐╨░╨┐╨║╨╕ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕
+After ENTER 3: ╨Т╤Л╨▒╨╛╤А ╨┐╨░╨┐╨║╨╕ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕
+After ENTER 4: ╨Т╤Л╨▒╨╛╤А ╨┐╨░╨┐╨║╨╕ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕
+Exception: C:\Users\user\AppData\Local\Temp\opencode\md-03\md03-wizard-sendkeys.ps1:62
+Line |
+  62 |  тАж .Contains('╨┤╨╛╨┐╨╛╨╗╨╜╨╕╤В╨╡╨╗╤М╨╜╤Л╨╡ ╨╖╨░╨┤╨░╤З╨╕')){ throw 'Tasks page not reached' }
+     |                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Tasks page not reached

@@ -1,0 +1,3 @@
+SCREENSHOT docs\screenshots\md-03-wizard-tasks.png (612 x 471)
+SCREENSHOT docs\screenshots\md-03-wizard-ready.png (612 x 471)
+READY_CAPTURE_DONE

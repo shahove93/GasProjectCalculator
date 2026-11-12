@@ -1,0 +1,6 @@
+Timestamp: 2026-11-12T10:31:52.0829651+03:00
+HKCU key: HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+HKCU key existed: True
+reg export exists: True
+Start Menu existed: True
+Desktop existed: True

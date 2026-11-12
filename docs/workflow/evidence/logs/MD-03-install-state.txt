@@ -1,0 +1,9 @@
+Timestamp: 2026-11-12T10:52:45.1105366+03:00
+DisplayName: СС.Расчет
+DisplayVersion: 1.1.0
+InstallLocation: C:\Users\user\AppData\Local\Temp\opencode\md-03\install\
+UninstallString: "C:\Users\user\AppData\Local\Temp\opencode\md-03\install\unins000.exe"
+Start Menu exists: True
+Desktop exists: True
+Iso exe exists: True
+Iso file count: 106

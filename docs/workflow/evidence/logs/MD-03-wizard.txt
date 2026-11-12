@@ -1,0 +1,80 @@
+Installed app PIDs before wizard: 13248
+Launch: & "D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.1.0.exe" /DIR="C:\Users\user\AppData\Local\Temp\opencode\md-03\install"
+Launched installer PID=5316
+Wizard handle=4130520 title='╨г╤Б╤В╨░╨╜╨╛╨▓╨║╨░ тАФ ╨б╨б.╨а╨░╤Б╤З╨╡╤В'
+SCREENSHOT docs\screenshots\md-03-wizard-welcome.png (612 x 471)
+--- welcome children ---
+class='TNewStaticText' text='╨Т╨░╤Б ╨┐╤А╨╕╨▓╨╡╤В╤Б╤В╨▓╤Г╨╡╤В ╨Ь╨░╤Б╤В╨╡╤А ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╨б╨б.╨а╨░╤Б╤З╨╡╤В
+'
+class='TNewStaticText' text='╨Я╤А╨╛╨│╤А╨░╨╝╨╝╨░ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В ╨б╨б.╨а╨░╤Б╤З╨╡╤В 1.1.0 ╨╜╨░ ╨▓╨░╤И ╨║╨╛╨╝╨┐╤М╤О╤В╨╡╤А.
+
+╨а╨╡╨║╨╛╨╝╨╡╨╜╨┤╤Г╨╡╤В╤Б╤П ╨╖╨░╨║╤А╤Л╤В╤М ╨▓╤Б╨╡ ╨┐╤А╨╛╤З╨╕╨╡ ╨┐╤А╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤П ╨┐╨╡╤А╨╡╨┤ ╤В╨╡╨╝, ╨║╨░╨║ ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М.
+
+╨Э╨░╨╢╨╝╨╕╤В╨╡ ┬л╨Ф╨░╨╗╨╡╨╡┬╗, ╤З╤В╨╛╨▒╤Л ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М, ╨╕╨╗╨╕ ┬л╨Ю╤В╨╝╨╡╨╜╨░┬╗, ╤З╤В╨╛╨▒╤Л ╨▓╤Л╨╣╤В╨╕ ╨╕╨╖ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╤Л ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕.'
+class='TNewCheckListBox' text=''
+class='TEdit' text='DirEdit'
+class='TNewButton' text='&╨Ф╨░╨╗╨╡╨╡'
+class='TNewButton' text='╨Ю╤В╨╝╨╡╨╜╨░'
+SENT Enter
+SCREENSHOT docs\screenshots\md-03-wizard-dir.png (612 x 471)
+--- directory children ---
+class='TNewStaticText' text='╨Т╨░╤Б ╨┐╤А╨╕╨▓╨╡╤В╤Б╤В╨▓╤Г╨╡╤В ╨Ь╨░╤Б╤В╨╡╤А ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╨б╨б.╨а╨░╤Б╤З╨╡╤В
+'
+class='TNewStaticText' text='╨Я╤А╨╛╨│╤А╨░╨╝╨╝╨░ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В ╨б╨б.╨а╨░╤Б╤З╨╡╤В 1.1.0 ╨╜╨░ ╨▓╨░╤И ╨║╨╛╨╝╨┐╤М╤О╤В╨╡╤А.
+
+╨а╨╡╨║╨╛╨╝╨╡╨╜╨┤╤Г╨╡╤В╤Б╤П ╨╖╨░╨║╤А╤Л╤В╤М ╨▓╤Б╨╡ ╨┐╤А╨╛╤З╨╕╨╡ ╨┐╤А╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤П ╨┐╨╡╤А╨╡╨┤ ╤В╨╡╨╝, ╨║╨░╨║ ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М.
+
+╨Э╨░╨╢╨╝╨╕╤В╨╡ ┬л╨Ф╨░╨╗╨╡╨╡┬╗, ╤З╤В╨╛╨▒╤Л ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М, ╨╕╨╗╨╕ ┬л╨Ю╤В╨╝╨╡╨╜╨░┬╗, ╤З╤В╨╛╨▒╤Л ╨▓╤Л╨╣╤В╨╕ ╨╕╨╖ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╤Л ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕.'
+class='TNewCheckListBox' text=''
+class='TEdit' text='DirEdit'
+class='TNewButton' text='&╨Ф╨░╨╗╨╡╨╡'
+class='TNewButton' text='╨Ю╤В╨╝╨╡╨╜╨░'
+SENT Enter
+SCREENSHOT docs\screenshots\md-03-wizard-tasks.png (612 x 471)
+--- tasks children ---
+class='TNewStaticText' text='╨Т╤Л╨▒╨╛╤А ╨┐╨░╨┐╨║╨╕ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕'
+class='TNewStaticText' text='╨Т ╨║╨░╨║╤Г╤О ╨┐╨░╨┐╨║╤Г ╨▓╤Л ╤Е╨╛╤В╨╕╤В╨╡ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╤М ╨б╨б.╨а╨░╤Б╤З╨╡╤В?'
+class='TNewStaticText' text='╨Я╤А╨╛╨│╤А╨░╨╝╨╝╨░ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В ╨б╨б.╨а╨░╤Б╤З╨╡╤В ╨▓ ╤Б╨╗╨╡╨┤╤Г╤О╤Й╤Г╤О ╨┐╨░╨┐╨║╤Г.'
+class='TNewStaticText' text='╨Э╨░╨╢╨╝╨╕╤В╨╡ ┬л╨Ф╨░╨╗╨╡╨╡┬╗, ╤З╤В╨╛╨▒╤Л ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М. ╨Х╤Б╨╗╨╕ ╨▓╤Л ╤Е╨╛╤В╨╕╤В╨╡ ╨▓╤Л╨▒╤А╨░╤В╤М ╨┤╤А╤Г╨│╤Г╤О ╨┐╨░╨┐╨║╤Г, ╨╜╨░╨╢╨╝╨╕╤В╨╡ ┬л╨Ю╨▒╨╖╨╛╤А┬╗.'
+class='TEdit' text='DirEdit'
+class='TNewButton' text='&╨Ю╨▒╨╖╨╛╤А...'
+class='TNewStaticText' text='╨в╤А╨╡╨▒╤Г╨╡╤В╤Б╤П ╨║╨░╨║ ╨╝╨╕╨╜╨╕╨╝╤Г╨╝ 35,7 ╨Ь╨▒ ╤Б╨▓╨╛╨▒╨╛╨┤╨╜╨╛╨│╨╛ ╨┤╨╕╤Б╨║╨╛╨▓╨╛╨│╨╛ ╨┐╤А╨╛╤Б╤В╤А╨░╨╜╤Б╤В╨▓╨░.'
+class='TNewCheckListBox' text=''
+class='TNewStaticText' text='╨Т╨░╤Б ╨┐╤А╨╕╨▓╨╡╤В╤Б╤В╨▓╤Г╨╡╤В ╨Ь╨░╤Б╤В╨╡╤А ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╨б╨б.╨а╨░╤Б╤З╨╡╤В
+'
+class='TNewStaticText' text='╨Я╤А╨╛╨│╤А╨░╨╝╨╝╨░ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В ╨б╨б.╨а╨░╤Б╤З╨╡╤В 1.1.0 ╨╜╨░ ╨▓╨░╤И ╨║╨╛╨╝╨┐╤М╤О╤В╨╡╤А.
+
+╨а╨╡╨║╨╛╨╝╨╡╨╜╨┤╤Г╨╡╤В╤Б╤П ╨╖╨░╨║╤А╤Л╤В╤М ╨▓╤Б╨╡ ╨┐╤А╨╛╤З╨╕╨╡ ╨┐╤А╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤П ╨┐╨╡╤А╨╡╨┤ ╤В╨╡╨╝, ╨║╨░╨║ ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М.
+
+╨Э╨░╨╢╨╝╨╕╤В╨╡ ┬л╨Ф╨░╨╗╨╡╨╡┬╗, ╤З╤В╨╛╨▒╤Л ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М, ╨╕╨╗╨╕ ┬л╨Ю╤В╨╝╨╡╨╜╨░┬╗, ╤З╤В╨╛╨▒╤Л ╨▓╤Л╨╣╤В╨╕ ╨╕╨╖ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╤Л ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕.'
+class='TNewButton' text='&╨Э╨░╨╖╨░╨┤'
+class='TNewButton' text='&╨Ф╨░╨╗╨╡╨╡'
+class='TNewButton' text='╨Ю╤В╨╝╨╡╨╜╨░'
+SENT Enter
+SCREENSHOT docs\screenshots\md-03-wizard-ready.png (612 x 471)
+--- ready children ---
+class='TNewStaticText' text='╨Т╤Л╨▒╨╛╤А ╨┐╨░╨┐╨║╨╕ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕'
+class='TNewStaticText' text='╨Т ╨║╨░╨║╤Г╤О ╨┐╨░╨┐╨║╤Г ╨▓╤Л ╤Е╨╛╤В╨╕╤В╨╡ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В╤М ╨б╨б.╨а╨░╤Б╤З╨╡╤В?'
+class='TNewStaticText' text='╨Я╤А╨╛╨│╤А╨░╨╝╨╝╨░ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В ╨б╨б.╨а╨░╤Б╤З╨╡╤В ╨▓ ╤Б╨╗╨╡╨┤╤Г╤О╤Й╤Г╤О ╨┐╨░╨┐╨║╤Г.'
+class='TNewStaticText' text='╨Э╨░╨╢╨╝╨╕╤В╨╡ ┬л╨Ф╨░╨╗╨╡╨╡┬╗, ╤З╤В╨╛╨▒╤Л ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М. ╨Х╤Б╨╗╨╕ ╨▓╤Л ╤Е╨╛╤В╨╕╤В╨╡ ╨▓╤Л╨▒╤А╨░╤В╤М ╨┤╤А╤Г╨│╤Г╤О ╨┐╨░╨┐╨║╤Г, ╨╜╨░╨╢╨╝╨╕╤В╨╡ ┬л╨Ю╨▒╨╖╨╛╤А┬╗.'
+class='TEdit' text='DirEdit'
+class='TNewButton' text='&╨Ю╨▒╨╖╨╛╤А...'
+class='TNewStaticText' text='╨в╤А╨╡╨▒╤Г╨╡╤В╤Б╤П ╨║╨░╨║ ╨╝╨╕╨╜╨╕╨╝╤Г╨╝ 35,7 ╨Ь╨▒ ╤Б╨▓╨╛╨▒╨╛╨┤╨╜╨╛╨│╨╛ ╨┤╨╕╤Б╨║╨╛╨▓╨╛╨│╨╛ ╨┐╤А╨╛╤Б╤В╤А╨░╨╜╤Б╤В╨▓╨░.'
+class='TNewCheckListBox' text=''
+class='TNewStaticText' text='╨Т╨░╤Б ╨┐╤А╨╕╨▓╨╡╤В╤Б╤В╨▓╤Г╨╡╤В ╨Ь╨░╤Б╤В╨╡╤А ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕ ╨б╨б.╨а╨░╤Б╤З╨╡╤В
+'
+class='TNewStaticText' text='╨Я╤А╨╛╨│╤А╨░╨╝╨╝╨░ ╤Г╤Б╤В╨░╨╜╨╛╨▓╨╕╤В ╨б╨б.╨а╨░╤Б╤З╨╡╤В 1.1.0 ╨╜╨░ ╨▓╨░╤И ╨║╨╛╨╝╨┐╤М╤О╤В╨╡╤А.
+
+╨а╨╡╨║╨╛╨╝╨╡╨╜╨┤╤Г╨╡╤В╤Б╤П ╨╖╨░╨║╤А╤Л╤В╤М ╨▓╤Б╨╡ ╨┐╤А╨╛╤З╨╕╨╡ ╨┐╤А╨╕╨╗╨╛╨╢╨╡╨╜╨╕╤П ╨┐╨╡╤А╨╡╨┤ ╤В╨╡╨╝, ╨║╨░╨║ ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М.
+
+╨Э╨░╨╢╨╝╨╕╤В╨╡ ┬л╨Ф╨░╨╗╨╡╨╡┬╗, ╤З╤В╨╛╨▒╤Л ╨┐╤А╨╛╨┤╨╛╨╗╨╢╨╕╤В╤М, ╨╕╨╗╨╕ ┬л╨Ю╤В╨╝╨╡╨╜╨░┬╗, ╤З╤В╨╛╨▒╤Л ╨▓╤Л╨╣╤В╨╕ ╨╕╨╖ ╨┐╤А╨╛╨│╤А╨░╨╝╨╝╤Л ╤Г╤Б╤В╨░╨╜╨╛╨▓╨║╨╕.'
+class='TNewButton' text='&╨Э╨░╨╖╨░╨┤'
+class='TNewButton' text='&╨Ф╨░╨╗╨╡╨╡'
+class='TNewButton' text='╨Ю╤В╨╝╨╡╨╜╨░'
+SENT Enter
+Pressed Install; waiting for finish page...
+Exception: C:\Users\user\AppData\Local\Temp\opencode\md-03\md03-wizard.ps1:137
+Line |
+ 137 |  тАж not $finishSeen) { throw "Finish page was not detected within 240s" }
+     |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Finish page was not detected within 240s

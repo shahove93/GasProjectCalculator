@@ -1,0 +1,5 @@
+Wizard handle=2361164
+SCREENSHOT docs\screenshots\md-03-wizard-welcome.png (612 x 471)
+SCREENSHOT docs\screenshots\md-03-wizard-dir.png (612 x 471)
+Confirm cancel: Yes
+WIZARD_CAPTURE_DONE

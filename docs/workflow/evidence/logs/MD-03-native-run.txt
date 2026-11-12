@@ -1,0 +1,34 @@
+WINDOW md-03-native-target-window.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-target-gsn-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-target-gsn.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/gsn] total=68┬а250 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WINDOW md-03-native-target-gsv-D1-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-target-gsv-D1.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/D1] total=75┬а600 тВ╜ metrage=8 ╨╝ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW md-03-native-target-gsv-D2-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-target-gsv-D2.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/D2] total=79┬а275 тВ╜ metrage=9 ╨╝ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW md-03-native-target-gsv-D3-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-target-gsv-D3.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/D3] total=71┬а400 тВ╜ metrage=7 ╨╝ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW md-03-native-target-gsv-D4-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-target-gsv-D4.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/D4] total=63┬а000 тВ╜ metrage=5 ╨╝ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW md-03-native-target-gsv-D5-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-target-gsv-D5.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/D5] total=70┬а875 тВ╜ metrage=8 ╨╝ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW md-03-native-target-combined-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-target-combined.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/combined] total=158┬а550 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WINDOW md-03-native-422.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW md-03-native-min-window.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW md-03-native-min-gsn-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW md-03-native-min-gsn.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/gsn] total=68┬а250 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WINDOW md-03-native-min-gsv-D1-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW md-03-native-min-gsv-D1.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/D1] total=75┬а600 тВ╜ metrage=8 ╨╝ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW md-03-native-min-combined-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW md-03-native-min-combined.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/combined] total=158┬а550 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WROTE D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\MD-03-native.json

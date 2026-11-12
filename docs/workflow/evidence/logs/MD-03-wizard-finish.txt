@@ -1,0 +1,7 @@
+Dismiss modal '╨Я╨░╨┐╨║╨░ ╤Б╤Г╤Й╨╡╤Б╤В╨▓╤Г╨╡╤В' handle=9766632
+Waiting for install finish
+Exception: C:\Users\user\AppData\Local\Temp\opencode\md-03\md03-wizard-finish.ps1:61
+Line |
+  61 |  if(-not $finish){ throw 'Finish page not detected' }
+     |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Finish page not detected

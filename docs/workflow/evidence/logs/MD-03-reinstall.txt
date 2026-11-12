@@ -1,0 +1,8 @@
+Command: & "D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.1.0.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Users\user\AppData\Local\Temp\opencode\md-03\install" /TASKS="desktopicon" /LOG="C:\Users\user\AppData\Local\Temp\opencode\md-03\reinstall.log"
+Exit code: 0
+DisplayVersion: 1.1.0
+InstallLocation: C:\Users\user\AppData\Local\Temp\opencode\md-03\install\
+StartMenu target: C:\Users\user\AppData\Local\Temp\opencode\md-03\install\GasProjectCalculator.exe
+Desktop target: C:\Users\user\AppData\Local\Temp\opencode\md-03\install\GasProjectCalculator.exe
+Installed exe SHA256: F374EEED2535BBDDD024AEBFA8B562642A010F28804C7BEB4A0755C53F459690
+Reinstall log exists: True

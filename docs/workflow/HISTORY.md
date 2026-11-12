@@ -699,3 +699,26 @@ combined 151000/7550/158550, 422/switch, mobile 390×844) и реальное na
 обязательные элементы различимы — backlog без correction cycle. Счётчики
 MD-02: full reviews 1, failed 0, Codex calls 1/4; worker released. Scoped
 commit координатора; следующий TASK — MD-03.
+
+## 2026-11-12 — MD-03 PASS (R2): installer 1.1.0 и установленная программа
+
+MD-03 implementer `ctx_fc422a90019f` (OpenCode Flash, baseline `fb080aa`)
+изменил только `installer/GasProjectCalculator.iss` (AppVersion `1.1.0`,
+VersionInfoVersion `1.1.0.0`, AppId сохранён), пересобрал packaged app и
+локальный installer 1.1.0. Артефакт
+`installer/Output/GasProjectCalculator-Setup-1.1.0.exe`, 15 293 993 B,
+SHA256 `3BFFFFB2F7C7F73185B48B5AC5E5CDE06BF4197A1A3D4D0F66E763905AC5B710`;
+packaged/installed exe `F374EEED…459690`. Pre/post/final hashes подтвердили
+неизменность опубликованного 1.0.0 (`71232EE4…A7E08`) и обоих legacy
+(`04388410…949A`, `2973278F…2428F`). Изолированная установка в temp с
+backup/restore HKCU и ярлыков; пользовательская установка 106 файлов/
+37 372 847 B/PID 13248 не тронута. Проверены русский wizard/optional Desktop,
+reinstall/uninstall с сохранением user files, Python-free launch, splash,
+loopback 127.0.0.1, занятый 8123→8124, закрытие без backend/children, mixed
+75600/79275/71400/63000/70875, combined 158550, legacy/422/ГСН/САКЗ/ПК/район/
+НДС, native 800×540/min 760×520 с видимыми action/total. Codex R2
+`ctx_17fecbd4f9d8` (`gpt-6.1-sol` high) вернул **PASS** без findings; B1–B12
+подтверждены, повторных build/install/runtime/hash не было (reuse rule),
+полный suite остаётся в MD-05. Счётчики MD-03: full reviews 1, failed 0,
+Codex calls 1/4; worker released. Scoped commit координатора; следующий
+TASK — MD-04.

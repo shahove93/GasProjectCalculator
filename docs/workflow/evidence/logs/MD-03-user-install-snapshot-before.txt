@@ -1,0 +1,6 @@
+Timestamp: 2026-11-12T10:31:43.5830479+03:00
+User install dir: C:\Users\user\AppData\Local\Programs\GasProjectCalculator
+File count: 106
+Total bytes: 37372847
+Exe SHA256: 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3
+Exe LastWriteTime: 2026-11-12T00:32:52.0000000+03:00

@@ -1,0 +1,13 @@
+{
+  "File": "installer/Output/GasProjectCalculator-Setup-1.1.0.exe",
+  "FileDescription": "СС.Расчет — установщик                                      ",
+  "ProductName": "СС.Расчет                                                   ",
+  "CompanyName": "ООО «Северное сияние»                                       ",
+  "FileVersion": "1.1.0.0             ",
+  "ProductVersion": "1.1.0                                             ",
+  "OriginalFilename": "                                                  ",
+  "AppId": "{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}",
+  "AppVersion": "1.1.0",
+  "AppVerName": "СС.Расчет 1.1.0",
+  "OutputBaseFilename": "GasProjectCalculator-Setup-1.1.0"
+}

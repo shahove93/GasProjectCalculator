@@ -1,0 +1,4 @@
+Timestamp: 2026-11-12T11:06:27.0460215+03:00
+Authenticode status: NotSigned
+Signer: 
+Artifact: installer/Output/GasProjectCalculator-Setup-1.1.0.exe

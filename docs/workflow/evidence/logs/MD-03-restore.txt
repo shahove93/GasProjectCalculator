@@ -1,0 +1,9 @@
+Timestamp: 2026-11-12T10:57:17.7151311+03:00
+Restored HKCU DisplayName: СС.Расчет
+Restored HKCU DisplayVersion: 1.0.0
+Restored HKCU InstallLocation: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\
+Restored HKCU UninstallString: "C:\Users\user\AppData\Local\Programs\GasProjectCalculator\unins000.exe"
+Restored Start Menu target: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+Restored Desktop target: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+Start Menu exists: True
+Desktop exists: True

@@ -1,0 +1,5 @@
+Timestamp: 2026-11-12T10:56:52.2254811+03:00
+Process alive after close: False
+Port 8160 listeners after close: none
+Remaining child processes: 0
+Remaining processes named GasProjectCalculator (not user PID 13248): 
