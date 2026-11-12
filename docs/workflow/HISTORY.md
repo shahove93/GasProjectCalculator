@@ -541,3 +541,51 @@ screenshot-only overflowX. Push/merge/deploy/release/signing не выполня
 `docs/workflow/reviews/FINAL-STAGE-REDESIGN-review.md`; прежние
 FINAL-REPORT.md (ГСВ) и FINAL-STAGE-review.md (Windows installer) сохранены.
 Все Orca workers released; STATE COMPLETE; :8000 PID12888 не тронут.
+
+## 2026-11-12 — корректирующий этап компактности: учёт, frozen checklists, review route
+
+Пользователь прямо запросил исправление несходства с выбранным макетом:
+«Оно совсем не похоже на то, что мы хотели с тобой», «расстояние между строчками
+большое», «Надо, чтобы калькулятор был более компактный… меньше в два раза
+примерно». Разрешение на корректирующую реализацию, независимую проверку и
+локальную пересборку installer зафиксировано в APPROVALS; повторный запрос на
+старт не нужен. Архитектурное уточнение 800×540/min 760×520 и последовательность
+внесены в ARCHITECTURE/ROADMAP; полный brief —
+`docs/workflow/COMPACT-CORRECTION-BRIEF.md`. Ветка
+`feature/ss-calculator-redesign`, настоящий HEAD и baseline
+`4b0be033b0ba5598c82062394d7fb69064c73fde` совпали. Текущие проектные правки
+сохранены; продуктовый код пишет только отдельный реальный Orca
+OpenCode/Flash worker.
+
+Разобрано противоречие R1-4: отчёт RD-01 утверждал видимость кнопки и итога в
+viewport при 1050×740/860×620, но реальные снимки это опровергают.
+`rd-01-1050x740-initial.png` показывает лишь верх формы, а
+`rd-03-installed-main.png` — установленное окно без кнопки/итога; снимок
+`rd-01-860x620-layout.png` является full-page capture, а не viewport. Прежний
+вывод опирался на screenshot-workaround/overflowX, что прямо запрещено новым
+уточнением. Находка сохранена как **RD-01-F4 (MAJOR, ошибочное утверждение
+приёмки R1-4)**; старый критерий 1050×740 заменён новым утверждённым ориентиром
+800×540, поэтому это не скрытая повторная приёмка прежнего критерия и не
+дополнительный полный review RD-01. Остаток RD-01 (1 full review) сохраняется
+в истории и на новую scope-работу не переносится. Третий full review RD-03/A1
+не выполняется и не маскируется новым именем: RD-03/A1 уже использовал оба
+полных review (2 full/1 FAIL/2 Codex).
+
+Учёт прежних счётчиков не сброшен: RD-01 1 full/0 FAIL/0 Codex, RD-02 1/0/1,
+RD-03 2/1/2, RD-04 и FINAL R0 — 0 Codex, stage R3 — 1. Новый пользовательский
+scope образует отдельные логические TASK с явным маршрутом:
+RD-05 (R1, компактный UI/geometry; A1/C1; резерв 1 полного review независимого
+OpenCode Pro, Codex 0), RD-06 (R2, пересборка package/installer и проверка
+реальной программы; A1/C1; резерв 1 вызова Codex `gpt-6.1-sol` high из лимита
+4/3M), RD-07 (R0, один полный suite на финальном интегрированном состоянии;
+Codex 0). Итоговая Codex R3 stage acceptance — резерв 1 вызова `gpt-6-astra`
+high. Frozen checklists: `docs/workflow/tasks/RD-05.md`,
+`RD-06.md`, `RD-07.md`; scope и allowlist зафиксированы до dispatch.
+
+Ограничения: сохранять вычисления/API/пользовательские данные; не трогать `:8000`
+PID12888, окно/сессию 4392714 и посторонние процессы; отдельный test instance и
+свободный порт; прежний installer — в legacy; scoped local commits только после
+routed PASS; push/merge/deploy/release/signing/глобальные конфиги запрещены;
+при provider exhaustion остановить цепочку без reset/account/model обхода.
+Следующий владелец — координатор: scoped docs-commit корректирующего этапа,
+затем dispatch RD-05 implementer.
