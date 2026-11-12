@@ -771,3 +771,12 @@ FINALMD-N1 MINOR (устаревшие формулировки STATE, счёт�
 STATE COMPLETE; локальный installer 1.1.0 15 293 993 B SHA256
 `3BFFFFB2…B710` передан, release v1.0.0/legacy не изменены. Push/merge/deploy/
 release/signing не выполнялись; все Orca worker released.
+
+## 2026-11-12 — разрешён выпуск v1.1.0
+
+Подтверждена публикация проверенной1.1.0. Подготовлены README с публичным
+скачиванием, release notes и SHA256SUMS, локальный installer hash совпал с
+финальным report; remote main9dea625 предок текущего HEAD. Release1.0.0
+существует; новый выпуск будет отдельным, старые assets не трогаются.
+Отправка ссылки отменена последующим уточнением пользователя. Письмо не
+отправлялось. Публикация R0, product files не менялись.
