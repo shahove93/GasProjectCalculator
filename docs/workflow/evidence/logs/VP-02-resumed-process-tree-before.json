@@ -1,0 +1,44 @@
+[
+  {
+    "ProcessId": 2236,
+    "ParentProcessId": 22832,
+    "ExecutablePath": "C:\\Users\\user\\AppData\\Local\\Temp\\opencode\\vp-02-isolated\\install\\GasProjectCalculator.exe",
+    "CommandLine": "\"C:\\Users\\user\\AppData\\Local\\Temp\\opencode\\vp-02-isolated\\install\\GasProjectCalculator.exe\" --preferred-port 65531 --port-file C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/port.json --log-file D:/Antigravity/GasProjectCalculator/docs/workflow/evidence/logs/VP-02-resumed-native.log --eval-bridge C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/bridge.json"
+  },
+  {
+    "ProcessId": 10992,
+    "ParentProcessId": 2236,
+    "ExecutablePath": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe",
+    "CommandLine": "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe\" --embedded-browser-webview=1 --webview-exe-name=GasProjectCalculator.exe --user-data-dir=\"C:\\Users\\user\\AppData\\Local\\Temp\\tmpi8753ssn\\EBWebView\" --noerrdialogs --embedded-browser-webview-dpi-awareness=1 --allow-file-access-from-files --disable-features=ElasticOverscroll --mojo-named-platform-channel-pipe=2236.14280.2434713038003978492 /pfhostedapp:56c808c16fde688686e542e79d9bed1fe0884c2e"
+  },
+  {
+    "ProcessId": 23204,
+    "ParentProcessId": 10992,
+    "ExecutablePath": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe",
+    "CommandLine": "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe\" --type=crashpad-handler --user-data-dir=C:\\Users\\user\\AppData\\Local\\Temp\\tmpi8753ssn\\EBWebView /prefetch:4 /pfhostedapp:56c808c16fde688686e542e79d9bed1fe0884c2e --monitor-self-annotation=ptype=crashpad-handler --user-stream-region=316,65568 --database=C:\\Users\\user\\AppData\\Local\\Temp\\tmpi8753ssn\\EBWebView\\Crashpad --annotation=IsOfficialBuild=1 --annotation=channel= --annotation=chromium-version=157.0.8103.39 \"--annotation=exe=C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe\" --annotation=plat=Win64 \"--annotation=prod=Edge WebView2\" --annotation=ver=157.0.4341.46 --initial-client-data=0x180,0x184,0x188,0x15c,0x190,0x7ffda160b3a0,0x7ffda160b3b0,0x7ffda160b3c0"
+  },
+  {
+    "ProcessId": 23396,
+    "ParentProcessId": 10992,
+    "ExecutablePath": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe",
+    "CommandLine": "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe\" --type=gpu-process --gpu-recent-crash-count=0 --noerrdialogs --user-data-dir=\"C:\\Users\\user\\AppData\\Local\\Temp\\tmpi8753ssn\\EBWebView\" --webview-exe-name=GasProjectCalculator.exe --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=1 --gpu-preferences=WAAAAAAAAABgAAACAAAAAAAAAAAAAGAAQAAAAAAAAAADAAAAAAAAADgAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAoAAAAAAAAAAgAAAAAAAAAEAAAAAIAAAABAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --startup-read-main-dll --metrics-shmem-handle=1880,i,2923362599993966117,12612573309089948537,262144 --field-trial-handle=1968,i,13031931413658547273,14383995044314997473,262144 --disable-features=ElasticOverscroll --variations-seed-version --pseudonymization-salt-handle=1972,i,4642864421445103343,3321557550231055276,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=1964 /prefetch:2 /pfhostedapp:56c808c16fde688686e542e79d9bed1fe0884c2e"
+  },
+  {
+    "ProcessId": 28052,
+    "ParentProcessId": 10992,
+    "ExecutablePath": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe",
+    "CommandLine": "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe\" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=ru --service-sandbox-type=none --noerrdialogs --user-data-dir=\"C:\\Users\\user\\AppData\\Local\\Temp\\tmpi8753ssn\\EBWebView\" --webview-exe-name=GasProjectCalculator.exe --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=1 --startup-read-main-dll --metrics-shmem-handle=2244,i,7023711734810931183,5556727846717304929,524288 --field-trial-handle=1968,i,13031931413658547273,14383995044314997473,262144 --disable-features=ElasticOverscroll --variations-seed-version --pseudonymization-salt-handle=1972,i,4642864421445103343,3321557550231055276,4 --trace-process-track-uuid=3190708989122997041 --mojo-platform-channel-handle=2252 /prefetch:11 /pfhostedapp:56c808c16fde688686e542e79d9bed1fe0884c2e"
+  },
+  {
+    "ProcessId": 19188,
+    "ParentProcessId": 10992,
+    "ExecutablePath": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe",
+    "CommandLine": "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe\" --type=utility --utility-sub-type=storage.mojom.StorageService --lang=ru --service-sandbox-type=service --noerrdialogs --user-data-dir=\"C:\\Users\\user\\AppData\\Local\\Temp\\tmpi8753ssn\\EBWebView\" --webview-exe-name=GasProjectCalculator.exe --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=1 --startup-read-main-dll --metrics-shmem-handle=2624,i,7148523652103784863,4307449581407115508,524288 --field-trial-handle=1968,i,13031931413658547273,14383995044314997473,262144 --disable-features=ElasticOverscroll --variations-seed-version --pseudonymization-salt-handle=1972,i,4642864421445103343,3321557550231055276,4 --trace-process-track-uuid=3190708990060038890 --mojo-platform-channel-handle=2636 /prefetch:13 /pfhostedapp:56c808c16fde688686e542e79d9bed1fe0884c2e"
+  },
+  {
+    "ProcessId": 23720,
+    "ParentProcessId": 10992,
+    "ExecutablePath": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe",
+    "CommandLine": "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe\" --type=renderer --noerrdialogs --user-data-dir=\"C:\\Users\\user\\AppData\\Local\\Temp\\tmpi8753ssn\\EBWebView\" --webview-exe-name=GasProjectCalculator.exe --embedded-browser-webview=1 --embedded-browser-webview-dpi-awareness=1 --allow-file-access-from-files --video-capture-use-gpu-memory-buffer --lang=ru --device-scale-factor=1 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=6 --js-flags=--ms-user-locale=ru_RU --skip-read-main-dll --launch-time-ticks=103038328485 --metrics-shmem-handle=4536,i,4977994947165569251,17420398599647046003,1048576 --field-trial-handle=1968,i,13031931413658547273,14383995044314997473,262144 --disable-features=ElasticOverscroll --variations-seed-version --pseudonymization-salt-handle=1972,i,4642864421445103343,3321557550231055276,4 --trace-process-track-uuid=3190708991934122588 --mojo-platform-channel-handle=4540 /pfhostedapp:56c808c16fde688686e542e79d9bed1fe0884c2e /prefetch:1"
+  }
+]

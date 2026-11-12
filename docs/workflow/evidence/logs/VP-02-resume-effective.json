@@ -1,0 +1,213 @@
+{
+  "id": "d0eab75f-0d83-4796-add0-3309713e00ad",
+  "ok": true,
+  "result": {
+    "dispatch": {
+      "id": "ctx_988a8c02d5c3",
+      "runId": "run_51b48d1d96cc",
+      "taskId": "task_150bb380db2c",
+      "task_id": "task_150bb380db2c",
+      "contractVersion": 1,
+      "assigneeHandle": "term_879889ea-ac9e-48ad-bc89-978a67a20e10",
+      "assigneePaneKey": "f9ffc241-0241-4b63-8887-a45025f095cb:1e9ca135-93e0-4219-a412-70b997c07070",
+      "processIncarnation": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator@@828c2d23:15487d00-f56d-4da8-9f24-8e20ba3a2570",
+      "capabilityRevokedAt": null,
+      "retryOfDispatchId": null,
+      "creatorDispatchId": "ctx_ed7166e32fdc",
+      "followUpOf": null,
+      "hostScope": {
+        "kind": "local",
+        "hostId": "local"
+      },
+      "status": "dispatched",
+      "failureCount": 0,
+      "lastFailure": null,
+      "terminationReason": null,
+      "depth": 2,
+      "dispatchedAt": "2026-11-12 13:37:07",
+      "completedAt": null,
+      "createdAt": "2026-11-12 13:37:07",
+      "lastHeartbeatAt": null
+    },
+    "worker": {
+      "dispatchId": "ctx_988a8c02d5c3",
+      "runtimeEpoch": "f38be7dc-17d3-494f-bcf0-b78549dfca24",
+      "state": "ready",
+      "stage": "input_accepted",
+      "worktreeId": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator",
+      "agentTerminalHandle": "term_879889ea-ac9e-48ad-bc89-978a67a20e10",
+      "setupState": "not_applicable",
+      "effects": [
+        {
+          "kind": "worktree",
+          "action": "reused",
+          "id": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator"
+        },
+        {
+          "kind": "setup",
+          "action": "not_applicable",
+          "state": "not_applicable"
+        },
+        {
+          "kind": "terminal",
+          "role": "agent",
+          "action": "created",
+          "id": "term_879889ea-ac9e-48ad-bc89-978a67a20e10",
+          "surface": "visible"
+        },
+        {
+          "kind": "dispatch_input",
+          "role": "agent",
+          "id": "term_879889ea-ac9e-48ad-bc89-978a67a20e10",
+          "state": "accepted"
+        }
+      ],
+      "residualResources": [
+        {
+          "kind": "terminal",
+          "role": "agent",
+          "action": "created",
+          "id": "term_879889ea-ac9e-48ad-bc89-978a67a20e10",
+          "surface": "visible"
+        }
+      ],
+      "startOptions": {
+        "worktree": "current",
+        "mode": {
+          "mode": "terminal",
+          "preferred": "terminal",
+          "reason": "user_default",
+          "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+        },
+        "resolvedWorktreeId": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator",
+        "name": null,
+        "repo": null,
+        "baseBranch": null,
+        "terminal": null,
+        "agent": "codex",
+        "launch": {
+          "requested": {
+            "agent": "codex",
+            "model": "gpt-6-astra",
+            "effort": "high"
+          },
+          "effective": {
+            "agent": "codex",
+            "model": "gpt-6-astra",
+            "effort": "high"
+          }
+        },
+        "timeoutMs": 60000,
+        "setup": "not_applicable",
+        "setupSource": "existing_worktree"
+      },
+      "lastError": null,
+      "createdAt": "2026-11-12 13:37:07",
+      "updatedAt": "2026-11-12 13:37:09"
+    },
+    "projection": {
+      "id": "ctx_988a8c02d5c3",
+      "dispatchId": "ctx_988a8c02d5c3",
+      "taskId": "task_150bb380db2c",
+      "runId": "run_51b48d1d96cc",
+      "role": "worker",
+      "parent": null,
+      "provider": {
+        "id": "codex",
+        "model": "gpt-6-astra"
+      },
+      "host": {
+        "kind": "local",
+        "id": "local"
+      },
+      "workspace": {
+        "id": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator",
+        "kind": "folder_or_worktree"
+      },
+      "stage": {
+        "worker": "ready",
+        "dispatch": "dispatched",
+        "detail": "input_accepted",
+        "activity": "working"
+      },
+      "outcome": "in_progress",
+      "liveness": {
+        "verdict": "live",
+        "observedAt": 1794490644374,
+        "source": "agent_status"
+      },
+      "evidence": {
+        "durable": true,
+        "liveStatus": "fresh",
+        "lastObservedAt": 1794490644374
+      },
+      "resource": {
+        "state": "owned",
+        "id": "wtr_68fec171a9e0",
+        "ownerDispatchId": "ctx_988a8c02d5c3",
+        "releaseState": "not_requested",
+        "terminalState": "active"
+      },
+      "nextAction": {
+        "kind": "none",
+        "argv": []
+      },
+      "attention": {
+        "categories": [],
+        "requiresAction": false
+      }
+    },
+    "terminal": {
+      "handle": "term_879889ea-ac9e-48ad-bc89-978a67a20e10",
+      "ptyId": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator@@828c2d23",
+      "incarnationId": "15487d00-f56d-4da8-9f24-8e20ba3a2570",
+      "orphaned": false,
+      "worktreeId": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator",
+      "worktreePath": "D:/Antigravity/GasProjectCalculator",
+      "branch": "refs/heads/feature/gsv-mixed-diameters",
+      "tabId": "f9ffc241-0241-4b63-8887-a45025f095cb",
+      "leafId": "1e9ca135-93e0-4219-a412-70b997c07070",
+      "title": "таЛ ╨Т╤Л╨┐╨╛╨╗╨╜╨╕╤В╤М ╨╖╨░╨┤╨░╤З╤Г Orca | GasProjectCalculator",
+      "connected": true,
+      "writable": true,
+      "lastOutputAt": 1794490645081,
+      "preview": "guess unsupported commands.\n+ 179 lines (ctrl+t to expand)\nтАв Working (8s тАв esc to interrupt)\nтА║ Ask Codex to do anything\nGPT-6-Astra high ┬╖ D:\\Antigravity\\GasProjectCalculator ┬╖ ╨Т╤Л╨┐╨╛╨╗╨╜╨╕╤В╤М ╨╖╨░╨┤╨░╤З╤Г Orca\nтЖР for agents ┬╖ ? for shortcuts",
+      "executionHostId": "local",
+      "agentIdentity": "codex",
+      "paneRuntimeId": 1,
+      "rendererGraphEpoch": 0,
+      "agentWait": null
+    },
+    "observation": {
+      "status": "live",
+      "exactWorker": true,
+      "agentWait": null
+    },
+    "terminalResource": {
+      "id": "wtr_68fec171a9e0",
+      "ownershipState": "owned",
+      "releaseState": "not_requested",
+      "retainedReason": null,
+      "terminalHandle": "term_879889ea-ac9e-48ad-bc89-978a67a20e10",
+      "worktreeId": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator",
+      "endpointId": "f38be7dc-17d3-494f-bcf0-b78549dfca24",
+      "endpointIncarnation": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator@@828c2d23:15487d00-f56d-4da8-9f24-8e20ba3a2570",
+      "originDispatchId": "ctx_988a8c02d5c3",
+      "ownerDispatchId": "ctx_988a8c02d5c3",
+      "releaseRequestedAt": null,
+      "releaseCompletedAt": null,
+      "releaseError": null,
+      "recoveryAttemptCount": 0,
+      "lastRecoveryAt": null,
+      "autoReleaseAt": null,
+      "archive": {
+        "source": null,
+        "status": null
+      }
+    },
+    "autoReleaseAt": null
+  },
+  "_meta": {
+    "runtimeId": "f38be7dc-17d3-494f-bcf0-b78549dfca24"
+  }
+}

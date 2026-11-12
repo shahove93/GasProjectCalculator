@@ -1,0 +1,22 @@
+﻿{
+    "timestamp":  "2026-11-12T22:43:18.9457269+03:00",
+    "pid":  25216,
+    "closeRequested":  true,
+    "exited":  true,
+    "exitCode":  null,
+    "forced":  false,
+    "childrenBefore":  [
+                           {
+                               "ProcessId":  5880,
+                               "Name":  "msedgewebview2.exe",
+                               "CommandLine":  "\"C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\157.0.4341.46\\msedgewebview2.exe\" --embedded-browser-webview=1 --webview-exe-name=GasProjectCalculator.exe --user-data-dir=\"C:\\Users\\user\\AppData\\Local\\Temp\\tmp79y9yddf\\EBWebView\" --noerrdialogs --embedded-browser-webview-dpi-awareness=1 --allow-file-access-from-files --disable-features=ElasticOverscroll --mojo-named-platform-channel-pipe=25216.12368.16577203637923683037 /pfhostedapp:ba71ec3d3c74277fba8e4e5886721d47a7c823dd"
+                           }
+                       ],
+    "childrenAfter":  [
+
+                      ],
+    "listener18081":  [
+
+                      ],
+    "cwd":  "D:\\Antigravity\\GasProjectCalculator"
+}

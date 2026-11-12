@@ -1,0 +1,23 @@
+2026-11-12 13:25:57,834 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=19672) ===
+2026-11-12 13:25:57,856 INFO [gasproject.desktop] Splash resource: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\splash.html
+2026-11-12 13:25:57,856 INFO [gasproject.desktop] [splash] splash window created: 560x450 uri=file:///C:/Users/user/AppData/Local/Temp/opencode/vp-02-isolated/install/_internal/frontend/splash.html reduced_motion=False
+2026-11-12 13:25:58,465 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 13:25:58,466 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 13:25:58,911 INFO [gasproject.desktop] Frontend resource: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\index.html
+2026-11-12 13:25:59,162 INFO [gasproject.desktop] Selected loopback port 8183 (preferred 8182); socket bound on 127.0.0.1
+2026-11-12 13:25:59,333 INFO [uvicorn.error] Started server process [19672]
+2026-11-12 13:25:59,333 INFO [uvicorn.error] Waiting for application startup.
+2026-11-12 13:25:59,333 INFO [uvicorn.error] Application startup complete.
+2026-11-12 13:25:59,963 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:8183/ after 0.77s (thread=gasproject-backend pid=19672)
+2026-11-12 13:25:59,965 INFO [gasproject.desktop] Wrote port file: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\port.json
+2026-11-12 13:25:59,965 INFO [gasproject.desktop] [splash] backend ready after 0.77s; preparing main window
+2026-11-12 13:25:59,990 INFO [gasproject.desktop] [window] main window created: title='СС.Расчет' width=800 height=540 min_size=(760, 520)
+2026-11-12 13:25:59,991 INFO [gasproject.desktop] [splash] diagnostic hold 45.00s before closing the splash
+2026-11-12 13:26:45,031 INFO [gasproject.desktop] [splash] splash closed after backend readiness
+2026-11-12 13:26:45,045 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 13:26:45,046 INFO [gasproject.desktop] [eval-bridge] active at C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\bridge.json
+2026-11-12 13:26:45,046 INFO [gasproject.desktop] [eval-bridge] watching C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\bridge.json
+2026-11-12 13:26:45,064 INFO [gasproject.desktop] [eval-bridge] id=1794479195301 ok=True
+2026-11-12 13:27:00,053 INFO [gasproject.desktop] [eval-bridge] id=1794479220021 ok=True
+2026-11-12 13:27:00,418 INFO [gasproject.desktop] [eval-bridge] id=1794479220374 ok=True
+2026-11-12 13:27:00,527 INFO [gasproject.desktop] [eval-bridge] id=1794479220475 ok=True

@@ -1,0 +1,3 @@
+The operation completed successfully.
+
+Backup complete before any installation; user install full hashes and HKCU/shortcut backups persisted.

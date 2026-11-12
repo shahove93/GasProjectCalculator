@@ -1,3 +1,7 @@
+**Сначала прочитай docs/workflow/VISUAL-POLISH-LEAN-FINISH.md.** Новейшее
+решение пользователя: закончить экономно, обе приёмки Sol/high, без Astra
+на screenshots/командах. VP-01 готов; VP-02 требует лишь закрытия evidence.
+
 Ты OpenCode/DeepSeek Flash, только координатор одобренного пользователем
 визуального продолжения проекта СС.Расчет. Реализуй всю согласованную цепочку
 через настоящие Orca workers и верни итог root через настоящий worker_done.
@@ -37,7 +41,7 @@ review, учти пользовательское неприятие визуа�
 side-by-side, а не просто наличие трубы/дома. Уточнённый brief — продолжение
 прошлых задач, не обход лимитов. Новая заставка/installer artwork входят в
 разрешённое расширение scope. Независимый R2 vision review Sol/high,
-final stage Astra/high отдельным от implementer контекстом.
+final stage Sol/high отдельным от implementer контекстом (уточнение пользователя).
 
 Сборка новой локальной версии1.2.0; сохранить bytes прежних installers до build.
 Реальные browser desktop/mobile/native splash/main/installer screenshots,

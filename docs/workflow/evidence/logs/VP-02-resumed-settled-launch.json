@@ -1,0 +1,20 @@
+﻿{
+    "timestamp":  "2026-11-12T22:42:50.2766056+03:00",
+    "exe":  "C:/Users/user/AppData/Local/Temp/opencode/vp-02-isolated/install/GasProjectCalculator.exe",
+    "arguments":  [
+                      "--preferred-port",
+                      "18081",
+                      "--port-file",
+                      "C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/settled-port.json",
+                      "--log-file",
+                      "D:/Antigravity/GasProjectCalculator/docs/workflow/evidence/logs/VP-02-resumed-settled-native.log"
+                  ],
+    "pid":  25216,
+    "processStartTime":  "2026-11-12T22:42:47.2776187+03:00",
+    "ready":  true,
+    "port":  18081,
+    "url":  "http://127.0.0.1:18081/",
+    "httpStatus":  200,
+    "cwd":  "D:\\Antigravity\\GasProjectCalculator",
+    "shellExit":  0
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\GasProjectCalculator-Setup-1.0.0.exe",
+    "size": 15286980,
+    "sha256": "71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08"
+  },
+  {
+    "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\GasProjectCalculator-Setup-1.1.0.exe",
+    "size": 15293993,
+    "sha256": "3BFFFFB2F7C7F73185B48B5AC5E5CDE06BF4197A1A3D4D0F66E763905AC5B710"
+  },
+  {
+    "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\legacy\\GasProjectCalculator-Setup-1.0.0-pre-compact.exe",
+    "size": 15273647,
+    "sha256": "043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A"
+  },
+  {
+    "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\legacy\\GasProjectCalculator-Setup-1.0.0-previous-stage.exe",
+    "size": 15256037,
+    "sha256": "2973278F47A4A2A479177B12A4C4CCA01ED59D1CA8D2D9CE107C4E7A2E37428F"
+  }
+]

@@ -1,0 +1,49 @@
+2026-11-12 16:39:04,573 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=2236) ===
+2026-11-12 16:39:04,595 INFO [gasproject.desktop] Splash resource: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\splash.html
+2026-11-12 16:39:04,595 INFO [gasproject.desktop] [splash] splash window created: 560x450 uri=file:///C:/Users/user/AppData/Local/Temp/opencode/vp-02-isolated/install/_internal/frontend/splash.html reduced_motion=False
+2026-11-12 16:39:05,159 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 16:39:05,159 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 16:39:05,569 INFO [gasproject.desktop] Frontend resource: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\index.html
+2026-11-12 16:39:05,821 INFO [gasproject.desktop] Selected loopback port 65532 (preferred 65531); socket bound on 127.0.0.1
+2026-11-12 16:39:05,986 INFO [uvicorn.error] Started server process [2236]
+2026-11-12 16:39:05,986 INFO [uvicorn.error] Waiting for application startup.
+2026-11-12 16:39:05,988 INFO [uvicorn.error] Application startup complete.
+2026-11-12 16:39:06,618 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:65532/ after 0.76s (thread=gasproject-backend pid=2236)
+2026-11-12 16:39:06,620 INFO [gasproject.desktop] Wrote port file: C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume\port.json
+2026-11-12 16:39:06,620 INFO [gasproject.desktop] [splash] backend ready after 0.76s; preparing main window
+2026-11-12 16:39:06,640 INFO [gasproject.desktop] [window] main window created: title='СС.Расчет' width=800 height=540 min_size=(760, 520)
+2026-11-12 16:39:06,683 INFO [gasproject.desktop] [splash] splash closed after backend readiness
+2026-11-12 16:39:06,690 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 16:39:06,691 INFO [gasproject.desktop] [eval-bridge] watching C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume\bridge.json
+2026-11-12 16:39:06,753 INFO [gasproject.desktop] [eval-bridge] active at C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume\bridge.json
+2026-11-12 16:41:30,357 INFO [gasproject.desktop] [eval-bridge] id=1794490890319 ok=True
+2026-11-12 16:42:16,283 INFO [gasproject.desktop] [eval-bridge] id=1794490936243 ok=True
+2026-11-12 16:42:23,830 INFO [gasproject.desktop] [eval-bridge] id=1794490943818 ok=True
+2026-11-12 16:43:49,538 INFO [gasproject.desktop] [eval-bridge] id=1794491029479 ok=True
+2026-11-12 16:44:07,970 INFO [gasproject.desktop] [eval-bridge] id=1794491047931 ok=True
+2026-11-12 16:44:20,661 ERROR [gasproject.desktop] [eval-bridge] command read failed
+Traceback (most recent call last):
+  File "app\desktop_launcher.py", line 371, in _loop
+    data = json.loads(command_path.read_text(encoding="utf-8"))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "json\__init__.py", line 346, in loads
+  File "json\decoder.py", line 337, in decode
+  File "json\decoder.py", line 355, in raw_decode
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+2026-11-12 16:44:20,725 INFO [gasproject.desktop] [eval-bridge] id=1794491060660 ok=True
+2026-11-12 16:44:32,680 INFO [gasproject.desktop] [eval-bridge] id=1794491072617 ok=True
+2026-11-12 16:44:41,945 INFO [gasproject.desktop] [eval-bridge] id=1794491081898 ok=True
+2026-11-12 16:45:53,998 INFO [gasproject.desktop] [eval-bridge] id=1794491153945 ok=True
+2026-11-12 16:46:04,486 INFO [gasproject.desktop] [eval-bridge] id=1794491164462 ok=True
+2026-11-12 16:46:12,846 INFO [gasproject.desktop] [eval-bridge] id=1794491172794 ok=True
+2026-11-12 16:46:44,356 INFO [gasproject.desktop] [eval-bridge] id=1794491204326 ok=True
+2026-11-12 16:47:09,147 INFO [gasproject.desktop] [eval-bridge] id=1794491229124 ok=True
+2026-11-12 16:47:23,855 INFO [gasproject.desktop] [window] main window closed
+2026-11-12 16:47:23,863 INFO [gasproject.desktop] [eval-bridge] stopped
+2026-11-12 16:47:25,005 INFO [gasproject.desktop] Window closed by user
+2026-11-12 16:47:25,087 INFO [uvicorn.error] Shutting down
+2026-11-12 16:47:25,189 INFO [uvicorn.error] Waiting for application shutdown.
+2026-11-12 16:47:25,189 INFO [uvicorn.error] Application shutdown complete.
+2026-11-12 16:47:25,189 INFO [uvicorn.error] Finished server process [2236]
+2026-11-12 16:47:25,190 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 16:47:25,190 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 0 ===

@@ -1,0 +1,81 @@
+[
+  {
+    "name": "target-gsn",
+    "mode": "gsn",
+    "lengths": [
+      4,
+      0,
+      4
+    ],
+    "expected": 68250,
+    "total": "68 250 ₽",
+    "metrics": {
+      "inner": [
+        784,
+        501
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "docScroll": [
+        784,
+        501
+      ],
+      "docClient": [
+        784,
+        501
+      ],
+      "bodyScroll": [
+        784,
+        501
+      ],
+      "bodyClient": [
+        784,
+        501
+      ],
+      "bodyOverflowX": "auto",
+      "bodyOverflowY": "hidden",
+      "hScroll": false,
+      "vScroll": false,
+      "activeResult": "result-gsn",
+      "totalId": "total",
+      "submitRect": {
+        "left": 430.2,
+        "top": 398,
+        "right": 760,
+        "bottom": 429,
+        "width": 329.8,
+        "height": 31
+      },
+      "totalRect": {
+        "left": 657.4,
+        "top": 172,
+        "right": 749,
+        "bottom": 202.6,
+        "width": 91.6,
+        "height": 30.7
+      },
+      "submitInViewport": true,
+      "totalInViewport": true,
+      "tableFits": null,
+      "fontSizes": {
+        "body": "13px",
+        "label": "11.5px",
+        "input": "13px",
+        "total": "22.736px",
+        "sectionLabel": "10.5px",
+        "button": "13.5px"
+      },
+      "formScroll": {
+        "client": 182,
+        "scroll": 182
+      },
+      "resultDetail": {
+        "client": 178,
+        "scroll": 178
+      }
+    }
+  }
+]

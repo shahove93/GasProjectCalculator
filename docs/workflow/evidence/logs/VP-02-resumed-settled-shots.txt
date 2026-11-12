@@ -1,0 +1,8 @@
+page.goto: net::ERR_UNSAFE_PORT at http://127.0.0.1:0/
+Call log:
+  - navigating to "http://127.0.0.1:0/", waiting until "load"
+
+    at D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-02-resumed-settled-shots.cjs:37:13 {
+  log: [ '  - navigating to "http://127.0.0.1:0/", waiting until "load"' ],
+  name: 'Error'
+}

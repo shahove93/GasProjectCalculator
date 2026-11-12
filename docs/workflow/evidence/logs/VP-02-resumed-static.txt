@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-02-resumed-static.py", line 8, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'

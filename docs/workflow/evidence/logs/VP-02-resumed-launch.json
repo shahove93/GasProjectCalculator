@@ -1,0 +1,7 @@
+{
+  "pid": 2236,
+  "preferredPort": 65531,
+  "path": "C:\\Windows\\System32;C:\\Windows",
+  "pythonResolved": false,
+  "arguments": "--preferred-port [busyPort] --port-file vp-02-resume/port.json --log-file VP-02-resumed-native.log --eval-bridge vp-02-resume/bridge.json"
+}

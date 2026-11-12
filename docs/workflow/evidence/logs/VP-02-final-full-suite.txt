@@ -1,0 +1,182 @@
+﻿timestamp=2026-11-12T22:43:44.4482217+03:00
+cwd=D:\Antigravity\GasProjectCalculator
+command=.\.venv\Scripts\python.exe -m unittest discover -s tests
+HEAD=1689773718c818a4ebca400afc2d8a4206b6458e
+exit=0
+--- git status --porcelain ---
+ M AGENTS.md
+ M docs/workflow/APPROVALS.md
+ M docs/workflow/HISTORY.md
+ M docs/workflow/MODEL-ROUTING.md
+ M docs/workflow/STATE.md
+ M docs/workflow/VISUAL-POLISH-ASTRA-BRIEF.md
+ M docs/workflow/VISUAL-POLISH-COORDINATOR-DISPATCH.md
+ M docs/workflow/tasks/VP-02.md
+ M installer/GasProjectCalculator.iss
+ M installer/build-installer.ps1
+?? docs/screenshots/visual-02-native-normal-launch.png
+?? docs/screenshots/visual-02-native-splash.png
+?? docs/screenshots/visual-02-native-target-gsn.png
+?? docs/screenshots/visual-02-resumed-desktop-422.png
+?? docs/screenshots/visual-02-resumed-desktop-combined-after.png
+?? docs/screenshots/visual-02-resumed-desktop-combined-before.png
+?? docs/screenshots/visual-02-resumed-desktop-gsn-after.png
+?? docs/screenshots/visual-02-resumed-desktop-gsn-before.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D1-settled.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D1.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D2-settled.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D2.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D3-settled.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D3.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D4-settled.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D4.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D5-settled.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-D5.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-after.png
+?? docs/screenshots/visual-02-resumed-desktop-gsv-before.png
+?? docs/screenshots/visual-02-resumed-desktop-switch-clear.png
+?? docs/screenshots/visual-02-resumed-minimum-422.png
+?? docs/screenshots/visual-02-resumed-minimum-combined-after.png
+?? docs/screenshots/visual-02-resumed-minimum-combined-before.png
+?? docs/screenshots/visual-02-resumed-minimum-gsn-after.png
+?? docs/screenshots/visual-02-resumed-minimum-gsn-before.png
+?? docs/screenshots/visual-02-resumed-minimum-gsv-after.png
+?? docs/screenshots/visual-02-resumed-minimum-gsv-before.png
+?? docs/screenshots/visual-02-resumed-minimum-switch-clear.png
+?? docs/screenshots/visual-02-resumed-mobile-422.png
+?? docs/screenshots/visual-02-resumed-mobile-combined-after.png
+?? docs/screenshots/visual-02-resumed-mobile-combined-before.png
+?? docs/screenshots/visual-02-resumed-mobile-gsn-after.png
+?? docs/screenshots/visual-02-resumed-mobile-gsn-before.png
+?? docs/screenshots/visual-02-resumed-mobile-gsv-after.png
+?? docs/screenshots/visual-02-resumed-mobile-gsv-before.png
+?? docs/screenshots/visual-02-resumed-mobile-switch-clear.png
+?? docs/screenshots/visual-02-resumed-native-minimum-combined.png
+?? docs/screenshots/visual-02-resumed-native-minimum-gsn.png
+?? docs/screenshots/visual-02-resumed-native-minimum-gsv.png
+?? docs/screenshots/visual-02-resumed-native-startup-error.png
+?? docs/screenshots/visual-02-resumed-native-target-combined.png
+?? docs/screenshots/visual-02-resumed-native-target-gsn.png
+?? docs/screenshots/visual-02-resumed-native-target-gsv.png
+?? docs/screenshots/visual-02-resumed-splash-animated.png
+?? docs/screenshots/visual-02-resumed-splash-flag.png
+?? docs/screenshots/visual-02-resumed-splash-os.png
+?? docs/screenshots/visual-02-wizard-dir.png
+?? docs/screenshots/visual-02-wizard-finish.png
+?? docs/screenshots/visual-02-wizard-installing.png
+?? docs/screenshots/visual-02-wizard-ready.png
+?? docs/screenshots/visual-02-wizard-tasks.png
+?? docs/screenshots/visual-02-wizard-welcome.png
+?? docs/workflow/VISUAL-POLISH-LEAN-FINISH.md
+?? docs/workflow/VISUAL-POLISH-RESUME.md
+?? docs/workflow/evidence/VP-02-blocked-resume.md
+?? docs/workflow/evidence/VP-02-blocked.md
+?? docs/workflow/evidence/VP-02-evidence.md
+?? docs/workflow/evidence/VP-02-lean-launch-blocked.md
+?? docs/workflow/evidence/VP-02-resume-spec.md
+?? docs/workflow/evidence/VP-02-resume.md
+?? docs/workflow/evidence/logs/VP-01-commit.txt
+?? docs/workflow/evidence/logs/VP-02-api-check.ps1
+?? docs/workflow/evidence/logs/VP-02-api-run.exit.txt
+?? docs/workflow/evidence/logs/VP-02-api-run.txt
+?? docs/workflow/evidence/logs/VP-02-api-summary.txt
+?? docs/workflow/evidence/logs/VP-02-api.json
+?? docs/workflow/evidence/logs/VP-02-artwork-export.txt
+?? docs/workflow/evidence/logs/VP-02-backup.txt
+?? docs/workflow/evidence/logs/VP-02-baseline.txt
+?? docs/workflow/evidence/logs/VP-02-check-01.json
+?? docs/workflow/evidence/logs/VP-02-check-02.json
+?? docs/workflow/evidence/logs/VP-02-dispatch-receipt.json
+?? docs/workflow/evidence/logs/VP-02-installed-state.txt
+?? docs/workflow/evidence/logs/VP-02-installer-build-initial.txt
+?? docs/workflow/evidence/logs/VP-02-installer-build.exit.txt
+?? docs/workflow/evidence/logs/VP-02-installer-build.txt
+?? docs/workflow/evidence/logs/VP-02-isolation.ps1
+?? docs/workflow/evidence/logs/VP-02-native-launch.json
+?? docs/workflow/evidence/logs/VP-02-native-metrics.json
+?? docs/workflow/evidence/logs/VP-02-normal-close.json
+?? docs/workflow/evidence/logs/VP-02-normal-listener.json
+?? docs/workflow/evidence/logs/VP-02-occupied-listener.json
+?? docs/workflow/evidence/logs/VP-02-old-artifacts-before.json
+?? docs/workflow/evidence/logs/VP-02-packaging-build.exit.txt
+?? docs/workflow/evidence/logs/VP-02-packaging-build.txt
+?? docs/workflow/evidence/logs/VP-02-restore.txt
+?? docs/workflow/evidence/logs/VP-02-resume-effective-final.json
+?? docs/workflow/evidence/logs/VP-02-resume-effective.json
+?? docs/workflow/evidence/logs/VP-02-resume-receipt.json
+?? docs/workflow/evidence/logs/VP-02-resume-run.json
+?? docs/workflow/evidence/logs/VP-02-resume-task.json
+?? docs/workflow/evidence/logs/VP-02-resumed-api-check.ps1
+?? docs/workflow/evidence/logs/VP-02-resumed-api-run.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-api-run.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-api-summary.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-api.json
+?? docs/workflow/evidence/logs/VP-02-resumed-browser-run.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-browser-run.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-browser.cjs
+?? docs/workflow/evidence/logs/VP-02-resumed-browser.json
+?? docs/workflow/evidence/logs/VP-02-resumed-close-final.json
+?? docs/workflow/evidence/logs/VP-02-resumed-close.json
+?? docs/workflow/evidence/logs/VP-02-resumed-connections.json
+?? docs/workflow/evidence/logs/VP-02-resumed-cycle-install-old-raw.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-cycle-reinstall-raw.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-cycle-uninstall-raw.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-cycle-upgrade-raw.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-cycle.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-cycle.ps1
+?? docs/workflow/evidence/logs/VP-02-resumed-cycle.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-diff-check.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-diff-check.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-error-exit.json
+?? docs/workflow/evidence/logs/VP-02-resumed-error-raw.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-error.pid.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-final-state.json
+?? docs/workflow/evidence/logs/VP-02-resumed-launch.json
+?? docs/workflow/evidence/logs/VP-02-resumed-manifest.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-manifest.json
+?? docs/workflow/evidence/logs/VP-02-resumed-manifest.py
+?? docs/workflow/evidence/logs/VP-02-resumed-manifest.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-native-original-raw.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-native-raw.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-native-ui.json
+?? docs/workflow/evidence/logs/VP-02-resumed-png-export.json
+?? docs/workflow/evidence/logs/VP-02-resumed-preflight.json
+?? docs/workflow/evidence/logs/VP-02-resumed-process-tree-before.json
+?? docs/workflow/evidence/logs/VP-02-resumed-product.diff
+?? docs/workflow/evidence/logs/VP-02-resumed-settled-close.json
+?? docs/workflow/evidence/logs/VP-02-resumed-settled-launch.json
+?? docs/workflow/evidence/logs/VP-02-resumed-settled-shots-run.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-settled-shots-run.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-settled-shots.cjs
+?? docs/workflow/evidence/logs/VP-02-resumed-settled-shots.json
+?? docs/workflow/evidence/logs/VP-02-resumed-settled-shots.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-settled.pid.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-static-system.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-static-system.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-static.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-static.json
+?? docs/workflow/evidence/logs/VP-02-resumed-static.py
+?? docs/workflow/evidence/logs/VP-02-resumed-static.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-status.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-targeted-tests.exit.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-targeted-tests.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-transcript-tail.json
+?? docs/workflow/evidence/logs/VP-02-resumed-wizard-original-raw.txt
+?? docs/workflow/evidence/logs/VP-02-resumed-worker-release.json
+?? docs/workflow/evidence/logs/VP-02-resumed-worker-stop.json
+?? docs/workflow/evidence/logs/VP-02-targeted-tests.exit.txt
+?? docs/workflow/evidence/logs/VP-02-targeted-tests.txt
+?? docs/workflow/evidence/logs/VP-02-terminal-after-allow.txt
+?? docs/workflow/evidence/logs/VP-02-terminal-after-send.txt
+?? docs/workflow/evidence/logs/VP-02-ui-launched-process.json
+?? docs/workflow/evidence/logs/VP-02-wizard-pid.txt
+?? docs/workflow/evidence/logs/VP-02-worker-stop.json
+?? installer/assets/
+--- output ---
+D:\Antigravity\GasProjectCalculator\.venv\Lib\site-packages\fastapi\testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+...........................................................................................................................................................................................................................
+----------------------------------------------------------------------
+Ran 219 tests in 2.244s
+System.Management.Automation.RemoteException
+OK

@@ -12,7 +12,7 @@
 ; Build with: powershell -ExecutionPolicy Bypass -File installer\build-installer.ps1
 
 #define AppName "СС.Расчет"
-#define AppVersion "1.1.0"
+#define AppVersion "1.2.0"
 #define AppPublisher "ООО «Северное сияние»"
 #define AppExeName "GasProjectCalculator.exe"
 
@@ -22,7 +22,7 @@ AppName={#AppName}
 AppVersion={#AppVersion}
 AppVerName={#AppName} {#AppVersion}
 AppPublisher={#AppPublisher}
-VersionInfoVersion=1.1.0.0
+VersionInfoVersion=1.2.0.0
 VersionInfoCompany={#AppPublisher}
 VersionInfoDescription={#AppName} — установщик
 DefaultDirName={localappdata}\Programs\GasProjectCalculator
@@ -37,6 +37,11 @@ OutputBaseFilename=GasProjectCalculator-Setup-{#AppVersion}
 Compression=lzma2/max
 SolidCompression=yes
 WizardStyle=modern
+; Shared VP-01 artwork, exported locally with assets/export-artwork.ps1.
+; Double-resolution bitmaps retain detail under Windows DPI scaling.
+WizardImageFile=assets\wizard-sidebar.bmp
+WizardSmallImageFile=assets\wizard-header.bmp
+WizardImageStretch=yes
 ; Russian-only wizard; never show the language selection dialog.
 ShowLanguageDialog=no
 ; Do not restore the previous task selection: the desktop shortcut task must

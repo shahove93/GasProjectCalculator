@@ -1,0 +1,1 @@
+{"ok":true,"result":{"dispatchId":"ctx_113e19d0197a","state":"stopped","alreadySettled":false,"processAction":"closed_agent_terminal","close":{"handle":"term_574e5c74-8643-4b6b-a0c3-5200e66cfc1d","tabId":"aab2d66a-52dd-4f2b-b1d4-3931e9fc2ba7","ptyKilled":true},"mutation":{"requestId":"d89fcf5f-5795-4021-8201-faa17788024d","replayed":false}}}

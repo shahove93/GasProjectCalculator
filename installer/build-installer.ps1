@@ -27,6 +27,12 @@ $appDir = Join-Path $projectRoot 'dist\GasProjectCalculator'
 $appExe = Join-Path $appDir 'GasProjectCalculator.exe'
 $issPath = Join-Path $PSScriptRoot 'GasProjectCalculator.iss'
 $outputDir = Join-Path $PSScriptRoot 'Output'
+$versionMatch = [regex]::Match((Get-Content -LiteralPath $issPath -Raw), '(?m)^#define AppVersion "([0-9]+\.[0-9]+\.[0-9]+)"')
+if (-not $versionMatch.Success) { throw 'Missing AppVersion in installer script' }
+$artifactPath = Join-Path $outputDir "GasProjectCalculator-Setup-$($versionMatch.Groups[1].Value).exe"
+if (Test-Path -LiteralPath $artifactPath) {
+    throw "Refusing to overwrite existing installer: $artifactPath. Preserve it before an explicitly authorized rebuild."
+}
 
 function Test-Iscc([string]$candidate) {
     if ([string]::IsNullOrWhiteSpace($candidate)) { return $false }
@@ -68,12 +74,10 @@ try {
     Pop-Location
 }
 
-$artifact = Get-ChildItem -LiteralPath $outputDir -Filter 'GasProjectCalculator-Setup-*.exe' -File |
-    Sort-Object LastWriteTime -Descending |
-    Select-Object -First 1
-if ($null -eq $artifact) {
-    throw "ISCC finished but no installer artifact was found in $outputDir"
+if (-not (Test-Path -LiteralPath $artifactPath)) {
+    throw "ISCC finished but the expected installer artifact was not found: $artifactPath"
 }
+$artifact = Get-Item -LiteralPath $artifactPath
 
 $hash = (Get-FileHash -LiteralPath $artifact.FullName -Algorithm SHA256).Hash
 Write-Host "Installer artifact: $($artifact.FullName)"

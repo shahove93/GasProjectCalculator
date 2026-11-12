@@ -1,0 +1,7 @@
+warning: in the working copy of 'docs/workflow/APPROVALS.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/workflow/HISTORY.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/workflow/STATE.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/workflow/VISUAL-POLISH-ASTRA-BRIEF.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/workflow/tasks/VP-02.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'installer/GasProjectCalculator.iss', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'installer/build-installer.ps1', LF will be replaced by CRLF the next time Git touches it

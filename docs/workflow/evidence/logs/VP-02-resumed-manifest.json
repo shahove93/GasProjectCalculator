@@ -1,0 +1,656 @@
+{
+  "cwd": "D:\\Antigravity\\GasProjectCalculator",
+  "baseline": "1689773718c818a4ebca400afc2d8a4206b6458e",
+  "branch": "feature/gsv-mixed-diameters",
+  "artifacts": [
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\GasProjectCalculator-Setup-1.0.0.exe",
+      "bytes": 15286980,
+      "sha256": "71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08",
+      "fileVersion": "1.0.0.0             ",
+      "productVersion": "1.0.0                                             ",
+      "postBytes": 15286980,
+      "postSHA256": "71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\GasProjectCalculator-Setup-1.1.0.exe",
+      "bytes": 15293993,
+      "sha256": "3BFFFFB2F7C7F73185B48B5AC5E5CDE06BF4197A1A3D4D0F66E763905AC5B710",
+      "fileVersion": "1.1.0.0             ",
+      "productVersion": "1.1.0                                             ",
+      "postBytes": 15293993,
+      "postSHA256": "3BFFFFB2F7C7F73185B48B5AC5E5CDE06BF4197A1A3D4D0F66E763905AC5B710",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\GasProjectCalculator-Setup-1.2.0.exe",
+      "bytes": 15373267,
+      "sha256": "4579FB3AA7B2E6220C1204E3AA2A6048648AE5A344B8E2D45DD00CF19F856113",
+      "fileVersion": "1.2.0.0             ",
+      "productVersion": "1.2.0                                             ",
+      "postBytes": 15373267,
+      "postSHA256": "4579FB3AA7B2E6220C1204E3AA2A6048648AE5A344B8E2D45DD00CF19F856113",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\legacy\\GasProjectCalculator-Setup-1.0.0-pre-compact.exe",
+      "bytes": 15273647,
+      "sha256": "043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A",
+      "fileVersion": "1.0.0.0             ",
+      "productVersion": "1.0.0                                             ",
+      "postBytes": 15273647,
+      "postSHA256": "043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\legacy\\GasProjectCalculator-Setup-1.0.0-previous-stage.exe",
+      "bytes": 15256037,
+      "sha256": "2973278F47A4A2A479177B12A4C4CCA01ED59D1CA8D2D9CE107C4E7A2E37428F",
+      "fileVersion": "1.0.0.0             ",
+      "productVersion": "1.0.0                                             ",
+      "postBytes": 15256037,
+      "postSHA256": "2973278F47A4A2A479177B12A4C4CCA01ED59D1CA8D2D9CE107C4E7A2E37428F",
+      "unchanged": true
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/screenshots/visual-02-native-normal-launch.png",
+      "pixels": [
+        786,
+        533
+      ],
+      "format": "JPEG",
+      "bytes": 62003,
+      "sha256": "FF75F5D6AC16D24AB563186CF70A03786655599009F94739D8B5E1368E09B2C1"
+    },
+    {
+      "path": "docs/screenshots/visual-02-native-splash.png",
+      "pixels": [
+        560,
+        450
+      ],
+      "format": "JPEG",
+      "bytes": 24127,
+      "sha256": "8EA1A4CF7BE1B7045E2499C854781EA65B500F0B66A2606E3542DC0430AEA889"
+    },
+    {
+      "path": "docs/screenshots/visual-02-native-target-gsn.png",
+      "pixels": [
+        786,
+        533
+      ],
+      "format": "JPEG",
+      "bytes": 66106,
+      "sha256": "D3026C0A85D33F3947317C7BD252D9C5092343DE24415DA5650BBE68B84A9402"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-422.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 85651,
+      "sha256": "3E2BB61E2D664B53850049DC1F0588CA0B88EE267EF6F5F434BFC97931062E1F"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-combined-after.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 103497,
+      "sha256": "11D99568AB83954AFBE8E0FD643FEF0BDAC73E0548A4C39DBF5A7059AC014FCF"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-combined-before.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 87334,
+      "sha256": "590767D18FFB81EDC6AC999BF8CD6727D0C7779C4433773E035C3E6483ADA181"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsn-after.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 88077,
+      "sha256": "67BE2987732F9BA6CCB8DD63C5DD80A3BDC9420C8135464935E3864905B2A610"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsn-before.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 79911,
+      "sha256": "B2E21516E7E0B5E68468E5ABC83CD24AF0A71BCC227748D945EBAC53D82AE192"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsv-after.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 96482,
+      "sha256": "C722EA40C7FE287F4591EA68B6238CE67C12CDD6FDF302252B7CC69FC7AEBBAE"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsv-before.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 81260,
+      "sha256": "4ABEA86A45FF1DF1F6F38557AC11FB2134E76C652A878E8505BABA7506497455"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsv-D1.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 89246,
+      "sha256": "C69AAF388D83D44EB1B2F109147D86BC235916605FFF0940838EFFF00EAF0B71"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsv-D2.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 89480,
+      "sha256": "6BD05F048078542C321675BDCAE371767E678E6DE497F0227D040920EB5BD63C"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsv-D3.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 89239,
+      "sha256": "59E6B77E7A37808980C46EF35066613CBB178CFCB4E128B0EA639A7EA97008B1"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsv-D4.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 89616,
+      "sha256": "78F8215552AC4CBEA989A486D7BE4FE51B0DFB98179DAEBD07D7494DA9B9276D"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-gsv-D5.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 90992,
+      "sha256": "D8D1A2E6AF6DC1CED0A369527732199EE093D45082D18C76DD84349F8049B8C9"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-desktop-switch-clear.png",
+      "pixels": [
+        800,
+        540
+      ],
+      "format": "PNG",
+      "bytes": 80335,
+      "sha256": "2763BAB30202DD3D456D90F5E5973AE7A4B0A625E15D23DEF161F9FFAD88FD12"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-minimum-422.png",
+      "pixels": [
+        760,
+        520
+      ],
+      "format": "PNG",
+      "bytes": 83547,
+      "sha256": "6E381EEA9510EEEFDAC816F6A239ECCB9E463A115389FB624635BCFAB75D948D"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-minimum-combined-after.png",
+      "pixels": [
+        760,
+        520
+      ],
+      "format": "PNG",
+      "bytes": 98639,
+      "sha256": "CC39F2871C02CBCB6FC1D3E91434A3ACEDC26332D5B927AB96FB2CC830EA7F66"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-minimum-combined-before.png",
+      "pixels": [
+        760,
+        520
+      ],
+      "format": "PNG",
+      "bytes": 83590,
+      "sha256": "5B66787C50CEE5C3D0197A0DC7C7EF9C2C4A8272F702E378A8F12641164C0C42"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-minimum-gsn-after.png",
+      "pixels": [
+        760,
+        520
+      ],
+      "format": "PNG",
+      "bytes": 85797,
+      "sha256": "A8F23A9A72351DF2F51855C18F1F5D523EA417AA66609CDA5B0FE605865C5786"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-minimum-gsn-before.png",
+      "pixels": [
+        760,
+        520
+      ],
+      "format": "PNG",
+      "bytes": 77635,
+      "sha256": "A6E60C06D311A8DADD858C491B5A489242318A69E1B39BE97B182DC910A1B5D3"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-minimum-gsv-after.png",
+      "pixels": [
+        760,
+        520
+      ],
+      "format": "PNG",
+      "bytes": 94042,
+      "sha256": "CD0CE0305B4108AD0BFA0456A6424021CFF544D8BF06632A03D8E03ADD7A5748"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-minimum-gsv-before.png",
+      "pixels": [
+        760,
+        520
+      ],
+      "format": "PNG",
+      "bytes": 79111,
+      "sha256": "13FC29C6FA2E45529AF483E687A3585209E2E3619DB3DDC4229CBC4F736659E0"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-minimum-switch-clear.png",
+      "pixels": [
+        760,
+        520
+      ],
+      "format": "PNG",
+      "bytes": 78466,
+      "sha256": "FD56DFD9357FFE83CB7DB062E0CE69D62B1C32DF6FF95981A6F1626CF0FC6EFD"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-mobile-422.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "format": "PNG",
+      "bytes": 69983,
+      "sha256": "380FC167DEC9B17A4060CCD549B39A2277415E54426A13F08152F46EEF130302"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-mobile-combined-after.png",
+      "pixels": [
+        390,
+        1151
+      ],
+      "format": "PNG",
+      "bytes": 109839,
+      "sha256": "C3E71A4B10320D87B4B8C65969DCC9EE1500045085437CF00BACE0DC58A3E107"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-mobile-combined-before.png",
+      "pixels": [
+        390,
+        872
+      ],
+      "format": "PNG",
+      "bytes": 83336,
+      "sha256": "4C1C4A383FDB8A30B676D8C8423D863BB232DD156BDF6CD8F2602D28D623B43F"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-mobile-gsn-after.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "format": "PNG",
+      "bytes": 69603,
+      "sha256": "A470E203EB603F15ABB0C2CA3DDE59A1449EE0D48A29D5513802043BBE51876D"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-mobile-gsn-before.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "format": "PNG",
+      "bytes": 64249,
+      "sha256": "D6ABEA1096F9CB0FE6C617673F5A542440AF5A28D54BD2221411506F8BA6F054"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-mobile-gsv-after.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "format": "PNG",
+      "bytes": 77390,
+      "sha256": "1FC3F88AA260E285CB834A4A99B1AA75DF354104EA607716A7930B9C052A7E1F"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-mobile-gsv-before.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "format": "PNG",
+      "bytes": 64974,
+      "sha256": "7E8DE3B91A6DF1F4C2BCB9A0F938D37564C9169339CF91AFC4967C7E928DC1ED"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-mobile-switch-clear.png",
+      "pixels": [
+        390,
+        844
+      ],
+      "format": "PNG",
+      "bytes": 65069,
+      "sha256": "821CED4A803A4DA37BB55FB0D506B99C72BCD85F2092673F4F4CC306DF4EF9FB"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-native-minimum-combined.png",
+      "pixels": [
+        746,
+        513
+      ],
+      "format": "PNG",
+      "bytes": 258062,
+      "sha256": "782301C56381689785EA3F047C0A6F83FB5C281C0987A4190DCB24D964F3BBE6"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-native-minimum-gsn.png",
+      "pixels": [
+        746,
+        513
+      ],
+      "format": "PNG",
+      "bytes": 239557,
+      "sha256": "EA91F16BD601B4A068162AF425A78DE368EC44428CB33827A1A603E08C5BBF23"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-native-minimum-gsv.png",
+      "pixels": [
+        746,
+        513
+      ],
+      "format": "PNG",
+      "bytes": 273168,
+      "sha256": "E368272FE5E29CBCC33351008BE4252EE731EA87C5864F11F934804903DAD319"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-native-startup-error.png",
+      "pixels": [
+        412,
+        276
+      ],
+      "format": "PNG",
+      "bytes": 89112,
+      "sha256": "BF363DCDC6CA3417E480D61A103F02E89687330E16D6674BB77C96B0F197C470"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-native-target-combined.png",
+      "pixels": [
+        786,
+        533
+      ],
+      "format": "PNG",
+      "bytes": 288078,
+      "sha256": "15D7A1A61AEE8429A1B2383F4A0BF525E778FACFE15AAC217FC969C95B86371B"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-native-target-gsn.png",
+      "pixels": [
+        786,
+        533
+      ],
+      "format": "PNG",
+      "bytes": 241049,
+      "sha256": "73A8946F136AADCAAEF095908330AC74800769F9805E16F960974BC647E344E8"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-native-target-gsv.png",
+      "pixels": [
+        786,
+        533
+      ],
+      "format": "PNG",
+      "bytes": 270220,
+      "sha256": "1E3322984AC91F91F73163D7F806115718610C38D59318B21B06F47B03ADFD73"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-splash-animated.png",
+      "pixels": [
+        560,
+        450
+      ],
+      "format": "PNG",
+      "bytes": 94206,
+      "sha256": "1AF9D33BAD12149F9F2BF6C1A49AF9500CFA1365AF9884D9D9877E534AC7A4BB"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-splash-flag.png",
+      "pixels": [
+        560,
+        450
+      ],
+      "format": "PNG",
+      "bytes": 92852,
+      "sha256": "873147E327242AA2822A34CCD287B0AD32CAF70B734E9AD2759F71A9A7584BA3"
+    },
+    {
+      "path": "docs/screenshots/visual-02-resumed-splash-os.png",
+      "pixels": [
+        560,
+        450
+      ],
+      "format": "PNG",
+      "bytes": 92852,
+      "sha256": "873147E327242AA2822A34CCD287B0AD32CAF70B734E9AD2759F71A9A7584BA3"
+    },
+    {
+      "path": "docs/screenshots/visual-02-wizard-dir.png",
+      "pixels": [
+        598,
+        464
+      ],
+      "format": "JPEG",
+      "bytes": 33037,
+      "sha256": "915562CA4DBB6F89DD880757DE150C23C23B08671F989068269EC5C9777B18AE"
+    },
+    {
+      "path": "docs/screenshots/visual-02-wizard-finish.png",
+      "pixels": [
+        598,
+        464
+      ],
+      "format": "JPEG",
+      "bytes": 30353,
+      "sha256": "7E3D1702F8AFEEBE503CB70D612379CB2D01BD90E3254E2206DBBA4860319119"
+    },
+    {
+      "path": "docs/screenshots/visual-02-wizard-installing.png",
+      "pixels": [
+        598,
+        464
+      ],
+      "format": "JPEG",
+      "bytes": 20894,
+      "sha256": "D56BEE9EA1D0FE928F5739A0A56A190D5FFA3FB364EAC3A4E242DE9773543ED8"
+    },
+    {
+      "path": "docs/screenshots/visual-02-wizard-ready.png",
+      "pixels": [
+        598,
+        464
+      ],
+      "format": "JPEG",
+      "bytes": 31230,
+      "sha256": "A2E70CC8BA7EB00DBEE10C873F5274EC97D809F7A17BD6ADAEC1E202725949E5"
+    },
+    {
+      "path": "docs/screenshots/visual-02-wizard-tasks.png",
+      "pixels": [
+        598,
+        464
+      ],
+      "format": "JPEG",
+      "bytes": 28117,
+      "sha256": "24F18D3CFFAFC0E61DBABDF67F788FF8F57E024ADC686B16B0B0BFC7E1300118"
+    },
+    {
+      "path": "docs/screenshots/visual-02-wizard-welcome.png",
+      "pixels": [
+        598,
+        464
+      ],
+      "format": "JPEG",
+      "bytes": 34144,
+      "sha256": "64459149261980164007A0DD372723353C52FE5711630E98DCB99BEC52C702AA"
+    }
+  ],
+  "registry": {
+    "before": "888A8E17A5EDDEBCD0C1C98043261DCBFC3874B037C46F0E4D0A913CB7E35412",
+    "after": "888A8E17A5EDDEBCD0C1C98043261DCBFC3874B037C46F0E4D0A913CB7E35412"
+  },
+  "userFilesUnchanged": 106,
+  "shortcutHashes": [
+    {
+      "path": "C:\\Users\\user\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\СС.Расчет.lnk",
+      "exists": true,
+      "hash": "B3D7A0C6F77FF174D81E72BABF4697062BBC8E1BBD930E1F07DD11990A499153"
+    },
+    {
+      "path": "C:\\Users\\user\\Desktop\\СС.Расчет.lnk",
+      "exists": true,
+      "hash": "6E7F65435958185C57B3CEC0924BB1F892E6D9EAC8A7001A7137F9A180CD036F"
+    }
+  ],
+  "zeroDiff": [
+    "app/",
+    "frontend/",
+    "packaging/",
+    "requirements.txt",
+    "tests/"
+  ],
+  "workerAddedFiles": [
+    "docs/workflow/evidence/logs/VP-02-resumed-api-check.ps1",
+    "docs/workflow/evidence/logs/VP-02-resumed-api-run.exit.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-api-run.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-api-summary.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-api.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-browser-run.exit.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-browser-run.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-browser.cjs",
+    "docs/workflow/evidence/logs/VP-02-resumed-browser.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-close-final.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-close.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-connections.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle-install-old-raw.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle-install-old.log",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle-reinstall-raw.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle-reinstall.log",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle-uninstall-raw.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle-uninstall.log",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle-upgrade-raw.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle-upgrade.log",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle.exit.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle.ps1",
+    "docs/workflow/evidence/logs/VP-02-resumed-cycle.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-diff-check.exit.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-diff-check.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-error-exit.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-error-raw.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-error.log",
+    "docs/workflow/evidence/logs/VP-02-resumed-error.pid.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-final-state.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-launch.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-manifest.py",
+    "docs/workflow/evidence/logs/VP-02-resumed-manifest.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-native-original-raw.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-native-raw.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-native-ui.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-native.log",
+    "docs/workflow/evidence/logs/VP-02-resumed-png-export.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-preflight.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-process-tree-before.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-product.diff",
+    "docs/workflow/evidence/logs/VP-02-resumed-static-system.exit.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-static-system.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-static.exit.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-static.json",
+    "docs/workflow/evidence/logs/VP-02-resumed-static.py",
+    "docs/workflow/evidence/logs/VP-02-resumed-static.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-status.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-targeted-tests.exit.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-targeted-tests.txt",
+    "docs/workflow/evidence/logs/VP-02-resumed-wizard-original-raw.txt",
+    "docs/screenshots/visual-02-resumed-desktop-422.png",
+    "docs/screenshots/visual-02-resumed-desktop-combined-after.png",
+    "docs/screenshots/visual-02-resumed-desktop-combined-before.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsn-after.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsn-before.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsv-after.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsv-before.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsv-D1.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsv-D2.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsv-D3.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsv-D4.png",
+    "docs/screenshots/visual-02-resumed-desktop-gsv-D5.png",
+    "docs/screenshots/visual-02-resumed-desktop-switch-clear.png",
+    "docs/screenshots/visual-02-resumed-minimum-422.png",
+    "docs/screenshots/visual-02-resumed-minimum-combined-after.png",
+    "docs/screenshots/visual-02-resumed-minimum-combined-before.png",
+    "docs/screenshots/visual-02-resumed-minimum-gsn-after.png",
+    "docs/screenshots/visual-02-resumed-minimum-gsn-before.png",
+    "docs/screenshots/visual-02-resumed-minimum-gsv-after.png",
+    "docs/screenshots/visual-02-resumed-minimum-gsv-before.png",
+    "docs/screenshots/visual-02-resumed-minimum-switch-clear.png",
+    "docs/screenshots/visual-02-resumed-mobile-422.png",
+    "docs/screenshots/visual-02-resumed-mobile-combined-after.png",
+    "docs/screenshots/visual-02-resumed-mobile-combined-before.png",
+    "docs/screenshots/visual-02-resumed-mobile-gsn-after.png",
+    "docs/screenshots/visual-02-resumed-mobile-gsn-before.png",
+    "docs/screenshots/visual-02-resumed-mobile-gsv-after.png",
+    "docs/screenshots/visual-02-resumed-mobile-gsv-before.png",
+    "docs/screenshots/visual-02-resumed-mobile-switch-clear.png",
+    "docs/screenshots/visual-02-resumed-native-minimum-combined.png",
+    "docs/screenshots/visual-02-resumed-native-minimum-gsn.png",
+    "docs/screenshots/visual-02-resumed-native-minimum-gsv.png",
+    "docs/screenshots/visual-02-resumed-native-startup-error.png",
+    "docs/screenshots/visual-02-resumed-native-target-combined.png",
+    "docs/screenshots/visual-02-resumed-native-target-gsn.png",
+    "docs/screenshots/visual-02-resumed-native-target-gsv.png",
+    "docs/screenshots/visual-02-resumed-splash-animated.png",
+    "docs/screenshots/visual-02-resumed-splash-flag.png",
+    "docs/screenshots/visual-02-resumed-splash-os.png",
+    "docs/workflow/evidence/VP-02-evidence.md"
+  ]
+}

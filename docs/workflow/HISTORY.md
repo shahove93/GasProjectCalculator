@@ -839,3 +839,163 @@ Findings: нет. Reviewer не менял файлы/не коммитил, п�
 Счётчики этого review 1/0/1; logical MD-02 totals 2/0/2-of-4. Следующий
 TASK — VP-02 (MD-03 A2 installer1.2.0); local scoped commit делает
 координатор. Push/merge/deploy/release/signing не выполнялись.
+
+## 2026-11-12 — VP-02 (MD-03 A2) BLOCKED реальным Codex usage limit
+
+VP-02 исполнитель — настоящий Orca Codex `gpt-6-astra` high
+(`ctx_113e19d0197a`/`task_ef0683db9d81`), requested/effective подтверждены.
+Собраны packaged app и настоящий Inno Setup installer 1.2.0
+15 373 267 B SHA256 `4579FB3A…6113`; сняты RU wizard welcome/dir/tasks/
+installing/finish/ready и native splash/main/GSN screenshots, выполнены
+isolated install, HKCU/shortcut backup и API checks; прежние 1.0.0/1.1.0/
+legacy bytes не изменены. На этапе installed-app проверки Codex вернул
+реальный provider limit: «You've hit your usage limit … try again at
+4:28 PM», 5h limit 8% left, reset 16:28. Согласно routing-and-budget и
+решению пользователя цепочка остановлена: не выполнялись reset-credit,
+покупка кредитов, смена аккаунта/тарифа, пересоздание сессии, молчаливая
+замена на `gpt-6-luna` или иную модель; автопродолжения после reset нет.
+
+Worker остановлен/fenced. Изолированная установка восстановлена собственным
+проверочным restore-script: HKCU exact export, shortcut SHA256 и все 106
+файлов пользовательской установки unchanged; пользовательский PID 13248,
+:8000 PID12888 и :8138 PID23152 сохранены; изолированных процессов нет.
+Незакоммиченные VP-02 installer/assets/evidence и artifact bytes сохранены,
+не сброшены и не закоммичены без routed PASS. Подробности:
+`docs/workflow/evidence/VP-02-blocked.md`; STATE — BLOCKED. Требуется решение
+root после восстановления доступа Codex; затем возобновление logical MD-03/A2
+с прежними counters и отдельным review.
+
+## 2026-11-12 — VP-02 resume preflight и возврат к тому же logical TASK
+
+Пользователь явно сообщил «Бро, лимиты восстановлены. Можно продолжить работу»;
+это записано в APPROVALS и VISUAL-POLISH-RESUME как разрешение продолжить
+зависимую цепочку, без сброса бюджета и без смены модели. Ownership сверен
+перед dispatch: live writer только текущий координатор
+`ctx_ed7166e32fdc`/`task_d75e7fdcd753` (term
+`term_f61ee838-7bfb-44e4-a660-994e91dc82e4`); прежний VP-02
+`ctx_113e19d0197a`/`task_ef0683db9d81` — stopped/exited/released, его task
+blocked. Второго писателя нет; checkout/clean/reset не выполнялись.
+
+Baseline продолжения — HEAD `1689773718c818a4ebca400afc2d8a4206b6458e`
+(VP-01 PASS). Перепроверены артефакт 1.2.0 (15 373 267 B,
+`4579FB3AA7B2E6220C1204E3AA2A6048648AE5A344B8E2D45DD00CF19F856113`,
+FileVersion 1.2.0.0) и неизменность 1.0.0/1.1.0/legacy bytes. Пользовательская
+среда сохранена: HKCU DisplayVersion 1.0.0, Start Menu/Desktop ярлыки на
+пользовательский exe, 106 files/37 372 847 B, PID 13248, :8000 PID 12888 и
+:8138 PID 23152; изолированный install остаётся только в
+`Temp/opencode/vp-02-isolated`. Counters восстановлены: MD-02 2/0/2-of-4,
+MD-03 1 full + текущий непрерванный C1, 0 FAIL, call 2/4 зарезервирован;
+финальная stage-приёмка отдельно. Замороженный checklist — W1–W11 в
+`tasks/VP-02.md`, без расширения. Evidence: `evidence/VP-02-resume.md`;
+STATE — RESUMED/IN_PROGRESS.
+
+Попытки reopen прежнего Orca task `task_ef0683db9d81` в
+`run_8e5d92ad57c7` отклонены runtime: `retry-of` — `task_not_found`, а
+`task-update`/binding — `worker_cannot_coordinate_own_run` (координатор сам
+работает в этом Run, `run-current=null`). Это ограничение контейнера, не reset
+logical TASK/бюджета. Работа возобновлена self-contained resume-spec в дочернем
+Run `run_51b48d1d96cc`, task `task_150bb380db2c`, worker
+`ctx_988a8c02d5c3` (terminal `term_879889ea-ac9e-48ad-bc89-978a67a20e10`).
+Requested/effective подтверждены до работы: `agent=codex`,
+`model=gpt-6-astra`, `effort=high`, state ready/live. Receipts:
+`logs/VP-02-resume-receipt.json`, `logs/VP-02-resume-effective.json`;
+spec `evidence/VP-02-resume-spec.md`. Next: worker_done/evidence → независимый
+R2 Sol/high review → full suite → отдельная финальная Astra-приёмка.
+
+## 2026-11-12 — VP-02 resume снова BLOCKED реальным provider limit
+
+Исполнитель `ctx_988a8c02d5c3` (Codex `gpt-6-astra` high, requested/effective
+подтверждены) успел собрать основной evidence pack
+`docs/workflow/evidence/VP-02-evidence.md`: W1–W11 в объёме installed app,
+native/browser screenshots, mixed/combined/legacy/422/ГСН/САКЗ/ПК/район/НДС,
+lifecycle/error/reduced-motion, isolated install→upgrade→reinstall→uninstall,
+targeted 36 tests/exit0, static 137 assertions/exit0, diff/scope и manifest
+(5 artifacts unchanged, 48 PNG, 106 user files unchanged). В последний момент
+обнаружил, что пять browser-кадров `visual-02-resumed-desktop-gsv-D1..D5.png`
+сняты во время 0,3-с `fadeUp`; числа корректны, но кадры требуют settled-
+пересъёмки. Попытка пересъёмки упала `ERR_UNSAFE_PORT` и не была доведена.
+
+Codex вернул реальный usage limit: «You've hit your usage limit … try again at
+9:31 PM», предложение `gpt-6-luna` отклонено. Согласно routing-and-budget
+цепочка остановлена: worker fenced (`worker-stop`: stopped, terminal closed,
+ptyKilled), reset-credit/покупка/смена аккаунта/модели/обход не выполнялись,
+автопродолжения нет. Изолированных процессов не осталось; user PID 13248,
+:8000/:8138, HKCU 1.0.0, ярлыки, 106 files/37 372 847 B и artifact
+`4579FB3A…6113` сохранены; commit/push/merge/deploy/release отсутствуют.
+Counters MD-03 не увеличены: A2/C1 прерван provider limit без verdict, резерв
+call 2/4 сохранён. Подробности: `evidence/VP-02-blocked-resume.md`; STATE —
+BLOCKED. Next после явного восстановления лимитов: только settled-пересъёмка
+пяти кадров, затем R2 Sol/high, full suite, отдельная Astra stage-приёмка,
+FINAL-REPORT/README/STATE и local commit.
+
+## 2026-11-12 — Lean finish: settled-кадры и suite готовы, координатор DeepSeek
+
+Новый пользовательский resume: завершать 1.2.0 экономно, координатор —
+OpenCode/DeepSeek Flash через подключённый DeepSeek API; обе независимые
+приёмки — Codex `gpt-6.1-sol`/high (решение «поручим Sol»). Прежний
+coordinator `ctx_5a20fa002149` был ошибочно запущен на free-модели и
+остановлен; его R2 helper `ctx_80a527f66ba9`/`task_80cf005bb692`
+(`gpt-6.1-sol`/high) тоже stopped/exited/released без verdict (архив
+транскрипта содержит только dispatch prompt, review-файла нет). Это
+прерванный вызов, не product FAIL и не сброс бюджета.
+
+Подтверждено по фактическим файлам: пять settled кадров
+`visual-02-resumed-desktop-gsv-D1..D5-settled.png` сняты после
+`document.getAnimations()`/`opacity=1` с хешами из evidence pack; полный
+integrated suite `.\.venv\Scripts\python.exe -m unittest discover -s tests`
+исполнен один раз по HEAD `1689773718`, 219 tests OK, exit 0
+(`VP-02-final-full-suite.txt`/`.exit.txt`, 22:43:44 MSK). Продуктовый diff
+относительно HEAD — только installer/branding/files, `app/`, `frontend/`,
+`packaging/`, `tests/` zero-diff; artifact 1.2.0 15 373 267 B SHA256
+`4579FB3A…6113` сохранён. Счётчики MD-03: A1/C1 1 full/0 FAIL/1-4;
+A2/C1 — резерв R2 call 2/4, который сейчас выполняется. Старые artifacts,
+user HKCU/ярлыки/106 files, PID 13248, :8000/:8138, `.venv` не трогались.
+
+Next: R2 `gpt-6.1-sol`/high по `reviews/VP-02-review-packet.md`, затем
+отдельная финальная stage-приёмка `gpt-6.1-sol`/high, FINAL-REPORT/README/
+STATE и local scoped commit после PASS. Astra — только при реальной
+продуктовой визуальной правке; push/merge/release/deploy/signing нет.
+
+## 2026-11-12 — VP-02 R2 PASS (MD-03 A2/C1)
+
+Независимый R2 reviewer — реальный Orca Codex `gpt-6.1-sol` high,
+task `task_65c331479b7e`, dispatch `ctx_df0f7573e041`, terminal
+`term_abc2c4e8-a62e-482e-9554-f0cf903681ef`; requested/effective
+`agent=codex`/`model=gpt-6.1-sol`/`effort=high` подтверждены
+`logs/VP-02-r2-effective.json`. Read-only: live diff/status сверены,
+23 изображения просмотрены vision, product/build/install/tests не
+перезапускались.
+
+Вердикт: **PASS** по всем W1–W11; 0 BLOCKER/MAJOR/MINOR. Единственный
+**VP02-R2-N1 (NIT)**: evidence называл manifest «48 real PNG», фактически
+39 PNG + 9 JPEG (JPEG сохранены с расширением .png). Формулировка
+исправлена координатором, пересъёмка/новый цикл не нужны. Verdict:
+`reviews/VP-02-review.md`. Счётчик MD-03: A2/C1 1 full review, 0 FAIL,
+call 2/4 израсходован; logical 2/0/2-of-4. Next: отдельная финальная
+stage-приёмка `gpt-6.1-sol`/high, затем FINAL-REPORT/README/STATE и local
+scoped commit. Push/merge/deploy/release/signing нет.
+
+## 2026-11-12 — Final stage acceptance PASS; визуальный этап 1.2.0 COMPLETE
+
+Отдельный Codex `gpt-6.1-sol` high, task `task_38ba500ce885`, dispatch
+`ctx_059202c6763a`, terminal `term_d7b471f9-7afe-4b66-9195-d415ceb6daa7`;
+requested/effective `agent=codex`/`model=gpt-6.1-sol`/`effort=high`
+подтверждены `logs/VP-02-final-stage-effective.json`. Контекст независим от
+Astra-исполнителя и обоих R2; read-only, файлы не менялись, продукт/build/
+install/tests/API/network не перезапускались.
+
+**FINAL ACCEPTANCE: PASS** по критериям 1–6: scope completeness (VP-01 PASS
+переиспользован, принятые header/footer/splash неизменны); artifact
+15 373 267 B / 1.2.0.0 / 1.2.0 / SHA256 `4579FB3A…6113`, прежние bytes
+неизменны; W1–W11 primary evidence достаточен (219 OK/exit 0, 36 OK,
+137 assertions, native/browser/settled, RU wizard, isolated cycle, lifecycle);
+live diff только installer iss/build/assets, app/frontend/packaging/
+requirements/tests zero-diff; независимость трёх `gpt-6.1-sol`/high
+контекстов подтверждена; stage готов к документам/коммиту. Новых findings
+0/0/0/0. Verdict: `reviews/VP-02-final-stage-review.md`.
+
+Затем координатор: `FINAL-REPORT-VISUAL-POLISH.md`, README (локальная 1.2.0
+явно не опубликована, 1.1.0 release не меняется), STATE/история и local
+scoped commit после PASS. Push/merge/deploy/release/signing не выполнялись;
+пользовательская установка/HKCU/ярлыки/сессии, `.venv`, :8000/:8138 и прежние
+installers сохранены.

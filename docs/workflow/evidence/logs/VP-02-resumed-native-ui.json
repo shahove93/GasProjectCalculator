@@ -1,0 +1,675 @@
+[
+  {
+    "kind": "screenshot",
+    "label": "target-gsn",
+    "source": "C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/native-target-gsn.jpg",
+    "png": "docs/screenshots/visual-02-resumed-native-target-gsn.png",
+    "width": 786,
+    "height": 533,
+    "text": "СС.Расчет\nКалькулятор ГСН и ГСВ\nРежим расчёта:\nГСН\nГСВ\nГСН + ГСВ\nЗаказчик:\n￼\nПараметры объекта\nГСН · ПАРАМЕТРЫ ТРАССЫ\nДлина, м\n10\nКоличество углов\n0\nСПОСОБ ПРОКЛАДКИ\nОткрытый способ\nГНБ\nТЕХНИКА\nЧасы экскаватора\n0\nДополнительные параметры\nОбъект в районе\n￼\nГидромолот\n￼\nЕсть ГРПШ\n￼\nРасчёт стоимости — ГСН\nИтого с НДС\n68 250 ₽\nБазовая стоимость\n65 000 ₽\nПодытог\n65 000 ₽\nНДС 5%\n3 250 ₽\nРассчитать стоимость"
+  },
+  {
+    "kind": "screenshot",
+    "label": "target-gsv",
+    "source": "C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/native-target-gsv.jpg",
+    "png": "docs/screenshots/visual-02-resumed-native-target-gsv.png",
+    "width": 786,
+    "height": 533,
+    "text": "СС.Расчет\nКалькулятор ГСН и ГСВ\nРежим расчёта:\nГСН\nГСВ\nГСН + ГСВ\nЗаказчик:\n￼\nПараметры объекта\nГСВ · ДЛИНЫ ПО ДИАМЕТРАМ, М\nдо Ø25\n4\nØ32–40\n0\nØ57\n4\nГСВ · ДОПОЛНИТЕЛЬНО\nАлмазное бурение, отверстий\n0\nКомплекты САКЗ\n0\nДополнительные параметры\nОбъект в районе\n￼\nПК (пульт контрольный)\n￼\nРасчёт стоимости — ГСВ\nИтого с НДС\n75 600 ₽\nБазовая стоимость\n60 000 ₽\nДоплата за длину\n12 000 ₽\nОбщий метраж\n8 м\nДиаметр\nДлина\nВкл.\nОпл.\nСтавка\nСумма\nдо Ø25\n4 м\n4 м\n0 м\n2 500\n0\nØ32–40\n0 м\n0 м\n0 м\n3 500\n0\nØ57\n4 м\n1 м\n3 м\n4 000\n12 000\nПодытог\n72 000 ₽\nНДС 5%\n3 600 ₽\nРассчитать стоимость"
+  },
+  {
+    "kind": "metrics",
+    "label": "target-gsv",
+    "id": 1794490890319,
+    "ok": true,
+    "result": {
+      "inner": [
+        784,
+        501
+      ],
+      "outer": [
+        784,
+        501
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        784,
+        501
+      ],
+      "action": {
+        "x": 430.21875,
+        "y": 398,
+        "width": 329.78125,
+        "height": 31,
+        "bottom": 429,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 430.21875,
+          "y": 165.953125,
+          "width": 329.78125,
+          "height": 42.6875,
+          "bottom": 208.640625,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "screenshot",
+    "label": "target-combined",
+    "source": "C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/native-target-combined.jpg",
+    "png": "docs/screenshots/visual-02-resumed-native-target-combined.png",
+    "width": 786,
+    "height": 533,
+    "text": "СС.Расчет\nКалькулятор ГСН и ГСВ\nРежим расчёта:\nГСН\nГСВ\nГСН + ГСВ\nЗаказчик:\n￼\nПараметры объекта\nГСН · ПАРАМЕТРЫ ТРАССЫ\nДлина, м\n10\nКоличество углов\n0\nСПОСОБ ПРОКЛАДКИ\nОткрытый способ\nГНБ\nТЕХНИКА\nЧасы экскаватора\n0\nГСВ · ДЛИНЫ ПО ДИАМЕТРАМ, М\nдо Ø25\n4\nØ32–40\n0\nØ57\n4\nГСВ · ДОПОЛНИТЕЛЬНО\nАлмазное бурение, отверстий\n0\nКомплекты САКЗ\n0\nДополнительные параметры\nОбъект в районе\n￼\nГидромолот\n￼\nЕсть ГРПШ\n￼\nПК (пульт контрольный)\n￼\nРасчёт стоимости — ГСН + ГСВ\nИтого с НДС\n158 550 ₽\nГСН\nБазовая стоимость\n65 000 ₽\nДоплата за район\n7 000 ₽\nИтого по ГСН\n75 600 ₽\nГСВ\nБазовая стоимость\n60 000 ₽\nДоплата за длину\n12 000 ₽\nОбщий метраж\n8 м\nДиаметр\nДлина\nВкл.\nОпл.\nСтавка\nСумма\nдо Ø25\n4 м\n4 м\n0 м\n2 500\n0\nØ32–40\n0 м\n0 м\n0 м\n3 500\n0\nØ57\n4 м\n1 м\n3 м\n4 000\n12 000\nДоплата за район\n7 000 ₽\nИтого по ГСВ\n82 950 ₽\nОбщий подытог\n151 000 ₽\nНДС 5%\n7 550 ₽\nРассчитать стоимость"
+  },
+  {
+    "kind": "metrics",
+    "label": "target-combined",
+    "id": 1794490936243,
+    "ok": true,
+    "result": {
+      "inner": [
+        784,
+        501
+      ],
+      "outer": [
+        784,
+        501
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        784,
+        501
+      ],
+      "action": {
+        "x": 430.21875,
+        "y": 398,
+        "width": 329.78125,
+        "height": 31,
+        "bottom": 429,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 430.21875,
+          "y": 165.953125,
+          "width": 329.78125,
+          "height": 42.6875,
+          "bottom": 208.640625,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "metrics",
+    "label": "minimum-combined",
+    "id": 1794490943818,
+    "ok": true,
+    "result": {
+      "inner": [
+        784,
+        501
+      ],
+      "outer": [
+        784,
+        501
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        784,
+        501
+      ],
+      "action": {
+        "x": 430.21875,
+        "y": 398,
+        "width": 329.78125,
+        "height": 31,
+        "bottom": 429,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 430.21875,
+          "y": 165.953125,
+          "width": 329.78125,
+          "height": 42.6875,
+          "bottom": 208.640625,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "metrics",
+    "label": "resize-step",
+    "id": 1794491029479,
+    "ok": true,
+    "result": {
+      "inner": [
+        773,
+        501
+      ],
+      "outer": [
+        773,
+        501
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        773,
+        501
+      ],
+      "action": {
+        "x": 424.40625,
+        "y": 398,
+        "width": 324.59375,
+        "height": 31,
+        "bottom": 429,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 424.40625,
+          "y": 164.953125,
+          "width": 324.59375,
+          "height": 42.265625,
+          "bottom": 207.21875,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "metrics",
+    "label": "resize-step-2",
+    "id": 1794491047931,
+    "ok": true,
+    "result": {
+      "inner": [
+        762,
+        501
+      ],
+      "outer": [
+        762,
+        501
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        762,
+        501
+      ],
+      "action": {
+        "x": 418.59375,
+        "y": 398,
+        "width": 319.40625,
+        "height": 31,
+        "bottom": 429,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 418.59375,
+          "y": 164.875,
+          "width": 319.40625,
+          "height": 41.8125,
+          "bottom": 206.6875,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "metrics",
+    "label": "resize-step-3",
+    "id": 1794491060660,
+    "ok": true,
+    "result": {
+      "inner": [
+        751,
+        501
+      ],
+      "outer": [
+        751,
+        501
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        751,
+        501
+      ],
+      "action": {
+        "x": 412.78125,
+        "y": 398,
+        "width": 314.21875,
+        "height": 31,
+        "bottom": 429,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 412.78125,
+          "y": 164.875,
+          "width": 314.21875,
+          "height": 41.390625,
+          "bottom": 206.265625,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "metrics",
+    "label": "minimum-width",
+    "id": 1794491072617,
+    "ok": true,
+    "result": {
+      "inner": [
+        744,
+        501
+      ],
+      "outer": [
+        744,
+        501
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        744,
+        501
+      ],
+      "action": {
+        "x": 409.09375,
+        "y": 398,
+        "width": 310.90625,
+        "height": 31,
+        "bottom": 429,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 409.09375,
+          "y": 164.875,
+          "width": 310.90625,
+          "height": 41.125,
+          "bottom": 206,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "metrics",
+    "label": "resize-height",
+    "id": 1794491081898,
+    "ok": true,
+    "result": {
+      "inner": [
+        744,
+        501
+      ],
+      "outer": [
+        744,
+        501
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        744,
+        501
+      ],
+      "action": {
+        "x": 409.09375,
+        "y": 398,
+        "width": 310.90625,
+        "height": 31,
+        "bottom": 429,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 409.09375,
+          "y": 164.875,
+          "width": 310.90625,
+          "height": 41.125,
+          "bottom": 206,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "metrics",
+    "label": "resize-height-step",
+    "id": 1794491153945,
+    "ok": true,
+    "result": {
+      "inner": [
+        744,
+        490
+      ],
+      "outer": [
+        744,
+        490
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        744,
+        490
+      ],
+      "action": {
+        "x": 409.09375,
+        "y": 387,
+        "width": 310.90625,
+        "height": 31,
+        "bottom": 418,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 409.09375,
+          "y": 164.875,
+          "width": 310.90625,
+          "height": 41.125,
+          "bottom": 206,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "metrics",
+    "label": "minimum-height",
+    "id": 1794491164462,
+    "ok": true,
+    "result": {
+      "inner": [
+        744,
+        481
+      ],
+      "outer": [
+        744,
+        481
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        744,
+        481
+      ],
+      "action": {
+        "x": 409.09375,
+        "y": 378,
+        "width": 310.90625,
+        "height": 31,
+        "bottom": 409,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 409.09375,
+          "y": 164.875,
+          "width": 310.90625,
+          "height": 41.125,
+          "bottom": 206,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "screenshot",
+    "label": "minimum-combined",
+    "source": "C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/native-minimum-combined.jpg",
+    "png": "docs/screenshots/visual-02-resumed-native-minimum-combined.png",
+    "width": 746,
+    "height": 513,
+    "text": "СС.Расчет\nКалькулятор ГСН и ГСВ\nРежим расчёта:\nГСН\nГСВ\nГСН + ГСВ\nЗаказчик:\n￼\nПараметры объекта\nГСН · ПАРАМЕТРЫ ТРАССЫ\nДлина, м\n10\nКоличество углов\n0\nСПОСОБ ПРОКЛАДКИ\nОткрытый способ\nГНБ\nТЕХНИКА\nЧасы экскаватора\n0\nГСВ · ДЛИНЫ ПО ДИАМЕТРАМ, М\nдо Ø25\n4\nØ32–40\n0\nØ57\n4\nГСВ · ДОПОЛНИТЕЛЬНО\nАлмазное бурение, отверстий\n0\nКомплекты САКЗ\n0\nДополнительные параметры\nОбъект в районе\n￼\nГидромолот\n￼\nЕсть ГРПШ\n￼\nПК (пульт контрольный)\n￼\nРасчёт стоимости — ГСН + ГСВ\nИтого с НДС\n158 550 ₽\nГСН\nБазовая стоимость\n65 000 ₽\nДоплата за район\n7 000 ₽\nИтого по ГСН\n75 600 ₽\nГСВ\nБазовая стоимость\n60 000 ₽\nДоплата за длину\n12 000 ₽\nОбщий метраж\n8 м\nДиаметр\nДлина\nВкл.\nОпл.\nСтавка\nСумма\nдо Ø25\n4 м\n4 м\n0 м\n2 500\n0\nØ32–40\n0 м\n0 м\n0 м\n3 500\n0\nØ57\n4 м\n1 м\n3 м\n4 000\n12 000\nДоплата за район\n7 000 ₽\nИтого по ГСВ\n82 950 ₽\nОбщий подытог\n151 000 ₽\nНДС 5%\n7 550 ₽\nРассчитать стоимость"
+  },
+  {
+    "kind": "metrics",
+    "label": "minimum-combined-final",
+    "id": 1794491172794,
+    "ok": true,
+    "result": {
+      "inner": [
+        744,
+        481
+      ],
+      "outer": [
+        744,
+        481
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        744,
+        481
+      ],
+      "action": {
+        "x": 409.09375,
+        "y": 378,
+        "width": 310.90625,
+        "height": 31,
+        "bottom": 409,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 409.09375,
+          "y": 164.875,
+          "width": 310.90625,
+          "height": 41.125,
+          "bottom": 206,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "screenshot",
+    "label": "minimum-gsv",
+    "source": "C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/native-minimum-gsv.jpg",
+    "png": "docs/screenshots/visual-02-resumed-native-minimum-gsv.png",
+    "width": 746,
+    "height": 513,
+    "text": "СС.Расчет\nКалькулятор ГСН и ГСВ\nРежим расчёта:\nГСН\nГСВ\nГСН + ГСВ\nЗаказчик:\n￼\nПараметры объекта\nГСВ · ДЛИНЫ ПО ДИАМЕТРАМ, М\nдо Ø25\n4\nØ32–40\n0\nØ57\n4\nГСВ · ДОПОЛНИТЕЛЬНО\nАлмазное бурение, отверстий\n0\nКомплекты САКЗ\n0\nДополнительные параметры\nОбъект в районе\n￼\nПК (пульт контрольный)\n￼\nРасчёт стоимости — ГСВ\nИтого с НДС\n75 600 ₽\nБазовая стоимость\n60 000 ₽\nДоплата за длину\n12 000 ₽\nОбщий метраж\n8 м\nДиаметр\nДлина\nВкл.\nОпл.\nСтавка\nСумма\nдо Ø25\n4 м\n4 м\n0 м\n2 500\n0\nØ32–40\n0 м\n0 м\n0 м\n3 500\n0\nØ57\n4 м\n1 м\n3 м\n4 000\n12 000\nПодытог\n72 000 ₽\nНДС 5%\n3 600 ₽\nРассчитать стоимость"
+  },
+  {
+    "kind": "metrics",
+    "label": "minimum-gsv-final",
+    "id": 1794491204326,
+    "ok": true,
+    "result": {
+      "inner": [
+        744,
+        481
+      ],
+      "outer": [
+        744,
+        481
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        744,
+        481
+      ],
+      "action": {
+        "x": 409.09375,
+        "y": 378,
+        "width": 310.90625,
+        "height": 31,
+        "bottom": 409,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 409.09375,
+          "y": 164.875,
+          "width": 310.90625,
+          "height": 41.125,
+          "bottom": 206,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "screenshot",
+    "label": "minimum-gsn",
+    "source": "C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/native-minimum-gsn.jpg",
+    "png": "docs/screenshots/visual-02-resumed-native-minimum-gsn.png",
+    "width": 746,
+    "height": 513,
+    "text": "СС.Расчет\nКалькулятор ГСН и ГСВ\nРежим расчёта:\nГСН\nГСВ\nГСН + ГСВ\nЗаказчик:\n￼\nПараметры объекта\nГСН · ПАРАМЕТРЫ ТРАССЫ\nДлина, м\n10\nКоличество углов\n0\nСПОСОБ ПРОКЛАДКИ\nОткрытый способ\nГНБ\nТЕХНИКА\nЧасы экскаватора\n0\nДополнительные параметры\nОбъект в районе\n￼\nГидромолот\n￼\nЕсть ГРПШ\n￼\nРасчёт стоимости — ГСН\nИтого с НДС\n68 250 ₽\nБазовая стоимость\n65 000 ₽\nПодытог\n65 000 ₽\nНДС 5%\n3 250 ₽\nРассчитать стоимость"
+  },
+  {
+    "kind": "metrics",
+    "label": "minimum-gsn-final",
+    "id": 1794491229124,
+    "ok": true,
+    "result": {
+      "inner": [
+        744,
+        481
+      ],
+      "outer": [
+        744,
+        481
+      ],
+      "screen": [
+        3440,
+        1440
+      ],
+      "dpr": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        744,
+        481
+      ],
+      "action": {
+        "x": 409.09375,
+        "y": 378,
+        "width": 310.90625,
+        "height": 31,
+        "bottom": 409,
+        "inViewport": true
+      },
+      "totals": [
+        {
+          "x": 409.09375,
+          "y": 164.875,
+          "width": 310.90625,
+          "height": 41.125,
+          "bottom": 206,
+          "inViewport": true
+        }
+      ]
+    }
+  },
+  {
+    "kind": "screenshot",
+    "label": "startup-error",
+    "source": "C:/Users/user/AppData/Local/Temp/opencode/vp-02-resume/native-startup-error.jpg",
+    "png": "docs/screenshots/visual-02-resumed-native-startup-error.png",
+    "width": 412,
+    "height": 276
+  }
+]

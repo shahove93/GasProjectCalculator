@@ -1,0 +1,7 @@
+
+DisplayName     : СС.Расчет
+DisplayVersion  : 1.2.0
+InstallLocation : C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\
+
+C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\СС.Расчет.lnk -> C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\GasProjectCalculator.exe
+C:\Users\user\Desktop\СС.Расчет.lnk -> C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe

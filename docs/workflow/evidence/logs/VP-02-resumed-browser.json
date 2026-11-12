@@ -1,0 +1,2634 @@
+{
+  "cases": [
+    {
+      "device": "desktop",
+      "mode": "gsn",
+      "before": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          800,
+          540
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 438.671875,
+          "y": 437,
+          "w": 337.328125,
+          "h": 31,
+          "bottom": 468,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 512,
+            "y": 5,
+            "w": 272,
+            "h": 72.53125,
+            "bottom": 77.53125,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 481,
+            "w": 776,
+            "h": 54,
+            "bottom": 535,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          800,
+          540
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 438.671875,
+          "y": 437,
+          "w": 337.328125,
+          "h": 31,
+          "bottom": 468,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [
+          {
+            "x": 438.671875,
+            "y": 167.40625,
+            "w": 337.328125,
+            "h": 43.3125,
+            "bottom": 210.71875,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 512,
+            "y": 5,
+            "w": 272,
+            "h": 72.53125,
+            "bottom": 77.53125,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 481,
+            "w": 776,
+            "h": 54,
+            "bottom": 535,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "total": "68 250 ₽",
+      "response": {
+        "base_price": 65000,
+        "length_surcharge": 0,
+        "angle_surcharge": 0,
+        "excavator_cost": 0,
+        "hdd_surcharge": 0,
+        "area_surcharge": 0,
+        "grpsh_surcharge": 0,
+        "subtotal": 65000,
+        "vat": 3250,
+        "total": 68250
+      }
+    },
+    {
+      "device": "desktop",
+      "mode": "gsv",
+      "before": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          800,
+          540
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 438.671875,
+          "y": 437,
+          "w": 337.328125,
+          "h": 31,
+          "bottom": 468,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 512,
+            "y": 5,
+            "w": 272,
+            "h": 72.53125,
+            "bottom": 77.53125,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 481,
+            "w": 776,
+            "h": 54,
+            "bottom": 535,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          800,
+          540
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 438.671875,
+          "y": 437,
+          "w": 337.328125,
+          "h": 31,
+          "bottom": 468,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [
+          {
+            "x": 438.671875,
+            "y": 167.40625,
+            "w": 337.328125,
+            "h": 43.3125,
+            "bottom": 210.71875,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 512,
+            "y": 5,
+            "w": 272,
+            "h": 72.53125,
+            "bottom": 77.53125,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 481,
+            "w": 776,
+            "h": 54,
+            "bottom": 535,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "total": "75 600 ₽",
+      "response": {
+        "base_price": 60000,
+        "length_surcharge": 12000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 72000,
+        "vat": 3600,
+        "total": 75600,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 4,
+            "included_length": 4,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 4,
+            "included_length": 1,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "mode": "combined",
+      "before": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          800,
+          540
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 438.671875,
+          "y": 437,
+          "w": 337.328125,
+          "h": 31,
+          "bottom": 468,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 512,
+            "y": 5,
+            "w": 272,
+            "h": 72.53125,
+            "bottom": 77.53125,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 481,
+            "w": 776,
+            "h": 54,
+            "bottom": 535,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          800,
+          540
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          800,
+          540
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 438.671875,
+          "y": 437,
+          "w": 337.328125,
+          "h": 31,
+          "bottom": 468,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [
+          {
+            "x": 438.671875,
+            "y": 167.40625,
+            "w": 337.328125,
+            "h": 43.3125,
+            "bottom": 210.71875,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 512,
+            "y": 5,
+            "w": 272,
+            "h": 72.53125,
+            "bottom": 77.53125,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 481,
+            "w": 776,
+            "h": 54,
+            "bottom": 535,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "total": "158 550 ₽",
+      "response": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "base_price": 65000,
+          "length_surcharge": 0,
+          "angle_surcharge": 0,
+          "excavator_cost": 0,
+          "hdd_surcharge": 0,
+          "area_surcharge": 7000,
+          "grpsh_surcharge": 0,
+          "subtotal": 72000,
+          "vat": 3600,
+          "total": 75600
+        },
+        "gsv": {
+          "base_price": 60000,
+          "length_surcharge": 12000,
+          "drilling_cost": 0,
+          "sakz_cost": 0,
+          "panel_cost": 0,
+          "area_surcharge": 7000,
+          "subtotal": 79000,
+          "vat": 3950,
+          "total": 82950,
+          "total_length": 8,
+          "pipe_breakdown": [
+            {
+              "category": "up_to_25",
+              "length": 4,
+              "included_length": 4,
+              "billable_length": 0,
+              "rate": 2500,
+              "surcharge": 0
+            },
+            {
+              "category": "from_32_to_40",
+              "length": 0,
+              "included_length": 0,
+              "billable_length": 0,
+              "rate": 3500,
+              "surcharge": 0
+            },
+            {
+              "category": "diameter_57",
+              "length": 4,
+              "included_length": 1,
+              "billable_length": 3,
+              "rate": 4000,
+              "surcharge": 12000
+            }
+          ]
+        },
+        "subtotal": 151000,
+        "vat": 7550,
+        "total": 158550
+      }
+    },
+    {
+      "device": "desktop",
+      "label": "D1",
+      "values": [
+        4,
+        0,
+        4
+      ],
+      "rows": "Диаметр\tДлина\tВкл.\tОпл.\tСтавка\tСумма\nдо Ø25\t4 м\t4 м\t0 м\t2 500\t0\nØ32–40\t0 м\t0 м\t0 м\t3 500\t0\nØ57\t4 м\t1 м\t3 м\t4 000\t12 000",
+      "total": "75 600 ₽",
+      "response": {
+        "base_price": 60000,
+        "length_surcharge": 12000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 72000,
+        "vat": 3600,
+        "total": 75600,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 4,
+            "included_length": 4,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 4,
+            "included_length": 1,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "label": "D2",
+      "values": [
+        2,
+        4,
+        3
+      ],
+      "rows": "Диаметр\tДлина\tВкл.\tОпл.\tСтавка\tСумма\nдо Ø25\t2 м\t2 м\t0 м\t2 500\t0\nØ32–40\t4 м\t3 м\t1 м\t3 500\t3 500\nØ57\t3 м\t0 м\t3 м\t4 000\t12 000",
+      "total": "79 275 ₽",
+      "response": {
+        "base_price": 60000,
+        "length_surcharge": 15500,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 75500,
+        "vat": 3775,
+        "total": 79275,
+        "total_length": 9,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 2,
+            "included_length": 2,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 4,
+            "included_length": 3,
+            "billable_length": 1,
+            "rate": 3500,
+            "surcharge": 3500
+          },
+          {
+            "category": "diameter_57",
+            "length": 3,
+            "included_length": 0,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "label": "D3",
+      "values": [
+        0,
+        5,
+        2
+      ],
+      "rows": "Диаметр\tДлина\tВкл.\tОпл.\tСтавка\tСумма\nдо Ø25\t0 м\t0 м\t0 м\t2 500\t0\nØ32–40\t5 м\t5 м\t0 м\t3 500\t0\nØ57\t2 м\t0 м\t2 м\t4 000\t8 000",
+      "total": "71 400 ₽",
+      "response": {
+        "base_price": 60000,
+        "length_surcharge": 8000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 68000,
+        "vat": 3400,
+        "total": 71400,
+        "total_length": 7,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 5,
+            "included_length": 5,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 2,
+            "included_length": 0,
+            "billable_length": 2,
+            "rate": 4000,
+            "surcharge": 8000
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "label": "D4",
+      "values": [
+        3,
+        1,
+        1
+      ],
+      "rows": "Диаметр\tДлина\tВкл.\tОпл.\tСтавка\tСумма\nдо Ø25\t3 м\t3 м\t0 м\t2 500\t0\nØ32–40\t1 м\t1 м\t0 м\t3 500\t0\nØ57\t1 м\t1 м\t0 м\t4 000\t0",
+      "total": "63 000 ₽",
+      "response": {
+        "base_price": 60000,
+        "length_surcharge": 0,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 60000,
+        "vat": 3000,
+        "total": 63000,
+        "total_length": 5,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 3,
+            "included_length": 3,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 1,
+            "included_length": 1,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 1,
+            "included_length": 1,
+            "billable_length": 0,
+            "rate": 4000,
+            "surcharge": 0
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "label": "D5",
+      "values": [
+        8,
+        0,
+        0
+      ],
+      "rows": "Диаметр\tДлина\tВкл.\tОпл.\tСтавка\tСумма\nдо Ø25\t8 м\t5 м\t3 м\t2 500\t7 500\nØ32–40\t0 м\t0 м\t0 м\t3 500\t0\nØ57\t0 м\t0 м\t0 м\t4 000\t0",
+      "total": "70 875 ₽",
+      "response": {
+        "base_price": 60000,
+        "length_surcharge": 7500,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 67500,
+        "vat": 3375,
+        "total": 70875,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 8,
+            "included_length": 5,
+            "billable_length": 3,
+            "rate": 2500,
+            "surcharge": 7500
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 4000,
+            "surcharge": 0
+          }
+        ]
+      }
+    },
+    {
+      "device": "minimum",
+      "mode": "gsn",
+      "before": {
+        "inner": [
+          760,
+          520
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          760,
+          520
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 417.546875,
+          "y": 417,
+          "w": 318.453125,
+          "h": 31,
+          "bottom": 448,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 485.609375,
+            "y": 5.546875,
+            "w": 258.390625,
+            "h": 68.890625,
+            "bottom": 74.4375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 461,
+            "w": 736,
+            "h": 54,
+            "bottom": 515,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          760,
+          520
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          760,
+          520
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 417.546875,
+          "y": 417,
+          "w": 318.453125,
+          "h": 31,
+          "bottom": 448,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [
+          {
+            "x": 417.546875,
+            "y": 164.875,
+            "w": 318.453125,
+            "h": 41.75,
+            "bottom": 206.625,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 485.609375,
+            "y": 5.546875,
+            "w": 258.390625,
+            "h": 68.890625,
+            "bottom": 74.4375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 461,
+            "w": 736,
+            "h": 54,
+            "bottom": 515,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "total": "68 250 ₽",
+      "response": {
+        "base_price": 65000,
+        "length_surcharge": 0,
+        "angle_surcharge": 0,
+        "excavator_cost": 0,
+        "hdd_surcharge": 0,
+        "area_surcharge": 0,
+        "grpsh_surcharge": 0,
+        "subtotal": 65000,
+        "vat": 3250,
+        "total": 68250
+      }
+    },
+    {
+      "device": "minimum",
+      "mode": "gsv",
+      "before": {
+        "inner": [
+          760,
+          520
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          760,
+          520
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 417.546875,
+          "y": 417,
+          "w": 318.453125,
+          "h": 31,
+          "bottom": 448,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 485.609375,
+            "y": 5.546875,
+            "w": 258.390625,
+            "h": 68.890625,
+            "bottom": 74.4375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 461,
+            "w": 736,
+            "h": 54,
+            "bottom": 515,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          760,
+          520
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          760,
+          520
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 417.546875,
+          "y": 417,
+          "w": 318.453125,
+          "h": 31,
+          "bottom": 448,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [
+          {
+            "x": 417.546875,
+            "y": 164.875,
+            "w": 318.453125,
+            "h": 41.75,
+            "bottom": 206.625,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 485.609375,
+            "y": 5.546875,
+            "w": 258.390625,
+            "h": 68.890625,
+            "bottom": 74.4375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 461,
+            "w": 736,
+            "h": 54,
+            "bottom": 515,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "total": "75 600 ₽",
+      "response": {
+        "base_price": 60000,
+        "length_surcharge": 12000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 72000,
+        "vat": 3600,
+        "total": 75600,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 4,
+            "included_length": 4,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 4,
+            "included_length": 1,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "minimum",
+      "mode": "combined",
+      "before": {
+        "inner": [
+          760,
+          520
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          760,
+          520
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 417.546875,
+          "y": 417,
+          "w": 318.453125,
+          "h": 31,
+          "bottom": 448,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 485.609375,
+            "y": 5.546875,
+            "w": 258.390625,
+            "h": 68.890625,
+            "bottom": 74.4375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 461,
+            "w": 736,
+            "h": 54,
+            "bottom": 515,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          760,
+          520
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          760,
+          520
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 417.546875,
+          "y": 417,
+          "w": 318.453125,
+          "h": 31,
+          "bottom": 448,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [
+          {
+            "x": 417.546875,
+            "y": 164.875,
+            "w": 318.453125,
+            "h": 41.75,
+            "bottom": 206.625,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 485.609375,
+            "y": 5.546875,
+            "w": 258.390625,
+            "h": 68.890625,
+            "bottom": 74.4375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 12,
+            "y": 461,
+            "w": 736,
+            "h": 54,
+            "bottom": 515,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "total": "158 550 ₽",
+      "response": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "base_price": 65000,
+          "length_surcharge": 0,
+          "angle_surcharge": 0,
+          "excavator_cost": 0,
+          "hdd_surcharge": 0,
+          "area_surcharge": 7000,
+          "grpsh_surcharge": 0,
+          "subtotal": 72000,
+          "vat": 3600,
+          "total": 75600
+        },
+        "gsv": {
+          "base_price": 60000,
+          "length_surcharge": 12000,
+          "drilling_cost": 0,
+          "sakz_cost": 0,
+          "panel_cost": 0,
+          "area_surcharge": 7000,
+          "subtotal": 79000,
+          "vat": 3950,
+          "total": 82950,
+          "total_length": 8,
+          "pipe_breakdown": [
+            {
+              "category": "up_to_25",
+              "length": 4,
+              "included_length": 4,
+              "billable_length": 0,
+              "rate": 2500,
+              "surcharge": 0
+            },
+            {
+              "category": "from_32_to_40",
+              "length": 0,
+              "included_length": 0,
+              "billable_length": 0,
+              "rate": 3500,
+              "surcharge": 0
+            },
+            {
+              "category": "diameter_57",
+              "length": 4,
+              "included_length": 1,
+              "billable_length": 3,
+              "rate": 4000,
+              "surcharge": 12000
+            }
+          ]
+        },
+        "subtotal": 151000,
+        "vat": 7550,
+        "total": 158550
+      }
+    },
+    {
+      "device": "mobile",
+      "mode": "gsn",
+      "before": {
+        "inner": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          390,
+          844
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 22,
+          "y": 603.078125,
+          "w": 346,
+          "h": 31,
+          "bottom": 634.078125,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 266,
+            "y": 9,
+            "w": 112,
+            "h": 29.859375,
+            "bottom": 38.859375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 10,
+            "y": 776,
+            "w": 370,
+            "h": 58,
+            "bottom": 834,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          390,
+          844
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 22,
+          "y": 627.140625,
+          "w": 346,
+          "h": 31,
+          "bottom": 658.140625,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [
+          {
+            "x": 22,
+            "y": 510.578125,
+            "w": 346,
+            "h": 39,
+            "bottom": 549.578125,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 266,
+            "y": 9,
+            "w": 112,
+            "h": 29.859375,
+            "bottom": 38.859375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 10,
+            "y": 776,
+            "w": 370,
+            "h": 58,
+            "bottom": 834,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "total": "68 250 ₽",
+      "response": {
+        "base_price": 65000,
+        "length_surcharge": 0,
+        "angle_surcharge": 0,
+        "excavator_cost": 0,
+        "hdd_surcharge": 0,
+        "area_surcharge": 0,
+        "grpsh_surcharge": 0,
+        "subtotal": 65000,
+        "vat": 3250,
+        "total": 68250
+      }
+    },
+    {
+      "device": "mobile",
+      "mode": "gsv",
+      "before": {
+        "inner": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          390,
+          844
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 22,
+          "y": 560.921875,
+          "w": 346,
+          "h": 31,
+          "bottom": 591.921875,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 266,
+            "y": 9,
+            "w": 112,
+            "h": 29.859375,
+            "bottom": 38.859375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 10,
+            "y": 776,
+            "w": 370,
+            "h": 58,
+            "bottom": 834,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          390,
+          844
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 22,
+          "y": 705.6875,
+          "w": 346,
+          "h": 31,
+          "bottom": 736.6875,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [
+          {
+            "x": 22,
+            "y": 468.421875,
+            "w": 346,
+            "h": 39,
+            "bottom": 507.421875,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 266,
+            "y": 9,
+            "w": 112,
+            "h": 29.859375,
+            "bottom": 38.859375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 10,
+            "y": 776,
+            "w": 370,
+            "h": 58,
+            "bottom": 834,
+            "visible": true,
+            "viewport": true
+          }
+        ]
+      },
+      "total": "75 600 ₽",
+      "response": {
+        "base_price": 60000,
+        "length_surcharge": 12000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 72000,
+        "vat": 3600,
+        "total": 75600,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 4,
+            "included_length": 4,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 4,
+            "included_length": 1,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "mobile",
+      "mode": "combined",
+      "before": {
+        "inner": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          390,
+          872
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 22,
+          "y": 747.875,
+          "w": 346,
+          "h": 31,
+          "bottom": 778.875,
+          "visible": true,
+          "viewport": true
+        },
+        "totals": [],
+        "art": [
+          {
+            "x": 266,
+            "y": 9,
+            "w": 112,
+            "h": 29.859375,
+            "bottom": 38.859375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 10,
+            "y": 803.875,
+            "w": 370,
+            "h": 58,
+            "bottom": 861.875,
+            "visible": true,
+            "viewport": false
+          }
+        ]
+      },
+      "after": {
+        "inner": [
+          390,
+          844
+        ],
+        "scroll": [
+          0,
+          0
+        ],
+        "document": [
+          390,
+          1151
+        ],
+        "dpr": 1,
+        "action": {
+          "x": 22,
+          "y": 1026.921875,
+          "w": 346,
+          "h": 31,
+          "bottom": 1057.921875,
+          "visible": true,
+          "viewport": false
+        },
+        "totals": [
+          {
+            "x": 22,
+            "y": 655.375,
+            "w": 346,
+            "h": 39,
+            "bottom": 694.375,
+            "visible": true,
+            "viewport": true
+          }
+        ],
+        "art": [
+          {
+            "x": 266,
+            "y": 9,
+            "w": 112,
+            "h": 29.859375,
+            "bottom": 38.859375,
+            "visible": true,
+            "viewport": true
+          },
+          {
+            "x": 10,
+            "y": 1082.921875,
+            "w": 370,
+            "h": 58,
+            "bottom": 1140.921875,
+            "visible": true,
+            "viewport": false
+          }
+        ]
+      },
+      "total": "158 550 ₽",
+      "response": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "base_price": 65000,
+          "length_surcharge": 0,
+          "angle_surcharge": 0,
+          "excavator_cost": 0,
+          "hdd_surcharge": 0,
+          "area_surcharge": 7000,
+          "grpsh_surcharge": 0,
+          "subtotal": 72000,
+          "vat": 3600,
+          "total": 75600
+        },
+        "gsv": {
+          "base_price": 60000,
+          "length_surcharge": 12000,
+          "drilling_cost": 0,
+          "sakz_cost": 0,
+          "panel_cost": 0,
+          "area_surcharge": 7000,
+          "subtotal": 79000,
+          "vat": 3950,
+          "total": 82950,
+          "total_length": 8,
+          "pipe_breakdown": [
+            {
+              "category": "up_to_25",
+              "length": 4,
+              "included_length": 4,
+              "billable_length": 0,
+              "rate": 2500,
+              "surcharge": 0
+            },
+            {
+              "category": "from_32_to_40",
+              "length": 0,
+              "included_length": 0,
+              "billable_length": 0,
+              "rate": 3500,
+              "surcharge": 0
+            },
+            {
+              "category": "diameter_57",
+              "length": 4,
+              "included_length": 1,
+              "billable_length": 3,
+              "rate": 4000,
+              "surcharge": 12000
+            }
+          ]
+        },
+        "subtotal": 151000,
+        "vat": 7550,
+        "total": 158550
+      }
+    }
+  ],
+  "requests": [
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "length": 10,
+        "angles": 0,
+        "hdd": false,
+        "excavator_hours": 0,
+        "hydraulic_hammer": false,
+        "has_grpsh": false
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 4,
+          "from_32_to_40": 0,
+          "diameter_57": 4
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": false
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/combined",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "length": 10,
+          "angles": 0,
+          "hdd": false,
+          "excavator_hours": 0,
+          "hydraulic_hammer": false,
+          "has_grpsh": false
+        },
+        "gsv": {
+          "pipe_lengths": {
+            "up_to_25": 4,
+            "from_32_to_40": 0,
+            "diameter_57": 4
+          },
+          "drilling_holes": 0,
+          "sakz_sets": 0,
+          "has_panel": false
+        }
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 4,
+          "from_32_to_40": 0,
+          "diameter_57": 4
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": false
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 2,
+          "from_32_to_40": 4,
+          "diameter_57": 3
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": false
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 0,
+          "from_32_to_40": 5,
+          "diameter_57": 2
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": false
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 3,
+          "from_32_to_40": 1,
+          "diameter_57": 1
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": false
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 8,
+          "from_32_to_40": 0,
+          "diameter_57": 0
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": false
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "pipe_lengths": {
+          "up_to_25": 8,
+          "from_32_to_40": 0,
+          "diameter_57": 0
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 2,
+        "has_panel": true
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 4,
+          "from_32_to_40": 0,
+          "diameter_57": 4
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": true
+      }
+    },
+    {
+      "device": "minimum",
+      "url": "http://127.0.0.1:65532/calculate",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "length": 10,
+        "angles": 0,
+        "hdd": false,
+        "excavator_hours": 0,
+        "hydraulic_hammer": false,
+        "has_grpsh": false
+      }
+    },
+    {
+      "device": "minimum",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 4,
+          "from_32_to_40": 0,
+          "diameter_57": 4
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": false
+      }
+    },
+    {
+      "device": "minimum",
+      "url": "http://127.0.0.1:65532/calculate/combined",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "length": 10,
+          "angles": 0,
+          "hdd": false,
+          "excavator_hours": 0,
+          "hydraulic_hammer": false,
+          "has_grpsh": false
+        },
+        "gsv": {
+          "pipe_lengths": {
+            "up_to_25": 4,
+            "from_32_to_40": 0,
+            "diameter_57": 4
+          },
+          "drilling_holes": 0,
+          "sakz_sets": 0,
+          "has_panel": false
+        }
+      }
+    },
+    {
+      "device": "minimum",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 4,
+          "from_32_to_40": 0,
+          "diameter_57": 4
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": true
+      }
+    },
+    {
+      "device": "mobile",
+      "url": "http://127.0.0.1:65532/calculate",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "length": 10,
+        "angles": 0,
+        "hdd": false,
+        "excavator_hours": 0,
+        "hydraulic_hammer": false,
+        "has_grpsh": false
+      }
+    },
+    {
+      "device": "mobile",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 4,
+          "from_32_to_40": 0,
+          "diameter_57": 4
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": false
+      }
+    },
+    {
+      "device": "mobile",
+      "url": "http://127.0.0.1:65532/calculate/combined",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "length": 10,
+          "angles": 0,
+          "hdd": false,
+          "excavator_hours": 0,
+          "hydraulic_hammer": false,
+          "has_grpsh": false
+        },
+        "gsv": {
+          "pipe_lengths": {
+            "up_to_25": 4,
+            "from_32_to_40": 0,
+            "diameter_57": 4
+          },
+          "drilling_holes": 0,
+          "sakz_sets": 0,
+          "has_panel": false
+        }
+      }
+    },
+    {
+      "device": "mobile",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "payload": {
+        "customer_type": "частное лицо",
+        "is_district": false,
+        "pipe_lengths": {
+          "up_to_25": 4,
+          "from_32_to_40": 0,
+          "diameter_57": 4
+        },
+        "drilling_holes": 0,
+        "sakz_sets": 0,
+        "has_panel": true
+      }
+    }
+  ],
+  "responses": [
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate",
+      "status": 200,
+      "body": {
+        "base_price": 65000,
+        "length_surcharge": 0,
+        "angle_surcharge": 0,
+        "excavator_cost": 0,
+        "hdd_surcharge": 0,
+        "area_surcharge": 0,
+        "grpsh_surcharge": 0,
+        "subtotal": 65000,
+        "vat": 3250,
+        "total": 68250
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 12000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 72000,
+        "vat": 3600,
+        "total": 75600,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 4,
+            "included_length": 4,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 4,
+            "included_length": 1,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/combined",
+      "status": 200,
+      "body": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "base_price": 65000,
+          "length_surcharge": 0,
+          "angle_surcharge": 0,
+          "excavator_cost": 0,
+          "hdd_surcharge": 0,
+          "area_surcharge": 7000,
+          "grpsh_surcharge": 0,
+          "subtotal": 72000,
+          "vat": 3600,
+          "total": 75600
+        },
+        "gsv": {
+          "base_price": 60000,
+          "length_surcharge": 12000,
+          "drilling_cost": 0,
+          "sakz_cost": 0,
+          "panel_cost": 0,
+          "area_surcharge": 7000,
+          "subtotal": 79000,
+          "vat": 3950,
+          "total": 82950,
+          "total_length": 8,
+          "pipe_breakdown": [
+            {
+              "category": "up_to_25",
+              "length": 4,
+              "included_length": 4,
+              "billable_length": 0,
+              "rate": 2500,
+              "surcharge": 0
+            },
+            {
+              "category": "from_32_to_40",
+              "length": 0,
+              "included_length": 0,
+              "billable_length": 0,
+              "rate": 3500,
+              "surcharge": 0
+            },
+            {
+              "category": "diameter_57",
+              "length": 4,
+              "included_length": 1,
+              "billable_length": 3,
+              "rate": 4000,
+              "surcharge": 12000
+            }
+          ]
+        },
+        "subtotal": 151000,
+        "vat": 7550,
+        "total": 158550
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 12000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 72000,
+        "vat": 3600,
+        "total": 75600,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 4,
+            "included_length": 4,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 4,
+            "included_length": 1,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 15500,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 75500,
+        "vat": 3775,
+        "total": 79275,
+        "total_length": 9,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 2,
+            "included_length": 2,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 4,
+            "included_length": 3,
+            "billable_length": 1,
+            "rate": 3500,
+            "surcharge": 3500
+          },
+          {
+            "category": "diameter_57",
+            "length": 3,
+            "included_length": 0,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 8000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 68000,
+        "vat": 3400,
+        "total": 71400,
+        "total_length": 7,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 5,
+            "included_length": 5,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 2,
+            "included_length": 0,
+            "billable_length": 2,
+            "rate": 4000,
+            "surcharge": 8000
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 0,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 60000,
+        "vat": 3000,
+        "total": 63000,
+        "total_length": 5,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 3,
+            "included_length": 3,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 1,
+            "included_length": 1,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 1,
+            "included_length": 1,
+            "billable_length": 0,
+            "rate": 4000,
+            "surcharge": 0
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 7500,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 67500,
+        "vat": 3375,
+        "total": 70875,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 8,
+            "included_length": 5,
+            "billable_length": 3,
+            "rate": 2500,
+            "surcharge": 7500
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 4000,
+            "surcharge": 0
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 7500,
+        "drilling_cost": 0,
+        "sakz_cost": 28000,
+        "panel_cost": 4000,
+        "area_surcharge": 7000,
+        "subtotal": 106500,
+        "vat": 5325,
+        "total": 111825,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 8,
+            "included_length": 5,
+            "billable_length": 3,
+            "rate": 2500,
+            "surcharge": 7500
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 4000,
+            "surcharge": 0
+          }
+        ]
+      }
+    },
+    {
+      "device": "desktop",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 422,
+      "body": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body"
+            ],
+            "msg": "Value error, ПК доступен только при наличии хотя бы одного комплекта САКЗ",
+            "input": {
+              "customer_type": "частное лицо",
+              "is_district": false,
+              "pipe_lengths": {
+                "up_to_25": 4,
+                "from_32_to_40": 0,
+                "diameter_57": 4
+              },
+              "drilling_holes": 0,
+              "sakz_sets": 0,
+              "has_panel": true
+            },
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "device": "minimum",
+      "url": "http://127.0.0.1:65532/calculate",
+      "status": 200,
+      "body": {
+        "base_price": 65000,
+        "length_surcharge": 0,
+        "angle_surcharge": 0,
+        "excavator_cost": 0,
+        "hdd_surcharge": 0,
+        "area_surcharge": 0,
+        "grpsh_surcharge": 0,
+        "subtotal": 65000,
+        "vat": 3250,
+        "total": 68250
+      }
+    },
+    {
+      "device": "minimum",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 12000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 72000,
+        "vat": 3600,
+        "total": 75600,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 4,
+            "included_length": 4,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 4,
+            "included_length": 1,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "minimum",
+      "url": "http://127.0.0.1:65532/calculate/combined",
+      "status": 200,
+      "body": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "base_price": 65000,
+          "length_surcharge": 0,
+          "angle_surcharge": 0,
+          "excavator_cost": 0,
+          "hdd_surcharge": 0,
+          "area_surcharge": 7000,
+          "grpsh_surcharge": 0,
+          "subtotal": 72000,
+          "vat": 3600,
+          "total": 75600
+        },
+        "gsv": {
+          "base_price": 60000,
+          "length_surcharge": 12000,
+          "drilling_cost": 0,
+          "sakz_cost": 0,
+          "panel_cost": 0,
+          "area_surcharge": 7000,
+          "subtotal": 79000,
+          "vat": 3950,
+          "total": 82950,
+          "total_length": 8,
+          "pipe_breakdown": [
+            {
+              "category": "up_to_25",
+              "length": 4,
+              "included_length": 4,
+              "billable_length": 0,
+              "rate": 2500,
+              "surcharge": 0
+            },
+            {
+              "category": "from_32_to_40",
+              "length": 0,
+              "included_length": 0,
+              "billable_length": 0,
+              "rate": 3500,
+              "surcharge": 0
+            },
+            {
+              "category": "diameter_57",
+              "length": 4,
+              "included_length": 1,
+              "billable_length": 3,
+              "rate": 4000,
+              "surcharge": 12000
+            }
+          ]
+        },
+        "subtotal": 151000,
+        "vat": 7550,
+        "total": 158550
+      }
+    },
+    {
+      "device": "minimum",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 422,
+      "body": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body"
+            ],
+            "msg": "Value error, ПК доступен только при наличии хотя бы одного комплекта САКЗ",
+            "input": {
+              "customer_type": "частное лицо",
+              "is_district": false,
+              "pipe_lengths": {
+                "up_to_25": 4,
+                "from_32_to_40": 0,
+                "diameter_57": 4
+              },
+              "drilling_holes": 0,
+              "sakz_sets": 0,
+              "has_panel": true
+            },
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    },
+    {
+      "device": "mobile",
+      "url": "http://127.0.0.1:65532/calculate",
+      "status": 200,
+      "body": {
+        "base_price": 65000,
+        "length_surcharge": 0,
+        "angle_surcharge": 0,
+        "excavator_cost": 0,
+        "hdd_surcharge": 0,
+        "area_surcharge": 0,
+        "grpsh_surcharge": 0,
+        "subtotal": 65000,
+        "vat": 3250,
+        "total": 68250
+      }
+    },
+    {
+      "device": "mobile",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 200,
+      "body": {
+        "base_price": 60000,
+        "length_surcharge": 12000,
+        "drilling_cost": 0,
+        "sakz_cost": 0,
+        "panel_cost": 0,
+        "area_surcharge": 0,
+        "subtotal": 72000,
+        "vat": 3600,
+        "total": 75600,
+        "total_length": 8,
+        "pipe_breakdown": [
+          {
+            "category": "up_to_25",
+            "length": 4,
+            "included_length": 4,
+            "billable_length": 0,
+            "rate": 2500,
+            "surcharge": 0
+          },
+          {
+            "category": "from_32_to_40",
+            "length": 0,
+            "included_length": 0,
+            "billable_length": 0,
+            "rate": 3500,
+            "surcharge": 0
+          },
+          {
+            "category": "diameter_57",
+            "length": 4,
+            "included_length": 1,
+            "billable_length": 3,
+            "rate": 4000,
+            "surcharge": 12000
+          }
+        ]
+      }
+    },
+    {
+      "device": "mobile",
+      "url": "http://127.0.0.1:65532/calculate/combined",
+      "status": 200,
+      "body": {
+        "customer_type": "частное лицо",
+        "is_district": true,
+        "gsn": {
+          "base_price": 65000,
+          "length_surcharge": 0,
+          "angle_surcharge": 0,
+          "excavator_cost": 0,
+          "hdd_surcharge": 0,
+          "area_surcharge": 7000,
+          "grpsh_surcharge": 0,
+          "subtotal": 72000,
+          "vat": 3600,
+          "total": 75600
+        },
+        "gsv": {
+          "base_price": 60000,
+          "length_surcharge": 12000,
+          "drilling_cost": 0,
+          "sakz_cost": 0,
+          "panel_cost": 0,
+          "area_surcharge": 7000,
+          "subtotal": 79000,
+          "vat": 3950,
+          "total": 82950,
+          "total_length": 8,
+          "pipe_breakdown": [
+            {
+              "category": "up_to_25",
+              "length": 4,
+              "included_length": 4,
+              "billable_length": 0,
+              "rate": 2500,
+              "surcharge": 0
+            },
+            {
+              "category": "from_32_to_40",
+              "length": 0,
+              "included_length": 0,
+              "billable_length": 0,
+              "rate": 3500,
+              "surcharge": 0
+            },
+            {
+              "category": "diameter_57",
+              "length": 4,
+              "included_length": 1,
+              "billable_length": 3,
+              "rate": 4000,
+              "surcharge": 12000
+            }
+          ]
+        },
+        "subtotal": 151000,
+        "vat": 7550,
+        "total": 158550
+      }
+    },
+    {
+      "device": "mobile",
+      "url": "http://127.0.0.1:65532/calculate/gsv",
+      "status": 422,
+      "body": {
+        "detail": [
+          {
+            "type": "value_error",
+            "loc": [
+              "body"
+            ],
+            "msg": "Value error, ПК доступен только при наличии хотя бы одного комплекта САКЗ",
+            "input": {
+              "customer_type": "частное лицо",
+              "is_district": false,
+              "pipe_lengths": {
+                "up_to_25": 4,
+                "from_32_to_40": 0,
+                "diameter_57": 4
+              },
+              "drilling_holes": 0,
+              "sakz_sets": 0,
+              "has_panel": true
+            },
+            "ctx": {
+              "error": {}
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "pageErrors": [],
+  "externalRequests": [],
+  "reducedMotion": {
+    "animated": {
+      "animation": "gas-flow",
+      "opacity": "0.450379",
+      "bounds": [
+        560,
+        450
+      ]
+    },
+    "os": {
+      "animation": "none",
+      "opacity": "0.8",
+      "bounds": [
+        560,
+        450
+      ]
+    },
+    "flag": {
+      "animation": "none",
+      "opacity": "0.8",
+      "bounds": [
+        560,
+        450
+      ]
+    }
+  },
+  "browser": "157.0.4341.46",
+  "options": {
+    "total": "111 825 ₽",
+    "response": {
+      "base_price": 60000,
+      "length_surcharge": 7500,
+      "drilling_cost": 0,
+      "sakz_cost": 28000,
+      "panel_cost": 4000,
+      "area_surcharge": 7000,
+      "subtotal": 106500,
+      "vat": 5325,
+      "total": 111825,
+      "total_length": 8,
+      "pipe_breakdown": [
+        {
+          "category": "up_to_25",
+          "length": 8,
+          "included_length": 5,
+          "billable_length": 3,
+          "rate": 2500,
+          "surcharge": 7500
+        },
+        {
+          "category": "from_32_to_40",
+          "length": 0,
+          "included_length": 0,
+          "billable_length": 0,
+          "rate": 3500,
+          "surcharge": 0
+        },
+        {
+          "category": "diameter_57",
+          "length": 0,
+          "included_length": 0,
+          "billable_length": 0,
+          "rate": 4000,
+          "surcharge": 0
+        }
+      ]
+    }
+  },
+  "panelDependency": true,
+  "desktop422": {
+    "status": 422,
+    "error": "body: ПК доступен только при наличии хотя бы одного комплекта САКЗ"
+  },
+  "desktopSwitchClear": true,
+  "minimum422": {
+    "status": 422,
+    "error": "body: ПК доступен только при наличии хотя бы одного комплекта САКЗ"
+  },
+  "minimumSwitchClear": true,
+  "mobile422": {
+    "status": 422,
+    "error": "body: ПК доступен только при наличии хотя бы одного комплекта САКЗ"
+  },
+  "mobileSwitchClear": true
+}

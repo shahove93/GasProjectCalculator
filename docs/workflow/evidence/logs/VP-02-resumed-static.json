@@ -1,0 +1,742 @@
+{
+  "cwd": "D:\\Antigravity\\GasProjectCalculator",
+  "checks": [
+    "AppId preserved",
+    "version 1.2.0 and 1.2.0.0",
+    "RU-only",
+    "per user and no shutdown of foreign apps",
+    "no uninstall-delete section",
+    "no network/signing script directive",
+    "version-specific artifact guard",
+    "sidebar BMP matches accepted PNG",
+    "header BMP matches accepted PNG",
+    "frontend zero diff",
+    "installed payload matches dist: _internal\\_asyncio.pyd",
+    "installed payload matches dist: _internal\\_bz2.pyd",
+    "installed payload matches dist: _internal\\_cffi_backend.cp312-win_amd64.pyd",
+    "installed payload matches dist: _internal\\_ctypes.pyd",
+    "installed payload matches dist: _internal\\_decimal.pyd",
+    "installed payload matches dist: _internal\\_elementtree.pyd",
+    "installed payload matches dist: _internal\\_hashlib.pyd",
+    "installed payload matches dist: _internal\\_lzma.pyd",
+    "installed payload matches dist: _internal\\_multiprocessing.pyd",
+    "installed payload matches dist: _internal\\_overlapped.pyd",
+    "installed payload matches dist: _internal\\_queue.pyd",
+    "installed payload matches dist: _internal\\_socket.pyd",
+    "installed payload matches dist: _internal\\_ssl.pyd",
+    "installed payload matches dist: _internal\\_uuid.pyd",
+    "installed payload matches dist: _internal\\_wmi.pyd",
+    "installed payload matches dist: _internal\\_zoneinfo.pyd",
+    "installed payload matches dist: _internal\\api-ms-win-core-console-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-datetime-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-debug-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-errorhandling-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-fibers-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-fibers-l1-1-1.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-file-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-file-l1-2-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-file-l2-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-handle-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-heap-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-interlocked-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-kernel32-legacy-l1-1-1.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-libraryloader-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-localization-l1-2-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-memory-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-namedpipe-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-processenvironment-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-processthreads-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-processthreads-l1-1-1.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-profile-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-rtlsupport-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-string-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-synch-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-synch-l1-2-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-sysinfo-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-sysinfo-l1-2-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-timezone-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-core-util-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-conio-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-convert-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-environment-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-filesystem-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-heap-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-locale-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-math-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-process-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-runtime-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-stdio-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-string-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-time-l1-1-0.dll",
+    "installed payload matches dist: _internal\\api-ms-win-crt-utility-l1-1-0.dll",
+    "installed payload matches dist: _internal\\base_library.zip",
+    "installed payload matches dist: _internal\\click-8.5.0.dist-info\\INSTALLER",
+    "installed payload matches dist: _internal\\click-8.5.0.dist-info\\licenses\\LICENSE.txt",
+    "installed payload matches dist: _internal\\click-8.5.0.dist-info\\METADATA",
+    "installed payload matches dist: _internal\\click-8.5.0.dist-info\\RECORD",
+    "installed payload matches dist: _internal\\click-8.5.0.dist-info\\WHEEL",
+    "installed payload matches dist: _internal\\clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll",
+    "installed payload matches dist: _internal\\clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll",
+    "installed payload matches dist: _internal\\frontend\\assets\\company-emblem.png",
+    "installed payload matches dist: _internal\\frontend\\assets\\footer-pipe.svg",
+    "installed payload matches dist: _internal\\frontend\\assets\\header-pipe.svg",
+    "installed payload matches dist: _internal\\frontend\\assets\\installer-header.png",
+    "installed payload matches dist: _internal\\frontend\\assets\\installer-header.svg",
+    "installed payload matches dist: _internal\\frontend\\assets\\installer-sidebar.png",
+    "installed payload matches dist: _internal\\frontend\\assets\\installer-sidebar.svg",
+    "installed payload matches dist: _internal\\frontend\\assets\\splash-scene.svg",
+    "installed payload matches dist: _internal\\frontend\\index.html",
+    "installed payload matches dist: _internal\\frontend\\splash.html",
+    "installed payload matches dist: _internal\\libcrypto-3.dll",
+    "installed payload matches dist: _internal\\libffi-8.dll",
+    "installed payload matches dist: _internal\\libssl-3.dll",
+    "installed payload matches dist: _internal\\pydantic-2.13.5.dist-info\\INSTALLER",
+    "installed payload matches dist: _internal\\pydantic-2.13.5.dist-info\\licenses\\LICENSE",
+    "installed payload matches dist: _internal\\pydantic-2.13.5.dist-info\\METADATA",
+    "installed payload matches dist: _internal\\pydantic-2.13.5.dist-info\\RECORD",
+    "installed payload matches dist: _internal\\pydantic-2.13.5.dist-info\\WHEEL",
+    "installed payload matches dist: _internal\\pydantic_core\\_pydantic_core.cp312-win_amd64.pyd",
+    "installed payload matches dist: _internal\\pyexpat.pyd",
+    "installed payload matches dist: _internal\\python312.dll",
+    "installed payload matches dist: _internal\\pythonnet\\runtime\\Python.Runtime.deps.json",
+    "installed payload matches dist: _internal\\pythonnet\\runtime\\Python.Runtime.dll",
+    "installed payload matches dist: _internal\\pythonnet\\runtime\\Python.Runtime.xml",
+    "installed payload matches dist: _internal\\select.pyd",
+    "installed payload matches dist: _internal\\setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt",
+    "installed payload matches dist: _internal\\ucrtbase.dll",
+    "installed payload matches dist: _internal\\unicodedata.pyd",
+    "installed payload matches dist: _internal\\VCRUNTIME140.dll",
+    "installed payload matches dist: _internal\\VCRUNTIME140_1.dll",
+    "installed payload matches dist: _internal\\webview\\js\\api.js",
+    "installed payload matches dist: _internal\\webview\\js\\customize.js",
+    "installed payload matches dist: _internal\\webview\\js\\finish.js",
+    "installed payload matches dist: _internal\\webview\\js\\lib\\dom_json.js",
+    "installed payload matches dist: _internal\\webview\\js\\lib\\polyfill.js",
+    "installed payload matches dist: _internal\\webview\\js\\state.js",
+    "installed payload matches dist: _internal\\webview\\lib\\Microsoft.Web.WebView2.Core.dll",
+    "installed payload matches dist: _internal\\webview\\lib\\Microsoft.Web.WebView2.WinForms.dll",
+    "installed payload matches dist: _internal\\webview\\lib\\pywebview-android.jar",
+    "installed payload matches dist: _internal\\webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll",
+    "installed payload matches dist: _internal\\webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll",
+    "installed payload matches dist: _internal\\webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll",
+    "installed payload matches dist: _internal\\webview\\lib\\WebBrowserInterop.x64.dll",
+    "installed payload matches dist: _internal\\webview\\lib\\WebBrowserInterop.x86.dll",
+    "installed payload matches dist: GasProjectCalculator.exe",
+    "installed frontend matches accepted source: company-emblem.png",
+    "installed frontend matches accepted source: footer-pipe.svg",
+    "installed frontend matches accepted source: header-pipe.svg",
+    "installed frontend matches accepted source: installer-header.png",
+    "installed frontend matches accepted source: installer-header.svg",
+    "installed frontend matches accepted source: installer-sidebar.png",
+    "installed frontend matches accepted source: installer-sidebar.svg",
+    "installed frontend matches accepted source: splash-scene.svg",
+    "installed frontend matches accepted source: index.html",
+    "installed frontend matches accepted source: splash.html",
+    "windowed PE subsystem (no CLI console)",
+    "bundled Python runtime",
+    "old artifact unchanged: GasProjectCalculator-Setup-1.0.0.exe",
+    "old artifact unchanged: GasProjectCalculator-Setup-1.1.0.exe",
+    "old artifact unchanged: GasProjectCalculator-Setup-1.0.0-pre-compact.exe",
+    "old artifact unchanged: GasProjectCalculator-Setup-1.0.0-previous-stage.exe"
+  ],
+  "payload": [
+    {
+      "relative": "_internal\\_asyncio.pyd",
+      "sha256": "5BEBEB765AB9EF045BC5515166360D6F53890D3AD6FC360C20222D61841410B6",
+      "bytes": 71448
+    },
+    {
+      "relative": "_internal\\_bz2.pyd",
+      "sha256": "3ED0E5058D370FB14AA5469D81F96C5685559C054917C7280DD4125F21D25F62",
+      "bytes": 85272
+    },
+    {
+      "relative": "_internal\\_cffi_backend.cp312-win_amd64.pyd",
+      "sha256": "9AF5E4F68A41F26B726F2E9424F9D58A4F5666189F6A48BE95F406B257102AEC",
+      "bytes": 181248
+    },
+    {
+      "relative": "_internal\\_ctypes.pyd",
+      "sha256": "74E0E8384F6C2503215F4CF64C92EFE7257F1AEC44F72D67AD37DC8BA2530BC1",
+      "bytes": 125208
+    },
+    {
+      "relative": "_internal\\_decimal.pyd",
+      "sha256": "B8221D1C9E2C892DD6227A6042D1E49200CD5CB82ADBD998E4A77F4EE0E9ABF1",
+      "bytes": 257304
+    },
+    {
+      "relative": "_internal\\_elementtree.pyd",
+      "sha256": "4869325E5CFFBD13D3CC02DC78226478ADFB51A802B52FF65B5ADFACFF3511F1",
+      "bytes": 133400
+    },
+    {
+      "relative": "_internal\\_hashlib.pyd",
+      "sha256": "FD77A5756A17EC0788989F73222B0E7334DD4494B8C8647B43FE554CF3CFB354",
+      "bytes": 66328
+    },
+    {
+      "relative": "_internal\\_lzma.pyd",
+      "sha256": "7BF9FF61BABEBD90C499A8ED9B62141F947F90D87E0BBD41A12E99D20E06954A",
+      "bytes": 160024
+    },
+    {
+      "relative": "_internal\\_multiprocessing.pyd",
+      "sha256": "3C34031B464E7881D8F9D182F7387A86B883581FD020280EC56C1E3EC6F4CC2D",
+      "bytes": 35608
+    },
+    {
+      "relative": "_internal\\_overlapped.pyd",
+      "sha256": "D5F89859609371393D379B5FFD98E5B552078050E8B02A8E2900FA9B4EE8FF91",
+      "bytes": 56088
+    },
+    {
+      "relative": "_internal\\_queue.pyd",
+      "sha256": "DBDABB5FE0CCBC8B951A2C6EC033551836B072CAB756AAA56B6F22730080D173",
+      "bytes": 32536
+    },
+    {
+      "relative": "_internal\\_socket.pyd",
+      "sha256": "B102522C23DAC2332511EB3502466CAF842D6BCD092FBC276B7B55E9CC01B085",
+      "bytes": 83736
+    },
+    {
+      "relative": "_internal\\_ssl.pyd",
+      "sha256": "A5D361707F7A2A2D726B20770E8A6FC25D753BE30BCBCBBB683FFEE7959557C2",
+      "bytes": 178968
+    },
+    {
+      "relative": "_internal\\_uuid.pyd",
+      "sha256": "ACBF831004FB8B8D5340FE5DEBD9814C49BD282DD765C78FAEB6BB5116288C78",
+      "bytes": 25880
+    },
+    {
+      "relative": "_internal\\_wmi.pyd",
+      "sha256": "752FB80EDB51F45D3CC1C046F3B007802432B91AEF400C985640D6B276A67C12",
+      "bytes": 37656
+    },
+    {
+      "relative": "_internal\\_zoneinfo.pyd",
+      "sha256": "8BB9EB6FBB9D2F02EA2712986D4271B40F797FC47C00F47C61EDBE0F08124F34",
+      "bytes": 48408
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-console-l1-1-0.dll",
+      "sha256": "015BD08815C7B934A8952C3A7578E9CE59F21136E8A880D42BBD414BEC2C6058",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-datetime-l1-1-0.dll",
+      "sha256": "5534812CDBDAE94BA45CB216E5EB9AF686B853948DF54365103555ABBBAF9D9A",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-debug-l1-1-0.dll",
+      "sha256": "837D2B1B2CD03E03FC6CCB050698B6B5763AF17C201304872342A5EAE9E0A2D2",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-errorhandling-l1-1-0.dll",
+      "sha256": "DE43B165F568C276C00E95ACD454E3092F352A18E95874595F4F4658C06D2EC7",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-fibers-l1-1-0.dll",
+      "sha256": "3CEBC45BF479AD74CFABF2C6BFD4994D7AD639ED1221025981D19CEDF9CE0416",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-fibers-l1-1-1.dll",
+      "sha256": "5EF70308BCCA628CE6B0E2856B15B1C7AE340C3F9BBBC4C1071D8C191A34A5C3",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-file-l1-1-0.dll",
+      "sha256": "250AC829F2617BCAC1C6E5B8C4F630462E20765863BA573526A3E11BBFB94A9A",
+      "bytes": 27008
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-file-l1-2-0.dll",
+      "sha256": "AE14079A114733F60CE87B92CBA42ACD8083C2CD67594E53BC37DC0B97A4B465",
+      "bytes": 22888
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-file-l2-1-0.dll",
+      "sha256": "914BF26A298713119477EA0A8E7BD43171B91344EBE24FB47AD77C49686E3D87",
+      "bytes": 22912
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-handle-l1-1-0.dll",
+      "sha256": "AB5489955E371B15F77906C08EC3C7AFFE2C7A46A08C514CA628768B4478974B",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-heap-l1-1-0.dll",
+      "sha256": "C70F9644D8377FA39C5B71F2E9734C1400D7598904FDEB772E8502099982DCB7",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-interlocked-l1-1-0.dll",
+      "sha256": "F8129710188E407BB0E6F46D30AEBA277D67B947ECE5FE09E883FDE2323F3AE6",
+      "bytes": 22888
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-kernel32-legacy-l1-1-1.dll",
+      "sha256": "5200B16CB2DDC61CFC07373A9A84AA85A3AB50806CA96C879C883275832944C1",
+      "bytes": 22888
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-libraryloader-l1-1-0.dll",
+      "sha256": "48786FB88B001DCD1F63ACEA903D3CA9CC0B3060D5A325E3F2F3CBC3BFD53166",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-localization-l1-2-0.dll",
+      "sha256": "9EC3898F7EBA91FAA28B51616C211A2689E3A13AEEF8DE6E13CB674E49D689EB",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-memory-l1-1-0.dll",
+      "sha256": "3A6CBC524C99E1CD80D5368F5601402A37AD602528B1AB628093573EF638EB3B",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-namedpipe-l1-1-0.dll",
+      "sha256": "97145EF89C44949FCF0F04AC834A8BC7D687EF49EE73AE9FC32F3C11136B7201",
+      "bytes": 22888
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-processenvironment-l1-1-0.dll",
+      "sha256": "8BC7C10B1851AEA644E9C9F381CDB935E091FEE6B0BE3D3AEDC6FFFAAC96ADB7",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-processthreads-l1-1-0.dll",
+      "sha256": "D8030B777617C71F0F94564607699DBF7561487D779DB9756AED378C5675213F",
+      "bytes": 22912
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-processthreads-l1-1-1.dll",
+      "sha256": "F5E676713340F73A03A3D41A6EC9883B431DA7D16C7F07BD0A920FB80E6C0753",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-profile-l1-1-0.dll",
+      "sha256": "F023D47E44D3EEA6B0743580F57E8C6BA81E79D5EBFA7DA26250076C647B980E",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-rtlsupport-l1-1-0.dll",
+      "sha256": "9746D8930704153578A628C010638A5F818FFE5A927E25591B108E256DC6AFCA",
+      "bytes": 22888
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-string-l1-1-0.dll",
+      "sha256": "7C53AE24C982D16FFD1BF7F918D115B11B7F30E57BC7FEAA18CB9781E4ABB926",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-synch-l1-1-0.dll",
+      "sha256": "56D9D62CA5DBA79A6581B8D574A7D8B2A64A5ECB71E47DCF06ED0285708B1859",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-synch-l1-2-0.dll",
+      "sha256": "F6482BBEC5612C39ECB4822787A333F2B7570F7A5F922A4059BE41BA957BB372",
+      "bytes": 22888
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-sysinfo-l1-1-0.dll",
+      "sha256": "272D02765FDD3582618236C2D309ABBA069642F9BC1062EDE069D0C144E17007",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-sysinfo-l1-2-0.dll",
+      "sha256": "8A0900788859D0EB51C2F48F50CC6ED376A120B518100FA20E11D7702CCDE260",
+      "bytes": 22912
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-timezone-l1-1-0.dll",
+      "sha256": "FF35DE6C03812B332E140F17DADE25C5DD4775156DA9EEB1EAAE3FDDD27236EC",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-core-util-l1-1-0.dll",
+      "sha256": "191EF3E98641A57296F19D572D8EB62489470FF1EF6030D136AF170C2F835173",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-conio-l1-1-0.dll",
+      "sha256": "54EE5EC719A051496FF60AA00DBEAA94B9A7D2CDAC27FE9B7317F1A666B6A2AA",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-convert-l1-1-0.dll",
+      "sha256": "8B94662429171019FCD63C70BBF2095A075170599704A5E7DCDBE3DA13F3A429",
+      "bytes": 26992
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-environment-l1-1-0.dll",
+      "sha256": "39E5929593709E8AF3BC9E0A75EC1155778D6F4A247F4CDFC58928AD6DB88434",
+      "bytes": 22912
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-filesystem-l1-1-0.dll",
+      "sha256": "5A8ECEBAC32EDF4E1F3C5C6C1C8EA1A1ADD6CDA4F9C9CB26F752FB295BEA6865",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-heap-l1-1-0.dll",
+      "sha256": "C71080CBCB43BF1F8F3E391DEB12A582EB0ABEFC80946F340675A2C616E4FEB4",
+      "bytes": 22872
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-locale-l1-1-0.dll",
+      "sha256": "6C68648E524187E03C4AD9AAA4A99113C6EE9F29FB39CC0ED93F951975138E63",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-math-l1-1-0.dll",
+      "sha256": "D4FBCCCBE29371CBCE431E43B2EB4F7BA9A6F04A3D740A071F02457A505E9DC8",
+      "bytes": 31064
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-process-l1-1-0.dll",
+      "sha256": "47C1935942E3AC0812E4DCF18C0E265E565F0194A3349111C299712F5565F7AC",
+      "bytes": 22896
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-runtime-l1-1-0.dll",
+      "sha256": "72ADC1B3677E0814D9C4EBF0964000E84BB2ACF67336C8963061665E44F78029",
+      "bytes": 26968
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-stdio-l1-1-0.dll",
+      "sha256": "900AFC3989673C9BB1A687ED38C192F46DB9E6BA6D11A668898A539E7FC23798",
+      "bytes": 26968
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-string-l1-1-0.dll",
+      "sha256": "FCF12466CC12FD3B73611FC0763A5A1F9D44E90349513C34A0C83B0F36421793",
+      "bytes": 26968
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-time-l1-1-0.dll",
+      "sha256": "886E57C4A6ADB299B38F02945369F590A67DA4E79A798359FC60AAA067212D7C",
+      "bytes": 22912
+    },
+    {
+      "relative": "_internal\\api-ms-win-crt-utility-l1-1-0.dll",
+      "sha256": "5F8F26B216ADE615B67A41F6FBBB910972FC6153315A65BB8F09912BE50215B1",
+      "bytes": 22912
+    },
+    {
+      "relative": "_internal\\base_library.zip",
+      "sha256": "436D9B221E61EC599726216351D77FB2C6D0F726B24327F64C62AAD6662C7CEE",
+      "bytes": 1334069
+    },
+    {
+      "relative": "_internal\\click-8.5.0.dist-info\\INSTALLER",
+      "sha256": "CEEBAE7B8927A3227E5303CF5E0F1F7B34BB542AD7250AC03FBCDE36EC2F1508",
+      "bytes": 4
+    },
+    {
+      "relative": "_internal\\click-8.5.0.dist-info\\licenses\\LICENSE.txt",
+      "sha256": "9A8AD106A394E853BFE21F42F4E72D592819A22805D991B5F3275029292B658D",
+      "bytes": 1475
+    },
+    {
+      "relative": "_internal\\click-8.5.0.dist-info\\METADATA",
+      "sha256": "E87BCE0BD194DE70DFB8E708E0A6B0483009F25611804EAF87BFEB63E6C20501",
+      "bytes": 2567
+    },
+    {
+      "relative": "_internal\\click-8.5.0.dist-info\\RECORD",
+      "sha256": "43D8BB1CE44DEA5D9423B7EAE1D6BA911974425B96ACC170B036E1655A901E10",
+      "bytes": 2533
+    },
+    {
+      "relative": "_internal\\click-8.5.0.dist-info\\WHEEL",
+      "sha256": "1B68144734C4B66791F27ADD5D425F3620775585718A03D0F9B110BA3A4D88DB",
+      "bytes": 82
+    },
+    {
+      "relative": "_internal\\clr_loader\\ffi\\dlls\\amd64\\ClrLoader.dll",
+      "sha256": "07F62BCB1B70320F221FFB2CFC5CE6133815195F3E7CDB8D833222506188C2AC",
+      "bytes": 10752
+    },
+    {
+      "relative": "_internal\\clr_loader\\ffi\\dlls\\x86\\ClrLoader.dll",
+      "sha256": "3128381D133F4FF746ADD70100CFEF713CE2D78F2B12C02EC24EC453C5DFAB0D",
+      "bytes": 10752
+    },
+    {
+      "relative": "_internal\\frontend\\assets\\company-emblem.png",
+      "sha256": "C3DCBA6DC868B8C9F39C004C6FB23C21D31CD58B9FEEC209CAF8697BBD52F4DC",
+      "bytes": 5230
+    },
+    {
+      "relative": "_internal\\frontend\\assets\\footer-pipe.svg",
+      "sha256": "B40670D991648F0CDF38C3ABD7F081292720B76EF1BE43D6ED3676030BD4D87F",
+      "bytes": 2577
+    },
+    {
+      "relative": "_internal\\frontend\\assets\\header-pipe.svg",
+      "sha256": "67936EDA6BD0585F556A0A6CEA79A75F30B4AA7934B69F094C224BCB94A00D3E",
+      "bytes": 2230
+    },
+    {
+      "relative": "_internal\\frontend\\assets\\installer-header.png",
+      "sha256": "72095B5834014A2C85A87FBABEEFF2F364516B2C1A09FF23F8402A3B4351048D",
+      "bytes": 7738
+    },
+    {
+      "relative": "_internal\\frontend\\assets\\installer-header.svg",
+      "sha256": "EB5F7A169BB13023E80DC3DCABBEE0A38DA3446BD4F37FB700CDDAC102068309",
+      "bytes": 1161
+    },
+    {
+      "relative": "_internal\\frontend\\assets\\installer-sidebar.png",
+      "sha256": "082263DC3E50F7943A20D839BB798524F58601F785D64B4190B998C440D68F8C",
+      "bytes": 43115
+    },
+    {
+      "relative": "_internal\\frontend\\assets\\installer-sidebar.svg",
+      "sha256": "C80BD7B05A8C496E35328749ED1FABA8421A2BFE54FF1EA65750039F737F5A9C",
+      "bytes": 4841
+    },
+    {
+      "relative": "_internal\\frontend\\assets\\splash-scene.svg",
+      "sha256": "9EE43B21817DB2B6ED9AC55CADC19489947722703FB35F743AAF589F1004CE67",
+      "bytes": 3900
+    },
+    {
+      "relative": "_internal\\frontend\\index.html",
+      "sha256": "10A126C4DEDD73F44AECA5F171BC3446E9148B45CD246009DEB2D3AFEBEACE87",
+      "bytes": 83997
+    },
+    {
+      "relative": "_internal\\frontend\\splash.html",
+      "sha256": "CA41B7CDC008D519D45DBE2A50F421A99DDCB895E4BFAEBA7D3C3CD5857CED03",
+      "bytes": 6545
+    },
+    {
+      "relative": "_internal\\libcrypto-3.dll",
+      "sha256": "05FE080EAB7FC535C51E10C1BD76A2F3E6217F9C91A25034774588881C3F99DE",
+      "bytes": 5191960
+    },
+    {
+      "relative": "_internal\\libffi-8.dll",
+      "sha256": "EFF52743773EB550FCC6CE3EFC37C85724502233B6B002A35496D828BD7B280A",
+      "bytes": 39696
+    },
+    {
+      "relative": "_internal\\libssl-3.dll",
+      "sha256": "2E9FBCD8F7FDC13A5179533239811456554F2B3AA2FB10E1B17BE0DF81C79006",
+      "bytes": 787224
+    },
+    {
+      "relative": "_internal\\pydantic-2.13.5.dist-info\\INSTALLER",
+      "sha256": "CEEBAE7B8927A3227E5303CF5E0F1F7B34BB542AD7250AC03FBCDE36EC2F1508",
+      "bytes": 4
+    },
+    {
+      "relative": "_internal\\pydantic-2.13.5.dist-info\\licenses\\LICENSE",
+      "sha256": "A9E186F3CA16B5EEF84318E7A701721351A00CB7B8AE3A4394B67B49E3529EF3",
+      "bytes": 1129
+    },
+    {
+      "relative": "_internal\\pydantic-2.13.5.dist-info\\METADATA",
+      "sha256": "0685830D13647BD6F3F05526043D32A8B2A221D86B53773053D6C52BB17A9C07",
+      "bytes": 110178
+    },
+    {
+      "relative": "_internal\\pydantic-2.13.5.dist-info\\RECORD",
+      "sha256": "33724F6F5112F6E362460D7D57EBDE3437AA22CF7DCB6BC60D7C132FFB208E1D",
+      "bytes": 15456
+    },
+    {
+      "relative": "_internal\\pydantic-2.13.5.dist-info\\WHEEL",
+      "sha256": "CCEC20E2307ACD7DA453DD7437E70C6B08E2BC3EAD3BC3445AF135DA37B56D59",
+      "bytes": 87
+    },
+    {
+      "relative": "_internal\\pydantic_core\\_pydantic_core.cp312-win_amd64.pyd",
+      "sha256": "28FD1266FB9946FE61775505A13C0BF803F6932B51B306A0032687393D9A558B",
+      "bytes": 5157888
+    },
+    {
+      "relative": "_internal\\pyexpat.pyd",
+      "sha256": "EFD6099B1A6EFDADD988D08DCE0D8A34BD838106238250BCCD201DC7DCD9387F",
+      "bytes": 202008
+    },
+    {
+      "relative": "_internal\\python312.dll",
+      "sha256": "21700F0BAD5769A1B61EA408DC0A140FFD0A356A774C6EB0CC70E574B929D2E2",
+      "bytes": 6926616
+    },
+    {
+      "relative": "_internal\\pythonnet\\runtime\\Python.Runtime.deps.json",
+      "sha256": "1DF8757C717CDA3D84BA1059D6C0C8D728A64013AFCB2564F0EDB5FE4582053F",
+      "bytes": 5984
+    },
+    {
+      "relative": "_internal\\pythonnet\\runtime\\Python.Runtime.dll",
+      "sha256": "2EBD4492E28442EF1F1AF587AFE5B3A090C2EBFA220758DED4F1450F2A27F13A",
+      "bytes": 451584
+    },
+    {
+      "relative": "_internal\\pythonnet\\runtime\\Python.Runtime.xml",
+      "sha256": "E4F896B8C692F79C55A766C4269C74D0BB2149A7FCEF327C4EAF9FAFF8D28677",
+      "bytes": 189214
+    },
+    {
+      "relative": "_internal\\select.pyd",
+      "sha256": "411D6F538BDBAF60F1A1798FA8AA7ED3A4E8FCC99C9F9F10D21270D2F3742019",
+      "bytes": 31000
+    },
+    {
+      "relative": "_internal\\setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt",
+      "sha256": "37FEDCFFBF73C4EB9F058F47677CB33203A436FF9390E4D38A8E01C9DAD28E0B",
+      "bytes": 1335
+    },
+    {
+      "relative": "_internal\\ucrtbase.dll",
+      "sha256": "3239227D27667BA20D10A880751924E5719DE0078F9FCE232D149D383F7681F6",
+      "bytes": 1362264
+    },
+    {
+      "relative": "_internal\\unicodedata.pyd",
+      "sha256": "BC2CF23B7B7491EDCF03103B78DBAF42AFD84A60EA71E764AF9A1DDD0FE84268",
+      "bytes": 1138456
+    },
+    {
+      "relative": "_internal\\VCRUNTIME140.dll",
+      "sha256": "4D292623516F65C80482081E62D5DADB759DC16E851DE5DB24C3CBB57B87DB83",
+      "bytes": 119192
+    },
+    {
+      "relative": "_internal\\VCRUNTIME140_1.dll",
+      "sha256": "A113F192195F245F17389E6ECBED8005990BCB2476DDAD33F7C4C6C86327AFE5",
+      "bytes": 49528
+    },
+    {
+      "relative": "_internal\\webview\\js\\api.js",
+      "sha256": "CB68B8BED427FA356AEA26376E497552F55D91329C093C026A65230D074E2B27",
+      "bytes": 8612
+    },
+    {
+      "relative": "_internal\\webview\\js\\customize.js",
+      "sha256": "ED14D0B594266DFE3834CC8565B44A8157420432AEEF4F733AB505BD6ED89B8A",
+      "bytes": 4443
+    },
+    {
+      "relative": "_internal\\webview\\js\\finish.js",
+      "sha256": "751443083DD1D2B2EF4142692F25BC4F6E04F8DE4D82C455C73473700F00C8CB",
+      "bytes": 357
+    },
+    {
+      "relative": "_internal\\webview\\js\\lib\\dom_json.js",
+      "sha256": "70FAE2A8A8EBC790DC616AA7976074CEDD802275C173C90AD4BF3BD14163F9C4",
+      "bytes": 26097
+    },
+    {
+      "relative": "_internal\\webview\\js\\lib\\polyfill.js",
+      "sha256": "481A08F5337A770ACF49B38C2F58DD0C95F92BF9DBD92BF82B596836EA343AB5",
+      "bytes": 27434
+    },
+    {
+      "relative": "_internal\\webview\\js\\state.js",
+      "sha256": "68EE87EC01563CBCAB77A57704A32F19B47436C9D5E254BFBA9675A51C132075",
+      "bytes": 1828
+    },
+    {
+      "relative": "_internal\\webview\\lib\\Microsoft.Web.WebView2.Core.dll",
+      "sha256": "8219A3135436C147F8EB02FB831E99596103EEBC18B6D7B794CA93F4C67018A2",
+      "bytes": 649800
+    },
+    {
+      "relative": "_internal\\webview\\lib\\Microsoft.Web.WebView2.WinForms.dll",
+      "sha256": "C48F8D729DC531288D2C53A6241EFFE7922ED1B947850B2442008A945C098C48",
+      "bytes": 39016
+    },
+    {
+      "relative": "_internal\\webview\\lib\\pywebview-android.jar",
+      "sha256": "3F9D3EEEDA09CE58BADBD742A981A463C067C339C8B4E70B404C00EBB4EC73A3",
+      "bytes": 14309
+    },
+    {
+      "relative": "_internal\\webview\\lib\\runtimes\\win-arm64\\native\\WebView2Loader.dll",
+      "sha256": "0937030EFC718F3DA77C5E0978FB5046E381D0BB7B01ACAAD31A535A1B588A33",
+      "bytes": 147016
+    },
+    {
+      "relative": "_internal\\webview\\lib\\runtimes\\win-x64\\native\\WebView2Loader.dll",
+      "sha256": "EB5335EDEAA6F2122C044E82AAB2351DC8C9B4E0FE5E578C71922FB61BE285E7",
+      "bytes": 161864
+    },
+    {
+      "relative": "_internal\\webview\\lib\\runtimes\\win-x86\\native\\WebView2Loader.dll",
+      "sha256": "04814B2C59314C6452D61B821A4A3A5C5F8E8577B55B985F6A7A4B59F8907EC5",
+      "bytes": 121928
+    },
+    {
+      "relative": "_internal\\webview\\lib\\WebBrowserInterop.x64.dll",
+      "sha256": "F6A646470F0E1058224A52E8E2E217501DCA46939B30BFC9A5DD4DCDD43F088D",
+      "bytes": 7168
+    },
+    {
+      "relative": "_internal\\webview\\lib\\WebBrowserInterop.x86.dll",
+      "sha256": "4E527297FBEA7C5A0419F3A6AF307C2681787BEB0BF0EF3FEA849A7FD85A08DC",
+      "bytes": 7168
+    },
+    {
+      "relative": "GasProjectCalculator.exe",
+      "sha256": "DD9AF5486B3A5C93C6AAD2A0D9C4AFE6ADF14DEF340F7FEDE371B70E709E6888",
+      "bytes": 6839200
+    }
+  ],
+  "assets": [
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\assets\\wizard-sidebar.bmp",
+      "size": [
+        328,
+        628
+      ],
+      "mode": "RGB",
+      "sha256": "06D6CAEAAC286A3E702EFA2D19F4F926EF107EA7E178911D5023E97AB6CA76D5"
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\assets\\wizard-header.bmp",
+      "size": [
+        110,
+        110
+      ],
+      "mode": "RGB",
+      "sha256": "8F598419F457944063BE8B27E16F6DD2ECC69ED08DB9053CA692B759E5F1BAB1"
+    }
+  ],
+  "old_artifact_baseline": [
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\GasProjectCalculator-Setup-1.0.0.exe",
+      "size": 15286980,
+      "sha256": "71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08"
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\GasProjectCalculator-Setup-1.1.0.exe",
+      "size": 15293993,
+      "sha256": "3BFFFFB2F7C7F73185B48B5AC5E5CDE06BF4197A1A3D4D0F66E763905AC5B710"
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\legacy\\GasProjectCalculator-Setup-1.0.0-pre-compact.exe",
+      "size": 15273647,
+      "sha256": "043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A"
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\Output\\legacy\\GasProjectCalculator-Setup-1.0.0-previous-stage.exe",
+      "size": 15256037,
+      "sha256": "2973278F47A4A2A479177B12A4C4CCA01ED59D1CA8D2D9CE107C4E7A2E37428F"
+    }
+  ],
+  "check_count": 137
+}

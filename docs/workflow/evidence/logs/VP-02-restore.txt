@@ -1,0 +1,10 @@
+Операция успешно завершена.
+
+Операция успешно завершена.
+
+RESTORED: HKCU exact export, shortcut SHA256, all 106 user install files unchanged
+
+[32;1m   Id[0m[32;1m ProcessName[0m
+[32;1m   --[0m [32;1m-----------[0m
+13248 GasProjectCalculator
+

@@ -1,0 +1,9 @@
+{
+  "artifactsUnchanged": 5,
+  "screenshots": 48,
+  "userFilesUnchanged": 106,
+  "registryExact": true,
+  "shortcutHashesExact": true,
+  "productChangesThisResume": 0,
+  "ownedFiles": 91
+}

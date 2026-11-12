@@ -9,7 +9,12 @@
 | Координатор, документы и запуск проверок | OpenCode / DeepSeek Flash; продуктовый код не пишет |
 | Весь визуальный код и его исправления: панели, SVG/CSS, splash, installer branding | **Orca Codex / `gpt-6-astra`, effort `high`** |
 | Независимое R2 vision review | Отдельный Orca Codex / `gpt-6.1-sol`, high |
-| Финальная приёмка | Отдельный Orca Codex / `gpt-6-astra`, high; не исполнитель |
+| Финальная приёмка этого этапа, по дополнительному решению пользователя | Отдельный Orca Codex / **`gpt-6.1-sol`, high**; не исполнитель |
+
+Evidence, screenshot scripts, тестовые команды и документы — OpenCode,
+без вызова Astra. Ограниченный порядок завершения по просьбе экономить лимиты:
+`VISUAL-POLISH-LEAN-FINISH.md`; он заменяет старые инструкции о финальной Astra.
+Исключение Astra для продуктового визуального кода не расширяется на проверки.
 
 Перед правкой кода обязательна запись requested/effective agent/model/effort
 по реальному Orca receipt/worker-show. Astra в тексте prompt не подтверждает

@@ -1,0 +1,92 @@
+{
+  "id": "d6aaef19-cfde-4451-b3f4-fd3e74b28c98",
+  "ok": true,
+  "result": {
+    "state": "ready",
+    "runId": "run_8e5d92ad57c7",
+    "taskId": "task_ef0683db9d81",
+    "dispatchId": "ctx_113e19d0197a",
+    "stage": "input_accepted",
+    "turnStart": "observed",
+    "setup": {
+      "requested": "not_applicable",
+      "effective": "not_applicable",
+      "source": "existing_worktree",
+      "hookFound": false,
+      "startupPolicy": "start-immediately",
+      "state": "not_applicable"
+    },
+    "launch": {
+      "requested": {
+        "agent": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "effective": {
+        "agent": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    },
+    "mode": {
+      "mode": "terminal",
+      "preferred": "terminal",
+      "reason": "user_default",
+      "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+    },
+    "timeoutMs": 60000,
+    "effects": [
+      {
+        "kind": "worktree",
+        "action": "reused",
+        "id": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator"
+      },
+      {
+        "kind": "setup",
+        "action": "not_applicable",
+        "state": "not_applicable"
+      },
+      {
+        "kind": "terminal",
+        "role": "agent",
+        "action": "created",
+        "id": "term_574e5c74-8643-4b6b-a0c3-5200e66cfc1d",
+        "surface": "visible"
+      },
+      {
+        "kind": "dispatch_input",
+        "role": "agent",
+        "id": "term_574e5c74-8643-4b6b-a0c3-5200e66cfc1d",
+        "state": "accepted"
+      }
+    ],
+    "prompt": {
+      "requestId": "04bd44c8-8512-43fa-8b36-59cfbbdd9832",
+      "stages": [
+        "input_accepted",
+        "turn_started"
+      ],
+      "provider": "codex",
+      "observation": "supported",
+      "processIncarnation": "45078d05-d0f7-43cd-a420-f61411d3c262",
+      "generation": 63,
+      "baselineWorkingSequence": 0,
+      "baselineExplicitWorkingStartedAt": null,
+      "baselinePermissionSequence": 0
+    },
+    "residualResources": [],
+    "next": "Orca wakes you when workers report; end your turn when you're done.",
+    "run": {
+      "id": "run_8e5d92ad57c7",
+      "objective": "GasProjectCalculator: ╤Г╤В╨▓╨╡╤А╨╢╨┤╤С╨╜╨╜╤Л╨╣ ╤Н╤В╨░╨┐ ╨У╨б╨Т",
+      "created": false
+    },
+    "mutation": {
+      "requestId": "04bd44c8-8512-43fa-8b36-59cfbbdd9832",
+      "replayed": false
+    }
+  },
+  "_meta": {
+    "runtimeId": "f38be7dc-17d3-494f-bcf0-b78549dfca24"
+  }
+}

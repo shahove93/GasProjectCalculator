@@ -1,0 +1,4 @@
+ M docs/workflow/tasks/VP-02.md
+?? docs/workflow/evidence/logs/VP-01-commit.txt
+?? docs/workflow/evidence/logs/VP-02-dispatch-receipt.json
+?? docs/workflow/evidence/logs/VP-02-old-artifacts-before.json

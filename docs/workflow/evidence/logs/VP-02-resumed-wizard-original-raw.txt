@@ -1,0 +1,624 @@
+﻿2026-11-12 13:21:21.420   Log opened. (Time zone: UTC+03:00)
+2026-11-12 13:21:21.420   Setup version: Inno Setup version 6.4.1
+2026-11-12 13:21:21.420   Original Setup EXE: D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.2.0.exe
+2026-11-12 13:21:21.421   Setup command line: /SL5="$12F0766,14365590,844800,D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.2.0.exe" /DIR="C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install" /LOG="D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-02-wizard-install.log" /NORESTART
+2026-11-12 13:21:21.421   Windows version: 10.0.26300
+2026-11-12 13:21:21.421   Windows architecture: x64 (64-bit)
+2026-11-12 13:21:21.421   Machine types supported by system: x86 x64
+2026-11-12 13:21:21.421   User privileges: None
+2026-11-12 13:21:21.424   Administrative install mode: No
+2026-11-12 13:21:21.424   Install mode root key: HKEY_CURRENT_USER
+2026-11-12 13:21:21.424   64-bit install mode: No
+2026-11-12 13:21:21.425   Created temporary directory: C:\Users\user\AppData\Local\Temp\is-V83IS.tmp
+2026-11-12 13:25:02.044   Starting the installation process.
+2026-11-12 13:25:02.052   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install
+2026-11-12 13:25:02.056   Directory for uninstall files: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install
+2026-11-12 13:25:02.056   Creating new uninstall log: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\unins000.dat
+2026-11-12 13:25:02.059   -- File entry --
+2026-11-12 13:25:02.060   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\unins000.exe
+2026-11-12 13:25:02.062   Time stamp of our file: 2026-11-12 13:21:21.262
+2026-11-12 13:25:02.062   Installing the file.
+2026-11-12 13:25:02.085   Successfully installed the file.
+2026-11-12 13:25:02.087   -- File entry --
+2026-11-12 13:25:02.088   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\GasProjectCalculator.exe
+2026-11-12 13:25:02.088   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.088   Installing the file.
+2026-11-12 13:25:02.220   Successfully installed the file.
+2026-11-12 13:25:02.220   -- File entry --
+2026-11-12 13:25:02.220   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-console-l1-1-0.dll
+2026-11-12 13:25:02.221   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.221   Installing the file.
+2026-11-12 13:25:02.221   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal
+2026-11-12 13:25:02.223   Successfully installed the file.
+2026-11-12 13:25:02.223   -- File entry --
+2026-11-12 13:25:02.224   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-datetime-l1-1-0.dll
+2026-11-12 13:25:02.224   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.224   Installing the file.
+2026-11-12 13:25:02.227   Successfully installed the file.
+2026-11-12 13:25:02.227   -- File entry --
+2026-11-12 13:25:02.228   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-debug-l1-1-0.dll
+2026-11-12 13:25:02.228   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.228   Installing the file.
+2026-11-12 13:25:02.230   Successfully installed the file.
+2026-11-12 13:25:02.230   -- File entry --
+2026-11-12 13:25:02.231   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+2026-11-12 13:25:02.231   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.231   Installing the file.
+2026-11-12 13:25:02.232   Successfully installed the file.
+2026-11-12 13:25:02.233   -- File entry --
+2026-11-12 13:25:02.233   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-fibers-l1-1-0.dll
+2026-11-12 13:25:02.234   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.234   Installing the file.
+2026-11-12 13:25:02.237   Successfully installed the file.
+2026-11-12 13:25:02.237   -- File entry --
+2026-11-12 13:25:02.238   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-fibers-l1-1-1.dll
+2026-11-12 13:25:02.238   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.238   Installing the file.
+2026-11-12 13:25:02.241   Successfully installed the file.
+2026-11-12 13:25:02.241   -- File entry --
+2026-11-12 13:25:02.242   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-file-l1-1-0.dll
+2026-11-12 13:25:02.242   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.242   Installing the file.
+2026-11-12 13:25:02.244   Successfully installed the file.
+2026-11-12 13:25:02.244   -- File entry --
+2026-11-12 13:25:02.245   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-file-l1-2-0.dll
+2026-11-12 13:25:02.245   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.245   Installing the file.
+2026-11-12 13:25:02.247   Successfully installed the file.
+2026-11-12 13:25:02.247   -- File entry --
+2026-11-12 13:25:02.248   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-file-l2-1-0.dll
+2026-11-12 13:25:02.248   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.248   Installing the file.
+2026-11-12 13:25:02.250   Successfully installed the file.
+2026-11-12 13:25:02.250   -- File entry --
+2026-11-12 13:25:02.251   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-handle-l1-1-0.dll
+2026-11-12 13:25:02.252   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.252   Installing the file.
+2026-11-12 13:25:02.254   Successfully installed the file.
+2026-11-12 13:25:02.255   -- File entry --
+2026-11-12 13:25:02.256   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-heap-l1-1-0.dll
+2026-11-12 13:25:02.256   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.256   Installing the file.
+2026-11-12 13:25:02.259   Successfully installed the file.
+2026-11-12 13:25:02.260   -- File entry --
+2026-11-12 13:25:02.261   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-interlocked-l1-1-0.dll
+2026-11-12 13:25:02.261   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.261   Installing the file.
+2026-11-12 13:25:02.263   Successfully installed the file.
+2026-11-12 13:25:02.264   -- File entry --
+2026-11-12 13:25:02.265   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+2026-11-12 13:25:02.265   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.265   Installing the file.
+2026-11-12 13:25:02.267   Successfully installed the file.
+2026-11-12 13:25:02.268   -- File entry --
+2026-11-12 13:25:02.269   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+2026-11-12 13:25:02.269   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.269   Installing the file.
+2026-11-12 13:25:02.271   Successfully installed the file.
+2026-11-12 13:25:02.272   -- File entry --
+2026-11-12 13:25:02.273   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-localization-l1-2-0.dll
+2026-11-12 13:25:02.274   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.274   Installing the file.
+2026-11-12 13:25:02.277   Successfully installed the file.
+2026-11-12 13:25:02.277   -- File entry --
+2026-11-12 13:25:02.278   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-memory-l1-1-0.dll
+2026-11-12 13:25:02.279   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.279   Installing the file.
+2026-11-12 13:25:02.281   Successfully installed the file.
+2026-11-12 13:25:02.281   -- File entry --
+2026-11-12 13:25:02.282   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+2026-11-12 13:25:02.282   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.282   Installing the file.
+2026-11-12 13:25:02.285   Successfully installed the file.
+2026-11-12 13:25:02.286   -- File entry --
+2026-11-12 13:25:02.286   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+2026-11-12 13:25:02.286   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.286   Installing the file.
+2026-11-12 13:25:02.288   Successfully installed the file.
+2026-11-12 13:25:02.288   -- File entry --
+2026-11-12 13:25:02.288   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-processthreads-l1-1-0.dll
+2026-11-12 13:25:02.289   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.289   Installing the file.
+2026-11-12 13:25:02.291   Successfully installed the file.
+2026-11-12 13:25:02.291   -- File entry --
+2026-11-12 13:25:02.292   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-processthreads-l1-1-1.dll
+2026-11-12 13:25:02.292   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.292   Installing the file.
+2026-11-12 13:25:02.294   Successfully installed the file.
+2026-11-12 13:25:02.294   -- File entry --
+2026-11-12 13:25:02.295   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-profile-l1-1-0.dll
+2026-11-12 13:25:02.295   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.295   Installing the file.
+2026-11-12 13:25:02.297   Successfully installed the file.
+2026-11-12 13:25:02.298   -- File entry --
+2026-11-12 13:25:02.298   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+2026-11-12 13:25:02.298   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.298   Installing the file.
+2026-11-12 13:25:02.302   Successfully installed the file.
+2026-11-12 13:25:02.303   -- File entry --
+2026-11-12 13:25:02.304   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-string-l1-1-0.dll
+2026-11-12 13:25:02.304   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.304   Installing the file.
+2026-11-12 13:25:02.306   Successfully installed the file.
+2026-11-12 13:25:02.306   -- File entry --
+2026-11-12 13:25:02.306   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-synch-l1-1-0.dll
+2026-11-12 13:25:02.306   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.306   Installing the file.
+2026-11-12 13:25:02.308   Successfully installed the file.
+2026-11-12 13:25:02.308   -- File entry --
+2026-11-12 13:25:02.309   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-synch-l1-2-0.dll
+2026-11-12 13:25:02.309   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.309   Installing the file.
+2026-11-12 13:25:02.311   Successfully installed the file.
+2026-11-12 13:25:02.311   -- File entry --
+2026-11-12 13:25:02.313   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+2026-11-12 13:25:02.313   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.313   Installing the file.
+2026-11-12 13:25:02.316   Successfully installed the file.
+2026-11-12 13:25:02.316   -- File entry --
+2026-11-12 13:25:02.317   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+2026-11-12 13:25:02.317   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.317   Installing the file.
+2026-11-12 13:25:02.320   Successfully installed the file.
+2026-11-12 13:25:02.320   -- File entry --
+2026-11-12 13:25:02.321   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-timezone-l1-1-0.dll
+2026-11-12 13:25:02.321   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.321   Installing the file.
+2026-11-12 13:25:02.323   Successfully installed the file.
+2026-11-12 13:25:02.324   -- File entry --
+2026-11-12 13:25:02.325   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-core-util-l1-1-0.dll
+2026-11-12 13:25:02.325   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.325   Installing the file.
+2026-11-12 13:25:02.329   Successfully installed the file.
+2026-11-12 13:25:02.329   -- File entry --
+2026-11-12 13:25:02.330   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-conio-l1-1-0.dll
+2026-11-12 13:25:02.330   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.330   Installing the file.
+2026-11-12 13:25:02.333   Successfully installed the file.
+2026-11-12 13:25:02.334   -- File entry --
+2026-11-12 13:25:02.335   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-convert-l1-1-0.dll
+2026-11-12 13:25:02.335   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.335   Installing the file.
+2026-11-12 13:25:02.337   Successfully installed the file.
+2026-11-12 13:25:02.337   -- File entry --
+2026-11-12 13:25:02.338   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-environment-l1-1-0.dll
+2026-11-12 13:25:02.338   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.338   Installing the file.
+2026-11-12 13:25:02.339   Successfully installed the file.
+2026-11-12 13:25:02.339   -- File entry --
+2026-11-12 13:25:02.340   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+2026-11-12 13:25:02.340   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.340   Installing the file.
+2026-11-12 13:25:02.342   Successfully installed the file.
+2026-11-12 13:25:02.343   -- File entry --
+2026-11-12 13:25:02.343   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-heap-l1-1-0.dll
+2026-11-12 13:25:02.343   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.343   Installing the file.
+2026-11-12 13:25:02.345   Successfully installed the file.
+2026-11-12 13:25:02.346   -- File entry --
+2026-11-12 13:25:02.347   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-locale-l1-1-0.dll
+2026-11-12 13:25:02.347   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.347   Installing the file.
+2026-11-12 13:25:02.349   Successfully installed the file.
+2026-11-12 13:25:02.349   -- File entry --
+2026-11-12 13:25:02.351   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-math-l1-1-0.dll
+2026-11-12 13:25:02.351   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.351   Installing the file.
+2026-11-12 13:25:02.355   Successfully installed the file.
+2026-11-12 13:25:02.355   -- File entry --
+2026-11-12 13:25:02.356   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-process-l1-1-0.dll
+2026-11-12 13:25:02.356   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.356   Installing the file.
+2026-11-12 13:25:02.359   Successfully installed the file.
+2026-11-12 13:25:02.359   -- File entry --
+2026-11-12 13:25:02.360   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-runtime-l1-1-0.dll
+2026-11-12 13:25:02.360   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.360   Installing the file.
+2026-11-12 13:25:02.363   Successfully installed the file.
+2026-11-12 13:25:02.363   -- File entry --
+2026-11-12 13:25:02.364   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-stdio-l1-1-0.dll
+2026-11-12 13:25:02.364   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.364   Installing the file.
+2026-11-12 13:25:02.366   Successfully installed the file.
+2026-11-12 13:25:02.366   -- File entry --
+2026-11-12 13:25:02.367   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-string-l1-1-0.dll
+2026-11-12 13:25:02.367   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.367   Installing the file.
+2026-11-12 13:25:02.369   Successfully installed the file.
+2026-11-12 13:25:02.369   -- File entry --
+2026-11-12 13:25:02.370   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-time-l1-1-0.dll
+2026-11-12 13:25:02.371   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.371   Installing the file.
+2026-11-12 13:25:02.373   Successfully installed the file.
+2026-11-12 13:25:02.373   -- File entry --
+2026-11-12 13:25:02.374   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\api-ms-win-crt-utility-l1-1-0.dll
+2026-11-12 13:25:02.374   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.374   Installing the file.
+2026-11-12 13:25:02.376   Successfully installed the file.
+2026-11-12 13:25:02.377   -- File entry --
+2026-11-12 13:25:02.377   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\base_library.zip
+2026-11-12 13:25:02.377   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.377   Installing the file.
+2026-11-12 13:25:02.410   Successfully installed the file.
+2026-11-12 13:25:02.411   -- File entry --
+2026-11-12 13:25:02.412   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\libcrypto-3.dll
+2026-11-12 13:25:02.412   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.412   Installing the file.
+2026-11-12 13:25:02.564   Successfully installed the file.
+2026-11-12 13:25:02.565   -- File entry --
+2026-11-12 13:25:02.565   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\libffi-8.dll
+2026-11-12 13:25:02.566   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.566   Installing the file.
+2026-11-12 13:25:02.570   Successfully installed the file.
+2026-11-12 13:25:02.570   -- File entry --
+2026-11-12 13:25:02.571   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\libssl-3.dll
+2026-11-12 13:25:02.571   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.571   Installing the file.
+2026-11-12 13:25:02.594   Successfully installed the file.
+2026-11-12 13:25:02.594   -- File entry --
+2026-11-12 13:25:02.595   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pyexpat.pyd
+2026-11-12 13:25:02.595   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.595   Installing the file.
+2026-11-12 13:25:02.603   Successfully installed the file.
+2026-11-12 13:25:02.604   -- File entry --
+2026-11-12 13:25:02.604   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\python312.dll
+2026-11-12 13:25:02.605   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.605   Installing the file.
+2026-11-12 13:25:02.797   Successfully installed the file.
+2026-11-12 13:25:02.798   -- File entry --
+2026-11-12 13:25:02.799   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\select.pyd
+2026-11-12 13:25:02.799   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.799   Installing the file.
+2026-11-12 13:25:02.801   Successfully installed the file.
+2026-11-12 13:25:02.802   -- File entry --
+2026-11-12 13:25:02.802   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\ucrtbase.dll
+2026-11-12 13:25:02.803   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.803   Installing the file.
+2026-11-12 13:25:02.844   Successfully installed the file.
+2026-11-12 13:25:02.844   -- File entry --
+2026-11-12 13:25:02.845   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\unicodedata.pyd
+2026-11-12 13:25:02.845   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.845   Installing the file.
+2026-11-12 13:25:02.875   Successfully installed the file.
+2026-11-12 13:25:02.875   -- File entry --
+2026-11-12 13:25:02.875   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\VCRUNTIME140.dll
+2026-11-12 13:25:02.876   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.876   Installing the file.
+2026-11-12 13:25:02.880   Successfully installed the file.
+2026-11-12 13:25:02.880   -- File entry --
+2026-11-12 13:25:02.881   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\VCRUNTIME140_1.dll
+2026-11-12 13:25:02.881   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.881   Installing the file.
+2026-11-12 13:25:02.883   Successfully installed the file.
+2026-11-12 13:25:02.883   -- File entry --
+2026-11-12 13:25:02.884   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_asyncio.pyd
+2026-11-12 13:25:02.884   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.884   Installing the file.
+2026-11-12 13:25:02.887   Successfully installed the file.
+2026-11-12 13:25:02.887   -- File entry --
+2026-11-12 13:25:02.888   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_bz2.pyd
+2026-11-12 13:25:02.888   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.888   Installing the file.
+2026-11-12 13:25:02.892   Successfully installed the file.
+2026-11-12 13:25:02.892   -- File entry --
+2026-11-12 13:25:02.893   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_cffi_backend.cp312-win_amd64.pyd
+2026-11-12 13:25:02.893   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.893   Installing the file.
+2026-11-12 13:25:02.899   Successfully installed the file.
+2026-11-12 13:25:02.899   -- File entry --
+2026-11-12 13:25:02.900   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_ctypes.pyd
+2026-11-12 13:25:02.900   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.900   Installing the file.
+2026-11-12 13:25:02.904   Successfully installed the file.
+2026-11-12 13:25:02.904   -- File entry --
+2026-11-12 13:25:02.905   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_decimal.pyd
+2026-11-12 13:25:02.905   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.905   Installing the file.
+2026-11-12 13:25:02.914   Successfully installed the file.
+2026-11-12 13:25:02.914   -- File entry --
+2026-11-12 13:25:02.914   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_elementtree.pyd
+2026-11-12 13:25:02.914   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.914   Installing the file.
+2026-11-12 13:25:02.919   Successfully installed the file.
+2026-11-12 13:25:02.919   -- File entry --
+2026-11-12 13:25:02.920   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_hashlib.pyd
+2026-11-12 13:25:02.920   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.920   Installing the file.
+2026-11-12 13:25:02.922   Successfully installed the file.
+2026-11-12 13:25:02.922   -- File entry --
+2026-11-12 13:25:02.923   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_lzma.pyd
+2026-11-12 13:25:02.923   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.923   Installing the file.
+2026-11-12 13:25:02.930   Successfully installed the file.
+2026-11-12 13:25:02.930   -- File entry --
+2026-11-12 13:25:02.931   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_multiprocessing.pyd
+2026-11-12 13:25:02.931   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.931   Installing the file.
+2026-11-12 13:25:02.933   Successfully installed the file.
+2026-11-12 13:25:02.933   -- File entry --
+2026-11-12 13:25:02.934   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_overlapped.pyd
+2026-11-12 13:25:02.934   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.934   Installing the file.
+2026-11-12 13:25:02.937   Successfully installed the file.
+2026-11-12 13:25:02.937   -- File entry --
+2026-11-12 13:25:02.938   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_queue.pyd
+2026-11-12 13:25:02.938   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.938   Installing the file.
+2026-11-12 13:25:02.941   Successfully installed the file.
+2026-11-12 13:25:02.941   -- File entry --
+2026-11-12 13:25:02.941   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_socket.pyd
+2026-11-12 13:25:02.941   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.941   Installing the file.
+2026-11-12 13:25:02.945   Successfully installed the file.
+2026-11-12 13:25:02.945   -- File entry --
+2026-11-12 13:25:02.945   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_ssl.pyd
+2026-11-12 13:25:02.946   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.946   Installing the file.
+2026-11-12 13:25:02.951   Successfully installed the file.
+2026-11-12 13:25:02.951   -- File entry --
+2026-11-12 13:25:02.951   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_uuid.pyd
+2026-11-12 13:25:02.952   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.952   Installing the file.
+2026-11-12 13:25:02.953   Successfully installed the file.
+2026-11-12 13:25:02.953   -- File entry --
+2026-11-12 13:25:02.954   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_wmi.pyd
+2026-11-12 13:25:02.954   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.954   Installing the file.
+2026-11-12 13:25:02.957   Successfully installed the file.
+2026-11-12 13:25:02.957   -- File entry --
+2026-11-12 13:25:02.957   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\_zoneinfo.pyd
+2026-11-12 13:25:02.957   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.957   Installing the file.
+2026-11-12 13:25:02.960   Successfully installed the file.
+2026-11-12 13:25:02.960   -- File entry --
+2026-11-12 13:25:02.960   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\click-8.5.0.dist-info\INSTALLER
+2026-11-12 13:25:02.960   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.960   Installing the file.
+2026-11-12 13:25:02.960   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\click-8.5.0.dist-info
+2026-11-12 13:25:02.962   Successfully installed the file.
+2026-11-12 13:25:02.962   -- File entry --
+2026-11-12 13:25:02.963   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\click-8.5.0.dist-info\METADATA
+2026-11-12 13:25:02.963   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.963   Installing the file.
+2026-11-12 13:25:02.964   Successfully installed the file.
+2026-11-12 13:25:02.965   -- File entry --
+2026-11-12 13:25:02.965   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\click-8.5.0.dist-info\RECORD
+2026-11-12 13:25:02.966   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.966   Installing the file.
+2026-11-12 13:25:02.968   Successfully installed the file.
+2026-11-12 13:25:02.968   -- File entry --
+2026-11-12 13:25:02.968   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\click-8.5.0.dist-info\WHEEL
+2026-11-12 13:25:02.968   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.968   Installing the file.
+2026-11-12 13:25:02.970   Successfully installed the file.
+2026-11-12 13:25:02.970   -- File entry --
+2026-11-12 13:25:02.970   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\click-8.5.0.dist-info\licenses\LICENSE.txt
+2026-11-12 13:25:02.970   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.970   Installing the file.
+2026-11-12 13:25:02.971   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\click-8.5.0.dist-info\licenses
+2026-11-12 13:25:02.972   Successfully installed the file.
+2026-11-12 13:25:02.972   -- File entry --
+2026-11-12 13:25:02.973   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.dll
+2026-11-12 13:25:02.973   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.973   Installing the file.
+2026-11-12 13:25:02.973   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\clr_loader
+2026-11-12 13:25:02.974   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\clr_loader\ffi
+2026-11-12 13:25:02.974   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\clr_loader\ffi\dlls
+2026-11-12 13:25:02.974   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\clr_loader\ffi\dlls\amd64
+2026-11-12 13:25:02.976   Successfully installed the file.
+2026-11-12 13:25:02.976   -- File entry --
+2026-11-12 13:25:02.977   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\clr_loader\ffi\dlls\x86\ClrLoader.dll
+2026-11-12 13:25:02.977   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.977   Installing the file.
+2026-11-12 13:25:02.977   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\clr_loader\ffi\dlls\x86
+2026-11-12 13:25:02.979   Successfully installed the file.
+2026-11-12 13:25:02.979   -- File entry --
+2026-11-12 13:25:02.980   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\index.html
+2026-11-12 13:25:02.980   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.980   Installing the file.
+2026-11-12 13:25:02.980   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend
+2026-11-12 13:25:02.984   Successfully installed the file.
+2026-11-12 13:25:02.984   -- File entry --
+2026-11-12 13:25:02.985   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\splash.html
+2026-11-12 13:25:02.985   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.985   Installing the file.
+2026-11-12 13:25:02.987   Successfully installed the file.
+2026-11-12 13:25:02.987   -- File entry --
+2026-11-12 13:25:02.988   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets\company-emblem.png
+2026-11-12 13:25:02.988   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.988   Installing the file.
+2026-11-12 13:25:02.988   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets
+2026-11-12 13:25:02.990   Successfully installed the file.
+2026-11-12 13:25:02.990   -- File entry --
+2026-11-12 13:25:02.991   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets\footer-pipe.svg
+2026-11-12 13:25:02.991   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.991   Installing the file.
+2026-11-12 13:25:02.993   Successfully installed the file.
+2026-11-12 13:25:02.993   -- File entry --
+2026-11-12 13:25:02.994   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets\header-pipe.svg
+2026-11-12 13:25:02.994   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.994   Installing the file.
+2026-11-12 13:25:02.995   Successfully installed the file.
+2026-11-12 13:25:02.995   -- File entry --
+2026-11-12 13:25:02.995   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets\installer-header.png
+2026-11-12 13:25:02.996   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:02.996   Installing the file.
+2026-11-12 13:25:02.998   Successfully installed the file.
+2026-11-12 13:25:02.999   -- File entry --
+2026-11-12 13:25:03.000   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets\installer-header.svg
+2026-11-12 13:25:03.000   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.000   Installing the file.
+2026-11-12 13:25:03.001   Successfully installed the file.
+2026-11-12 13:25:03.002   -- File entry --
+2026-11-12 13:25:03.002   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets\installer-sidebar.png
+2026-11-12 13:25:03.002   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.002   Installing the file.
+2026-11-12 13:25:03.007   Successfully installed the file.
+2026-11-12 13:25:03.007   -- File entry --
+2026-11-12 13:25:03.008   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets\installer-sidebar.svg
+2026-11-12 13:25:03.008   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.008   Installing the file.
+2026-11-12 13:25:03.009   Successfully installed the file.
+2026-11-12 13:25:03.009   -- File entry --
+2026-11-12 13:25:03.010   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\frontend\assets\splash-scene.svg
+2026-11-12 13:25:03.010   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.010   Installing the file.
+2026-11-12 13:25:03.012   Successfully installed the file.
+2026-11-12 13:25:03.012   -- File entry --
+2026-11-12 13:25:03.013   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic-2.13.5.dist-info\INSTALLER
+2026-11-12 13:25:03.013   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.013   Installing the file.
+2026-11-12 13:25:03.013   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic-2.13.5.dist-info
+2026-11-12 13:25:03.014   Successfully installed the file.
+2026-11-12 13:25:03.014   -- File entry --
+2026-11-12 13:25:03.015   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic-2.13.5.dist-info\METADATA
+2026-11-12 13:25:03.015   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.015   Installing the file.
+2026-11-12 13:25:03.020   Successfully installed the file.
+2026-11-12 13:25:03.020   -- File entry --
+2026-11-12 13:25:03.021   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic-2.13.5.dist-info\RECORD
+2026-11-12 13:25:03.021   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.021   Installing the file.
+2026-11-12 13:25:03.023   Successfully installed the file.
+2026-11-12 13:25:03.023   -- File entry --
+2026-11-12 13:25:03.023   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic-2.13.5.dist-info\WHEEL
+2026-11-12 13:25:03.024   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.024   Installing the file.
+2026-11-12 13:25:03.025   Successfully installed the file.
+2026-11-12 13:25:03.025   -- File entry --
+2026-11-12 13:25:03.026   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic-2.13.5.dist-info\licenses\LICENSE
+2026-11-12 13:25:03.026   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.026   Installing the file.
+2026-11-12 13:25:03.026   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic-2.13.5.dist-info\licenses
+2026-11-12 13:25:03.027   Successfully installed the file.
+2026-11-12 13:25:03.028   -- File entry --
+2026-11-12 13:25:03.028   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic_core\_pydantic_core.cp312-win_amd64.pyd
+2026-11-12 13:25:03.028   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.028   Installing the file.
+2026-11-12 13:25:03.028   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pydantic_core
+2026-11-12 13:25:03.179   Successfully installed the file.
+2026-11-12 13:25:03.179   -- File entry --
+2026-11-12 13:25:03.180   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pythonnet\runtime\Python.Runtime.deps.json
+2026-11-12 13:25:03.181   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.181   Installing the file.
+2026-11-12 13:25:03.181   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pythonnet
+2026-11-12 13:25:03.181   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pythonnet\runtime
+2026-11-12 13:25:03.183   Successfully installed the file.
+2026-11-12 13:25:03.183   -- File entry --
+2026-11-12 13:25:03.184   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pythonnet\runtime\Python.Runtime.dll
+2026-11-12 13:25:03.184   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.184   Installing the file.
+2026-11-12 13:25:03.198   Successfully installed the file.
+2026-11-12 13:25:03.199   -- File entry --
+2026-11-12 13:25:03.199   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\pythonnet\runtime\Python.Runtime.xml
+2026-11-12 13:25:03.200   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.200   Installing the file.
+2026-11-12 13:25:03.207   Successfully installed the file.
+2026-11-12 13:25:03.208   -- File entry --
+2026-11-12 13:25:03.209   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\setuptools\_vendor\jaraco\text\Lorem ipsum.txt
+2026-11-12 13:25:03.209   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.209   Installing the file.
+2026-11-12 13:25:03.209   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\setuptools
+2026-11-12 13:25:03.209   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\setuptools\_vendor
+2026-11-12 13:25:03.209   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\setuptools\_vendor\jaraco
+2026-11-12 13:25:03.210   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\setuptools\_vendor\jaraco\text
+2026-11-12 13:25:03.212   Successfully installed the file.
+2026-11-12 13:25:03.212   -- File entry --
+2026-11-12 13:25:03.213   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\js\api.js
+2026-11-12 13:25:03.213   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.213   Installing the file.
+2026-11-12 13:25:03.213   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview
+2026-11-12 13:25:03.213   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\js
+2026-11-12 13:25:03.215   Successfully installed the file.
+2026-11-12 13:25:03.215   -- File entry --
+2026-11-12 13:25:03.216   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\js\customize.js
+2026-11-12 13:25:03.216   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.216   Installing the file.
+2026-11-12 13:25:03.218   Successfully installed the file.
+2026-11-12 13:25:03.218   -- File entry --
+2026-11-12 13:25:03.219   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\js\finish.js
+2026-11-12 13:25:03.219   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.219   Installing the file.
+2026-11-12 13:25:03.220   Successfully installed the file.
+2026-11-12 13:25:03.220   -- File entry --
+2026-11-12 13:25:03.220   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\js\state.js
+2026-11-12 13:25:03.221   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.221   Installing the file.
+2026-11-12 13:25:03.222   Successfully installed the file.
+2026-11-12 13:25:03.222   -- File entry --
+2026-11-12 13:25:03.223   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\js\lib\dom_json.js
+2026-11-12 13:25:03.223   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.223   Installing the file.
+2026-11-12 13:25:03.223   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\js\lib
+2026-11-12 13:25:03.225   Successfully installed the file.
+2026-11-12 13:25:03.225   -- File entry --
+2026-11-12 13:25:03.226   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\js\lib\polyfill.js
+2026-11-12 13:25:03.226   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.226   Installing the file.
+2026-11-12 13:25:03.228   Successfully installed the file.
+2026-11-12 13:25:03.228   -- File entry --
+2026-11-12 13:25:03.229   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\Microsoft.Web.WebView2.Core.dll
+2026-11-12 13:25:03.229   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.229   Installing the file.
+2026-11-12 13:25:03.229   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib
+2026-11-12 13:25:03.245   Successfully installed the file.
+2026-11-12 13:25:03.246   -- File entry --
+2026-11-12 13:25:03.247   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\Microsoft.Web.WebView2.WinForms.dll
+2026-11-12 13:25:03.247   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.247   Installing the file.
+2026-11-12 13:25:03.249   Successfully installed the file.
+2026-11-12 13:25:03.249   -- File entry --
+2026-11-12 13:25:03.250   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\pywebview-android.jar
+2026-11-12 13:25:03.250   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.250   Installing the file.
+2026-11-12 13:25:03.253   Successfully installed the file.
+2026-11-12 13:25:03.254   -- File entry --
+2026-11-12 13:25:03.254   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\WebBrowserInterop.x64.dll
+2026-11-12 13:25:03.255   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.255   Installing the file.
+2026-11-12 13:25:03.256   Successfully installed the file.
+2026-11-12 13:25:03.256   -- File entry --
+2026-11-12 13:25:03.257   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\WebBrowserInterop.x86.dll
+2026-11-12 13:25:03.257   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.257   Installing the file.
+2026-11-12 13:25:03.259   Successfully installed the file.
+2026-11-12 13:25:03.259   -- File entry --
+2026-11-12 13:25:03.260   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-arm64\native\WebView2Loader.dll
+2026-11-12 13:25:03.260   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.260   Installing the file.
+2026-11-12 13:25:03.261   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes
+2026-11-12 13:25:03.261   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-arm64
+2026-11-12 13:25:03.261   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-arm64\native
+2026-11-12 13:25:03.267   Successfully installed the file.
+2026-11-12 13:25:03.268   -- File entry --
+2026-11-12 13:25:03.269   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-x64\native\WebView2Loader.dll
+2026-11-12 13:25:03.269   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.269   Installing the file.
+2026-11-12 13:25:03.269   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-x64
+2026-11-12 13:25:03.269   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-x64\native
+2026-11-12 13:25:03.275   Successfully installed the file.
+2026-11-12 13:25:03.276   -- File entry --
+2026-11-12 13:25:03.276   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-x86\native\WebView2Loader.dll
+2026-11-12 13:25:03.277   Time stamp of our file: 2026-11-12 13:19:48.000
+2026-11-12 13:25:03.277   Installing the file.
+2026-11-12 13:25:03.277   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-x86
+2026-11-12 13:25:03.277   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\_internal\webview\lib\runtimes\win-x86\native
+2026-11-12 13:25:03.283   Successfully installed the file.
+2026-11-12 13:25:03.284   -- Icon entry --
+2026-11-12 13:25:03.285   Dest filename: C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\СС.Расчет.lnk
+2026-11-12 13:25:03.285   Creating the icon.
+2026-11-12 13:25:03.473   Successfully created the icon.
+2026-11-12 13:25:03.486   Saving uninstall information.
+2026-11-12 13:25:03.486   Deleting uninstall key left over from previous non administrative install.
+2026-11-12 13:25:03.486   Creating new uninstall key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+2026-11-12 13:25:03.486   Writing uninstall key values.
+2026-11-12 13:25:03.487   Detected previous administrative 32-bit install? No
+2026-11-12 13:25:03.487   Detected previous administrative 64-bit install? No
+2026-11-12 13:25:03.491   Installation process succeeded.
+2026-11-12 13:25:03.494   Need to restart Windows? No
+2026-11-12 13:25:21.082   -- Run entry --
+2026-11-12 13:25:21.082   Run as: Original user
+2026-11-12 13:25:21.082   Type: Exec
+2026-11-12 13:25:21.082   Filename: C:\Users\user\AppData\Local\Temp\opencode\vp-02-isolated\install\GasProjectCalculator.exe
+2026-11-12 13:25:22.153   Deinitializing Setup.
+2026-11-12 13:25:22.169   Log closed.

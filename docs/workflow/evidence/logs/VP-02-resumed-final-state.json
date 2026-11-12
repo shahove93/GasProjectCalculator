@@ -1,0 +1,37 @@
+{
+  "timestamp": "2026-11-12T16:49:37.5795777+03:00",
+  "cwd": "D:\\Antigravity\\GasProjectCalculator",
+  "head": "1689773718c818a4ebca400afc2d8a4206b6458e",
+  "branch": "feature/gsv-mixed-diameters",
+  "protectedProcesses": [
+    {
+      "Id": 13248,
+      "ProcessName": "GasProjectCalculator",
+      "StartTime": "2026-11-12T06:20:30.3990227+03:00"
+    },
+    {
+      "Id": 12888,
+      "ProcessName": "python",
+      "StartTime": "2026-11-11T17:46:30.6478981+03:00"
+    },
+    {
+      "Id": 23152,
+      "ProcessName": "python",
+      "StartTime": "2026-11-11T23:57:49.284421+03:00"
+    }
+  ],
+  "protectedPorts": [
+    {
+      "LocalAddress": "127.0.0.1",
+      "LocalPort": 8138,
+      "OwningProcess": 23152
+    },
+    {
+      "LocalAddress": "0.0.0.0",
+      "LocalPort": 8000,
+      "OwningProcess": 12888
+    }
+  ],
+  "isolatedProcesses": [],
+  "testListeners": []
+}

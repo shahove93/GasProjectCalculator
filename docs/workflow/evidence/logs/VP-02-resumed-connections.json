@@ -1,0 +1,42 @@
+[
+  {
+    "LocalAddress": "0.0.0.0",
+    "LocalPort": 51618,
+    "RemoteAddress": "0.0.0.0",
+    "RemotePort": 0,
+    "State": 100,
+    "OwningProcess": 2236
+  },
+  {
+    "LocalAddress": "127.0.0.1",
+    "LocalPort": 65532,
+    "RemoteAddress": "0.0.0.0",
+    "RemotePort": 0,
+    "State": 2,
+    "OwningProcess": 2236
+  },
+  {
+    "LocalAddress": "127.0.0.1",
+    "LocalPort": 65532,
+    "RemoteAddress": "127.0.0.1",
+    "RemotePort": 58782,
+    "State": 5,
+    "OwningProcess": 2236
+  },
+  {
+    "LocalAddress": "127.0.0.1",
+    "LocalPort": 51618,
+    "RemoteAddress": "127.0.0.1",
+    "RemotePort": 51617,
+    "State": 5,
+    "OwningProcess": 2236
+  },
+  {
+    "LocalAddress": "127.0.0.1",
+    "LocalPort": 51617,
+    "RemoteAddress": "127.0.0.1",
+    "RemotePort": 51618,
+    "State": 5,
+    "OwningProcess": 2236
+  }
+]

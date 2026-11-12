@@ -1,0 +1,527 @@
+[
+  {
+    "label": "D1",
+    "values": [
+      4,
+      0,
+      4
+    ],
+    "expected": 75600,
+    "total": "75 600 ₽",
+    "response": {
+      "base_price": 60000,
+      "length_surcharge": 12000,
+      "drilling_cost": 0,
+      "sakz_cost": 0,
+      "panel_cost": 0,
+      "area_surcharge": 0,
+      "subtotal": 72000,
+      "vat": 3600,
+      "total": 75600,
+      "total_length": 8,
+      "pipe_breakdown": [
+        {
+          "category": "up_to_25",
+          "length": 4,
+          "included_length": 4,
+          "billable_length": 0,
+          "rate": 2500,
+          "surcharge": 0
+        },
+        {
+          "category": "from_32_to_40",
+          "length": 0,
+          "included_length": 0,
+          "billable_length": 0,
+          "rate": 3500,
+          "surcharge": 0
+        },
+        {
+          "category": "diameter_57",
+          "length": 4,
+          "included_length": 1,
+          "billable_length": 3,
+          "rate": 4000,
+          "surcharge": 12000
+        }
+      ]
+    },
+    "opacity": "1",
+    "file": "docs/screenshots/visual-02-resumed-desktop-gsv-D1-settled.png",
+    "metrics": {
+      "inner": [
+        800,
+        540
+      ],
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        800,
+        540
+      ],
+      "dpr": 1,
+      "action": {
+        "x": 438.671875,
+        "y": 437,
+        "w": 337.328125,
+        "h": 31,
+        "bottom": 468,
+        "visible": true,
+        "viewport": true
+      },
+      "totals": [
+        {
+          "x": 438.671875,
+          "y": 167.40625,
+          "w": 337.328125,
+          "h": 43.3125,
+          "bottom": 210.71875,
+          "visible": true,
+          "viewport": true
+        }
+      ],
+      "art": [
+        {
+          "x": 512,
+          "y": 5,
+          "w": 272,
+          "h": 72.53125,
+          "bottom": 77.53125,
+          "visible": true,
+          "viewport": true
+        },
+        {
+          "x": 12,
+          "y": 481,
+          "w": 776,
+          "h": 54,
+          "bottom": 535,
+          "visible": true,
+          "viewport": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "D2",
+    "values": [
+      2,
+      4,
+      3
+    ],
+    "expected": 79275,
+    "total": "79 275 ₽",
+    "response": {
+      "base_price": 60000,
+      "length_surcharge": 15500,
+      "drilling_cost": 0,
+      "sakz_cost": 0,
+      "panel_cost": 0,
+      "area_surcharge": 0,
+      "subtotal": 75500,
+      "vat": 3775,
+      "total": 79275,
+      "total_length": 9,
+      "pipe_breakdown": [
+        {
+          "category": "up_to_25",
+          "length": 2,
+          "included_length": 2,
+          "billable_length": 0,
+          "rate": 2500,
+          "surcharge": 0
+        },
+        {
+          "category": "from_32_to_40",
+          "length": 4,
+          "included_length": 3,
+          "billable_length": 1,
+          "rate": 3500,
+          "surcharge": 3500
+        },
+        {
+          "category": "diameter_57",
+          "length": 3,
+          "included_length": 0,
+          "billable_length": 3,
+          "rate": 4000,
+          "surcharge": 12000
+        }
+      ]
+    },
+    "opacity": "1",
+    "file": "docs/screenshots/visual-02-resumed-desktop-gsv-D2-settled.png",
+    "metrics": {
+      "inner": [
+        800,
+        540
+      ],
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        800,
+        540
+      ],
+      "dpr": 1,
+      "action": {
+        "x": 438.671875,
+        "y": 437,
+        "w": 337.328125,
+        "h": 31,
+        "bottom": 468,
+        "visible": true,
+        "viewport": true
+      },
+      "totals": [
+        {
+          "x": 438.671875,
+          "y": 167.40625,
+          "w": 337.328125,
+          "h": 43.3125,
+          "bottom": 210.71875,
+          "visible": true,
+          "viewport": true
+        }
+      ],
+      "art": [
+        {
+          "x": 512,
+          "y": 5,
+          "w": 272,
+          "h": 72.53125,
+          "bottom": 77.53125,
+          "visible": true,
+          "viewport": true
+        },
+        {
+          "x": 12,
+          "y": 481,
+          "w": 776,
+          "h": 54,
+          "bottom": 535,
+          "visible": true,
+          "viewport": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "D3",
+    "values": [
+      0,
+      5,
+      2
+    ],
+    "expected": 71400,
+    "total": "71 400 ₽",
+    "response": {
+      "base_price": 60000,
+      "length_surcharge": 8000,
+      "drilling_cost": 0,
+      "sakz_cost": 0,
+      "panel_cost": 0,
+      "area_surcharge": 0,
+      "subtotal": 68000,
+      "vat": 3400,
+      "total": 71400,
+      "total_length": 7,
+      "pipe_breakdown": [
+        {
+          "category": "up_to_25",
+          "length": 0,
+          "included_length": 0,
+          "billable_length": 0,
+          "rate": 2500,
+          "surcharge": 0
+        },
+        {
+          "category": "from_32_to_40",
+          "length": 5,
+          "included_length": 5,
+          "billable_length": 0,
+          "rate": 3500,
+          "surcharge": 0
+        },
+        {
+          "category": "diameter_57",
+          "length": 2,
+          "included_length": 0,
+          "billable_length": 2,
+          "rate": 4000,
+          "surcharge": 8000
+        }
+      ]
+    },
+    "opacity": "1",
+    "file": "docs/screenshots/visual-02-resumed-desktop-gsv-D3-settled.png",
+    "metrics": {
+      "inner": [
+        800,
+        540
+      ],
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        800,
+        540
+      ],
+      "dpr": 1,
+      "action": {
+        "x": 438.671875,
+        "y": 437,
+        "w": 337.328125,
+        "h": 31,
+        "bottom": 468,
+        "visible": true,
+        "viewport": true
+      },
+      "totals": [
+        {
+          "x": 438.671875,
+          "y": 167.40625,
+          "w": 337.328125,
+          "h": 43.3125,
+          "bottom": 210.71875,
+          "visible": true,
+          "viewport": true
+        }
+      ],
+      "art": [
+        {
+          "x": 512,
+          "y": 5,
+          "w": 272,
+          "h": 72.53125,
+          "bottom": 77.53125,
+          "visible": true,
+          "viewport": true
+        },
+        {
+          "x": 12,
+          "y": 481,
+          "w": 776,
+          "h": 54,
+          "bottom": 535,
+          "visible": true,
+          "viewport": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "D4",
+    "values": [
+      3,
+      1,
+      1
+    ],
+    "expected": 63000,
+    "total": "63 000 ₽",
+    "response": {
+      "base_price": 60000,
+      "length_surcharge": 0,
+      "drilling_cost": 0,
+      "sakz_cost": 0,
+      "panel_cost": 0,
+      "area_surcharge": 0,
+      "subtotal": 60000,
+      "vat": 3000,
+      "total": 63000,
+      "total_length": 5,
+      "pipe_breakdown": [
+        {
+          "category": "up_to_25",
+          "length": 3,
+          "included_length": 3,
+          "billable_length": 0,
+          "rate": 2500,
+          "surcharge": 0
+        },
+        {
+          "category": "from_32_to_40",
+          "length": 1,
+          "included_length": 1,
+          "billable_length": 0,
+          "rate": 3500,
+          "surcharge": 0
+        },
+        {
+          "category": "diameter_57",
+          "length": 1,
+          "included_length": 1,
+          "billable_length": 0,
+          "rate": 4000,
+          "surcharge": 0
+        }
+      ]
+    },
+    "opacity": "1",
+    "file": "docs/screenshots/visual-02-resumed-desktop-gsv-D4-settled.png",
+    "metrics": {
+      "inner": [
+        800,
+        540
+      ],
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        800,
+        540
+      ],
+      "dpr": 1,
+      "action": {
+        "x": 438.671875,
+        "y": 437,
+        "w": 337.328125,
+        "h": 31,
+        "bottom": 468,
+        "visible": true,
+        "viewport": true
+      },
+      "totals": [
+        {
+          "x": 438.671875,
+          "y": 167.40625,
+          "w": 337.328125,
+          "h": 43.3125,
+          "bottom": 210.71875,
+          "visible": true,
+          "viewport": true
+        }
+      ],
+      "art": [
+        {
+          "x": 512,
+          "y": 5,
+          "w": 272,
+          "h": 72.53125,
+          "bottom": 77.53125,
+          "visible": true,
+          "viewport": true
+        },
+        {
+          "x": 12,
+          "y": 481,
+          "w": 776,
+          "h": 54,
+          "bottom": 535,
+          "visible": true,
+          "viewport": true
+        }
+      ]
+    }
+  },
+  {
+    "label": "D5",
+    "values": [
+      8,
+      0,
+      0
+    ],
+    "expected": 70875,
+    "total": "70 875 ₽",
+    "response": {
+      "base_price": 60000,
+      "length_surcharge": 7500,
+      "drilling_cost": 0,
+      "sakz_cost": 0,
+      "panel_cost": 0,
+      "area_surcharge": 0,
+      "subtotal": 67500,
+      "vat": 3375,
+      "total": 70875,
+      "total_length": 8,
+      "pipe_breakdown": [
+        {
+          "category": "up_to_25",
+          "length": 8,
+          "included_length": 5,
+          "billable_length": 3,
+          "rate": 2500,
+          "surcharge": 7500
+        },
+        {
+          "category": "from_32_to_40",
+          "length": 0,
+          "included_length": 0,
+          "billable_length": 0,
+          "rate": 3500,
+          "surcharge": 0
+        },
+        {
+          "category": "diameter_57",
+          "length": 0,
+          "included_length": 0,
+          "billable_length": 0,
+          "rate": 4000,
+          "surcharge": 0
+        }
+      ]
+    },
+    "opacity": "1",
+    "file": "docs/screenshots/visual-02-resumed-desktop-gsv-D5-settled.png",
+    "metrics": {
+      "inner": [
+        800,
+        540
+      ],
+      "scroll": [
+        0,
+        0
+      ],
+      "document": [
+        800,
+        540
+      ],
+      "dpr": 1,
+      "action": {
+        "x": 438.671875,
+        "y": 437,
+        "w": 337.328125,
+        "h": 31,
+        "bottom": 468,
+        "visible": true,
+        "viewport": true
+      },
+      "totals": [
+        {
+          "x": 438.671875,
+          "y": 167.40625,
+          "w": 337.328125,
+          "h": 43.3125,
+          "bottom": 210.71875,
+          "visible": true,
+          "viewport": true
+        }
+      ],
+      "art": [
+        {
+          "x": 512,
+          "y": 5,
+          "w": 272,
+          "h": 72.53125,
+          "bottom": 77.53125,
+          "visible": true,
+          "viewport": true
+        },
+        {
+          "x": 12,
+          "y": 481,
+          "w": 776,
+          "h": 54,
+          "bottom": 535,
+          "visible": true,
+          "viewport": true
+        }
+      ]
+    }
+  }
+]

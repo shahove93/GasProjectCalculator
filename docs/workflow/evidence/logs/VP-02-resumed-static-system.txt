@@ -1,0 +1,24 @@
+{
+  "checks": 137,
+  "payload_files": 111,
+  "assets": [
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\assets\\wizard-sidebar.bmp",
+      "size": [
+        328,
+        628
+      ],
+      "mode": "RGB",
+      "sha256": "06D6CAEAAC286A3E702EFA2D19F4F926EF107EA7E178911D5023E97AB6CA76D5"
+    },
+    {
+      "path": "D:\\Antigravity\\GasProjectCalculator\\installer\\assets\\wizard-header.bmp",
+      "size": [
+        110,
+        110
+      ],
+      "mode": "RGB",
+      "sha256": "8F598419F457944063BE8B27E16F6DD2ECC69ED08DB9053CA692B759E5F1BAB1"
+    }
+  ]
+}

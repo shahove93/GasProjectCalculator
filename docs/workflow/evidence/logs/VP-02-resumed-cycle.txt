@@ -1,0 +1,22 @@
+The operation completed successfully.
+
+COMMAND CWD=D:\Antigravity\GasProjectCalculator EXE=D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.1.0.exe ARGS=/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume-cycle\install" /TASKS=desktopicon /LOG="D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-02-resumed-cycle-install-old.log"
+install-old exit=0
+Registered version=1.1.0 path=C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume-cycle\install\; both shortcuts point to isolated exe
+COMMAND CWD=D:\Antigravity\GasProjectCalculator EXE=D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.2.0.exe ARGS=/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume-cycle\install" /TASKS=desktopicon /LOG="D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-02-resumed-cycle-upgrade.log"
+upgrade exit=0
+Registered version=1.2.0 path=C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume-cycle\install\; both shortcuts point to isolated exe
+UPGRADE user sentinels preserved
+COMMAND CWD=D:\Antigravity\GasProjectCalculator EXE=D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.2.0.exe ARGS=/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR="C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume-cycle\install" /TASKS=desktopicon /LOG="D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-02-resumed-cycle-reinstall.log"
+reinstall exit=0
+Registered version=1.2.0 path=C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume-cycle\install\; both shortcuts point to isolated exe
+REINSTALL payload hash and user sentinels preserved
+COMMAND CWD=D:\Antigravity\GasProjectCalculator EXE=C:\Users\user\AppData\Local\Temp\opencode\vp-02-resume-cycle\install\unins000.exe ARGS=/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /LOG="D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-02-resumed-cycle-uninstall.log"
+uninstall exit=0
+UNINSTALL removed program/registration/shortcuts, preserved both user files
+The operation completed successfully.
+
+The operation completed successfully.
+
+RESTORED: exact HKCU export, exact shortcut hashes, all 106 user files and protected process start times unchanged
+CYCLE_COMPLETE
