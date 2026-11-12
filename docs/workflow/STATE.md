@@ -1,37 +1,33 @@
 ﻿# Состояние проекта
 
-**Корректирующий этап компактности — IN PROGRESS** (2026-11-12). Пользователь
-запросил убрать несходство с макетом и уменьшить калькулятор примерно вдвое;
-разрешение и SHA256 — [APPROVALS](APPROVALS.md), brief —
-[COMPACT-CORRECTION-BRIEF](COMPACT-CORRECTION-BRIEF.md). Предыдущий редизайн
-COMPLETE: [FINAL-REPORT](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
+**Корректирующий этап компактности — COMPLETE** (2026-11-12). RD-05, RD-06,
+RD-07 и Codex R3 stage acceptance **PASS**. Отчёт:
+[FINAL-REPORT-COMPACT-CORRECTION](FINAL-REPORT-COMPACT-CORRECTION.md).
 
-- Ветка `feature/ss-calculator-redesign`; baseline `4b0be03`, RD-05
-  закоммичен (`1af13d6`); прежние правки/docs сохранены.
-- Учёт не сброшен: RD-01 1 full/0 FAIL/0 Codex; RD-02 1/0/1; RD-03 2/1/2;
-  RD-04 и FINAL R0 — 0; stage1 R3 — 1. RD-03/A1 третьего full review не
-  получает.
-- RD-01-F4 (MAJOR): прежняя R1-4 «кнопка/итог видны в viewport» опровергнута
-  реальными снимками (full-page/workaround); старый критерий 1050×740 заменён
-  новым scope. RD-01 остаток 1 full сохранён, новых review RD-01 не добавлено.
-- TASK: **RD-05** PASS (A1/C1; R2 Codex `ctx_8fb5c34ce714`; F1/F2 MINOR
-  backlog). **RD-06** PASS (A1/C2; RD06-F01 CLOSED; F02 MINOR backlog;
-  artifact `71232EE4…7E08`).
-  **RD-07** R0 PASS (167 tests OK). Codex R3 stage acceptance
-  `ctx_13eaadb4a2eb`.
-  Frozen checklists: [RD-05](tasks/RD-05.md), [RD-06](tasks/RD-06.md),
-  [RD-07](tasks/RD-07.md).
-- Scope: `frontend/index.html`, `app/desktop_launcher.py`, presentation
-  tests; пересборка package/installer, legacy-копия прежнего артефакта,
-  evidence/screenshots, workflow docs. Вычисления/API/данные не менять.
-- Ориентир: окно ~800×540, min ~760×520, плотные пары полей, результат справа
-  с итогом, трубная иллюстрация; читаемый текст без CSS zoom/scale; все три
-  режима и поля сохранены; action/итог при scrollY=0 без page scroll.
-- Ограничения: не трогать `:8000` PID12888, окно/сессию 4392714 и посторонние
-  процессы; отдельный test instance/порт; local unsigned installer; scoped
-  commits после PASS; no push/merge/deploy/release/signing.
-- Остаточные риски прежнего этапа (эмблема, SmartScreen, одна WebView2-среда,
-  reduced motion, screenshot workaround) сохраняются; новые findings — в
-  HISTORY/review.
-- Следующий владелец — координатор: bounded C2 capture RD-06, повторный
-  review без пропуска циклов.
+- Ветка `feature/ss-calculator-redesign`; продуктовая ревизия `1af13d6`;
+  baseline этапа `4b0be03`. Рабочее дерево после docs-commit чистое.
+- Итог: окно 800×540/min 760×520 (client 784×501/744×481, DPI96; 55,6%
+  прежней площади), плотная композиция по
+  `original-window-splash-reference.png`, отдельный блок опций, result справа,
+  нижняя труба. Действие/итог при scrollY=0, mobile 390 без h-overflow.
+- Поведение сохранено: 131250/105525/145950, САКЗ/ПК, switch/422, API/
+  calculators/requirements без diff; полный suite 167 OK exit 0.
+- Артефакт: `installer/Output/GasProjectCalculator-Setup-1.0.0.exe`,
+  15 286 980 B, SHA256
+  `71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08`.
+  Legacy pre-compact — 15 273 647 B `04388410…949A`; previous-stage
+  `2973278F…428F` не тронут.
+- Счётчики: RD-01 1/0/0; RD-02 1/0/1; RD-03 2/1/2; RD-05 1/0/1 (R1 Pro
+  capability-BLOCKED, не failed); RD-06 2/1/2 (RD06-F01 CLOSED); RD-07 R0;
+  stage R3 1. Прежние FAIL/история сохранены, бюджет не обнулялся.
+- Backlog/риски: RD-05 F1 (подписи 10,5–11,5 px), F2 (`--eval-bridge` opt-in),
+  RD-06 F02 (вспомогательный mobile result-PNG), неподписанный installer/
+  SmartScreen, одна Windows/WebView2/DPI96 среда, reduced motion эмуляцией,
+  права на эмблему не подтверждены. RD-COMPACT-N01 закрыт этим STATE.
+- `:8000` PID12888, `:8138` PID23152 и пользовательская установка/PID13248
+  не изменены; test-портов/окон не осталось. Push/merge/deploy/release/
+  signing не выполнялись.
+- Предыдущие этапы: [ГСВ](FINAL-REPORT.md),
+  [Windows installer](FINAL-REPORT-WINDOWS-INSTALLER.md),
+  [редизайн](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
+- Разрешения [APPROVALS](APPROVALS.md), инструкции [AGENTS](../../AGENTS.md).
