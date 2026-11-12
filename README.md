@@ -12,8 +12,10 @@
 
 1. Откройте установщик:
    `D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe`
-   (размер **15 273 647 байт**, SHA256
-   `043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A`).
+   (размер **15 286 980 байт**, SHA256
+   `71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08`).
+   Предыдущий проверенный установщик сохранён в
+   `installer/Output/legacy/GasProjectCalculator-Setup-1.0.0-pre-compact.exe`.
 2. Запустите его и пройдите русский мастер установки. Установка выполняется
    только для текущего пользователя (per-user), в каталог
    `%LOCALAPPDATA%\Programs\GasProjectCalculator`; права администратора не
@@ -52,18 +54,26 @@
 заставки и установщика задокументирован в evidence и ревью:
 [RD-01](docs/workflow/evidence/RD-01-evidence.md),
 [RD-02](docs/workflow/evidence/RD-02-evidence.md),
-[RD-03](docs/workflow/evidence/RD-03-evidence.md); ревью — в
+[RD-03](docs/workflow/evidence/RD-03-evidence.md). Компактная корректировка
+окна/вёрстки и пересобранный установщик — [RD-05](docs/workflow/evidence/RD-05-evidence.md),
+[RD-06](docs/workflow/evidence/RD-06-evidence.md); ревью — в
 [`docs/workflow/reviews/`](docs/workflow/reviews/)
 ([RD-01](docs/workflow/reviews/RD-01-review.md),
 [RD-02](docs/workflow/reviews/RD-02-review.md),
-[RD-03](docs/workflow/reviews/RD-03-review.md)).
+[RD-03](docs/workflow/reviews/RD-03-review.md),
+[RD-05](docs/workflow/reviews/RD-05-review.md),
+[RD-06](docs/workflow/reviews/RD-06-review.md)).
 
 ## Что изменилось в редизайне
 
 - **Бренд.** Продукт называется `СС.Расчет` с подписью `Калькулятор ГСН и
   ГСВ`; используется круглая эмблема компании (`ООО «Северное сияние»`).
-- **Окно.** Компактное окно приложения **1050×740** пикселей (минимальный
-  размер **860×620**), с адаптивной вёрсткой под узкие экраны.
+- **Окно.** Компактное окно приложения **800×540** пикселей (минимальный
+  размер **760×520**), с плотной вёрсткой по утверждённому макету: шапка с
+  эмблемой и трубой/вентилем, переключатель режимов, строка заказчика, пары
+  полей, отдельный блок опций, результат справа с итогом. Текст остаётся
+  читаемым без масштабирования; кнопка расчёта и итог доступны без прокрутки
+  всей страницы. Все три режима, поля, значения и расчёты сохранены.
 - **Заставка запуска.** Локальная русская заставка 520×320 с анимацией потока
   газа по трубе к дому показывается только пока стартует backend; после
   готовности backend заставка закрывается и появляется главное окно.
@@ -95,27 +105,28 @@
 
 ### Форма расчёта и результаты
 
-![Форма расчёта](docs/screenshots/rd-01-1050x740-initial.png)
+![Форма расчёта](docs/screenshots/rd-06-installed-target-gsn-before.png)
 
 ГСН:
 
-![Результат расчёта ГСН](docs/screenshots/rd-01-gsn-result-1050x740.png)
+![Результат расчёта ГСН](docs/screenshots/rd-06-installed-target-gsn.png)
 
 ГСВ:
 
-![Результат расчёта ГСВ](docs/screenshots/rd-01-gsv-result-1050x740.png)
+![Результат расчёта ГСВ](docs/screenshots/rd-06-installed-target-gsv.png)
 
 Общая смета ГСН + ГСВ:
 
-![Общая смета](docs/screenshots/rd-01-combined-result-1050x740.png)
+![Общая смета](docs/screenshots/rd-06-installed-target-combined.png)
 
-Мобильный вид (390×844): [layout](docs/screenshots/rd-01-390x844-layout.png).
+Мобильный вид (390×844):
+[viewport](docs/screenshots/rd-06-installed-mobile-390x844.png).
 
 ### Заставка запуска и главное окно
 
-![Заставка запуска](docs/screenshots/rd-02-splash.png)
+![Заставка запуска](docs/screenshots/rd-06-installed-splash.png)
 
-![Главное окно СС.Расчет](docs/screenshots/rd-02-main-window.png)
+![Главное окно СС.Расчет](docs/screenshots/rd-06-installed-target-window.png)
 
 ### Установщик
 
@@ -125,7 +136,7 @@
 
 ![Мастер установки — завершение](docs/screenshots/rd-03-wizard-finish.png)
 
-![Установленное приложение](docs/screenshots/rd-03-installed-main.png)
+![Установленное приложение](docs/screenshots/rd-06-installed-target-window.png)
 
 ![Подтверждение удаления](docs/screenshots/rd-03-uninstall-confirm.png)
 
