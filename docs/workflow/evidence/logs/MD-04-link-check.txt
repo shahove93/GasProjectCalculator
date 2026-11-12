@@ -1,0 +1,20 @@
+EXISTS docs/images/download-windows.svg
+EXISTS docs/screenshots/md-02-browser-mobile-390x844-combined.png
+EXISTS docs/screenshots/md-02-browser-mobile-390x844-gsv.png
+EXISTS docs/screenshots/md-03-native-splash.png
+EXISTS docs/screenshots/md-03-native-target-combined-detail.png
+EXISTS docs/screenshots/md-03-native-target-combined.png
+EXISTS docs/screenshots/md-03-native-target-gsn.png
+EXISTS docs/screenshots/md-03-native-target-gsv-D1.png
+EXISTS docs/screenshots/md-03-wizard-welcome.png
+EXISTS docs/workflow/evidence/MD-01-evidence.md
+EXISTS docs/workflow/evidence/MD-02-evidence.md
+EXISTS docs/workflow/evidence/MD-03-evidence.md
+EXISTS frontend/assets/company-emblem.png
+EXTERNAL https://github.com/shahove93/GasProjectCalculator/releases/latest
+EXTERNAL https://github.com/shahove93/GasProjectCalculator/releases/latest/download/SS-Raschet-Setup.exe
+EXTERNAL https://nordgas11.ru/
+EXISTS installer/build-installer.ps1
+EXISTS packaging/README.md
+TOTAL_LINKS=18
+MISSING_COUNT=0

@@ -1,0 +1,16 @@
+# T2 — README vs MD-01/MD-03 evidence
+
+D1: '75 600' in README = True
+D2: '79 275' in README = True
+D3: '71 400' in README = True
+D4: '63 000' in README = True
+D5: '70 875' in README = True
+combined: '158 550' in README = True
+combined subtotal: '151 000' in README = True
+combined VAT: '7 550' in README = True
+combined GSV with district: '82 950' in README = True
+D1 surcharge: '12 000' in README = True
+D2 surcharge: '15 500' in README = True
+D3 surcharge: '8 000' in README = True
+
+Evidence sources: docs/workflow/evidence/MD-01-evidence.md (D1-D5, D11); docs/workflow/evidence/MD-03-evidence.md (Mixed-эталоны, combined).

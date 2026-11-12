@@ -15,8 +15,8 @@ Frozen checklists: `docs/workflow/tasks/MD-01..05.md`,
 | MD-01 | R2 | mixed-формула, API, legacy | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | **PASS** (2 full/1 FAIL/2 calls) |
 | MD-02 | R2 | три длины в UI, детализация, artwork | OpenCode Flash | Codex sol/high (vision) | 1 (≤4/3M) | **PASS** (1 full/0 FAIL/1 call; NIT MD02-N1) |
 | MD-03 | R2 | installer 1.1.0, installed checks | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | **PASS** (1 full/0 FAIL/1 call) |
-| MD-04 | R0 | README/screenshots/docs | OpenCode Flash | coordinator R0 | 0 | NEXT |
-| MD-05 | R0 | интегрированный full suite | OpenCode Flash | coordinator R0 | 0 | PENDING |
+| MD-04 | R0 | README/screenshots/docs | OpenCode Flash | coordinator R0 | 0 | **PASS** (R0 T1–T6) |
+| MD-05 | R0 | интегрированный full suite | OpenCode Flash | coordinator R0 | 0 | NEXT |
 | FINAL-MIXED | R3 | stage acceptance | Codex astra/high | — | 1 (≤6/5M) | PENDING |
 
 MD-01: Run `run_8f265b57fb70`; implementer `ctx_f23a43bf4e82`; C1 review
@@ -31,7 +31,10 @@ MD-03: implementer `ctx_fc422a90019f`; installer 1.1.0 15 293 993 B, SHA256
 `3BFFFFB2F7C7F73185B48B5AC5E5CDE06BF4197A1A3D4D0F66E763905AC5B710`;
 Codex R2 `ctx_17fecbd4f9d8` **PASS**, no findings; 1.0.0/legacy bytes
 unchanged; evidence `docs/workflow/evidence/MD-03-evidence.md`.
-Next owner — координатор: scoped commit MD-03, затем dispatch MD-04.
+MD-04: implementer `ctx_ad932786f52d`; coordinator R0 **PASS** по T1–T6
+(только `README.md`, 18 links/0 missing, artifact hash сверен);
+evidence `docs/workflow/evidence/MD-04-evidence.md`.
+Next owner — координатор: scoped commit MD-04, затем dispatch MD-05.
 
 Старые счётчики сохранены: GSV-01..04, WI-01..03, RD-01 1/0/0, RD-02 1/0/1,
 RD-03 2/1/2, RD-05 1/0/1, RD-06 2/1/2, RD-07 R0, прежний stage R3 1. Новый

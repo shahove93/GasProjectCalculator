@@ -1,0 +1,21 @@
+# T6 scope check
+BASELINE=d08148c014f66193ad5049f4cdfd427ee0076c52
+CHANGED=13
+ALLOWED=13
+DISALLOWED=0
+--- allowed ---
+README.md
+docs/workflow/evidence/MD-04-evidence.md
+docs/workflow/evidence/logs/MD-04-baseline.txt
+docs/workflow/evidence/logs/MD-04-claim-scan.txt
+docs/workflow/evidence/logs/MD-04-diff-names.txt
+docs/workflow/evidence/logs/MD-04-diff-stat.txt
+docs/workflow/evidence/logs/MD-04-git-status.txt
+docs/workflow/evidence/logs/MD-04-hash-check.txt
+docs/workflow/evidence/logs/MD-04-link-check.txt
+docs/workflow/evidence/logs/MD-04-numbers-check.txt
+docs/workflow/evidence/logs/MD-04-readback.txt
+docs/workflow/evidence/logs/MD-04-readme-diff.txt
+docs/workflow/evidence/logs/MD-04-scope.txt
+--- disallowed ---
+SCOPE_OK=True

@@ -722,3 +722,17 @@ loopback 127.0.0.1, занятый 8123→8124, закрытие без backend/
 полный suite остаётся в MD-05. Счётчики MD-03: full reviews 1, failed 0,
 Codex calls 1/4; worker released. Scoped commit координатора; следующий
 TASK — MD-04.
+
+## 2026-11-12 — MD-04 R0 PASS: README и документация 1.1.0
+
+MD-04 implementer `ctx_ad932786f52d` (OpenCode Flash, baseline `d08148c`)
+обновил только `README.md` (+56/−19): три длины и единая база 5 м с
+вычитанием с самых дешёвых, тарифы 2500/3500/4000, D1–D5 и combined
+151000/7550/158550, локальный installer 1.1.0 (path, 15 293 993 B, SHA256
+`3BFFFFB2…B710`), новые реальные MD-02/MD-03 screenshots, developer/RU
+install-uninstall/user-file facts; явно указано, что release v1.0.0 не
+заменяется и 1.1.0 не опубликован. Coordinator принял R0 по T1–T6: diff
+только README, числа совпали с MD-01/MD-03 evidence, 18 ссылок/0 missing,
+artifact hash перепроверен, claims о signing/публикации/телеметрии нет.
+Codex calls 0. Scoped commit координатора; следующий TASK — MD-05
+(интегрированный full suite).
