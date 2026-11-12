@@ -1005,3 +1005,10 @@ Local scoped commit результата:
 version, assets, docs/evidence/screenshots/reviews). README и этот hash
 зафиксированы следующим docs-коммитом; artifact 1.2.0 остаётся локальным
 (git-ignored `installer/Output`). Push/merge/deploy/release нет.
+
+Наблюдение при финальной передаче: последнее сохранённое состояние
+16:49:37 MSK (`logs/VP-02-resumed-final-state.json`) фиксировало PID 13248
+GasProjectCalculator, PID 12888 `:8000` и PID 23152 `:8138`; в 20:05 MSK
+эти PID и listener-порты уже отсутствовали. Координатор не выполнял
+stop/kill и не обращался к ним — это изменение окружения вне продуктовой
+работы; artifact и независимые приёмки не затронуты.
