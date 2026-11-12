@@ -14,8 +14,9 @@ COMPLETE: [FINAL-REPORT](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
 - RD-01-F4 (MAJOR): прежняя R1-4 «кнопка/итог видны в viewport» опровергнута
   реальными снимками (full-page/workaround); старый критерий 1050×740 заменён
   новым scope. RD-01 остаток 1 full сохранён, новых review RD-01 не добавлено.
-- TASK: **RD-05** R1 компактный UI/geometry (OpenCode Flash → независимый
-  OpenCode Pro; A1/C1; review `ctx_0e9b8901c316`); **RD-06** R2 package/installer и реальная программа
+- TASK: **RD-05** R1 UI/geometry: R1 Pro BLOCKED (нет vision), объективные
+  U1/U3–U10 PASS; визуальный review — Codex R2 `ctx_8fb5c34ce714` (A1/C1).
+  **RD-06** R2 package/installer/реальная программа
   (OpenCode Flash → Codex `gpt-6.1-sol` high; A1/C1); **RD-07** R0 final
   verify (suite один раз); затем Codex R3 `gpt-6-astra` high.
   Frozen checklists: [RD-05](tasks/RD-05.md), [RD-06](tasks/RD-06.md),
