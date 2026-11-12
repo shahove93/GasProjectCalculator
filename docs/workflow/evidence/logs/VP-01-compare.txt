@@ -1,0 +1,3 @@
+header source crop (784, 83) comparison (1616, 211)
+footer source crop (784, 63) comparison (1616, 198)
+splash source crop (560, 450) comparison (1168, 519)

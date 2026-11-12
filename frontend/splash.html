@@ -3,149 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>СС.Расчет — запуск</title>
+    <title>СС.Расчет</title>
     <style>
-        :root { color-scheme: dark; }
         * { box-sizing: border-box; }
-        html, body { margin: 0; height: 100%; }
-        body {
-            background:
-                radial-gradient(circle at 18% 0%, rgba(45, 212, 191, 0.16), transparent 46%),
-                linear-gradient(135deg, #0a1725 0%, #0b1f33 52%, #123a52 100%);
-            color: #f2f8fb;
-            font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif;
-            overflow: hidden;
-            user-select: none;
-        }
-        .splash {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 22px 28px 18px;
-        }
-        .brand { display: flex; align-items: center; gap: 14px; }
-        .emblem {
-            width: 64px; height: 64px;
-            padding: 5px;
-            border-radius: 50%;
-            background: #f4f8fb;
-            display: grid; place-items: center;
-            box-shadow:
-                0 0 0 3px rgba(94, 234, 212, 0.28),
-                0 8px 20px rgba(0, 0, 0, 0.35);
-        }
+        html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; }
+        body { background: #081e2b; color: #f6f9fa; font-family: "Segoe UI", Arial, sans-serif; }
+        .splash { position: relative; width: 100%; height: 100%; }
+        .scene { position: absolute; inset: 0; width: 100%; height: 100%; }
+        .brand { position: absolute; top: 17%; left: 13%; padding-left: 22px; border-left: 4px solid #42aeb6; }
+        h1 { margin: -4px 0 0; font-size: 35px; line-height: 1.2; font-weight: 700; letter-spacing: -.6px; }
+        .subtitle { margin: 5px 0 0; color: #b8d4dc; font-size: 13px; letter-spacing: .02em; }
+        .emblem { position: absolute; top: 22px; right: 22px; width: 40px; height: 40px; padding: 3px; border-radius: 50%; background: #f4f8fb; box-shadow: 0 0 0 2px #8bcbd12b; }
         .emblem img { width: 100%; height: 100%; display: block; }
-        h1 {
-            margin: 0;
-            font-size: 30px;
-            line-height: 1.05;
-            letter-spacing: -0.4px;
-            font-weight: 800;
-        }
-        .subtitle {
-            margin: 4px 0 0;
-            font-size: 14px;
-            font-weight: 600;
-            color: #5eead4;
-            letter-spacing: 0.01em;
-        }
-        .scene { width: 100%; max-width: 430px; height: auto; display: block; }
-        .pipe { fill: none; stroke: #1f4a63; stroke-width: 14; stroke-linecap: round; }
-        .pipe-highlight {
-            fill: none;
-            stroke: rgba(94, 234, 212, 0.22);
-            stroke-width: 4;
-            stroke-linecap: round;
-        }
-        .gas {
-            fill: #5eead4;
-            opacity: 0;
-            animation: gas-flow 2.6s linear infinite;
-            filter: drop-shadow(0 0 4px rgba(94, 234, 212, 0.75));
-        }
-        .g1 { animation-delay: 0s; }
-        .g2 { animation-delay: 0.65s; }
-        .g3 { animation-delay: 1.3s; }
-        .g4 { animation-delay: 1.95s; }
-        @keyframes gas-flow {
-            0%   { transform: translateX(0); opacity: 0; }
-            12%  { opacity: 1; }
-            82%  { opacity: 1; }
-            100% { transform: translateX(270px); opacity: 0; }
-        }
-        .house .wall { fill: #eef3f7; }
-        .house .roof { fill: #2dd4bf; }
-        .house .window { fill: #123a52; }
-        .house .door { fill: #0f766e; }
-        .house .port { fill: #1f4a63; }
-        .glow {
-            fill: rgba(94, 234, 212, 0.25);
-            animation: glow-pulse 2.6s ease-in-out infinite;
-        }
-        @keyframes glow-pulse {
-            0%, 100% { opacity: 0.25; }
-            50% { opacity: 0.6; }
-        }
-        .status {
-            margin: 0;
-            font-size: 14px;
-            letter-spacing: 0.02em;
-            color: #9fb6c6;
-        }
-
-        /* Static state: respect the OS setting and the diagnostic override. */
-        @media (prefers-reduced-motion: reduce) {
-            .gas { animation: none; opacity: 0.45; }
-            .g1 { transform: translateX(0); }
-            .g2 { transform: translateX(70px); }
-            .g3 { transform: translateX(140px); }
-            .g4 { transform: translateX(210px); }
-            .glow { animation: none; opacity: 0.35; }
-        }
-        :root[data-reduced-motion="true"] .gas { animation: none; opacity: 0.45; }
-        :root[data-reduced-motion="true"] .g1 { transform: translateX(0); }
-        :root[data-reduced-motion="true"] .g2 { transform: translateX(70px); }
-        :root[data-reduced-motion="true"] .g3 { transform: translateX(140px); }
-        :root[data-reduced-motion="true"] .g4 { transform: translateX(210px); }
-        :root[data-reduced-motion="true"] .glow { animation: none; opacity: 0.35; }
+        .status { position: absolute; top: 32%; width: 100%; margin: 0; text-align: center; font-size: 20px; font-weight: 400; color: #d8e5eb; }
+        .gas { animation: gas-flow 3.6s ease-in-out infinite; }
+        @keyframes gas-flow { 0%, 100% { opacity: .45; transform: translateX(-4px); } 55% { opacity: .95; transform: translateX(5px); } }
+        @media (prefers-reduced-motion: reduce) { .gas { animation: none; opacity: .8; } }
+        :root[data-reduced-motion="true"] .gas { animation: none; opacity: .8; }
     </style>
 </head>
 <body>
     <main class="splash" role="status" aria-live="polite">
-        <div class="brand">
-            <span class="emblem"><img src="assets/company-emblem.png" alt="" width="54" height="54"></span>
-            <div>
-                <h1>СС.Расчет</h1>
-                <p class="subtitle">Калькулятор ГСН и ГСВ</p>
-            </div>
-        </div>
-
-        <svg class="scene" viewBox="0 0 460 140" aria-hidden="true" focusable="false">
-            <path class="pipe" d="M16 104 H300"></path>
-            <path class="pipe-highlight" d="M16 101 H300"></path>
-
-            <circle class="gas g1" cx="26" cy="104" r="5"></circle>
-            <circle class="gas g2" cx="26" cy="104" r="5"></circle>
-            <circle class="gas g3" cx="26" cy="104" r="5"></circle>
-            <circle class="gas g4" cx="26" cy="104" r="5"></circle>
-
-            <g class="house">
-                <path class="roof" d="M292 52 L356 10 L420 52 Z"></path>
-                <rect class="wall" x="304" y="52" width="104" height="72" rx="4"></rect>
-                <rect class="window" x="318" y="66" width="26" height="22" rx="3"></rect>
-                <rect class="window" x="368" y="66" width="26" height="22" rx="3"></rect>
-                <rect class="door" x="344" y="92" width="24" height="32" rx="2"></rect>
-                <rect class="port" x="296" y="98" width="14" height="12" rx="2"></rect>
-            </g>
-            <circle class="glow" cx="302" cy="104" r="11"></circle>
-        </svg>
-
-        <p class="status">Запуск приложения…</p>
+<svg class="scene" aria-hidden="true" focusable="false" viewBox="0 0 560 450" fill="none">
+  <defs>
+    <radialGradient id="sky" cx=".8" cy=".7" r=".95"><stop stop-color="#0d3444"/><stop offset=".6" stop-color="#092632"/><stop offset="1" stop-color="#081e2b"/></radialGradient>
+    <linearGradient id="tube" x1="0" y1="287" x2="0" y2="318" gradientUnits="userSpaceOnUse"><stop stop-color="#76c4ce" stop-opacity=".7"/><stop offset=".25" stop-color="#2e6577" stop-opacity=".35"/><stop offset=".7" stop-color="#092e3d"/><stop offset="1" stop-color="#50858d" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="metal"><stop stop-color="#386979"/><stop offset=".3" stop-color="#a7d9dc"/><stop offset=".5" stop-color="#5898a6"/><stop offset=".8" stop-color="#214e61"/><stop offset="1" stop-color="#8dc9cf"/></linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#124152"/><stop offset="1" stop-color="#092435"/></linearGradient>
+    <radialGradient id="windowLight"><stop stop-color="#ffd37b" stop-opacity=".4"/><stop offset="1" stop-color="#f8c75f" stop-opacity="0"/></radialGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffeaa2"/><stop offset="1" stop-color="#f5c966"/></linearGradient>
+    <filter id="flowGlow" x="-15%" y="-60%" width="130%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0H560V450H0Z"/>
+  <g class="house" stroke="#93d5de" stroke-width="2.4" stroke-linejoin="round">
+    <path d="M405 350 V274 H391 L465 215 L538 274 H525 V358"/>
+    <path d="M493 238 V223 H510 V251"/>
+  </g>
+  <circle cx="472" cy="299" r="50" fill="url(#windowLight)"/>
+  <g fill="url(#warm)"><rect x="455" y="279" width="14" height="16" rx=".6"/><rect x="474" y="279" width="14" height="16" rx=".6"/><rect x="455" y="300" width="14" height="16" rx=".6"/><rect x="474" y="300" width="14" height="16" rx=".6"/></g>
+  <!-- Continuous tube body. The lower run remains visible with animation disabled. -->
+  <path d="M-10 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#0b202c" stroke-width="34"/>
+  <path d="M-10 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#65a6b3" stroke-width="31"/>
+  <path d="M-10 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#0b303f" stroke-width="27"/>
+  <path d="M-10 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="url(#tube)" stroke-width="26"/>
+  <path d="M193 302 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#42ccdf" stroke-width="22" opacity=".55" filter="url(#flowGlow)"/>
+  <path d="M190 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#47c8d8" stroke-width="7" opacity=".75"/>
+  <path d="M193 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#b0f4f5" stroke-width="2.4"/>
+  <g fill="url(#metal)" stroke="#8cc6cf" stroke-width="1.4"><rect x="62" y="282" width="12" height="41" rx="2"/><rect x="176" y="282" width="12" height="41" rx="2"/></g>
+  <g stroke="#91cdd5" stroke-width="2.1" stroke-linejoin="round">
+    <path d="M103 287 V279 H110 V272 H141 V279 H148 V287" fill="#174352"/>
+    <path d="M120 272 V247 H131 V272 M115 263 H137 M107 280 H145"/>
+    <path d="M103 239 Q126 235 148 239 C160 241 160 248 148 250 Q126 253 103 250 C92 248 92 241 103 239Z" fill="#16404e" stroke-width="2.8"/>
+    <path d="M104 244 H148 M125 241 V249" stroke-width="1.2"/>
+  </g>
+  <g class="gas" stroke="#7de3ea" stroke-width="3" stroke-linejoin="round"><path d="m302 312 8 7-8 7 m14-14 8 7-8 7 m14-14 8 7-8 7"/><path d="M343 345 H384 m-6-5 6 5-6 5" stroke-width="1.7"/></g>
+  <path d="M0 420 C102 398 170 400 249 390 S435 341 560 354 V450 H0Z" fill="url(#hill)"/>
+  <path d="M0 420 C102 398 170 400 249 390 S435 341 560 354" stroke="#397587" stroke-opacity=".55" stroke-width="1.3"/>
+  <path d="M0 443 Q191 398 325 421 Q444 433 560 398 V450 H0Z" fill="#0a2839" opacity=".6"/>
+</svg>
+        <span class="emblem"><img src="assets/company-emblem.png" alt="Эмблема ООО «Северное сияние»" width="34" height="34"></span>
+        <div class="brand"><h1>СС.Расчет</h1><p class="subtitle">Калькулятор ГСН и ГСВ</p></div>
+        <p class="status">Подготавливаем расчёт…</p>
     </main>
-
     <script>
         (function () {
             var params = new URLSearchParams(window.location.search);

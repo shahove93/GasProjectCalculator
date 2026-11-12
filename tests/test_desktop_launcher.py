@@ -203,7 +203,7 @@ class SplashTests(unittest.TestCase):
     def test_splash_is_russian_local_page(self):
         self.assertIn('lang="ru"', self.html)
         self.assertIn("СС.Расчет", self.html)
-        self.assertIn("Запуск приложения", self.html)
+        self.assertIn("Подготавливаем расчёт…", self.html)
 
     def test_splash_has_no_network_references(self):
         for marker in ("http://", "https://", "//cdn", "@import", "fonts."):

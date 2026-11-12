@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="328" height="628" viewBox="0 0 328 628" fill="none">
+<rect width="328" height="628" fill="#081e2b"/>
+<svg x="0" y="290" width="328" height="264" viewBox="0 0 560 450">
+  <defs>
+    <radialGradient id="sky" cx=".8" cy=".7" r=".95"><stop stop-color="#0d3444"/><stop offset=".6" stop-color="#092632"/><stop offset="1" stop-color="#081e2b"/></radialGradient>
+    <linearGradient id="tube" x1="0" y1="287" x2="0" y2="318" gradientUnits="userSpaceOnUse"><stop stop-color="#76c4ce" stop-opacity=".7"/><stop offset=".25" stop-color="#2e6577" stop-opacity=".35"/><stop offset=".7" stop-color="#092e3d"/><stop offset="1" stop-color="#50858d" stop-opacity=".7"/></linearGradient>
+    <linearGradient id="metal"><stop stop-color="#386979"/><stop offset=".3" stop-color="#a7d9dc"/><stop offset=".5" stop-color="#5898a6"/><stop offset=".8" stop-color="#214e61"/><stop offset="1" stop-color="#8dc9cf"/></linearGradient>
+    <linearGradient id="hill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#124152"/><stop offset="1" stop-color="#092435"/></linearGradient>
+    <radialGradient id="windowLight"><stop stop-color="#ffd37b" stop-opacity=".4"/><stop offset="1" stop-color="#f8c75f" stop-opacity="0"/></radialGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffeaa2"/><stop offset="1" stop-color="#f5c966"/></linearGradient>
+    <filter id="flowGlow" x="-15%" y="-60%" width="130%" height="220%"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0H560V450H0Z"/>
+  <g class="house" stroke="#93d5de" stroke-width="2.4" stroke-linejoin="round">
+    <path d="M405 350 V274 H391 L465 215 L538 274 H525 V358"/>
+    <path d="M493 238 V223 H510 V251"/>
+  </g>
+  <circle cx="472" cy="299" r="50" fill="url(#windowLight)"/>
+  <g fill="url(#warm)"><rect x="455" y="279" width="14" height="16" rx=".6"/><rect x="474" y="279" width="14" height="16" rx=".6"/><rect x="455" y="300" width="14" height="16" rx=".6"/><rect x="474" y="300" width="14" height="16" rx=".6"/></g>
+  <!-- Continuous tube body. The lower run remains visible with animation disabled. -->
+  <path d="M-10 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#0b202c" stroke-width="34"/>
+  <path d="M-10 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#65a6b3" stroke-width="31"/>
+  <path d="M-10 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#0b303f" stroke-width="27"/>
+  <path d="M-10 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="url(#tube)" stroke-width="26"/>
+  <path d="M193 302 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#42ccdf" stroke-width="22" opacity=".55" filter="url(#flowGlow)"/>
+  <path d="M190 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#47c8d8" stroke-width="7" opacity=".75"/>
+  <path d="M193 302 H198 Q227 302 232 327 Q237 345 256 345 H409 Q423 345 423 332 V320 H435" stroke="#b0f4f5" stroke-width="2.4"/>
+  <g fill="url(#metal)" stroke="#8cc6cf" stroke-width="1.4"><rect x="62" y="282" width="12" height="41" rx="2"/><rect x="176" y="282" width="12" height="41" rx="2"/></g>
+  <g stroke="#91cdd5" stroke-width="2.1" stroke-linejoin="round">
+    <path d="M103 287 V279 H110 V272 H141 V279 H148 V287" fill="#174352"/>
+    <path d="M120 272 V247 H131 V272 M115 263 H137 M107 280 H145"/>
+    <path d="M103 239 Q126 235 148 239 C160 241 160 248 148 250 Q126 253 103 250 C92 248 92 241 103 239Z" fill="#16404e" stroke-width="2.8"/>
+    <path d="M104 244 H148 M125 241 V249" stroke-width="1.2"/>
+  </g>
+  <path d="M0 420 C102 398 170 400 249 390 S435 341 560 354 V450 H0Z" fill="url(#hill)"/>
+  <path d="M0 420 C102 398 170 400 249 390 S435 341 560 354" stroke="#397587" stroke-opacity=".55" stroke-width="1.3"/>
+  <path d="M0 443 Q191 398 325 421 Q444 433 560 398 V450 H0Z" fill="#0a2839" opacity=".6"/>
+</svg>
+<defs><linearGradient id="blend" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#081e2b"/><stop offset="1" stop-color="#081e2b" stop-opacity="0"/></linearGradient></defs><rect x="0" y="290" width="328" height="100" fill="url(#blend)"/>
+<path d="M0 554H328V628H0Z" fill="#0a2839"/>
+<path d="M28 81V122" stroke="#42aeb6" stroke-width="4"/>
+<g fill="#f6f9fa" font-family="Segoe UI, Arial, sans-serif"><text x="45" y="103" font-size="30" font-weight="700">СС.Расчет</text><text x="45" y="126" font-size="13" fill="#b8d4dc">Калькулятор ГСН и ГСВ</text></g>
+<path d="M28 169H300" stroke="#56818b" stroke-opacity=".35"/>
+<text x="28" y="199" font-family="Segoe UI, Arial, sans-serif" font-size="14" fill="#b8d4dc">Точный расчёт. Тёплый дом.</text>
+</svg>

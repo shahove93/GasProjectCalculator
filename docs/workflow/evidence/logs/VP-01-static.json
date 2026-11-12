@@ -1,0 +1,57 @@
+{
+  "baseline": "ac59d8c27ed47be07ac9b54acf8285bcab704be0",
+  "sha256": {
+    "frontend/index.html": "10a126c4dedd73f44aeca5f171bc3446e9148b45cd246009deb2d3afebeace87",
+    "frontend/splash.html": "ca41b7cdc008d519d45dbe2a50f421a99ddcb895e4bfaeba7d3c3cd5857ced03",
+    "app/desktop_launcher.py": "c91bd58c9a896dd98973b9e001bac00adecfde093c24a55b74534b02e4c91adf",
+    "tests/test_desktop_launcher.py": "d17dd06a9ef7e401aba415c0ca74d959be3f0142352aa60a680acc48e2732850",
+    "frontend/assets/company-emblem.png": "c3dcba6dc868b8c9f39c004c6fb23c21d31cd58b9feec209caf8697bbd52f4dc",
+    "frontend/assets/footer-pipe.svg": "b40670d991648f0cdf38c3abd7f081292720b76ef1be43d6ed3676030bd4d87f",
+    "frontend/assets/header-pipe.svg": "67936eda6bd0585f556a0a6cea79a75f30b4aa7934b69f094c224bcb94a00d3e",
+    "frontend/assets/installer-header.png": "72095b5834014a2c85a87fbabeeff2f364516b2c1a09ff23f8402a3b4351048d",
+    "frontend/assets/installer-header.svg": "eb5f7a169bb13023e80dc3dcabbee0a38da3446bd4f37fb700cddac102068309",
+    "frontend/assets/installer-sidebar.png": "082263dc3e50f7943a20d839bb798524f58601f785d64b4190b998c440d68f8c",
+    "frontend/assets/installer-sidebar.svg": "c80bd7b05a8c496e35328749ed1faba8421a2bfe54ff1ea65750039f737f5a9c",
+    "frontend/assets/splash-scene.svg": "9ee43b21817db2b6ed9ac55cadc19489947722703fb35f743aaf589f1004ce67"
+  },
+  "checks": {
+    "index_javascript_identical_to_baseline": true,
+    "form_nodes_attributes_order_identical": true,
+    "launcher_only_three_splash_constants_changed": true,
+    "app/main.py_zero_diff": true,
+    "app/calculator.py_zero_diff": true,
+    "app/gsv_calculator.py_zero_diff": true,
+    "static_network_scan": [
+      {
+        "file": "frontend\\index.html",
+        "external_urls_except_svg_namespace": []
+      },
+      {
+        "file": "frontend\\splash.html",
+        "external_urls_except_svg_namespace": []
+      },
+      {
+        "file": "frontend\\assets\\footer-pipe.svg",
+        "external_urls_except_svg_namespace": []
+      },
+      {
+        "file": "frontend\\assets\\header-pipe.svg",
+        "external_urls_except_svg_namespace": []
+      },
+      {
+        "file": "frontend\\assets\\installer-header.svg",
+        "external_urls_except_svg_namespace": []
+      },
+      {
+        "file": "frontend\\assets\\installer-sidebar.svg",
+        "external_urls_except_svg_namespace": []
+      },
+      {
+        "file": "frontend\\assets\\splash-scene.svg",
+        "external_urls_except_svg_namespace": []
+      }
+    ],
+    "emblem_preserved": "c3dcba6dc868b8c9f39c004c6fb23c21d31cd58b9feec209caf8697bbd52f4dc",
+    "git_diff_check_product_exit": 0
+  }
+}

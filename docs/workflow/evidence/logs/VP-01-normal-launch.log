@@ -1,0 +1,63 @@
+2026-11-12 13:04:26,511 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=14840) ===
+2026-11-12 13:04:26,561 INFO [gasproject.desktop] Splash resource: D:\Antigravity\GasProjectCalculator\frontend\splash.html
+2026-11-12 13:04:26,561 INFO [gasproject.desktop] [splash] splash window created: 560x450 uri=file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html reduced_motion=False
+2026-11-12 13:04:27,138 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 13:04:27,138 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 13:04:27,636 INFO [gasproject.desktop] Frontend resource: D:\Antigravity\GasProjectCalculator\frontend\index.html
+2026-11-12 13:04:27,887 INFO [gasproject.desktop] Selected loopback port 8174 (preferred 8174); socket bound on 127.0.0.1
+2026-11-12 13:04:28,071 INFO [uvicorn.error] Started server process [14840]
+2026-11-12 13:04:28,072 INFO [uvicorn.error] Waiting for application startup.
+2026-11-12 13:04:28,072 INFO [uvicorn.error] Application startup complete.
+2026-11-12 13:04:28,706 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:8174/ after 0.78s (thread=gasproject-backend pid=14840)
+2026-11-12 13:04:28,707 INFO [gasproject.desktop] Wrote port file: C:\Users\user\AppData\Local\Temp\opencode\vp-01-native\normal-port.json
+2026-11-12 13:04:28,708 INFO [gasproject.desktop] [splash] backend ready after 0.78s; preparing main window
+2026-11-12 13:04:28,727 INFO [gasproject.desktop] [window] main window created: title='СС.Расчет' width=800 height=540 min_size=(760, 520)
+2026-11-12 13:04:28,764 INFO [gasproject.desktop] [splash] splash closed after backend readiness
+2026-11-12 13:04:28,770 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 13:04:28,770 INFO [gasproject.desktop] Auto-close: waiting 240.00s before closing window
+2026-11-12 13:04:28,771 INFO [gasproject.desktop] [eval-bridge] watching C:\Users\user\AppData\Local\Temp\opencode\vp-01-native\normal-bridge.json
+2026-11-12 13:04:28,829 INFO [gasproject.desktop] [eval-bridge] active at C:\Users\user\AppData\Local\Temp\opencode\vp-01-native\normal-bridge.json
+2026-11-12 13:04:53,134 INFO [gasproject.desktop] [eval-bridge] id=1794477893095 ok=True
+2026-11-12 13:04:53,195 INFO [gasproject.desktop] [eval-bridge] id=1794477893155 ok=True
+2026-11-12 13:04:54,066 INFO [gasproject.desktop] [eval-bridge] id=1794477894015 ok=True
+2026-11-12 13:04:54,128 INFO [gasproject.desktop] [eval-bridge] id=1794477894074 ok=True
+2026-11-12 13:04:54,240 INFO [gasproject.desktop] [eval-bridge] id=1794477894183 ok=True
+2026-11-12 13:04:55,162 INFO [gasproject.desktop] [eval-bridge] id=1794477895131 ok=True
+2026-11-12 13:04:55,224 INFO [gasproject.desktop] [eval-bridge] id=1794477895190 ok=True
+2026-11-12 13:04:56,093 INFO [gasproject.desktop] [eval-bridge] id=1794477896042 ok=True
+2026-11-12 13:04:56,153 INFO [gasproject.desktop] [eval-bridge] id=1794477896100 ok=True
+2026-11-12 13:04:56,264 INFO [gasproject.desktop] [eval-bridge] id=1794477896208 ok=True
+2026-11-12 13:04:57,136 INFO [gasproject.desktop] [eval-bridge] id=1794477897111 ok=True
+2026-11-12 13:04:57,196 INFO [gasproject.desktop] [eval-bridge] id=1794477897171 ok=True
+2026-11-12 13:04:58,066 INFO [gasproject.desktop] [eval-bridge] id=1794477898044 ok=True
+2026-11-12 13:04:58,125 INFO [gasproject.desktop] [eval-bridge] id=1794477898103 ok=True
+2026-11-12 13:04:58,186 INFO [gasproject.desktop] [eval-bridge] id=1794477898160 ok=True
+2026-11-12 13:04:59,005 INFO [gasproject.desktop] [eval-bridge] id=1794477898965 ok=True
+2026-11-12 13:04:59,065 INFO [gasproject.desktop] [eval-bridge] id=1794477899023 ok=True
+2026-11-12 13:05:00,338 INFO [gasproject.desktop] [eval-bridge] id=1794477900282 ok=True
+2026-11-12 13:05:01,361 INFO [gasproject.desktop] [eval-bridge] id=1794477901336 ok=True
+2026-11-12 13:05:02,990 INFO [gasproject.desktop] [eval-bridge] id=1794477902932 ok=True
+2026-11-12 13:05:03,048 INFO [gasproject.desktop] [eval-bridge] id=1794477903040 ok=True
+2026-11-12 13:05:03,107 INFO [gasproject.desktop] [eval-bridge] id=1794477903096 ok=True
+2026-11-12 13:05:03,876 INFO [gasproject.desktop] [eval-bridge] id=1794477903841 ok=True
+2026-11-12 13:05:03,935 INFO [gasproject.desktop] [eval-bridge] id=1794477903899 ok=True
+2026-11-12 13:05:03,995 INFO [gasproject.desktop] [eval-bridge] id=1794477903955 ok=True
+2026-11-12 13:05:04,762 INFO [gasproject.desktop] [eval-bridge] id=1794477904729 ok=True
+2026-11-12 13:05:04,822 INFO [gasproject.desktop] [eval-bridge] id=1794477904788 ok=True
+2026-11-12 13:05:05,590 INFO [gasproject.desktop] [eval-bridge] id=1794477905548 ok=True
+2026-11-12 13:05:05,649 INFO [gasproject.desktop] [eval-bridge] id=1794477905607 ok=True
+2026-11-12 13:05:05,709 INFO [gasproject.desktop] [eval-bridge] id=1794477905664 ok=True
+2026-11-12 13:05:06,476 INFO [gasproject.desktop] [eval-bridge] id=1794477906452 ok=True
+2026-11-12 13:05:06,537 INFO [gasproject.desktop] [eval-bridge] id=1794477906511 ok=True
+2026-11-12 13:05:07,309 INFO [gasproject.desktop] [eval-bridge] id=1794477907279 ok=True
+2026-11-12 13:05:07,369 INFO [gasproject.desktop] [eval-bridge] id=1794477907336 ok=True
+2026-11-12 13:05:07,428 INFO [gasproject.desktop] [eval-bridge] id=1794477907394 ok=True
+2026-11-12 13:05:56,317 INFO [gasproject.desktop] [window] main window closed
+2026-11-12 13:05:56,345 INFO [gasproject.desktop] [eval-bridge] stopped
+2026-11-12 13:05:56,664 INFO [gasproject.desktop] Window closed by user
+2026-11-12 13:05:56,722 INFO [uvicorn.error] Shutting down
+2026-11-12 13:05:56,823 INFO [uvicorn.error] Waiting for application shutdown.
+2026-11-12 13:05:56,823 INFO [uvicorn.error] Application shutdown complete.
+2026-11-12 13:05:56,823 INFO [uvicorn.error] Finished server process [14840]
+2026-11-12 13:05:56,824 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 13:05:56,824 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 0 ===

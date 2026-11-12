@@ -1,0 +1,41 @@
+test_both_result_and_form_have_internal_scroll_regions (tests.test_frontend_redesign.FrontendRedesignTests.test_both_result_and_form_have_internal_scroll_regions) ... ok
+test_breakdown_reads_total_and_pipe_breakdown_from_response (tests.test_frontend_redesign.FrontendRedesignTests.test_breakdown_reads_total_and_pipe_breakdown_from_response) ... ok
+test_compact_layout_uses_no_css_zoom_or_scale (tests.test_frontend_redesign.FrontendRedesignTests.test_compact_layout_uses_no_css_zoom_or_scale) ... ok
+test_embedded_emblem_matches_product_asset (tests.test_frontend_redesign.FrontendRedesignTests.test_embedded_emblem_matches_product_asset) ... ok
+test_emblem_asset_is_cropped_png (tests.test_frontend_redesign.FrontendRedesignTests.test_emblem_asset_is_cropped_png) ... ok
+test_functional_ids_preserved (tests.test_frontend_redesign.FrontendRedesignTests.test_functional_ids_preserved) ... ok
+test_gsv_has_three_pipe_length_fields_and_no_legacy_fields (tests.test_frontend_redesign.FrontendRedesignTests.test_gsv_has_three_pipe_length_fields_and_no_legacy_fields) ... ok
+test_header_has_brand_text (tests.test_frontend_redesign.FrontendRedesignTests.test_header_has_brand_text) ... ok
+test_no_external_network_assets (tests.test_frontend_redesign.FrontendRedesignTests.test_no_external_network_assets) ... ok
+test_options_are_a_separate_card_and_district_leaves_customer_row (tests.test_frontend_redesign.FrontendRedesignTests.test_options_are_a_separate_card_and_district_leaves_customer_row) ... ok
+test_page_does_not_mask_horizontal_overflow (tests.test_frontend_redesign.FrontendRedesignTests.test_page_does_not_mask_horizontal_overflow) ... ok
+test_payload_sends_pipe_lengths_instead_of_legacy_fields (tests.test_frontend_redesign.FrontendRedesignTests.test_payload_sends_pipe_lengths_instead_of_legacy_fields) ... ok
+test_title_is_exactly_ss_raschet (tests.test_frontend_redesign.FrontendRedesignTests.test_title_is_exactly_ss_raschet) ... ok
+test_app_title_is_exact_brand (tests.test_desktop_launcher.BrandingGeometryTests.test_app_title_is_exact_brand) ... ok
+test_window_geometry_matches_approved_design (tests.test_desktop_launcher.BrandingGeometryTests.test_window_geometry_matches_approved_design) ... ok
+test_error_message_is_understandable (tests.test_desktop_launcher.DiagnosticsTests.test_error_message_is_understandable) ... ok
+test_error_message_uses_brand (tests.test_desktop_launcher.DiagnosticsTests.test_error_message_uses_brand) ... ok
+test_failure_port_file_has_status_and_error (tests.test_desktop_launcher.DiagnosticsTests.test_failure_port_file_has_status_and_error) ... ok
+test_port_file_is_written_atomically (tests.test_desktop_launcher.DiagnosticsTests.test_port_file_is_written_atomically) ... ok
+test_stop_backend_requests_exit_and_joins (tests.test_desktop_launcher.DiagnosticsTests.test_stop_backend_requests_exit_and_joins) ... ok
+test_invalid_preferred_port_is_rejected (tests.test_desktop_launcher.PortSelectionTests.test_invalid_preferred_port_is_rejected) ... ok
+test_is_port_available_reflects_held_port (tests.test_desktop_launcher.PortSelectionTests.test_is_port_available_reflects_held_port) ... ok
+test_selected_socket_is_bound_to_loopback_only (tests.test_desktop_launcher.PortSelectionTests.test_selected_socket_is_bound_to_loopback_only) ... ok
+test_selects_next_port_when_preferred_is_busy (tests.test_desktop_launcher.PortSelectionTests.test_selects_next_port_when_preferred_is_busy) ... ok
+test_selects_next_port_when_wildcard_listener_is_busy (tests.test_desktop_launcher.PortSelectionTests.test_selects_next_port_when_wildcard_listener_is_busy) ... ok
+test_timeout_is_bounded_and_raises (tests.test_desktop_launcher.ReadinessTests.test_timeout_is_bounded_and_raises) ... ok
+test_waits_for_backend_until_ready (tests.test_desktop_launcher.ReadinessTests.test_waits_for_backend_until_ready) ... ok
+test_frontend_index_resolves_from_source (tests.test_desktop_launcher.ResourceTests.test_frontend_index_resolves_from_source) ... ok
+test_splash_page_resolves_from_source (tests.test_desktop_launcher.ResourceTests.test_splash_page_resolves_from_source) ... ok
+test_splash_animates_gas_flow_to_house (tests.test_desktop_launcher.SplashTests.test_splash_animates_gas_flow_to_house) ... ok
+test_splash_emblem_is_a_local_file (tests.test_desktop_launcher.SplashTests.test_splash_emblem_is_a_local_file) ... ok
+test_splash_has_no_network_references (tests.test_desktop_launcher.SplashTests.test_splash_has_no_network_references) ... ok
+test_splash_is_russian_local_page (tests.test_desktop_launcher.SplashTests.test_splash_is_russian_local_page) ... ok
+test_splash_respects_reduced_motion (tests.test_desktop_launcher.SplashTests.test_splash_respects_reduced_motion) ... ok
+test_splash_url_diagnostic_reduced_motion_flag (tests.test_desktop_launcher.SplashTests.test_splash_url_diagnostic_reduced_motion_flag) ... ok
+test_splash_url_is_local_file_uri (tests.test_desktop_launcher.SplashTests.test_splash_url_is_local_file_uri) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 1.928s
+
+OK

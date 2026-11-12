@@ -1,0 +1,7 @@
+{
+  "browser": "157.0.4341.46",
+  "exports": [
+    "installer-sidebar.png 328x628",
+    "installer-header.png 110x110"
+  ]
+}

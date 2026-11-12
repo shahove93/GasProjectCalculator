@@ -1,0 +1,88 @@
+{
+  "cases": 11,
+  "totals": [
+    [
+      "desktop",
+      "gsn",
+      "68 250 ₽"
+    ],
+    [
+      "desktop",
+      "gsv",
+      "75 600 ₽"
+    ],
+    [
+      "desktop",
+      "combined",
+      "158 550 ₽"
+    ],
+    [
+      "desktop",
+      "D1",
+      "75 600 ₽"
+    ],
+    [
+      "desktop",
+      "D2",
+      "79 275 ₽"
+    ],
+    [
+      "desktop",
+      "D3",
+      "71 400 ₽"
+    ],
+    [
+      "desktop",
+      "D4",
+      "63 000 ₽"
+    ],
+    [
+      "desktop",
+      "D5",
+      "70 875 ₽"
+    ],
+    [
+      "mobile",
+      "gsn",
+      "68 250 ₽"
+    ],
+    [
+      "mobile",
+      "gsv",
+      "75 600 ₽"
+    ],
+    [
+      "mobile",
+      "combined",
+      "158 550 ₽"
+    ]
+  ],
+  "errors": [],
+  "network": [],
+  "reducedMotion": {
+    "animated": {
+      "animation": "gas-flow",
+      "opacity": "0.450124",
+      "bounds": [
+        560,
+        450
+      ]
+    },
+    "os": {
+      "animation": "none",
+      "opacity": "0.8",
+      "bounds": [
+        560,
+        450
+      ]
+    },
+    "flag": {
+      "animation": "none",
+      "opacity": "0.8",
+      "bounds": [
+        560,
+        450
+      ]
+    }
+  }
+}

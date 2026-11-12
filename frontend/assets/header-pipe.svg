@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" fill="none">
+  <defs>
+    <linearGradient id="glass" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#82d4da" stop-opacity=".5"/><stop offset=".3" stop-color="#4b9ca7" stop-opacity=".18"/><stop offset=".65" stop-color="#164251" stop-opacity=".3"/><stop offset="1" stop-color="#72aeb7" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="metal"><stop stop-color="#244856"/><stop offset=".3" stop-color="#aac9ce"/><stop offset=".5" stop-color="#739ca5"/><stop offset=".8" stop-color="#315a67"/><stop offset="1" stop-color="#95c3ca"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffdc88"/><stop offset=".45" stop-color="#dbad58"/><stop offset="1" stop-color="#956323"/></linearGradient>
+    <linearGradient id="edge"><stop stop-color="#5c939e" stop-opacity="0"/><stop offset=".35" stop-color="#83bbc5"/><stop offset=".8" stop-color="#8ce4e7"/><stop offset="1" stop-color="#6b9eac"/></linearGradient>
+  </defs>
+  <!-- A single continuous pipe: the inlet rises under the valve, then bends up. -->
+  <path d="M0 94 H43 V82 Q43 59 67 59 H222 Q244 59 244 36 Q244 18 265 18 H360" stroke="#061c29" stroke-width="23"/>
+  <path d="M0 94 H43 V82 Q43 59 67 59 H222 Q244 59 244 36 Q244 18 265 18 H360" stroke="url(#edge)" stroke-width="20"/>
+  <path d="M0 94 H43 V82 Q43 59 67 59 H222 Q244 59 244 36 Q244 18 265 18 H360" stroke="#123343" stroke-width="16"/>
+  <path d="M0 94 H43 V82 Q43 59 67 59 H222 Q244 59 244 36 Q244 18 265 18 H360" stroke="url(#glass)" stroke-width="14"/>
+  <g fill="url(#metal)" stroke="#a8cbd2" stroke-width="1.2">
+    <rect x="100" y="43" width="10" height="33" rx="1.5"/><rect x="180" y="43" width="10" height="33" rx="1.5"/><rect x="278" y="4" width="9" height="28" rx="1.5"/>
+  </g>
+  <g stroke="url(#gold)" stroke-width="2" stroke-linejoin="round">
+    <path d="M127 49 V42 H134 V36 H153 V42 H161 V49" fill="#14333c"/>
+    <path d="M138 36 V17 H148 V36 M133 28 H153 M130 42 H158"/>
+    <path d="M119 10 C111 10 112 19 120 20 Q143 23 166 20 C174 19 175 10 166 10 Q143 7 119 10 Z" fill="#163642" stroke-width="3"/>
+    <path d="M121 14 H165 M143 13 V20" stroke-width="1.2"/>
+  </g>
+</svg>

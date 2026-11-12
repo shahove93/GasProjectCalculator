@@ -1,0 +1,22 @@
+WINDOW visual-01-native-target-window.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW visual-01-native-target-gsn-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW visual-01-native-target-gsn.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/gsn] total=68 250 ₽ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=None
+WINDOW visual-01-native-target-gsv-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW visual-01-native-target-gsv.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/gsv] total=75 600 ₽ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW visual-01-native-target-combined-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW visual-01-native-target-combined.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/combined] total=158 550 ₽ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW visual-01-native-422.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW visual-01-native-min-window.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW visual-01-native-min-gsn-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW visual-01-native-min-gsn.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/gsn] total=68 250 ₽ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=None
+WINDOW visual-01-native-min-gsv-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW visual-01-native-min-gsv.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/gsv] total=75 600 ₽ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WINDOW visual-01-native-min-combined-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW visual-01-native-min-combined.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/combined] total=158 550 ₽ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True tableFits=True
+WROTE D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-01-native.json

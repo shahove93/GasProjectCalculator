@@ -789,3 +789,53 @@ Releasev1.1.0 id442672288 — Latest, asset738698226 SS-Raschet-Setup.exe
 HTTP200 и hash подтверждены. v1.0.0/tag/assets сохранены. Письмо не отправлялось
 согласно последнему уточнению пользователя. Product не менялся, новые review/
 suite не запускались. Отчёт PUBLICATION-v1.1.0.md и STATE актуализированы.
+
+## 2026-11-12 — визуальное продолжение Astra: preflight и reservация
+
+Пользователь утвердил «Давай сделаем это» + небольшие улучшения, заставку по
+новой картинке и установщик в том же стиле. Это продолжение logical TASK
+MD-02/MD-03 как новые подходы A2: прежний A1/C1 формально получил PASS, но
+пользователь не принял визуальное сходство и дал новые refs; история,
+проверки, NIT MD02-N1 и расход не сбрасываются.
+
+Preflight: ветка `feature/gsv-mixed-diameters`, baseline `ac59d8c`; live
+worker-list — активный writer только координатор `ctx_3cdcedf304e0`, прошлые
+workers settled/released; checked, clean не вызывался. Новые design docs и
+ref сохраняются. Восстановлены counters: MD-02 A1/C1 1 full/0 FAIL/1-4
+Codex; MD-03 A1/C1 1/0/1-4; FINAL-MIXED-STAGE 1 stage PASS. Reservations:
+MD-02 A2/C1 — 1 R2 vision review Sol/high (call 2/4); MD-03 A2/C1 — 1 R2
+review (call 2/4); отдельная финальная Astra/high stage-приёмка; full suite
+один раз на конечной ревизии. Старые installer bytes зафиксированы:
+1.0.0 15 286 980 B `71232EE4…7E08`, 1.1.0 15 293 993 B
+`3BFFFFB2…B710`, legacy `04388410…949A`/`2973278F…428F`.
+
+Оформлены `tasks/VP-01.md` (шапка/подвал/заставка/artwork), `tasks/VP-02.md`
+(installer 1.2.0), `evidence/VP-00-preflight.md`; STATE — IN_PROGRESS. Next:
+dispatch VP-01 настоящему Orca Codex `gpt-6-astra` high в текущем workspace,
+затем R2 vision review, local commit, VP-02, финальный suite и отдельная
+stage-приёмка. Push/merge/deploy/release/signing не выполняются.
+
+## 2026-11-12 — VP-01 (MD-02 A2/C1) R2 vision PASS, MD02-N1 closed
+
+Исполнитель VP-01 — настоящий Orca Codex `gpt-6-astra` high,
+`ctx_0d12c08f442b`/`task_409018258f8b`; requested/effective модель
+зафиксирована до правки (`VP-01-effective-worker.json`). Реализованы новые
+header/footer/splash SVG по трём refs, splash 560×450, небольшие
+presentation-улучшения, локальный installer artwork (sidebar/header SVG+PNG).
+Продуктовый diff только `frontend/index.html`, `frontend/splash.html`,
+`app/desktop_launcher.py` (три splash-константы), один test-string и новые
+assets; backend/API/calculator/requirements zero-diff. Реальные browser
+desktop/mobile390 и native target/min screenshots, три comparisons, 36
+targeted tests OK/exit0, lifecycle/error/reduced-motion/loopback evidence,
+собственные процессы закрыты, чужие :8000/:8138 сохранены.
+
+Независимый R2 Codex `gpt-6.1-sol` high (`ctx_fd6edd091391`/
+`task_2978f91a27ba`) после vision-разбора actual diff и 56 artifacts вынес
+**PASS**: V1–V12 подтверждены, шапка/подвал/заставка близки refs по
+геометрии/композиции, нет clipping/лишних деталей, бренд/эмблема сохранены,
+все режимы/эталоны/опции/НДС прежние, native 800×540/min760×520 и mobile
+390×844 без workaround. Прежний **MD02-N1 CLOSED** новой геометрией.
+Findings: нет. Reviewer не менял файлы/не коммитил, проверки не перезапускал.
+Счётчики этого review 1/0/1; logical MD-02 totals 2/0/2-of-4. Следующий
+TASK — VP-02 (MD-03 A2 installer1.2.0); local scoped commit делает
+координатор. Push/merge/deploy/release/signing не выполнялись.

@@ -1,0 +1,12 @@
+2026-11-12 13:05:32,346 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=11568) ===
+2026-11-12 13:05:32,398 INFO [gasproject.desktop] Splash resource: D:\Antigravity\GasProjectCalculator\frontend\splash.html
+2026-11-12 13:05:32,399 INFO [gasproject.desktop] [splash] splash window created: 560x450 uri=file:///D:/Antigravity/GasProjectCalculator/frontend/splash.html reduced_motion=False
+2026-11-12 13:05:32,970 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 13:05:32,970 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 13:05:32,971 ERROR [gasproject.desktop] [startup] launch failed: Диагностический сбой запуска (--simulate-startup-failure).
+2026-11-12 13:05:33,546 INFO [gasproject.desktop] [splash] splash closed after startup failure
+2026-11-12 13:05:33,546 ERROR [gasproject.desktop] Launch failure message: Не удалось запустить СС.Расчет. |  | Причина: Диагностический сбой запуска (--simulate-startup-failure). |  | Проверьте, что установлен компонент Microsoft Edge WebView2 Runtime и что антивирус не блокирует приложение, затем повторите запуск. |  | Подробности записаны в журнал: | D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-01-error-launch.log
+2026-11-12 13:05:33,547 ERROR [gasproject.desktop] Launch failure dialog: Не удалось запустить СС.Расчет. |  | Причина: Диагностический сбой запуска (--simulate-startup-failure). |  | Проверьте, что установлен компонент Microsoft Edge WebView2 Runtime и что антивирус не блокирует приложение, затем повторите запуск. |  | Подробности записаны в журнал: | D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\VP-01-error-launch.log
+2026-11-12 13:05:33,549 INFO [gasproject.desktop] Window closed by user
+2026-11-12 13:05:33,549 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 13:05:33,550 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 1 ===

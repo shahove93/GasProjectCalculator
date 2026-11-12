@@ -1,0 +1,96 @@
+ M AGENTS.md
+ M ARCHITECTURE.md
+ M ROADMAP.md
+ M VISION.md
+ M app/desktop_launcher.py
+ M docs/workflow/APPROVALS.md
+ M docs/workflow/HISTORY.md
+ M docs/workflow/MODEL-ROUTING.md
+ M docs/workflow/STATE.md
+ M frontend/index.html
+ M frontend/splash.html
+ M tests/test_desktop_launcher.py
+?? docs/design/splash-installer-reference.jpg
+?? docs/screenshots/visual-01-compare-footer.png
+?? docs/screenshots/visual-01-compare-header.png
+?? docs/screenshots/visual-01-compare-splash.png
+?? docs/screenshots/visual-01-desktop-422.png
+?? docs/screenshots/visual-01-desktop-combined-after.png
+?? docs/screenshots/visual-01-desktop-combined-before.png
+?? docs/screenshots/visual-01-desktop-gsn-after.png
+?? docs/screenshots/visual-01-desktop-gsn-before.png
+?? docs/screenshots/visual-01-desktop-gsv-D1.png
+?? docs/screenshots/visual-01-desktop-gsv-D2.png
+?? docs/screenshots/visual-01-desktop-gsv-D3.png
+?? docs/screenshots/visual-01-desktop-gsv-D4.png
+?? docs/screenshots/visual-01-desktop-gsv-D5.png
+?? docs/screenshots/visual-01-desktop-gsv-after.png
+?? docs/screenshots/visual-01-desktop-gsv-before.png
+?? docs/screenshots/visual-01-desktop-switch-clear.png
+?? docs/screenshots/visual-01-mobile-422.png
+?? docs/screenshots/visual-01-mobile-combined-after.png
+?? docs/screenshots/visual-01-mobile-combined-before.png
+?? docs/screenshots/visual-01-mobile-gsn-after.png
+?? docs/screenshots/visual-01-mobile-gsn-before.png
+?? docs/screenshots/visual-01-mobile-gsv-after.png
+?? docs/screenshots/visual-01-mobile-gsv-before.png
+?? docs/screenshots/visual-01-mobile-switch-clear.png
+?? docs/screenshots/visual-01-native-422.png
+?? docs/screenshots/visual-01-native-error.png
+?? docs/screenshots/visual-01-native-min-combined-before.png
+?? docs/screenshots/visual-01-native-min-combined.png
+?? docs/screenshots/visual-01-native-min-gsn-before.png
+?? docs/screenshots/visual-01-native-min-gsn.png
+?? docs/screenshots/visual-01-native-min-gsv-before.png
+?? docs/screenshots/visual-01-native-min-gsv.png
+?? docs/screenshots/visual-01-native-min-window.png
+?? docs/screenshots/visual-01-native-splash.png
+?? docs/screenshots/visual-01-native-target-combined-before.png
+?? docs/screenshots/visual-01-native-target-combined.png
+?? docs/screenshots/visual-01-native-target-gsn-before.png
+?? docs/screenshots/visual-01-native-target-gsn.png
+?? docs/screenshots/visual-01-native-target-gsv-before.png
+?? docs/screenshots/visual-01-native-target-gsv.png
+?? docs/screenshots/visual-01-native-target-window.png
+?? docs/screenshots/visual-01-preview-main.png
+?? docs/screenshots/visual-01-preview-splash.png
+?? docs/screenshots/visual-01-splash-animated.png
+?? docs/screenshots/visual-01-splash-flag.png
+?? docs/screenshots/visual-01-splash-os.png
+?? docs/workflow/VISUAL-POLISH-ASTRA-BRIEF.md
+?? docs/workflow/VISUAL-POLISH-COORDINATOR-DISPATCH.md
+?? docs/workflow/evidence/VP-00-preflight.md
+?? docs/workflow/evidence/logs/VP-01-all-diff-stat.txt
+?? docs/workflow/evidence/logs/VP-01-browser-run.exit.txt
+?? docs/workflow/evidence/logs/VP-01-browser-run.txt
+?? docs/workflow/evidence/logs/VP-01-browser.cjs
+?? docs/workflow/evidence/logs/VP-01-browser.json
+?? docs/workflow/evidence/logs/VP-01-children-before-close.json
+?? docs/workflow/evidence/logs/VP-01-compare.py
+?? docs/workflow/evidence/logs/VP-01-compare.txt
+?? docs/workflow/evidence/logs/VP-01-dispatch-receipt.json
+?? docs/workflow/evidence/logs/VP-01-effective-worker.json
+?? docs/workflow/evidence/logs/VP-01-native-error.json
+?? docs/workflow/evidence/logs/VP-01-native-initial-run.txt
+?? docs/workflow/evidence/logs/VP-01-native-initial.json
+?? docs/workflow/evidence/logs/VP-01-native-run.exit.txt
+?? docs/workflow/evidence/logs/VP-01-native-run.txt
+?? docs/workflow/evidence/logs/VP-01-native-splash.json
+?? docs/workflow/evidence/logs/VP-01-native.json
+?? docs/workflow/evidence/logs/VP-01-owned-ports-before-close.json
+?? docs/workflow/evidence/logs/VP-01-ports-after-close.json
+?? docs/workflow/evidence/logs/VP-01-render.cjs
+?? docs/workflow/evidence/logs/VP-01-render.txt
+?? docs/workflow/evidence/logs/VP-01-status.txt
+?? docs/workflow/evidence/logs/VP-01-targeted-tests.exit.txt
+?? docs/workflow/evidence/logs/VP-01-targeted-tests.txt
+?? docs/workflow/evidence/logs/VP-01-terminal-initial.txt
+?? docs/workflow/tasks/VP-01.md
+?? docs/workflow/tasks/VP-02.md
+?? frontend/assets/footer-pipe.svg
+?? frontend/assets/header-pipe.svg
+?? frontend/assets/installer-header.png
+?? frontend/assets/installer-header.svg
+?? frontend/assets/installer-sidebar.png
+?? frontend/assets/installer-sidebar.svg
+?? frontend/assets/splash-scene.svg

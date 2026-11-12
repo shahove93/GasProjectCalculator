@@ -1,0 +1,31 @@
+[
+  {
+    "session": 65541,
+    "exit_code": 0
+  },
+  {
+    "session": 98396,
+    "exit_code": 0
+  },
+  {
+    "session": 49243,
+    "exit_code": 1
+  },
+  {
+    "session": 85743,
+    "exit_code": 1
+  },
+  {
+    "session": 26741,
+    "exit_code": 0
+  },
+  {
+    "session": 80778,
+    "exit_code": 0
+  },
+  {
+    "session": 47565,
+    "exit_code": 1,
+    "reason": "Own supplementary uvicorn process stopped after captures"
+  }
+]

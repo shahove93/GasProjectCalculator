@@ -65,9 +65,9 @@ APP_HEIGHT = 540
 APP_MIN_SIZE = (760, 520)
 
 # Local startup splash window.
-SPLASH_WIDTH = 520
-SPLASH_HEIGHT = 320
-SPLASH_BACKGROUND = "#0a1725"
+SPLASH_WIDTH = 560
+SPLASH_HEIGHT = 450
+SPLASH_BACKGROUND = "#081e2b"
 
 logger = logging.getLogger("gasproject.desktop")
 

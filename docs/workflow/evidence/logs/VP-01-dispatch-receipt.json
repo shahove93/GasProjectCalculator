@@ -1,0 +1,110 @@
+{
+  "id": "ccc82cd8-f348-42ec-b4ed-31f20a5dc194",
+  "ok": true,
+  "result": {
+    "runId": "run_8e5d92ad57c7",
+    "taskId": "task_409018258f8b",
+    "dispatchId": "ctx_0d12c08f442b",
+    "state": "outcome_unknown",
+    "stage": "turn_start_unobserved",
+    "turnStart": "unobserved",
+    "lastError": "Dispatch input (text and Enter) was written, but codex's turn start was not observed (waited up to 30s). The agent may still be starting, may be wedged (for example waiting on network), or may hold the prompt unsent in its composer: check with `terminal read` before resending. This is unverifiable, not proof the worker is dead. If the worker recovers and reports, this Dispatch settles normally.",
+    "setup": {
+      "requested": "not_applicable",
+      "effective": "not_applicable",
+      "source": "existing_worktree",
+      "hookFound": false,
+      "startupPolicy": "start-immediately",
+      "state": "not_applicable"
+    },
+    "launch": {
+      "requested": {
+        "agent": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      },
+      "effective": {
+        "agent": "codex",
+        "model": "gpt-6-astra",
+        "effort": "high"
+      }
+    },
+    "mode": {
+      "mode": "terminal",
+      "preferred": "terminal",
+      "reason": "user_default",
+      "detail": "Started a terminal agent worker, the default for new agent tabs in your settings."
+    },
+    "timeoutMs": 60000,
+    "effects": [
+      {
+        "kind": "worktree",
+        "action": "reused",
+        "id": "bcec44b9-39b7-4f68-9903-85dad7eaaa26::D:/Antigravity/GasProjectCalculator"
+      },
+      {
+        "kind": "setup",
+        "action": "not_applicable",
+        "state": "not_applicable"
+      },
+      {
+        "kind": "terminal",
+        "role": "agent",
+        "action": "created",
+        "id": "term_9f97403b-8f8a-494e-9fe4-dcefc20a7ad5",
+        "surface": "visible"
+      },
+      {
+        "kind": "dispatch_input",
+        "role": "agent",
+        "id": "term_9f97403b-8f8a-494e-9fe4-dcefc20a7ad5",
+        "state": "accepted"
+      },
+      {
+        "kind": "dispatch_input",
+        "role": "agent",
+        "id": "term_9f97403b-8f8a-494e-9fe4-dcefc20a7ad5",
+        "state": "turn_unobserved"
+      }
+    ],
+    "prompt": {
+      "requestId": "49b8326d-07a5-4f68-9d94-99be71c47f87",
+      "stages": [
+        "input_accepted"
+      ],
+      "provider": "codex",
+      "observation": "supported",
+      "processIncarnation": "8853d475-1d34-49b3-8595-7c3054c5d072",
+      "generation": 60,
+      "baselineWorkingSequence": 1,
+      "baselineExplicitWorkingStartedAt": 1794477222531,
+      "baselinePermissionSequence": 0
+    },
+    "residualResources": [
+      {
+        "kind": "terminal",
+        "role": "agent",
+        "action": "created",
+        "id": "term_9f97403b-8f8a-494e-9fe4-dcefc20a7ad5",
+        "surface": "visible"
+      }
+    ],
+    "nextCommands": [
+      "\"orca\" \"orchestration\" \"worker-show\" \"--dispatch\" \"ctx_0d12c08f442b\" \"--json\"",
+      "\"orca\" \"terminal\" \"read\" \"--terminal\" \"term_9f97403b-8f8a-494e-9fe4-dcefc20a7ad5\" \"--screen\"",
+      "\"orca\" \"orchestration\" \"worker-abandon\" \"--dispatch\" \"ctx_0d12c08f442b\" \"--json\""
+    ],
+    "run": {
+      "id": "run_8e5d92ad57c7",
+      "objective": "GasProjectCalculator: ╤Г╤В╨▓╨╡╤А╨╢╨┤╤С╨╜╨╜╤Л╨╣ ╤Н╤В╨░╨┐ ╨У╨б╨Т",
+      "created": false
+    },
+    "mutation": {
+      "requestId": "49b8326d-07a5-4f68-9d94-99be71c47f87",
+      "replayed": false
+    }
+  },
+  "_meta": {
+    "runtimeId": "f38be7dc-17d3-494f-bcf0-b78549dfca24"
+  }
+}

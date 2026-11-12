@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -5 1400 96" fill="none">
+  <defs>
+    <linearGradient id="line"><stop stop-color="#a4cdd0"/><stop offset=".3" stop-color="#58868b"/><stop offset="1" stop-color="#71979a"/></linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#176f98"/><stop offset=".55" stop-color="#2badd0"/><stop offset="1" stop-color="#91d9e4"/></linearGradient>
+    <linearGradient id="warm" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe9a1"/><stop offset="1" stop-color="#f1c75d"/></linearGradient>
+    <radialGradient id="halo"><stop stop-color="#f5cb74" stop-opacity=".32"/><stop offset="1" stop-color="#f5cb74" stop-opacity="0"/></radialGradient>
+  </defs>
+  <path d="M1050 86 Q1215 41 1400 70 V86" fill="#e4eef0"/>
+  <path d="M1104 61 Q1104 50 1115 49 Q1113 38 1127 38 Q1130 22 1142 24 Q1157 24 1156 40 Q1170 33 1179 44 L1190 61" stroke="#9ab5b8" stroke-width="2"/>
+  <!-- Thin two-edge pipe, with a small burner and shallow drop at the inlet. -->
+  <path d="M0 54 H68 V43 H91 V54 H123 Q134 54 134 63 H1209 M0 66 H80 V51 H82 V66 H121 Q123 66 123 75 H1209" stroke="url(#line)" stroke-width="2.3" fill="#f6faf9"/>
+  <g fill="#f2f8f7" stroke="#658f95" stroke-width="2"><rect x="128" y="56" width="8" height="24" rx="2"/><rect x="890" y="59" width="8" height="20" rx="1"/><rect x="1015" y="59" width="8" height="20" rx="1"/></g>
+  <path d="M79 0 C76 14 64 22 64 31 C64 43 85 45 92 34 C99 24 85 12 79 0Z" fill="url(#flame)"/>
+  <path d="M79 15 C80 24 72 28 72 34 C72 40 84 41 86 34 C88 28 82 23 79 15Z" fill="#f5fcfc"/>
+  <path d="M79 29 Q72 40 81 41 Q87 37 79 29" fill="#49bad0"/>
+  <rect x="65" y="43" width="29" height="4" rx="1" fill="#f5faf9" stroke="#68969c" stroke-width="1.6"/>
+  <g stroke="#537f88" stroke-width="2.8" stroke-linejoin="round">
+    <path d="M1207 77 V31 H1198 L1253 2 L1308 31 H1298 V74" fill="#f8faf7"/>
+    <path d="M1278 15 V6 H1290 V21 M1199 31 L1253 0 L1309 31"/>
+  </g>
+  <circle cx="1252" cy="48" r="28" fill="url(#halo)"/>
+  <rect x="1239" y="34" width="26" height="27" rx="1.2" fill="url(#warm)" stroke="#c29842" stroke-width="2"/>
+  <path d="M1252 35 V60 M1240 47.5 H1264" stroke="#fff3c4" stroke-width="2.5"/>
+  <path d="M1344 76 V54 M1344 64 L1336 58 M1344 60 L1350 53" stroke="#729a9e" stroke-width="2"/>
+  <path d="M1334 64 C1320 63 1322 48 1332 44 C1325 28 1350 24 1355 39 C1357 42 1355 45 1356 47 C1370 55 1358 69 1346 64" stroke="#73999e" stroke-width="2.4"/>
+  <path d="M1071 85 Q1225 54 1400 76" stroke="#97b5ba" stroke-width="2"/>
+</svg>

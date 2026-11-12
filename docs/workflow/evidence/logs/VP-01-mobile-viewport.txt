@@ -1,0 +1,56 @@
+[
+  {
+    "mode": "gsn",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollY": 0,
+    "documentWidth": 390,
+    "action": [
+      627.140625,
+      658.140625
+    ],
+    "total": [
+      516.578125,
+      543.578125
+    ],
+    "value": "68 250 ₽"
+  },
+  {
+    "mode": "gsv",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollY": 0,
+    "documentWidth": 390,
+    "action": [
+      705.6875,
+      736.6875
+    ],
+    "total": [
+      474.421875,
+      501.421875
+    ],
+    "value": "75 600 ₽"
+  },
+  {
+    "mode": "combined",
+    "viewport": [
+      390,
+      844
+    ],
+    "scrollY": 269,
+    "documentWidth": 390,
+    "action": [
+      719.546875,
+      750.546875
+    ],
+    "total": [
+      392.375,
+      419.375
+    ],
+    "value": "143 850 ₽"
+  }
+]

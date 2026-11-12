@@ -1,5 +1,22 @@
 # Рабочая схема по образцу EquipmentDocumentationRegistry
 
+## Приоритет для визуального этапа 1.2.0 — решение пользователя 2026-11-12
+
+Для `VISUAL-POLISH-ASTRA-BRIEF.md` действует исключение из общей таблицы ниже:
+
+| Роль этапа | Реальный агент и модель |
+| --- | --- |
+| Координатор, документы и запуск проверок | OpenCode / DeepSeek Flash; продуктовый код не пишет |
+| Весь визуальный код и его исправления: панели, SVG/CSS, splash, installer branding | **Orca Codex / `gpt-6-astra`, effort `high`** |
+| Независимое R2 vision review | Отдельный Orca Codex / `gpt-6.1-sol`, high |
+| Финальная приёмка | Отдельный Orca Codex / `gpt-6-astra`, high; не исполнитель |
+
+Перед правкой кода обязательна запись requested/effective agent/model/effort
+по реальному Orca receipt/worker-show. Astra в тексте prompt не подтверждает
+выбор модели. При неподтверждённой/недоступной Astra — BLOCKED; молчаливая
+замена на OpenCode/DeepSeek или другую модель запрещена. Не менять глобальные
+конфиги/аккаунты. Это правило ограничено данным этапом, остальные роли прежние.
+
 Подготовлено 2026-11-11 по запросу пользователя. Схема взята из локальных
 `D:/Antigravity/EquipmentDocumentationRegistry/AGENTS.md`, `opencode.json`
 и `docs/workflow/MODEL-ROUTING.md`. Разрешения и бюджеты другого проекта сюда

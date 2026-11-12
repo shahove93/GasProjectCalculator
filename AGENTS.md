@@ -1,5 +1,31 @@
 # GasProjectCalculator: разработка через Orca
 
+## Приоритетное исключение: визуальная доработка 1.2.0
+
+По прямому решению пользователя 2026-11-12 визуальный scope из
+`docs/workflow/VISUAL-POLISH-ASTRA-BRIEF.md` (верх/низ приложения, заставка,
+дизайнерские улучшения и оформление установщика) реализует **только настоящий
+Orca Codex worker с моделью `gpt-6-astra`, reasoning effort `high`**.
+Это правило имеет приоритет над общими указаниями ниже о том, что код пишет
+OpenCode/DeepSeek Flash, и над прежними TASK/модельными конфигурациями.
+
+OpenCode/DeepSeek Flash в этом этапе только координирует документы, очередь,
+диспатч, сбор доказательств и запуск проверок; он не пишет и не исправляет
+продуктовый код, SVG/CSS, splash или installer branding. Все такие исправления
+также возвращаются Astra. Не передавать их Flash/Pro или другой модели.
+Перед продуктовой работой координатор обязан проверить и записать реальные
+requested/effective `agent=codex`, `model=gpt-6-astra`, `effort=high` из Orca
+launch receipt/worker-show. Одного упоминания Astra в prompt недостаточно.
+Если выбранная модель не запускается/не подтверждается — BLOCKED с точной
+ошибкой, без молчаливой замены. Не менять глобальные конфиги и аккаунты.
+
+Независимый vision review выполняет отдельный Codex Sol/high, финальную
+приёмку — отдельный Astra/high reviewer; исполнитель себя не принимает.
+Прежние TASK/counters/history, ветка feature/gsv-mixed-diameters и границы
+разрешений сохраняются. Результат — local installer1.2.0; опубликованные
+1.0.0/1.1.0 и пользовательская установка сохраняются. Вне этого ограниченного
+визуального этапа действует обычная маршрутизация проекта.
+
 Перед работой прочитать `C:/Users/user/.agents/skills/autonomous-development/SKILL.md`;
 перед Orca — `C:/Users/user/.agents/skills/orchestration/SKILL.md` и установленный
 guide. Перед TASK/dispatch/review — routing-and-budget.md; перед приёмкой и

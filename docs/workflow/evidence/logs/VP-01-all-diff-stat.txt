@@ -1,0 +1,13 @@
+ AGENTS.md                      |  26 ++++
+ ARCHITECTURE.md                |  10 ++
+ ROADMAP.md                     |  13 ++
+ VISION.md                      |   8 +
+ app/desktop_launcher.py        |   6 +-
+ docs/workflow/APPROVALS.md     |  38 +++++
+ docs/workflow/HISTORY.md       |  25 +++
+ docs/workflow/MODEL-ROUTING.md |  17 +++
+ docs/workflow/STATE.md         |  55 +++----
+ frontend/index.html            | 335 +++++++++--------------------------------
+ frontend/splash.html           | 189 +++++++----------------
+ tests/test_desktop_launcher.py |   2 +-
+ 12 files changed, 291 insertions(+), 433 deletions(-)
