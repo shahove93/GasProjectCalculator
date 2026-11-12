@@ -17,7 +17,7 @@ COMPLETE: [FINAL-REPORT](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
 - TASK: **RD-05** PASS (A1/C1; R2 Codex `ctx_8fb5c34ce714`; F1/F2 MINOR
   backlog). **RD-06** PASS (A1/C2; RD06-F01 CLOSED; F02 MINOR backlog;
   artifact `71232EE4…7E08`).
-  **RD-07** R0 final verify (suite один раз); затем Codex R3.
+  **RD-07** R0 final verify `ctx_e7b35f80b38d` (suite один раз); затем Codex R3.
   Frozen checklists: [RD-05](tasks/RD-05.md), [RD-06](tasks/RD-06.md),
   [RD-07](tasks/RD-07.md).
 - Scope: `frontend/index.html`, `app/desktop_launcher.py`, presentation
