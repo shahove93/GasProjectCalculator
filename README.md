@@ -12,7 +12,7 @@
 
 [Опубликованный выпуск](https://github.com/shahove93/GasProjectCalculator/releases/latest) · [Сайт компании](https://nordgas11.ru/)
 
-![СС.Расчет — расчёт ГСВ с тремя длинами](docs/screenshots/md-03-native-target-gsv-D1.png)
+![СС.Расчет — обновлённое оформление окна](docs/screenshots/visual-02-resumed-native-target-gsv.png)
 
 </div>
 
@@ -28,29 +28,19 @@
 
 ## Скачать и установить
 
-Последняя версия **1.1.0** включает три длины ГСВ и обновлённые иллюстрации.
+Последняя версия **1.2.0** — визуальная доработка: новая шапка и нижняя полоса,
+обновлённая заставка и установщик в едином фирменном стиле. Расчёты не менялись.
 **[Скачать установщик Windows](https://github.com/shahove93/GasProjectCalculator/releases/latest/download/SS-Raschet-Setup.exe)**.
 
 | Параметр | Значение |
 | --- | --- |
 | Файл | `SS-Raschet-Setup.exe` |
-| Размер | 15 293 993 байт |
-| SHA256 | `3BFFFFB2F7C7F73185B48B5AC5E5CDE06BF4197A1A3D4D0F66E763905AC5B710` |
-
-### Локальная сборка 1.2.0 (не опубликована)
-
-Визуальная доработка (шапка, подвал, заставка и установщик в едином стиле)
-собрана локально как **1.2.0**. Она **не опубликована**; кнопка выше ведёт на
-опубликованный выпуск 1.1.0.
-
-| Параметр | Значение |
-| --- | --- |
-| Файл | `installer/Output/GasProjectCalculator-Setup-1.2.0.exe` |
 | Размер | 15 373 267 байт |
 | ProductVersion | 1.2.0 |
 | SHA256 | `4579FB3AA7B2E6220C1204E3AA2A6048648AE5A344B8E2D45DD00CF19F856113` |
 
 Итог и проверки: `docs/workflow/FINAL-REPORT-VISUAL-POLISH.md`.
+Предыдущие выпуски 1.0.0 и 1.1.0 сохранены отдельно, их файлы не заменялись.
 
 1. Скачайте и запустите `SS-Raschet-Setup.exe`, пройдите русский мастер установки. Права администратора не требуются.
 2. По желанию выберите ярлык на рабочем столе. В меню **Пуск** ярлык создаётся автоматически.
@@ -58,7 +48,7 @@
 
 Приложение предназначено для **Windows x64**. Для окна приложения требуется **Microsoft Edge WebView2 Runtime**. После установки калькулятор выполняет расчёты локально, без подключения к серверу компании.
 
-Установщик 1.1.0 не имеет цифровой подписи, поэтому Windows SmartScreen может показать предупреждение. Целостность файла можно проверить по указанному выше SHA256 и файлу `SHA256SUMS.txt` на странице выпуска.
+Установщик 1.2.0 не имеет цифровой подписи, поэтому Windows SmartScreen может показать предупреждение. Целостность файла можно проверить по указанному выше SHA256 и файлу `SHA256SUMS.txt` на странице выпуска.
 
 **Обновление:** закройте приложение и запустите новый установщик. **Удаление:** Параметры Windows → Приложения → СС.Расчет → Удалить. Пользовательские файлы в Documents, на рабочем столе и журналы приложения в `%LOCALAPPDATA%\GasProjectCalculator` при удалении сохраняются.
 
@@ -66,22 +56,22 @@
 
 ### Расчёт ГСВ
 
-![Расчёт ГСВ: три длины, общий метраж и детализация](docs/screenshots/md-03-native-target-gsv-D1.png)
+![Расчёт ГСВ: три длины, общий метраж и детализация](docs/screenshots/visual-02-resumed-native-target-gsv.png)
 
 ### Общая смета
 
-![ГСН + ГСВ — общая смета](docs/screenshots/md-03-native-target-combined.png)
+![ГСН + ГСВ — общая смета](docs/screenshots/visual-02-resumed-native-target-combined.png)
 
 <details>
 <summary>Детализация, расчёт ГСН, заставка и мастер установки</summary>
 
-![Детализация ГСВ в общей смете](docs/screenshots/md-03-native-target-combined-detail.png)
+![Детализация ГСВ в общей смете](docs/screenshots/visual-02-resumed-native-minimum-combined.png)
 
-![Расчёт ГСН](docs/screenshots/md-03-native-target-gsn.png)
+![Расчёт ГСН](docs/screenshots/visual-02-resumed-native-target-gsn.png)
 
-![Заставка СС.Расчет](docs/screenshots/md-03-native-splash.png)
+![Заставка СС.Расчет](docs/screenshots/visual-02-resumed-splash-animated.png)
 
-![Русский мастер установки](docs/screenshots/md-03-wizard-welcome.png)
+![Русский мастер установки](docs/screenshots/visual-02-wizard-welcome.png)
 
 </details>
 
@@ -161,4 +151,4 @@ python -m venv .venv
 
 Сборка desktop: [packaging/README.md](packaging/README.md). Сборка установщика: [installer/build-installer.ps1](installer/build-installer.ps1).
 
-Текущая сборка — **1.1.0**. Unit suite: **219 тестов — OK**. Установленная 1.1.0 проверена в одной среде Windows x64/WebView2, DPI 96. Доказательства: [MD-01](docs/workflow/evidence/MD-01-evidence.md), [MD-02](docs/workflow/evidence/MD-02-evidence.md), [MD-03](docs/workflow/evidence/MD-03-evidence.md).
+Текущая сборка — **1.2.0**. Unit suite: **219 тестов — OK**. Установленная 1.2.0 проверена в одной среде Windows x64/WebView2, DPI 96. Доказательства: [MD-01](docs/workflow/evidence/MD-01-evidence.md), [MD-02](docs/workflow/evidence/MD-02-evidence.md), [MD-03](docs/workflow/evidence/MD-03-evidence.md).

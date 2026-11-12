@@ -1012,3 +1012,20 @@ GasProjectCalculator, PID 12888 `:8000` и PID 23152 `:8138`; в 20:05 MSK
 эти PID и listener-порты уже отсутствовали. Координатор не выполнял
 stop/kill и не обращался к ним — это изменение окружения вне продуктовой
 работы; artifact и независимые приёмки не затронуты.
+
+## 2026-11-12 — подготовка публикации принятой 1.2.0
+
+Пользователь в текущем чате явно разрешил: «Но все можно комитить и
+выкладывать на гитхаб». Разрешение записано в APPROVALS: scoped
+docs/README/release-notes/checksum commit, обычный push принятой ветки,
+fast-forward main без divergence и новый GitHub Release v1.2.0 (Latest) с
+`SS-Raschet-Setup.exe` и `SHA256SUMS.txt`. Публикуются именно принятые bytes
+installer: 15 373 267 B, SHA256
+`4579FB3AA7B2E6220C1204E3AA2A6048648AE5A344B8E2D45DD00CF19F856113`;
+без rebuild. Прежние 1.0.0/1.1.0 (tag/asset/release) не изменяются.
+Механический R0: suite/build/installer/UI/screenshots и дорогие review не
+перезапускаются; старые бюджеты/история сохраняются. Source HEAD перед
+публикацией — `73ec3acb79cb6e0ba5931afc1fd31688d75d9ea2`; origin/main
+`ac59d8c` — предок HEAD без divergence (fast-forward возможен). README
+обновлён на опубликованную 1.2.0, добавлены `docs/releases/v1.2.0.md` и
+checksum; публикация и финальные факты — следующим commit/отчётом.

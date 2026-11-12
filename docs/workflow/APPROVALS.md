@@ -227,3 +227,23 @@ suite 219 OK переиспользуются, а не повторяются; �
 Codex `gpt-6.1-sol`/high контекста (R2 и финальная stage-приёмка),
 FINAL-REPORT/README/STATE и scoped local commit после PASS. Новый
 installer не пересобирается; push/merge/release/deploy/signing нет.
+
+## Публикация принятой 1.2.0 на GitHub — 2026-11-12
+
+Пользователь в текущем чате явно разрешил: **«Но все можно комитить и
+выкладывать на гитхаб»**. Это разрешение имеет приоритет над прежними
+запретами publication/push для уже принятого результата 1.2.0: scoped
+commit документов/README/release notes/checksum, обычный push ветки
+`feature/gsv-mixed-diameters`, fast-forward default `main` к принятой
+revision при отсутствии divergence и GitHub Release **v1.2.0**
+(draft=false, prerelease=false, Latest) с asset `SS-Raschet-Setup.exe` и
+`SHA256SUMS.txt`.
+
+Публикуются именно принятые bytes installer 1.2.0: 15 373 267 B, SHA256
+`4579FB3AA7B2E6220C1204E3AA2A6048648AE5A344B8E2D45DD00CF19F856113`;
+rebuild не выполняется. Опубликованные v1.0.0 и v1.1.0, их tag/asset,
+пользовательская установка/данные/сессии, `.venv` и посторонние изменения
+сохраняются. Запрещены force/delete/перезапись несовпадающего tag/asset,
+web deployment, signing, изменение глобальных конфигов/аккаунтов и обход
+provider limits. Механическая публикация R0; новых product review, suite,
+build, installer, UI или screenshots нет, бюджеты/история не сбрасываются.
