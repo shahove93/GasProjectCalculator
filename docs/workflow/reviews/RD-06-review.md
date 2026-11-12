@@ -42,17 +42,38 @@ horizontal clipping, плюс согласованные metrics (scrollWidth==c
 hScroll=false) и команда/CWD/revision/exit/cleanup. Закрытие — bounded C2
 capture того же rebuilt installed artifact, без изменения продукта.
 
+## C2 (повторный полный review): PASS
+
+Повторный полный Codex R2 `ctx_1a3e73e23fcb` (`task_73c34faf0b72`,
+`gpt-6.1-sol` high), read-only, финальный HEAD `630c2dc`, вернул **PASS** по
+B1–B11. **RD06-F01 CLOSED**: основной `rd-06-installed-mobile-390x844.png`
+(82 172 B, SHA256 `FFB84856…43A5`) — настоящий viewport 390×844, одна шапка,
+кнопка видна, без horizontal clipping; metrics 375/375, 889/844, scroll 0/0,
+hScroll=false, max right edge 375. Старый `BA0D…455C` явно SUPERSEDED;
+C1 FAIL/finding/hash/описание сохранены. Артефакты: installer
+15 286 980 B `71232EE4…7E08`; legacy pre-compact `04388410…949A`;
+previous-stage `2973278F…428F`; dist/installed exe `5403540C…DD2C`;
+source/packaged index `60B15F15…4037`. Test instance/порты убраны,
+пользовательская установка/PID13248 и `:8000`/`:8138` не тронуты.
+Evidence reuse, runtime/build/install/suite rerun=0.
+
+**RD06-F02 (MINOR, B7 supplementary, OPEN backlog)** — вспомогательный
+`rd-06-installed-mobile-390x844-result.png` не доказывает заявленный
+scrollY=45: верхние 45 строк пустые, область x0..374/y129..843 пиксель-в-пиксель
+совпадает с первым кадром; основной B7 proof полностью подтверждён первым PNG.
+Закрытие backlog — аннотировать кадр как вспомогательный либо переснять
+согласованный scroll-кадр; новой correction/full review не требуется.
+
 ## Счётчики
 
-- RD-06: A1/C1, full reviews с вердиктом 1 (FAIL), failed reviews 1,
-  Codex calls 1 (R2 reserve ≤4/3M).
-- Резерв C2: одна корректная повторная подача и **один повторный полный
-  review** (второй из двух); C3 — только диагностика при повторном FAIL.
+- RD-06: A1/C2, full reviews с вердиктом **2** (C1 FAIL, C2 PASS),
+  failed reviews **1**, Codex calls **2** (R2 reserve ≤4/3M).
+- RD06-F01 CLOSED; RD06-F02 MINOR backlog.
 - Прежние счётчики не изменены: RD-01 1/0/0, RD-02 1/0/1, RD-03 2/1/2,
   RD-04/FINAL R0 0, RD-05 1/0/1, stage1 R3 1.
 
 ## Дальше
 
-Bounded C2: переснять mobile 390×844 с того же rebuilt installed artifact,
-обновить metrics/evidence; затем повторный полный Codex R2 review. Полный
-suite — отдельно RD-07.
+Scoped local commit RD-06, затем RD-07 (R0: один полный suite на финальном
+интегрированном состоянии, artifact/evidence reuse), затем Codex R3 stage
+acceptance и итоговый отчёт.

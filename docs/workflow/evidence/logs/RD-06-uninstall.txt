@@ -1,0 +1,27 @@
+uninstaller_exists: True
+uninstall_exit: 0
+install_dir_exists_after: False
+hkcu_key_exists_after_uninstall: False
+shortcut_exists_after_uninstall: False
+--- restore HKCU key ---
+Операция успешно завершена.
+
+reg_import_exit: 0
+hkcu_key_exists_after_restore: True
+restored_values:
+
+DisplayName     : СС.Расчет
+InstallLocation : C:\Users\user\AppData\Local\Programs\GasProjectCalculator\
+UninstallString : "C:\Users\user\AppData\Local\Programs\GasProjectCalculator\unins000.exe"
+
+
+--- restore Start Menu shortcut ---
+shortcut_target_after_restore: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+shortcut_sha256_after_restore: B3D7A0C6F77FF174D81E72BABF4697062BBC8E1BBD930E1F07DD11990A499153
+--- default install unchanged final check ---
+default_dir_exists: True
+default_exe_sha256: 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3
+default_index_sha256: 586C3A62ACB3031E1259C1B1D491FCA4C3C9A8BF12F541106A0168B1A520B4EC
+default_unins_dat_sha256: B1728FEACD2C6BD9CA76467700063ADE8FA63CC9A70BBC9D4A7191CAE83228D0
+--- test processes/listeners ---
+

@@ -1,0 +1,29 @@
+tab_close: {"id":"e0f465cc-5847-469d-9ba4-4d7f61b547ec","ok":true,"result":{"closed":true},"_meta":{"runtimeId":"f38be7dc-17d3-494f-bcf0-b78549dfca24"}}
+WM_CLOSE: WM_CLOSE ok=True title=СС.Расчет
+
+app_alive_after_close: False
+8185_after_close: False
+uninstall_exit: 0
+install_dir_exists_after: False
+key_exists_after_uninstall: False
+shortcut_exists_after_uninstall: False
+Операция успешно завершена.
+
+reg_import_exit: 0
+shortcut_target_after_restore: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+shortcut_sha_after_restore: B3D7A0C6F77FF174D81E72BABF4697062BBC8E1BBD930E1F07DD11990A499153
+key_exists_after_restore: True
+install_location_after_restore: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\
+default_exe: 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3
+default_index: 586C3A62ACB3031E1259C1B1D491FCA4C3C9A8BF12F541106A0168B1A520B4EC
+default_unins: B1728FEACD2C6BD9CA76467700063ADE8FA63CC9A70BBC9D4A7191CAE83228D0
+test_listeners_8180_8200: 0
+test_app_processes: 0
+user_ports: 
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+127.0.0.1         8138         23152
+0.0.0.0           8000         12888
+
+
+user_pids_alive: 12888=alive, 23152=alive, 13248=alive

@@ -1,0 +1,30 @@
+test_listener_8183: True owner=6808 address=127.0.0.1
+app_pid=10628
+splash_capture: outer=520x320 client=520x320 dpi=96 title=╨б╨б.╨а╨░╤Б╤З╨╡╤В
+main_window: outer=800x540 client=784x501 dpi=96 title=╨б╨б.╨а╨░╤Б╤З╨╡╤В
+port_file: {"status": "ready", "host": "127.0.0.1", "port": 8184, "url": "http://127.0.0.1:8184/", "pid": 10628}
+listeners:
+
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+127.0.0.1         8184         10628
+127.0.0.1         8183          6808
+
+
+app_listener_loopback_only: True
+close: WM_CLOSE ok=True title=╨б╨б.╨а╨░╤Б╤З╨╡╤В
+
+app_alive_after_close: False
+app_port_after_close: False
+test_listener_after_stop: False
+launcher lifecycle lines:
+2026-11-12 07:45:36,507 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 07:45:36,507 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 07:45:37,147 INFO [gasproject.desktop] Selected loopback port 8184 (preferred 8183); socket bound on 127.0.0.1
+2026-11-12 07:45:37,926 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:8184/ after 0.77s (thread=gasproject-backend pid=10628)
+2026-11-12 07:45:37,929 INFO [gasproject.desktop] [splash] backend ready after 0.77s; preparing main window
+2026-11-12 07:45:42,977 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 07:45:44,237 INFO [gasproject.desktop] [window] main window closed
+2026-11-12 07:45:44,533 INFO [gasproject.desktop] Window closed by user
+2026-11-12 07:45:44,711 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 07:45:44,711 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 0 ===

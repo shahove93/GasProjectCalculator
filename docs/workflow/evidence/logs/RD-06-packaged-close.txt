@@ -1,0 +1,14 @@
+WM_CLOSE at 2026-11-12T07:24:04.0566172+03:00
+WM_CLOSE ok=True title=СС.Расчет
+
+process_alive_after_close: False
+port_8180_listener_after_close: False
+tail launcher log:
+2026-11-12 07:24:04,682 INFO [gasproject.desktop] [eval-bridge] stopped
+2026-11-12 07:24:04,968 INFO [gasproject.desktop] Window closed by user
+2026-11-12 07:24:04,979 INFO [uvicorn.error] Shutting down
+2026-11-12 07:24:05,081 INFO [uvicorn.error] Waiting for application shutdown.
+2026-11-12 07:24:05,081 INFO [uvicorn.error] Application shutdown complete.
+2026-11-12 07:24:05,081 INFO [uvicorn.error] Finished server process [14912]
+2026-11-12 07:24:05,082 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 07:24:05,082 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 0 ===

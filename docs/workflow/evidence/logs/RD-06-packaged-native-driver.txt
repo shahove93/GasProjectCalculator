@@ -1,0 +1,24 @@
+WINDOW rd-06-packaged-target-window.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW rd-06-packaged-target-gsn-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW rd-06-packaged-target-gsn.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/gsn] total=131┬а250 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WINDOW rd-06-packaged-target-gsv-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW rd-06-packaged-target-gsv.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/gsv] total=105┬а525 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WINDOW rd-06-packaged-target-combined-before.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW rd-06-packaged-target-combined.png: outer=[800, 540] client=[784, 501] dpi=96
+[target/combined] total=145┬а950 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WINDOW rd-06-packaged-422.png: outer=[800, 540] client=[784, 501] dpi=96
+WINDOW rd-06-packaged-min-window.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW rd-06-packaged-min-gsn-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW rd-06-packaged-min-gsn.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/gsn] total=131┬а250 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WINDOW rd-06-packaged-min-gsv-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW rd-06-packaged-min-gsv.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/gsv] total=105┬а525 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WINDOW rd-06-packaged-min-combined-before.png: outer=[760, 520] client=[744, 481] dpi=96
+WINDOW rd-06-packaged-min-combined.png: outer=[760, 520] client=[744, 481] dpi=96
+[min/combined] total=145┬а950 тВ╜ scroll=[0, 0] hScroll=False vScroll=False submitInViewport=True totalInViewport=True
+WROTE docs\workflow\evidence\logs\RD-06-packaged-native.json
+
+DRIVER_EXIT=0

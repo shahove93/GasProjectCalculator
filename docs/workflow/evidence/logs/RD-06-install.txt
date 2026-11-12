@@ -1,0 +1,30 @@
+command: "D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR=C:\Users\user\AppData\Local\Temp\opencode\rd06-install /NOICONS /LOG=C:\Users\user\AppData\Local\Temp\opencode\rd06\rd06-inno-install.log
+exit: 0
+duration_seconds: 1.3663396
+install_dir_exists: True
+
+Name                     Length
+----                     ------
+_internal                
+GasProjectCalculator.exe 6836651
+unins000.dat             30625
+unins000.exe             3545299
+
+
+installed_exe_sha256: 5403540C4172779ED6F97381A9618FE423D0915A6BEC1710BAE2B578F6ACDD2C
+dist_exe_sha256: 5403540C4172779ED6F97381A9618FE423D0915A6BEC1710BAE2B578F6ACDD2C
+installed_index_sha256: 60B15F15245B834913ACF25445237146F773628AD674E5EF3E8FE15D26894037
+source_index_sha256: 60B15F15245B834913ACF25445237146F773628AD674E5EF3E8FE15D26894037
+inno_log: C:\Users\user\AppData\Local\Temp\opencode\rd06\rd06-inno-install.log
+--- HKCU key after install ---
+
+DisplayName     : СС.Расчет
+InstallLocation : C:\Users\user\AppData\Local\Temp\opencode\rd06-install\
+UninstallString : "C:\Users\user\AppData\Local\Temp\opencode\rd06-install\unins000.exe"
+
+
+--- default install unchanged check ---
+default_exe_sha256: 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3
+default_index_sha256: 586C3A62ACB3031E1259C1B1D491FCA4C3C9A8BF12F541106A0168B1A520B4EC
+default_unins_dat_sha256: B1728FEACD2C6BD9CA76467700063ADE8FA63CC9A70BBC9D4A7191CAE83228D0
+startmenu_shortcut_sha256: D33FCAAF80320C27D150083B54E454CA23E0D7948DF3DD7DCB51AAAF9FD53B34

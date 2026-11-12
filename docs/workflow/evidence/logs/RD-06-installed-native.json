@@ -1,0 +1,1340 @@
+{
+  "pid": 28136,
+  "port": 8182,
+  "artifactPrefix": "installed",
+  "target": {
+    "gsn": {
+      "set": {
+        "mode": "gsn",
+        "length": "14",
+        "angles": "2",
+        "hours": "4",
+        "district": true,
+        "gsnHidden": false,
+        "gsvHidden": true
+      },
+      "beforeMetrics": {
+        "inner": [
+          784,
+          501
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          784,
+          501
+        ],
+        "docClient": [
+          784,
+          501
+        ],
+        "bodyScroll": [
+          784,
+          501
+        ],
+        "bodyClient": [
+          784,
+          501
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": null,
+        "totalId": null,
+        "submitRect": {
+          "left": 430.2,
+          "top": 408,
+          "right": 760,
+          "bottom": 439,
+          "width": 329.8,
+          "height": 31
+        },
+        "totalRect": null,
+        "submitInViewport": true,
+        "totalInViewport": false,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "22.736px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 193,
+          "scroll": 193
+        },
+        "resultDetail": null
+      },
+      "beforeScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          800,
+          540
+        ],
+        "client": [
+          784,
+          501
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-target-gsn-before.png",
+        "file": "rd-06-installed-target-gsn-before.png"
+      },
+      "values": {
+        "title": "СС.Расчет",
+        "modeTitle": "Расчёт стоимости — ГСН",
+        "calcInfo": "none",
+        "gsn": "visible",
+        "gsv": "none",
+        "combined": "none",
+        "error": "none",
+        "errorText": "",
+        "submitDisabled": false,
+        "submitText": "Рассчитать стоимость",
+        "gsnTotal": "131 250 ₽",
+        "gsnSubtotal": "125 000 ₽",
+        "gsnVat": "6 250 ₽",
+        "gsvTotal": "—",
+        "gsvSubtotal": "—",
+        "gsvVat": "—",
+        "combinedTotal": "—",
+        "combinedSubtotal": "—",
+        "combinedVat": "—",
+        "combinedGsnTotal": "—",
+        "combinedGsvTotal": "—"
+      },
+      "afterMetrics": {
+        "inner": [
+          784,
+          501
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          784,
+          501
+        ],
+        "docClient": [
+          784,
+          501
+        ],
+        "bodyScroll": [
+          784,
+          501
+        ],
+        "bodyClient": [
+          784,
+          501
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": "result-gsn",
+        "totalId": "total",
+        "submitRect": {
+          "left": 430.2,
+          "top": 408,
+          "right": 760,
+          "bottom": 439,
+          "width": 329.8,
+          "height": 31
+        },
+        "totalRect": {
+          "left": 649.5,
+          "top": 172.5,
+          "right": 749,
+          "bottom": 203.2,
+          "width": 99.5,
+          "height": 30.7
+        },
+        "submitInViewport": true,
+        "totalInViewport": true,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "22.736px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 193,
+          "scroll": 193
+        },
+        "resultDetail": {
+          "client": 189,
+          "scroll": 189
+        }
+      },
+      "afterScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          800,
+          540
+        ],
+        "client": [
+          784,
+          501
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-target-gsn.png",
+        "file": "rd-06-installed-target-gsn.png"
+      }
+    },
+    "gsv": {
+      "set": {
+        "mode": "gsv",
+        "length": "8",
+        "diameter": "25",
+        "holes": "2",
+        "sakz": "1",
+        "panel": true,
+        "panelDisabled": false,
+        "gsnHidden": true,
+        "gsvHidden": false
+      },
+      "beforeMetrics": {
+        "inner": [
+          784,
+          501
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          784,
+          501
+        ],
+        "docClient": [
+          784,
+          501
+        ],
+        "bodyScroll": [
+          784,
+          501
+        ],
+        "bodyClient": [
+          784,
+          501
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": null,
+        "totalId": null,
+        "submitRect": {
+          "left": 430.2,
+          "top": 408,
+          "right": 760,
+          "bottom": 439,
+          "width": 329.8,
+          "height": 31
+        },
+        "totalRect": null,
+        "submitInViewport": true,
+        "totalInViewport": false,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "22.736px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 211,
+          "scroll": 211
+        },
+        "resultDetail": null
+      },
+      "beforeScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          800,
+          540
+        ],
+        "client": [
+          784,
+          501
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-target-gsv-before.png",
+        "file": "rd-06-installed-target-gsv-before.png"
+      },
+      "values": {
+        "title": "СС.Расчет",
+        "modeTitle": "Расчёт стоимости — ГСВ",
+        "calcInfo": "none",
+        "gsn": "none",
+        "gsv": "visible",
+        "combined": "none",
+        "error": "none",
+        "errorText": "",
+        "submitDisabled": false,
+        "submitText": "Рассчитать стоимость",
+        "gsnTotal": "131 250 ₽",
+        "gsnSubtotal": "125 000 ₽",
+        "gsnVat": "6 250 ₽",
+        "gsvTotal": "105 525 ₽",
+        "gsvSubtotal": "100 500 ₽",
+        "gsvVat": "5 025 ₽",
+        "combinedTotal": "—",
+        "combinedSubtotal": "—",
+        "combinedVat": "—",
+        "combinedGsnTotal": "—",
+        "combinedGsvTotal": "—"
+      },
+      "afterMetrics": {
+        "inner": [
+          784,
+          501
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          784,
+          501
+        ],
+        "docClient": [
+          784,
+          501
+        ],
+        "bodyScroll": [
+          784,
+          501
+        ],
+        "bodyClient": [
+          784,
+          501
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": "result-gsv",
+        "totalId": "gsv-total",
+        "submitRect": {
+          "left": 430.2,
+          "top": 408,
+          "right": 760,
+          "bottom": 439,
+          "width": 329.8,
+          "height": 31
+        },
+        "totalRect": {
+          "left": 646.9,
+          "top": 172.6,
+          "right": 749,
+          "bottom": 203.3,
+          "width": 102.1,
+          "height": 30.7
+        },
+        "submitInViewport": true,
+        "totalInViewport": true,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "22.736px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 211,
+          "scroll": 211
+        },
+        "resultDetail": {
+          "client": 189,
+          "scroll": 189
+        }
+      },
+      "afterScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          800,
+          540
+        ],
+        "client": [
+          784,
+          501
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-target-gsv.png",
+        "file": "rd-06-installed-target-gsv.png"
+      }
+    },
+    "combined": {
+      "set": {
+        "mode": "combined",
+        "gsnLength": "10",
+        "gsvLength": "5",
+        "gsvDiameter": "25",
+        "sakz": "0",
+        "panelDisabled": true,
+        "gsnHidden": false,
+        "gsvHidden": false,
+        "gsnFields": 6,
+        "gsvFields": 4
+      },
+      "beforeMetrics": {
+        "inner": [
+          784,
+          501
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          784,
+          501
+        ],
+        "docClient": [
+          784,
+          501
+        ],
+        "bodyScroll": [
+          784,
+          501
+        ],
+        "bodyClient": [
+          784,
+          501
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": null,
+        "totalId": null,
+        "submitRect": {
+          "left": 430.2,
+          "top": 408,
+          "right": 760,
+          "bottom": 439,
+          "width": 329.8,
+          "height": 31
+        },
+        "totalRect": null,
+        "submitInViewport": true,
+        "totalInViewport": false,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "22.736px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 193,
+          "scroll": 292
+        },
+        "resultDetail": null
+      },
+      "beforeScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          800,
+          540
+        ],
+        "client": [
+          784,
+          501
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-target-combined-before.png",
+        "file": "rd-06-installed-target-combined-before.png"
+      },
+      "values": {
+        "title": "СС.Расчет",
+        "modeTitle": "Расчёт стоимости — ГСН + ГСВ",
+        "calcInfo": "none",
+        "gsn": "none",
+        "gsv": "none",
+        "combined": "visible",
+        "error": "none",
+        "errorText": "",
+        "submitDisabled": false,
+        "submitText": "Рассчитать стоимость",
+        "gsnTotal": "131 250 ₽",
+        "gsnSubtotal": "125 000 ₽",
+        "gsnVat": "6 250 ₽",
+        "gsvTotal": "105 525 ₽",
+        "gsvSubtotal": "100 500 ₽",
+        "gsvVat": "5 025 ₽",
+        "combinedTotal": "145 950 ₽",
+        "combinedSubtotal": "139 000 ₽",
+        "combinedVat": "6 950 ₽",
+        "combinedGsnTotal": "75 600 ₽",
+        "combinedGsvTotal": "70 350 ₽"
+      },
+      "afterMetrics": {
+        "inner": [
+          784,
+          501
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          784,
+          501
+        ],
+        "docClient": [
+          784,
+          501
+        ],
+        "bodyScroll": [
+          784,
+          501
+        ],
+        "bodyClient": [
+          784,
+          501
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": "result-combined",
+        "totalId": "combined-total",
+        "submitRect": {
+          "left": 430.2,
+          "top": 408,
+          "right": 760,
+          "bottom": 439,
+          "width": 329.8,
+          "height": 31
+        },
+        "totalRect": {
+          "left": 646.4,
+          "top": 172.5,
+          "right": 749,
+          "bottom": 203.2,
+          "width": 102.6,
+          "height": 30.7
+        },
+        "submitInViewport": true,
+        "totalInViewport": true,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "22.736px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 193,
+          "scroll": 292
+        },
+        "resultDetail": {
+          "client": 189,
+          "scroll": 199
+        }
+      },
+      "afterScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          800,
+          540
+        ],
+        "client": [
+          784,
+          501
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-target-combined.png",
+        "file": "rd-06-installed-target-combined.png"
+      }
+    }
+  },
+  "min": {
+    "gsn": {
+      "set": {
+        "mode": "gsn",
+        "length": "14",
+        "angles": "2",
+        "hours": "4",
+        "district": true,
+        "gsnHidden": false,
+        "gsvHidden": true
+      },
+      "beforeMetrics": {
+        "inner": [
+          744,
+          481
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          744,
+          481
+        ],
+        "docClient": [
+          744,
+          481
+        ],
+        "bodyScroll": [
+          744,
+          481
+        ],
+        "bodyClient": [
+          744,
+          481
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": null,
+        "totalId": null,
+        "submitRect": {
+          "left": 409.1,
+          "top": 388,
+          "right": 720,
+          "bottom": 419,
+          "width": 310.9,
+          "height": 31
+        },
+        "totalRect": null,
+        "submitInViewport": true,
+        "totalInViewport": false,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "21.576px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 173,
+          "scroll": 173
+        },
+        "resultDetail": null
+      },
+      "beforeScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          760,
+          520
+        ],
+        "client": [
+          744,
+          481
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-min-gsn-before.png",
+        "file": "rd-06-installed-min-gsn-before.png"
+      },
+      "values": {
+        "title": "СС.Расчет",
+        "modeTitle": "Расчёт стоимости — ГСН",
+        "calcInfo": "none",
+        "gsn": "visible",
+        "gsv": "none",
+        "combined": "none",
+        "error": "none",
+        "errorText": "Тип заказчика: допустимы только «частное лицо» или «юридическое лицо»",
+        "submitDisabled": false,
+        "submitText": "Рассчитать стоимость",
+        "gsnTotal": "131 250 ₽",
+        "gsnSubtotal": "125 000 ₽",
+        "gsnVat": "6 250 ₽",
+        "gsvTotal": "105 525 ₽",
+        "gsvSubtotal": "100 500 ₽",
+        "gsvVat": "5 025 ₽",
+        "combinedTotal": "145 950 ₽",
+        "combinedSubtotal": "139 000 ₽",
+        "combinedVat": "6 950 ₽",
+        "combinedGsnTotal": "75 600 ₽",
+        "combinedGsvTotal": "70 350 ₽"
+      },
+      "afterMetrics": {
+        "inner": [
+          744,
+          481
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          744,
+          481
+        ],
+        "docClient": [
+          744,
+          481
+        ],
+        "bodyScroll": [
+          744,
+          481
+        ],
+        "bodyClient": [
+          744,
+          481
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": "result-gsn",
+        "totalId": "total",
+        "submitRect": {
+          "left": 409.1,
+          "top": 388,
+          "right": 720,
+          "bottom": 419,
+          "width": 310.9,
+          "height": 31
+        },
+        "totalRect": {
+          "left": 614.8,
+          "top": 171.5,
+          "right": 709,
+          "bottom": 200.6,
+          "width": 94.2,
+          "height": 29.1
+        },
+        "submitInViewport": true,
+        "totalInViewport": true,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "21.576px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 173,
+          "scroll": 173
+        },
+        "resultDetail": {
+          "client": 171,
+          "scroll": 171
+        }
+      },
+      "afterScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          760,
+          520
+        ],
+        "client": [
+          744,
+          481
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-min-gsn.png",
+        "file": "rd-06-installed-min-gsn.png"
+      }
+    },
+    "gsv": {
+      "set": {
+        "mode": "gsv",
+        "length": "8",
+        "diameter": "25",
+        "holes": "2",
+        "sakz": "1",
+        "panel": true,
+        "panelDisabled": false,
+        "gsnHidden": true,
+        "gsvHidden": false
+      },
+      "beforeMetrics": {
+        "inner": [
+          744,
+          481
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          744,
+          481
+        ],
+        "docClient": [
+          744,
+          481
+        ],
+        "bodyScroll": [
+          744,
+          481
+        ],
+        "bodyClient": [
+          744,
+          481
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": null,
+        "totalId": null,
+        "submitRect": {
+          "left": 409.1,
+          "top": 388,
+          "right": 720,
+          "bottom": 419,
+          "width": 310.9,
+          "height": 31
+        },
+        "totalRect": null,
+        "submitInViewport": true,
+        "totalInViewport": false,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "21.576px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 182,
+          "scroll": 182
+        },
+        "resultDetail": null
+      },
+      "beforeScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          760,
+          520
+        ],
+        "client": [
+          744,
+          481
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-min-gsv-before.png",
+        "file": "rd-06-installed-min-gsv-before.png"
+      },
+      "values": {
+        "title": "СС.Расчет",
+        "modeTitle": "Расчёт стоимости — ГСВ",
+        "calcInfo": "none",
+        "gsn": "none",
+        "gsv": "visible",
+        "combined": "none",
+        "error": "none",
+        "errorText": "Тип заказчика: допустимы только «частное лицо» или «юридическое лицо»",
+        "submitDisabled": false,
+        "submitText": "Рассчитать стоимость",
+        "gsnTotal": "131 250 ₽",
+        "gsnSubtotal": "125 000 ₽",
+        "gsnVat": "6 250 ₽",
+        "gsvTotal": "105 525 ₽",
+        "gsvSubtotal": "100 500 ₽",
+        "gsvVat": "5 025 ₽",
+        "combinedTotal": "145 950 ₽",
+        "combinedSubtotal": "139 000 ₽",
+        "combinedVat": "6 950 ₽",
+        "combinedGsnTotal": "75 600 ₽",
+        "combinedGsvTotal": "70 350 ₽"
+      },
+      "afterMetrics": {
+        "inner": [
+          744,
+          481
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          744,
+          481
+        ],
+        "docClient": [
+          744,
+          481
+        ],
+        "bodyScroll": [
+          744,
+          481
+        ],
+        "bodyClient": [
+          744,
+          481
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": "result-gsv",
+        "totalId": "gsv-total",
+        "submitRect": {
+          "left": 409.1,
+          "top": 388,
+          "right": 720,
+          "bottom": 419,
+          "width": 310.9,
+          "height": 31
+        },
+        "totalRect": {
+          "left": 612.3,
+          "top": 172.4,
+          "right": 709,
+          "bottom": 201.5,
+          "width": 96.7,
+          "height": 29.1
+        },
+        "submitInViewport": true,
+        "totalInViewport": true,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "21.576px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 182,
+          "scroll": 182
+        },
+        "resultDetail": {
+          "client": 171,
+          "scroll": 171
+        }
+      },
+      "afterScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          760,
+          520
+        ],
+        "client": [
+          744,
+          481
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-min-gsv.png",
+        "file": "rd-06-installed-min-gsv.png"
+      }
+    },
+    "combined": {
+      "set": {
+        "mode": "combined",
+        "gsnLength": "10",
+        "gsvLength": "5",
+        "gsvDiameter": "25",
+        "sakz": "0",
+        "panelDisabled": true,
+        "gsnHidden": false,
+        "gsvHidden": false,
+        "gsnFields": 6,
+        "gsvFields": 4
+      },
+      "beforeMetrics": {
+        "inner": [
+          744,
+          481
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          744,
+          481
+        ],
+        "docClient": [
+          744,
+          481
+        ],
+        "bodyScroll": [
+          744,
+          481
+        ],
+        "bodyClient": [
+          744,
+          481
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": null,
+        "totalId": null,
+        "submitRect": {
+          "left": 409.1,
+          "top": 388,
+          "right": 720,
+          "bottom": 419,
+          "width": 310.9,
+          "height": 31
+        },
+        "totalRect": null,
+        "submitInViewport": true,
+        "totalInViewport": false,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "21.576px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 164,
+          "scroll": 292
+        },
+        "resultDetail": null
+      },
+      "beforeScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          760,
+          520
+        ],
+        "client": [
+          744,
+          481
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-min-combined-before.png",
+        "file": "rd-06-installed-min-combined-before.png"
+      },
+      "values": {
+        "title": "СС.Расчет",
+        "modeTitle": "Расчёт стоимости — ГСН + ГСВ",
+        "calcInfo": "none",
+        "gsn": "none",
+        "gsv": "none",
+        "combined": "visible",
+        "error": "none",
+        "errorText": "Тип заказчика: допустимы только «частное лицо» или «юридическое лицо»",
+        "submitDisabled": false,
+        "submitText": "Рассчитать стоимость",
+        "gsnTotal": "131 250 ₽",
+        "gsnSubtotal": "125 000 ₽",
+        "gsnVat": "6 250 ₽",
+        "gsvTotal": "105 525 ₽",
+        "gsvSubtotal": "100 500 ₽",
+        "gsvVat": "5 025 ₽",
+        "combinedTotal": "145 950 ₽",
+        "combinedSubtotal": "139 000 ₽",
+        "combinedVat": "6 950 ₽",
+        "combinedGsnTotal": "75 600 ₽",
+        "combinedGsvTotal": "70 350 ₽"
+      },
+      "afterMetrics": {
+        "inner": [
+          744,
+          481
+        ],
+        "devicePixelRatio": 1,
+        "scroll": [
+          0,
+          0
+        ],
+        "docScroll": [
+          744,
+          481
+        ],
+        "docClient": [
+          744,
+          481
+        ],
+        "bodyScroll": [
+          744,
+          481
+        ],
+        "bodyClient": [
+          744,
+          481
+        ],
+        "bodyOverflowX": "auto",
+        "bodyOverflowY": "hidden",
+        "docOverflowX": "visible",
+        "docOverflowY": "visible",
+        "hScroll": false,
+        "vScroll": false,
+        "activeResult": "result-combined",
+        "totalId": "combined-total",
+        "submitRect": {
+          "left": 409.1,
+          "top": 388,
+          "right": 720,
+          "bottom": 419,
+          "width": 310.9,
+          "height": 31
+        },
+        "totalRect": {
+          "left": 611.9,
+          "top": 172.4,
+          "right": 709,
+          "bottom": 201.5,
+          "width": 97.1,
+          "height": 29.1
+        },
+        "submitInViewport": true,
+        "totalInViewport": true,
+        "fontSizes": {
+          "body": "13px",
+          "label": "11.5px",
+          "input": "13px",
+          "total": "21.576px",
+          "sectionLabel": "10.5px",
+          "button": "13.5px"
+        },
+        "formScroll": {
+          "client": 164,
+          "scroll": 292
+        },
+        "resultDetail": {
+          "client": 171,
+          "scroll": 199
+        }
+      },
+      "afterScreenshot": {
+        "pid": 28136,
+        "handle": 7734210,
+        "title": "СС.Расчет",
+        "outer": [
+          760,
+          520
+        ],
+        "client": [
+          744,
+          481
+        ],
+        "dpi": 96,
+        "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-min-combined.png",
+        "file": "rd-06-installed-min-combined.png"
+      }
+    }
+  },
+  "misc": {
+    "targetWindow": {
+      "pid": 28136,
+      "handle": 7734210,
+      "title": "СС.Расчет",
+      "outer": [
+        800,
+        540
+      ],
+      "client": [
+        784,
+        501
+      ],
+      "dpi": 96,
+      "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-target-window.png",
+      "file": "rd-06-installed-target-window.png"
+    },
+    "sakzPanel": {
+      "sakzZeroPanelDisabled": true,
+      "sakzZeroPanelChecked": false,
+      "sakzOnePanelDisabled": false,
+      "sakzOnePanelChecked": true
+    },
+    "validation422": {
+      "title": "СС.Расчет",
+      "modeTitle": "Расчёт стоимости — ГСН",
+      "calcInfo": "visible",
+      "gsn": "none",
+      "gsv": "none",
+      "combined": "none",
+      "error": "visible",
+      "errorText": "Тип заказчика: допустимы только «частное лицо» или «юридическое лицо»",
+      "submitDisabled": false,
+      "submitText": "Рассчитать стоимость",
+      "gsnTotal": "131 250 ₽",
+      "gsnSubtotal": "125 000 ₽",
+      "gsnVat": "6 250 ₽",
+      "gsvTotal": "105 525 ₽",
+      "gsvSubtotal": "100 500 ₽",
+      "gsvVat": "5 025 ₽",
+      "combinedTotal": "145 950 ₽",
+      "combinedSubtotal": "139 000 ₽",
+      "combinedVat": "6 950 ₽",
+      "combinedGsnTotal": "75 600 ₽",
+      "combinedGsvTotal": "70 350 ₽"
+    },
+    "validation422Screenshot": {
+      "pid": 28136,
+      "handle": 7734210,
+      "title": "СС.Расчет",
+      "outer": [
+        800,
+        540
+      ],
+      "client": [
+        784,
+        501
+      ],
+      "dpi": 96,
+      "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-422.png",
+      "file": "rd-06-installed-422.png"
+    },
+    "fetch422": {
+      "status": 422,
+      "body": {
+        "detail": [
+          {
+            "type": "literal_error",
+            "loc": [
+              "body",
+              "customer_type"
+            ],
+            "msg": "Input should be 'частное лицо' or 'юридическое лицо'",
+            "input": "недопустимый тип",
+            "ctx": {
+              "expected": "'частное лицо' or 'юридическое лицо'"
+            }
+          }
+        ]
+      }
+    },
+    "minWindow": {
+      "pid": 28136,
+      "handle": 7734210,
+      "title": "СС.Расчет",
+      "outer": [
+        760,
+        520
+      ],
+      "client": [
+        744,
+        481
+      ],
+      "dpi": 96,
+      "screenshot": "D:\\Antigravity\\GasProjectCalculator\\docs\\screenshots\\rd-06-installed-min-window.png",
+      "file": "rd-06-installed-min-window.png"
+    },
+    "minInitialMetrics": {
+      "inner": [
+        744,
+        481
+      ],
+      "devicePixelRatio": 1,
+      "scroll": [
+        0,
+        0
+      ],
+      "docScroll": [
+        744,
+        481
+      ],
+      "docClient": [
+        744,
+        481
+      ],
+      "bodyScroll": [
+        744,
+        481
+      ],
+      "bodyClient": [
+        744,
+        481
+      ],
+      "bodyOverflowX": "auto",
+      "bodyOverflowY": "hidden",
+      "docOverflowX": "visible",
+      "docOverflowY": "visible",
+      "hScroll": false,
+      "vScroll": false,
+      "activeResult": null,
+      "totalId": null,
+      "submitRect": {
+        "left": 409.1,
+        "top": 388,
+        "right": 720,
+        "bottom": 419,
+        "width": 310.9,
+        "height": 31
+      },
+      "totalRect": null,
+      "submitInViewport": true,
+      "totalInViewport": false,
+      "fontSizes": {
+        "body": "13px",
+        "label": "11.5px",
+        "input": "13px",
+        "total": "21.576px",
+        "sectionLabel": "10.5px",
+        "button": "13.5px"
+      },
+      "formScroll": {
+        "client": 173,
+        "scroll": 173
+      },
+      "resultDetail": null
+    }
+  }
+}

@@ -1,0 +1,125 @@
+Project root: D:\Antigravity\GasProjectCalculator
+Python: D:\Antigravity\GasProjectCalculator\.venv\Scripts\python.exe
+Spec: D:\Antigravity\GasProjectCalculator\packaging\GasProjectCalculator.spec
+148 INFO: PyInstaller: 6.22.3, contrib hooks: 2026.10
+148 INFO: Python: 3.12.4
+174 INFO: Platform: Windows-11-10.0.26300-SP0
+174 INFO: Python environment: D:\Antigravity\GasProjectCalculator\.venv
+178 INFO: Removing temporary files and cleaning cache in C:\Users\user\AppData\Local\pyinstaller
+611 INFO: Module search paths (PYTHONPATH):
+['D:\\Antigravity\\GasProjectCalculator',
+ 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip',
+ 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312\\DLLs',
+ 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312\\Lib',
+ 'C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python312',
+ 'D:\\Antigravity\\GasProjectCalculator\\.venv',
+ 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages',
+ 'D:\\Antigravity\\GasProjectCalculator']
+1040 INFO: Appending 'datas' from .spec
+1041 INFO: checking Analysis
+1041 INFO: Building Analysis because Analysis-00.toc is non existent
+1041 INFO: Looking for Python shared library...
+1041 INFO: Using Python shared library: C:\Users\user\AppData\Local\Programs\Python\Python312\python312.dll
+1041 INFO: Running Analysis Analysis-00.toc
+1041 INFO: Target bytecode optimization level: 0
+1041 INFO: Initializing module dependency graph...
+1043 INFO: Initializing module graph hook caches...
+1091 INFO: Analyzing modules for base_library.zip ...
+1979 INFO: Processing standard module hook 'hook-encodings.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+2990 INFO: Processing standard module hook 'hook-math.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+4155 INFO: Processing standard module hook 'hook-pickle.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+5521 INFO: Processing standard module hook 'hook-heapq.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+6778 INFO: Caching module dependency graph...
+6813 INFO: Analyzing D:\Antigravity\GasProjectCalculator\desktop_app.py
+7236 INFO: Processing standard module hook 'hook-uvicorn.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+7841 INFO: Processing standard module hook 'hook-multiprocessing.util.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+7969 INFO: Processing standard module hook 'hook-xml.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+8335 INFO: Processing standard module hook 'hook-_ctypes.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+9101 INFO: Processing pre-safe-import-module hook 'hook-typing_extensions.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+9102 INFO: SetuptoolsInfo: initializing cached setuptools info...
+9850 INFO: Processing standard module hook 'hook-platform.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+10285 INFO: Processing standard module hook 'hook-difflib.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+10480 INFO: Processing standard module hook 'hook-webbrowser.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+10929 INFO: Processing standard module hook 'hook-webview.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\webview\\__pyinstaller'
+11713 INFO: Processing pre-safe-import-module hook 'hook-gi.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+11849 INFO: Processing standard module hook 'hook-clr.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\pythonnet\\_pyinstaller'
+11877 INFO: Processing standard module hook 'hook-clr_loader.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+12036 INFO: Processing standard module hook 'hook-pycparser.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+12241 INFO: Processing standard module hook 'hook-setuptools.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12279 INFO: Processing pre-safe-import-module hook 'hook-distutils.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+12371 INFO: Processing standard module hook 'hook-sysconfig.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12383 INFO: Processing pre-safe-import-module hook 'hook-jaraco.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+12384 INFO: Setuptools: 'jaraco' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.jaraco'!
+12403 INFO: Processing pre-safe-import-module hook 'hook-more_itertools.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+12404 INFO: Setuptools: 'more_itertools' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.more_itertools'!
+12558 INFO: Processing standard module hook 'hook-_osx_support.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12591 INFO: Processing pre-safe-import-module hook 'hook-packaging.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+12943 INFO: Processing standard module hook 'hook-setuptools._vendor.jaraco.text.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+12945 INFO: Processing pre-safe-import-module hook 'hook-importlib_resources.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+12962 INFO: Processing pre-safe-import-module hook 'hook-backports.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+12963 INFO: Setuptools: 'backports' appears to be a full setuptools-vendored copy - creating alias to 'setuptools._vendor.backports'!
+13834 INFO: Processing pre-safe-import-module hook 'hook-tomli.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+13835 INFO: Setuptools: 'tomli' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.tomli'!
+14602 INFO: Processing pre-safe-import-module hook 'hook-wheel.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\pre_safe_import_module'
+14603 INFO: Setuptools: 'wheel' appears to be a setuptools-vendored copy - creating alias to 'setuptools._vendor.wheel'!
+15496 INFO: Processing standard module hook 'hook-xml.etree.cElementTree.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks'
+15890 INFO: Processing standard module hook 'hook-anyio.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+16982 INFO: Processing standard module hook 'hook-pydantic.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+17994 INFO: Processing standard module hook 'hook-zoneinfo.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks'
+19889 INFO: Analyzing hidden import 'uvicorn.__main__'
+19895 INFO: Analyzing hidden import 'uvicorn.lifespan'
+19895 INFO: Analyzing hidden import 'uvicorn.lifespan.off'
+19902 INFO: Analyzing hidden import 'uvicorn.lifespan.on'
+19914 INFO: Analyzing hidden import 'uvicorn.loops'
+19915 INFO: Analyzing hidden import 'uvicorn.loops.asyncio'
+19922 INFO: Analyzing hidden import 'uvicorn.loops.auto'
+19934 INFO: Analyzing hidden import 'uvicorn.protocols.http.auto'
+19940 INFO: Analyzing hidden import 'uvicorn.protocols.websockets.auto'
+19947 INFO: Analyzing hidden import 'uvicorn.workers'
+19959 INFO: Processing module hooks (post-graph stage)...
+20127 WARNING: Hidden import "pycparser.lextab" not found!
+20127 WARNING: Hidden import "pycparser.yacctab" not found!
+20388 WARNING: Hidden import "tzdata" not found!
+20520 INFO: Performing binary vs. data reclassification (24 entries)
+21140 INFO: Looking for ctypes DLLs
+21174 INFO: Analyzing run-time hooks ...
+21178 INFO: Including run-time hook 'pyi_rth_inspect.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+21188 INFO: Including run-time hook 'pyi_rth_pkgutil.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+21197 INFO: Including run-time hook 'pyi_rth_multiprocessing.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+21207 INFO: Including run-time hook 'pyi_rth_setuptools.py' from 'D:\\Antigravity\\GasProjectCalculator\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks'
+21224 INFO: Creating base_library.zip...
+21241 INFO: Looking for dynamic libraries
+22071 INFO: Extra DLL search directories (AddDllDirectory): []
+22071 INFO: Extra DLL search directories (PATH): []
+22561 INFO: Warnings written to D:\Antigravity\GasProjectCalculator\build\GasProjectCalculator\warn-GasProjectCalculator.txt
+22633 INFO: Graph cross-reference written to D:\Antigravity\GasProjectCalculator\build\GasProjectCalculator\xref-GasProjectCalculator.html
+22693 INFO: checking PYZ
+22693 INFO: Building PYZ because PYZ-00.toc is non existent
+22693 INFO: Building PYZ (ZlibArchive) D:\Antigravity\GasProjectCalculator\build\GasProjectCalculator\PYZ-00.pyz
+23371 INFO: Building PYZ (ZlibArchive) D:\Antigravity\GasProjectCalculator\build\GasProjectCalculator\PYZ-00.pyz completed successfully.
+23384 INFO: checking PKG
+23384 INFO: Building PKG because PKG-00.toc is non existent
+23384 INFO: Building PKG (CArchive) GasProjectCalculator.pkg
+23415 INFO: Building PKG (CArchive) GasProjectCalculator.pkg completed successfully.
+23416 INFO: Bootloader D:\Antigravity\GasProjectCalculator\.venv\Lib\site-packages\PyInstaller\bootloader\Windows-64bit-intel\runw.exe
+23416 INFO: checking EXE
+23416 INFO: Building EXE because EXE-00.toc is non existent
+23416 INFO: Building EXE from EXE-00.toc
+23416 INFO: Copying bootloader EXE to D:\Antigravity\GasProjectCalculator\build\GasProjectCalculator\GasProjectCalculator.exe
+23480 INFO: Copying icon to EXE
+23519 INFO: Copying 0 resources to EXE
+23520 INFO: Embedding manifest in EXE
+23551 INFO: Appending PKG archive to EXE
+23595 INFO: Fixing EXE headers
+23777 INFO: Building EXE from EXE-00.toc completed successfully.
+23778 INFO: checking COLLECT
+23779 INFO: Building COLLECT because COLLECT-00.toc is non existent
+23779 INFO: Removing dir D:\Antigravity\GasProjectCalculator\dist\GasProjectCalculator
+23821 INFO: Building COLLECT COLLECT-00.toc
+24012 INFO: Building COLLECT COLLECT-00.toc completed successfully.
+24015 INFO: Build complete! The results are available in: D:\Antigravity\GasProjectCalculator\dist
+Artifact: D:\Antigravity\GasProjectCalculator\dist\GasProjectCalculator\GasProjectCalculator.exe
+SHA256: 5403540C4172779ED6F97381A9618FE423D0915A6BEC1710BAE2B578F6ACDD2C
+
+PACKAGING_BUILD_EXIT=0
+DURATION_SECONDS=25.0331392

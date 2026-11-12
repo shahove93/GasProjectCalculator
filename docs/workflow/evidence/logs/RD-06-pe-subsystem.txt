@@ -1,0 +1,2 @@
+command: python -c <PE header parse> on dist\GasProjectCalculator\GasProjectCalculator.exe
+e_lfanew 256 signature b'PE\x00\x00' subsystem 2

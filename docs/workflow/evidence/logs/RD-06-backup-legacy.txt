@@ -1,0 +1,10 @@
+Registry key: HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+reg export exit: 0
+backup_reg: C:\Users\user\AppData\Local\Temp\opencode\rd06\backup-uninstall-key.reg (2406 bytes, SHA256 888A8E17A5EDDEBCD0C1C98043261DCBFC3874B037C46F0E4D0A913CB7E35412)
+backup_shortcut: C:\Users\user\AppData\Local\Temp\opencode\rd06\backup-StartMenu-СС.Расчет.lnk (1423 bytes, SHA256 B3D7A0C6F77FF174D81E72BABF4697062BBC8E1BBD930E1F07DD11990A499153)
+file: D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe | 15273647 bytes | SHA256 043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A
+file: D:\Antigravity\GasProjectCalculator\installer\Output\legacy\GasProjectCalculator-Setup-1.0.0-pre-compact.exe | 15273647 bytes | SHA256 043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A
+file: D:\Antigravity\GasProjectCalculator\installer\Output\legacy\GasProjectCalculator-Setup-1.0.0-previous-stage.exe | 15256037 bytes | SHA256 2973278F47A4A2A479177B12A4C4CCA01ED59D1CA8D2D9CE107C4E7A2E37428F
+legacy_dir_listing:
+GasProjectCalculator-Setup-1.0.0-pre-compact.exe | 15273647
+GasProjectCalculator-Setup-1.0.0-previous-stage.exe | 15256037

@@ -15,9 +15,8 @@ COMPLETE: [FINAL-REPORT](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
   реальными снимками (full-page/workaround); старый критерий 1050×740 заменён
   новым scope. RD-01 остаток 1 full сохранён, новых review RD-01 не добавлено.
 - TASK: **RD-05** PASS (A1/C1; R2 Codex `ctx_8fb5c34ce714`; F1/F2 MINOR
-  backlog). **RD-06** R2 installer: C1 FAIL (RD06-F01 mobile evidence);
-  C2 capture готов; повторный review `ctx_1a3e73e23fcb`;
-  artifact `71232EE4…7E08`.
+  backlog). **RD-06** PASS (A1/C2; RD06-F01 CLOSED; F02 MINOR backlog;
+  artifact `71232EE4…7E08`).
   **RD-07** R0 final verify (suite один раз); затем Codex R3.
   Frozen checklists: [RD-05](tasks/RD-05.md), [RD-06](tasks/RD-06.md),
   [RD-07](tasks/RD-07.md).

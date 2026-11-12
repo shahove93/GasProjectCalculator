@@ -1,0 +1,130 @@
+RD-06 C2 — mobile 390×844 viewport-only evidence (RD06-F01)
+
+CWD: D:\Antigravity\GasProjectCalculator
+Branch: feature/ss-calculator-redesign
+HEAD at run: e8c9c3fbe34c38fdf421314a9ae831b117ab3b1d
+Product diff vs accepted RD-05 1af13d6 (incl. docs commits): empty
+  git diff --stat 1af13d6..HEAD -- app frontend packaging installer tests => empty
+Artifact under test:
+  D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+  15 286 980 bytes
+  SHA256 71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08
+
+Reason for C2:
+  C1 FAIL RD06-F01: previous docs/screenshots/rd-06-installed-mobile-390x844.png
+  (size 187 567, SHA256 BA0D59196C6457407F2E5F5574BF8722E7E93339370F586ED92889FA59D9455C)
+  was a stitched/full-page artifact: repeated header around y=426 and clipped
+  strips at the right edge around x=362. Product/CSS were not at fault.
+  That old file is SUPERSEDED by the new viewport-only capture below.
+
+Safe install isolation (same installer, temp /DIR):
+  Backup HKCU uninstall key:
+    reg export HKCU\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+      C:\Users\user\AppData\Local\Temp\opencode\rd06-c2\backup-uninstall-key.reg
+    exit 0; 2406 bytes; SHA256 888A8E17A5EDDEBCD0C1C98043261DCBFC3874B037C46F0E4D0A913CB7E35412
+  Backup Start Menu shortcut:
+    C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\СС.Расчет.lnk
+      -> C:\Users\user\AppData\Local\Temp\opencode\rd06-c2\backup-StartMenu-СС.Расчет.lnk
+    1423 bytes; SHA256 B3D7A0C6F77FF174D81E72BABF4697062BBC8E1BBD930E1F07DD11990A499153
+  Install command:
+    installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+      /VERYSILENT /SUPPRESSMSGBOXES /NORESTART
+      /DIR="C:\Users\user\AppData\Local\Temp\opencode\rd06-install"
+      /NOICONS /LOG="…\rd06-c2\inno-install.log"
+    exit 0; install dir created; installed exe SHA256
+    5403540C4172779ED6F97381A9618FE423D0915A6BEC1710BAE2B578F6ACDD2C
+    (= dist exe); installed index SHA256
+    60B15F15245B834913ACF25445237146F773628AD674E5EF3E8FE15D26894037
+    (= source index).
+  Default user install hashes after install (unchanged):
+    exe 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3
+    index 586C3A62ACB3031E1259C1B1D491FCA4C3C9A8BF12F541106A0168B1A520B4EC
+    unins000.dat B1728FEACD2C6BD9CA76467700063ADE8FA63CC9A70BBC9D4A7191CAE83228D0
+    Raw Inno log: logs/RD-06-c2-inno-install.txt
+
+Launch:
+  C:\Users\user\AppData\Local\Temp\opencode\rd06-install\GasProjectCalculator.exe
+    --preferred-port 8185
+    --port-file C:\Users\user\AppData\Local\Temp\opencode\rd06-c2\mobile-port.json
+    --log-file  C:\Users\user\AppData\Local\Temp\opencode\rd06-c2\mobile-launcher.log
+    --auto-close-seconds 600
+  PATH=C:\Windows\System32;C:\Windows (python not available), PE GUI, no console.
+  PID 12700; port file {"status":"ready","host":"127.0.0.1","port":8185,...}.
+
+Browser viewport:
+  Orca browser tab page id: e5231c9f-8ec6-4fc3-8adf-69bd3cdc3cbc
+  URL: http://127.0.0.1:8185/
+  The final capture uses a real 390×844 viewport resize:
+    orca exec --command "set viewport 390 844" --page <id> --json
+    result: {"deviceScaleFactor":1,"height":844,"mobile":false,"width":390}
+  Note: `orca set device --name "iPhone 12"` was also tried; in this Orca
+  runtime its `orca screenshot` output was the stitched/full-page artifact
+  described in RD06-F01. The viewport-resize path below produces a true
+  viewport-only PNG; no PrintWindow/full-page/stitch is used.
+
+Metrics at scrollY=0 (combined mode), from documentElement:
+  inner: 390×844
+  devicePixelRatio: 1
+  documentElement.scrollWidth / clientWidth: 375 / 375
+  documentElement.scrollHeight / clientHeight: 889 / 844
+  window.scrollX / scrollY: 0 / 0
+  hScroll (scrollWidth > clientWidth): false
+  max layout right edge (non-SVG): 375.0 (HEADER.topbar)
+  max SVG container right edge: 365.0
+  submit button rect: left 22, right 353, top 769, bottom 800
+  Decorative SVG paths may extend beyond the container, but they are clipped
+  by the illustration container and do not create horizontal scroll
+  (scrollWidth == clientWidth == 375).
+  Maximum page scroll: 45 px (889 - 844).
+
+Viewport-only screenshots:
+  docs/screenshots/rd-06-installed-mobile-390x844.png
+    82 172 bytes; SHA256 FFB848567864F2C5E5A9ABD977189E4F4564CCFA06BF30A509E3CB8E2A3243A5
+    PNG dimensions: exactly 390×844
+    Captured with `orca screenshot --page <id>` at scrollY=0.
+    Visual check: header appears once; no repeat at y≈426; right edge intact;
+    no clipped strips at x≈362.
+    Header duplicate check: mean absolute pixel difference between rows 0-99
+    and rows 426-525 = 186.143 (not a duplicate; old artifact was identical
+    repeated header).
+  docs/screenshots/rd-06-installed-mobile-390x844-result.png
+    67 398 bytes; SHA256 DF9009759173626132DE390B04231B17422FA35FB9FF8E4976D79F27CC577572
+    PNG dimensions: exactly 390×844
+    Captured with `orca screenshot --page <id>` after real vertical scroll
+    window.scrollTo(0, documentElement.scrollHeight):
+    window.scrollX/Y = 0 / 45; submit rect left 22, right 353, top 724, bottom 755.
+    Viewport-only, no full-page/stitch.
+
+Commands / exit:
+  git rev-parse HEAD / git diff --stat 1af13d6..HEAD -- app frontend packaging installer tests:
+    exit 0 (empty product diff)
+  reg export of HKCU key: exit 0
+  Start Menu shortcut copy: exit 0
+  installer /VERYSILENT ... /DIR=… /NOICONS /LOG=…: exit 0
+  installed exe launch (Start-Process): PID 12700
+  orca tab create: ok; orca exec "set viewport 390 844": ok
+  orca eval metrics: ok
+  orca screenshot --page <id>: ok (two files)
+  orca tab close --page <id>: ok
+  WM_CLOSE to installed window: ok; app exit, port 8185 released
+  unins000.exe /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /LOG=…: exit 0
+  reg import backup: exit 0
+  shortcut restore: exit 0
+
+Cleanup / restore:
+  install dir C:\Users\user\AppData\Local\Temp\opencode\rd06-install: absent
+  HKCU key after uninstall: absent; after reg import: present, InstallLocation =
+    C:\Users\user\AppData\Local\Programs\GasProjectCalculator\
+  Start Menu shortcut after uninstall: absent; after restore: target =
+    C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe,
+    SHA256 B3D7A0C6F77FF174D81E72BABF4697062BBC8E1BBD930E1F07DD11990A499153
+  Default user install after restore: exe/index/unins000.dat hashes identical
+    to the pre-install values listed above.
+  Test listeners on 8180-8200: 0
+  Test GasProjectCalculator processes: 0
+  Preserved user state: :8000 PID 12888 alive; :8138 PID 23152 alive;
+    user app PID 13248 alive (default install, never touched).
+  Raw uninstall/log/cleanup: logs/RD-06-c2-inno-uninstall.txt,
+    logs/RD-06-c2-cleanup.txt.
+
+No commit, no product code change, no rebuild, no tests/build re-run.

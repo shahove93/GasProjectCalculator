@@ -1,0 +1,179 @@
+Project root: D:\Antigravity\GasProjectCalculator
+Inno Setup: C:\Users\user\AppData\Local\Programs\Antigravity IDE\resources\app\node_modules\innosetup\bin\ISCC.exe
+Script: D:\Antigravity\GasProjectCalculator\installer\GasProjectCalculator.iss
+Packaged exe: D:\Antigravity\GasProjectCalculator\dist\GasProjectCalculator\GasProjectCalculator.exe
+Packaged exe SHA256: 5403540C4172779ED6F97381A9618FE423D0915A6BEC1710BAE2B578F6ACDD2C
+Inno Setup 6 Command-Line Compiler
+Copyright (C) 1997-2025 Jordan Russell. All rights reserved.
+Portions Copyright (C) 2000-2025 Martijn Laan. All rights reserved.
+Portions Copyright (C) 2001-2004 Alex Yackimoff. All rights reserved.
+https://www.innosetup.com
+
+Compiler engine version: Inno Setup 6.4.1
+
+Preprocessing
+   Reading file: C:\Users\user\AppData\Local\Programs\Antigravity IDE\resources\app\node_modules\innosetup\bin\ISPPBuiltins.iss
+Parsing [Setup] section, line 20
+Parsing [Setup] section, line 21
+Parsing [Setup] section, line 22
+Parsing [Setup] section, line 23
+Parsing [Setup] section, line 24
+Parsing [Setup] section, line 25
+Parsing [Setup] section, line 26
+Parsing [Setup] section, line 27
+Parsing [Setup] section, line 28
+Parsing [Setup] section, line 29
+Parsing [Setup] section, line 30
+Parsing [Setup] section, line 32
+Parsing [Setup] section, line 34
+Parsing [Setup] section, line 35
+Parsing [Setup] section, line 36
+Parsing [Setup] section, line 37
+Parsing [Setup] section, line 38
+Parsing [Setup] section, line 39
+Parsing [Setup] section, line 41
+Parsing [Setup] section, line 44
+Parsing [Setup] section, line 47
+Parsing [Setup] section, line 48
+Parsing [Setup] section, line 49
+Parsing [Setup] section, line 50
+Parsing [Setup] section, line 51
+Parsing [Setup] section, line 52
+Reading file (WizardImageFile)
+Reading file (WizardSmallImageFile)
+Preparing Setup program executable
+   Updating version info (SETUP.E32)
+Determining language code pages
+Parsing [Languages] section, line 57
+   Reading file: C:\Users\user\AppData\Local\Programs\Antigravity IDE\resources\app\node_modules\innosetup\bin\Languages\Russian.isl
+   Messages in script file
+Reading default messages from Default.isl
+Parsing [Languages] section, line 57
+   Reading file: C:\Users\user\AppData\Local\Programs\Antigravity IDE\resources\app\node_modules\innosetup\bin\Languages\Russian.isl
+Parsing [LangOptions], [Messages], and [CustomMessages] sections
+   Messages in script file
+Reading [Code] section
+Parsing [Tasks] section, line 62
+Parsing [Icons] section, line 71
+Parsing [Icons] section, line 73
+Parsing [Run] section, line 76
+Parsing [Files] section, line 66
+Deleting GasProjectCalculator-Setup-1.0.0.exe from output directory
+Creating setup files
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\GasProjectCalculator.exe
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-console-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-datetime-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-debug-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-fibers-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-fibers-l1-1-1.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-file-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-file-l1-2-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-file-l2-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-handle-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-heap-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-interlocked-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-localization-l1-2-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-memory-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-processthreads-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-processthreads-l1-1-1.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-profile-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-string-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-synch-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-synch-l1-2-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-timezone-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-core-util-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-conio-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-convert-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-environment-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-heap-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-locale-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-math-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-process-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-runtime-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-stdio-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-string-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-time-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\api-ms-win-crt-utility-l1-1-0.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\base_library.zip
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\libcrypto-3.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\libffi-8.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\libssl-3.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pyexpat.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\python312.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\select.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\ucrtbase.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\unicodedata.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\VCRUNTIME140.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\VCRUNTIME140_1.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_asyncio.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_bz2.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_cffi_backend.cp312-win_amd64.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_ctypes.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_decimal.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_elementtree.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_hashlib.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_lzma.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_multiprocessing.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_overlapped.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_queue.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_socket.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_ssl.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_uuid.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_wmi.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\_zoneinfo.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\click-8.5.0.dist-info\INSTALLER
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\click-8.5.0.dist-info\METADATA
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\click-8.5.0.dist-info\RECORD
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\click-8.5.0.dist-info\WHEEL
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\click-8.5.0.dist-info\licenses\LICENSE.txt
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\clr_loader\ffi\dlls\x86\ClrLoader.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\frontend\index.html
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\frontend\splash.html
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\frontend\assets\company-emblem.png
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\INSTALLER
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\METADATA
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\RECORD
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\WHEEL
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pydantic-2.13.5.dist-info\licenses\LICENSE
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pydantic_core\_pydantic_core.cp312-win_amd64.pyd
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pythonnet\runtime\Python.Runtime.deps.json
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pythonnet\runtime\Python.Runtime.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\pythonnet\runtime\Python.Runtime.xml
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\setuptools\_vendor\jaraco\text\Lorem ipsum.txt
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\js\api.js
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\js\customize.js
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\js\finish.js
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\js\state.js
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\js\lib\dom_json.js
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\js\lib\polyfill.js
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\lib\Microsoft.Web.WebView2.Core.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\lib\Microsoft.Web.WebView2.WinForms.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\lib\pywebview-android.jar
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\lib\WebBrowserInterop.x64.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\lib\WebBrowserInterop.x86.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\lib\runtimes\win-arm64\native\WebView2Loader.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\lib\runtimes\win-x64\native\WebView2Loader.dll
+   Compressing: D:\Antigravity\GasProjectCalculator\installer\..\dist\GasProjectCalculator\_internal\webview\lib\runtimes\win-x86\native\WebView2Loader.dll
+   Compressing Setup program executable
+   Updating version info (SETUP.EXE)
+   Updating manifest (SETUP.EXE)
+
+
+Successful compile (7,843 sec). Resulting Setup program filename is:
+D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+Installer artifact: D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+Installer size: 15286980 bytes
+Installer SHA256: 71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08
+
+INSTALLER_BUILD_EXIT=0
+DURATION_SECONDS=9.0623813

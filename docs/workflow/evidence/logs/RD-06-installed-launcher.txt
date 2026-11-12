@@ -1,0 +1,63 @@
+2026-11-12 07:24:36,320 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher starting (pid=28136) ===
+2026-11-12 07:24:36,355 INFO [gasproject.desktop] Splash resource: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\frontend\splash.html
+2026-11-12 07:24:36,355 INFO [gasproject.desktop] [splash] splash window created: 520x320 uri=file:///C:/Users/user/AppData/Local/Temp/opencode/rd06-install/_internal/frontend/splash.html reduced_motion=False
+2026-11-12 07:24:37,053 INFO [gasproject.desktop] [splash] splash window shown event
+2026-11-12 07:24:37,053 INFO [gasproject.desktop] [splash] splash window shown; starting backend
+2026-11-12 07:24:37,575 INFO [gasproject.desktop] Frontend resource: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\frontend\index.html
+2026-11-12 07:24:37,826 INFO [gasproject.desktop] Selected loopback port 8182 (preferred 8181); socket bound on 127.0.0.1
+2026-11-12 07:24:37,982 INFO [uvicorn.error] Started server process [28136]
+2026-11-12 07:24:37,982 INFO [uvicorn.error] Waiting for application startup.
+2026-11-12 07:24:37,982 INFO [uvicorn.error] Application startup complete.
+2026-11-12 07:24:38,615 INFO [gasproject.desktop] Backend ready at http://127.0.0.1:8182/ after 0.76s (thread=gasproject-backend pid=28136)
+2026-11-12 07:24:38,616 INFO [gasproject.desktop] Wrote port file: C:\Users\user\AppData\Local\Temp\opencode\rd06\installed-port.json
+2026-11-12 07:24:38,617 INFO [gasproject.desktop] [splash] backend ready after 0.76s; preparing main window
+2026-11-12 07:24:38,636 INFO [gasproject.desktop] [window] main window created: title='СС.Расчет' width=800 height=540 min_size=(760, 520)
+2026-11-12 07:24:38,675 INFO [gasproject.desktop] [splash] splash closed after backend readiness
+2026-11-12 07:24:38,683 INFO [gasproject.desktop] [window] main window shown after backend readiness
+2026-11-12 07:24:38,683 INFO [gasproject.desktop] Auto-close: waiting 900.00s before closing window
+2026-11-12 07:24:38,684 INFO [gasproject.desktop] [eval-bridge] watching C:\Users\user\AppData\Local\Temp\opencode\rd06\installed-bridge.json
+2026-11-12 07:24:38,737 INFO [gasproject.desktop] [eval-bridge] active at C:\Users\user\AppData\Local\Temp\opencode\rd06\installed-bridge.json
+2026-11-12 07:34:41,421 INFO [gasproject.desktop] [eval-bridge] id=1794458081376 ok=True
+2026-11-12 07:34:41,482 INFO [gasproject.desktop] [eval-bridge] id=1794458081434 ok=True
+2026-11-12 07:34:42,303 INFO [gasproject.desktop] [eval-bridge] id=1794458082268 ok=True
+2026-11-12 07:34:42,362 INFO [gasproject.desktop] [eval-bridge] id=1794458082326 ok=True
+2026-11-12 07:34:42,423 INFO [gasproject.desktop] [eval-bridge] id=1794458082383 ok=True
+2026-11-12 07:34:43,244 INFO [gasproject.desktop] [eval-bridge] id=1794458083225 ok=True
+2026-11-12 07:34:43,303 INFO [gasproject.desktop] [eval-bridge] id=1794458083281 ok=True
+2026-11-12 07:34:44,171 INFO [gasproject.desktop] [eval-bridge] id=1794458084128 ok=True
+2026-11-12 07:34:44,231 INFO [gasproject.desktop] [eval-bridge] id=1794458084186 ok=True
+2026-11-12 07:34:44,291 INFO [gasproject.desktop] [eval-bridge] id=1794458084242 ok=True
+2026-11-12 07:34:45,111 INFO [gasproject.desktop] [eval-bridge] id=1794458085062 ok=True
+2026-11-12 07:34:45,170 INFO [gasproject.desktop] [eval-bridge] id=1794458085120 ok=True
+2026-11-12 07:34:45,989 INFO [gasproject.desktop] [eval-bridge] id=1794458085958 ok=True
+2026-11-12 07:34:46,049 INFO [gasproject.desktop] [eval-bridge] id=1794458086016 ok=True
+2026-11-12 07:34:46,107 INFO [gasproject.desktop] [eval-bridge] id=1794458086073 ok=True
+2026-11-12 07:34:46,975 INFO [gasproject.desktop] [eval-bridge] id=1794458086918 ok=True
+2026-11-12 07:34:47,087 INFO [gasproject.desktop] [eval-bridge] id=1794458087026 ok=True
+2026-11-12 07:34:48,361 INFO [gasproject.desktop] [eval-bridge] id=1794458088336 ok=True
+2026-11-12 07:34:49,234 INFO [gasproject.desktop] [eval-bridge] id=1794458089170 ok=True
+2026-11-12 07:34:50,913 INFO [gasproject.desktop] [eval-bridge] id=1794458090857 ok=True
+2026-11-12 07:34:51,023 INFO [gasproject.desktop] [eval-bridge] id=1794458090966 ok=True
+2026-11-12 07:34:51,132 INFO [gasproject.desktop] [eval-bridge] id=1794458091076 ok=True
+2026-11-12 07:34:51,999 INFO [gasproject.desktop] [eval-bridge] id=1794458091951 ok=True
+2026-11-12 07:34:52,060 INFO [gasproject.desktop] [eval-bridge] id=1794458092008 ok=True
+2026-11-12 07:34:52,171 INFO [gasproject.desktop] [eval-bridge] id=1794458092116 ok=True
+2026-11-12 07:34:53,246 INFO [gasproject.desktop] [eval-bridge] id=1794458093228 ok=True
+2026-11-12 07:34:53,306 INFO [gasproject.desktop] [eval-bridge] id=1794458093286 ok=True
+2026-11-12 07:34:54,175 INFO [gasproject.desktop] [eval-bridge] id=1794458094128 ok=True
+2026-11-12 07:34:54,234 INFO [gasproject.desktop] [eval-bridge] id=1794458094184 ok=True
+2026-11-12 07:34:54,295 INFO [gasproject.desktop] [eval-bridge] id=1794458094242 ok=True
+2026-11-12 07:34:55,165 INFO [gasproject.desktop] [eval-bridge] id=1794458095119 ok=True
+2026-11-12 07:34:55,225 INFO [gasproject.desktop] [eval-bridge] id=1794458095177 ok=True
+2026-11-12 07:34:56,043 INFO [gasproject.desktop] [eval-bridge] id=1794458096005 ok=True
+2026-11-12 07:34:56,101 INFO [gasproject.desktop] [eval-bridge] id=1794458096063 ok=True
+2026-11-12 07:34:56,160 INFO [gasproject.desktop] [eval-bridge] id=1794458096122 ok=True
+2026-11-12 07:35:04,744 INFO [gasproject.desktop] [window] main window closed
+2026-11-12 07:35:04,764 INFO [gasproject.desktop] [eval-bridge] stopped
+2026-11-12 07:35:05,128 INFO [gasproject.desktop] Window closed by user
+2026-11-12 07:35:05,151 INFO [uvicorn.error] Shutting down
+2026-11-12 07:35:05,253 INFO [uvicorn.error] Waiting for application shutdown.
+2026-11-12 07:35:05,253 INFO [uvicorn.error] Application shutdown complete.
+2026-11-12 07:35:05,253 INFO [uvicorn.error] Finished server process [28136]
+2026-11-12 07:35:05,254 INFO [gasproject.desktop] Backend stopped; no listener remains
+2026-11-12 07:35:05,254 INFO [gasproject.desktop] === GasProjectCalculator desktop launcher exiting with code 0 ===

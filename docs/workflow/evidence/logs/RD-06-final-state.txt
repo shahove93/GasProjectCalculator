@@ -1,0 +1,140 @@
+DATE: 2026-11-12T08:00:45.9940956+03:00
+HEAD: e8c9c3fbe34c38fdf421314a9ae831b117ab3b1d
+BRANCH: feature/ss-calculator-redesign
+STATUS:
+?? docs/screenshots/rd-06-compare-installed-before-after.png
+?? docs/screenshots/rd-06-installed-422.png
+?? docs/screenshots/rd-06-installed-min-combined-before.png
+?? docs/screenshots/rd-06-installed-min-combined.png
+?? docs/screenshots/rd-06-installed-min-gsn-before.png
+?? docs/screenshots/rd-06-installed-min-gsn.png
+?? docs/screenshots/rd-06-installed-min-gsv-before.png
+?? docs/screenshots/rd-06-installed-min-gsv.png
+?? docs/screenshots/rd-06-installed-min-window.png
+?? docs/screenshots/rd-06-installed-mobile-390x844-result.png
+?? docs/screenshots/rd-06-installed-mobile-390x844.png
+?? docs/screenshots/rd-06-installed-splash.png
+?? docs/screenshots/rd-06-installed-target-combined-before.png
+?? docs/screenshots/rd-06-installed-target-combined.png
+?? docs/screenshots/rd-06-installed-target-gsn-before.png
+?? docs/screenshots/rd-06-installed-target-gsn.png
+?? docs/screenshots/rd-06-installed-target-gsv-before.png
+?? docs/screenshots/rd-06-installed-target-gsv.png
+?? docs/screenshots/rd-06-installed-target-window.png
+?? docs/screenshots/rd-06-packaged-422.png
+?? docs/screenshots/rd-06-packaged-min-combined-before.png
+?? docs/screenshots/rd-06-packaged-min-combined.png
+?? docs/screenshots/rd-06-packaged-min-gsn-before.png
+?? docs/screenshots/rd-06-packaged-min-gsn.png
+?? docs/screenshots/rd-06-packaged-min-gsv-before.png
+?? docs/screenshots/rd-06-packaged-min-gsv.png
+?? docs/screenshots/rd-06-packaged-min-window.png
+?? docs/screenshots/rd-06-packaged-target-combined-before.png
+?? docs/screenshots/rd-06-packaged-target-combined.png
+?? docs/screenshots/rd-06-packaged-target-gsn-before.png
+?? docs/screenshots/rd-06-packaged-target-gsn.png
+?? docs/screenshots/rd-06-packaged-target-gsv-before.png
+?? docs/screenshots/rd-06-packaged-target-gsv.png
+?? docs/screenshots/rd-06-packaged-target-window.png
+?? docs/workflow/evidence/RD-06-evidence.md
+?? docs/workflow/evidence/logs/RD-06-backup-legacy.txt
+?? docs/workflow/evidence/logs/RD-06-baseline.txt
+?? docs/workflow/evidence/logs/RD-06-c2-cleanup.txt
+?? docs/workflow/evidence/logs/RD-06-c2-inno-install.txt
+?? docs/workflow/evidence/logs/RD-06-c2-inno-uninstall.txt
+?? docs/workflow/evidence/logs/RD-06-final-state.txt
+?? docs/workflow/evidence/logs/RD-06-inno-install.txt
+?? docs/workflow/evidence/logs/RD-06-inno-uninstall.txt
+?? docs/workflow/evidence/logs/RD-06-install.txt
+?? docs/workflow/evidence/logs/RD-06-installed-launcher.txt
+?? docs/workflow/evidence/logs/RD-06-installed-lifecycle-conflict.txt
+?? docs/workflow/evidence/logs/RD-06-installed-lifecycle.txt
+?? docs/workflow/evidence/logs/RD-06-installed-native-driver.txt
+?? docs/workflow/evidence/logs/RD-06-installed-native.json
+?? docs/workflow/evidence/logs/RD-06-installer-build.txt
+?? docs/workflow/evidence/logs/RD-06-lifecycle-launcher.txt
+?? docs/workflow/evidence/logs/RD-06-mobile-390.txt
+?? docs/workflow/evidence/logs/RD-06-mobile-launcher.txt
+?? docs/workflow/evidence/logs/RD-06-packaged-close.txt
+?? docs/workflow/evidence/logs/RD-06-packaged-launcher.txt
+?? docs/workflow/evidence/logs/RD-06-packaged-native-driver.txt
+?? docs/workflow/evidence/logs/RD-06-packaged-native.json
+?? docs/workflow/evidence/logs/RD-06-packaging-build.txt
+?? docs/workflow/evidence/logs/RD-06-pe-subsystem.txt
+?? docs/workflow/evidence/logs/RD-06-uninstall.txt
+--- protected diff vs accepted RD-05 1af13d6 ---
+--- worktree diff product paths ---
+--- C2 superseded screenshot ---
+old docs/screenshots/rd-06-installed-mobile-390x844.png size=187567 SHA256=BA0D59196C6457407F2E5F5574BF8722E7E93339370F586ED92889FA59D9455C (superseded by FFB848...)
+--- processes ---
+GasProjectCalculator processes:
+
+ProcessId       : 13248
+ParentProcessId : 4620
+ExecutablePath  : C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+CreationDate    : 12.11.2026 6:20:30
+
+
+test GasProjectCalculator processes (path temp/dist): 0
+test listeners on 8180-8200: 0
+test install dir exists: False
+--- preserved user state ---
+user app PID 13248 path: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\GasProjectCalculator.exe
+
+LocalAddress LocalPort OwningProcess
+------------ --------- -------------
+127.0.0.1         8138         23152
+0.0.0.0           8000         12888
+
+
+user_pids: 12888=alive, 23152=alive, 13248=alive
+default exe/index/unins: 5E25FA92A530E104AA69BC7153C068FA34C477659F375142EA7D047257A0FBA3 / 586C3A62ACB3031E1259C1B1D491FCA4C3C9A8BF12F541106A0168B1A520B4EC / B1728FEACD2C6BD9CA76467700063ADE8FA63CC9A70BBC9D4A7191CAE83228D0
+startmenu shortcut hash: B3D7A0C6F77FF174D81E72BABF4697062BBC8E1BBD930E1F07DD11990A499153
+HKCU key InstallLocation: C:\Users\user\AppData\Local\Programs\GasProjectCalculator\
+--- final artifacts ---
+D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe | 15286980 bytes | 71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08
+D:\Antigravity\GasProjectCalculator\installer\Output\legacy\GasProjectCalculator-Setup-1.0.0-pre-compact.exe | 15273647 bytes | 043884107E087CCA6269EC67AF7555A3EB7E5EEF851CF14774534AE35A15949A
+D:\Antigravity\GasProjectCalculator\installer\Output\legacy\GasProjectCalculator-Setup-1.0.0-previous-stage.exe | 15256037 bytes | 2973278F47A4A2A479177B12A4C4CCA01ED59D1CA8D2D9CE107C4E7A2E37428F
+D:\Antigravity\GasProjectCalculator\dist\GasProjectCalculator\GasProjectCalculator.exe | 6836651 bytes | 5403540C4172779ED6F97381A9618FE423D0915A6BEC1710BAE2B578F6ACDD2C
+D:\Antigravity\GasProjectCalculator\dist\GasProjectCalculator\_internal\frontend\index.html | 70922 bytes | 60B15F15245B834913ACF25445237146F773628AD674E5EF3E8FE15D26894037
+--- screenshots ---
+rd-06-compare-installed-before-after.png | 247937 bytes | 6034354E647BFC3FF68E76F4176C9FDD6EDF6BE070DCD0A1645E04BE6ADC46A4
+rd-06-installed-422.png | 85339 bytes | 8C39B87BE6E87423015DFA842F3777E7139A62159B52D6E7306E92C004C9D772
+rd-06-installed-min-combined-before.png | 81735 bytes | F5913A1212F8669570CA59D0FF4FCA9D2B2239629F3D6B251EEEDACCD1DADBED
+rd-06-installed-min-combined.png | 92185 bytes | 5A9E32A7C1B5DB75C9963301D0BBABE3596E93827C20C0FB54C568824A088A7F
+rd-06-installed-min-gsn-before.png | 79669 bytes | 7EFEA30384909E366EA6B1991DEE592098F660DCC7B890487685664F9DB3D02F
+rd-06-installed-min-gsn.png | 89585 bytes | 61FE26D115FC37A6551F0DA067A01C23C091AE16F545ED7ED4C5FA60AAB0348E
+rd-06-installed-min-gsv-before.png | 77729 bytes | CC740CA63F9A321FAC23BB21833D928499A539E74AE2EE3EC9113E42719C3828
+rd-06-installed-min-gsv.png | 88509 bytes | FDB43E492B29AAA308D6C3750A704B4FFE25CAA3B845726E9639805FC80E20D8
+rd-06-installed-min-window.png | 83135 bytes | B362E31A05A4B9840DEB468B69C88A09D1083295591394AF5C1F68D3777D47AD
+rd-06-installed-mobile-390x844-result.png | 67398 bytes | DF9009759173626132DE390B04231B17422FA35FB9FF8E4976D79F27CC577572
+rd-06-installed-mobile-390x844.png | 82172 bytes | FFB848567864F2C5E5A9ABD977189E4F4564CCFA06BF30A509E3CB8E2A3243A5
+rd-06-installed-splash.png | 84524 bytes | FF350FC640AC325E0F962F89ECB096E66C5B5AFECC70F3214A9DCD325B5E2906
+rd-06-installed-target-combined-before.png | 84386 bytes | 748C727B40CBC80DAEEA4EB5388E7903F3692CFC777AC3F967C242397DD7C33A
+rd-06-installed-target-combined.png | 96312 bytes | 54BBADB93C81BF4BEFB88CE5B7369483DC00040218CFD70C810C9288326A04AE
+rd-06-installed-target-gsn-before.png | 81606 bytes | 053FD6F9FEEE34316864499A27C6BF311ACE3D02918E6AA433712C7EC8798DB3
+rd-06-installed-target-gsn.png | 92408 bytes | A21DA5141DCD74EFA8498B06DAB157318597EF5EAD3C1AD7C9E1F4745D1E972F
+rd-06-installed-target-gsv-before.png | 79433 bytes | CBB0811404A7868D1B343413B1476A06A58419BFD88EB8F6280AA1C217B0D7DE
+rd-06-installed-target-gsv.png | 91147 bytes | 32E9CD199E77B1F9A83A41E113C90D73E95913DED34195646EEB1043F2E5F86D
+rd-06-installed-target-window.png | 80934 bytes | D277AF41F418FEEBC09C1CE14F03704237DF5F0F7A12FD6995BD1112005E24C2
+rd-06-packaged-422.png | 85222 bytes | BB8508DAD7A329184D594B0A6970A3C2D77C9456D5A531D3B7A43F8E60920BF3
+rd-06-packaged-min-combined-before.png | 81711 bytes | 1884CD0AB97A5652C8E273C396C6956E7B5366EAB9ED9F18FAC39BE216ED5E41
+rd-06-packaged-min-combined.png | 92206 bytes | 202DD36F62CED0BB763F0B30A5EBDF7B80699BE5DD2FCBFE8CA25B42C44AA38D
+rd-06-packaged-min-gsn-before.png | 79639 bytes | FD6616C7C0C822D19D4BD5FD25817C79D35976C5773AD39AE405CC1D87E5CC02
+rd-06-packaged-min-gsn.png | 89638 bytes | 377D0CBC5F75892E4883A972698CA07E9B145EA14CD422AF2203919546E747A1
+rd-06-packaged-min-gsv-before.png | 77671 bytes | 037FC946B2468CA4B88A0393FDFEE2DFA36B08B27196B29FCC4D29CD3FEC5FAA
+rd-06-packaged-min-gsv.png | 88499 bytes | 3943E2DE45B61F54EA05CC538AAF89528263DD48AB77E31B7AF698C8729347D3
+rd-06-packaged-min-window.png | 83154 bytes | DF3812CAA5391E66C3C80CBD434BF82C867EE17FA1E93A580C55737E11BC89BA
+rd-06-packaged-target-combined-before.png | 84302 bytes | FA7E8F0107AF743051F9D651AD4FB4882EFA54C415550B7B323769EC605A9ED3
+rd-06-packaged-target-combined.png | 96287 bytes | BE772CB03788445F15767CBF5FFF8B4419202085B8A402323836366093A52092
+rd-06-packaged-target-gsn-before.png | 81513 bytes | 01CC428F374DB9F9779513E6A0E54DC0C23FAFEB3A087E3BCADC92F52BA20DA2
+rd-06-packaged-target-gsn.png | 92447 bytes | D2A82AB2FF88D1D9F83419E0653CA22C8AC9A53BB6579831B682A8DB4A70D697
+rd-06-packaged-target-gsv-before.png | 79306 bytes | 519EA5E7A87871255C58925E9C2E7BE8CB355350E125A23E79292030BE200834
+rd-06-packaged-target-gsv.png | 91170 bytes | 7FE9E61C2EB09EF8653A909BA4869C9581F24AB1E8AF98989EAB8B47ED3FDCAC
+rd-06-packaged-target-window.png | 80944 bytes | 34CBDD71E47B1F09795F5D998E269EE23C57B313BAB4BB91504C254140B077CB
+--- evidence/logs ---
+D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\RD-06-evidence.md | 22733 bytes | 46B44F258575DDE8F6BD8E653BAD5B54A81B04843B6BC5B2888489180C9D55B1
+D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-06-mobile-390.txt | 6880 bytes | DACDBD665A9CE393971F7B4D9387EB0AD709F4F20B1F589824C2540D7F2A604F
+D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-06-c2-inno-install.txt | 44720 bytes | E441EB997F1980DF4E9A400FA232F948FA01AD0C43A86D470105BE27D2D9B27A
+D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-06-c2-inno-uninstall.txt | 20213 bytes | 24444C231C3633EABB520F8314008101C36577A739D75953913E3A6D242DA98F
+D:\Antigravity\GasProjectCalculator\docs\workflow\evidence\logs\RD-06-c2-cleanup.txt | 1317 bytes | 9E384E2C0D308B61F051A6DCF4DDFA99E3791F9303AC1554B3206F0FA01B4A36

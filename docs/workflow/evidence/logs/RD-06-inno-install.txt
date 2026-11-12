@@ -1,0 +1,585 @@
+﻿2026-11-12 07:24:16.130   Log opened. (Time zone: UTC+03:00)
+2026-11-12 07:24:16.130   Setup version: Inno Setup version 6.4.1
+2026-11-12 07:24:16.130   Original Setup EXE: D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe
+2026-11-12 07:24:16.130   Setup command line: /SL5="$8061C,14306394,844800,D:\Antigravity\GasProjectCalculator\installer\Output\GasProjectCalculator-Setup-1.0.0.exe" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /DIR=C:\Users\user\AppData\Local\Temp\opencode\rd06-install /NOICONS /LOG=C:\Users\user\AppData\Local\Temp\opencode\rd06\rd06-inno-install.log
+2026-11-12 07:24:16.131   Windows version: 10.0.26300
+2026-11-12 07:24:16.131   Windows architecture: x64 (64-bit)
+2026-11-12 07:24:16.131   Machine types supported by system: x86 x64
+2026-11-12 07:24:16.131   User privileges: None
+2026-11-12 07:24:16.132   Administrative install mode: No
+2026-11-12 07:24:16.132   Install mode root key: HKEY_CURRENT_USER
+2026-11-12 07:24:16.132   64-bit install mode: No
+2026-11-12 07:24:16.132   Created temporary directory: C:\Users\user\AppData\Local\Temp\is-LLK31.tmp
+2026-11-12 07:24:16.189   Starting the installation process.
+2026-11-12 07:24:16.191   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install
+2026-11-12 07:24:16.191   Directory for uninstall files: C:\Users\user\AppData\Local\Temp\opencode\rd06-install
+2026-11-12 07:24:16.191   Creating new uninstall log: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\unins000.dat
+2026-11-12 07:24:16.194   -- File entry --
+2026-11-12 07:24:16.194   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\unins000.exe
+2026-11-12 07:24:16.196   Time stamp of our file: 2026-11-12 07:24:15.974
+2026-11-12 07:24:16.196   Installing the file.
+2026-11-12 07:24:16.202   Successfully installed the file.
+2026-11-12 07:24:16.202   -- File entry --
+2026-11-12 07:24:16.202   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\GasProjectCalculator.exe
+2026-11-12 07:24:16.202   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.202   Installing the file.
+2026-11-12 07:24:16.288   Successfully installed the file.
+2026-11-12 07:24:16.288   -- File entry --
+2026-11-12 07:24:16.288   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-console-l1-1-0.dll
+2026-11-12 07:24:16.289   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.289   Installing the file.
+2026-11-12 07:24:16.289   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal
+2026-11-12 07:24:16.291   Successfully installed the file.
+2026-11-12 07:24:16.292   -- File entry --
+2026-11-12 07:24:16.292   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-datetime-l1-1-0.dll
+2026-11-12 07:24:16.292   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.292   Installing the file.
+2026-11-12 07:24:16.294   Successfully installed the file.
+2026-11-12 07:24:16.294   -- File entry --
+2026-11-12 07:24:16.294   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-debug-l1-1-0.dll
+2026-11-12 07:24:16.294   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.294   Installing the file.
+2026-11-12 07:24:16.296   Successfully installed the file.
+2026-11-12 07:24:16.296   -- File entry --
+2026-11-12 07:24:16.296   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-errorhandling-l1-1-0.dll
+2026-11-12 07:24:16.296   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.296   Installing the file.
+2026-11-12 07:24:16.298   Successfully installed the file.
+2026-11-12 07:24:16.298   -- File entry --
+2026-11-12 07:24:16.298   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-fibers-l1-1-0.dll
+2026-11-12 07:24:16.298   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.298   Installing the file.
+2026-11-12 07:24:16.300   Successfully installed the file.
+2026-11-12 07:24:16.300   -- File entry --
+2026-11-12 07:24:16.300   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-fibers-l1-1-1.dll
+2026-11-12 07:24:16.300   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.300   Installing the file.
+2026-11-12 07:24:16.302   Successfully installed the file.
+2026-11-12 07:24:16.302   -- File entry --
+2026-11-12 07:24:16.302   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-file-l1-1-0.dll
+2026-11-12 07:24:16.302   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.302   Installing the file.
+2026-11-12 07:24:16.303   Successfully installed the file.
+2026-11-12 07:24:16.303   -- File entry --
+2026-11-12 07:24:16.303   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-file-l1-2-0.dll
+2026-11-12 07:24:16.304   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.304   Installing the file.
+2026-11-12 07:24:16.305   Successfully installed the file.
+2026-11-12 07:24:16.305   -- File entry --
+2026-11-12 07:24:16.305   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-file-l2-1-0.dll
+2026-11-12 07:24:16.305   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.305   Installing the file.
+2026-11-12 07:24:16.307   Successfully installed the file.
+2026-11-12 07:24:16.307   -- File entry --
+2026-11-12 07:24:16.307   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-handle-l1-1-0.dll
+2026-11-12 07:24:16.307   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.307   Installing the file.
+2026-11-12 07:24:16.308   Successfully installed the file.
+2026-11-12 07:24:16.308   -- File entry --
+2026-11-12 07:24:16.308   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-heap-l1-1-0.dll
+2026-11-12 07:24:16.308   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.308   Installing the file.
+2026-11-12 07:24:16.310   Successfully installed the file.
+2026-11-12 07:24:16.310   -- File entry --
+2026-11-12 07:24:16.310   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-interlocked-l1-1-0.dll
+2026-11-12 07:24:16.310   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.310   Installing the file.
+2026-11-12 07:24:16.311   Successfully installed the file.
+2026-11-12 07:24:16.311   -- File entry --
+2026-11-12 07:24:16.311   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-kernel32-legacy-l1-1-1.dll
+2026-11-12 07:24:16.311   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.311   Installing the file.
+2026-11-12 07:24:16.313   Successfully installed the file.
+2026-11-12 07:24:16.313   -- File entry --
+2026-11-12 07:24:16.313   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-libraryloader-l1-1-0.dll
+2026-11-12 07:24:16.313   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.313   Installing the file.
+2026-11-12 07:24:16.314   Successfully installed the file.
+2026-11-12 07:24:16.314   -- File entry --
+2026-11-12 07:24:16.314   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-localization-l1-2-0.dll
+2026-11-12 07:24:16.314   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.314   Installing the file.
+2026-11-12 07:24:16.316   Successfully installed the file.
+2026-11-12 07:24:16.316   -- File entry --
+2026-11-12 07:24:16.316   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-memory-l1-1-0.dll
+2026-11-12 07:24:16.316   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.316   Installing the file.
+2026-11-12 07:24:16.317   Successfully installed the file.
+2026-11-12 07:24:16.317   -- File entry --
+2026-11-12 07:24:16.317   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-namedpipe-l1-1-0.dll
+2026-11-12 07:24:16.318   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.318   Installing the file.
+2026-11-12 07:24:16.319   Successfully installed the file.
+2026-11-12 07:24:16.319   -- File entry --
+2026-11-12 07:24:16.319   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-processenvironment-l1-1-0.dll
+2026-11-12 07:24:16.319   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.319   Installing the file.
+2026-11-12 07:24:16.320   Successfully installed the file.
+2026-11-12 07:24:16.320   -- File entry --
+2026-11-12 07:24:16.320   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-processthreads-l1-1-0.dll
+2026-11-12 07:24:16.320   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.320   Installing the file.
+2026-11-12 07:24:16.322   Successfully installed the file.
+2026-11-12 07:24:16.322   -- File entry --
+2026-11-12 07:24:16.322   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-processthreads-l1-1-1.dll
+2026-11-12 07:24:16.322   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.322   Installing the file.
+2026-11-12 07:24:16.323   Successfully installed the file.
+2026-11-12 07:24:16.323   -- File entry --
+2026-11-12 07:24:16.323   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-profile-l1-1-0.dll
+2026-11-12 07:24:16.323   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.323   Installing the file.
+2026-11-12 07:24:16.325   Successfully installed the file.
+2026-11-12 07:24:16.325   -- File entry --
+2026-11-12 07:24:16.325   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-rtlsupport-l1-1-0.dll
+2026-11-12 07:24:16.325   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.325   Installing the file.
+2026-11-12 07:24:16.326   Successfully installed the file.
+2026-11-12 07:24:16.326   -- File entry --
+2026-11-12 07:24:16.326   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-string-l1-1-0.dll
+2026-11-12 07:24:16.326   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.326   Installing the file.
+2026-11-12 07:24:16.328   Successfully installed the file.
+2026-11-12 07:24:16.328   -- File entry --
+2026-11-12 07:24:16.328   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-synch-l1-1-0.dll
+2026-11-12 07:24:16.328   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.328   Installing the file.
+2026-11-12 07:24:16.330   Successfully installed the file.
+2026-11-12 07:24:16.330   -- File entry --
+2026-11-12 07:24:16.330   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-synch-l1-2-0.dll
+2026-11-12 07:24:16.330   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.330   Installing the file.
+2026-11-12 07:24:16.331   Successfully installed the file.
+2026-11-12 07:24:16.331   -- File entry --
+2026-11-12 07:24:16.331   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-sysinfo-l1-1-0.dll
+2026-11-12 07:24:16.332   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.332   Installing the file.
+2026-11-12 07:24:16.333   Successfully installed the file.
+2026-11-12 07:24:16.333   -- File entry --
+2026-11-12 07:24:16.333   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-sysinfo-l1-2-0.dll
+2026-11-12 07:24:16.333   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.333   Installing the file.
+2026-11-12 07:24:16.334   Successfully installed the file.
+2026-11-12 07:24:16.334   -- File entry --
+2026-11-12 07:24:16.334   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-timezone-l1-1-0.dll
+2026-11-12 07:24:16.335   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.335   Installing the file.
+2026-11-12 07:24:16.336   Successfully installed the file.
+2026-11-12 07:24:16.336   -- File entry --
+2026-11-12 07:24:16.336   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-core-util-l1-1-0.dll
+2026-11-12 07:24:16.336   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.336   Installing the file.
+2026-11-12 07:24:16.338   Successfully installed the file.
+2026-11-12 07:24:16.338   -- File entry --
+2026-11-12 07:24:16.338   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-conio-l1-1-0.dll
+2026-11-12 07:24:16.338   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.338   Installing the file.
+2026-11-12 07:24:16.340   Successfully installed the file.
+2026-11-12 07:24:16.340   -- File entry --
+2026-11-12 07:24:16.340   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-convert-l1-1-0.dll
+2026-11-12 07:24:16.340   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.340   Installing the file.
+2026-11-12 07:24:16.341   Successfully installed the file.
+2026-11-12 07:24:16.341   -- File entry --
+2026-11-12 07:24:16.342   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-environment-l1-1-0.dll
+2026-11-12 07:24:16.342   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.342   Installing the file.
+2026-11-12 07:24:16.343   Successfully installed the file.
+2026-11-12 07:24:16.343   -- File entry --
+2026-11-12 07:24:16.343   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-filesystem-l1-1-0.dll
+2026-11-12 07:24:16.343   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.343   Installing the file.
+2026-11-12 07:24:16.344   Successfully installed the file.
+2026-11-12 07:24:16.344   -- File entry --
+2026-11-12 07:24:16.344   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-heap-l1-1-0.dll
+2026-11-12 07:24:16.345   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.345   Installing the file.
+2026-11-12 07:24:16.346   Successfully installed the file.
+2026-11-12 07:24:16.346   -- File entry --
+2026-11-12 07:24:16.346   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-locale-l1-1-0.dll
+2026-11-12 07:24:16.346   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.346   Installing the file.
+2026-11-12 07:24:16.347   Successfully installed the file.
+2026-11-12 07:24:16.347   -- File entry --
+2026-11-12 07:24:16.347   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-math-l1-1-0.dll
+2026-11-12 07:24:16.348   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.348   Installing the file.
+2026-11-12 07:24:16.349   Successfully installed the file.
+2026-11-12 07:24:16.349   -- File entry --
+2026-11-12 07:24:16.349   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-process-l1-1-0.dll
+2026-11-12 07:24:16.349   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.349   Installing the file.
+2026-11-12 07:24:16.350   Successfully installed the file.
+2026-11-12 07:24:16.350   -- File entry --
+2026-11-12 07:24:16.350   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-runtime-l1-1-0.dll
+2026-11-12 07:24:16.351   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.351   Installing the file.
+2026-11-12 07:24:16.352   Successfully installed the file.
+2026-11-12 07:24:16.352   -- File entry --
+2026-11-12 07:24:16.352   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-stdio-l1-1-0.dll
+2026-11-12 07:24:16.352   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.352   Installing the file.
+2026-11-12 07:24:16.353   Successfully installed the file.
+2026-11-12 07:24:16.353   -- File entry --
+2026-11-12 07:24:16.354   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-string-l1-1-0.dll
+2026-11-12 07:24:16.354   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.354   Installing the file.
+2026-11-12 07:24:16.355   Successfully installed the file.
+2026-11-12 07:24:16.355   -- File entry --
+2026-11-12 07:24:16.355   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-time-l1-1-0.dll
+2026-11-12 07:24:16.355   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.355   Installing the file.
+2026-11-12 07:24:16.356   Successfully installed the file.
+2026-11-12 07:24:16.356   -- File entry --
+2026-11-12 07:24:16.357   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\api-ms-win-crt-utility-l1-1-0.dll
+2026-11-12 07:24:16.357   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.357   Installing the file.
+2026-11-12 07:24:16.358   Successfully installed the file.
+2026-11-12 07:24:16.358   -- File entry --
+2026-11-12 07:24:16.358   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\base_library.zip
+2026-11-12 07:24:16.358   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.358   Installing the file.
+2026-11-12 07:24:16.382   Successfully installed the file.
+2026-11-12 07:24:16.382   -- File entry --
+2026-11-12 07:24:16.382   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\libcrypto-3.dll
+2026-11-12 07:24:16.382   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.383   Installing the file.
+2026-11-12 07:24:16.482   Successfully installed the file.
+2026-11-12 07:24:16.482   -- File entry --
+2026-11-12 07:24:16.482   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\libffi-8.dll
+2026-11-12 07:24:16.482   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.482   Installing the file.
+2026-11-12 07:24:16.484   Successfully installed the file.
+2026-11-12 07:24:16.484   -- File entry --
+2026-11-12 07:24:16.484   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\libssl-3.dll
+2026-11-12 07:24:16.485   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.485   Installing the file.
+2026-11-12 07:24:16.500   Successfully installed the file.
+2026-11-12 07:24:16.500   -- File entry --
+2026-11-12 07:24:16.500   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pyexpat.pyd
+2026-11-12 07:24:16.501   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.501   Installing the file.
+2026-11-12 07:24:16.506   Successfully installed the file.
+2026-11-12 07:24:16.507   -- File entry --
+2026-11-12 07:24:16.507   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\python312.dll
+2026-11-12 07:24:16.507   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.507   Installing the file.
+2026-11-12 07:24:16.637   Successfully installed the file.
+2026-11-12 07:24:16.637   -- File entry --
+2026-11-12 07:24:16.637   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\select.pyd
+2026-11-12 07:24:16.637   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.637   Installing the file.
+2026-11-12 07:24:16.638   Successfully installed the file.
+2026-11-12 07:24:16.638   -- File entry --
+2026-11-12 07:24:16.639   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\ucrtbase.dll
+2026-11-12 07:24:16.639   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.639   Installing the file.
+2026-11-12 07:24:16.672   Successfully installed the file.
+2026-11-12 07:24:16.672   -- File entry --
+2026-11-12 07:24:16.672   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\unicodedata.pyd
+2026-11-12 07:24:16.673   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.673   Installing the file.
+2026-11-12 07:24:16.696   Successfully installed the file.
+2026-11-12 07:24:16.696   -- File entry --
+2026-11-12 07:24:16.697   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\VCRUNTIME140.dll
+2026-11-12 07:24:16.697   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.697   Installing the file.
+2026-11-12 07:24:16.700   Successfully installed the file.
+2026-11-12 07:24:16.700   -- File entry --
+2026-11-12 07:24:16.700   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\VCRUNTIME140_1.dll
+2026-11-12 07:24:16.700   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.700   Installing the file.
+2026-11-12 07:24:16.702   Successfully installed the file.
+2026-11-12 07:24:16.702   -- File entry --
+2026-11-12 07:24:16.702   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_asyncio.pyd
+2026-11-12 07:24:16.702   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.702   Installing the file.
+2026-11-12 07:24:16.706   Successfully installed the file.
+2026-11-12 07:24:16.706   -- File entry --
+2026-11-12 07:24:16.706   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_bz2.pyd
+2026-11-12 07:24:16.706   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.706   Installing the file.
+2026-11-12 07:24:16.709   Successfully installed the file.
+2026-11-12 07:24:16.709   -- File entry --
+2026-11-12 07:24:16.709   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_cffi_backend.cp312-win_amd64.pyd
+2026-11-12 07:24:16.710   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.710   Installing the file.
+2026-11-12 07:24:16.715   Successfully installed the file.
+2026-11-12 07:24:16.715   -- File entry --
+2026-11-12 07:24:16.715   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_ctypes.pyd
+2026-11-12 07:24:16.715   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.715   Installing the file.
+2026-11-12 07:24:16.718   Successfully installed the file.
+2026-11-12 07:24:16.719   -- File entry --
+2026-11-12 07:24:16.719   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_decimal.pyd
+2026-11-12 07:24:16.719   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.719   Installing the file.
+2026-11-12 07:24:16.725   Successfully installed the file.
+2026-11-12 07:24:16.726   -- File entry --
+2026-11-12 07:24:16.726   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_elementtree.pyd
+2026-11-12 07:24:16.726   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.726   Installing the file.
+2026-11-12 07:24:16.729   Successfully installed the file.
+2026-11-12 07:24:16.730   -- File entry --
+2026-11-12 07:24:16.730   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_hashlib.pyd
+2026-11-12 07:24:16.730   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.730   Installing the file.
+2026-11-12 07:24:16.732   Successfully installed the file.
+2026-11-12 07:24:16.732   -- File entry --
+2026-11-12 07:24:16.732   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_lzma.pyd
+2026-11-12 07:24:16.732   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.732   Installing the file.
+2026-11-12 07:24:16.738   Successfully installed the file.
+2026-11-12 07:24:16.738   -- File entry --
+2026-11-12 07:24:16.738   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_multiprocessing.pyd
+2026-11-12 07:24:16.738   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.738   Installing the file.
+2026-11-12 07:24:16.740   Successfully installed the file.
+2026-11-12 07:24:16.740   -- File entry --
+2026-11-12 07:24:16.740   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_overlapped.pyd
+2026-11-12 07:24:16.740   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.740   Installing the file.
+2026-11-12 07:24:16.742   Successfully installed the file.
+2026-11-12 07:24:16.742   -- File entry --
+2026-11-12 07:24:16.743   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_queue.pyd
+2026-11-12 07:24:16.743   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.743   Installing the file.
+2026-11-12 07:24:16.744   Successfully installed the file.
+2026-11-12 07:24:16.744   -- File entry --
+2026-11-12 07:24:16.744   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_socket.pyd
+2026-11-12 07:24:16.744   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.744   Installing the file.
+2026-11-12 07:24:16.747   Successfully installed the file.
+2026-11-12 07:24:16.747   -- File entry --
+2026-11-12 07:24:16.747   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_ssl.pyd
+2026-11-12 07:24:16.747   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.747   Installing the file.
+2026-11-12 07:24:16.752   Successfully installed the file.
+2026-11-12 07:24:16.752   -- File entry --
+2026-11-12 07:24:16.752   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_uuid.pyd
+2026-11-12 07:24:16.752   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.752   Installing the file.
+2026-11-12 07:24:16.753   Successfully installed the file.
+2026-11-12 07:24:16.753   -- File entry --
+2026-11-12 07:24:16.753   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_wmi.pyd
+2026-11-12 07:24:16.753   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.753   Installing the file.
+2026-11-12 07:24:16.755   Successfully installed the file.
+2026-11-12 07:24:16.755   -- File entry --
+2026-11-12 07:24:16.755   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\_zoneinfo.pyd
+2026-11-12 07:24:16.756   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.756   Installing the file.
+2026-11-12 07:24:16.757   Successfully installed the file.
+2026-11-12 07:24:16.757   -- File entry --
+2026-11-12 07:24:16.758   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\click-8.5.0.dist-info\INSTALLER
+2026-11-12 07:24:16.758   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.758   Installing the file.
+2026-11-12 07:24:16.758   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\click-8.5.0.dist-info
+2026-11-12 07:24:16.759   Successfully installed the file.
+2026-11-12 07:24:16.759   -- File entry --
+2026-11-12 07:24:16.759   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\click-8.5.0.dist-info\METADATA
+2026-11-12 07:24:16.759   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.759   Installing the file.
+2026-11-12 07:24:16.760   Successfully installed the file.
+2026-11-12 07:24:16.760   -- File entry --
+2026-11-12 07:24:16.760   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\click-8.5.0.dist-info\RECORD
+2026-11-12 07:24:16.760   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.760   Installing the file.
+2026-11-12 07:24:16.761   Successfully installed the file.
+2026-11-12 07:24:16.761   -- File entry --
+2026-11-12 07:24:16.761   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\click-8.5.0.dist-info\WHEEL
+2026-11-12 07:24:16.762   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.762   Installing the file.
+2026-11-12 07:24:16.762   Successfully installed the file.
+2026-11-12 07:24:16.762   -- File entry --
+2026-11-12 07:24:16.763   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\click-8.5.0.dist-info\licenses\LICENSE.txt
+2026-11-12 07:24:16.763   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.763   Installing the file.
+2026-11-12 07:24:16.763   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\click-8.5.0.dist-info\licenses
+2026-11-12 07:24:16.764   Successfully installed the file.
+2026-11-12 07:24:16.764   -- File entry --
+2026-11-12 07:24:16.764   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\clr_loader\ffi\dlls\amd64\ClrLoader.dll
+2026-11-12 07:24:16.764   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.764   Installing the file.
+2026-11-12 07:24:16.764   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\clr_loader
+2026-11-12 07:24:16.765   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\clr_loader\ffi
+2026-11-12 07:24:16.765   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\clr_loader\ffi\dlls
+2026-11-12 07:24:16.765   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\clr_loader\ffi\dlls\amd64
+2026-11-12 07:24:16.766   Successfully installed the file.
+2026-11-12 07:24:16.767   -- File entry --
+2026-11-12 07:24:16.767   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\clr_loader\ffi\dlls\x86\ClrLoader.dll
+2026-11-12 07:24:16.767   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.767   Installing the file.
+2026-11-12 07:24:16.767   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\clr_loader\ffi\dlls\x86
+2026-11-12 07:24:16.768   Successfully installed the file.
+2026-11-12 07:24:16.768   -- File entry --
+2026-11-12 07:24:16.768   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\frontend\index.html
+2026-11-12 07:24:16.768   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.768   Installing the file.
+2026-11-12 07:24:16.768   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\frontend
+2026-11-12 07:24:16.771   Successfully installed the file.
+2026-11-12 07:24:16.771   -- File entry --
+2026-11-12 07:24:16.771   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\frontend\splash.html
+2026-11-12 07:24:16.771   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.771   Installing the file.
+2026-11-12 07:24:16.772   Successfully installed the file.
+2026-11-12 07:24:16.772   -- File entry --
+2026-11-12 07:24:16.772   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\frontend\assets\company-emblem.png
+2026-11-12 07:24:16.772   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.772   Installing the file.
+2026-11-12 07:24:16.772   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\frontend\assets
+2026-11-12 07:24:16.774   Successfully installed the file.
+2026-11-12 07:24:16.774   -- File entry --
+2026-11-12 07:24:16.774   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic-2.13.5.dist-info\INSTALLER
+2026-11-12 07:24:16.774   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.774   Installing the file.
+2026-11-12 07:24:16.774   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic-2.13.5.dist-info
+2026-11-12 07:24:16.775   Successfully installed the file.
+2026-11-12 07:24:16.775   -- File entry --
+2026-11-12 07:24:16.775   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic-2.13.5.dist-info\METADATA
+2026-11-12 07:24:16.775   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.775   Installing the file.
+2026-11-12 07:24:16.778   Successfully installed the file.
+2026-11-12 07:24:16.778   -- File entry --
+2026-11-12 07:24:16.778   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic-2.13.5.dist-info\RECORD
+2026-11-12 07:24:16.778   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.778   Installing the file.
+2026-11-12 07:24:16.779   Successfully installed the file.
+2026-11-12 07:24:16.779   -- File entry --
+2026-11-12 07:24:16.779   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic-2.13.5.dist-info\WHEEL
+2026-11-12 07:24:16.780   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.780   Installing the file.
+2026-11-12 07:24:16.780   Successfully installed the file.
+2026-11-12 07:24:16.781   -- File entry --
+2026-11-12 07:24:16.781   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic-2.13.5.dist-info\licenses\LICENSE
+2026-11-12 07:24:16.781   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.781   Installing the file.
+2026-11-12 07:24:16.781   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic-2.13.5.dist-info\licenses
+2026-11-12 07:24:16.782   Successfully installed the file.
+2026-11-12 07:24:16.782   -- File entry --
+2026-11-12 07:24:16.782   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic_core\_pydantic_core.cp312-win_amd64.pyd
+2026-11-12 07:24:16.782   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.782   Installing the file.
+2026-11-12 07:24:16.782   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pydantic_core
+2026-11-12 07:24:16.880   Successfully installed the file.
+2026-11-12 07:24:16.880   -- File entry --
+2026-11-12 07:24:16.880   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pythonnet\runtime\Python.Runtime.deps.json
+2026-11-12 07:24:16.881   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.881   Installing the file.
+2026-11-12 07:24:16.881   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pythonnet
+2026-11-12 07:24:16.881   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pythonnet\runtime
+2026-11-12 07:24:16.882   Successfully installed the file.
+2026-11-12 07:24:16.882   -- File entry --
+2026-11-12 07:24:16.882   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pythonnet\runtime\Python.Runtime.dll
+2026-11-12 07:24:16.883   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.883   Installing the file.
+2026-11-12 07:24:16.894   Successfully installed the file.
+2026-11-12 07:24:16.894   -- File entry --
+2026-11-12 07:24:16.894   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\pythonnet\runtime\Python.Runtime.xml
+2026-11-12 07:24:16.894   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.894   Installing the file.
+2026-11-12 07:24:16.899   Successfully installed the file.
+2026-11-12 07:24:16.899   -- File entry --
+2026-11-12 07:24:16.899   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\setuptools\_vendor\jaraco\text\Lorem ipsum.txt
+2026-11-12 07:24:16.899   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.899   Installing the file.
+2026-11-12 07:24:16.899   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\setuptools
+2026-11-12 07:24:16.899   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\setuptools\_vendor
+2026-11-12 07:24:16.900   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\setuptools\_vendor\jaraco
+2026-11-12 07:24:16.900   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\setuptools\_vendor\jaraco\text
+2026-11-12 07:24:16.901   Successfully installed the file.
+2026-11-12 07:24:16.901   -- File entry --
+2026-11-12 07:24:16.901   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\js\api.js
+2026-11-12 07:24:16.901   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.901   Installing the file.
+2026-11-12 07:24:16.902   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview
+2026-11-12 07:24:16.902   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\js
+2026-11-12 07:24:16.903   Successfully installed the file.
+2026-11-12 07:24:16.903   -- File entry --
+2026-11-12 07:24:16.903   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\js\customize.js
+2026-11-12 07:24:16.903   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.903   Installing the file.
+2026-11-12 07:24:16.905   Successfully installed the file.
+2026-11-12 07:24:16.905   -- File entry --
+2026-11-12 07:24:16.905   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\js\finish.js
+2026-11-12 07:24:16.905   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.905   Installing the file.
+2026-11-12 07:24:16.906   Successfully installed the file.
+2026-11-12 07:24:16.906   -- File entry --
+2026-11-12 07:24:16.906   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\js\state.js
+2026-11-12 07:24:16.906   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.906   Installing the file.
+2026-11-12 07:24:16.907   Successfully installed the file.
+2026-11-12 07:24:16.907   -- File entry --
+2026-11-12 07:24:16.907   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\js\lib\dom_json.js
+2026-11-12 07:24:16.908   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.908   Installing the file.
+2026-11-12 07:24:16.908   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\js\lib
+2026-11-12 07:24:16.909   Successfully installed the file.
+2026-11-12 07:24:16.909   -- File entry --
+2026-11-12 07:24:16.909   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\js\lib\polyfill.js
+2026-11-12 07:24:16.910   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.910   Installing the file.
+2026-11-12 07:24:16.911   Successfully installed the file.
+2026-11-12 07:24:16.911   -- File entry --
+2026-11-12 07:24:16.912   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\Microsoft.Web.WebView2.Core.dll
+2026-11-12 07:24:16.912   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.912   Installing the file.
+2026-11-12 07:24:16.912   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib
+2026-11-12 07:24:16.922   Successfully installed the file.
+2026-11-12 07:24:16.922   -- File entry --
+2026-11-12 07:24:16.923   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\Microsoft.Web.WebView2.WinForms.dll
+2026-11-12 07:24:16.923   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.923   Installing the file.
+2026-11-12 07:24:16.925   Successfully installed the file.
+2026-11-12 07:24:16.925   -- File entry --
+2026-11-12 07:24:16.925   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\pywebview-android.jar
+2026-11-12 07:24:16.925   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.925   Installing the file.
+2026-11-12 07:24:16.927   Successfully installed the file.
+2026-11-12 07:24:16.927   -- File entry --
+2026-11-12 07:24:16.927   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\WebBrowserInterop.x64.dll
+2026-11-12 07:24:16.927   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.927   Installing the file.
+2026-11-12 07:24:16.929   Successfully installed the file.
+2026-11-12 07:24:16.929   -- File entry --
+2026-11-12 07:24:16.929   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\WebBrowserInterop.x86.dll
+2026-11-12 07:24:16.929   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.929   Installing the file.
+2026-11-12 07:24:16.930   Successfully installed the file.
+2026-11-12 07:24:16.930   -- File entry --
+2026-11-12 07:24:16.930   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-arm64\native\WebView2Loader.dll
+2026-11-12 07:24:16.930   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.930   Installing the file.
+2026-11-12 07:24:16.930   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes
+2026-11-12 07:24:16.931   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-arm64
+2026-11-12 07:24:16.931   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-arm64\native
+2026-11-12 07:24:16.935   Successfully installed the file.
+2026-11-12 07:24:16.935   -- File entry --
+2026-11-12 07:24:16.935   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-x64\native\WebView2Loader.dll
+2026-11-12 07:24:16.935   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.935   Installing the file.
+2026-11-12 07:24:16.936   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-x64
+2026-11-12 07:24:16.936   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-x64\native
+2026-11-12 07:24:16.941   Successfully installed the file.
+2026-11-12 07:24:16.941   -- File entry --
+2026-11-12 07:24:16.941   Dest filename: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-x86\native\WebView2Loader.dll
+2026-11-12 07:24:16.941   Time stamp of our file: 2026-11-12 07:21:50.000
+2026-11-12 07:24:16.941   Installing the file.
+2026-11-12 07:24:16.941   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-x86
+2026-11-12 07:24:16.941   Creating directory: C:\Users\user\AppData\Local\Temp\opencode\rd06-install\_internal\webview\lib\runtimes\win-x86\native
+2026-11-12 07:24:16.945   Successfully installed the file.
+2026-11-12 07:24:16.946   -- Icon entry --
+2026-11-12 07:24:16.946   Dest filename: C:\Users\user\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\СС.Расчет.lnk
+2026-11-12 07:24:16.946   Creating the icon.
+2026-11-12 07:24:17.070   Successfully created the icon.
+2026-11-12 07:24:17.081   Saving uninstall information.
+2026-11-12 07:24:17.081   Deleting uninstall key left over from previous non administrative install.
+2026-11-12 07:24:17.081   Creating new uninstall key: HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Uninstall\{A3E4B6C1-7F2D-4B8E-9C1A-5D6E7F8091A2}_is1
+2026-11-12 07:24:17.082   Writing uninstall key values.
+2026-11-12 07:24:17.082   Detected previous administrative 32-bit install? No
+2026-11-12 07:24:17.082   Detected previous administrative 64-bit install? No
+2026-11-12 07:24:17.086   Installation process succeeded.
+2026-11-12 07:24:17.086   Need to restart Windows? No
+2026-11-12 07:24:17.088   Deinitializing Setup.
+2026-11-12 07:24:17.093   Log closed.
