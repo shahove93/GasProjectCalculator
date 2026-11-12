@@ -625,3 +625,36 @@ Latest; SS-Raschet-Setup.exe asset738208919 (15 286 980B, hash71232EE4…A7E08)
 HTTP200, размер/hash совпали. Repo description/homepage обновлены. Продукт не
 менялся, suite не повторялся. Полный результат PUBLICATION-v1.0.0.md;
 финальный docs-only commit сохраняет итог, все разрешения/счётчики сохранены.
+
+## 2026-11-12 — смешанные диаметры и artwork
+
+Пользователь запросил верх/низ по двум фото и три длины диаметров в ГСВ/combined.
+Оба reference сохранены в docs/design/header-detail-reference.jpg и
+footer-detail-reference.jpg. Пользователь подтвердил вычитание базовых5м
+из самых дешёвых труб первыми. Подготовлены PLAN, добавления в VISION/
+ARCHITECTURE/ROADMAP и coordinator brief; продуктовый код не менялся.
+Baseline9dea625, текущие изменения — только документы/референсы. Execution:
+отдельная ветка, новый local installer1.1.0, сохранение release1.0.0;
+actual scope/история и hashes в APPROVALS, старые бюджеты не сбрасываются.
+
+## 2026-11-12 — mixed-этап: preflight, ветка, frozen TASK pack
+
+OpenCode/DeepSeek Flash coordinator после dispatch-root preflight прочитал
+AGENTS/VISION/ARCHITECTURE/ROADMAP/APPROVALS/STATE/MODEL-ROUTING/PLAN/brief,
+skills autonomous-development и orchestration, установленный
+`orca skills get orchestration`, coordinator-loop, routing-and-budget,
+review-policy, orca-integration. Orca 1.4.250 ready; OpenCode 1.19.3;
+`opencode models deepseek` содержит Flash и Pro; Python 3.12.4. В workspace
+активен только текущий dispatch, других writer/worktree нет. Проверено:
+HEAD `9dea625`, ветка `feature/ss-calculator-redesign`, dirty только плановые
+документы, brief, PLAN и два reference (`header-detail-reference.jpg`
+1021×194, `footer-detail-reference.jpg` 1021×177); всё сохранено.
+
+Создана ветка `feature/gsv-mixed-diameters` от baseline `9dea625` без reset,
+с переносом незакоммиченных документов/refs. Заморожены TASK MD-01 (R2,
+формула/API), MD-02 (R2, UI/artwork/vision review), MD-03 (R2, installer
+1.1.0), MD-04 (R0, README), MD-05 (R0, интегрированный suite),
+FINAL-MIXED-STAGE (R3, Codex astra/high). Резервы: по 1 вызову Codex на
+MD-01/02/03 (потолок R2 ≤4/3M каждый), 0 на MD-04/05, 1 на FINAL (≤6/5M).
+Это новые логические TASK; старые GSV/WI/RD counters не переименованы и не
+сброшены. Product verdict NOT_REVIEWED; commit task pack сделан координатором.

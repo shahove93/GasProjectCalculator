@@ -39,3 +39,9 @@ ARCHITECTURE.md. Пользователь подтверждает упаков�
 ярлыки Start Menu/Desktop и локальное выполнение без установки Python у
 пользователя. Push/merge/release asset/deployment требуют отдельного разрешения;
 installer build artifact передать локально.
+
+Актуальный этап по запросу 2026-11-12: три длины ГСВ и графика по двум новым
+референсам. Scope/формула/порядок в docs/workflow/GSV-MIXED-DIAMETERS-PLAN.md,
+инструкции coordinator — GSV-MIXED-COORDINATOR-BRIEF.md. Базовые5м вычитать
+из самых дешёвых труб первыми. Ветка feature/gsv-mixed-diameters от9dea625;
+новый local installer1.1.0, опубликованный release1.0.0 не заменять.

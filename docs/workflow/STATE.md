@@ -1,34 +1,46 @@
 ﻿# Состояние проекта
 
-**СС.Расчет опубликован на GitHub — COMPLETE** (2026-11-12).
+2026-11-12 — этап «три диаметра ГСВ + artwork»: IN_PROGRESS.
+Baseline `9dea625`; ветка `feature/gsv-mixed-diameters`; task-pack commit
+`<PACK_SHA>`. Плановые документы и два пользовательских reference закоммичены
+координатором; продуктовый код не менялся. Product verdict NOT_REVIEWED.
 
-- Репозиторий: https://github.com/shahove93/GasProjectCalculator
-- Default main обновлён до принятого приложения и нового README со скриншотами
-  и кнопкой скачивания. Обычный fast-forward, без force и удаления веток.
-- Latest release v1.0.0:
-  https://github.com/shahove93/GasProjectCalculator/releases/tag/v1.0.0
-- Прямая ссылка:
-  https://github.com/shahove93/GasProjectCalculator/releases/latest/download/SS-Raschet-Setup.exe
-- Установщик 15 286 980 B, SHA256
-  71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08.
-  Публичное скачивание HTTP 200 и hash проверены; приложен SHA256SUMS.txt.
-- Ветка feature/ss-calculator-redesign; product revision 1af13d6;
-  tag target e4e4deee6977bd36d0397d643be89b1afef58fea. Финальный docs-only
-  commit сохраняет отчёт публикации; продукт/артефакт не изменены.
+Authority: [GSV-MIXED-DIAMETERS-PLAN](GSV-MIXED-DIAMETERS-PLAN.md), VISION/
+ARCHITECTURE/ROADMAP, [APPROVALS](APPROVALS.md), MODEL-ROUTING.
+Frozen checklists: `docs/workflow/tasks/MD-01..05.md`,
+`FINAL-MIXED-STAGE.md`.
 
-## Принятые этапы
+| TASK | Risk | Содержание | Исполнитель | Review | Reserve | Статус |
+| --- | --- | --- | --- | --- | --- | --- |
+| MD-01 | R2 | mixed-формула, API, legacy | OpenCode Flash | Codex sol/high | 1 вызов (≤4/3M) | IN_PROGRESS |
+| MD-02 | R2 | три длины в UI, детализация, artwork | OpenCode Flash | Codex sol/high (vision) | 1 (≤4/3M) | PENDING |
+| MD-03 | R2 | installer 1.1.0, installed checks | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | PENDING |
+| MD-04 | R0 | README/screenshots/docs | OpenCode Flash | coordinator R0 | 0 | PENDING |
+| MD-05 | R0 | интегрированный full suite | OpenCode Flash | coordinator R0 | 0 | PENDING |
+| FINAL-MIXED | R3 | stage acceptance | Codex astra/high | — | 1 (≤6/5M) | PENDING |
 
-- ГСВ, desktop installer, ребрендинг и корректировка компактности COMPLETE.
-- Окно 800×540/min760×520, фирменная круглая эмблема, русская заставка и
-  installer, три режима, САКЗ/ПК, НДС5%; 167 tests OK по принятому evidence.
-- Счётчики/FAIL/история сохранены. Публикация R0 не сбрасывала бюджеты и не
-  запускала новое product review. Пользователь явно разрешил main/push/release.
-- Прежние ограничения unsigned/SmartScreen, одна Windows/WebView2/DPI96 среда,
-  reduced-motion эмуляция и recorded MINOR сохраняются; code signing не было.
-- User :8000 и установка не менялись.
+Dispatch MD-01: `<MD01_DISPATCH>` / task `<MD01_TASK>`.
+Next owner — координатор: дождаться worker_done, проверить evidence, затем
+независимый Codex R2 review; PASS→scoped commit→MD-02.
 
+Старые счётчики сохранены: GSV-01..04, WI-01..03, RD-01 1/0/0, RD-02 1/0/1,
+RD-03 2/1/2, RD-05 1/0/1, RD-06 2/1/2, RD-07 R0, прежний stage R3 1. Новый
+scope не сбрасывает историю/подходы.
+
+Ограничения: `:8000` и root-owned `:8138` сохранять; пользовательскую
+установку/сессии не менять; backend — в управляемой Orca service session
+(не блокирующий background tool); свои порт/PID/handle документировать.
+release v1.0.0 (15 286 980 B, SHA256
+`71232EE4E5A4656D3375EE95758F77038912FABC44F8658396D7E60752BA7E08`) не
+заменять. Новый installer 1.1.0 — локально. Push/merge/deploy/release/
+signing запрещены.
+
+## Ранее принято и опубликовано
+
+main/feature/ss-calculator-redesign `9dea625`; compact 800×540/min 760×520,
+3 режима, русский installer/splash, 167 OK. Release v1.0.0 target `e4e4dee`,
+SS-Raschet-Setup.exe 15 286 980 B, SHA256 `71232EE4…7E08`.
 [Публикация](PUBLICATION-v1.0.0.md),
 [компактная версия](FINAL-REPORT-COMPACT-CORRECTION.md),
-[редизайн](FINAL-REPORT-SS-RASCHET-REDESIGN.md),
-[installer](FINAL-REPORT-WINDOWS-INSTALLER.md),
-[ГСВ](FINAL-REPORT.md), [разрешения](APPROVALS.md), [история](HISTORY.md).
+[разрешения](APPROVALS.md), [история](HISTORY.md),
+[инструкции](../../AGENTS.md), [маршруты](MODEL-ROUTING.md).
