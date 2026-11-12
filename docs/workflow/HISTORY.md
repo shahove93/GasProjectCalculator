@@ -591,3 +591,4 @@ routed PASS; push/merge/deploy/release/signing/глобальные конфиг
 затем dispatch RD-05 implementer.
 
 Dispatch RD-05: implementer OpenCode Flash `ctx_e4831c98c444` (`task_533c9862fa0f`, term_4a2631af) на baseline `7ca9e7e`; A1/C1, verdict NOT_REVIEWED. Следующий владелец — дождаться worker_done, проверить evidence, затем независимый OpenCode Pro R1 review.
+RD-05 allowlist clarification: по вопросу implementer `ctx_e4831c98c444` разрешено минимальное обновление geometry-assertion в `tests/test_desktop_launcher.py` (только ожидаемые APP_WIDTH/HEIGHT/MIN_SIZE, без ослабления проверок). Frozen checklist RD-05 уточнён в allowlist; scope не расширен.
