@@ -589,3 +589,5 @@ routed PASS; push/merge/deploy/release/signing/глобальные конфиг
 при provider exhaustion остановить цепочку без reset/account/model обхода.
 Следующий владелец — координатор: scoped docs-commit корректирующего этапа,
 затем dispatch RD-05 implementer.
+
+Dispatch RD-05: implementer OpenCode Flash `ctx_e4831c98c444` (`task_533c9862fa0f`, term_4a2631af) на baseline `7ca9e7e`; A1/C1, verdict NOT_REVIEWED. Следующий владелец — дождаться worker_done, проверить evidence, затем независимый OpenCode Pro R1 review.

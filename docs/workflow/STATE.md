@@ -15,7 +15,7 @@ COMPLETE: [FINAL-REPORT](FINAL-REPORT-SS-RASCHET-REDESIGN.md).
   реальными снимками (full-page/workaround); старый критерий 1050×740 заменён
   новым scope. RD-01 остаток 1 full сохранён, новых review RD-01 не добавлено.
 - TASK: **RD-05** R1 компактный UI/geometry (OpenCode Flash → независимый
-  OpenCode Pro; A1/C1); **RD-06** R2 package/installer и реальная программа
+  OpenCode Pro; A1/C1; активен `ctx_e4831c98c444`); **RD-06** R2 package/installer и реальная программа
   (OpenCode Flash → Codex `gpt-6.1-sol` high; A1/C1); **RD-07** R0 final
   verify (suite один раз); затем Codex R3 `gpt-6-astra` high.
   Frozen checklists: [RD-05](tasks/RD-05.md), [RD-06](tasks/RD-06.md),
