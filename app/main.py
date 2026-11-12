@@ -2,10 +2,10 @@ from typing import Literal
 
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, ConfigDict, Field, model_validator
 
 from app.calculator import calculate_vat, get_breakdown
-from app.gsv_calculator import get_gsv_breakdown
+from app.gsv_calculator import get_gsv_breakdown, get_gsv_mixed_breakdown
 from app.resources import frontend_index_path
 
 app = FastAPI()
@@ -22,9 +22,20 @@ class CalculationRequest(BaseModel):
     has_grpsh: bool = Field(strict=True)
 
 
+class PipeLengths(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
+    up_to_25: int = Field(ge=0, strict=True)
+    from_32_to_40: int = Field(ge=0, strict=True)
+    diameter_57: int = Field(ge=0, strict=True)
+
+
 class GsvParameters(BaseModel):
-    length: int = Field(ge=0, strict=True)
-    diameter: int = Field(ge=1, le=57, strict=True)
+    model_config = ConfigDict(extra="forbid")
+
+    length: int | None = Field(default=None, ge=0, strict=True)
+    diameter: int | None = Field(default=None, ge=1, le=57, strict=True)
+    pipe_lengths: PipeLengths | None = None
     drilling_holes: int = Field(ge=0, strict=True)
     sakz_sets: int = Field(ge=0, strict=True)
     has_panel: bool = Field(strict=True)
@@ -36,6 +47,35 @@ class GsvParameters(BaseModel):
                 "ПК доступен только при наличии хотя бы одного комплекта САКЗ"
             )
         return self
+
+    @model_validator(mode="before")
+    @classmethod
+    def validate_input_form(cls, data):
+        # Validate by raw-key presence: an explicit null (or a key of the
+        # other form) must be rejected instead of being treated as absent.
+        if not isinstance(data, dict):
+            return data
+
+        has_pipe_lengths = "pipe_lengths" in data
+        has_length = "length" in data
+        has_diameter = "diameter" in data
+
+        if has_pipe_lengths:
+            if has_length or has_diameter:
+                raise ValueError(
+                    "pipe_lengths нельзя смешивать с length/diameter"
+                )
+            if data["pipe_lengths"] is None:
+                raise ValueError("pipe_lengths не может быть null")
+            return data
+
+        if not has_length or not has_diameter:
+            raise ValueError(
+                "нужен pipe_lengths или полная пара length и diameter"
+            )
+        if data["length"] is None or data["diameter"] is None:
+            raise ValueError("length и diameter не могут быть null")
+        return data
 
 
 class GsvCalculationRequest(GsvParameters):
@@ -53,10 +93,21 @@ class GsnSection(BaseModel):
 
 
 class CombinedCalculationRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
     customer_type: Literal["частное лицо", "юридическое лицо"]
     is_district: bool = Field(strict=True)
     gsn: GsnSection
     gsv: GsvParameters
+
+
+class PipeBreakdownItem(BaseModel):
+    category: Literal["up_to_25", "from_32_to_40", "diameter_57"]
+    length: int
+    included_length: int
+    billable_length: int
+    rate: int
+    surcharge: int
 
 
 class GsvBreakdownResponse(BaseModel):
@@ -69,6 +120,8 @@ class GsvBreakdownResponse(BaseModel):
     subtotal: int
     vat: int
     total: int
+    total_length: int | None = None
+    pipe_breakdown: list[PipeBreakdownItem] | None = None
 
 
 class GsnSectionResponse(BaseModel):
@@ -109,6 +162,27 @@ def _gsn_with_vat(customer_type, is_district, gsn):
     return {**breakdown, "vat": vat, "total": breakdown["subtotal"] + vat}
 
 
+def _gsv_breakdown_for(customer_type, gsv, is_district):
+    if gsv.pipe_lengths is not None:
+        return get_gsv_mixed_breakdown(
+            customer_type,
+            gsv.pipe_lengths.model_dump(),
+            gsv.drilling_holes,
+            gsv.sakz_sets,
+            gsv.has_panel,
+            is_district,
+        )
+    return get_gsv_breakdown(
+        customer_type,
+        gsv.length,
+        gsv.diameter,
+        gsv.drilling_holes,
+        gsv.sakz_sets,
+        gsv.has_panel,
+        is_district,
+    )
+
+
 @app.get("/")
 def read_root():
     return FileResponse(str(frontend_index_path()))
@@ -131,31 +205,23 @@ def calculate(request: CalculationRequest):
     return {**breakdown, "vat": vat, "total": total}
 
 
-@app.post("/calculate/gsv", response_model=GsvBreakdownResponse)
+@app.post(
+    "/calculate/gsv",
+    response_model=GsvBreakdownResponse,
+    response_model_exclude_none=True,
+)
 def calculate_gsv(request: GsvCalculationRequest):
-    return get_gsv_breakdown(
-        request.customer_type,
-        request.length,
-        request.diameter,
-        request.drilling_holes,
-        request.sakz_sets,
-        request.has_panel,
-        request.is_district,
-    )
+    return _gsv_breakdown_for(request.customer_type, request, request.is_district)
 
 
-@app.post("/calculate/combined", response_model=CombinedCalculationResponse)
+@app.post(
+    "/calculate/combined",
+    response_model=CombinedCalculationResponse,
+    response_model_exclude_none=True,
+)
 def calculate_combined(request: CombinedCalculationRequest):
     gsn = _gsn_with_vat(request.customer_type, request.is_district, request.gsn)
-    gsv = get_gsv_breakdown(
-        request.customer_type,
-        request.gsv.length,
-        request.gsv.diameter,
-        request.gsv.drilling_holes,
-        request.gsv.sakz_sets,
-        request.gsv.has_panel,
-        request.is_district,
-    )
+    gsv = _gsv_breakdown_for(request.customer_type, request.gsv, request.is_district)
     return {
         "customer_type": request.customer_type,
         "is_district": request.is_district,

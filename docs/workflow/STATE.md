@@ -12,17 +12,19 @@ Frozen checklists: `docs/workflow/tasks/MD-01..05.md`,
 
 | TASK | Risk | Содержание | Исполнитель | Review | Reserve | Статус |
 | --- | --- | --- | --- | --- | --- | --- |
-| MD-01 | R2 | mixed-формула, API, legacy | OpenCode Flash | Codex sol/high | 1 вызов (≤4/3M) | IN_PROGRESS |
-| MD-02 | R2 | три длины в UI, детализация, artwork | OpenCode Flash | Codex sol/high (vision) | 1 (≤4/3M) | PENDING |
+| MD-01 | R2 | mixed-формула, API, legacy | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | **PASS** (2 full/1 FAIL/2 calls) |
+| MD-02 | R2 | три длины в UI, детализация, artwork | OpenCode Flash | Codex sol/high (vision) | 1 (≤4/3M) | NEXT |
 | MD-03 | R2 | installer 1.1.0, installed checks | OpenCode Flash | Codex sol/high | 1 (≤4/3M) | PENDING |
 | MD-04 | R0 | README/screenshots/docs | OpenCode Flash | coordinator R0 | 0 | PENDING |
 | MD-05 | R0 | интегрированный full suite | OpenCode Flash | coordinator R0 | 0 | PENDING |
 | FINAL-MIXED | R3 | stage acceptance | Codex astra/high | — | 1 (≤6/5M) | PENDING |
 
-Dispatch MD-01: Run `run_8f265b57fb70`, task `task_cf0f07676581`;
-dispatch ID фиксируется после worker-start.
-Next owner — координатор: дождаться worker_done, проверить evidence, затем
-независимый Codex R2 review; PASS→scoped commit→MD-02.
+MD-01: Run `run_8f265b57fb70`; implementer `ctx_f23a43bf4e82`; C1 review
+`ctx_1ce9629cc368` FAIL MD01-R1 MAJOR; C2 `ctx_ca7386182b3a`; C2 review
+`ctx_b5a2191479fe` **PASS**, finding CLOSED. Review record:
+`docs/workflow/reviews/MD-01-review.md`; evidence
+`docs/workflow/evidence/MD-01-evidence.md`; suite 216 OK.
+Next owner — координатор: scoped commit MD-01, затем dispatch MD-02.
 
 Старые счётчики сохранены: GSV-01..04, WI-01..03, RD-01 1/0/0, RD-02 1/0/1,
 RD-03 2/1/2, RD-05 1/0/1, RD-06 2/1/2, RD-07 R0, прежний stage R3 1. Новый

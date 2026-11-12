@@ -1,0 +1,34 @@
+branch: feature/gsv-mixed-diameters
+HEAD: 32709a4c63904314be123f764930cfa0c59f1e9e
+--- git status --short ---
+ M app/gsv_calculator.py
+ M app/main.py
+ M tests/test_gsv_api.py
+ M tests/test_gsv_calculator.py
+?? docs/workflow/evidence/MD-01-evidence.md
+?? docs/workflow/evidence/logs/MD-01-baseline.txt
+?? docs/workflow/evidence/logs/MD-01-c2-full-suite.txt
+?? docs/workflow/evidence/logs/MD-01-c2-request-response.txt
+?? docs/workflow/evidence/logs/MD-01-c2-scope.txt
+?? docs/workflow/evidence/logs/MD-01-c2-suite-exit.txt
+?? docs/workflow/evidence/logs/MD-01-calculator-diff.txt
+?? docs/workflow/evidence/logs/MD-01-changed-files.txt
+?? docs/workflow/evidence/logs/MD-01-diff-stat.txt
+?? docs/workflow/evidence/logs/MD-01-full-suite.txt
+?? docs/workflow/evidence/logs/MD-01-request-response.txt
+?? docs/workflow/evidence/logs/MD-01-status.txt
+?? docs/workflow/evidence/logs/MD-01-suite-exit.txt
+?? docs/workflow/evidence/logs/MD-01-unit-api.txt
+?? docs/workflow/reviews/MD-01-review-packet.md
+?? docs/workflow/reviews/MD-01-review.md
+?? docs/workflow/tasks/MD-01-C2.md
+--- git diff --stat ---
+ app/gsv_calculator.py        | 106 +++++++++++++
+ app/main.py                  | 114 +++++++++++---
+ tests/test_gsv_api.py        | 349 +++++++++++++++++++++++++++++++++++++++++++
+ tests/test_gsv_calculator.py | 169 +++++++++++++++++++++
+ 4 files changed, 714 insertions(+), 24 deletions(-)
+--- git log --oneline -3 ---
+32709a4 docs(workflow): bind mixed-GSV run and MD-01 task
+2474243 docs(workflow): record mixed task-pack baseline
+118afa6 docs(workflow): freeze mixed-GSV task pack and branch record

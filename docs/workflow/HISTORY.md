@@ -659,3 +659,22 @@ MD-01/02/03 (потолок R2 ≤4/3M каждый), 0 на MD-04/05, 1 на FI
 Это новые логические TASK; старые GSV/WI/RD counters не переименованы и не
 сброшены. Product verdict NOT_REVIEWED; task pack закоммичен `118afa6`
 (docs/refs only), baseline для MD-01.
+
+## 2026-11-12 — MD-01 PASS (R2): mixed-формула и legacy API
+
+MD-01 implementer `ctx_f23a43bf4e82` (OpenCode Flash, baseline `32709a4`)
+добавил `get_pipe_lengths_breakdown`/`get_gsv_mixed_breakdown` (единственная
+база 5 м, порядок up_to_25→from_32_to_40→diameter_57), strict mixed/legacy
+Pydantic-контракт и response `total_length`/`pipe_breakdown` только для mixed;
+unit+API 119, full suite 209 OK exit 0, `app/calculator.py` zero-diff, только
+allowlist. C1 Codex R2 `ctx_1ce9629cc368` (`gpt-6.1-sol` high) вернул **FAIL**
+по **MD01-R1 (MAJOR, D9/D14)**: explicit `null` legacy-ключей принимался как
+отсутствие, 200 вместо 422 на обоих endpoints. C2 implementer
+`ctx_ca7386182b3a` заменил post-parse проверку на raw-key
+`model_validator(mode="before")`, добавил standalone/combined 422 regressions
+и C2 evidence; suite 216 OK exit 0. Повторное полное R2-ревью
+`ctx_b5a2191479fe` вернуло **PASS**: MD01-R1 CLOSED по всем шести explicit-null
+случаям, D1–D8/D10–D13/D15–D16 и E1–E6 подтверждены, формула/legacy 9-key
+response/combined 158550 сохранены, C1 FAIL сохранён. Счётчики MD-01: full
+reviews 2, failed 1, Codex calls 2/4; оба worker released. Scoped commit
+координатора; следующий TASK — MD-02.

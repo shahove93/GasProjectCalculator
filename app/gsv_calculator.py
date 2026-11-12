@@ -20,6 +20,14 @@ PANEL_PRICE = 4000
 AREA_SURCHARGE = 7000
 VAT_PERCENT = 5
 
+# Смешанный ввод: три категории диаметров ГСВ и ставки за оплачиваемый метр.
+PIPE_CATEGORIES = ("up_to_25", "from_32_to_40", "diameter_57")
+PIPE_RATES = {
+    "up_to_25": 2500,
+    "from_32_to_40": 3500,
+    "diameter_57": 4000,
+}
+
 
 def _require_int(value, name):
     if isinstance(value, bool) or not isinstance(value, int):
@@ -73,6 +81,57 @@ def get_length_surcharge(length, diameter):
     else:
         per_meter = 4000
     return extra_meters * per_meter
+
+
+def _validate_pipe_lengths(pipe_lengths):
+    if not isinstance(pipe_lengths, dict):
+        raise ValueError("pipe_lengths должен быть объектом")
+    if set(pipe_lengths) != set(PIPE_CATEGORIES):
+        raise ValueError("pipe_lengths должен содержать ровно три категории")
+    for category in PIPE_CATEGORIES:
+        _require_non_negative_int(pipe_lengths[category], category)
+    return pipe_lengths
+
+
+def get_pipe_lengths_breakdown(pipe_lengths):
+    """Разбивка смешанных длин: базовые 5 м вычитаются из самых дешёвых труб.
+
+    Остаток базовых метров расходуется строго в порядке возрастания тарифа:
+    up_to_25 -> from_32_to_40 -> diameter_57.
+    """
+    _validate_pipe_lengths(pipe_lengths)
+
+    remaining = BASE_LENGTH_METERS
+    total_length = 0
+    length_surcharge = 0
+    pipe_breakdown = []
+
+    for category in PIPE_CATEGORIES:
+        length = pipe_lengths[category]
+        included = min(length, remaining)
+        remaining -= included
+        billable = length - included
+        rate = PIPE_RATES[category]
+        surcharge = billable * rate
+
+        total_length += length
+        length_surcharge += surcharge
+        pipe_breakdown.append(
+            {
+                "category": category,
+                "length": length,
+                "included_length": included,
+                "billable_length": billable,
+                "rate": rate,
+                "surcharge": surcharge,
+            }
+        )
+
+    return {
+        "total_length": total_length,
+        "length_surcharge": length_surcharge,
+        "pipe_breakdown": pipe_breakdown,
+    }
 
 
 def get_drilling_cost(holes):
@@ -144,4 +203,51 @@ def get_gsv_breakdown(
         "subtotal": subtotal,
         "vat": vat,
         "total": total,
+    }
+
+
+def get_gsv_mixed_breakdown(
+    customer_type,
+    pipe_lengths,
+    drilling_holes,
+    sakz_sets,
+    has_panel,
+    is_district,
+):
+    """Расчёт ГСВ для смешанного ввода pipe_lengths.
+
+    Денежная часть совпадает с однодиаметровым расчётом: база, бурение, САКЗ,
+    ПК, район, НДС 5%. Дополнительно возвращаются total_length и pipe_breakdown.
+    """
+    base_price = get_base_price(customer_type)
+    pipe_result = get_pipe_lengths_breakdown(pipe_lengths)
+    length_surcharge = pipe_result["length_surcharge"]
+    drilling_cost = get_drilling_cost(drilling_holes)
+    sakz_cost = get_sakz_cost(sakz_sets)
+    panel_cost = get_panel_cost(sakz_sets, has_panel)
+    area_surcharge = get_area_surcharge(is_district)
+
+    subtotal = (
+        base_price
+        + length_surcharge
+        + drilling_cost
+        + sakz_cost
+        + panel_cost
+        + area_surcharge
+    )
+    vat = calculate_vat(subtotal)
+    total = subtotal + vat
+
+    return {
+        "base_price": base_price,
+        "length_surcharge": length_surcharge,
+        "drilling_cost": drilling_cost,
+        "sakz_cost": sakz_cost,
+        "panel_cost": panel_cost,
+        "area_surcharge": area_surcharge,
+        "subtotal": subtotal,
+        "vat": vat,
+        "total": total,
+        "total_length": pipe_result["total_length"],
+        "pipe_breakdown": pipe_result["pipe_breakdown"],
     }

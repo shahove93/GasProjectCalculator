@@ -1,0 +1,138 @@
+### D1 mixed 4/0/4
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": 4}, "sakz_sets": 0}
+STATUS: 200
+RESPONSE: {"area_surcharge": 0, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 12000, "panel_cost": 0, "pipe_breakdown": [{"billable_length": 0, "category": "up_to_25", "included_length": 4, "length": 4, "rate": 2500, "surcharge": 0}, {"billable_length": 0, "category": "from_32_to_40", "included_length": 0, "length": 0, "rate": 3500, "surcharge": 0}, {"billable_length": 3, "category": "diameter_57", "included_length": 1, "length": 4, "rate": 4000, "surcharge": 12000}], "sakz_cost": 0, "subtotal": 72000, "total": 75600, "total_length": 8, "vat": 3600}
+
+### D2 mixed 2/4/3
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 3, "from_32_to_40": 4, "up_to_25": 2}, "sakz_sets": 0}
+STATUS: 200
+RESPONSE: {"area_surcharge": 0, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 15500, "panel_cost": 0, "pipe_breakdown": [{"billable_length": 0, "category": "up_to_25", "included_length": 2, "length": 2, "rate": 2500, "surcharge": 0}, {"billable_length": 1, "category": "from_32_to_40", "included_length": 3, "length": 4, "rate": 3500, "surcharge": 3500}, {"billable_length": 3, "category": "diameter_57", "included_length": 0, "length": 3, "rate": 4000, "surcharge": 12000}], "sakz_cost": 0, "subtotal": 75500, "total": 79275, "total_length": 9, "vat": 3775}
+
+### D3 mixed 0/5/2
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 2, "from_32_to_40": 5, "up_to_25": 0}, "sakz_sets": 0}
+STATUS: 200
+RESPONSE: {"area_surcharge": 0, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 8000, "panel_cost": 0, "pipe_breakdown": [{"billable_length": 0, "category": "up_to_25", "included_length": 0, "length": 0, "rate": 2500, "surcharge": 0}, {"billable_length": 0, "category": "from_32_to_40", "included_length": 5, "length": 5, "rate": 3500, "surcharge": 0}, {"billable_length": 2, "category": "diameter_57", "included_length": 0, "length": 2, "rate": 4000, "surcharge": 8000}], "sakz_cost": 0, "subtotal": 68000, "total": 71400, "total_length": 7, "vat": 3400}
+
+### D4 mixed 3/1/1 boundary 5m
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 1, "from_32_to_40": 1, "up_to_25": 3}, "sakz_sets": 0}
+STATUS: 200
+RESPONSE: {"area_surcharge": 0, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 0, "panel_cost": 0, "pipe_breakdown": [{"billable_length": 0, "category": "up_to_25", "included_length": 3, "length": 3, "rate": 2500, "surcharge": 0}, {"billable_length": 0, "category": "from_32_to_40", "included_length": 1, "length": 1, "rate": 3500, "surcharge": 0}, {"billable_length": 0, "category": "diameter_57", "included_length": 1, "length": 1, "rate": 4000, "surcharge": 0}], "sakz_cost": 0, "subtotal": 60000, "total": 63000, "total_length": 5, "vat": 3000}
+
+### D5 mixed 8/0/0
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 0, "from_32_to_40": 0, "up_to_25": 8}, "sakz_sets": 0}
+STATUS: 200
+RESPONSE: {"area_surcharge": 0, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 7500, "panel_cost": 0, "pipe_breakdown": [{"billable_length": 3, "category": "up_to_25", "included_length": 5, "length": 8, "rate": 2500, "surcharge": 7500}, {"billable_length": 0, "category": "from_32_to_40", "included_length": 0, "length": 0, "rate": 3500, "surcharge": 0}, {"billable_length": 0, "category": "diameter_57", "included_length": 0, "length": 0, "rate": 4000, "surcharge": 0}], "sakz_cost": 0, "subtotal": 67500, "total": 70875, "total_length": 8, "vat": 3375}
+
+### D6 breakdown 2/4/3
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 3, "from_32_to_40": 4, "up_to_25": 2}, "sakz_sets": 0}
+STATUS: 200
+RESPONSE: {"area_surcharge": 0, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 15500, "panel_cost": 0, "pipe_breakdown": [{"billable_length": 0, "category": "up_to_25", "included_length": 2, "length": 2, "rate": 2500, "surcharge": 0}, {"billable_length": 1, "category": "from_32_to_40", "included_length": 3, "length": 4, "rate": 3500, "surcharge": 3500}, {"billable_length": 3, "category": "diameter_57", "included_length": 0, "length": 3, "rate": 4000, "surcharge": 12000}], "sakz_cost": 0, "subtotal": 75500, "total": 79275, "total_length": 9, "vat": 3775}
+
+### D7 extra client total rejected
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": 4}, "sakz_sets": 0, "total": 1}
+STATUS: 422
+DETAIL: [{"input": 1, "loc": ["body", "total"], "msg": "Extra inputs are not permitted", "type": "extra_forbidden"}]
+
+### D7 extra client total_length rejected
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": 4}, "sakz_sets": 0, "total_length": 1}
+STATUS: 422
+DETAIL: [{"input": 1, "loc": ["body", "total_length"], "msg": "Extra inputs are not permitted", "type": "extra_forbidden"}]
+
+### D8 legacy 8m d25
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "diameter": 25, "drilling_holes": 0, "has_panel": false, "is_district": false, "length": 8, "sakz_sets": 0}
+STATUS: 200
+RESPONSE: {"area_surcharge": 0, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 7500, "panel_cost": 0, "sakz_cost": 0, "subtotal": 67500, "total": 70875, "vat": 3375}
+
+### D8 legacy 5m d57
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "diameter": 57, "drilling_holes": 0, "has_panel": false, "is_district": false, "length": 5, "sakz_sets": 0}
+STATUS: 200
+RESPONSE: {"area_surcharge": 0, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 0, "panel_cost": 0, "sakz_cost": 0, "subtotal": 60000, "total": 63000, "vat": 3000}
+
+### D9 mixed+legacy
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "length": 5, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": 4}, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"ctx": {"error": {}}, "input": {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "length": 5, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": 4}, "sakz_sets": 0}, "loc": ["body"], "msg": "Value error, pipe_lengths нельзя смешивать с length/diameter", "type": "value_error"}]
+
+### D9 incomplete legacy (length only)
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "length": 5, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"ctx": {"error": {}}, "input": {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "length": 5, "sakz_sets": 0}, "loc": ["body"], "msg": "Value error, нужен pipe_lengths или полная пара length и diameter", "type": "value_error"}]
+
+### D9 neither form
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"ctx": {"error": {}}, "input": {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "sakz_sets": 0}, "loc": ["body"], "msg": "Value error, нужен pipe_lengths или полная пара length и diameter", "type": "value_error"}]
+
+### D10 pipe_lengths up_to_25 bool
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": true}, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"input": true, "loc": ["body", "pipe_lengths", "up_to_25"], "msg": "Input should be a valid integer", "type": "int_type"}]
+
+### D10 pipe_lengths up_to_25 float
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": 1.5}, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"input": 1.5, "loc": ["body", "pipe_lengths", "up_to_25"], "msg": "Input should be a valid integer", "type": "int_type"}]
+
+### D10 pipe_lengths up_to_25 string
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": "4"}, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"input": "4", "loc": ["body", "pipe_lengths", "up_to_25"], "msg": "Input should be a valid integer", "type": "int_type"}]
+
+### D10 pipe_lengths up_to_25 negative
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": -1}, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"ctx": {"ge": 0}, "input": -1, "loc": ["body", "pipe_lengths", "up_to_25"], "msg": "Input should be greater than or equal to 0", "type": "greater_than_equal"}]
+
+### D10 pipe_lengths up_to_25 null
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": null}, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"input": null, "loc": ["body", "pipe_lengths", "up_to_25"], "msg": "Input should be a valid integer", "type": "int_type"}]
+
+### D10 missing category diameter_57
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"from_32_to_40": 0, "up_to_25": 4}, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"input": {"from_32_to_40": 0, "up_to_25": 4}, "loc": ["body", "pipe_lengths", "diameter_57"], "msg": "Field required", "type": "missing"}]
+
+### D10 extra key in pipe_lengths
+POST /calculate/gsv
+REQUEST: {"customer_type": "частное лицо", "drilling_holes": 0, "has_panel": false, "is_district": false, "pipe_lengths": {"diameter_57": 4, "extra": 1, "from_32_to_40": 0, "up_to_25": 4}, "sakz_sets": 0}
+STATUS: 422
+DETAIL: [{"input": 1, "loc": ["body", "pipe_lengths", "extra"], "msg": "Extra inputs are not permitted", "type": "extra_forbidden"}]
+
+### D11 combined mixed 4/0/4 + GSN10 district
+POST /calculate/combined
+REQUEST: {"customer_type": "частное лицо", "gsn": {"angles": 0, "excavator_hours": 0, "has_grpsh": false, "hdd": false, "hydraulic_hammer": false, "length": 10}, "gsv": {"drilling_holes": 0, "has_panel": false, "pipe_lengths": {"diameter_57": 4, "from_32_to_40": 0, "up_to_25": 4}, "sakz_sets": 0}, "is_district": true}
+STATUS: 200
+RESPONSE: {"customer_type": "частное лицо", "gsn": {"angle_surcharge": 0, "area_surcharge": 7000, "base_price": 65000, "excavator_cost": 0, "grpsh_surcharge": 0, "hdd_surcharge": 0, "length_surcharge": 0, "subtotal": 72000, "total": 75600, "vat": 3600}, "gsv": {"area_surcharge": 7000, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 12000, "panel_cost": 0, "pipe_breakdown": [{"billable_length": 0, "category": "up_to_25", "included_length": 4, "length": 4, "rate": 2500, "surcharge": 0}, {"billable_length": 0, "category": "from_32_to_40", "included_length": 0, "length": 0, "rate": 3500, "surcharge": 0}, {"billable_length": 3, "category": "diameter_57", "included_length": 1, "length": 4, "rate": 4000, "surcharge": 12000}], "sakz_cost": 0, "subtotal": 79000, "total": 82950, "total_length": 8, "vat": 3950}, "is_district": true, "subtotal": 151000, "total": 158550, "vat": 7550}
+
+### D12 legacy combined gsv length/diameter
+POST /calculate/combined
+REQUEST: {"customer_type": "частное лицо", "gsn": {"angles": 0, "excavator_hours": 0, "has_grpsh": false, "hdd": false, "hydraulic_hammer": false, "length": 10}, "gsv": {"diameter": 25, "drilling_holes": 0, "has_panel": false, "length": 5, "sakz_sets": 0}, "is_district": true}
+STATUS: 200
+RESPONSE: {"customer_type": "частное лицо", "gsn": {"angle_surcharge": 0, "area_surcharge": 7000, "base_price": 65000, "excavator_cost": 0, "grpsh_surcharge": 0, "hdd_surcharge": 0, "length_surcharge": 0, "subtotal": 72000, "total": 75600, "vat": 3600}, "gsv": {"area_surcharge": 7000, "base_price": 60000, "drilling_cost": 0, "length_surcharge": 0, "panel_cost": 0, "sakz_cost": 0, "subtotal": 67000, "total": 70350, "vat": 3350}, "is_district": true, "subtotal": 139000, "total": 145950, "vat": 6950}
+
+### D13 POST /calculate unchanged
+POST /calculate
+REQUEST: {"angles": 2, "customer_type": "частное лицо", "excavator_hours": 4, "has_grpsh": false, "hdd": false, "hydraulic_hammer": false, "is_district": true, "length": 14}
+STATUS: 200
+RESPONSE: {"angle_surcharge": 6000, "area_surcharge": 7000, "base_price": 65000, "excavator_cost": 15000, "grpsh_surcharge": 0, "hdd_surcharge": 0, "length_surcharge": 12000, "subtotal": 105000, "total": 110250.0, "vat": 5250.0}
+

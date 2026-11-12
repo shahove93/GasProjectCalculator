@@ -6,8 +6,10 @@ from app.gsv_calculator import (
     get_base_price,
     get_drilling_cost,
     get_gsv_breakdown,
+    get_gsv_mixed_breakdown,
     get_length_surcharge,
     get_panel_cost,
+    get_pipe_lengths_breakdown,
     get_sakz_cost,
 )
 
@@ -237,6 +239,173 @@ class GsvBreakdownTests(unittest.TestCase):
     def test_breakdown_panel_without_sakz_is_error(self):
         with self.assertRaises(ValueError):
             get_gsv_breakdown(PRIVATE, 5, 25, 0, 0, True, False)
+
+
+class GsvMixedFormulaTests(unittest.TestCase):
+    def assert_mixed(self, pipe_lengths, total_length, surcharge, subtotal, total):
+        result = get_gsv_mixed_breakdown(
+            PRIVATE, pipe_lengths, 0, 0, False, False
+        )
+        self.assertEqual(result["total_length"], total_length)
+        self.assertEqual(result["length_surcharge"], surcharge)
+        self.assertEqual(result["subtotal"], subtotal)
+        self.assertEqual(result["vat"], subtotal * 5 // 100)
+        self.assertEqual(result["total"], total)
+
+    def test_d1_four_zero_four(self):
+        self.assert_mixed(
+            {"up_to_25": 4, "from_32_to_40": 0, "diameter_57": 4},
+            8,
+            12000,
+            72000,
+            75600,
+        )
+
+    def test_d2_two_four_three(self):
+        self.assert_mixed(
+            {"up_to_25": 2, "from_32_to_40": 4, "diameter_57": 3},
+            9,
+            15500,
+            75500,
+            79275,
+        )
+
+    def test_d3_zero_five_two(self):
+        self.assert_mixed(
+            {"up_to_25": 0, "from_32_to_40": 5, "diameter_57": 2},
+            7,
+            8000,
+            68000,
+            71400,
+        )
+
+    def test_d4_three_one_one_boundary_five_meters(self):
+        self.assert_mixed(
+            {"up_to_25": 3, "from_32_to_40": 1, "diameter_57": 1},
+            5,
+            0,
+            60000,
+            63000,
+        )
+
+    def test_d5_eight_zero_zero(self):
+        self.assert_mixed(
+            {"up_to_25": 8, "from_32_to_40": 0, "diameter_57": 0},
+            8,
+            7500,
+            67500,
+            70875,
+        )
+
+    def test_all_zero_lengths_keep_base_price(self):
+        result = get_gsv_mixed_breakdown(
+            PRIVATE,
+            {"up_to_25": 0, "from_32_to_40": 0, "diameter_57": 0},
+            0,
+            0,
+            False,
+            False,
+        )
+        self.assertEqual(result["total_length"], 0)
+        self.assertEqual(result["length_surcharge"], 0)
+        self.assertEqual(result["subtotal"], 60000)
+        self.assertEqual(result["total"], 63000)
+
+    def test_d6_breakdown_order_and_values(self):
+        result = get_gsv_mixed_breakdown(
+            PRIVATE,
+            {"up_to_25": 2, "from_32_to_40": 4, "diameter_57": 3},
+            0,
+            0,
+            False,
+            False,
+        )
+        self.assertEqual(
+            result["pipe_breakdown"],
+            [
+                {
+                    "category": "up_to_25",
+                    "length": 2,
+                    "included_length": 2,
+                    "billable_length": 0,
+                    "rate": 2500,
+                    "surcharge": 0,
+                },
+                {
+                    "category": "from_32_to_40",
+                    "length": 4,
+                    "included_length": 3,
+                    "billable_length": 1,
+                    "rate": 3500,
+                    "surcharge": 3500,
+                },
+                {
+                    "category": "diameter_57",
+                    "length": 3,
+                    "included_length": 0,
+                    "billable_length": 3,
+                    "rate": 4000,
+                    "surcharge": 12000,
+                },
+            ],
+        )
+        self.assertEqual(
+            result["length_surcharge"],
+            sum(item["surcharge"] for item in result["pipe_breakdown"]),
+        )
+
+    def test_pipe_lengths_breakdown_keeps_zero_positions(self):
+        result = get_pipe_lengths_breakdown(
+            {"up_to_25": 0, "from_32_to_40": 0, "diameter_57": 2}
+        )
+        self.assertEqual(
+            [item["category"] for item in result["pipe_breakdown"]],
+            ["up_to_25", "from_32_to_40", "diameter_57"],
+        )
+        self.assertEqual(
+            [item["length"] for item in result["pipe_breakdown"]], [0, 0, 2]
+        )
+
+    def test_pipe_lengths_rejects_unknown_key(self):
+        with self.assertRaises(ValueError):
+            get_pipe_lengths_breakdown(
+                {
+                    "up_to_25": 1,
+                    "from_32_to_40": 1,
+                    "diameter_57": 1,
+                    "extra": 1,
+                }
+            )
+
+    def test_pipe_lengths_rejects_missing_key(self):
+        with self.assertRaises(ValueError):
+            get_pipe_lengths_breakdown({"up_to_25": 1, "from_32_to_40": 1})
+
+    def test_pipe_lengths_rejects_bool(self):
+        with self.assertRaises(ValueError):
+            get_pipe_lengths_breakdown(
+                {"up_to_25": True, "from_32_to_40": 0, "diameter_57": 0}
+            )
+
+    def test_pipe_lengths_rejects_negative(self):
+        with self.assertRaises(ValueError):
+            get_pipe_lengths_breakdown(
+                {"up_to_25": -1, "from_32_to_40": 0, "diameter_57": 0}
+            )
+
+
+class GsvLegacyCompatTests(unittest.TestCase):
+    def test_legacy_eight_meters_25_is_70875(self):
+        result = get_gsv_breakdown(PRIVATE, 8, 25, 0, 0, False, False)
+        self.assertEqual(result["total"], 70875)
+
+    def test_legacy_five_meters_57_is_63000(self):
+        result = get_gsv_breakdown(PRIVATE, 5, 57, 0, 0, False, False)
+        self.assertEqual(result["total"], 63000)
+
+    def test_legacy_breakdown_keys_unchanged(self):
+        result = get_gsv_breakdown(PRIVATE, 5, 25, 0, 0, False, False)
+        self.assertEqual(set(result), BREAKDOWN_KEYS)
 
 
 if __name__ == "__main__":
