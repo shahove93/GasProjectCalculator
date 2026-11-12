@@ -1,5 +1,17 @@
 ﻿# Состояние проекта
 
+**Публикация 1.2.0 — COMPLETE (2026-11-12, R0)**: по явному разрешению
+пользователя «Но все можно комитить и выкладывать на гитхаб» (APPROVALS)
+принятые bytes installer 1.2.0 (15 373 267 B, SHA256 `4579FB3A…6113`,
+без rebuild) опубликованы как GitHub Release **v1.2.0** (id 443454221,
+draft=false, prerelease=false, Latest) с assets `SS-Raschet-Setup.exe`
+(740919104) и `SHA256SUMS.txt` (740924696). Tag v1.2.0 →
+`2ba4fb032789f8944c355a7731a9ddf14aeb56dc`; feature и main опубликованы
+обычным push/fast-forward без force. Публичное скачивание без credentials:
+installer HTTP 200, 15 373 267 B, SHA256 совпал; checksum HTTP 200, 87 B.
+Прежние v1.0.0/v1.1.0 и их assets не изменялись. Подробности:
+[PUBLICATION-v1.2.0](PUBLICATION-v1.2.0.md).
+
 **Визуальное продолжение 1.2.0 — COMPLETE (2026-11-12)**:
 VP-01 PASS; VP-02 evidence pack полон. Lean finish: пять settled кадров
 D1–D5 сняты после `getAnimations()`/`opacity=1`; полный integrated suite
@@ -91,8 +103,10 @@ artifact 1.2.0 передан локально. Прежние BLOCKED/resume с
   Push/merge/deploy/release/signing не выполнялись.
 - Astra не запускается, пока нет новой реальной продуктовой визуальной
   правки.
-- Ограничения: нет push/merge/deploy/release/signing; public release 1.1.0
-  не заменять.
+- Ограничения на момент приёмки: push/merge/deploy/release/signing не
+  выполнялись; public release 1.1.0 не заменялся. Позже, 2026-11-12,
+  отдельным явным разрешением выполнена публикация v1.2.0 (см. блок выше);
+  прежние 1.0.0/1.1.0 сохранены без изменений.
 
 [смешанные диаметры](FINAL-REPORT-MIXED-GSV.md),
 [публикация 1.1.0](PUBLICATION-v1.1.0.md),

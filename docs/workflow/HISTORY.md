@@ -1029,3 +1029,29 @@ installer: 15 373 267 B, SHA256
 `ac59d8c` — предок HEAD без divergence (fast-forward возможен). README
 обновлён на опубликованную 1.2.0, добавлены `docs/releases/v1.2.0.md` и
 checksum; публикация и финальные факты — следующим commit/отчётом.
+
+## 2026-11-12 — публикация 1.2.0 COMPLETE
+
+Publication commit/tag target `2ba4fb032789f8944c355a7731a9ddf14aeb56dc`
+(README, `docs/releases/v1.2.0.md`, `SHA256SUMS.txt`, APPROVALS, HISTORY).
+`git push origin feature/gsv-mixed-diameters` — `ac59d8c..2ba4fb0`, exit 0;
+`git push origin v1.2.0` — новый annotated tag `9253c5d1…`, exit 0. GitHub
+Release **v1.2.0** id **443454221**, draft=false, prerelease=false,
+**Latest**; URL
+https://github.com/shahove93/GasProjectCalculator/releases/tag/v1.2.0.
+Assets: `SS-Raschet-Setup.exe` id **740919104**, 15 373 267 B, server
+digest `sha256:4579fb3a…f856113`; `SHA256SUMS.txt` id **740924696**, 87 B,
+digest `sha256:8e38fe2b…c76a6c`.
+
+Публичное скачивание без credentials: installer
+`releases/download/v1.2.0/SS-Raschet-Setup.exe` HTTP 200, 15 373 267 B,
+скачанный SHA256
+`4579FB3AA7B2E6220C1204E3AA2A6048648AE5A344B8E2D45DD00CF19F856113` — совпал
+с принятой сборкой; `SHA256SUMS.txt` HTTP 200, 87 B; `latest` installer
+HTTP 200/Length 15 373 267. Release v1.0.0 (442532779) и v1.1.0 (442672288),
+их tag/asset не изменялись. `origin/main` был предком HEAD (divergence нет),
+обновлён fast-forward после финального docs-commit; force/delete/merge
+commit не применялись. GitHub CLI не авторизован; использован существующий
+Git credential helper и GitHub REST API без вывода/записи credentials.
+Rebuild/suite/UI/screenshots/новых review не было; старые бюджеты сохранены.
+Отчёт: `PUBLICATION-v1.2.0.md`.
