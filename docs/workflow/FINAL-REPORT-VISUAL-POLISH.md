@@ -27,6 +27,7 @@
 | SHA256 | `4579FB3AA7B2E6220C1204E3AA2A6048648AE5A344B8E2D45DD00CF19F856113` |
 
 Прежние 1.0.0/1.1.0/legacy bytes не изменены; remote releases не трогались.
+Local scoped commit: `bbd0f606b23ce2620676ea92bce9bcc6f256422d`.
 
 ## Проверки (первичные доказательства)
 

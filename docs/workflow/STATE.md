@@ -86,7 +86,8 @@ artifact 1.2.0 передан локально. Прежние BLOCKED/resume с
   [VP-02-final-stage-review](../reviews/VP-02-final-stage-review.md).
 - **Этап COMPLETE:** `FINAL-REPORT-VISUAL-POLISH.md`; README содержит
   локальную сборку 1.2.0 (не опубликована); local artifact
-  15 373 267 B SHA256 `4579FB3A…6113`; local scoped commit выполнен.
+  15 373 267 B SHA256 `4579FB3A…6113`; local scoped commit
+  `bbd0f606b23ce2620676ea92bce9bcc6f256422d`.
   Push/merge/deploy/release/signing не выполнялись.
 - Astra не запускается, пока нет новой реальной продуктовой визуальной
   правки.

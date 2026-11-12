@@ -999,3 +999,9 @@ requirements/tests zero-diff; независимость трёх `gpt-6.1-sol`/
 scoped commit после PASS. Push/merge/deploy/release/signing не выполнялись;
 пользовательская установка/HKCU/ярлыки/сессии, `.venv`, :8000/:8138 и прежние
 installers сохранены.
+
+Local scoped commit результата:
+`bbd0f606b23ce2620676ea92bce9bcc6f256422d` (183 files: installer branding/
+version, assets, docs/evidence/screenshots/reviews). README и этот hash
+зафиксированы следующим docs-коммитом; artifact 1.2.0 остаётся локальным
+(git-ignored `installer/Output`). Push/merge/deploy/release нет.
