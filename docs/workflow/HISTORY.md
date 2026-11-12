@@ -615,3 +615,13 @@ installer. Подтверждены origin/main baseline 2949223, ancestry бе�
 Существующих releases/tags нет. Secret-pattern scan tracked files: no matches.
 README: реальные скриншоты rd-06, SVG download badge и ссылка Latest asset;
 release notes/checksum. Product files не менялись, suite не повторялся.
+
+## 2026-11-12 — публикация v1.0.0 COMPLETE
+
+README/release presentation e4e4dee опубликован в feature/ss-calculator-redesign
+и main (обычный FF2949223→e4e4dee). Release id442532779 v1.0.0 опубликован как
+Latest; SS-Raschet-Setup.exe asset738208919 (15 286 980B, hash71232EE4…A7E08)
+и SHA256SUMS.txt asset738209344. Публичное скачивание через Latest без auth
+HTTP200, размер/hash совпали. Repo description/homepage обновлены. Продукт не
+менялся, suite не повторялся. Полный результат PUBLICATION-v1.0.0.md;
+финальный docs-only commit сохраняет итог, все разрешения/счётчики сохранены.
