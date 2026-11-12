@@ -19,7 +19,8 @@ Frozen checklists: `docs/workflow/tasks/MD-01..05.md`,
 | MD-05 | R0 | интегрированный full suite | OpenCode Flash | coordinator R0 | 0 | PENDING |
 | FINAL-MIXED | R3 | stage acceptance | Codex astra/high | — | 1 (≤6/5M) | PENDING |
 
-Dispatch MD-01: `<MD01_DISPATCH>` / task `<MD01_TASK>`.
+Dispatch MD-01: Run `run_8f265b57fb70`, task `task_cf0f07676581`;
+dispatch ID фиксируется после worker-start.
 Next owner — координатор: дождаться worker_done, проверить evidence, затем
 независимый Codex R2 review; PASS→scoped commit→MD-02.
 
